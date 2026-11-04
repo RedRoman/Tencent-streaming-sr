@@ -1,0 +1,92 @@
+{
+  "completed": true,
+  "host_world_size": 2,
+  "generator_updates": 6,
+  "fake_updates": 10,
+  "elapsed_seconds": 351.56,
+  "rank0_peak_npu_memory_gb": 39.88701696,
+  "latent_shape": [
+    24,
+    13,
+    24,
+    42
+  ],
+  "replay_max_abs": 0.0,
+  "trained_blocks": [
+    0,
+    1,
+    2,
+    0,
+    1,
+    2
+  ],
+  "generator_grad_norms": [
+    0.0001363053743261844,
+    0.0002835688937921077,
+    0.00021216295135673136,
+    0.0017709598178043962,
+    0.00043723342241719365,
+    0.0008611770463176072
+  ],
+  "fake_grad_norms": [
+    0.013628991320729256,
+    0.015902645885944366,
+    0.01629619300365448,
+    0.02332521416246891,
+    0.016616908833384514,
+    0.02195577509701252
+  ],
+  "score_gap_rms": [
+    0.009516296908259392,
+    0.002395498799160123,
+    0.00867379829287529,
+    0.011449764482676983,
+    0.0054387846030294895,
+    0.011934605427086353
+  ],
+  "holdout_before_after": {
+    "rms_difference": 0.023740364238619804,
+    "max_abs_difference": 0.48458385467529297,
+    "relative_rms_difference": 0.023117048665881157
+  },
+  "latent_diagnostics": {
+    "reference": {
+      "rms": 1.0539963245391846,
+      "mse_to_reference": 0.0,
+      "adjacent_frame_rms": 0.45002153515815735
+    },
+    "upscaled": {
+      "rms": 1.0359547138214111,
+      "mse_to_reference": 0.08466190844774246,
+      "adjacent_frame_rms": 0.4050925672054291
+    },
+    "dense_one_untrained": {
+      "rms": 1.0122750997543335,
+      "mse_to_reference": 0.25213727355003357,
+      "adjacent_frame_rms": 0.36673876643180847
+    },
+    "dense_three": {
+      "rms": 1.0617530345916748,
+      "mse_to_reference": 0.28810766339302063,
+      "adjacent_frame_rms": 0.41611248254776
+    },
+    "causal_one_untrained": {
+      "rms": 1.026963472366333,
+      "mse_to_reference": 0.4276224970817566,
+      "adjacent_frame_rms": 0.4099278748035431
+    },
+    "causal_one_trained": {
+      "rms": 1.0284545421600342,
+      "mse_to_reference": 0.4272388815879822,
+      "adjacent_frame_rms": 0.40985944867134094
+    }
+  },
+  "interpretation_limits": [
+    "Six generator updates on two clips test the pipeline, not convergence.",
+    "Latent reference distance and adjacent-frame difference are diagnostics, not perceptual quality scores.",
+    "One denoising step per causal block; three blocks require three model evaluations plus prefix recomputation.",
+    "Official latent upscaler and VAE are temporally noncausal; only the refiner is block causal.",
+    "Adapters checkpoint supports inference reload; optimizer and RNG states are not saved."
+  ],
+  "checkpoint_reload_max_abs": 0.0
+}

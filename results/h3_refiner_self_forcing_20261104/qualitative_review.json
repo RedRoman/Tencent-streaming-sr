@@ -1,0 +1,22 @@
+{
+  "scope": "Visual inspection of aligned frames0,21,42, plus numerical run/reload evidence",
+  "input": "Close-up hands unwrapping silver foil chocolate; no visible person in reference contact sheet",
+  "columns": [
+    "official_refiner_three_step",
+    "dense_one_step",
+    "causal_one_step_before",
+    "causal_one_step_after_6G_updates"
+  ],
+  "observations": [
+    "Dense outputs preserve the hand composition but alter the packaging texture",
+    "Both causal outputs contain an extra face/upper body absent from the input; visible from frame0",
+    "The causal training-after result retains the same major semantic drift; no clear qualitative improvement in this smoke"
+  ],
+  "possible_cause": "Distribution shift from direct conversion of the dense refiner to block-causal attention and mixed clean/noisy histories is a hypothesis; no causal ablation has isolated the mechanism",
+  "not_supported": [
+    "Self Forcing is intrinsically ineffective",
+    "Six-step latent RMS change demonstrates improved visual quality",
+    "This validates 2K or long-video fidelity"
+  ],
+  "checkpoint_remote": "<TRAINING_HOST>:<EXP_ROOT>/outputs/adapters.pt"
+}

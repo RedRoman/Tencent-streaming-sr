@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "mode": "import",
+  "files": {
+    "lora/sharp_curve_branches.safetensors": {
+      "status": "verified",
+      "source": "<ASSET_TRANSFER_ROOT>/assets/lora/sharp_curve_branches.safetensors.bridge-incoming",
+      "path": "<EXP_ROOT>/assets/lora/sharp_curve_branches.safetensors",
+      "bytes": 1238746768,
+      "sha256": "26ff1c4ea50fc5b0cea252912b67ec308a65d534cef026ef56f415ae92102e4e",
+      "verified_unix": 1793781702.0408525,
+      "already_present": false,
+      "seconds": 3.72,
+      "materialized_path": "<EXP_ROOT>/assets/lora/sharp_curve_branches.safetensors"
+    },
+    "lora/open_h3_regenerate_2k_lora.safetensors": {
+      "status": "verified",
+      "source": "<ASSET_TRANSFER_ROOT>/assets/lora/open_h3_regenerate_2k_lora.safetensors.bridge-incoming",
+      "path": "<EXP_ROOT>/assets/lora/open_h3_regenerate_2k_lora.safetensors",
+      "bytes": 12452449080,
+      "sha256": "8e36a0912ab72f7f3b00f41e3c7c97c7dfdec21e66c88ab22f08b9b0c681bb04",
+      "verified_unix": 1793785727.6360798,
+      "already_present": false,
+      "seconds": 35.224,
+      "materialized_path": "<EXP_ROOT>/assets/lora/open_h3_regenerate_2k_lora.safetensors"
+    }
+  },
+  "started_unix": 1793781668.3104544,
+  "updated_unix": 1793785727.636356
+}

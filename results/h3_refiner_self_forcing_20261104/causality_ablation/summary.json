@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "world_size": 2,
+  "physical_devices": "6,7",
+  "cases": [
+    {
+      "label": "dense13",
+      "frames": 13,
+      "static_reads_video": true,
+      "all_video_queries_see_all_video_in_prefix": true,
+      "sigma": 0.909375,
+      "rms": 1.012274980545044,
+      "seconds": 47.34287905693054
+    },
+    {
+      "label": "static_mask13",
+      "frames": 13,
+      "static_reads_video": false,
+      "all_video_queries_see_all_video_in_prefix": true,
+      "sigma": 0.909375,
+      "rms": 1.03444242477417,
+      "seconds": 50.43846654891968
+    },
+    {
+      "label": "dense5",
+      "frames": 5,
+      "static_reads_video": true,
+      "all_video_queries_see_all_video_in_prefix": true,
+      "sigma": 0.909375,
+      "rms": 0.9919805526733398,
+      "seconds": 53.24761414527893
+    },
+    {
+      "label": "static_mask5",
+      "frames": 5,
+      "static_reads_video": false,
+      "all_video_queries_see_all_video_in_prefix": true,
+      "sigma": 0.909375,
+      "rms": 1.0100610256195068,
+      "seconds": 56.12291383743286
+    },
+    {
+      "label": "static_mask5_sigma03",
+      "frames": 5,
+      "static_reads_video": false,
+      "all_video_queries_see_all_video_in_prefix": true,
+      "sigma": 0.3,
+      "rms": 1.067402958869934,
+      "seconds": 58.97126865386963
+    }
+  ],
+  "dense13_reproduction_max_abs": 0.0,
+  "causal_first_block_reproduction_max_abs": 0.0,
+  "static_mask_effect_at13": {
+    "rms": 0.12291385233402252,
+    "max_abs": 1.3468589782714844
+  },
+  "static_mask_effect_at5": {
+    "rms": 0.13255904614925385,
+    "max_abs": 1.3922899961471558
+  },
+  "prefix_effect_dense": {
+    "rms": 0.432207852602005,
+    "max_abs": 4.158420562744141
+  },
+  "prefix_effect_static_mask": {
+    "rms": 0.40318819880485535,
+    "max_abs": 3.8968329429626465
+  },
+  "noise_effect_at5_static_mask": {
+    "rms": 0.5199773907661438,
+    "max_abs": 4.114017486572266
+  },
+  "limitations": [
+    "Single held-out clip; no generalization claim.",
+    "Static mask includes both text and audio query groups; not separately isolated.",
+    "First-block ablation has no self-generated history or mixed video times.",
+    "Latent distances are not perceptual quality metrics."
+  ]
+}

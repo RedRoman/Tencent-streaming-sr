@@ -1,0 +1,57 @@
+{
+  "status": "verified",
+  "release_repo": "Efficient-Large-Model/Open-H3-Regenerate-2K",
+  "release_revision": "50c09cf1df5f9262b9279868c1c666bd5fe3476b",
+  "total_expected_bytes": 14381821640,
+  "updated_unix": 1793785637.4420202,
+  "files": {
+    "lora/open_h3_regenerate_2k_lora.safetensors": {
+      "path": "<EXP_ROOT>/assets/lora/open_h3_regenerate_2k_lora.safetensors",
+      "expected_bytes": 12452449080,
+      "expected_sha256": "8e36a0912ab72f7f3b00f41e3c7c97c7dfdec21e66c88ab22f08b9b0c681bb04",
+      "source_repo": "Efficient-Large-Model/Open-H3-Regenerate-2K",
+      "source_revision": "50c09cf1df5f9262b9279868c1c666bd5fe3476b",
+      "status": "verified",
+      "bytes": 12452449080,
+      "sha256": "8e36a0912ab72f7f3b00f41e3c7c97c7dfdec21e66c88ab22f08b9b0c681bb04"
+    },
+    "lora/sharp_curve_branches.safetensors": {
+      "path": "<EXP_ROOT>/assets/lora/sharp_curve_branches.safetensors",
+      "expected_bytes": 1238746768,
+      "expected_sha256": "26ff1c4ea50fc5b0cea252912b67ec308a65d534cef026ef56f415ae92102e4e",
+      "source_repo": "Efficient-Large-Model/Open-H3-Regenerate-2K",
+      "source_revision": "50c09cf1df5f9262b9279868c1c666bd5fe3476b",
+      "status": "verified",
+      "bytes": 1238746768,
+      "sha256": "26ff1c4ea50fc5b0cea252912b67ec308a65d534cef026ef56f415ae92102e4e"
+    },
+    "latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors": {
+      "path": "<EXP_ROOT>/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+      "expected_bytes": 690592992,
+      "expected_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "source_repo": "Efficient-Large-Model/Open-H3-Regenerate-2K",
+      "source_revision": "50c09cf1df5f9262b9279868c1c666bd5fe3476b",
+      "status": "verified",
+      "bytes": 690592992,
+      "sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6"
+    },
+    "lora/adaln_t_table.bin": {
+      "path": "<EXP_ROOT>/assets/lora/adaln_t_table.bin",
+      "expected_bytes": 32800,
+      "expected_sha256": "c02a6c11888297688c1e6278185ea1f947023acfc69f9003bbcdcec9a229a8e7",
+      "source_repo": "Comfy-Org/MiniMax-H3",
+      "source_revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "status": "verified",
+      "source_file": "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "source_tensor": "adaln_t_table",
+      "source_dtype": "F32",
+      "source_shape": [
+        1025,
+        8
+      ],
+      "bytes": 32800,
+      "sha256": "c02a6c11888297688c1e6278185ea1f947023acfc69f9003bbcdcec9a229a8e7"
+    }
+  },
+  "scope": "Requested LoRA, Sharp branches, latent upscaler, and 32800-byte table only; no base or fast VAE."
+}

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "scope": "Read-only JSON headers and file sizes; no model/tensor loading or NPU use.",
+  "blocking_structure_issues": [],
+  "base_shapes_match_across_hosts": true,
+  "checks": [
+    {
+      "checked_utc": "2026-11-04T09:12:30.098677+00:00",
+      "method": "safetensors JSON headers and file sizes only; tensor payloads not read",
+      "base_shards": 14,
+      "base_tensors": 638,
+      "base_index_errors": [],
+      "base_shapes_sha256": "bd299bb60e5a0d71dbc5fb3ae1a681500f2b25ac608c4dfe20db6d0000136a89",
+      "host": "<REDACTED_HOST>",
+      "adapter": "official LoRA partial header",
+      "path": "<EXP_ROOT>/assets/lora/open_h3_regenerate_2k_lora.safetensors.part",
+      "header_bytes": 84784,
+      "physical_prefix_bytes": 109051904,
+      "logical_complete_file_bytes": 12452449080,
+      "pairs": 312,
+      "tensors": 624,
+      "rank_histogram": {
+        "576": 312
+      },
+      "dtype_histogram": {
+        "F32": 624
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "checked_utc": "2026-11-04T09:12:32.518345+00:00",
+      "method": "safetensors JSON headers and file sizes only; tensor payloads not read",
+      "base_shards": 14,
+      "base_tensors": 638,
+      "base_index_errors": [],
+      "base_shapes_sha256": "bd299bb60e5a0d71dbc5fb3ae1a681500f2b25ac608c4dfe20db6d0000136a89",
+      "host": "<REDACTED_HOST>",
+      "adapter": "official Sharp curve branches",
+      "path": "<EXP_ROOT>/assets/lora/sharp_curve_branches.safetensors",
+      "header_bytes": 13960,
+      "physical_file_bytes": 1238746768,
+      "logical_complete_file_bytes": 1238746768,
+      "pairs": 50,
+      "tensors": 100,
+      "rank_histogram": {
+        "64": 50
+      },
+      "dtype_histogram": {
+        "F32": 100
+      },
+      "table_path": "<EXP_ROOT>/assets/lora/adaln_t_table.bin",
+      "table_bytes": 32800,
+      "table_expected_shape": [
+        1025,
+        8
+      ],
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "remaining_gate": "LoRA complete-file SHA256 must still pass after download/assembly; header compatibility does not verify downloaded payload."
+}

@@ -1,0 +1,119 @@
+{
+  "base_model": "<H3_BASE_MODEL>",
+  "dtype": "float32",
+  "tiling": true,
+  "fps": 24.0,
+  "latent_denormalization": "normalized*std+mean",
+  "pixel_denormalization": "ImageNet std/mean; clamp[0,1]",
+  "inputs": {
+    "upscaled": {
+      "path": "<EXP_ROOT>/causality_ablation/upscaled.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        5,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        17,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 2.6597143644466996,
+      "video_codec": "mpeg4"
+    },
+    "dense13": {
+      "path": "<EXP_ROOT>/causality_ablation/dense13.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        5,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        17,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 1.7237618891522288,
+      "video_codec": "mpeg4"
+    },
+    "static_mask13": {
+      "path": "<EXP_ROOT>/causality_ablation/static_mask13.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        5,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        17,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 1.7301197042688727,
+      "video_codec": "mpeg4"
+    },
+    "dense5": {
+      "path": "<EXP_ROOT>/causality_ablation/dense5.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        5,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        17,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 1.729080787859857,
+      "video_codec": "mpeg4"
+    },
+    "static_mask5": {
+      "path": "<EXP_ROOT>/causality_ablation/static_mask5.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        5,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        17,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 1.7256262572482228,
+      "video_codec": "mpeg4"
+    },
+    "static_mask5_sigma03": {
+      "path": "<EXP_ROOT>/causality_ablation/static_mask5_sigma03.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        5,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        17,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 1.7269049705937505,
+      "video_codec": "mpeg4"
+    }
+  },
+  "source_metadata": {}
+}

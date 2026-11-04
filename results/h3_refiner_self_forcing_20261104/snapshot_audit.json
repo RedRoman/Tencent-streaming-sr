@@ -1,0 +1,181 @@
+{
+  "scope": "Public snapshot; infrastructure identifiers are redacted and runtime locations are configurable. Model weights, original video dataset, caches, credentials, and download controllers are excluded.",
+  "files_scanned": 50,
+  "text_files_scanned": 40,
+  "patterns": [
+    "hf_access_token",
+    "github_access_token",
+    "private_key",
+    "aws_access_key",
+    "bearer_credential",
+    "signed_download_url",
+    "credential_literal",
+    "private_infrastructure"
+  ],
+  "findings": [],
+  "python_ast_parsed": 14,
+  "shell_syntax_checked": 8,
+  "python_numeric_literal_check": "Identical numeric literal multisets except removal of the path-only parents[1] index in prepare_data.py, replaced by H3_UPSTREAM_DIR. No algorithmic numeric constants changed.",
+  "unchanged_source_files": [
+    "ablate_causality.py",
+    "data_utils.py",
+    "experiment_manifest.json",
+    "merge_refiner.py",
+    "model_runtime.py",
+    "summarize_results.py",
+    "temporal.py",
+    "test_fsdp_roles.py",
+    "test_temporal.py"
+  ],
+  "public_portability_edited_files": [
+    "decode_results.py",
+    "env.sh",
+    "locked_run.py",
+    "prepare_data.py",
+    "run_causality_ablation.sh",
+    "run_decode.sh",
+    "run_decode_ablation.sh",
+    "run_eval.sh",
+    "run_full_preflight.sh",
+    "run_merge.sh",
+    "run_train.sh",
+    "test_full_runtime.py",
+    "train.py",
+    "wait_and_merge.py"
+  ],
+  "video_containers": [
+    {
+      "path": "results/h3_refiner_self_forcing_20261104/causality_ablation/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 8704,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 8704,
+      "stts_entries": [
+        [
+          17,
+          512
+        ]
+      ],
+      "frames": 17,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_refiner_self_forcing_20261104/inputs/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_refiner_self_forcing_20261104/refiner/causal_after.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_refiner_self_forcing_20261104/refiner/causal_before.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22016,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22016,
+      "stts_entries": [
+        [
+          43,
+          512
+        ]
+      ],
+      "frames": 43,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_refiner_self_forcing_20261104/refiner/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_refiner_self_forcing_20261104/refiner/dense_1step.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_refiner_self_forcing_20261104/refiner/official_3step.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    }
+  ],
+  "validation_note": "Static syntax/basic credential and infrastructure-pattern scan; video container checks verify H.264, expected sample counts and approximately 24 fps (container rounding tolerance 0.01 fps). These checks do not replace numerical tests or visual review. No NPU commands were run for packaging."
+}

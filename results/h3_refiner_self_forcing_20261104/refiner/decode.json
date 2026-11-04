@@ -1,0 +1,139 @@
+{
+  "base_model": "<H3_BASE_MODEL>",
+  "dtype": "float32",
+  "tiling": true,
+  "fps": 24.0,
+  "latent_denormalization": "normalized*std+mean",
+  "pixel_denormalization": "ImageNet std/mean; clamp[0,1]",
+  "inputs": {
+    "official_3step": {
+      "path": "<EXP_ROOT>/outputs/dense_three.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.985704047605395,
+      "video_codec": "mpeg4"
+    },
+    "dense_1step": {
+      "path": "<EXP_ROOT>/outputs/dense_one_untrained.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.03121916949749,
+      "video_codec": "mpeg4"
+    },
+    "causal_before": {
+      "path": "<EXP_ROOT>/outputs/causal_one_untrained.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.035655933432281,
+      "video_codec": "mpeg4"
+    },
+    "causal_after": {
+      "path": "<EXP_ROOT>/outputs/causal_one_trained.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.036151704378426,
+      "video_codec": "mpeg4"
+    }
+  },
+  "source_metadata": {
+    "id": "VIDGEN5S_0380588",
+    "split": "holdout",
+    "source_manifest_index": 2,
+    "source_manifest": "<H3_SOURCE_MANIFEST>",
+    "source_video_path": "<SOURCE_VIDEOS>/VIDGEN5S_0380588.mp4",
+    "source_latent_path": "<CACHED_HR_LATENTS>/VIDGEN5S_0380588.pt",
+    "source_video_sha256": "11e79651092aaf2101e06bc159346235c9f5dfd6f4451a403ccf647c8c967c66",
+    "source_latent_sha256": "1f0c25efbdd39da0d5c9cb1c9d6548715db9d0f8cb558c2910cd3b8128492f32",
+    "source_split": "train",
+    "split_scope": "disjoint within this 3-sample smoke experiment; source manifest is old train data",
+    "prompt": "integrated_multimodal_description: [Shot 1] Cinematic, a close-up, static shot focusing entirely on a person's hands in the center foreground. The background is a soft, out-of-focus blur of warm amber bokeh, suggesting a cozy, dimly lit interior room. Soft, directional lighting from the upper left catches the highly reflective, shiny silver foil wrapper of a thick, rectangular chocolate bar. The person's left hand, featuring fair skin and neatly trimmed fingernails, supports the bottom of the bar. The thumb and index finger of the right hand pinch the top edge of the crinkly silver foil and carefully peel it downward and back. As the foil folds back, it reveals the rich, dark brown, matte surface of the dark chocolate bar underneath. The camera holds a static shot, maintaining a tight, shallow focus on the tactile interaction between the fingertips, the crisp metallic wrapper, and the dark chocolate.\noverall_soundscape: The crisp, distinct crinkling and sharp rustling of the metallic silver foil dominate the foreground as it is peeled back, accompanied by the faint, soft friction of fingertips sliding against the smooth wrapper.\nnon_diegetic_music: N/A",
+    "fps": 24.0,
+    "decoded_frames": 43,
+    "latent_frames": 13,
+    "draft_mode": "source",
+    "synthetic_fallback_reason": null,
+    "source_frames_encoded": 64,
+    "encoded_latent_shape_before_crop": [
+      24,
+      17,
+      12,
+      21
+    ],
+    "draft_pixels": [
+      336,
+      192
+    ],
+    "target_pixels": [
+      672,
+      384
+    ],
+    "pixel_preprocessing": "fps resample; cover-area resize; center crop; final-frame hold; ImageNet normalization",
+    "latent_normalization": "(raw-vae.latents_mean)/vae.latents_std",
+    "reference_provenance": "native full-length RGB exact2x2 area mean to672x384; original H3 FP32 VAE; CPU posterior sample42",
+    "posterior_seed": 42,
+    "audio": {
+      "kind": "official_encoded_silence",
+      "sample_rate": 32000,
+      "waveform_samples": 57333,
+      "pixel_frames": 43,
+      "fps": 24.0,
+      "latent_frames": 72,
+      "posterior": "mode",
+      "normalization": "(raw-mean)/std"
+    },
+    "draft_encode_seconds": 0.002487625926733017,
+    "upscaler": {
+      "checkpoint": "<EXP_ROOT>/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+      "source": "<EXP_ROOT>/upstream/open_h3/upscaler_node.py",
+      "precision": "fp32",
+      "device": "cpu",
+      "scale": 2.0,
+      "normalization": "author node D(U(N(normalized_native_latent))); preserved exactly",
+      "seconds": 31.6115656606853
+    }
+  }
+}

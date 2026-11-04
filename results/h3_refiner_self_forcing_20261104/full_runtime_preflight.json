@@ -1,0 +1,59 @@
+{
+  "purpose": "base model compatibility preflight only; not the released refiner",
+  "world": 8,
+  "shape": [
+    24,
+    13,
+    24,
+    42
+  ],
+  "gradient_norm": 0.11938830465078354,
+  "loss": 1.0553998947143555,
+  "replay_max_abs": 0.0,
+  "peak_allocated_gb": 13.394983424,
+  "elapsed": 252.22111535072327,
+  "audit": {
+    "method": "one_step_block_self_forcing_prefix_recompute",
+    "blocks": 3,
+    "model_forwards": 3,
+    "steps_per_block": 1,
+    "sigma": 0.909375,
+    "clean_history_model_time": 1.0,
+    "current_model_time": 0.09062499999999996,
+    "gradient_blocks": [
+      2
+    ],
+    "self_generated_history": true,
+    "future_frames_exposed": 0,
+    "history_detached": true,
+    "block_records": [
+      {
+        "block_index": 0,
+        "current_start": 0,
+        "current_end": 5,
+        "history_frames": 0,
+        "prefix_frames": 5,
+        "gradient_enabled": false,
+        "history_detached": true
+      },
+      {
+        "block_index": 1,
+        "current_start": 5,
+        "current_end": 10,
+        "history_frames": 5,
+        "prefix_frames": 10,
+        "gradient_enabled": false,
+        "history_detached": true
+      },
+      {
+        "block_index": 2,
+        "current_start": 10,
+        "current_end": 13,
+        "history_frames": 10,
+        "prefix_frames": 13,
+        "gradient_enabled": true,
+        "history_detached": true
+      }
+    ]
+  }
+}
