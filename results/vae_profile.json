@@ -1,0 +1,36 @@
+{
+  "decoder_params_m": 2423.5,
+  "modules": {
+    "proj_out": 11.9,
+    "rope": 8.4,
+    "norm_out": 4.3,
+    "proj_in": 4.1
+  },
+  "total_ms": 5945.5,
+  "scaling": [
+    {
+      "grid": "LR 16x28",
+      "latents": 5,
+      "frames": 17,
+      "ms": 422.0
+    },
+    {
+      "grid": "LR 16x28",
+      "latents": 10,
+      "frames": 34,
+      "ms": 842.6
+    },
+    {
+      "grid": "HR 48x84",
+      "latents": 5,
+      "frames": 17,
+      "ms": 5888.9
+    },
+    {
+      "grid": "HR 48x84",
+      "latents": 10,
+      "frames": 34,
+      "ms": 11770.0
+    }
+  ]
+}

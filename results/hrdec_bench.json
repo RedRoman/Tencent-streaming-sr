@@ -1,0 +1,86 @@
+[
+  {
+    "name": "w384 b2221",
+    "width": 384,
+    "blocks": [
+      2,
+      2,
+      2,
+      1
+    ],
+    "params_m": 6.56,
+    "ms": 81.7,
+    "fits": true,
+    "speedup": 71.5
+  },
+  {
+    "name": "w512 b4422",
+    "width": 512,
+    "blocks": [
+      4,
+      4,
+      2,
+      2
+    ],
+    "params_m": 14.52,
+    "ms": 150.6,
+    "fits": true,
+    "speedup": 38.8
+  },
+  {
+    "name": "w512 b6632",
+    "width": 512,
+    "blocks": [
+      6,
+      6,
+      3,
+      2
+    ],
+    "params_m": 17.55,
+    "ms": 180.5,
+    "fits": true,
+    "speedup": 32.4
+  },
+  {
+    "name": "w768 b4422",
+    "width": 768,
+    "blocks": [
+      4,
+      4,
+      2,
+      2
+    ],
+    "params_m": 32.42,
+    "ms": 264.6,
+    "fits": true,
+    "speedup": 22.1
+  },
+  {
+    "name": "w768 b6642",
+    "width": 768,
+    "blocks": [
+      6,
+      6,
+      4,
+      2
+    ],
+    "params_m": 39.39,
+    "ms": 339.4,
+    "fits": true,
+    "speedup": 17.2
+  },
+  {
+    "name": "w1024 b4422",
+    "width": 1024,
+    "blocks": [
+      4,
+      4,
+      2,
+      2
+    ],
+    "params_m": 57.42,
+    "ms": 404.1,
+    "fits": true,
+    "speedup": 14.5
+  }
+]

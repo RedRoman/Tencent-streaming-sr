@@ -1,0 +1,100 @@
+
+2026-10-08T07:15:43.876214+00:00
+{
+  "passed": true,
+  "stages": [
+    {
+      "label": "torch",
+      "passed": true,
+      "value": {
+        "version": "2.7.1+cpu",
+        "file": "/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch/__init__.py"
+      },
+      "seconds": 4.562
+    },
+    {
+      "label": "torch_npu_normal_registration",
+      "passed": true,
+      "value": {
+        "version": "2.7.1.post2",
+        "file": "/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/__init__.py"
+      },
+      "seconds": 15.017
+    },
+    {
+      "label": "transformers",
+      "passed": true,
+      "value": {
+        "version": "5.15.0",
+        "file": "/home/ma-user/modelarts/user-job-dir/sol_h3/.venv/lib/python3.12/site-packages/transformers/__init__.py"
+      },
+      "seconds": 7.292
+    },
+    {
+      "label": "Qwen3VL_classes",
+      "passed": true,
+      "value": {
+        "Qwen3VLForConditionalGeneration": "transformers.models.qwen3_vl.modeling_qwen3_vl",
+        "Qwen3VLProcessor": "transformers.models.qwen3_vl.processing_qwen3_vl"
+      },
+      "seconds": 8.029
+    },
+    {
+      "label": "Diffusers_H3_VAE_classes",
+      "passed": true,
+      "value": {
+        "diffusers_version": "0.40.0.dev0",
+        "MiniMaxH3Transformer3DModel": "diffusers.models.transformers.transformer_minimax_h3",
+        "AutoencoderKLMiniMaxH3": "diffusers.models.autoencoders.autoencoder_kl_minimax_h3"
+      },
+      "seconds": 5.716
+    }
+  ],
+  "readonly_npu_query_calls_observed": [
+    "torch_npu.npu.is_initialized",
+    "torch_npu.npu.is_available",
+    "torch_npu.npu.device_count",
+    "torch_npu.npu.is_available",
+    "torch_npu.npu.device_count",
+    "torch_npu.npu.is_initialized"
+  ],
+  "forbidden_npu_calls_blocked": [],
+  "framework_readonly_availability_queries_allowed": true,
+  "package_functions_or_modules_mocked": false,
+  "torch_device_backend_autoload": "0",
+  "device_compute_requested": false,
+  "tensor_or_model_created": false,
+  "npu_is_initialized_before": null,
+  "npu_is_initialized_after": false,
+  "backend_state_after_torch": {
+    "privateuse1_backend": "privateuseone",
+    "torch_npu_module_loaded": false,
+    "torch_npu_npu_module_loaded": false,
+    "torch_npu_modules_count": 0,
+    "npu_is_initialized": null
+  },
+  "backend_state_after_torch_npu": {
+    "privateuse1_backend": "npu",
+    "torch_npu_module_loaded": true,
+    "torch_npu_npu_module_loaded": true,
+    "torch_npu_modules_count": 251,
+    "npu_is_initialized": false
+  },
+  "final_backend_state": {
+    "privateuse1_backend": "npu",
+    "torch_npu_module_loaded": true,
+    "torch_npu_npu_module_loaded": true,
+    "torch_npu_modules_count": 251,
+    "npu_is_initialized": false
+  },
+  "initialization_status_known": true,
+  "seconds": 40.619
+}
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2/aarch64-linux/ascend_toolkit_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2/aarch64-linux/ascend_toolkit_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")

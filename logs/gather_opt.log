@@ -1,0 +1,4 @@
+{"key_blocks_per_query": {"min": 2, "max": 75, "mean": 26.0}}
+[W1010 10:04:00.938828024 compiler_depend.ts:26] Warning: Warning: kernel [ArgSort] can not support dtype int32 or int64 on AiCore, Now this kernel is running on AiCpu.If you are more concerned about high-performance execution,please cast dtype to float32. (function operator())
+{"buckets": 2, "sizes": [12, 186]}
+{"mode": "bucketed_gather", "ms": 41.4, "x30": 1241.9, "speedup_vs_130": 3.2}

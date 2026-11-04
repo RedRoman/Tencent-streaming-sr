@@ -1,0 +1,17 @@
+{
+  "rows": [
+    {
+      "tag": "LR 5 frames",
+      "tokens": 560,
+      "attn_ms": 1.783,
+      "all_layers_ms": 89.2
+    },
+    {
+      "tag": "LR 5 + HR kf",
+      "tokens": 1568,
+      "attn_ms": 4.036,
+      "all_layers_ms": 201.8
+    }
+  ],
+  "increment_ms": 112.6
+}

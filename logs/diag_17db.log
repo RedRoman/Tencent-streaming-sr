@@ -1,0 +1,27 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 18.93it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 25.83it/s]
+dec (124, 768, 1344, 3)  src (124, 768, 1344, 3)
+dec mean 0.3134 std 0.3713 | src mean 0.3289 std 0.2756
+
+-- frame offset sweep (dec[t+o] vs src[t])
+   offset -4:  14.38 dB
+   offset -3:  14.80 dB
+   offset -2:  15.34 dB
+   offset -1:  16.14 dB
+   offset +0:  17.17 dB
+   offset +1:  16.14 dB
+   offset +2:  15.33 dB
+   offset +3:  14.77 dB
+   offset +4:  14.35 dB
+
+-- channel permutation (full overlap)
+   RGB:  17.17 dB
+   BGR:  12.51 dB
+   GRB:  14.01 dB
+
+-- per-frame PSNR, first and last few
+   first5 ['16.3', '16.4', '16.4', '16.4', '16.5']
+   last5  ['16.6', '16.6', '16.6', '16.6', '16.6']
+   min 16.3 @frame 0  max 17.8 @frame 36
+
+-- best affine rescale of dec onto src (fixes range/gamma mismatch)
+   scale 0.7068 bias +0.1074 ->  21.49 dB

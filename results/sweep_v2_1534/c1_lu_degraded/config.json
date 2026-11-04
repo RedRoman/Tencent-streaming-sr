@@ -1,0 +1,17 @@
+{
+  "chunk": 1,
+  "cond": "concat",
+  "learned_upsample": true,
+  "objective": "bridge",
+  "lr_source": "degraded",
+  "steps": 4000,
+  "frames_per_step": 40,
+  "lr": 0.0001,
+  "width": 512,
+  "time_taps": 5,
+  "seed": 42,
+  "out": "results/sweep_v2_1534/c1_lu_degraded",
+  "eval_every": 250,
+  "no_pretrained": false,
+  "batch": 40
+}

@@ -1,0 +1,11 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  9.49it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 13.41it/s]
+full decode: latents 37 -> pixels 124
+  win= 5 ov=0: pixels 119 vs 124 PSNR vs full =  34.03 dB
+  win= 5 ov=2: pixels 127 vs 124 PSNR vs full =   9.61 dB
+  win= 5 ov=4: pixels 145 vs 124 PSNR vs full =   8.16 dB
+  win= 9 ov=0: pixels 120 vs 124 PSNR vs full =  12.15 dB
+  win= 9 ov=2: pixels 126 vs 124 PSNR vs full =  12.51 dB
+  win= 9 ov=4: pixels 124 vs 124 PSNR vs full =  37.18 dB
+  win=13 ov=0: pixels 121 vs 124 PSNR vs full =  11.99 dB
+  win=13 ov=2: pixels 117 vs 124 PSNR vs full =  13.11 dB
+  win=13 ov=4: pixels 124 vs 124 PSNR vs full =  13.13 dB

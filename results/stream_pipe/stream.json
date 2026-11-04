@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "clip": "H3O20261001_0001",
+    "frames": 119,
+    "ttff_ms": 1228.1,
+    "wall_s": 6.24,
+    "video_s": 4.96,
+    "ms_per_frame": 52.43,
+    "realtime_x": 0.79,
+    "final_lead_s": -1.28,
+    "underruns": 7,
+    "mean_decode_ms": 424.0,
+    "mean_refine_ms": 131.2
+  },
+  "events": [
+    {
+      "chunk": 0,
+      "frames": 17,
+      "latents_ready_s": 0.67,
+      "decode_ms": 424.8,
+      "refine_ms": 132.9,
+      "wall_s": 1.27,
+      "video_s": 0.71,
+      "lead_s": -0.56,
+      "queue_depth": 0
+    },
+    {
+      "chunk": 1,
+      "frames": 34,
+      "latents_ready_s": 1.5,
+      "decode_ms": 422.9,
+      "refine_ms": 131.1,
+      "wall_s": 2.08,
+      "video_s": 1.42,
+      "lead_s": -0.66,
+      "queue_depth": 0
+    },
+    {
+      "chunk": 2,
+      "frames": 51,
+      "latents_ready_s": 2.33,
+      "decode_ms": 424.7,
+      "refine_ms": 130.9,
+      "wall_s": 2.91,
+      "video_s": 2.12,
+      "lead_s": -0.78,
+      "queue_depth": 0
+    },
+    {
+      "chunk": 3,
+      "frames": 68,
+      "latents_ready_s": 3.17,
+      "decode_ms": 426.9,
+      "refine_ms": 131.1,
+      "wall_s": 3.74,
+      "video_s": 2.83,
+      "lead_s": -0.91,
+      "queue_depth": 0
+    },
+    {
+      "chunk": 4,
+      "frames": 85,
+      "latents_ready_s": 4.0,
+      "decode_ms": 423.0,
+      "refine_ms": 130.7,
+      "wall_s": 4.57,
+      "video_s": 3.54,
+      "lead_s": -1.03,
+      "queue_depth": 0
+    },
+    {
+      "chunk": 5,
+      "frames": 102,
+      "latents_ready_s": 4.83,
+      "decode_ms": 422.0,
+      "refine_ms": 130.7,
+      "wall_s": 5.4,
+      "video_s": 4.25,
+      "lead_s": -1.15,
+      "queue_depth": 0
+    },
+    {
+      "chunk": 6,
+      "frames": 119,
+      "latents_ready_s": 5.67,
+      "decode_ms": 423.8,
+      "refine_ms": 130.9,
+      "wall_s": 6.23,
+      "video_s": 4.96,
+      "lead_s": -1.28,
+      "queue_depth": 1
+    }
+  ]
+}

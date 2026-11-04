@@ -1,0 +1,23 @@
+{
+  "ours": {
+    "psnr": 23.844,
+    "lpips": 0.218,
+    "flicker": 0.01305
+  },
+  "shuf_kf": {
+    "psnr": 20.975,
+    "lpips": 0.3716,
+    "flicker": 0.01673
+  },
+  "copy": {
+    "psnr": 11.935,
+    "lpips": 0.4107,
+    "flicker": 0.02363
+  },
+  "gt_flicker": 0.01413,
+  "reference": {
+    "ceiling_true_latent": 0.1449,
+    "shipping_pixel": 0.191,
+    "bicubic": 0.3178
+  }
+}

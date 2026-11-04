@@ -1,0 +1,12 @@
+There are modules in WanModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+{"tokens": 20160, "blocks": 66, "top_k": 1685}
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=True
+{"stage": "one_block_total", "ms": 140.94, "x30": 4228.3}
+{"stage": "self_attn_topk", "top_k": 1685, "ms": 130.44, "x30": 3913.1}
+{"stage": "self_attn_topk", "top_k": 198, "ms": 130.97, "x30": 3929.1}
+{"stage": "self_attn_topk", "top_k": 99, "ms": 130.85, "x30": 3925.6}
+{"stage": "self_attn_topk", "top_k": 40, "ms": 131.4, "x30": 3942.1}
+{"stage": "self_attn_topk", "top_k": 16, "ms": 131.58, "x30": 3947.4}
+{"stage": "self_attn", "ms": 130.78, "pct": 92.8}
+{"stage": "ffn", "ms": 4.98, "pct": 3.5}
+{"stage": "cross_attn", "ms": 2.72, "pct": 1.9}

@@ -1,0 +1,21 @@
+{
+  "window": 3,
+  "lr_source": "h3",
+  "width": 160,
+  "blocks": 20,
+  "temporal_taps": 1,
+  "steps": 20000,
+  "clips_per_step": 8,
+  "lr": 0.0002,
+  "seed": 42,
+  "lpips": 1.0,
+  "gan": 0.05,
+  "gan_temporal": 3,
+  "gan_start": 2000,
+  "d_lr": 0.0001,
+  "eval_every": 1000,
+  "out": "results/tgan_2310/temp",
+  "resume": null,
+  "taps": 1,
+  "params": 9266107
+}

@@ -1,0 +1,28 @@
+realtime budget: 166.7 ms per latent frame (4 pixel frames at 24 fps)
+
+== refiner
+{"stage": "refiner", "window": 1, "nfe": 1, "chunk_ms": 53.8, "ms_per_latent": 53.8, "realtime_x": 3.1, "ttff_ms": 53.8}
+{"stage": "refiner", "window": 1, "nfe": 2, "chunk_ms": 108.1, "ms_per_latent": 108.1, "realtime_x": 1.54, "ttff_ms": 108.1}
+{"stage": "refiner", "window": 1, "nfe": 4, "chunk_ms": 217.7, "ms_per_latent": 217.7, "realtime_x": 0.77, "ttff_ms": 217.7}
+{"stage": "refiner", "window": 1, "nfe": 8, "chunk_ms": 434.4, "ms_per_latent": 434.4, "realtime_x": 0.38, "ttff_ms": 434.4}
+{"stage": "refiner", "window": 5, "nfe": 1, "chunk_ms": 138.1, "ms_per_latent": 27.6, "realtime_x": 6.04, "ttff_ms": 804.7}
+{"stage": "refiner", "window": 5, "nfe": 2, "chunk_ms": 275.7, "ms_per_latent": 55.1, "realtime_x": 3.02, "ttff_ms": 942.4}
+{"stage": "refiner", "window": 5, "nfe": 4, "chunk_ms": 554.5, "ms_per_latent": 110.9, "realtime_x": 1.5, "ttff_ms": 1221.2}
+{"stage": "refiner", "window": 5, "nfe": 8, "chunk_ms": 1111.9, "ms_per_latent": 222.4, "realtime_x": 0.75, "ttff_ms": 1778.5}
+{"stage": "refiner", "window": 13, "nfe": 1, "chunk_ms": 362.3, "ms_per_latent": 27.9, "realtime_x": 5.98, "ttff_ms": 2362.3}
+{"stage": "refiner", "window": 13, "nfe": 2, "chunk_ms": 723.5, "ms_per_latent": 55.7, "realtime_x": 2.99, "ttff_ms": 2723.5}
+{"stage": "refiner", "window": 13, "nfe": 4, "chunk_ms": 1446.3, "ms_per_latent": 111.3, "realtime_x": 1.5, "ttff_ms": 3446.3}
+{"stage": "refiner", "window": 13, "nfe": 8, "chunk_ms": 2896.2, "ms_per_latent": 222.8, "realtime_x": 0.75, "ttff_ms": 4896.2}
+{"stage": "refiner", "window": 37, "nfe": 1, "chunk_ms": 770.0, "ms_per_latent": 20.8, "realtime_x": 8.01, "ttff_ms": 6770.0}
+{"stage": "refiner", "window": 37, "nfe": 2, "chunk_ms": 1541.3, "ms_per_latent": 41.7, "realtime_x": 4.0, "ttff_ms": 7541.3}
+{"stage": "refiner", "window": 37, "nfe": 4, "chunk_ms": 3087.5, "ms_per_latent": 83.4, "realtime_x": 2.0, "ttff_ms": 9087.5}
+{"stage": "refiner", "window": 37, "nfe": 8, "chunk_ms": 6169.1, "ms_per_latent": 166.7, "realtime_x": 1.0, "ttff_ms": 12169.1}
+
+== native VAE decoder
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  9.89it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  9.05it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 12.97it/s]
+{"stage": "vae_decode", "window": 1, "error": "torch.cat(): expected a non-empty list of Tensors"}
+{"stage": "vae_decode", "window": 5, "pixel_frames": 17, "chunk_ms": 11782.2, "ms_per_latent": 2356.4, "realtime_x": 0.07, "peak_gib": 11.33}
+{"stage": "vae_decode", "window": 13, "pixel_frames": 43, "chunk_ms": 35340.7, "ms_per_latent": 2718.5, "realtime_x": 0.06, "peak_gib": 12.57}
+{"stage": "vae_decode", "window": 37, "pixel_frames": 124, "chunk_ms": 41021.4, "ms_per_latent": 1108.7, "realtime_x": 0.15, "peak_gib": 14.66}
+
+wrote results/latency/latency.json

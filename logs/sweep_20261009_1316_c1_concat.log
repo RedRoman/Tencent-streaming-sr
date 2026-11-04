@@ -1,0 +1,89 @@
+train 736 val 64 clips
+seeded from upscaler: 322 keys loaded, 0 skipped
+params 345.6M  chunk=1 batch=40 (40 frames/step) cond=concat taps=5
+{"step": 1, "loss": 8.58036, "grad_norm": 15.57, "lr": 4e-06, "peak_gib": 9.64, "elapsed": 4.0}
+{"step": 50, "loss": 5.05384, "grad_norm": 6.926, "lr": 1.82e-05, "peak_gib": 12.92, "elapsed": 113.9}
+{"step": 100, "loss": 1.97235, "grad_norm": 0.766, "lr": 5.24e-05, "peak_gib": 12.92, "elapsed": 224.3}
+{"step": 150, "loss": 1.4761, "grad_norm": 0.931, "lr": 8.63e-05, "peak_gib": 12.92, "elapsed": 334.2}
+{"step": 200, "loss": 1.1038, "grad_norm": 0.738, "lr": 0.0001, "peak_gib": 12.92, "elapsed": 443.9}
+{"step": 250, "loss": 0.90644, "grad_norm": 1.054, "lr": 0.0001, "peak_gib": 12.92, "elapsed": 553.8}
+{"step": 250, "val_velocity_mse": 0.90827, "val_latent_psnr": 7.442, "elapsed": 556.8}
+{"step": 300, "loss": 0.79489, "grad_norm": 0.788, "lr": 9.98e-05, "peak_gib": 12.92, "elapsed": 673.5}
+{"step": 350, "loss": 0.74608, "grad_norm": 1.486, "lr": 9.96e-05, "peak_gib": 12.92, "elapsed": 783.6}
+{"step": 400, "loss": 0.71174, "grad_norm": 0.923, "lr": 9.93e-05, "peak_gib": 12.92, "elapsed": 893.7}
+{"step": 450, "loss": 0.65066, "grad_norm": 1.133, "lr": 9.89e-05, "peak_gib": 12.92, "elapsed": 1004.1}
+{"step": 500, "loss": 0.57583, "grad_norm": 0.848, "lr": 9.85e-05, "peak_gib": 12.92, "elapsed": 1114.3}
+{"step": 500, "val_velocity_mse": 0.64171, "val_latent_psnr": 10.255, "elapsed": 1116.5}
+{"step": 550, "loss": 0.64009, "grad_norm": 0.991, "lr": 9.79e-05, "peak_gib": 12.92, "elapsed": 1234.1}
+{"step": 600, "loss": 0.64064, "grad_norm": 0.695, "lr": 9.73e-05, "peak_gib": 12.92, "elapsed": 1344.4}
+{"step": 650, "loss": 0.61635, "grad_norm": 1.678, "lr": 9.66e-05, "peak_gib": 12.92, "elapsed": 1454.6}
+{"step": 700, "loss": 0.48427, "grad_norm": 0.75, "lr": 9.58e-05, "peak_gib": 12.92, "elapsed": 1564.5}
+{"step": 750, "loss": 0.59015, "grad_norm": 0.803, "lr": 9.49e-05, "peak_gib": 12.92, "elapsed": 1674.5}
+{"step": 750, "val_velocity_mse": 0.5378, "val_latent_psnr": 9.152, "elapsed": 1676.6}
+{"step": 800, "loss": 0.54231, "grad_norm": 0.704, "lr": 9.4e-05, "peak_gib": 12.92, "elapsed": 1790.4}
+{"step": 850, "loss": 0.60932, "grad_norm": 0.813, "lr": 9.29e-05, "peak_gib": 12.92, "elapsed": 1900.1}
+{"step": 900, "loss": 0.54419, "grad_norm": 0.794, "lr": 9.19e-05, "peak_gib": 12.92, "elapsed": 2010.3}
+{"step": 950, "loss": 0.5029, "grad_norm": 0.991, "lr": 9.07e-05, "peak_gib": 12.92, "elapsed": 2120.1}
+{"step": 1000, "loss": 0.51487, "grad_norm": 0.65, "lr": 8.95e-05, "peak_gib": 12.92, "elapsed": 2230.3}
+{"step": 1000, "val_velocity_mse": 0.51655, "val_latent_psnr": 10.186, "elapsed": 2232.4}
+{"step": 1050, "loss": 0.56453, "grad_norm": 0.864, "lr": 8.82e-05, "peak_gib": 12.92, "elapsed": 2346.4}
+{"step": 1100, "loss": 0.51097, "grad_norm": 0.605, "lr": 8.68e-05, "peak_gib": 12.92, "elapsed": 2456.3}
+{"step": 1150, "loss": 0.54488, "grad_norm": 0.778, "lr": 8.54e-05, "peak_gib": 12.92, "elapsed": 2566.4}
+{"step": 1200, "loss": 0.4615, "grad_norm": 0.85, "lr": 8.39e-05, "peak_gib": 12.92, "elapsed": 2676.6}
+{"step": 1250, "loss": 0.49708, "grad_norm": 0.76, "lr": 8.23e-05, "peak_gib": 12.92, "elapsed": 2786.8}
+{"step": 1250, "val_velocity_mse": 0.53226, "val_latent_psnr": 11.556, "elapsed": 2788.8}
+{"step": 1300, "loss": 0.46527, "grad_norm": 0.831, "lr": 8.07e-05, "peak_gib": 12.92, "elapsed": 2907.3}
+{"step": 1350, "loss": 0.49221, "grad_norm": 0.655, "lr": 7.91e-05, "peak_gib": 12.92, "elapsed": 3017.4}
+{"step": 1400, "loss": 0.54119, "grad_norm": 0.636, "lr": 7.74e-05, "peak_gib": 12.92, "elapsed": 3127.6}
+{"step": 1450, "loss": 0.51852, "grad_norm": 0.501, "lr": 7.56e-05, "peak_gib": 12.92, "elapsed": 3238.0}
+{"step": 1500, "loss": 0.45046, "grad_norm": 0.738, "lr": 7.38e-05, "peak_gib": 12.92, "elapsed": 3348.0}
+{"step": 1500, "val_velocity_mse": 0.48261, "val_latent_psnr": 10.66, "elapsed": 3350.1}
+{"step": 1550, "loss": 0.45824, "grad_norm": 0.53, "lr": 7.2e-05, "peak_gib": 12.92, "elapsed": 3464.1}
+{"step": 1600, "loss": 0.53871, "grad_norm": 0.65, "lr": 7.01e-05, "peak_gib": 12.92, "elapsed": 3574.7}
+{"step": 1650, "loss": 0.46006, "grad_norm": 0.507, "lr": 6.82e-05, "peak_gib": 12.92, "elapsed": 3684.9}
+{"step": 1700, "loss": 0.42192, "grad_norm": 0.593, "lr": 6.63e-05, "peak_gib": 12.92, "elapsed": 3795.3}
+{"step": 1750, "loss": 0.45385, "grad_norm": 0.478, "lr": 6.43e-05, "peak_gib": 12.92, "elapsed": 3905.4}
+{"step": 1750, "val_velocity_mse": 0.41366, "val_latent_psnr": 9.728, "elapsed": 3907.5}
+{"step": 1800, "loss": 0.50836, "grad_norm": 0.56, "lr": 6.23e-05, "peak_gib": 12.92, "elapsed": 4021.6}
+{"step": 1850, "loss": 0.45728, "grad_norm": 0.418, "lr": 6.03e-05, "peak_gib": 12.92, "elapsed": 4131.7}
+{"step": 1900, "loss": 0.47992, "grad_norm": 0.535, "lr": 5.83e-05, "peak_gib": 12.92, "elapsed": 4241.7}
+{"step": 1950, "loss": 0.47099, "grad_norm": 0.548, "lr": 5.62e-05, "peak_gib": 12.92, "elapsed": 4351.8}
+{"step": 2000, "loss": 0.42376, "grad_norm": 0.579, "lr": 5.42e-05, "peak_gib": 12.92, "elapsed": 4462.1}
+{"step": 2000, "val_velocity_mse": 0.5053, "val_latent_psnr": 11.922, "elapsed": 4464.2}
+{"step": 2050, "loss": 0.45286, "grad_norm": 0.557, "lr": 5.21e-05, "peak_gib": 12.92, "elapsed": 4581.8}
+{"step": 2100, "loss": 0.48099, "grad_norm": 0.463, "lr": 5.01e-05, "peak_gib": 12.92, "elapsed": 4692.2}
+{"step": 2150, "loss": 0.4853, "grad_norm": 0.54, "lr": 4.8e-05, "peak_gib": 12.92, "elapsed": 4802.4}
+{"step": 2200, "loss": 0.42398, "grad_norm": 0.418, "lr": 4.59e-05, "peak_gib": 12.92, "elapsed": 4912.6}
+{"step": 2250, "loss": 0.49581, "grad_norm": 0.491, "lr": 4.39e-05, "peak_gib": 12.92, "elapsed": 5023.0}
+{"step": 2250, "val_velocity_mse": 0.44582, "val_latent_psnr": 10.764, "elapsed": 5025.2}
+{"step": 2300, "loss": 0.4385, "grad_norm": 0.65, "lr": 4.18e-05, "peak_gib": 12.92, "elapsed": 5140.7}
+{"step": 2350, "loss": 0.44037, "grad_norm": 0.403, "lr": 3.98e-05, "peak_gib": 12.92, "elapsed": 5250.8}
+{"step": 2400, "loss": 0.46281, "grad_norm": 0.414, "lr": 3.78e-05, "peak_gib": 12.92, "elapsed": 5361.0}
+{"step": 2450, "loss": 0.39809, "grad_norm": 0.506, "lr": 3.58e-05, "peak_gib": 12.92, "elapsed": 5471.0}
+{"step": 2500, "loss": 0.45371, "grad_norm": 0.478, "lr": 3.39e-05, "peak_gib": 12.92, "elapsed": 5581.2}
+{"step": 2500, "val_velocity_mse": 0.47112, "val_latent_psnr": 11.664, "elapsed": 5583.2}
+{"step": 2550, "loss": 0.44698, "grad_norm": 0.358, "lr": 3.19e-05, "peak_gib": 12.92, "elapsed": 5697.3}
+{"step": 2600, "loss": 0.436, "grad_norm": 0.374, "lr": 3e-05, "peak_gib": 12.92, "elapsed": 5807.4}
+{"step": 2650, "loss": 0.39089, "grad_norm": 0.392, "lr": 2.81e-05, "peak_gib": 12.92, "elapsed": 5917.8}
+{"step": 2700, "loss": 0.45122, "grad_norm": 0.355, "lr": 2.63e-05, "peak_gib": 12.92, "elapsed": 6028.1}
+{"step": 2750, "loss": 0.52109, "grad_norm": 0.361, "lr": 2.45e-05, "peak_gib": 12.92, "elapsed": 6139.4}
+{"step": 2750, "val_velocity_mse": 0.44551, "val_latent_psnr": 11.13, "elapsed": 6141.6}
+{"step": 2800, "loss": 0.48638, "grad_norm": 0.376, "lr": 2.28e-05, "peak_gib": 12.92, "elapsed": 6257.3}
+{"step": 2850, "loss": 0.46115, "grad_norm": 0.305, "lr": 2.11e-05, "peak_gib": 12.92, "elapsed": 6368.0}
+{"step": 2900, "loss": 0.44728, "grad_norm": 0.288, "lr": 1.94e-05, "peak_gib": 12.92, "elapsed": 6478.8}
+{"step": 2950, "loss": 0.45093, "grad_norm": 0.266, "lr": 1.78e-05, "peak_gib": 12.92, "elapsed": 6589.5}
+{"step": 3000, "loss": 0.42497, "grad_norm": 0.323, "lr": 1.63e-05, "peak_gib": 12.92, "elapsed": 6700.3}
+{"step": 3000, "val_velocity_mse": 0.42579, "val_latent_psnr": 11.007, "elapsed": 6702.5}
+{"step": 3050, "loss": 0.3944, "grad_norm": 0.313, "lr": 1.48e-05, "peak_gib": 12.92, "elapsed": 6817.8}
+{"step": 3100, "loss": 0.46395, "grad_norm": 0.362, "lr": 1.34e-05, "peak_gib": 12.92, "elapsed": 6927.9}
+{"step": 3150, "loss": 0.39009, "grad_norm": 0.304, "lr": 1.2e-05, "peak_gib": 12.92, "elapsed": 7038.3}
+{"step": 3200, "loss": 0.37347, "grad_norm": 0.321, "lr": 1.07e-05, "peak_gib": 12.92, "elapsed": 7148.7}
+{"step": 3250, "loss": 0.47137, "grad_norm": 0.225, "lr": 9.5e-06, "peak_gib": 12.92, "elapsed": 7259.0}
+{"step": 3250, "val_velocity_mse": 0.43308, "val_latent_psnr": 10.814, "elapsed": 7261.1}
+{"step": 3300, "loss": 0.47916, "grad_norm": 0.192, "lr": 8.3e-06, "peak_gib": 12.92, "elapsed": 7375.4}
+{"step": 3350, "loss": 0.47797, "grad_norm": 0.216, "lr": 7.2e-06, "peak_gib": 12.92, "elapsed": 7485.5}
+{"step": 3400, "loss": 0.4171, "grad_norm": 0.214, "lr": 6.2e-06, "peak_gib": 12.92, "elapsed": 7596.1}
+{"step": 3450, "loss": 0.51195, "grad_norm": 0.293, "lr": 5.3e-06, "peak_gib": 12.92, "elapsed": 7706.5}
+{"step": 3500, "loss": 0.47102, "grad_norm": 0.228, "lr": 4.4e-06, "peak_gib": 12.92, "elapsed": 7817.2}
+{"step": 3500, "val_velocity_mse": 0.45569, "val_latent_psnr": 10.98, "elapsed": 7819.3}
+{"step": 3550, "loss": 0.4802, "grad_norm": 0.212, "lr": 3.6e-06, "peak_gib": 12.92, "elapsed": 7935.2}

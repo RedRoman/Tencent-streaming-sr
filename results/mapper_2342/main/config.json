@@ -1,0 +1,12 @@
+{
+  "steps": 20000,
+  "batch": 4,
+  "lr": 0.0002,
+  "train_upsampler": false,
+  "init": "joint",
+  "seed": 42,
+  "eval_every": 1000,
+  "out": "results/mapper_2342/main",
+  "resume": null,
+  "no_pixel_eval": false
+}

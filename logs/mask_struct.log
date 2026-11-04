@@ -1,0 +1,10 @@
+There are modules in WanModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=True
+{"q": [198, 128, 1536], "k": [198, 128, 1536], "mask": [1, 12, 198, 198], "heads": 12}
+{"mask_shape": [1, 12, 198, 198], "density": 0.131, "heads_identical": false}
+{"spatial_blocks": 66, "temporal_q": 3, "temporal_k": 3}
+temporal block pattern (rows=query chunk, cols=key chunk):
+    [1, 0, 0]
+    [1, 1, 0]
+    [1, 1, 1]
+{"separable": false, "spatial_density": 0.3985}

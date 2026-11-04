@@ -1,0 +1,21 @@
+{
+  "stage1": "results/latsr_2200/w256/best.pt",
+  "decoder": "results/hrdec_1200/s768/best.pt",
+  "width": 256,
+  "blocks": 12,
+  "crop": 16,
+  "kf_chunks": 2,
+  "batch": 6,
+  "steps": 20000,
+  "lr": 0.0002,
+  "pixel": 1.0,
+  "lpips": 1.0,
+  "cond_noise": 0.3,
+  "src_sigma": 0.25,
+  "nfe": 2,
+  "eval_every": 1000,
+  "seed": 42,
+  "resume": null,
+  "out": "results/latflow2_1030/s025",
+  "params": 16149272
+}

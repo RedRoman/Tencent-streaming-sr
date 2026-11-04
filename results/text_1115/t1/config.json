@@ -1,0 +1,22 @@
+{
+  "window": 1,
+  "text": 1,
+  "lr_source": "h3",
+  "width": 160,
+  "blocks": 20,
+  "temporal_taps": 0,
+  "steps": 40000,
+  "clips_per_step": 48,
+  "lr": 0.0002,
+  "seed": 42,
+  "lpips": 1.0,
+  "gan": 0.0,
+  "gan_temporal": 0,
+  "gan_start": 2000,
+  "d_lr": 0.0001,
+  "eval_every": 2000,
+  "out": "results/text_1115/t1",
+  "resume": null,
+  "taps": 1,
+  "params": 10659323
+}

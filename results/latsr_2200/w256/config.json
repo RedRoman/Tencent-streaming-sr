@@ -1,0 +1,17 @@
+{
+  "decoder": "results/hrdec_1200/s768/best.pt",
+  "width": 256,
+  "lr_blocks": 8,
+  "hr_blocks": 6,
+  "crop": 16,
+  "kf_chunks": 2,
+  "batch": 8,
+  "steps": 20000,
+  "lr": 0.0002,
+  "lpips": 1.0,
+  "eval_every": 1000,
+  "seed": 42,
+  "resume": null,
+  "out": "results/latsr_2200/w256",
+  "params": 23345304
+}

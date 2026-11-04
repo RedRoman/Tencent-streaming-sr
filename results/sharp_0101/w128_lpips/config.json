@@ -1,0 +1,17 @@
+{
+  "window": 1,
+  "lr_source": "h3",
+  "width": 128,
+  "blocks": 16,
+  "temporal_taps": 0,
+  "steps": 12000,
+  "clips_per_step": 24,
+  "lr": 0.0002,
+  "seed": 42,
+  "lpips": 0.1,
+  "eval_every": 1000,
+  "out": "results/sharp_0101/w128_lpips",
+  "resume": null,
+  "taps": 1,
+  "params": 4757659
+}

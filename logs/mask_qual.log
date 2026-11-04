@@ -1,0 +1,35 @@
+[E1010 10:01:12.405059659 compiler_depend.ts:444] operator():build/CMakeFiles/torch_npu.dir/compiler_depend.ts:1130 NPU function error: call aclnnFlashAttentionScore failed, error code is 561103
+[ERROR] 2026-10-10-10:01:12 (PID:1206581, Device:0, RankID:-1) ERR00100 PTA call acl api failed.
+EZ9999: Inner Error!
+EZ9999[PID: 1206581] 2026-10-10-10:01:12.243.381 (EZ9999):  get unsupported atten_mask shape, the shape is [1, 12, 198, 198]. B=[1], N=[12], Sq=[1024], Skv=[19998], supported atten_mask shape can be [B, N, Sq, Skv], [B, 1, Sq, Skv], [1, 1, Sq, Skv] and [Sq, Skv].[FUNC:AnalyzeOptionalInput][FILE:flash_attention_score_tiling_general.cpp][LINE:1606]
+        TraceBack (most recent call last):
+       fail to analyze context info.[FUNC:GetShapeAttrsInfo][FILE:flash_attention_score_tiling_general.cpp][LINE:873]
+       Tiling failed
+       Tiling Failed.
+       Kernel Run failed. opType: 8, FlashAttentionScore
+       launch failed for FlashAttentionScore, errno:561103.
+
+Exception raised from operator() at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:1130 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xd4 (0xffff790a0ea4 in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0xe4 (0xffff79040e44 in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x10e7164 (0xfffdc5780164 in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #3: <unknown function> + 0x295fea0 (0xfffdc6ff8ea0 in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #4: <unknown function> + 0x9d5df4 (0xfffdc506edf4 in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #5: <unknown function> + 0x9d87a0 (0xfffdc50717a0 in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #6: <unknown function> + 0x9d4a8c (0xfffdc506da8c in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #7: <unknown function> + 0xda294 (0xffff78eee294 in /home/ma-user/anaconda3/envs/PyTorch-2.7.1/bin/../lib/libstdc++.so.6)
+frame #8: <unknown function> + 0x81be8 (0xffff8559ebe8 in /usr/lib64/libc.so.6)
+frame #9: <unknown function> + 0xe919c (0xffff8560619c in /usr/lib64/libc.so.6)
+
+Traceback (most recent call last):
+  File "/home/ma-user/modelarts/user-job-dir/sol_h3/probe_mask_quality.py", line 65, in <module>
+    main()
+  File "/home/ma-user/modelarts/user-job-dir/sol_h3/probe_mask_quality.py", line 42, in main
+    t_allow[qi, ki] = True
+    ~~~~~~~^^^^^^^^
+RuntimeError: The Inner error is reported as above. The process exits for this inner error, and the current working operator name is aclnnFlashAttentionScore.
+Since the operator is called asynchronously, the stacktrace may be inaccurate. If you want to get the accurate stacktrace, please set the environment variable ASCEND_LAUNCH_BLOCKING=1.
+Note: ASCEND_LAUNCH_BLOCKING=1 will force ops to run in synchronous mode, resulting in performance degradation. Please unset ASCEND_LAUNCH_BLOCKING in time after debugging.
+[ERROR] 2026-10-10-10:01:12 (PID:1206581, Device:0, RankID:-1) ERR00100 PTA call acl api failed.
+
+free(): invalid pointer

@@ -1,0 +1,20 @@
+{
+  "window": 1,
+  "lr_source": "h3",
+  "width": 256,
+  "blocks": 24,
+  "temporal_taps": 0,
+  "steps": 40000,
+  "clips_per_step": 8,
+  "lr": 0.0002,
+  "seed": 42,
+  "lpips": 1.0,
+  "gan": 0.0,
+  "gan_start": 2000,
+  "d_lr": 0.0001,
+  "eval_every": 2000,
+  "out": "results/cap_2230/w256x24",
+  "resume": null,
+  "taps": 1,
+  "params": 28393755
+}

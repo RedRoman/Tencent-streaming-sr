@@ -1,0 +1,4 @@
+{"stage": "fused_dense_attention_1layer", "ms": 19.51, "tflops": 128.0}
+{"stage": "ffn_1layer", "ms": 4.98, "tflops": 222.9}
+{"stage": "qkv_out_proj_1layer", "ms": 1.44}
+{"stage": "projected_30_layers_fused_dense", "ms_per_layer": 25.93, "ms_total": 777.8, "vs_measured_4227": 5.4, "budget_ms": 231}

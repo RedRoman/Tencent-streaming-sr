@@ -1,0 +1,3 @@
+{"tokens": 20160, "blocks": 198, "tokens_per_block": 101, "dense_mask_elems": "4.88G", "dense_mask_gib": 4.54}
+{"stage": "fused_attention_no_mask", "ms": 19.38, "x30": 581.5}
+{"stage": "mask_materialization_only", "ms": 34.78, "x30": 1043.5}

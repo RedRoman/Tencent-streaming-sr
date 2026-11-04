@@ -1,0 +1,20 @@
+{
+  "window": 1,
+  "lr_source": "h3",
+  "width": 160,
+  "blocks": 20,
+  "temporal_taps": 0,
+  "steps": 14000,
+  "clips_per_step": 16,
+  "lr": 0.0002,
+  "seed": 42,
+  "lpips": 1.0,
+  "gan": 0.05,
+  "gan_start": 2000,
+  "d_lr": 0.0001,
+  "eval_every": 1000,
+  "out": "results/gan_0121/gan005",
+  "resume": null,
+  "taps": 1,
+  "params": 9266107
+}

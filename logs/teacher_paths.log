@@ -1,0 +1,103 @@
+There are modules in WanModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=True, grid=(2, 48, 84), sparse_block_size=(2, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+{"cfg": "blk(2,8,8) chunk2", "frames": 2, "stream": true, "identity_psnr": 6.67, "out_std": 1.103, "ref_std": 0.876}
+{"cfg": "blk(2,8,8) chunk2", "frames": 2, "stream": false, "identity_psnr": 6.67, "out_std": 1.103, "ref_std": 0.876}
+{"cfg": "blk(2,8,8) chunk2", "frames": 4, "stream": true, "identity_psnr": 5.91, "out_std": 1.276, "ref_std": 1.045}
+{"cfg": "blk(2,8,8) chunk2", "frames": 4, "stream": false, "identity_psnr": 5.91, "out_std": 1.276, "ref_std": 1.045}
+{"cfg": "blk(2,8,8) chunk2", "frames": 5, "stream": true, "identity_psnr": 5.74, "out_std": 1.32, "ref_std": 1.089}
+{"cfg": "blk(2,8,8) chunk2", "frames": 5, "stream": false, "identity_psnr": 5.74, "out_std": 1.32, "ref_std": 1.089}
+{"cfg": "blk(2,8,8) chunk2", "frames": 7, "stream": true, "identity_psnr": 5.8, "out_std": 1.261, "ref_std": 1.032}
+{"cfg": "blk(2,8,8) chunk2", "frames": 7, "stream": false, "identity_psnr": 5.8, "out_std": 1.261, "ref_std": 1.032}
+There are modules in WanModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(2, 8, 8), pad=(1, 0, 4), use_sparse_attn=True, sparse_causal=False
+{"cfg": "non_causal", "frames": 5, "stream": false, "identity_psnr": 5.45, "out_std": 1.315}
+There are modules in WanModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+[SparseDebug] grid needs padding: is_stream=False, grid=(5, 48, 84), sparse_block_size=(1, 8, 8), pad=(0, 0, 4), use_sparse_attn=True, sparse_causal=True
+{"cfg": "blk(1,8,8) chunk1", "frames": 5, "stream": false, "identity_psnr": 5.61, "out_std": 1.33}

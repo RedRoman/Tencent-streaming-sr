@@ -1,0 +1,11 @@
+{
+  "latents": 20,
+  "steps": 30000,
+  "batch": 2,
+  "lr": 0.0003,
+  "lpips": 0.0,
+  "init": "pretrained",
+  "seed": 42,
+  "eval_every": 1000,
+  "out": "results/tae2_1839/T20_l1"
+}

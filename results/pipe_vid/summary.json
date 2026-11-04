@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "ckpt": "results/pipe_test/best.pt",
+    "step": 1500,
+    "window": 1,
+    "taps": 1,
+    "lr_source": "h3",
+    "params": null,
+    "clips": 3,
+    "psnr": 25.3603,
+    "psnr_bicubic": 24.8747,
+    "ssim": 0.8416,
+    "ssim_bicubic": 0.8357,
+    "flicker": 0.0275,
+    "flicker_gt": 0.03,
+    "flicker_bicubic": 0.0291,
+    "ms_per_frame": 59.6533,
+    "realtime_x": 1.67,
+    "gain_psnr": 0.4857
+  },
+  "rows": [
+    {
+      "clip": "H3O20261001_0118",
+      "frames": 124,
+      "psnr": 27.197,
+      "psnr_bicubic": 26.598,
+      "ssim": 0.8794,
+      "ssim_bicubic": 0.873,
+      "flicker": 0.01673,
+      "flicker_gt": 0.01941,
+      "flicker_bicubic": 0.01808,
+      "ms_per_frame": 143.62,
+      "realtime_x": 0.29,
+      "gain_psnr": 0.599
+    },
+    {
+      "clip": "H3O20261001_0173",
+      "frames": 124,
+      "psnr": 22.623,
+      "psnr_bicubic": 22.256,
+      "ssim": 0.8449,
+      "ssim_bicubic": 0.8376,
+      "flicker": 0.06115,
+      "flicker_gt": 0.06438,
+      "flicker_bicubic": 0.06268,
+      "ms_per_frame": 17.8,
+      "realtime_x": 2.34,
+      "gain_psnr": 0.367
+    },
+    {
+      "clip": "H3O20261001_0042",
+      "frames": 124,
+      "psnr": 26.261,
+      "psnr_bicubic": 25.77,
+      "ssim": 0.8004,
+      "ssim_bicubic": 0.7964,
+      "flicker": 0.00466,
+      "flicker_gt": 0.0061,
+      "flicker_bicubic": 0.00647,
+      "ms_per_frame": 17.54,
+      "realtime_x": 2.38,
+      "gain_psnr": 0.491
+    }
+  ]
+}

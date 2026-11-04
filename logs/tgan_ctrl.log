@@ -1,0 +1,374 @@
+train 776 val 24 clips  window=3 taps=1 lr_source=h3
+params 9.27M
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Warning: since the loaded file is not a zipfile, only "torch.device" and "str" type parameters are currently supported for parameter types of map_location. If parameter types of map_location is "Callable[[torch.Tensor, str], torch.Tensor]" or "Dict[str, str]", which is only support for zipfile, all tensors are currently loaded onto the CPU, which may introduce problems.
+Loading model from: /home/ma-user/modelarts/user-job-dir/sol_h3/.venv/lib/python3.12/site-packages/lpips/weights/v0.1/vgg.pth
+LPIPS enabled, weight 1.0
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/classifier/transdata/transdata_classifier.py:222: SyntaxWarning: invalid escape sequence '\B'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:143: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/tbe/dsl/unify_schedule/vector/transdata/common/graph/transdata_graph_info.py:170: SyntaxWarning: invalid escape sequence '\c'
+  """
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+/usr/local/Ascend/cann-8.5.2/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_gen_code.py:161: SyntaxWarning: invalid escape sequence '\w'
+  match = re.search(f'{option}=(\w+)', ' '.join(compile_options))
+.{"step": 1, "loss": 0.28476, "grad_norm": 3.366, "peak_gib": 4.52, "elapsed": 23.4}
+{"step": 100, "loss": 0.26499, "grad_norm": 3.108, "peak_gib": 4.63, "elapsed": 33.0}
+{"step": 200, "loss": 0.20068, "grad_norm": 2.141, "peak_gib": 4.63, "elapsed": 42.6}
+{"step": 300, "loss": 0.24868, "grad_norm": 1.641, "peak_gib": 4.63, "elapsed": 52.4}
+{"step": 400, "loss": 0.31801, "grad_norm": 2.462, "peak_gib": 4.63, "elapsed": 62.1}
+{"step": 500, "loss": 0.31019, "grad_norm": 2.779, "peak_gib": 4.63, "elapsed": 71.9}
+{"step": 600, "loss": 0.24197, "grad_norm": 0.754, "peak_gib": 4.63, "elapsed": 81.7}
+{"step": 700, "loss": 0.32911, "grad_norm": 0.78, "peak_gib": 4.63, "elapsed": 91.5}
+{"step": 800, "loss": 0.25134, "grad_norm": 0.637, "peak_gib": 4.63, "elapsed": 101.4}
+{"step": 900, "loss": 0.25211, "grad_norm": 0.295, "peak_gib": 4.63, "elapsed": 111.2}
+{"step": 1000, "loss": 0.17719, "grad_norm": 0.406, "peak_gib": 4.63, "elapsed": 121.0}
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/ma-user/modelarts/user-job-dir/sol_h3/.venv/lib/python3.12/site-packages/lpips/weights/v0.1/vgg.pth
+.{"step": 1000, "val_psnr": 25.961, "bicubic_psnr": 25.892, "gain": 0.069, "elapsed": 129.0, "val_lpips": 0.2228, "lpips_bicubic": 0.26, "lpips_gain": 0.0372}
+{"step": 1100, "loss": 0.28949, "grad_norm": 0.432, "peak_gib": 4.75, "elapsed": 138.9}
+{"step": 1200, "loss": 0.22567, "grad_norm": 0.242, "peak_gib": 4.75, "elapsed": 148.6}
+{"step": 1300, "loss": 0.22544, "grad_norm": 0.594, "peak_gib": 4.75, "elapsed": 158.2}
+{"step": 1400, "loss": 0.2253, "grad_norm": 0.231, "peak_gib": 4.75, "elapsed": 167.9}
+{"step": 1500, "loss": 0.19608, "grad_norm": 0.368, "peak_gib": 4.75, "elapsed": 177.6}
+{"step": 1600, "loss": 0.27913, "grad_norm": 0.283, "peak_gib": 4.75, "elapsed": 187.2}
+{"step": 1700, "loss": 0.21335, "grad_norm": 0.194, "peak_gib": 4.75, "elapsed": 196.9}
+{"step": 1800, "loss": 0.21279, "grad_norm": 0.202, "peak_gib": 4.75, "elapsed": 206.5}
+{"step": 1900, "loss": 0.19437, "grad_norm": 0.226, "peak_gib": 4.75, "elapsed": 216.2}
+{"step": 2000, "loss": 0.23579, "grad_norm": 0.256, "peak_gib": 4.75, "elapsed": 225.9}
+{"step": 2000, "val_psnr": 26.094, "bicubic_psnr": 25.892, "gain": 0.202, "elapsed": 226.8, "val_lpips": 0.2138, "lpips_bicubic": 0.26, "lpips_gain": 0.0462}
+{"step": 2100, "loss": 0.22007, "grad_norm": 0.285, "peak_gib": 4.75, "elapsed": 236.9}
+{"step": 2200, "loss": 0.20117, "grad_norm": 0.443, "peak_gib": 4.75, "elapsed": 246.6}
+{"step": 2300, "loss": 0.21506, "grad_norm": 0.225, "peak_gib": 4.75, "elapsed": 256.3}
+{"step": 2400, "loss": 0.18323, "grad_norm": 0.298, "peak_gib": 4.75, "elapsed": 266.1}
+{"step": 2500, "loss": 0.21894, "grad_norm": 0.348, "peak_gib": 4.75, "elapsed": 275.8}
+{"step": 2600, "loss": 0.31289, "grad_norm": 0.519, "peak_gib": 4.75, "elapsed": 285.5}
+{"step": 2700, "loss": 0.19506, "grad_norm": 0.276, "peak_gib": 4.75, "elapsed": 295.3}
+{"step": 2800, "loss": 0.23446, "grad_norm": 0.257, "peak_gib": 4.75, "elapsed": 305.0}
+{"step": 2900, "loss": 0.26554, "grad_norm": 0.235, "peak_gib": 4.75, "elapsed": 314.7}
+{"step": 3000, "loss": 0.26911, "grad_norm": 0.161, "peak_gib": 4.75, "elapsed": 324.4}
+{"step": 3000, "val_psnr": 26.153, "bicubic_psnr": 25.892, "gain": 0.261, "elapsed": 325.2, "val_lpips": 0.2092, "lpips_bicubic": 0.26, "lpips_gain": 0.0507}
+{"step": 3100, "loss": 0.28666, "grad_norm": 0.316, "peak_gib": 4.75, "elapsed": 335.2}
+{"step": 3200, "loss": 0.23431, "grad_norm": 0.212, "peak_gib": 4.75, "elapsed": 344.9}
+{"step": 3300, "loss": 0.1608, "grad_norm": 0.221, "peak_gib": 4.75, "elapsed": 354.6}
+{"step": 3400, "loss": 0.21565, "grad_norm": 0.232, "peak_gib": 4.75, "elapsed": 364.3}
+{"step": 3500, "loss": 0.29604, "grad_norm": 0.311, "peak_gib": 4.75, "elapsed": 374.0}
+{"step": 3600, "loss": 0.21976, "grad_norm": 0.215, "peak_gib": 4.75, "elapsed": 383.8}
+{"step": 3700, "loss": 0.23134, "grad_norm": 0.29, "peak_gib": 4.75, "elapsed": 393.5}
+{"step": 3800, "loss": 0.16984, "grad_norm": 0.249, "peak_gib": 4.75, "elapsed": 403.2}
+{"step": 3900, "loss": 0.22107, "grad_norm": 0.2, "peak_gib": 4.75, "elapsed": 412.9}
+{"step": 4000, "loss": 0.28141, "grad_norm": 0.279, "peak_gib": 4.75, "elapsed": 422.6}
+{"step": 4000, "val_psnr": 26.208, "bicubic_psnr": 25.892, "gain": 0.317, "elapsed": 423.3, "val_lpips": 0.2065, "lpips_bicubic": 0.26, "lpips_gain": 0.0535}
+{"step": 4100, "loss": 0.25918, "grad_norm": 2.346, "peak_gib": 4.75, "elapsed": 433.3}
+{"step": 4200, "loss": 0.30402, "grad_norm": 0.374, "peak_gib": 4.75, "elapsed": 443.0}
+{"step": 4300, "loss": 0.15191, "grad_norm": 0.262, "peak_gib": 4.75, "elapsed": 452.7}
+{"step": 4400, "loss": 0.31664, "grad_norm": 0.252, "peak_gib": 4.75, "elapsed": 462.8}
+{"step": 4500, "loss": 0.14933, "grad_norm": 0.317, "peak_gib": 4.75, "elapsed": 472.5}
+{"step": 4600, "loss": 0.32251, "grad_norm": 0.214, "peak_gib": 4.75, "elapsed": 482.2}
+{"step": 4700, "loss": 0.19085, "grad_norm": 0.192, "peak_gib": 4.75, "elapsed": 491.9}
+{"step": 4800, "loss": 0.20512, "grad_norm": 0.271, "peak_gib": 4.75, "elapsed": 501.7}
+{"step": 4900, "loss": 0.20882, "grad_norm": 0.313, "peak_gib": 4.75, "elapsed": 511.4}
+{"step": 5000, "loss": 0.20905, "grad_norm": 0.226, "peak_gib": 4.75, "elapsed": 521.1}
+{"step": 5000, "val_psnr": 26.246, "bicubic_psnr": 25.892, "gain": 0.355, "elapsed": 521.9, "val_lpips": 0.2073, "lpips_bicubic": 0.26, "lpips_gain": 0.0527}
+{"step": 5100, "loss": 0.32038, "grad_norm": 0.28, "peak_gib": 4.75, "elapsed": 531.7}
+{"step": 5200, "loss": 0.26148, "grad_norm": 0.564, "peak_gib": 4.75, "elapsed": 541.4}
+{"step": 5300, "loss": 0.25887, "grad_norm": 0.215, "peak_gib": 4.75, "elapsed": 551.1}
+{"step": 5400, "loss": 0.17155, "grad_norm": 0.418, "peak_gib": 4.75, "elapsed": 560.8}
+{"step": 5500, "loss": 0.21958, "grad_norm": 0.185, "peak_gib": 4.75, "elapsed": 570.5}
+{"step": 5600, "loss": 0.26681, "grad_norm": 0.223, "peak_gib": 4.75, "elapsed": 580.2}
+{"step": 5700, "loss": 0.19711, "grad_norm": 0.249, "peak_gib": 4.75, "elapsed": 589.8}
+{"step": 5800, "loss": 0.21611, "grad_norm": 0.283, "peak_gib": 4.75, "elapsed": 599.5}
+{"step": 5900, "loss": 0.22883, "grad_norm": 0.265, "peak_gib": 4.75, "elapsed": 609.2}
+{"step": 6000, "loss": 0.18681, "grad_norm": 0.234, "peak_gib": 4.75, "elapsed": 618.9}
+{"step": 6000, "val_psnr": 26.286, "bicubic_psnr": 25.892, "gain": 0.394, "elapsed": 619.7, "val_lpips": 0.2033, "lpips_bicubic": 0.26, "lpips_gain": 0.0567}
+{"step": 6100, "loss": 0.23265, "grad_norm": 0.239, "peak_gib": 4.75, "elapsed": 629.6}
+{"step": 6200, "loss": 0.19228, "grad_norm": 0.799, "peak_gib": 4.75, "elapsed": 639.3}
+{"step": 6300, "loss": 0.23386, "grad_norm": 0.288, "peak_gib": 4.75, "elapsed": 649.0}
+{"step": 6400, "loss": 0.14535, "grad_norm": 0.287, "peak_gib": 4.75, "elapsed": 658.7}
+{"step": 6500, "loss": 0.33031, "grad_norm": 0.27, "peak_gib": 4.75, "elapsed": 668.3}
+{"step": 6600, "loss": 0.19182, "grad_norm": 0.193, "peak_gib": 4.75, "elapsed": 678.0}
+{"step": 6700, "loss": 0.16938, "grad_norm": 0.153, "peak_gib": 4.75, "elapsed": 687.7}
+{"step": 6800, "loss": 0.21797, "grad_norm": 0.212, "peak_gib": 4.75, "elapsed": 697.4}
+{"step": 6900, "loss": 0.27636, "grad_norm": 0.242, "peak_gib": 4.75, "elapsed": 707.0}
+{"step": 7000, "loss": 0.21376, "grad_norm": 0.295, "peak_gib": 4.75, "elapsed": 716.7}
+{"step": 7000, "val_psnr": 26.311, "bicubic_psnr": 25.892, "gain": 0.419, "elapsed": 717.5, "val_lpips": 0.2027, "lpips_bicubic": 0.26, "lpips_gain": 0.0573}
+{"step": 7100, "loss": 0.25359, "grad_norm": 0.197, "peak_gib": 4.75, "elapsed": 727.4}
+{"step": 7200, "loss": 0.31117, "grad_norm": 0.222, "peak_gib": 4.75, "elapsed": 737.1}
+{"step": 7300, "loss": 0.21474, "grad_norm": 0.392, "peak_gib": 4.75, "elapsed": 746.7}
+{"step": 7400, "loss": 0.21731, "grad_norm": 0.173, "peak_gib": 4.75, "elapsed": 756.4}
+{"step": 7500, "loss": 0.26456, "grad_norm": 0.338, "peak_gib": 4.75, "elapsed": 766.1}
+{"step": 7600, "loss": 0.18426, "grad_norm": 0.188, "peak_gib": 4.75, "elapsed": 775.7}
+{"step": 7700, "loss": 0.22048, "grad_norm": 0.278, "peak_gib": 4.75, "elapsed": 785.4}
+{"step": 7800, "loss": 0.22611, "grad_norm": 0.252, "peak_gib": 4.75, "elapsed": 795.1}
+{"step": 7900, "loss": 0.17967, "grad_norm": 0.225, "peak_gib": 4.75, "elapsed": 804.7}
+{"step": 8000, "loss": 0.27423, "grad_norm": 0.309, "peak_gib": 4.75, "elapsed": 814.4}
+{"step": 8000, "val_psnr": 26.309, "bicubic_psnr": 25.892, "gain": 0.417, "elapsed": 815.2, "val_lpips": 0.2008, "lpips_bicubic": 0.26, "lpips_gain": 0.0592}
+{"step": 8100, "loss": 0.234, "grad_norm": 0.261, "peak_gib": 4.75, "elapsed": 825.1}
+{"step": 8200, "loss": 0.21466, "grad_norm": 0.399, "peak_gib": 4.75, "elapsed": 834.8}
+{"step": 8300, "loss": 0.20149, "grad_norm": 0.205, "peak_gib": 4.75, "elapsed": 844.4}
+{"step": 8400, "loss": 0.27679, "grad_norm": 0.232, "peak_gib": 4.75, "elapsed": 854.1}
+{"step": 8500, "loss": 0.29826, "grad_norm": 0.16, "peak_gib": 4.75, "elapsed": 863.7}
+{"step": 8600, "loss": 0.22298, "grad_norm": 0.32, "peak_gib": 4.75, "elapsed": 873.4}
+{"step": 8700, "loss": 0.23525, "grad_norm": 0.222, "peak_gib": 4.75, "elapsed": 883.1}
+{"step": 8800, "loss": 0.29205, "grad_norm": 0.239, "peak_gib": 4.75, "elapsed": 892.7}
+{"step": 8900, "loss": 0.28458, "grad_norm": 0.246, "peak_gib": 4.75, "elapsed": 902.4}
+{"step": 9000, "loss": 0.31929, "grad_norm": 0.327, "peak_gib": 4.75, "elapsed": 912.0}
+{"step": 9000, "val_psnr": 26.313, "bicubic_psnr": 25.892, "gain": 0.421, "elapsed": 912.9, "val_lpips": 0.2011, "lpips_bicubic": 0.26, "lpips_gain": 0.0588}
+{"step": 9100, "loss": 0.2453, "grad_norm": 0.307, "peak_gib": 4.75, "elapsed": 922.7}
+{"step": 9200, "loss": 0.18401, "grad_norm": 0.21, "peak_gib": 4.75, "elapsed": 932.3}
+{"step": 9300, "loss": 0.28015, "grad_norm": 0.281, "peak_gib": 4.75, "elapsed": 942.0}
+{"step": 9400, "loss": 0.20534, "grad_norm": 0.22, "peak_gib": 4.75, "elapsed": 951.7}
+{"step": 9500, "loss": 0.21244, "grad_norm": 0.229, "peak_gib": 4.75, "elapsed": 961.3}
+{"step": 9600, "loss": 0.2401, "grad_norm": 0.289, "peak_gib": 4.75, "elapsed": 971.0}
+{"step": 9700, "loss": 0.20975, "grad_norm": 0.29, "peak_gib": 4.75, "elapsed": 980.6}
+{"step": 9800, "loss": 0.24876, "grad_norm": 0.237, "peak_gib": 4.75, "elapsed": 990.3}
+{"step": 9900, "loss": 0.16134, "grad_norm": 0.225, "peak_gib": 4.75, "elapsed": 1000.0}
+{"step": 10000, "loss": 0.19516, "grad_norm": 0.186, "peak_gib": 4.75, "elapsed": 1009.7}
+{"step": 10000, "val_psnr": 26.336, "bicubic_psnr": 25.892, "gain": 0.444, "elapsed": 1010.6, "val_lpips": 0.1996, "lpips_bicubic": 0.26, "lpips_gain": 0.0604}
+{"step": 10100, "loss": 0.22421, "grad_norm": 0.212, "peak_gib": 4.75, "elapsed": 1020.6}
+{"step": 10200, "loss": 0.24668, "grad_norm": 0.262, "peak_gib": 4.75, "elapsed": 1030.2}
+{"step": 10300, "loss": 0.23838, "grad_norm": 0.261, "peak_gib": 4.75, "elapsed": 1039.9}
+{"step": 10400, "loss": 0.29651, "grad_norm": 0.257, "peak_gib": 4.75, "elapsed": 1049.5}
+{"step": 10500, "loss": 0.24886, "grad_norm": 0.195, "peak_gib": 4.75, "elapsed": 1059.2}
+{"step": 10600, "loss": 0.22673, "grad_norm": 0.284, "peak_gib": 4.75, "elapsed": 1068.9}
+{"step": 10700, "loss": 0.29747, "grad_norm": 0.307, "peak_gib": 4.75, "elapsed": 1078.5}
+{"step": 10800, "loss": 0.21997, "grad_norm": 0.622, "peak_gib": 4.75, "elapsed": 1088.2}
+{"step": 10900, "loss": 0.21202, "grad_norm": 0.185, "peak_gib": 4.75, "elapsed": 1097.9}
+{"step": 11000, "loss": 0.3611, "grad_norm": 0.243, "peak_gib": 4.75, "elapsed": 1107.5}
+{"step": 11000, "val_psnr": 26.388, "bicubic_psnr": 25.892, "gain": 0.496, "elapsed": 1108.4, "val_lpips": 0.1974, "lpips_bicubic": 0.26, "lpips_gain": 0.0626}
+{"step": 11100, "loss": 0.22547, "grad_norm": 0.258, "peak_gib": 4.75, "elapsed": 1118.3}
+{"step": 11200, "loss": 0.31806, "grad_norm": 0.238, "peak_gib": 4.75, "elapsed": 1128.0}
+{"step": 11300, "loss": 0.21525, "grad_norm": 0.465, "peak_gib": 4.75, "elapsed": 1137.6}
+{"step": 11400, "loss": 0.31, "grad_norm": 0.278, "peak_gib": 4.75, "elapsed": 1147.3}
+{"step": 11500, "loss": 0.26286, "grad_norm": 0.219, "peak_gib": 4.75, "elapsed": 1156.9}
+{"step": 11600, "loss": 0.15961, "grad_norm": 0.265, "peak_gib": 4.75, "elapsed": 1166.5}
+{"step": 11700, "loss": 0.26678, "grad_norm": 0.218, "peak_gib": 4.75, "elapsed": 1176.2}
+{"step": 11800, "loss": 0.22251, "grad_norm": 0.323, "peak_gib": 4.75, "elapsed": 1185.8}
+{"step": 11900, "loss": 0.22284, "grad_norm": 0.207, "peak_gib": 4.75, "elapsed": 1195.5}
+{"step": 12000, "loss": 0.17525, "grad_norm": 0.427, "peak_gib": 4.75, "elapsed": 1205.2}
+{"step": 12000, "val_psnr": 26.4, "bicubic_psnr": 25.892, "gain": 0.508, "elapsed": 1205.9, "val_lpips": 0.1965, "lpips_bicubic": 0.26, "lpips_gain": 0.0635}
+{"step": 12100, "loss": 0.32096, "grad_norm": 0.344, "peak_gib": 4.75, "elapsed": 1215.9}
+{"step": 12200, "loss": 0.20976, "grad_norm": 0.244, "peak_gib": 4.75, "elapsed": 1225.5}
+{"step": 12300, "loss": 0.20734, "grad_norm": 0.241, "peak_gib": 4.75, "elapsed": 1235.1}
+{"step": 12400, "loss": 0.19624, "grad_norm": 0.255, "peak_gib": 4.75, "elapsed": 1244.7}
+{"step": 12500, "loss": 0.16805, "grad_norm": 0.314, "peak_gib": 4.75, "elapsed": 1254.3}
+{"step": 12600, "loss": 0.24328, "grad_norm": 0.255, "peak_gib": 4.75, "elapsed": 1264.0}
+{"step": 12700, "loss": 0.22387, "grad_norm": 0.26, "peak_gib": 4.75, "elapsed": 1273.6}
+{"step": 12800, "loss": 0.19845, "grad_norm": 0.217, "peak_gib": 4.75, "elapsed": 1283.2}
+{"step": 12900, "loss": 0.19849, "grad_norm": 0.497, "peak_gib": 4.75, "elapsed": 1292.8}
+{"step": 13000, "loss": 0.197, "grad_norm": 0.301, "peak_gib": 4.75, "elapsed": 1302.4}
+{"step": 13000, "val_psnr": 26.373, "bicubic_psnr": 25.892, "gain": 0.481, "elapsed": 1303.2, "val_lpips": 0.1941, "lpips_bicubic": 0.26, "lpips_gain": 0.0659}
+{"step": 13100, "loss": 0.2111, "grad_norm": 0.29, "peak_gib": 4.75, "elapsed": 1313.1}
+{"step": 13200, "loss": 0.33469, "grad_norm": 0.251, "peak_gib": 4.75, "elapsed": 1322.7}
+{"step": 13300, "loss": 0.27615, "grad_norm": 0.251, "peak_gib": 4.75, "elapsed": 1332.4}
+{"step": 13400, "loss": 0.23193, "grad_norm": 0.341, "peak_gib": 4.75, "elapsed": 1342.0}
+{"step": 13500, "loss": 0.13954, "grad_norm": 0.259, "peak_gib": 4.75, "elapsed": 1351.6}
+{"step": 13600, "loss": 0.2686, "grad_norm": 0.278, "peak_gib": 4.75, "elapsed": 1361.2}
+{"step": 13700, "loss": 0.20506, "grad_norm": 0.39, "peak_gib": 4.75, "elapsed": 1370.8}
+{"step": 13800, "loss": 0.24313, "grad_norm": 0.529, "peak_gib": 4.75, "elapsed": 1380.5}
+{"step": 13900, "loss": 0.26563, "grad_norm": 0.281, "peak_gib": 4.75, "elapsed": 1390.1}
+{"step": 14000, "loss": 0.25713, "grad_norm": 0.238, "peak_gib": 4.75, "elapsed": 1399.7}
+{"step": 14000, "val_psnr": 26.381, "bicubic_psnr": 25.892, "gain": 0.489, "elapsed": 1400.5, "val_lpips": 0.194, "lpips_bicubic": 0.26, "lpips_gain": 0.066}
+{"step": 14100, "loss": 0.28717, "grad_norm": 0.264, "peak_gib": 4.75, "elapsed": 1410.4}
+{"step": 14200, "loss": 0.25292, "grad_norm": 0.239, "peak_gib": 4.75, "elapsed": 1420.0}
+{"step": 14300, "loss": 0.25154, "grad_norm": 0.226, "peak_gib": 4.75, "elapsed": 1429.7}
+{"step": 14400, "loss": 0.21722, "grad_norm": 0.446, "peak_gib": 4.75, "elapsed": 1439.3}
+{"step": 14500, "loss": 0.23886, "grad_norm": 0.268, "peak_gib": 4.75, "elapsed": 1448.9}
+{"step": 14600, "loss": 0.26303, "grad_norm": 0.271, "peak_gib": 4.75, "elapsed": 1458.5}
+{"step": 14700, "loss": 0.22899, "grad_norm": 0.325, "peak_gib": 4.75, "elapsed": 1468.1}
+{"step": 14800, "loss": 0.25853, "grad_norm": 0.398, "peak_gib": 4.75, "elapsed": 1477.8}
+{"step": 14900, "loss": 0.26898, "grad_norm": 0.275, "peak_gib": 4.75, "elapsed": 1487.4}
+{"step": 15000, "loss": 0.23535, "grad_norm": 0.268, "peak_gib": 4.75, "elapsed": 1497.0}
+{"step": 15000, "val_psnr": 26.392, "bicubic_psnr": 25.892, "gain": 0.5, "elapsed": 1497.8, "val_lpips": 0.1933, "lpips_bicubic": 0.26, "lpips_gain": 0.0667}
+{"step": 15100, "loss": 0.23795, "grad_norm": 0.257, "peak_gib": 4.75, "elapsed": 1507.7}
+{"step": 15200, "loss": 0.29698, "grad_norm": 0.242, "peak_gib": 4.75, "elapsed": 1517.3}
+{"step": 15300, "loss": 0.23293, "grad_norm": 0.277, "peak_gib": 4.75, "elapsed": 1527.0}
+{"step": 15400, "loss": 0.08246, "grad_norm": 0.289, "peak_gib": 4.75, "elapsed": 1536.6}
+{"step": 15500, "loss": 0.21029, "grad_norm": 0.29, "peak_gib": 4.75, "elapsed": 1546.2}
+{"step": 15600, "loss": 0.17529, "grad_norm": 0.26, "peak_gib": 4.75, "elapsed": 1555.9}
+{"step": 15700, "loss": 0.22645, "grad_norm": 0.721, "peak_gib": 4.75, "elapsed": 1565.5}
+{"step": 15800, "loss": 0.26395, "grad_norm": 0.239, "peak_gib": 4.75, "elapsed": 1575.1}
+{"step": 15900, "loss": 0.26571, "grad_norm": 0.508, "peak_gib": 4.75, "elapsed": 1584.8}
+{"step": 16000, "loss": 0.26948, "grad_norm": 0.302, "peak_gib": 4.75, "elapsed": 1594.4}
+{"step": 16000, "val_psnr": 26.442, "bicubic_psnr": 25.892, "gain": 0.55, "elapsed": 1595.2, "val_lpips": 0.1925, "lpips_bicubic": 0.26, "lpips_gain": 0.0674}
+{"step": 16100, "loss": 0.29295, "grad_norm": 0.245, "peak_gib": 4.75, "elapsed": 1605.1}
+{"step": 16200, "loss": 0.23125, "grad_norm": 0.244, "peak_gib": 4.75, "elapsed": 1614.7}
+{"step": 16300, "loss": 0.17532, "grad_norm": 0.292, "peak_gib": 4.75, "elapsed": 1624.3}
+{"step": 16400, "loss": 0.20023, "grad_norm": 0.311, "peak_gib": 4.75, "elapsed": 1633.8}
+{"step": 16500, "loss": 0.25287, "grad_norm": 0.206, "peak_gib": 4.75, "elapsed": 1643.5}
+{"step": 16600, "loss": 0.21066, "grad_norm": 0.275, "peak_gib": 4.75, "elapsed": 1653.0}
+{"step": 16700, "loss": 0.23652, "grad_norm": 0.293, "peak_gib": 4.75, "elapsed": 1662.6}
+{"step": 16800, "loss": 0.16744, "grad_norm": 0.364, "peak_gib": 4.75, "elapsed": 1672.2}
+{"step": 16900, "loss": 0.22957, "grad_norm": 0.287, "peak_gib": 4.75, "elapsed": 1681.8}
+{"step": 17000, "loss": 0.28556, "grad_norm": 0.272, "peak_gib": 4.75, "elapsed": 1691.4}
+{"step": 17000, "val_psnr": 26.429, "bicubic_psnr": 25.892, "gain": 0.537, "elapsed": 1692.2, "val_lpips": 0.1924, "lpips_bicubic": 0.26, "lpips_gain": 0.0676}
+{"step": 17100, "loss": 0.19151, "grad_norm": 0.227, "peak_gib": 4.75, "elapsed": 1702.1}
+{"step": 17200, "loss": 0.27544, "grad_norm": 0.212, "peak_gib": 4.75, "elapsed": 1711.7}
+{"step": 17300, "loss": 0.20812, "grad_norm": 0.265, "peak_gib": 4.75, "elapsed": 1721.3}
+{"step": 17400, "loss": 0.26361, "grad_norm": 0.262, "peak_gib": 4.75, "elapsed": 1731.0}
+{"step": 17500, "loss": 0.1447, "grad_norm": 0.258, "peak_gib": 4.75, "elapsed": 1740.6}
+{"step": 17600, "loss": 0.29133, "grad_norm": 0.242, "peak_gib": 4.75, "elapsed": 1750.2}
+{"step": 17700, "loss": 0.19564, "grad_norm": 0.333, "peak_gib": 4.75, "elapsed": 1759.9}
+{"step": 17800, "loss": 0.27409, "grad_norm": 0.257, "peak_gib": 4.75, "elapsed": 1769.5}
+{"step": 17900, "loss": 0.28974, "grad_norm": 0.253, "peak_gib": 4.75, "elapsed": 1779.1}
+{"step": 18000, "loss": 0.25096, "grad_norm": 0.237, "peak_gib": 4.75, "elapsed": 1788.7}
+{"step": 18000, "val_psnr": 26.427, "bicubic_psnr": 25.892, "gain": 0.535, "elapsed": 1789.5, "val_lpips": 0.1918, "lpips_bicubic": 0.26, "lpips_gain": 0.0681}
+{"step": 18100, "loss": 0.27492, "grad_norm": 0.283, "peak_gib": 4.75, "elapsed": 1799.4}
+{"step": 18200, "loss": 0.23643, "grad_norm": 0.404, "peak_gib": 4.75, "elapsed": 1809.0}
+{"step": 18300, "loss": 0.20066, "grad_norm": 0.292, "peak_gib": 4.75, "elapsed": 1818.6}
+{"step": 18400, "loss": 0.25316, "grad_norm": 0.3, "peak_gib": 4.75, "elapsed": 1828.2}
+{"step": 18500, "loss": 0.15709, "grad_norm": 0.257, "peak_gib": 4.75, "elapsed": 1837.9}
+{"step": 18600, "loss": 0.22117, "grad_norm": 0.305, "peak_gib": 4.75, "elapsed": 1847.5}
+{"step": 18700, "loss": 0.28995, "grad_norm": 0.44, "peak_gib": 4.75, "elapsed": 1857.1}
+{"step": 18800, "loss": 0.27226, "grad_norm": 0.236, "peak_gib": 4.75, "elapsed": 1866.7}
+{"step": 18900, "loss": 0.24581, "grad_norm": 0.232, "peak_gib": 4.75, "elapsed": 1876.3}
+{"step": 19000, "loss": 0.21127, "grad_norm": 0.435, "peak_gib": 4.75, "elapsed": 1885.9}
+{"step": 19000, "val_psnr": 26.433, "bicubic_psnr": 25.892, "gain": 0.541, "elapsed": 1886.7, "val_lpips": 0.1917, "lpips_bicubic": 0.26, "lpips_gain": 0.0683}
+{"step": 19100, "loss": 0.28676, "grad_norm": 0.23, "peak_gib": 4.75, "elapsed": 1896.6}
+{"step": 19200, "loss": 0.16666, "grad_norm": 0.236, "peak_gib": 4.75, "elapsed": 1906.2}
+{"step": 19300, "loss": 0.18047, "grad_norm": 0.419, "peak_gib": 4.75, "elapsed": 1915.7}
+{"step": 19400, "loss": 0.25166, "grad_norm": 0.213, "peak_gib": 4.75, "elapsed": 1925.3}
+{"step": 19500, "loss": 0.21579, "grad_norm": 0.233, "peak_gib": 4.75, "elapsed": 1934.9}
+{"step": 19600, "loss": 0.16801, "grad_norm": 0.283, "peak_gib": 4.75, "elapsed": 1944.5}
+{"step": 19700, "loss": 0.18887, "grad_norm": 0.203, "peak_gib": 4.75, "elapsed": 1954.1}
+{"step": 19800, "loss": 0.21487, "grad_norm": 0.346, "peak_gib": 4.75, "elapsed": 1963.7}
+{"step": 19900, "loss": 0.19705, "grad_norm": 0.348, "peak_gib": 4.75, "elapsed": 1973.2}
+{"step": 20000, "loss": 0.30357, "grad_norm": 0.272, "peak_gib": 4.75, "elapsed": 1982.8}
+{"step": 20000, "val_psnr": 26.434, "bicubic_psnr": 25.892, "gain": 0.542, "elapsed": 1983.6, "val_lpips": 0.1917, "lpips_bicubic": 0.26, "lpips_gain": 0.0683}
+done 33.1 min  best val PSNR -0.192
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 30 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

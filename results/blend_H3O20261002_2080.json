@@ -1,0 +1,45 @@
+{
+  "pixel": {
+    "psnr": 29.188,
+    "lpips": 0.1561
+  },
+  "latent": {
+    "psnr": 24.957,
+    "lpips": 0.1691
+  },
+  "oracle_pixelwise": {
+    "psnr": 31.264,
+    "lpips": 0.1428,
+    "latent_share": 0.285
+  },
+  "oracle_tile32": {
+    "psnr": 29.494,
+    "lpips": 0.1506,
+    "latent_share": 0.317
+  },
+  "change_q10": {
+    "psnr": 29.188,
+    "lpips": 0.1561,
+    "latent_share": 0.0
+  },
+  "change_q25": {
+    "psnr": 28.208,
+    "lpips": 0.1542,
+    "latent_share": 0.25
+  },
+  "change_q50": {
+    "psnr": 27.723,
+    "lpips": 0.1546,
+    "latent_share": 0.499
+  },
+  "change_q75": {
+    "psnr": 27.042,
+    "lpips": 0.1559,
+    "latent_share": 0.749
+  },
+  "change_q90": {
+    "psnr": 25.971,
+    "lpips": 0.1618,
+    "latent_share": 0.9
+  }
+}

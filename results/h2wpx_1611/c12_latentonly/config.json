@@ -1,0 +1,14 @@
+{
+  "width": 384,
+  "steps": 30000,
+  "batch": 2,
+  "crop": 12,
+  "lr": 0.0002,
+  "seed": 42,
+  "pixel": 0.0,
+  "lpips": 0.0,
+  "pixel_frames": 3,
+  "eval_every": 2000,
+  "out": "results/h2wpx_1611/c12_latentonly",
+  "resume": null
+}

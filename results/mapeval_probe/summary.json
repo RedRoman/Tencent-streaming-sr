@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "ckpt": "results/mapper_2359/mapper_up/best.pt",
+    "step": 3000,
+    "clips": 3,
+    "psnr": 21.887,
+    "psnr_bicubic": 25.5623,
+    "psnr_ceiling": 35.5427,
+    "ssim": 0.6827,
+    "ssim_bicubic": 0.8085,
+    "flicker": 0.0142,
+    "flicker_gt": 0.0126,
+    "latent_ms_per_latent": 148.92,
+    "decode_ms_per_latent": 589.3333,
+    "gain": -3.6753,
+    "headroom": 13.6557
+  },
+  "rows": [
+    {
+      "clip": "H3O20261001_0215",
+      "frames": 110,
+      "psnr": 16.291,
+      "psnr_bicubic": 19.635,
+      "psnr_ceiling": 31.162,
+      "ssim": 0.5064,
+      "ssim_bicubic": 0.7269,
+      "flicker": 0.02331,
+      "flicker_gt": 0.01983,
+      "latent_ms_per_latent": 441.81,
+      "decode_ms_per_latent": 651.0,
+      "gain": -3.344,
+      "headroom": 14.871
+    },
+    {
+      "clip": "H3O20261001_0144",
+      "frames": 110,
+      "psnr": 19.978,
+      "psnr_bicubic": 22.879,
+      "psnr_ceiling": 32.351,
+      "ssim": 0.6428,
+      "ssim_bicubic": 0.7663,
+      "flicker": 0.01314,
+      "flicker_gt": 0.01364,
+      "latent_ms_per_latent": 2.47,
+      "decode_ms_per_latent": 558.6,
+      "gain": -2.901,
+      "headroom": 12.373
+    },
+    {
+      "clip": "H3O20261001_0503",
+      "frames": 110,
+      "psnr": 29.392,
+      "psnr_bicubic": 34.173,
+      "psnr_ceiling": 43.115,
+      "ssim": 0.8988,
+      "ssim_bicubic": 0.9322,
+      "flicker": 0.00611,
+      "flicker_gt": 0.00434,
+      "latent_ms_per_latent": 2.48,
+      "decode_ms_per_latent": 558.4,
+      "gain": -4.781,
+      "headroom": 13.723
+    }
+  ]
+}

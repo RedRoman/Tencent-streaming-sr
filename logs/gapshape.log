@@ -1,0 +1,8 @@
+/home/ma-user/modelarts/user-job-dir/sol_h3/probe_gap_shape.py:34: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  g = torch.from_numpy(np.asarray(hr[:n])).permute(0, 3, 1, 2).to(dev).float() / 127.5 - 1
+{"clip": "H3O20261001_0215", "best_downsample": "bilinear_aa", "best_psnr": 16.01, "hf_ours": 0.04814, "hf_clean": 0.04065, "sharper": "ours", "resid_energy": 0.02706, "resid_lowfreq_share": 0.09, "mean_shift": -0.0083, "std_ratio": 1.016}
+{"clip": "H3O20261001_0144", "best_downsample": "bilinear_aa", "best_psnr": 19.54, "hf_ours": 0.01875, "hf_clean": 0.01707, "sharper": "ours", "resid_energy": 0.012, "resid_lowfreq_share": 0.088, "mean_shift": -0.0037, "std_ratio": 1.01}
+{"clip": "H3O20261001_0503", "best_downsample": "bilinear_aa", "best_psnr": 31.06, "hf_ours": 0.00816, "hf_clean": 0.00686, "sharper": "ours", "resid_energy": 0.00079, "resid_lowfreq_share": 0.193, "mean_shift": 0.0015, "std_ratio": 1.002}
+{"clip": "H3O20261002_2080", "best_downsample": "bilinear_aa", "best_psnr": 23.15, "hf_ours": 0.01092, "hf_clean": 0.00893, "sharper": "ours", "resid_energy": 0.00498, "resid_lowfreq_share": 0.228, "mean_shift": 0.0004, "std_ratio": 1.003}
+
+MEAN {"best_psnr": 22.44, "hf_ours": 0.0215, "hf_clean": 0.0184, "resid_energy": 0.0112, "resid_lowfreq_share": 0.1497, "mean_shift": -0.0025, "std_ratio": 1.0077}

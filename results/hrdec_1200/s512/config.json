@@ -1,0 +1,19 @@
+{
+  "width": 512,
+  "blocks": [
+    4,
+    4,
+    2,
+    2
+  ],
+  "crop": 16,
+  "batch": 6,
+  "steps": 20000,
+  "lr": 0.0003,
+  "lpips": 0.5,
+  "eval_every": 1000,
+  "seed": 42,
+  "resume": null,
+  "out": "results/hrdec_1200/s512",
+  "params": 14524003
+}

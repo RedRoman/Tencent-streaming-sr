@@ -1,0 +1,48 @@
+{
+  "ckpt": "results/hrdec_1200/s512/best.pt",
+  "mean": {
+    "psnr": 27.9737,
+    "lpips": 0.1514,
+    "flicker": 0.0149,
+    "flicker_gt": 0.0141,
+    "ms_per_chunk": 902.45
+  },
+  "rows": [
+    {
+      "clip": "H3O20261001_0215",
+      "frames": 119,
+      "psnr": 21.7,
+      "lpips": 0.1661,
+      "flicker": 0.02234,
+      "flicker_gt": 0.01869,
+      "ms_per_chunk": 3150.5
+    },
+    {
+      "clip": "H3O20261001_0144",
+      "frames": 119,
+      "psnr": 24.505,
+      "lpips": 0.1695,
+      "flicker": 0.01106,
+      "flicker_gt": 0.01344,
+      "ms_per_chunk": 153.4
+    },
+    {
+      "clip": "H3O20261001_0503",
+      "frames": 119,
+      "psnr": 35.42,
+      "lpips": 0.1436,
+      "flicker": 0.00525,
+      "flicker_gt": 0.00418,
+      "ms_per_chunk": 153.8
+    },
+    {
+      "clip": "H3O20261002_2080",
+      "frames": 119,
+      "psnr": 30.27,
+      "lpips": 0.1262,
+      "flicker": 0.02087,
+      "flicker_gt": 0.0202,
+      "ms_per_chunk": 152.1
+    }
+  ]
+}
