@@ -1,0 +1,43 @@
+{
+  "sample_id": "VIDGEN5S_0336361",
+  "source_video_path": "${SOURCE_VIDEO_DIR}/VIDGEN5S_0336361.mp4",
+  "source_video_sha256": "c79a730c3cdd7a69faca4d35c994ffadbd9f1dec930852121f0370b398e20f52",
+  "original_metadata_sha256": "c79a730c3cdd7a69faca4d35c994ffadbd9f1dec930852121f0370b398e20f52",
+  "full_source_count": {
+    "filter": "fps=24",
+    "output_sync": "passthrough",
+    "fps_filter": {
+      "input_frames": 124,
+      "output_frames": 124,
+      "dropped_frames": 0,
+      "duplicated_frames": 0
+    },
+    "counted_output_frames": 124,
+    "required_source_output_frames": 120,
+    "has_at_least_120_source_and_fps_frames": true,
+    "external_tpad": false,
+    "external_loop": false,
+    "setpts_slowdown": false,
+    "note": "Full source count; duplicate-free first120 reader is checked separately"
+  },
+  "strict_reader": {
+    "filter": "fps=24,scale=672:384:force_original_aspect_ratio=increase:flags=area,crop=672:384",
+    "requested_frames": 120,
+    "received_full_frames": 120,
+    "received_bytes": 92897280,
+    "expected_bytes": 92897280,
+    "fps_filter": {
+      "input_frames": 122,
+      "output_frames": 121,
+      "dropped_frames": 1,
+      "duplicated_frames": 0
+    },
+    "output_sync": "passthrough",
+    "exact_120_frames": true,
+    "fps_generated_duplicate_frames": 0,
+    "external_tpad": false,
+    "external_loop": false,
+    "setpts_slowdown": false
+  },
+  "passed": true
+}

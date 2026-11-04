@@ -1,0 +1,19 @@
+{
+  "filter": "fps=24,scale=672:384:force_original_aspect_ratio=increase:flags=area,crop=672:384",
+  "requested_frames": 120,
+  "received_full_frames": 120,
+  "received_bytes": 92897280,
+  "expected_bytes": 92897280,
+  "fps_filter": {
+    "input_frames": 122,
+    "output_frames": 121,
+    "dropped_frames": 1,
+    "duplicated_frames": 0
+  },
+  "output_sync": "passthrough",
+  "exact_120_frames": true,
+  "fps_generated_duplicate_frames": 0,
+  "external_tpad": false,
+  "external_loop": false,
+  "setpts_slowdown": false
+}
