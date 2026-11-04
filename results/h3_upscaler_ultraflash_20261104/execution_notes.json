@@ -1,0 +1,10 @@
+{
+  "training_ewarp_exit": 0,
+  "training_temporal_exit": 0,
+  "original_final_eval_controller_exit": 1,
+  "cause": "One decode shard rejected occupied device before model execution; other shards completed normally.",
+  "recovery_controller_exit": 0,
+  "recovery": "Missing shard1 decoded on idle NPU7 after shard2; all3 shard fingerprints and exact4-video coverage verified before finalization.",
+  "evaluation_status": "completed",
+  "training_interrupted": false
+}

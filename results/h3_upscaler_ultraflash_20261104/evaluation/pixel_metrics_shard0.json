@@ -1,0 +1,102 @@
+{
+  "VIDGEN5S_0128747": {
+    "pretrained": {
+      "vs_decoded_reference": {
+        "mse": 0.006825657095760107,
+        "psnr_db": 21.658555333969446,
+        "temporal_difference_mse": 0.005173690617084503
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.007436342537403107,
+        "psnr_db": 21.286406136987168,
+        "temporal_difference_mse": 0.005868334323167801
+      }
+    },
+    "prior50": {
+      "vs_decoded_reference": {
+        "mse": 0.010740756057202816,
+        "psnr_db": 19.689651469498383,
+        "temporal_difference_mse": 0.007248339243233204
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.011084410361945629,
+        "psnr_db": 19.55287404341486,
+        "temporal_difference_mse": 0.007863574661314487
+      }
+    },
+    "long_temporal": {
+      "vs_decoded_reference": {
+        "mse": 0.008715668693184853,
+        "psnr_db": 20.596992868535388,
+        "temporal_difference_mse": 0.006058421917259693
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.009346223436295986,
+        "psnr_db": 20.293638406891418,
+        "temporal_difference_mse": 0.0067069390788674355
+      }
+    },
+    "long_ewarp": {
+      "vs_decoded_reference": {
+        "mse": 0.00891027320176363,
+        "psnr_db": 20.501089796668982,
+        "temporal_difference_mse": 0.006046910770237446
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.00954323448240757,
+        "psnr_db": 20.203044051927126,
+        "temporal_difference_mse": 0.006689935922622681
+      }
+    }
+  },
+  "VIDGEN5S_0380588": {
+    "pretrained": {
+      "vs_decoded_reference": {
+        "mse": 0.0009745067218318582,
+        "psnr_db": 30.112151609133004,
+        "temporal_difference_mse": 0.0006380280829034746
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.001123415888287127,
+        "psnr_db": 29.494594382606316,
+        "temporal_difference_mse": 0.0007331818924285471
+      }
+    },
+    "prior50": {
+      "vs_decoded_reference": {
+        "mse": 0.002941631246358156,
+        "psnr_db": 25.314117699868774,
+        "temporal_difference_mse": 0.001606327248737216
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.002888566581532359,
+        "psnr_db": 25.39317617508464,
+        "temporal_difference_mse": 0.0016771513037383556
+      }
+    },
+    "long_temporal": {
+      "vs_decoded_reference": {
+        "mse": 0.0015832044882699847,
+        "psnr_db": 28.004629876065334,
+        "temporal_difference_mse": 0.0009969532256945968
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.0017560612177476287,
+        "psnr_db": 27.5546034830089,
+        "temporal_difference_mse": 0.0010828707600012422
+      }
+    },
+    "long_ewarp": {
+      "vs_decoded_reference": {
+        "mse": 0.0017523482674732804,
+        "psnr_db": 27.56379576472247,
+        "temporal_difference_mse": 0.0010835628490895033
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.0019331200746819377,
+        "psnr_db": 27.137411691725937,
+        "temporal_difference_mse": 0.0011669667437672615
+      }
+    }
+  }
+}

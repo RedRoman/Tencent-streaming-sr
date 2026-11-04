@@ -1,0 +1,1345 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "public_source_identity_and_syntax",
+      "status": "passed",
+      "detail": {
+        "python_byte_identical": [
+          "evaluate_upscaler_ultraflash.py",
+          "prepare_upscaler_ultraflash_pairs.py",
+          "test_ultraflash_ewarp.py",
+          "train_upscaler_ultraflash.py",
+          "ultraflash_ewarp.py"
+        ],
+        "shell_syntax_checked": [
+          "env.sh",
+          "run_evaluate_upscaler_ultraflash.sh",
+          "run_prepare_ultraflash_flow.sh",
+          "run_prepare_upscaler_ultraflash_pairs.sh",
+          "run_train_upscaler_ultraflash.sh",
+          "run_upscaler_ultraflash_preflight.sh"
+        ]
+      }
+    },
+    {
+      "name": "public_privacy_json_and_allowlist",
+      "status": "passed",
+      "detail": {
+        "files": 53,
+        "patterns": [
+          "hf_token",
+          "github_token",
+          "private_key",
+          "aws_key",
+          "bearer_credential",
+          "signed_download_url",
+          "credential_literal",
+          "private_infrastructure"
+        ],
+        "findings": []
+      }
+    },
+    {
+      "name": "original_fixed_plan",
+      "status": "passed",
+      "detail": {
+        "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+        "split_counts": {
+          "train": 128,
+          "dev": 16,
+          "test": 16,
+          "legacy": 3
+        },
+        "fixed_selected_videos": [
+          "VIDGEN5S_0128747",
+          "VIDGEN5S_0086441",
+          "VIDGEN5S_0829322",
+          "VIDGEN5S_0380588"
+        ]
+      }
+    },
+    {
+      "name": "public_data_and_redaction_provenance",
+      "status": "passed",
+      "detail": {
+        "source_and_public_fingerprints_checked": 36,
+        "ready_verified": true,
+        "public_manifest_counts": {
+          "train": 128,
+          "dev": 16,
+          "test": 16,
+          "legacy": 3
+        },
+        "note": "Embedded source hashes preserve original bytes; public redacted-file hashes are checked separately."
+      }
+    },
+    {
+      "name": "training_ewarp",
+      "status": "passed",
+      "detail": {
+        "summary": "results/h3_upscaler_ultraflash_20261104/ewarp_steps2000/summary.json",
+        "completed_updates": 2000,
+        "best_step": 2000,
+        "best_validation_mse": 0.09632310131564736,
+        "best_checkpoint_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6"
+      }
+    },
+    {
+      "name": "training_temporal",
+      "status": "passed",
+      "detail": {
+        "summary": "results/h3_upscaler_ultraflash_20261104/temporal_steps2000/summary.json",
+        "completed_updates": 2000,
+        "best_step": 2000,
+        "best_validation_mse": 0.09300546674057841,
+        "best_checkpoint_sha256": "20060088b2069069cc2abb63c7494eb88400585ccfcc1ee2ba48a8315e1bffea"
+      }
+    },
+    {
+      "name": "matched_training_arms",
+      "status": "passed",
+      "detail": {
+        "matched_config_keys": [
+          "steps",
+          "lr",
+          "min_lr",
+          "warmup",
+          "weight",
+          "seed",
+          "validate_every",
+          "save_every",
+          "dtype",
+          "optimizer",
+          "weight_decay",
+          "grad_clip",
+          "batch_size",
+          "train_latent_frames",
+          "loss_valid_latent_frames",
+          "prior_updates",
+          "activation_checkpointing",
+          "flow_version"
+        ],
+        "same_data_order_and_lr_for_2000_updates": true
+      }
+    },
+    {
+      "name": "evaluation_coverage_parity_and_metrics",
+      "status": "passed",
+      "detail": {
+        "summary": "results/h3_upscaler_ultraflash_20261104/evaluation/summary.json",
+        "causality_checks": 108,
+        "causality_max_abs": 0.0,
+        "reload_parity_checks": 38,
+        "reload_max_abs": 0.0,
+        "latent_test_samples": 16,
+        "legacy_samples": 3,
+        "pixel_examples": 4,
+        "pixel_test_examples": 3,
+        "pixel_legacy_examples": 1
+      }
+    },
+    {
+      "name": "public_media",
+      "status": "passed",
+      "detail": {
+        "videos": {
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/comparison.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 3360,
+            "height": 412,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/long_ewarp.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 672,
+            "height": 384,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/comparison.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 3360,
+            "height": 412,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/long_ewarp.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 672,
+            "height": 384,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/comparison.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 3360,
+            "height": 412,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/long_ewarp.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 672,
+            "height": 384,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/comparison.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 3360,
+            "height": 412,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/long_ewarp.h264.mp4": {
+            "timescale": 12288,
+            "duration_ticks": 61440,
+            "handler": "vide",
+            "codec": "avc1",
+            "width": 672,
+            "height": 384,
+            "avc_profile": 100,
+            "stts": [
+              [
+                120,
+                512
+              ]
+            ],
+            "frames": 120,
+            "fps": 24.0,
+            "duration_seconds": 5.0
+          }
+        },
+        "contact_sheets": {
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/comparison.png": {
+            "width": 3360,
+            "height": 1236,
+            "crc_and_decompression": "passed"
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/comparison.png": {
+            "width": 3360,
+            "height": 1236,
+            "crc_and_decompression": "passed"
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/comparison.png": {
+            "width": 3360,
+            "height": 1236,
+            "crc_and_decompression": "passed"
+          },
+          "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/comparison.png": {
+            "width": 3360,
+            "height": 1236,
+            "crc_and_decompression": "passed"
+          },
+          "results/h3_upscaler_ultraflash_20261104/training_curves.png": {
+            "width": 2400,
+            "height": 704,
+            "crc_and_decompression": "passed"
+          }
+        },
+        "note": "Container/header/decompression checks do not replace visual review or full H264 decode."
+      }
+    },
+    {
+      "name": "full_video_decode_evidence",
+      "status": "passed",
+      "detail": {
+        "records": [
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 5758748,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "3360x412"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.189439058303833,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 412,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/comparison.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "3ed2941c97cd934590313bcb2e1a6e85e1d8dae8f8bf9abd5a075303eec4dc20",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 3360
+          },
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 1545167,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "672x384"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.05734288692474365,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 384,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/long_ewarp.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "3dbc3053dee9e20111bb00ed754039e9b68659abdd383d8f09609d188946c486",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 672
+          },
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 5770710,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "3360x412"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.10781490802764893,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 412,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/comparison.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "ccbbb8a323ab1d54db59533a893e0fab7a1056b913ee0193b3432aea90731e77",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 3360
+          },
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 1531929,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "672x384"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.05461299419403076,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 384,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/long_ewarp.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "934e830be365c241fb6d0e86da813b6d0fd9ecb4fd63084f7d41f7dda4915229",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 672
+          },
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 5607814,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "3360x412"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.10361003875732422,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 412,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/comparison.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "22dfce35b92beba9dee6f81ce0e1c51634056d88620437bbbbc5f31567af6a11",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 3360
+          },
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 1499739,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "672x384"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.05528604984283447,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 384,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/long_ewarp.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "d683b90ba7d7a50b497026e55f6e78fc7e683230b90b3d670d833f82c09c0401",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 672
+          },
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 5742530,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "3360x412"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.10189104080200195,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 412,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/comparison.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "73bfa7ff364ba8e7d88b79a5a62f138525538d2b7b5fe9d26323fba564a23ce4",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 3360
+          },
+          {
+            "asset_duration": {
+              "epoch": 0,
+              "seconds": 5,
+              "timescale": 12288,
+              "value": 61440
+            },
+            "bytes": 1532560,
+            "cadence_errors": 0,
+            "codecs": [
+              "avc1"
+            ],
+            "decoded_frames": 120,
+            "decoded_sizes": [
+              "672x384"
+            ],
+            "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+            "elapsed_seconds": 0.0563199520111084,
+            "errors": [],
+            "first_pts": {
+              "epoch": 0,
+              "seconds": 0,
+              "timescale": 12288,
+              "value": 0
+            },
+            "height": 384,
+            "invalid_pts": 0,
+            "last_pts": {
+              "epoch": 0,
+              "seconds": 4.958333333333333,
+              "timescale": 12288,
+              "value": 60928
+            },
+            "last_sample_duration": {
+              "epoch": 0,
+              "seconds": null,
+              "timescale": 0,
+              "value": 0
+            },
+            "max_cadence_error_seconds": 0,
+            "max_pts_delta_seconds": 0.041666666666666664,
+            "min_pts_delta_seconds": 0.041666666666666664,
+            "missing_image_buffers": 0,
+            "nominal_fps": 24,
+            "nonmonotonic_pts": 0,
+            "passed": true,
+            "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/long_ewarp.h264.mp4",
+            "pts_span_seconds": 4.958333333333333,
+            "reader_status": "completed",
+            "sha256": "e1622c4e04de83526967380f36dae176fe4f3ac40de7af3a67d4c6041abda6c4",
+            "track_time_range": {
+              "duration": {
+                "epoch": 0,
+                "seconds": 5,
+                "timescale": 12288,
+                "value": 61440
+              },
+              "start": {
+                "epoch": 0,
+                "seconds": 0,
+                "timescale": 1,
+                "value": 0
+              }
+            },
+            "width": 672
+          }
+        ],
+        "note": "External full-decode evidence is SHA-bound to the published videos; this audit does not execute the decoder itself."
+      }
+    },
+    {
+      "name": "result_readme_present",
+      "status": "passed",
+      "detail": {
+        "path": "results/h3_upscaler_ultraflash_20261104/README.md"
+      }
+    }
+  ],
+  "recomputed_metrics": {
+    "pretrained": {
+      "test": {
+        "latent_mse": 0.07532121683470905,
+        "ewarp_l1": 0.2796860132366419
+      },
+      "legacy": {
+        "latent_mse": 0.09423243999481201,
+        "ewarp_l1": 0.28168879946072894
+      },
+      "pixels": {
+        "four_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.00330415231292136,
+            "psnr_db": 25.781465339813813,
+            "temporal_difference_mse": 0.0019876238657161593
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.003613624401623383,
+            "psnr_db": 25.350943104133748,
+            "temporal_difference_mse": 0.00224861413880717
+          }
+        },
+        "three_test_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.004080700843284528,
+            "psnr_db": 24.33790325004075,
+            "temporal_difference_mse": 0.002437489126653721
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.004443693906068802,
+            "psnr_db": 23.96972601130956,
+            "temporal_difference_mse": 0.0027537582209333777
+          }
+        },
+        "one_legacy_example": {
+          "vs_decoded_reference": {
+            "mse": 0.0009745067218318582,
+            "psnr_db": 30.112151609133004,
+            "temporal_difference_mse": 0.0006380280829034746
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.001123415888287127,
+            "psnr_db": 29.494594382606316,
+            "temporal_difference_mse": 0.0007331818924285471
+          }
+        }
+      }
+    },
+    "prior50": {
+      "test": {
+        "latent_mse": 0.29202929977327585,
+        "ewarp_l1": 0.23058169148862362
+      },
+      "legacy": {
+        "latent_mse": 0.2864307115475337,
+        "ewarp_l1": 0.2279814581076304
+      },
+      "pixels": {
+        "four_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.00692556647118181,
+            "psnr_db": 22.032742601465813,
+            "temporal_difference_mse": 0.0037301605625543743
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.007040207565296441,
+            "psnr_db": 21.995020549969045,
+            "temporal_difference_mse": 0.003954254440031946
+          }
+        },
+        "three_test_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.008253544879456362,
+            "psnr_db": 20.938950901998158,
+            "temporal_difference_mse": 0.004438105000493427
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.008424087893217802,
+            "psnr_db": 20.862302008263846,
+            "temporal_difference_mse": 0.0047132888187964754
+          }
+        },
+        "one_legacy_example": {
+          "vs_decoded_reference": {
+            "mse": 0.002941631246358156,
+            "psnr_db": 25.314117699868774,
+            "temporal_difference_mse": 0.001606327248737216
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.002888566581532359,
+            "psnr_db": 25.39317617508464,
+            "temporal_difference_mse": 0.0016771513037383556
+          }
+        }
+      }
+    },
+    "long_temporal": {
+      "test": {
+        "latent_mse": 0.09123760601505637,
+        "ewarp_l1": 0.27015626803040504
+      },
+      "legacy": {
+        "latent_mse": 0.09304116417964299,
+        "ewarp_l1": 0.2722379018863042
+      },
+      "pixels": {
+        "four_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.004754039546241984,
+            "psnr_db": 23.957945586758665,
+            "temporal_difference_mse": 0.002607591333799064
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.005086088873213157,
+            "psnr_db": 23.643095237075883,
+            "temporal_difference_mse": 0.002846952236723155
+          }
+        },
+        "three_test_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.005810984565565984,
+            "psnr_db": 22.609050823656446,
+            "temporal_difference_mse": 0.00314447070316722
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.006196098091701667,
+            "psnr_db": 22.339259155098215,
+            "temporal_difference_mse": 0.003434979395630459
+          }
+        },
+        "one_legacy_example": {
+          "vs_decoded_reference": {
+            "mse": 0.0015832044882699847,
+            "psnr_db": 28.004629876065334,
+            "temporal_difference_mse": 0.0009969532256945968
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0017560612177476287,
+            "psnr_db": 27.5546034830089,
+            "temporal_difference_mse": 0.0010828707600012422
+          }
+        }
+      }
+    },
+    "long_ewarp": {
+      "test": {
+        "latent_mse": 0.09421261493116617,
+        "ewarp_l1": 0.22548592928797007
+      },
+      "legacy": {
+        "latent_mse": 0.0956095556418101,
+        "ewarp_l1": 0.22908037404219309
+      },
+      "pixels": {
+        "four_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.005002814723411575,
+            "psnr_db": 23.67102107022363,
+            "temporal_difference_mse": 0.002712095039896667
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.005338607094017789,
+            "psnr_db": 23.37065722295881,
+            "temporal_difference_mse": 0.0029483320540748537
+          }
+        },
+        "three_test_examples": {
+          "vs_decoded_reference": {
+            "mse": 0.006086303542057673,
+            "psnr_db": 22.373429505390686,
+            "temporal_difference_mse": 0.003254939103499055
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.006473769433796406,
+            "psnr_db": 22.115072400036436,
+            "temporal_difference_mse": 0.003542120490844051
+          }
+        },
+        "one_legacy_example": {
+          "vs_decoded_reference": {
+            "mse": 0.0017523482674732804,
+            "psnr_db": 27.56379576472247,
+            "temporal_difference_mse": 0.0010835628490895033
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0019331200746819377,
+            "psnr_db": 27.137411691725937,
+            "temporal_difference_mse": 0.0011669667437672615
+          }
+        }
+      }
+    }
+  },
+  "report_scope": {
+    "latent_test": 16,
+    "legacy": 3,
+    "pixel_examples": 4,
+    "pixel_test_examples": 3,
+    "causality": 108,
+    "reload_parity": 38
+  },
+  "limitations": [
+    "H3 architecture/loss adaptation, not official CMN/recipe reproduction.",
+    "Causality is relative to fixed input latents; VAE decoder remains noncausal.",
+    "Four-example pixel results are not full-test pixel metrics.",
+    "Mean example PSNR is an arithmetic mean of per-video PSNR, not PSNR of pooled MSE.",
+    "Container timing does not by itself prove presentation timestamps; full decode is separately evidence-bound.",
+    "This audit does not independently prove bitwise resume, video semantics, visual improvement, or natural-video generalization.",
+    "Final prose claims and qualitative comparisons require human review."
+  ],
+  "files": [
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/README.md",
+      "bytes": 9830,
+      "sha256": "533dc6e8ed6cf3bcbdd9ccbcc657a8c06cbb9ac7ba39de1be308ab6baea26c09"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/env.sh",
+      "bytes": 979,
+      "sha256": "c4d640e77e398470096d9f2a0138fc46ae27dbe661431c78dae1178869cee0d1"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/evaluate_upscaler_ultraflash.py",
+      "bytes": 11628,
+      "sha256": "877093a9ef6ad5e55b732b5110c7e13092e80b6c9f2267e5f2a132ed3f1b85d9"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/prepare_upscaler_ultraflash_pairs.py",
+      "bytes": 21322,
+      "sha256": "7de67ad92766f7935fa4df8e3f51ff880e075e67f99a266a9d78fa83077d0a54"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/run_evaluate_upscaler_ultraflash.sh",
+      "bytes": 1288,
+      "sha256": "78a121cdc7a0aebf100064b2dd23d40c959d379af3ecb2138a2659a3bc8a5ec1"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/run_prepare_ultraflash_flow.sh",
+      "bytes": 420,
+      "sha256": "2696bddddaa603157ea5178f1c2a404e11ab9cc4c3080243ed07ac79cb57c062"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/run_prepare_upscaler_ultraflash_pairs.sh",
+      "bytes": 1337,
+      "sha256": "5cfa36a3123ff8910b16db9f05cf04a8fb6e7708577cbd61ba590be64bd86155"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/run_train_upscaler_ultraflash.sh",
+      "bytes": 844,
+      "sha256": "f8517bc63d08ed5773548f6db724487827c1c28d549425cceb9e08dda2819b67"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/run_upscaler_ultraflash_preflight.sh",
+      "bytes": 868,
+      "sha256": "cc016f3d53afaf4d4575f02b1450f2fe7a120f29f9bae6982d7e82c5bd9e9176"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/test_ultraflash_ewarp.py",
+      "bytes": 12649,
+      "sha256": "5200bd5a95cbdffb7fde57dff991e3da79953c1fc8615a69c3dcc60440a40160"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/train_upscaler_ultraflash.py",
+      "bytes": 15674,
+      "sha256": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316"
+    },
+    {
+      "path": "experiments/h3_upscaler_ultraflash_20261104/ultraflash_ewarp.py",
+      "bytes": 6288,
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/.gitignore",
+      "bytes": 375,
+      "sha256": "26d59c478e3bd30fea6300394599516b6f7b69bed66646dd8c55837d2e8af157"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/README.md",
+      "bytes": 7179,
+      "sha256": "aac8cc12847811beede012ead215a52c0d7f2b02526088cefbfb34ebb4968330"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/comparison.h264.mp4",
+      "bytes": 5758748,
+      "sha256": "3ed2941c97cd934590313bcb2e1a6e85e1d8dae8f8bf9abd5a075303eec4dc20"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/comparison.png",
+      "bytes": 5991833,
+      "sha256": "35623d65886d3ff3f640ade78380c6833aa0ba0f491f5bae9543a46f77a765d2"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0086441/long_ewarp.h264.mp4",
+      "bytes": 1545167,
+      "sha256": "3dbc3053dee9e20111bb00ed754039e9b68659abdd383d8f09609d188946c486"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/comparison.h264.mp4",
+      "bytes": 5770710,
+      "sha256": "ccbbb8a323ab1d54db59533a893e0fab7a1056b913ee0193b3432aea90731e77"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/comparison.png",
+      "bytes": 7207027,
+      "sha256": "c49b11478075da2949cb8ad3a004212d84424352832a639096c49c6301293c3f"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0128747/long_ewarp.h264.mp4",
+      "bytes": 1531929,
+      "sha256": "934e830be365c241fb6d0e86da813b6d0fd9ecb4fd63084f7d41f7dda4915229"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/comparison.h264.mp4",
+      "bytes": 5607814,
+      "sha256": "22dfce35b92beba9dee6f81ce0e1c51634056d88620437bbbbc5f31567af6a11"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/comparison.png",
+      "bytes": 4227285,
+      "sha256": "bfff8e79e671448b55f1d8400312220fb3e780847f2a5941576d0fbd18638178"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0380588/long_ewarp.h264.mp4",
+      "bytes": 1499739,
+      "sha256": "d683b90ba7d7a50b497026e55f6e78fc7e683230b90b3d670d833f82c09c0401"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/comparison.h264.mp4",
+      "bytes": 5742530,
+      "sha256": "73bfa7ff364ba8e7d88b79a5a62f138525538d2b7b5fe9d26323fba564a23ce4"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/comparison.png",
+      "bytes": 5276803,
+      "sha256": "1131d37b4ca8a53561c4574afc6b490e96d44208f7b8dfeaa8b846c8136eed69"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/VIDGEN5S_0829322/long_ewarp.h264.mp4",
+      "bytes": 1532560,
+      "sha256": "e1622c4e04de83526967380f36dae176fe4f3ac40de7af3a67d4c6041abda6c4"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/decode_complete_shard0.json",
+      "bytes": 317,
+      "sha256": "17423b254ee137a74e78d6ab6b5d9fb44b6e497f8e80edf923115146887e592d"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/decode_complete_shard1.json",
+      "bytes": 293,
+      "sha256": "a1b61477788e8d777b0f0697d742586430cdf0c871ef193bc2aa8ad43b0d886b"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/decode_complete_shard2.json",
+      "bytes": 293,
+      "sha256": "15dc8d8ab05fddd56d21dcf65df9f2c9107049c33d87a0f8d24167065071afc1"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/latent_summary_before_decode.json",
+      "bytes": 171984,
+      "sha256": "8d413440364e7c5846b7e3e41a012455d7789f493c64e93371ba8aff335a93b6"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/pixel_metrics_shard0.json",
+      "bytes": 3065,
+      "sha256": "85f5144a7791feb6b4f6bf5b0d2bfda1a2e6c7ab9c5615c02a3a3b1fd14e5096"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/pixel_metrics_shard1.json",
+      "bytes": 1536,
+      "sha256": "6d85620dc5db316f265974434f074307ba801e25c6f90c42c03db63426305882"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/pixel_metrics_shard2.json",
+      "bytes": 1538,
+      "sha256": "8ca49684c7b3fdb68d383ab24c9a9e668c99e25a352d240019180bd1069974ad"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/evaluation/summary.json",
+      "bytes": 178584,
+      "sha256": "cf8b86fa5e5d583ff2f21960064b0d800f7e3f54c7aa018696a20242a4a55fc6"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/ewarp_steps2000/config.json",
+      "bytes": 1437,
+      "sha256": "0074c156d8523f9c2148a28ba36a7344bb9d73b319a155a8124d5068f039a70a"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/ewarp_steps2000/steps.jsonl",
+      "bytes": 583048,
+      "sha256": "9f5fde3f2b30d6fe3f25b08b17b75a80f87320e18c17972964905f1443ba33bc"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/ewarp_steps2000/summary.json",
+      "bytes": 48403,
+      "sha256": "3c9453fb8e9588bf9c991665d1ccce9fa76fe2ced46ae564c8462e0815f132e8"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/execution_notes.json",
+      "bytes": 468,
+      "sha256": "6ef2ededbdf2f1608cdeaa04329d8b9913670717a968f31c37b54ca85866186e"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/READY.json",
+      "bytes": 895,
+      "sha256": "b2a7cbf10aebdf31850c9e41644c0d6df484a10d47227e3a7a5f7ad495845d4d"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/dev.jsonl",
+      "bytes": 8045,
+      "sha256": "c062d8d812f8b3060a80816bddc34f056b3fcb10878dd8e768327b84ba1b8701"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/legacy.jsonl",
+      "bytes": 1514,
+      "sha256": "b8179f501c88d69f46e0e3b1d51eae4c87634b158693f6616bd2e8dba9797847"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/plan.json",
+      "bytes": 113659,
+      "sha256": "9c1f7cdfac1544dacfd13148156eb610a50d9a50ce40f64e996d666a7b647c84"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/shards/shard-000-of-003/summary.json",
+      "bytes": 38917,
+      "sha256": "75811c62bbda452a90b81c952e8b7c4c9e47a06554dc30cdfc35d1ba8288837b"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/shards/shard-001-of-003/summary.json",
+      "bytes": 38217,
+      "sha256": "7209f9f017eaa74b8757c9bf49f28b4fcbbfe95d8275524f805228a7aefce972"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/shards/shard-002-of-003/summary.json",
+      "bytes": 38212,
+      "sha256": "35e5d43ecd7f2daf8c5bff836f5a5710c182168b85d10401592fc0e8e82e9668"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/test.jsonl",
+      "bytes": 8056,
+      "sha256": "3ea4003412f81fb3f7e1bf3e0cf6ffb0e6395e620cde79c46a7947681083a23a"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/pairs/train.jsonl",
+      "bytes": 64582,
+      "sha256": "8b7c5384baaef4672a7d4772c4ec86dd5186ec56251671fe50d9127a882af051"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/source_fingerprints.json",
+      "bytes": 15552,
+      "sha256": "49a34c2be6f53b735ba83c5742b8a612cceb9867ad9d27e8a5da4879518f452f"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/temporal_steps2000/config.json",
+      "bytes": 1443,
+      "sha256": "980fbb78e6f39d03ff9462b40966ef9ed450fdde56b717bd67af117dd7c947d9"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/temporal_steps2000/steps.jsonl",
+      "bytes": 678573,
+      "sha256": "d000009bb7ac622aeca454cc449f939e50264157e0c8a606c9fda7fae0d4b7fd"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/temporal_steps2000/summary.json",
+      "bytes": 60320,
+      "sha256": "e8287dbb8e811efd232cb958c9de4610645e48aaac9b1332f86259b64ad85b55"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/training_curves.png",
+      "bytes": 190119,
+      "sha256": "d2bd9c104bc8d4b921cf63eda968926c3aa5dfe1f159b56411fad7ff4404c3b1"
+    },
+    {
+      "path": "results/h3_upscaler_ultraflash_20261104/video_decode_evidence.json",
+      "bytes": 14646,
+      "sha256": "7815dfb8c46918981d3467454c39c1d3f69d2c47fda7575fcb2ab57968cf05a3"
+    }
+  ]
+}

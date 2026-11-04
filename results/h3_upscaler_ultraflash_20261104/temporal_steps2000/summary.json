@@ -1,0 +1,1594 @@
+{
+  "status": "completed",
+  "config": {
+    "pairs": "${RUN_ROOT}/pairs",
+    "initial": "${H3_UPSCALER_INITIAL_CHECKPOINT}",
+    "upstream": "${H3_UPSTREAM_DIR}",
+    "upscaler": "${H3_UPSCALER_WEIGHTS}",
+    "output": "${RUN_ROOT}/temporal_steps2000",
+    "device": "npu:0",
+    "steps": 2000,
+    "lr": 1e-05,
+    "min_lr": 1e-06,
+    "warmup": 100,
+    "weight": 0.1,
+    "family": "temporal",
+    "validate_every": 200,
+    "save_every": 200,
+    "seed": 20261105,
+    "resume": null,
+    "preflight": false,
+    "dtype": "fp32",
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "batch_size": 1,
+    "train_latent_frames": 37,
+    "loss_valid_latent_frames": 36,
+    "source_frames": 120,
+    "output_pixels": [
+      672,
+      384
+    ],
+    "recipe": "Ultra Flash inspired H3 causal-upscaler adaptation; original network retained",
+    "paper": "https://arxiv.org/html/2606.09150v4#S2.SS2",
+    "flow_version": "h3-anchors17x5-farneback-quarter-backward-inbounds-v1",
+    "initialization": "Prior 50-update checkpoint; fresh optimizer and schedule",
+    "paper_missing_choices": "Flow estimator/lambda/masks/reduction/batch/steps unpublished; these are experiment defaults",
+    "selection": "Lowest mean validation latent MSE, includes step0; test never selects checkpoint",
+    "causal_scope": "Fixed H3 latent inputs only; H3 decoder remains noncausal",
+    "schedule": "100-step linear warmup then cosine to 1e-06; adapted low LR for pretrained345M H3",
+    "prior_updates": 50,
+    "activation_checkpointing": true
+  },
+  "parameter_count": 345280216,
+  "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+  "initial_checkpoint_sha256": "76e9afc97bfc31029fecb64c249ae23d26fcdfc6745f3a2f10ccc57ce82b222c",
+  "adapter_config": {
+    "version": 1,
+    "initialization": "aligned_past",
+    "temporal_padding": "left_only_zero",
+    "groupnorm": "per_frame",
+    "normalization": "D(U(N(native_normalized_H3_latent)))",
+    "spatial_scale": 2.0,
+    "temporal_chunking": false,
+    "dtype": "float32",
+    "saved_weights_already_initialized": true,
+    "reload_must_not_reinitialize_weights": true
+  },
+  "train_count": 128,
+  "dev_count": 16,
+  "validation": [
+    {
+      "step": 0,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.2791731655597687,
+          "latent_mse": 0.2632087469100952,
+          "ewarp_l1": 0.21353551745414734,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.159644216299057
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.28424644470214844,
+          "latent_mse": 0.27086982131004333,
+          "ewarp_l1": 0.20355069637298584,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.13376621901988983
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.35607603192329407,
+          "latent_mse": 0.33686885237693787,
+          "ewarp_l1": 0.27894675731658936,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.19207176566123962
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.27318286895751953,
+          "latent_mse": 0.2578953206539154,
+          "ewarp_l1": 0.2421507090330124,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.15287557244300842
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.27562060952186584,
+          "latent_mse": 0.26186275482177734,
+          "ewarp_l1": 0.22203555703163147,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.1375785768032074
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.3536020815372467,
+          "latent_mse": 0.3383801281452179,
+          "ewarp_l1": 0.24092067778110504,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.15221954882144928
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.2898671329021454,
+          "latent_mse": 0.27189868688583374,
+          "ewarp_l1": 0.301401287317276,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.1796843707561493
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.30679380893707275,
+          "latent_mse": 0.2929178476333618,
+          "ewarp_l1": 0.19639815390110016,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.1387595534324646
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.38573288917541504,
+          "latent_mse": 0.3636621832847595,
+          "ewarp_l1": 0.23579390347003937,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.22070705890655518
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.467754602432251,
+          "latent_mse": 0.45219069719314575,
+          "ewarp_l1": 0.24932539463043213,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.15563905239105225
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.3076944351196289,
+          "latent_mse": 0.2943216860294342,
+          "ewarp_l1": 0.22537274658679962,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.1337275207042694
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.33708298206329346,
+          "latent_mse": 0.32021763920783997,
+          "ewarp_l1": 0.27044329047203064,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.16865327954292297
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.2572808563709259,
+          "latent_mse": 0.2415628731250763,
+          "ewarp_l1": 0.22429044544696808,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.15717992186546326
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.3608476519584656,
+          "latent_mse": 0.34842997789382935,
+          "ewarp_l1": 0.23264771699905396,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.12417663633823395
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.31787723302841187,
+          "latent_mse": 0.29964759945869446,
+          "ewarp_l1": 0.2266521155834198,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.18229642510414124
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.3611433207988739,
+          "latent_mse": 0.34767061471939087,
+          "ewarp_l1": 0.20841820538043976,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.13472694158554077
+        }
+      },
+      "mean": {
+        "loss": 0.32587350718677044,
+        "latent_mse": 0.31010033935308456,
+        "ewarp_l1": 0.23574269842356443,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.15773166622966528
+      }
+    },
+    {
+      "step": 200,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.13692130148410797,
+          "latent_mse": 0.12320369482040405,
+          "ewarp_l1": 0.21732118725776672,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.1371760070323944
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.10194063186645508,
+          "latent_mse": 0.09385151416063309,
+          "ewarp_l1": 0.2352508306503296,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.0808911845088005
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.17242270708084106,
+          "latent_mse": 0.15859586000442505,
+          "ewarp_l1": 0.29688167572021484,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.13826854526996613
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.11443911492824554,
+          "latent_mse": 0.105153888463974,
+          "ewarp_l1": 0.27711182832717896,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.09285229444503784
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.11062963306903839,
+          "latent_mse": 0.10021761059761047,
+          "ewarp_l1": 0.23931583762168884,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.10412020981311798
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.12944449484348297,
+          "latent_mse": 0.12003353983163834,
+          "ewarp_l1": 0.2788603901863098,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.09410955756902695
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.13803307712078094,
+          "latent_mse": 0.12371394038200378,
+          "ewarp_l1": 0.3016110062599182,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.1431913673877716
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.12184242904186249,
+          "latent_mse": 0.11248599737882614,
+          "ewarp_l1": 0.21458512544631958,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.09356434643268585
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.18249918520450592,
+          "latent_mse": 0.16779696941375732,
+          "ewarp_l1": 0.2872888147830963,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.14702221751213074
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.16512444615364075,
+          "latent_mse": 0.15407845377922058,
+          "ewarp_l1": 0.25947481393814087,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.11045998334884644
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.11290533095598221,
+          "latent_mse": 0.10338324308395386,
+          "ewarp_l1": 0.25518712401390076,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.0952209010720253
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.20019015669822693,
+          "latent_mse": 0.1863432228565216,
+          "ewarp_l1": 0.29513365030288696,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.13846927881240845
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.1339336782693863,
+          "latent_mse": 0.1233866810798645,
+          "ewarp_l1": 0.2626422941684723,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.10546994209289551
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.13110074400901794,
+          "latent_mse": 0.12133277207612991,
+          "ewarp_l1": 0.2376001626253128,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.09767972677946091
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.12777061760425568,
+          "latent_mse": 0.11551941931247711,
+          "ewarp_l1": 0.26536282896995544,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.12251202762126923
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.1374157816171646,
+          "latent_mse": 0.1278233379125595,
+          "ewarp_l1": 0.2461981475353241,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.09592437744140625
+        }
+      },
+      "mean": {
+        "loss": 0.13853833312168717,
+        "latent_mse": 0.12730750907212496,
+        "ewarp_l1": 0.260614107362926,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.11230824794620275
+      }
+    },
+    {
+      "step": 400,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.12887105345726013,
+          "latent_mse": 0.11616863310337067,
+          "ewarp_l1": 0.2192198932170868,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.12702417373657227
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.08527544885873795,
+          "latent_mse": 0.07837806642055511,
+          "ewarp_l1": 0.24592620134353638,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.06897380203008652
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.14901494979858398,
+          "latent_mse": 0.1367167830467224,
+          "ewarp_l1": 0.3052385747432709,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.12298164516687393
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.09858506172895432,
+          "latent_mse": 0.09041691571474075,
+          "ewarp_l1": 0.285697877407074,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.08168148994445801
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.09766404330730438,
+          "latent_mse": 0.08807676285505295,
+          "ewarp_l1": 0.23859207332134247,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.09587277472019196
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.11213438957929611,
+          "latent_mse": 0.10379630327224731,
+          "ewarp_l1": 0.2890501320362091,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.08338086307048798
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.11647127568721771,
+          "latent_mse": 0.1041034460067749,
+          "ewarp_l1": 0.3154279291629791,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.1236782968044281
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.09607807546854019,
+          "latent_mse": 0.08791902661323547,
+          "ewarp_l1": 0.21929951012134552,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.08159050345420837
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.15680266916751862,
+          "latent_mse": 0.14350625872612,
+          "ewarp_l1": 0.29587921500205994,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.1329641342163086
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.1397339403629303,
+          "latent_mse": 0.12988945841789246,
+          "ewarp_l1": 0.26754632592201233,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.09844483435153961
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.10645132511854172,
+          "latent_mse": 0.09794272482395172,
+          "ewarp_l1": 0.26132985949516296,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.08508601784706116
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.17347051203250885,
+          "latent_mse": 0.16071820259094238,
+          "ewarp_l1": 0.30092039704322815,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.12752312421798706
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.1158117949962616,
+          "latent_mse": 0.10640116035938263,
+          "ewarp_l1": 0.2709414064884186,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.09410632401704788
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.11192230135202408,
+          "latent_mse": 0.10322147607803345,
+          "ewarp_l1": 0.24348855018615723,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.0870082750916481
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.12271802127361298,
+          "latent_mse": 0.11173106729984283,
+          "ewarp_l1": 0.2745208144187927,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.1098695769906044
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.11598298698663712,
+          "latent_mse": 0.10730394721031189,
+          "ewarp_l1": 0.25482770800590515,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.08679038286209106
+        }
+      },
+      "mean": {
+        "loss": 0.12043674057349563,
+        "latent_mse": 0.11039313953369856,
+        "ewarp_l1": 0.26799415424466133,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.10043601365759969
+      }
+    },
+    {
+      "step": 600,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.12084484100341797,
+          "latent_mse": 0.1086871325969696,
+          "ewarp_l1": 0.22162757813930511,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.12157706916332245
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.07819298654794693,
+          "latent_mse": 0.071687713265419,
+          "ewarp_l1": 0.2486492395401001,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.06505270302295685
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.13461241126060486,
+          "latent_mse": 0.12305039167404175,
+          "ewarp_l1": 0.3111552596092224,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.11562027037143707
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.08992470800876617,
+          "latent_mse": 0.0822136327624321,
+          "ewarp_l1": 0.2883853614330292,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.07711076736450195
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.09673533588647842,
+          "latent_mse": 0.08755992352962494,
+          "ewarp_l1": 0.23860977590084076,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.09175409376621246
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.11307007819414139,
+          "latent_mse": 0.10513124614953995,
+          "ewarp_l1": 0.29022055864334106,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.07938829064369202
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.10406375676393509,
+          "latent_mse": 0.09277181327342987,
+          "ewarp_l1": 0.32671451568603516,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.11291942000389099
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.0954490453004837,
+          "latent_mse": 0.08762430399656296,
+          "ewarp_l1": 0.21825501322746277,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.07824738323688507
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.14155755937099457,
+          "latent_mse": 0.12877300381660461,
+          "ewarp_l1": 0.29827120900154114,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.12784551084041595
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.1296805441379547,
+          "latent_mse": 0.12034642696380615,
+          "ewarp_l1": 0.271253377199173,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.09334121644496918
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.0995282307267189,
+          "latent_mse": 0.09154797345399857,
+          "ewarp_l1": 0.26038461923599243,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07980257272720337
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.17341169714927673,
+          "latent_mse": 0.16122643649578094,
+          "ewarp_l1": 0.30379775166511536,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.1218525767326355
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.11283725500106812,
+          "latent_mse": 0.10388012230396271,
+          "ewarp_l1": 0.2718484103679657,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08957136422395706
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.1058918759226799,
+          "latent_mse": 0.09782885760068893,
+          "ewarp_l1": 0.24690969288349152,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.08063021302223206
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.11281432956457138,
+          "latent_mse": 0.10231775045394897,
+          "ewarp_l1": 0.2762453258037567,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.10496576130390167
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.10591066628694534,
+          "latent_mse": 0.09780390560626984,
+          "ewarp_l1": 0.25466886162757874,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.08106760680675507
+        }
+      },
+      "mean": {
+        "loss": 0.11340783257037401,
+        "latent_mse": 0.10390316462144256,
+        "ewarp_l1": 0.27043728437274694,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.09504667622968554
+      }
+    },
+    {
+      "step": 800,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.12173296511173248,
+          "latent_mse": 0.10986028611660004,
+          "ewarp_l1": 0.22579383850097656,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.11872680485248566
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.07476606965065002,
+          "latent_mse": 0.06854724884033203,
+          "ewarp_l1": 0.2518027722835541,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.06218819320201874
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.12906695902347565,
+          "latent_mse": 0.11794853210449219,
+          "ewarp_l1": 0.3173009157180786,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.11118423938751221
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.08871348947286606,
+          "latent_mse": 0.08126537501811981,
+          "ewarp_l1": 0.2915691137313843,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.07448114454746246
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.09255488216876984,
+          "latent_mse": 0.08363166451454163,
+          "ewarp_l1": 0.23763898015022278,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.08923216909170151
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.10867880284786224,
+          "latent_mse": 0.10095217823982239,
+          "ewarp_l1": 0.29438257217407227,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.07726624608039856
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.09805198013782501,
+          "latent_mse": 0.08749517798423767,
+          "ewarp_l1": 0.3381690979003906,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.10556800663471222
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.09273745864629745,
+          "latent_mse": 0.08515383303165436,
+          "ewarp_l1": 0.2182151973247528,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.07583627104759216
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.13203319907188416,
+          "latent_mse": 0.1195933148264885,
+          "ewarp_l1": 0.30165210366249084,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.12439890205860138
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.12045474350452423,
+          "latent_mse": 0.11154130101203918,
+          "ewarp_l1": 0.27649709582328796,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.08913445472717285
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.09750575572252274,
+          "latent_mse": 0.08970510959625244,
+          "ewarp_l1": 0.26373231410980225,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07800649106502533
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.1703394651412964,
+          "latent_mse": 0.15845505893230438,
+          "ewarp_l1": 0.3077222406864166,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.11884407699108124
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.10912909358739853,
+          "latent_mse": 0.10044559836387634,
+          "ewarp_l1": 0.2764844298362732,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08683496713638306
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.10058600455522537,
+          "latent_mse": 0.0928037017583847,
+          "ewarp_l1": 0.2508404850959778,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.07782304286956787
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.1048855185508728,
+          "latent_mse": 0.09470907598733902,
+          "ewarp_l1": 0.2800295650959015,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.10176441073417664
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.09706304222345352,
+          "latent_mse": 0.0892714112997055,
+          "ewarp_l1": 0.2556557357311249,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.07791630923748016
+        }
+      },
+      "mean": {
+        "loss": 0.10864371433854103,
+        "latent_mse": 0.09946117922663689,
+        "ewarp_l1": 0.2742179036140442,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.09182535810396075
+      }
+    },
+    {
+      "step": 1000,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.12265432626008987,
+          "latent_mse": 0.11096012592315674,
+          "ewarp_l1": 0.22667846083641052,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.11694200336933136
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.07161758840084076,
+          "latent_mse": 0.0655999630689621,
+          "ewarp_l1": 0.2538946568965912,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.06017623469233513
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.12744763493537903,
+          "latent_mse": 0.11656864732503891,
+          "ewarp_l1": 0.3203190863132477,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.1087898313999176
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.08647428452968597,
+          "latent_mse": 0.07920018583536148,
+          "ewarp_l1": 0.2920457422733307,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.07274097949266434
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.09268354624509811,
+          "latent_mse": 0.08393727988004684,
+          "ewarp_l1": 0.23689058423042297,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.08746269345283508
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.10322456061840057,
+          "latent_mse": 0.09567943960428238,
+          "ewarp_l1": 0.29463768005371094,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.07545122504234314
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.09758160263299942,
+          "latent_mse": 0.08738645911216736,
+          "ewarp_l1": 0.34427252411842346,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.10195142775774002
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.08672691136598587,
+          "latent_mse": 0.07927192747592926,
+          "ewarp_l1": 0.21721720695495605,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.07454980909824371
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.12996555864810944,
+          "latent_mse": 0.11767448484897614,
+          "ewarp_l1": 0.3011678159236908,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.12291070818901062
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.11669611185789108,
+          "latent_mse": 0.10806743800640106,
+          "ewarp_l1": 0.2785714864730835,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.08628673851490021
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.09739138931035995,
+          "latent_mse": 0.0897388607263565,
+          "ewarp_l1": 0.2649216651916504,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07652530074119568
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.16391055285930634,
+          "latent_mse": 0.15222102403640747,
+          "ewarp_l1": 0.3093026280403137,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.11689531058073044
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.1063891053199768,
+          "latent_mse": 0.09781718999147415,
+          "ewarp_l1": 0.27762895822525024,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08571919053792953
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.09647514671087265,
+          "latent_mse": 0.08893181383609772,
+          "ewarp_l1": 0.2534155547618866,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.07543329894542694
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.10264403373003006,
+          "latent_mse": 0.09264880418777466,
+          "ewarp_l1": 0.280744731426239,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.0999523252248764
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.09625063836574554,
+          "latent_mse": 0.08865942806005478,
+          "ewarp_l1": 0.2565411925315857,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.07591213285923004
+        }
+      },
+      "mean": {
+        "loss": 0.10613331198692322,
+        "latent_mse": 0.09714769199490547,
+        "ewarp_l1": 0.2755156233906746,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.08985620061866939
+      }
+    },
+    {
+      "step": 1200,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.11913693696260452,
+          "latent_mse": 0.10757043212652206,
+          "ewarp_l1": 0.2283879518508911,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.11566506326198578
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.06823361665010452,
+          "latent_mse": 0.0623297244310379,
+          "ewarp_l1": 0.2553006708621979,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.05903889983892441
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.12470771372318268,
+          "latent_mse": 0.11405639350414276,
+          "ewarp_l1": 0.32399919629096985,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.10651321709156036
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.08582472801208496,
+          "latent_mse": 0.07867196202278137,
+          "ewarp_l1": 0.2932776212692261,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.07152767479419708
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.09027008712291718,
+          "latent_mse": 0.08164641261100769,
+          "ewarp_l1": 0.23646177351474762,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.08623676002025604
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.1047210842370987,
+          "latent_mse": 0.09728841483592987,
+          "ewarp_l1": 0.2950296103954315,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.07432672381401062
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.09525319933891296,
+          "latent_mse": 0.08531761169433594,
+          "ewarp_l1": 0.3496991991996765,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.09935586154460907
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.08783218264579773,
+          "latent_mse": 0.08044512569904327,
+          "ewarp_l1": 0.21814630925655365,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.07387059926986694
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.12954701483249664,
+          "latent_mse": 0.11738228052854538,
+          "ewarp_l1": 0.30225977301597595,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.12164731323719025
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.11175403743982315,
+          "latent_mse": 0.10333126038312912,
+          "ewarp_l1": 0.2807875871658325,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.0842277854681015
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.0956832766532898,
+          "latent_mse": 0.08812703937292099,
+          "ewarp_l1": 0.2657938003540039,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07556237280368805
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.16161425411701202,
+          "latent_mse": 0.1500813066959381,
+          "ewarp_l1": 0.3101503551006317,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.11532942950725555
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.10671140998601913,
+          "latent_mse": 0.09827440232038498,
+          "ewarp_l1": 0.2783479690551758,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08437007665634155
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.09387270361185074,
+          "latent_mse": 0.08644581586122513,
+          "ewarp_l1": 0.25502681732177734,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.07426886260509491
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.0984390527009964,
+          "latent_mse": 0.08855877816677094,
+          "ewarp_l1": 0.2821856141090393,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.09880271553993225
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.09574952721595764,
+          "latent_mse": 0.0882793515920639,
+          "ewarp_l1": 0.25667890906333923,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.07470172643661499
+        }
+      },
+      "mean": {
+        "loss": 0.1043344265781343,
+        "latent_mse": 0.09548789449036121,
+        "ewarp_l1": 0.2769708223640919,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.08846531761810184
+      }
+    },
+    {
+      "step": 1400,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.12067797034978867,
+          "latent_mse": 0.10916399955749512,
+          "ewarp_l1": 0.22964675724506378,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.11513973027467728
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.06842967122793198,
+          "latent_mse": 0.06257946789264679,
+          "ewarp_l1": 0.2561114430427551,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.05850205570459366
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.12454776465892792,
+          "latent_mse": 0.11398456990718842,
+          "ewarp_l1": 0.3257402777671814,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.10563196241855621
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.08549518138170242,
+          "latent_mse": 0.0783955380320549,
+          "ewarp_l1": 0.2934594750404358,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.07099646329879761
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.08714299649000168,
+          "latent_mse": 0.07860900461673737,
+          "ewarp_l1": 0.23632797598838806,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.08533994108438492
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.1023610308766365,
+          "latent_mse": 0.0949917882680893,
+          "ewarp_l1": 0.29554563760757446,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.07369241118431091
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.09539110958576202,
+          "latent_mse": 0.08554255962371826,
+          "ewarp_l1": 0.3529927134513855,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.09848550707101822
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.08768746256828308,
+          "latent_mse": 0.08033127337694168,
+          "ewarp_l1": 0.2175913006067276,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.073561891913414
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.1298828125,
+          "latent_mse": 0.11778131872415543,
+          "ewarp_l1": 0.30253201723098755,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.12101493030786514
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.10982504487037659,
+          "latent_mse": 0.1015055701136589,
+          "ewarp_l1": 0.2824375629425049,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.0831947773694992
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.09281284362077713,
+          "latent_mse": 0.08533073216676712,
+          "ewarp_l1": 0.26653045415878296,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07482108473777771
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.16130892932415009,
+          "latent_mse": 0.14983466267585754,
+          "ewarp_l1": 0.3112536370754242,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.1147427186369896
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.10496167838573456,
+          "latent_mse": 0.09658320993185043,
+          "ewarp_l1": 0.2784733176231384,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08378465473651886
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.09321846812963486,
+          "latent_mse": 0.08587859570980072,
+          "ewarp_l1": 0.25680258870124817,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.07339873909950256
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.09713668376207352,
+          "latent_mse": 0.08732527494430542,
+          "ewarp_l1": 0.2822069227695465,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.09811406582593918
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.09267111122608185,
+          "latent_mse": 0.0853048712015152,
+          "ewarp_l1": 0.2559128701686859,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.07366238534450531
+        }
+      },
+      "mean": {
+        "loss": 0.10334692243486643,
+        "latent_mse": 0.09457140229642391,
+        "ewarp_l1": 0.2777228094637394,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.0877552074380219
+      }
+    },
+    {
+      "step": 1600,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.11723379045724869,
+          "latent_mse": 0.10578722506761551,
+          "ewarp_l1": 0.23000238835811615,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.11446563154459
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.06722863763570786,
+          "latent_mse": 0.06141958385705948,
+          "ewarp_l1": 0.2561316192150116,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.05809050798416138
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.12312517315149307,
+          "latent_mse": 0.1126360148191452,
+          "ewarp_l1": 0.3262069523334503,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.1048915833234787
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.0841858834028244,
+          "latent_mse": 0.07714928686618805,
+          "ewarp_l1": 0.29302915930747986,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.07036593556404114
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.08845993876457214,
+          "latent_mse": 0.07999250292778015,
+          "ewarp_l1": 0.23585115373134613,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.08467432856559753
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.10115928947925568,
+          "latent_mse": 0.09385590255260468,
+          "ewarp_l1": 0.2948008179664612,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.0730338990688324
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.09299255907535553,
+          "latent_mse": 0.08325131982564926,
+          "ewarp_l1": 0.35426127910614014,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.09741239994764328
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.08510241657495499,
+          "latent_mse": 0.07778456062078476,
+          "ewarp_l1": 0.21717315912246704,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.07317852973937988
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.12735535204410553,
+          "latent_mse": 0.11530368775129318,
+          "ewarp_l1": 0.3019213080406189,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.12051664292812347
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.10996954888105392,
+          "latent_mse": 0.10172824561595917,
+          "ewarp_l1": 0.28265127539634705,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.08241303265094757
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.09396619349718094,
+          "latent_mse": 0.0865221843123436,
+          "ewarp_l1": 0.26605892181396484,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07444007694721222
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.15906216204166412,
+          "latent_mse": 0.1476411521434784,
+          "ewarp_l1": 0.3108140826225281,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.11421003937721252
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.10244856029748917,
+          "latent_mse": 0.09411867707967758,
+          "ewarp_l1": 0.2779691815376282,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08329884707927704
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.09084001183509827,
+          "latent_mse": 0.08356829732656479,
+          "ewarp_l1": 0.25707775354385376,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.07271717488765717
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.09897178411483765,
+          "latent_mse": 0.08920356631278992,
+          "ewarp_l1": 0.28218331933021545,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.09768219292163849
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.09256734699010849,
+          "latent_mse": 0.08525337278842926,
+          "ewarp_l1": 0.25564825534820557,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.0731397271156311
+        }
+      },
+      "mean": {
+        "loss": 0.1021667905151844,
+        "latent_mse": 0.09345097374171019,
+        "ewarp_l1": 0.27761128917336464,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.087158159352839
+      }
+    },
+    {
+      "step": 1800,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.11879130452871323,
+          "latent_mse": 0.10736683011054993,
+          "ewarp_l1": 0.23085033893585205,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.1142447218298912
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.06755569577217102,
+          "latent_mse": 0.061776578426361084,
+          "ewarp_l1": 0.2567870318889618,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.05779121071100235
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.12305856496095657,
+          "latent_mse": 0.11260814964771271,
+          "ewarp_l1": 0.3270547091960907,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.10450412333011627
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.0841207429766655,
+          "latent_mse": 0.07710019499063492,
+          "ewarp_l1": 0.2938082218170166,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.07020548731088638
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.08681806176900864,
+          "latent_mse": 0.07838974893093109,
+          "ewarp_l1": 0.23615393042564392,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.08428313583135605
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.10043873637914658,
+          "latent_mse": 0.09316432476043701,
+          "ewarp_l1": 0.2949584722518921,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.07274408638477325
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.09382017701864243,
+          "latent_mse": 0.08410321176052094,
+          "ewarp_l1": 0.35555362701416016,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.09716964513063431
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.08538801223039627,
+          "latent_mse": 0.07808880507946014,
+          "ewarp_l1": 0.21740907430648804,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.07299204170703888
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.1281273365020752,
+          "latent_mse": 0.1161084920167923,
+          "ewarp_l1": 0.3027201294898987,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.12018841505050659
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.11038809269666672,
+          "latent_mse": 0.1021803617477417,
+          "ewarp_l1": 0.2831799387931824,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.08207733184099197
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.09403392672538757,
+          "latent_mse": 0.0866127461194992,
+          "ewarp_l1": 0.26678866147994995,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07421182096004486
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.15843085944652557,
+          "latent_mse": 0.14704474806785583,
+          "ewarp_l1": 0.311592698097229,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.11386105418205261
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.10145679861307144,
+          "latent_mse": 0.09315748512744904,
+          "ewarp_l1": 0.2784826159477234,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08299311995506287
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.09202313423156738,
+          "latent_mse": 0.08477595448493958,
+          "ewarp_l1": 0.2578302025794983,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.07247182726860046
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.09832016378641129,
+          "latent_mse": 0.08858119696378708,
+          "ewarp_l1": 0.28261932730674744,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.09738968312740326
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.0908786952495575,
+          "latent_mse": 0.08360892534255981,
+          "ewarp_l1": 0.2558034658432007,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.07269766181707382
+        }
+      },
+      "mean": {
+        "loss": 0.10210314393043518,
+        "latent_mse": 0.09341673459857702,
+        "ewarp_l1": 0.27822452783584595,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.0868640854023397
+      }
+    },
+    {
+      "step": 2000,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.11810905486345291,
+          "latent_mse": 0.10671243816614151,
+          "ewarp_l1": 0.23100098967552185,
+          "valid_warp_fraction": 0.870323121547699,
+          "temporal_difference_mse": 0.1139661967754364
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.06681489199399948,
+          "latent_mse": 0.06105627119541168,
+          "ewarp_l1": 0.2570047378540039,
+          "valid_warp_fraction": 0.9761054515838623,
+          "temporal_difference_mse": 0.057586196810007095
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.12237447500228882,
+          "latent_mse": 0.11196278780698776,
+          "ewarp_l1": 0.3273391127586365,
+          "valid_warp_fraction": 0.9368764162063599,
+          "temporal_difference_mse": 0.10411684215068817
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.08395026624202728,
+          "latent_mse": 0.07696504890918732,
+          "ewarp_l1": 0.2939182221889496,
+          "valid_warp_fraction": 0.9407595992088318,
+          "temporal_difference_mse": 0.06985215842723846
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.0870584100484848,
+          "latent_mse": 0.07865232229232788,
+          "ewarp_l1": 0.2359541356563568,
+          "valid_warp_fraction": 0.9838151931762695,
+          "temporal_difference_mse": 0.0840609073638916
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.10014961659908295,
+          "latent_mse": 0.09290200471878052,
+          "ewarp_l1": 0.2950863838195801,
+          "valid_warp_fraction": 0.9784296751022339,
+          "temporal_difference_mse": 0.07247614860534668
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.09307526051998138,
+          "latent_mse": 0.08339755237102509,
+          "ewarp_l1": 0.3560198247432709,
+          "valid_warp_fraction": 0.9121031761169434,
+          "temporal_difference_mse": 0.0967770516872406
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.08497899025678635,
+          "latent_mse": 0.07769734412431717,
+          "ewarp_l1": 0.21745572984218597,
+          "valid_warp_fraction": 0.9528344869613647,
+          "temporal_difference_mse": 0.07281645387411118
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.12664461135864258,
+          "latent_mse": 0.11465992033481598,
+          "ewarp_l1": 0.3028160333633423,
+          "valid_warp_fraction": 0.9237528443336487,
+          "temporal_difference_mse": 0.11984693259000778
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.10869163274765015,
+          "latent_mse": 0.10053091496229172,
+          "ewarp_l1": 0.2834564447402954,
+          "valid_warp_fraction": 0.9337301254272461,
+          "temporal_difference_mse": 0.0816071480512619
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.09321427345275879,
+          "latent_mse": 0.08580997586250305,
+          "ewarp_l1": 0.26674261689186096,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.07404297590255737
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.15930156409740448,
+          "latent_mse": 0.1479398012161255,
+          "ewarp_l1": 0.31150680780410767,
+          "valid_warp_fraction": 0.9848923087120056,
+          "temporal_difference_mse": 0.11361759155988693
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.10197515040636063,
+          "latent_mse": 0.09370145201683044,
+          "ewarp_l1": 0.2786652445793152,
+          "valid_warp_fraction": 0.935232400894165,
+          "temporal_difference_mse": 0.08273696899414062
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.09110939502716064,
+          "latent_mse": 0.08389154076576233,
+          "ewarp_l1": 0.2578366994857788,
+          "valid_warp_fraction": 0.9695578217506409,
+          "temporal_difference_mse": 0.07217855751514435
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.09803792089223862,
+          "latent_mse": 0.08831735700368881,
+          "ewarp_l1": 0.28276970982551575,
+          "valid_warp_fraction": 0.9768140316009521,
+          "temporal_difference_mse": 0.09720566868782043
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.09114643931388855,
+          "latent_mse": 0.08389073610305786,
+          "ewarp_l1": 0.2559548318386078,
+          "valid_warp_fraction": 0.9852890968322754,
+          "temporal_difference_mse": 0.07255703210830688
+        }
+      },
+      "mean": {
+        "loss": 0.10166449705138803,
+        "latent_mse": 0.09300546674057841,
+        "ewarp_l1": 0.2783454703167081,
+        "valid_warp_fraction": 0.9523331113159657,
+        "temporal_difference_mse": 0.0865903019439429
+      }
+    }
+  ],
+  "test_opened": true,
+  "completed_updates": 2000,
+  "elapsed_seconds": 2578.6100135017186,
+  "best_validation_mse": 0.09300546674057841,
+  "best_step": 2000,
+  "training_seconds": 2605.5015840437263,
+  "memory": {
+    "peak_allocated_gib": 6.425301551818848,
+    "peak_reserved_gib": 6.65234375
+  },
+  "test": {
+    "samples": {
+      "VIDGEN5S_0014509": {
+        "loss": 0.10469827055931091,
+        "latent_mse": 0.0941765308380127,
+        "ewarp_l1": 0.2609996199607849,
+        "valid_warp_fraction": 0.94367915391922,
+        "temporal_difference_mse": 0.10521741956472397
+      },
+      "VIDGEN5S_0059416": {
+        "loss": 0.11487016081809998,
+        "latent_mse": 0.10345819592475891,
+        "ewarp_l1": 0.25458163022994995,
+        "valid_warp_fraction": 0.9679704904556274,
+        "temporal_difference_mse": 0.11411963403224945
+      },
+      "VIDGEN5S_0086441": {
+        "loss": 0.08647354692220688,
+        "latent_mse": 0.07981973141431808,
+        "ewarp_l1": 0.2748801112174988,
+        "valid_warp_fraction": 0.9853174686431885,
+        "temporal_difference_mse": 0.06653814017772675
+      },
+      "VIDGEN5S_0100402": {
+        "loss": 0.08450305461883545,
+        "latent_mse": 0.07864630222320557,
+        "ewarp_l1": 0.2545158267021179,
+        "valid_warp_fraction": 0.985232412815094,
+        "temporal_difference_mse": 0.05856753885746002
+      },
+      "VIDGEN5S_0128747": {
+        "loss": 0.13488765060901642,
+        "latent_mse": 0.12277407944202423,
+        "ewarp_l1": 0.2806319296360016,
+        "valid_warp_fraction": 0.8741213083267212,
+        "temporal_difference_mse": 0.12113575637340546
+      },
+      "VIDGEN5S_0184359": {
+        "loss": 0.07525903731584549,
+        "latent_mse": 0.06845241785049438,
+        "ewarp_l1": 0.20596954226493835,
+        "valid_warp_fraction": 0.9976190328598022,
+        "temporal_difference_mse": 0.06806616485118866
+      },
+      "VIDGEN5S_0288595": {
+        "loss": 0.09970609098672867,
+        "latent_mse": 0.09133032709360123,
+        "ewarp_l1": 0.3015233278274536,
+        "valid_warp_fraction": 0.9385771155357361,
+        "temporal_difference_mse": 0.08375763893127441
+      },
+      "VIDGEN5S_0361101": {
+        "loss": 0.1099025160074234,
+        "latent_mse": 0.1022104024887085,
+        "ewarp_l1": 0.2548036277294159,
+        "valid_warp_fraction": 0.9570011496543884,
+        "temporal_difference_mse": 0.07692115753889084
+      },
+      "VIDGEN5S_0362565": {
+        "loss": 0.07515238225460052,
+        "latent_mse": 0.06930891424417496,
+        "ewarp_l1": 0.2655629515647888,
+        "valid_warp_fraction": 0.9407029151916504,
+        "temporal_difference_mse": 0.05843471735715866
+      },
+      "VIDGEN5S_0441001": {
+        "loss": 0.10002032667398453,
+        "latent_mse": 0.09041698276996613,
+        "ewarp_l1": 0.2906145453453064,
+        "valid_warp_fraction": 0.9757936596870422,
+        "temporal_difference_mse": 0.09603345394134521
+      },
+      "VIDGEN5S_0496359": {
+        "loss": 0.08811160176992416,
+        "latent_mse": 0.0792507752776146,
+        "ewarp_l1": 0.27949225902557373,
+        "valid_warp_fraction": 0.9246031641960144,
+        "temporal_difference_mse": 0.08860823512077332
+      },
+      "VIDGEN5S_0602499": {
+        "loss": 0.1104004755616188,
+        "latent_mse": 0.10069791227579117,
+        "ewarp_l1": 0.26434439420700073,
+        "valid_warp_fraction": 0.9999716281890869,
+        "temporal_difference_mse": 0.09702565521001816
+      },
+      "VIDGEN5S_0632078": {
+        "loss": 0.10451477766036987,
+        "latent_mse": 0.09332430362701416,
+        "ewarp_l1": 0.2771545350551605,
+        "valid_warp_fraction": 0.8904478549957275,
+        "temporal_difference_mse": 0.11190471053123474
+      },
+      "VIDGEN5S_0820879": {
+        "loss": 0.08958831429481506,
+        "latent_mse": 0.08300044387578964,
+        "ewarp_l1": 0.26395970582962036,
+        "valid_warp_fraction": 0.9741780161857605,
+        "temporal_difference_mse": 0.06587870419025421
+      },
+      "VIDGEN5S_0829322": {
+        "loss": 0.12779340147972107,
+        "latent_mse": 0.11910856515169144,
+        "ewarp_l1": 0.31614142656326294,
+        "valid_warp_fraction": 0.9445011019706726,
+        "temporal_difference_mse": 0.0868484377861023
+      },
+      "VIDGEN5S_0864318": {
+        "loss": 0.09327460825443268,
+        "latent_mse": 0.08382581174373627,
+        "ewarp_l1": 0.2773248553276062,
+        "valid_warp_fraction": 0.9810657501220703,
+        "temporal_difference_mse": 0.09448793530464172
+      }
+    },
+    "mean": {
+      "loss": 0.09994726348668337,
+      "latent_mse": 0.09123760601505637,
+      "ewarp_l1": 0.27015626803040504,
+      "valid_warp_fraction": 0.9550488889217377,
+      "temporal_difference_mse": 0.08709658123552799
+    }
+  },
+  "legacy": {
+    "samples": {
+      "VIDGEN5S_0336361": {
+        "loss": 0.09553004801273346,
+        "latent_mse": 0.0876949280500412,
+        "ewarp_l1": 0.28171801567077637,
+        "valid_warp_fraction": 0.9864795804023743,
+        "temporal_difference_mse": 0.07835119962692261
+      },
+      "VIDGEN5S_0380588": {
+        "loss": 0.08095932751893997,
+        "latent_mse": 0.07440757006406784,
+        "ewarp_l1": 0.24370931088924408,
+        "valid_warp_fraction": 0.9519557952880859,
+        "temporal_difference_mse": 0.06551754474639893
+      },
+      "VIDGEN5S_0515402": {
+        "loss": 0.128300741314888,
+        "latent_mse": 0.11702099442481995,
+        "ewarp_l1": 0.2912863790988922,
+        "valid_warp_fraction": 0.9226473569869995,
+        "temporal_difference_mse": 0.11279749870300293
+      }
+    },
+    "mean": {
+      "loss": 0.10159670561552048,
+      "latent_mse": 0.09304116417964299,
+      "ewarp_l1": 0.2722379018863042,
+      "valid_warp_fraction": 0.9536942442258199,
+      "temporal_difference_mse": 0.08555541435877483
+    }
+  },
+  "best_checkpoint_sha256": "20060088b2069069cc2abb63c7494eb88400585ccfcc1ee2ba48a8315e1bffea",
+  "seconds": 2618.6936577847227
+}

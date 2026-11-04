@@ -1,0 +1,52 @@
+{
+  "VIDGEN5S_0086441": {
+    "pretrained": {
+      "vs_decoded_reference": {
+        "mse": 0.0028303591534495354,
+        "psnr_db": 25.481584519440588,
+        "temporal_difference_mse": 0.0008213971159420907
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.0030986983329057693,
+        "psnr_db": 25.088207015056028,
+        "temporal_difference_mse": 0.0009374020155519247
+      }
+    },
+    "prior50": {
+      "vs_decoded_reference": {
+        "mse": 0.00769343925639987,
+        "psnr_db": 21.1387947083996,
+        "temporal_difference_mse": 0.0018715233309194446
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.007866115309298038,
+        "psnr_db": 21.042396915615633,
+        "temporal_difference_mse": 0.0019728397019207478
+      }
+    },
+    "long_temporal": {
+      "vs_decoded_reference": {
+        "mse": 0.004632547032088041,
+        "psnr_db": 23.341801627974895,
+        "temporal_difference_mse": 0.0011746051022782922
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.004925749264657497,
+        "psnr_db": 23.075276988199178,
+        "temporal_difference_mse": 0.0012799353571608663
+      }
+    },
+    "long_ewarp": {
+      "vs_decoded_reference": {
+        "mse": 0.004935353994369507,
+        "psnr_db": 23.06681691568275,
+        "temporal_difference_mse": 0.0012539292220026255
+      },
+      "vs_source_rgb_secondary": {
+        "mse": 0.005229231435805559,
+        "psnr_db": 22.81562136699888,
+        "temporal_difference_mse": 0.0013580466620624065
+      }
+    }
+  }
+}
