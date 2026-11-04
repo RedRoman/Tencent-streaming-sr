@@ -1,0 +1,207 @@
+{
+  "status": "completed",
+  "config": {
+    "train": "${EXP_ROOT}/upscaler_trial/pairs/train.jsonl",
+    "holdout": "${EXP_ROOT}/upscaler_trial/pairs/holdout.jsonl",
+    "upstream": "${EXP_ROOT}/upstream",
+    "upscaler": "${EXP_ROOT}/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+    "output": "${EXP_ROOT}/upscaler_trial/finetune20",
+    "device": "npu:0",
+    "steps": 20,
+    "lr": 1e-06,
+    "temporal_weight": 0.1,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "cpu_threads": 8,
+    "activation_checkpointing": true,
+    "checkpoint_every": 10,
+    "resume": null,
+    "parity_tolerance": 1e-06
+  },
+  "data_signature": {
+    "train": [
+      {
+        "sample_id": "VIDGEN5S_0336361",
+        "sha256": "8bea8f00ab9cb600836cb47a101a67171619420a64f42439a79bdb40bfc04e82"
+      },
+      {
+        "sample_id": "VIDGEN5S_0515402",
+        "sha256": "f3e9470edaa9c191171cb793a1a93900c994d18467b27437cedf4c91cc5383a7"
+      }
+    ],
+    "holdout": [
+      {
+        "sample_id": "VIDGEN5S_0380588",
+        "sha256": "1e26500a7316ecd106dd3be37fd7630dfb61975d0396c3aa8cbdaf6040d6376c"
+      }
+    ],
+    "upscaler_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6"
+  },
+  "compute_dtype": "float32",
+  "checkpoint_storage_dtype": "float32",
+  "released_input_weight_dtype": "bfloat16 cast to float32 by the author loader",
+  "parity_scope": "Same-device FP32 author node; not a comparison with BF16 computation",
+  "normalization": "Open-H3 D(U(N(z))); z is native normalized H3 latent",
+  "objective": "Our supervised normalized-latent MSE + 0.1 temporal-difference MSE (weight configurable); not author's unpublished recipe",
+  "training_scope": "All released upscaler parameters; eval mode keeps dropout off; no VAE or refiner",
+  "causal": false,
+  "causal_note": "Released symmetric temporal convolutions and clip-wide GroupNorm are preserved",
+  "holdout_policy": "Never optimized or used for checkpoint selection; final fixed-step checkpoint only",
+  "limitations": "Tiny paired-data feasibility experiment, not evidence of generalization or perceptual superiority",
+  "variants": {
+    "pretrained": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.11652616411447525,
+        "latent_mse": 0.1086616963148117,
+        "latent_rmse": 0.3296387360654262,
+        "latent_mae": 0.22598101198673248,
+        "temporal_difference_mse": 0.07864467054605484,
+        "signed_error_mean": -0.010380707681179047,
+        "prediction_std": 1.0029829740524292,
+        "reference_std": 1.0469650030136108,
+        "seconds": 0.11516730953007936,
+        "latent_path": "latents/VIDGEN5S_0336361/pretrained.pt",
+        "split": "train"
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.1536833643913269,
+        "latent_mse": 0.14484773576259613,
+        "latent_rmse": 0.38058867003971114,
+        "latent_mae": 0.2555947005748749,
+        "temporal_difference_mse": 0.08835622668266296,
+        "signed_error_mean": -0.04610025882720947,
+        "prediction_std": 0.973047137260437,
+        "reference_std": 1.00027334690094,
+        "seconds": 0.11420416459441185,
+        "latent_path": "latents/VIDGEN5S_0515402/pretrained.pt",
+        "split": "train"
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.07696977257728577,
+        "latent_mse": 0.07114707678556442,
+        "latent_rmse": 0.2667340937817369,
+        "latent_mae": 0.18680448830127716,
+        "temporal_difference_mse": 0.05822693929076195,
+        "signed_error_mean": -0.030315620824694633,
+        "prediction_std": 1.0365155935287476,
+        "reference_std": 1.0562435388565063,
+        "seconds": 0.11567393224686384,
+        "latent_path": "latents/VIDGEN5S_0380588/pretrained.pt",
+        "split": "holdout"
+      }
+    },
+    "trilinear": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.48897308111190796,
+        "latent_mse": 0.46914151310920715,
+        "latent_rmse": 0.6849390579527548,
+        "latent_mae": 0.5094456672668457,
+        "temporal_difference_mse": 0.19831582903862,
+        "signed_error_mean": -0.025296121835708618,
+        "prediction_std": 1.0774658918380737,
+        "reference_std": 1.0469650030136108,
+        "latent_path": "latents/VIDGEN5S_0336361/trilinear.pt",
+        "split": "train"
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.49340978264808655,
+        "latent_mse": 0.4721912145614624,
+        "latent_rmse": 0.6871617091787511,
+        "latent_mae": 0.5171839594841003,
+        "temporal_difference_mse": 0.21218574047088623,
+        "signed_error_mean": -0.08983119577169418,
+        "prediction_std": 0.9588018655776978,
+        "reference_std": 1.00027334690094,
+        "latent_path": "latents/VIDGEN5S_0515402/trilinear.pt",
+        "split": "train"
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.4028048515319824,
+        "latent_mse": 0.3874680697917938,
+        "latent_rmse": 0.6224693324106769,
+        "latent_mae": 0.47953104972839355,
+        "temporal_difference_mse": 0.15336783230304718,
+        "signed_error_mean": -0.028330231085419655,
+        "prediction_std": 1.0303021669387817,
+        "reference_std": 1.0562435388565063,
+        "latent_path": "latents/VIDGEN5S_0380588/trilinear.pt",
+        "split": "holdout"
+      }
+    },
+    "finetuned": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.09895017743110657,
+        "latent_mse": 0.0913393497467041,
+        "latent_rmse": 0.3022240059073801,
+        "latent_mae": 0.20890483260154724,
+        "temporal_difference_mse": 0.07610828429460526,
+        "signed_error_mean": -0.00909657683223486,
+        "prediction_std": 1.004204273223877,
+        "reference_std": 1.0469650030136108,
+        "seconds": 0.11425263620913029,
+        "latent_path": "latents/VIDGEN5S_0336361/finetuned.pt",
+        "split": "train"
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.12350639700889587,
+        "latent_mse": 0.11496492475271225,
+        "latent_rmse": 0.33906477958159004,
+        "latent_mae": 0.23199445009231567,
+        "temporal_difference_mse": 0.08541469275951385,
+        "signed_error_mean": -0.034820977598428726,
+        "prediction_std": 0.967247724533081,
+        "reference_std": 1.00027334690094,
+        "seconds": 0.1143458392471075,
+        "latent_path": "latents/VIDGEN5S_0515402/finetuned.pt",
+        "split": "train"
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.07399586588144302,
+        "latent_mse": 0.06828141957521439,
+        "latent_rmse": 0.2613071364796882,
+        "latent_mae": 0.1833476722240448,
+        "temporal_difference_mse": 0.057144492864608765,
+        "signed_error_mean": -0.0283085685223341,
+        "prediction_std": 1.0343959331512451,
+        "reference_std": 1.0562435388565063,
+        "seconds": 0.11398864910006523,
+        "latent_path": "latents/VIDGEN5S_0380588/finetuned.pt",
+        "split": "holdout"
+      }
+    }
+  },
+  "parameter_count": 345280216,
+  "author_node_parity": {
+    "sample_id": "VIDGEN5S_0336361",
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "tolerance": 1e-06
+  },
+  "resumed_updates": 0,
+  "training_seconds": 21.41101753525436,
+  "parameter_update": {
+    "sampling": "Up to 64 evenly spaced values from every parameter",
+    "values": 20568,
+    "changed_values": 20564,
+    "max_abs": 2.0906329154968262e-05,
+    "mean_abs": 1.2155390322732273e-05
+  },
+  "checkpoint": {
+    "directory": "${EXP_ROOT}/upscaler_trial/finetune20/checkpoint",
+    "completed_updates": 20,
+    "model_sha256": "41f1628ef9e36e057e1afd5cf700315fd20471e41a73f2ddc1a20c1cf4a23604",
+    "optimizer_saved": true
+  },
+  "checkpoint_reload": {
+    "sample_id": "VIDGEN5S_0380588",
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "tolerance": 1e-06
+  },
+  "memory": {
+    "peak_allocated_gib": 5.265715599060059,
+    "peak_reserved_gib": 5.576171875
+  },
+  "completed_updates": 20,
+  "total_seconds": 45.7268596701324
+}

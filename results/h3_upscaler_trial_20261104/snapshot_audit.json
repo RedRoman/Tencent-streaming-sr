@@ -1,0 +1,168 @@
+{
+  "files_scanned": 24,
+  "findings": [],
+  "python_sources_byte_identical_to_executed": [
+    "experiments/h3_upscaler_trial_20261104/evaluate_upscaler_pixels.py",
+    "experiments/h3_upscaler_trial_20261104/prepare_upscaler_pairs.py",
+    "experiments/h3_upscaler_trial_20261104/train_upscaler_trial.py"
+  ],
+  "shell_syntax_checked": [
+    "experiments/h3_upscaler_trial_20261104/env.sh",
+    "experiments/h3_upscaler_trial_20261104/run_upscaler_evaluate.sh",
+    "experiments/h3_upscaler_trial_20261104/run_upscaler_pairs.sh",
+    "experiments/h3_upscaler_trial_20261104/run_upscaler_train.sh"
+  ],
+  "videos": [
+    {
+      "path": "results/h3_upscaler_trial_20261104/VIDGEN5S_0336361/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_upscaler_trial_20261104/VIDGEN5S_0380588/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_upscaler_trial_20261104/VIDGEN5S_0380588/finetuned.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_upscaler_trial_20261104/VIDGEN5S_0380588/pretrained.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_upscaler_trial_20261104/VIDGEN5S_0380588/reference.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_upscaler_trial_20261104/VIDGEN5S_0380588/trilinear.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_upscaler_trial_20261104/VIDGEN5S_0515402/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    }
+  ],
+  "patterns": [
+    "hf_access_token",
+    "github_access_token",
+    "private_key",
+    "aws_access_key",
+    "bearer_credential",
+    "signed_download_url",
+    "credential_literal",
+    "private_infrastructure"
+  ],
+  "note": "Only new upscaler snapshot audited. H264/43-frame/~24fps container checks; metrics computed before video encoding. Source paths redacted, numeric evidence preserved. No weights or dataset caches included."
+}

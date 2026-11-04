@@ -1,0 +1,134 @@
+[
+  {
+    "sample_id": "VIDGEN5S_0336361",
+    "split": "train",
+    "draft_shape": [
+      24,
+      13,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      13,
+      24,
+      42
+    ],
+    "old_reference_difference_rms": 0.06922148913145065,
+    "old_draft_difference_rms": 0.050331782549619675,
+    "pair_file_sha256": "8bea8f00ab9cb600836cb47a101a67171619420a64f42439a79bdb40bfc04e82",
+    "seconds": 9.186220404691994,
+    "metadata": {
+      "id": "VIDGEN5S_0336361",
+      "split": "train",
+      "source_video_path": "${SOURCE_VIDEO_DIR}/VIDGEN5S_0336361.mp4",
+      "source_video_sha256": "c79a730c3cdd7a69faca4d35c994ffadbd9f1dec930852121f0370b398e20f52",
+      "source_frames_encoded": 64,
+      "latent_frames": 13,
+      "decoded_frames": 43,
+      "fps": 24.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Common HR RGB cover-area resize/center crop at 672x384; exact 2x2 RGB area average and round to uint8 for LR; both VAE-encode the same first64 source frames then crop first13 latent frames",
+      "base_model": "${H3_BASE_MODEL}",
+      "scope": "two training clips and one internally held-out clip; source manifest itself is a training set; source VAE encodes are proxies for generated draft latents"
+    }
+  },
+  {
+    "sample_id": "VIDGEN5S_0515402",
+    "split": "train",
+    "draft_shape": [
+      24,
+      13,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      13,
+      24,
+      42
+    ],
+    "old_reference_difference_rms": 0.0775541216135025,
+    "old_draft_difference_rms": 0.054432984441518784,
+    "pair_file_sha256": "f3e9470edaa9c191171cb793a1a93900c994d18467b27437cedf4c91cc5383a7",
+    "seconds": 8.5344557762146,
+    "metadata": {
+      "id": "VIDGEN5S_0515402",
+      "split": "train",
+      "source_video_path": "${SOURCE_VIDEO_DIR}/VIDGEN5S_0515402.mp4",
+      "source_video_sha256": "38afd081925db38bfa540f300b77c2be1c0f12177af4f8d6f0f6de4ebcbb47e9",
+      "source_frames_encoded": 64,
+      "latent_frames": 13,
+      "decoded_frames": 43,
+      "fps": 24.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Common HR RGB cover-area resize/center crop at 672x384; exact 2x2 RGB area average and round to uint8 for LR; both VAE-encode the same first64 source frames then crop first13 latent frames",
+      "base_model": "${H3_BASE_MODEL}",
+      "scope": "two training clips and one internally held-out clip; source manifest itself is a training set; source VAE encodes are proxies for generated draft latents"
+    }
+  },
+  {
+    "sample_id": "VIDGEN5S_0380588",
+    "split": "holdout",
+    "draft_shape": [
+      24,
+      13,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      13,
+      24,
+      42
+    ],
+    "old_reference_difference_rms": 0.12007420510053635,
+    "old_draft_difference_rms": 0.06985193490982056,
+    "pair_file_sha256": "1e26500a7316ecd106dd3be37fd7630dfb61975d0396c3aa8cbdaf6040d6376c",
+    "seconds": 8.500012367032468,
+    "metadata": {
+      "id": "VIDGEN5S_0380588",
+      "split": "holdout",
+      "source_video_path": "${SOURCE_VIDEO_DIR}/VIDGEN5S_0380588.mp4",
+      "source_video_sha256": "11e79651092aaf2101e06bc159346235c9f5dfd6f4451a403ccf647c8c967c66",
+      "source_frames_encoded": 64,
+      "latent_frames": 13,
+      "decoded_frames": 43,
+      "fps": 24.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Common HR RGB cover-area resize/center crop at 672x384; exact 2x2 RGB area average and round to uint8 for LR; both VAE-encode the same first64 source frames then crop first13 latent frames",
+      "base_model": "${H3_BASE_MODEL}",
+      "scope": "two training clips and one internally held-out clip; source manifest itself is a training set; source VAE encodes are proxies for generated draft latents"
+    }
+  }
+]
