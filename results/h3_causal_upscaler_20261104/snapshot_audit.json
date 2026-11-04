@@ -1,0 +1,212 @@
+{
+  "files_scanned": 36,
+  "findings": [],
+  "python_sources_byte_identical_to_executed": [
+    "experiments/h3_causal_upscaler_20261104/causal_upscaler.py",
+    "experiments/h3_causal_upscaler_20261104/evaluate_causal_upscaler_finetune.py",
+    "experiments/h3_causal_upscaler_20261104/evaluate_causal_upscaler_pixels.py",
+    "experiments/h3_causal_upscaler_20261104/probe_causal_upscaler.py",
+    "experiments/h3_causal_upscaler_20261104/test_causal_upscaler.py",
+    "experiments/h3_causal_upscaler_20261104/train_causal_upscaler.py"
+  ],
+  "shell_syntax_checked": [
+    "experiments/h3_causal_upscaler_20261104/env.sh",
+    "experiments/h3_causal_upscaler_20261104/run_causal_upscaler_probe.sh",
+    "experiments/h3_causal_upscaler_20261104/run_decode_causal_upscaler.sh",
+    "experiments/h3_causal_upscaler_20261104/run_decode_causal_upscaler_finetune.sh",
+    "experiments/h3_causal_upscaler_20261104/run_train_causal_upscaler.sh"
+  ],
+  "videos": [
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0336361/causal_after.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0336361/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0380588/causal_after.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0380588/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0515402/causal_after.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0515402/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0336361/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0380588/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0515402/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    }
+  ],
+  "patterns": [
+    "hf_access_token",
+    "github_access_token",
+    "private_key",
+    "aws_access_key",
+    "bearer_credential",
+    "signed_download_url",
+    "credential_literal",
+    "private_infrastructure"
+  ],
+  "note": "Only new causal upscaler snapshot audited. All six Python sources are byte-identical to the executed experiment sources; shell files only port runtime paths. H264/43-frame/~24fps container checks; metrics computed before video encoding. Source paths redacted, numeric evidence preserved. No weights or dataset caches included."
+}

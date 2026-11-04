@@ -1,0 +1,189 @@
+{
+  "files": [
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/README.md",
+      "bytes": 7896,
+      "sha256": "dad2fbf97dcec60c8b07debbb60e5bda14e51cfa011810102fc4b9f18939cdb0"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/causal_upscaler.py",
+      "bytes": 10332,
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/env.sh",
+      "bytes": 534,
+      "sha256": "54a4e59569103ed27dcbe928326ab7aa26a1df2fc5cb7b32fdeab93ba5e5d605"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/evaluate_causal_upscaler_finetune.py",
+      "bytes": 4645,
+      "sha256": "76b0f340456aecfb9cf39a6bd67420c2d79658157a77ef0a0c967a1e19577327"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/evaluate_causal_upscaler_pixels.py",
+      "bytes": 7588,
+      "sha256": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/probe_causal_upscaler.py",
+      "bytes": 11475,
+      "sha256": "3e50cf9a7d6aed0c8bedfe2162bf7e599aae50ad6e369b92c048b1305f78d0fb"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/run_causal_upscaler_probe.sh",
+      "bytes": 394,
+      "sha256": "0539dc1616eef2813a2c4146c74c77af063aea87dd51959761f3151f5c89e45c"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/run_decode_causal_upscaler.sh",
+      "bytes": 484,
+      "sha256": "f7fca505bf79234b84928ac5ab4de271f439fa1a7c07a7306085825cbfbc242d"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/run_decode_causal_upscaler_finetune.sh",
+      "bytes": 546,
+      "sha256": "df90987e0293cfbb99a80abc33c2625ec8af14bd3a74f5595e8c028cbf3ff16b"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/run_train_causal_upscaler.sh",
+      "bytes": 523,
+      "sha256": "99b1d4be38990e962c1a63429fca79c3d5d5a13e2ddc9c510005e7c33e3e39df"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/test_causal_upscaler.py",
+      "bytes": 7080,
+      "sha256": "95858f1015e54d41dc128dfe99e0de774207083bf89e56642a92ba3e94afcb1b"
+    },
+    {
+      "path": "experiments/h3_causal_upscaler_20261104/train_causal_upscaler.py",
+      "bytes": 21085,
+      "sha256": "fecfc569f800d340a9130fb6fe56bafb51de0202d108fb84665edd001093ea98"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/.gitignore",
+      "bytes": 512,
+      "sha256": "cadee1d32fda7c04a01d59faf13875c023c34bc992c5ec852d530d6e5c3b3575"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/README.md",
+      "bytes": 7170,
+      "sha256": "9d1b34fe6bfdbd31cfa7fd5f93f3fb50824b0e2506afffcde980999c2185b767"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0336361/causal_after.h264.mp4",
+      "bytes": 588839,
+      "sha256": "e363a88a3136d569d0d56d7b59a0878b8a07a9217fa371b5b1b4ad5d63d5d929"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0336361/comparison.h264.mp4",
+      "bytes": 1969863,
+      "sha256": "ee8882f36be17042b6139912de50b37b6ffd6d5b6e686a18a0a25c1fb887959a"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0336361/comparison.png",
+      "bytes": 4776269,
+      "sha256": "257154d1dc6bf11a3c3b515674bbd9db4fe7b25beae6a2e7f90af6d55018918d"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0380588/causal_after.h264.mp4",
+      "bytes": 551326,
+      "sha256": "057d4135ee9d5a6d420e54bc1264b7b3f284bbef9994549a0647b4cbde0f0b82"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0380588/comparison.h264.mp4",
+      "bytes": 1895810,
+      "sha256": "531d22659d05779b8a05b0d5662b63be580f98fa3f7cb747e87814333c7cc2f9"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0380588/comparison.png",
+      "bytes": 3568458,
+      "sha256": "27db2be4dc1bb87618b95a1d70d540a32747d23071b2348ef4b1704c53cd8675"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0515402/causal_after.h264.mp4",
+      "bytes": 552643,
+      "sha256": "8682bb226eb7d7ddf6459dad731be19cd3a7db81cd600d5bf619956aa4257a6a"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0515402/comparison.h264.mp4",
+      "bytes": 1849942,
+      "sha256": "0ca6882ab5d78ebd02784488634762744b25ea72ee425a267bc2319b13ffd35e"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/VIDGEN5S_0515402/comparison.png",
+      "bytes": 4145820,
+      "sha256": "fb0c97b0041c127ab61a24ec29f8fb27589e994abe371a2f787c794cc4bd16fe"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/checkpoint.json",
+      "bytes": 1206,
+      "sha256": "aae8987590ca2abbe2a0b77895cccf3aec794b9fc75a134b7838013b05224b9a"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/pixel_metrics.json",
+      "bytes": 7086,
+      "sha256": "3edab515415a9f94fe6f0f919ca416fa75ba5d903f83f794b439c355ff447353"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/steps.jsonl",
+      "bytes": 24489,
+      "sha256": "a6d50bdfccfabebec9f7d18a8fb29bb50ddb17e985e39fdc5c2370b959c1860e"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/finetune50/summary.json",
+      "bytes": 80636,
+      "sha256": "0953a2b67144877c778264617cff4580a894c4dc4b98d135b9b88ec85efa7a62"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0336361/comparison.h264.mp4",
+      "bytes": 1957823,
+      "sha256": "c06d570d9281153035fa18744dcba570287e7dfbcd359b43aa3a0a8d51ba75a3"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0336361/comparison.png",
+      "bytes": 5319990,
+      "sha256": "a67f2248d4075a07df7c21087a2936989f5a60d358d6d03fc6d16807ff5ad4a5"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0380588/comparison.h264.mp4",
+      "bytes": 1866295,
+      "sha256": "3c8385f6e329d1078e4253c2ef4cf8cceda991a7328dfe5fa2f6230b99a0c1ca"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0380588/comparison.png",
+      "bytes": 4683016,
+      "sha256": "7bbbb9742f23aa9b9503ba1da97f8ac9c22cba229d2abc7aea6689668bdb295c"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0515402/comparison.h264.mp4",
+      "bytes": 1885783,
+      "sha256": "92e06bfd14c9da7e5caa6dc3525a34a931d370faedc9938d9b90eacda9e9ff5d"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/VIDGEN5S_0515402/comparison.png",
+      "bytes": 4977141,
+      "sha256": "1d2ee8ac3051024f3d42c6dd9dc4b505d77d3fd0ea5579fbd8638646c0296343"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/cpu_semantics.json",
+      "bytes": 10499,
+      "sha256": "0d508c6e22cff3ebcadb09d9ccef88cb64bf6796717af1046961fb161d399819"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/pixel_metrics.json",
+      "bytes": 8953,
+      "sha256": "d2e63842788128f0041f88f0db5e7ceadf6be4e4bfa691c1204968d4f3b741a1"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/frozen/summary.json",
+      "bytes": 40585,
+      "sha256": "2e699e3a458bfc0d9cb97e87234bd41d486cdb713e92360c515c92dfd27d15bd"
+    },
+    {
+      "path": "results/h3_causal_upscaler_20261104/snapshot_audit.json",
+      "bytes": 5458,
+      "sha256": "bdc5e23566d72304ec791f7cc3c09a4de546ae997a5b7765a8b945290a934388"
+    }
+  ]
+}

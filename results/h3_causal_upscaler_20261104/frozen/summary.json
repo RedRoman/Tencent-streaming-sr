@@ -1,0 +1,1212 @@
+{
+  "status": "completed",
+  "no_refiner": true,
+  "optimization_updates": 0,
+  "device": "npu:0",
+  "precision": "fp32",
+  "tolerance": 0.0001,
+  "checkpoint_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+  "parameter_count": 345280216,
+  "diagnostic_sample": "VIDGEN5S_0380588",
+  "pairs": [
+    {
+      "sample_id": "VIDGEN5S_0336361",
+      "split": "train",
+      "pair_sha256": "8bea8f00ab9cb600836cb47a101a67171619420a64f42439a79bdb40bfc04e82"
+    },
+    {
+      "sample_id": "VIDGEN5S_0515402",
+      "split": "train",
+      "pair_sha256": "f3e9470edaa9c191171cb793a1a93900c994d18467b27437cedf4c91cc5383a7"
+    },
+    {
+      "sample_id": "VIDGEN5S_0380588",
+      "split": "holdout",
+      "pair_sha256": "1e26500a7316ecd106dd3be37fd7630dfb61975d0396c3aa8cbdaf6040d6376c"
+    }
+  ],
+  "variants": {
+    "pretrained": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.11652616411447525,
+        "latent_mse": 0.1086616963148117,
+        "latent_rmse": 0.3296387360654262,
+        "latent_mae": 0.22598101198673248,
+        "temporal_difference_mse": 0.07864467054605484,
+        "signed_error_mean": -0.010380708612501621,
+        "prediction_std": 1.0029829740524292,
+        "reference_std": 1.0469650030136108,
+        "seconds": 0.11809664685279131,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0336361/pretrained.pt"
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.1536833643913269,
+        "latent_mse": 0.14484773576259613,
+        "latent_rmse": 0.38058867003971114,
+        "latent_mae": 0.2555946707725525,
+        "temporal_difference_mse": 0.08835621923208237,
+        "signed_error_mean": -0.046100255101919174,
+        "prediction_std": 0.973047137260437,
+        "reference_std": 1.00027334690094,
+        "seconds": 0.1167873926460743,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0515402/pretrained.pt"
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.07696976512670517,
+        "latent_mse": 0.07114706933498383,
+        "latent_rmse": 0.26673407981542935,
+        "latent_mae": 0.18680450320243835,
+        "temporal_difference_mse": 0.05822693184018135,
+        "signed_error_mean": -0.030315618962049484,
+        "prediction_std": 1.0365155935287476,
+        "reference_std": 1.0562435388565063,
+        "seconds": 0.11535770539194345,
+        "split": "holdout",
+        "latent_path": "latents/VIDGEN5S_0380588/pretrained.pt"
+      }
+    },
+    "trilinear": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.48897308111190796,
+        "latent_mse": 0.46914151310920715,
+        "latent_rmse": 0.6849390579527548,
+        "latent_mae": 0.5094456672668457,
+        "temporal_difference_mse": 0.1983158141374588,
+        "signed_error_mean": -0.025296129286289215,
+        "prediction_std": 1.0774658918380737,
+        "reference_std": 1.0469650030136108,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0336361/trilinear.pt"
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.49340978264808655,
+        "latent_mse": 0.4721912145614624,
+        "latent_rmse": 0.6871617091787511,
+        "latent_mae": 0.5171839594841003,
+        "temporal_difference_mse": 0.21218575537204742,
+        "signed_error_mean": -0.08983119577169418,
+        "prediction_std": 0.9588018655776978,
+        "reference_std": 1.00027334690094,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0515402/trilinear.pt"
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.4028048515319824,
+        "latent_mse": 0.3874680697917938,
+        "latent_rmse": 0.6224693324106769,
+        "latent_mae": 0.47953104972839355,
+        "temporal_difference_mse": 0.15336783230304718,
+        "signed_error_mean": -0.028330232948064804,
+        "prediction_std": 1.0303021669387817,
+        "reference_std": 1.0562435388565063,
+        "split": "holdout",
+        "latent_path": "latents/VIDGEN5S_0380588/trilinear.pt"
+      }
+    },
+    "causal_shifted": {
+      "VIDGEN5S_0336361": {
+        "objective": 66.94192504882812,
+        "latent_mse": 66.57322692871094,
+        "latent_rmse": 8.159241810898298,
+        "latent_mae": 5.424635887145996,
+        "temporal_difference_mse": 3.6869823932647705,
+        "signed_error_mean": -1.590441107749939,
+        "prediction_std": 8.064665794372559,
+        "reference_std": 1.0469650030136108,
+        "seconds": 0.12648874055594206,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0336361/causal_shifted.pt"
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 66.5916748046875,
+        "latent_mse": 66.19197082519531,
+        "latent_rmse": 8.13584481324437,
+        "latent_mae": 5.040592670440674,
+        "temporal_difference_mse": 3.9970126152038574,
+        "signed_error_mean": -1.447413444519043,
+        "prediction_std": 7.962651252746582,
+        "reference_std": 1.00027334690094,
+        "seconds": 0.1265336023643613,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0515402/causal_shifted.pt"
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 57.77523422241211,
+        "latent_mse": 57.3879280090332,
+        "latent_rmse": 7.5754820314639515,
+        "latent_mae": 4.820122718811035,
+        "temporal_difference_mse": 3.8730533123016357,
+        "signed_error_mean": -1.1755027770996094,
+        "prediction_std": 7.428093910217285,
+        "reference_std": 1.0562435388565063,
+        "seconds": 0.12642048858106136,
+        "split": "holdout",
+        "latent_path": "latents/VIDGEN5S_0380588/causal_shifted.pt"
+      }
+    },
+    "causal_aligned": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.4147535562515259,
+        "latent_mse": 0.3978574573993683,
+        "latent_rmse": 0.6307594291006424,
+        "latent_mae": 0.4490719735622406,
+        "temporal_difference_mse": 0.1689610630273819,
+        "signed_error_mean": -0.08139778673648834,
+        "prediction_std": 1.1752430200576782,
+        "reference_std": 1.0469650030136108,
+        "seconds": 0.1258894456550479,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0336361/causal_aligned.pt"
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.4487580358982086,
+        "latent_mse": 0.4318203330039978,
+        "latent_rmse": 0.6571303774777101,
+        "latent_mae": 0.44194093346595764,
+        "temporal_difference_mse": 0.16937696933746338,
+        "signed_error_mean": -0.0826953798532486,
+        "prediction_std": 1.0397117137908936,
+        "reference_std": 1.00027334690094,
+        "seconds": 0.12623377423733473,
+        "split": "train",
+        "latent_path": "latents/VIDGEN5S_0515402/causal_aligned.pt"
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.41144222021102905,
+        "latent_mse": 0.39788931608200073,
+        "latent_rmse": 0.6307846828213259,
+        "latent_mae": 0.431763231754303,
+        "temporal_difference_mse": 0.13552898168563843,
+        "signed_error_mean": -0.11623644828796387,
+        "prediction_std": 1.1739909648895264,
+        "reference_std": 1.0562435388565063,
+        "seconds": 0.12636950705200434,
+        "split": "holdout",
+        "latent_path": "latents/VIDGEN5S_0380588/causal_aligned.pt"
+      }
+    }
+  },
+  "causality": {
+    "causal_shifted": {
+      "initialization": {
+        "kind": "unchanged_coefficients_with_left_padding"
+      },
+      "structure": {
+        "temporal_convolution_counts_by_kernel": {
+          "3": 50,
+          "5": 12
+        },
+        "causal_history_latent_frames": 148,
+        "longest_convolution_receptive_field": 149,
+        "original_groupnorm_dependency": "whole input clip",
+        "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+      },
+      "future_checks": [
+        {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "cut_latent_frame": 1,
+          "perturbation_seed": 20261105
+        },
+        {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "cut_latent_frame": 5,
+          "perturbation_seed": 20261109
+        },
+        {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "cut_latent_frame": 10,
+          "perturbation_seed": 20261114
+        }
+      ],
+      "prefix_checks": [
+        {
+          "prefix_frames": 1,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true
+        },
+        {
+          "prefix_frames": 5,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true
+        },
+        {
+          "prefix_frames": 10,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true
+        }
+      ],
+      "stream_checks": [
+        {
+          "partition": [
+            5,
+            5,
+            3
+          ],
+          "seconds": 0.21033632289618254,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "state": {
+            "processed_latent_frames": 13,
+            "cached_convolutions": 62,
+            "cache_bytes": 189971712,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "in_blocks.3.in_layers.2": 2,
+              "in_blocks.3.out_layers.2": 2,
+              "in_blocks.4.dwconv": 4,
+              "in_blocks.5.in_layers.2": 2,
+              "in_blocks.5.out_layers.2": 2,
+              "in_blocks.6.in_layers.2": 2,
+              "in_blocks.6.out_layers.2": 2,
+              "in_blocks.7.dwconv": 4,
+              "in_blocks.8.in_layers.2": 2,
+              "in_blocks.8.out_layers.2": 2,
+              "in_blocks.9.in_layers.2": 2,
+              "in_blocks.9.out_layers.2": 2,
+              "in_blocks.10.dwconv": 4,
+              "in_blocks.11.in_layers.2": 2,
+              "in_blocks.11.out_layers.2": 2,
+              "in_blocks.12.in_layers.2": 2,
+              "in_blocks.12.out_layers.2": 2,
+              "in_blocks.13.dwconv": 4,
+              "in_blocks.14.in_layers.2": 2,
+              "in_blocks.14.out_layers.2": 2,
+              "in_blocks.15.in_layers.2": 2,
+              "in_blocks.15.out_layers.2": 2,
+              "in_blocks.16.dwconv": 4,
+              "in_blocks.17.in_layers.2": 2,
+              "in_blocks.17.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "out_blocks.3.in_layers.2": 2,
+              "out_blocks.3.out_layers.2": 2,
+              "out_blocks.4.dwconv": 4,
+              "out_blocks.5.in_layers.2": 2,
+              "out_blocks.5.out_layers.2": 2,
+              "out_blocks.6.in_layers.2": 2,
+              "out_blocks.6.out_layers.2": 2,
+              "out_blocks.7.dwconv": 4,
+              "out_blocks.8.in_layers.2": 2,
+              "out_blocks.8.out_layers.2": 2,
+              "out_blocks.9.in_layers.2": 2,
+              "out_blocks.9.out_layers.2": 2,
+              "out_blocks.10.dwconv": 4,
+              "out_blocks.11.in_layers.2": 2,
+              "out_blocks.11.out_layers.2": 2,
+              "out_blocks.12.in_layers.2": 2,
+              "out_blocks.12.out_layers.2": 2,
+              "out_blocks.13.dwconv": 4,
+              "out_blocks.14.in_layers.2": 2,
+              "out_blocks.14.out_layers.2": 2,
+              "out_blocks.15.in_layers.2": 2,
+              "out_blocks.15.out_layers.2": 2,
+              "out_blocks.16.dwconv": 4,
+              "out_blocks.17.in_layers.2": 2,
+              "out_blocks.17.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "seconds": 0.5418781209737062,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "state": {
+            "processed_latent_frames": 13,
+            "cached_convolutions": 62,
+            "cache_bytes": 189971712,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "in_blocks.3.in_layers.2": 2,
+              "in_blocks.3.out_layers.2": 2,
+              "in_blocks.4.dwconv": 4,
+              "in_blocks.5.in_layers.2": 2,
+              "in_blocks.5.out_layers.2": 2,
+              "in_blocks.6.in_layers.2": 2,
+              "in_blocks.6.out_layers.2": 2,
+              "in_blocks.7.dwconv": 4,
+              "in_blocks.8.in_layers.2": 2,
+              "in_blocks.8.out_layers.2": 2,
+              "in_blocks.9.in_layers.2": 2,
+              "in_blocks.9.out_layers.2": 2,
+              "in_blocks.10.dwconv": 4,
+              "in_blocks.11.in_layers.2": 2,
+              "in_blocks.11.out_layers.2": 2,
+              "in_blocks.12.in_layers.2": 2,
+              "in_blocks.12.out_layers.2": 2,
+              "in_blocks.13.dwconv": 4,
+              "in_blocks.14.in_layers.2": 2,
+              "in_blocks.14.out_layers.2": 2,
+              "in_blocks.15.in_layers.2": 2,
+              "in_blocks.15.out_layers.2": 2,
+              "in_blocks.16.dwconv": 4,
+              "in_blocks.17.in_layers.2": 2,
+              "in_blocks.17.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "out_blocks.3.in_layers.2": 2,
+              "out_blocks.3.out_layers.2": 2,
+              "out_blocks.4.dwconv": 4,
+              "out_blocks.5.in_layers.2": 2,
+              "out_blocks.5.out_layers.2": 2,
+              "out_blocks.6.in_layers.2": 2,
+              "out_blocks.6.out_layers.2": 2,
+              "out_blocks.7.dwconv": 4,
+              "out_blocks.8.in_layers.2": 2,
+              "out_blocks.8.out_layers.2": 2,
+              "out_blocks.9.in_layers.2": 2,
+              "out_blocks.9.out_layers.2": 2,
+              "out_blocks.10.dwconv": 4,
+              "out_blocks.11.in_layers.2": 2,
+              "out_blocks.11.out_layers.2": 2,
+              "out_blocks.12.in_layers.2": 2,
+              "out_blocks.12.out_layers.2": 2,
+              "out_blocks.13.dwconv": 4,
+              "out_blocks.14.in_layers.2": 2,
+              "out_blocks.14.out_layers.2": 2,
+              "out_blocks.15.in_layers.2": 2,
+              "out_blocks.15.out_layers.2": 2,
+              "out_blocks.16.dwconv": 4,
+              "out_blocks.17.in_layers.2": 2,
+              "out_blocks.17.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            2,
+            3,
+            1,
+            7
+          ],
+          "seconds": 0.2327748453244567,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "state": {
+            "processed_latent_frames": 13,
+            "cached_convolutions": 62,
+            "cache_bytes": 189971712,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "in_blocks.3.in_layers.2": 2,
+              "in_blocks.3.out_layers.2": 2,
+              "in_blocks.4.dwconv": 4,
+              "in_blocks.5.in_layers.2": 2,
+              "in_blocks.5.out_layers.2": 2,
+              "in_blocks.6.in_layers.2": 2,
+              "in_blocks.6.out_layers.2": 2,
+              "in_blocks.7.dwconv": 4,
+              "in_blocks.8.in_layers.2": 2,
+              "in_blocks.8.out_layers.2": 2,
+              "in_blocks.9.in_layers.2": 2,
+              "in_blocks.9.out_layers.2": 2,
+              "in_blocks.10.dwconv": 4,
+              "in_blocks.11.in_layers.2": 2,
+              "in_blocks.11.out_layers.2": 2,
+              "in_blocks.12.in_layers.2": 2,
+              "in_blocks.12.out_layers.2": 2,
+              "in_blocks.13.dwconv": 4,
+              "in_blocks.14.in_layers.2": 2,
+              "in_blocks.14.out_layers.2": 2,
+              "in_blocks.15.in_layers.2": 2,
+              "in_blocks.15.out_layers.2": 2,
+              "in_blocks.16.dwconv": 4,
+              "in_blocks.17.in_layers.2": 2,
+              "in_blocks.17.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "out_blocks.3.in_layers.2": 2,
+              "out_blocks.3.out_layers.2": 2,
+              "out_blocks.4.dwconv": 4,
+              "out_blocks.5.in_layers.2": 2,
+              "out_blocks.5.out_layers.2": 2,
+              "out_blocks.6.in_layers.2": 2,
+              "out_blocks.6.out_layers.2": 2,
+              "out_blocks.7.dwconv": 4,
+              "out_blocks.8.in_layers.2": 2,
+              "out_blocks.8.out_layers.2": 2,
+              "out_blocks.9.in_layers.2": 2,
+              "out_blocks.9.out_layers.2": 2,
+              "out_blocks.10.dwconv": 4,
+              "out_blocks.11.in_layers.2": 2,
+              "out_blocks.11.out_layers.2": 2,
+              "out_blocks.12.in_layers.2": 2,
+              "out_blocks.12.out_layers.2": 2,
+              "out_blocks.13.dwconv": 4,
+              "out_blocks.14.in_layers.2": 2,
+              "out_blocks.14.out_layers.2": 2,
+              "out_blocks.15.in_layers.2": 2,
+              "out_blocks.15.out_layers.2": 2,
+              "out_blocks.16.dwconv": 4,
+              "out_blocks.17.in_layers.2": 2,
+              "out_blocks.17.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        }
+      ],
+      "reset_replay": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_exact": true,
+        "passed": true
+      },
+      "input_gradient": {
+        "output_latent_frame": 4,
+        "future_max_abs": 0.0,
+        "current_max_abs": 0.00015243160305544734,
+        "finite": true,
+        "passed": true
+      },
+      "sampled_weight_invariance": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_exact": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    "causal_aligned": {
+      "initialization": {
+        "kind": "aligned_past",
+        "converted": [
+          {
+            "module": "conv_in",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.0.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.0.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.1.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "in_blocks.2.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.2.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.3.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.3.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.4.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "in_blocks.5.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.5.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.6.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.6.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.7.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "in_blocks.8.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.8.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.9.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.9.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.10.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "in_blocks.11.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.11.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.12.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.12.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.13.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "in_blocks.14.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.14.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.15.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.15.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.16.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "in_blocks.17.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.17.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.0.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.0.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.1.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "out_blocks.2.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.2.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.3.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.3.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.4.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "out_blocks.5.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.5.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.6.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.6.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.7.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "out_blocks.8.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.8.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.9.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.9.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.10.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "out_blocks.11.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.11.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.12.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.12.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.13.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "out_blocks.14.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.14.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.15.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.15.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.16.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "out_blocks.17.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.17.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "conv_out",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          }
+        ],
+        "description": "Old past/current kernel offsets retained; old future taps discarded; older causal taps zeroed"
+      },
+      "structure": {
+        "temporal_convolution_counts_by_kernel": {
+          "3": 50,
+          "5": 12
+        },
+        "causal_history_latent_frames": 148,
+        "longest_convolution_receptive_field": 149,
+        "original_groupnorm_dependency": "whole input clip",
+        "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+      },
+      "future_checks": [
+        {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "cut_latent_frame": 1,
+          "perturbation_seed": 20261105
+        },
+        {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "cut_latent_frame": 5,
+          "perturbation_seed": 20261109
+        },
+        {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "cut_latent_frame": 10,
+          "perturbation_seed": 20261114
+        }
+      ],
+      "prefix_checks": [
+        {
+          "prefix_frames": 1,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true
+        },
+        {
+          "prefix_frames": 5,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true
+        },
+        {
+          "prefix_frames": 10,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true
+        }
+      ],
+      "stream_checks": [
+        {
+          "partition": [
+            5,
+            5,
+            3
+          ],
+          "seconds": 0.17828942462801933,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "state": {
+            "processed_latent_frames": 13,
+            "cached_convolutions": 62,
+            "cache_bytes": 189971712,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "in_blocks.3.in_layers.2": 2,
+              "in_blocks.3.out_layers.2": 2,
+              "in_blocks.4.dwconv": 4,
+              "in_blocks.5.in_layers.2": 2,
+              "in_blocks.5.out_layers.2": 2,
+              "in_blocks.6.in_layers.2": 2,
+              "in_blocks.6.out_layers.2": 2,
+              "in_blocks.7.dwconv": 4,
+              "in_blocks.8.in_layers.2": 2,
+              "in_blocks.8.out_layers.2": 2,
+              "in_blocks.9.in_layers.2": 2,
+              "in_blocks.9.out_layers.2": 2,
+              "in_blocks.10.dwconv": 4,
+              "in_blocks.11.in_layers.2": 2,
+              "in_blocks.11.out_layers.2": 2,
+              "in_blocks.12.in_layers.2": 2,
+              "in_blocks.12.out_layers.2": 2,
+              "in_blocks.13.dwconv": 4,
+              "in_blocks.14.in_layers.2": 2,
+              "in_blocks.14.out_layers.2": 2,
+              "in_blocks.15.in_layers.2": 2,
+              "in_blocks.15.out_layers.2": 2,
+              "in_blocks.16.dwconv": 4,
+              "in_blocks.17.in_layers.2": 2,
+              "in_blocks.17.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "out_blocks.3.in_layers.2": 2,
+              "out_blocks.3.out_layers.2": 2,
+              "out_blocks.4.dwconv": 4,
+              "out_blocks.5.in_layers.2": 2,
+              "out_blocks.5.out_layers.2": 2,
+              "out_blocks.6.in_layers.2": 2,
+              "out_blocks.6.out_layers.2": 2,
+              "out_blocks.7.dwconv": 4,
+              "out_blocks.8.in_layers.2": 2,
+              "out_blocks.8.out_layers.2": 2,
+              "out_blocks.9.in_layers.2": 2,
+              "out_blocks.9.out_layers.2": 2,
+              "out_blocks.10.dwconv": 4,
+              "out_blocks.11.in_layers.2": 2,
+              "out_blocks.11.out_layers.2": 2,
+              "out_blocks.12.in_layers.2": 2,
+              "out_blocks.12.out_layers.2": 2,
+              "out_blocks.13.dwconv": 4,
+              "out_blocks.14.in_layers.2": 2,
+              "out_blocks.14.out_layers.2": 2,
+              "out_blocks.15.in_layers.2": 2,
+              "out_blocks.15.out_layers.2": 2,
+              "out_blocks.16.dwconv": 4,
+              "out_blocks.17.in_layers.2": 2,
+              "out_blocks.17.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "seconds": 0.5391905717551708,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "state": {
+            "processed_latent_frames": 13,
+            "cached_convolutions": 62,
+            "cache_bytes": 189971712,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "in_blocks.3.in_layers.2": 2,
+              "in_blocks.3.out_layers.2": 2,
+              "in_blocks.4.dwconv": 4,
+              "in_blocks.5.in_layers.2": 2,
+              "in_blocks.5.out_layers.2": 2,
+              "in_blocks.6.in_layers.2": 2,
+              "in_blocks.6.out_layers.2": 2,
+              "in_blocks.7.dwconv": 4,
+              "in_blocks.8.in_layers.2": 2,
+              "in_blocks.8.out_layers.2": 2,
+              "in_blocks.9.in_layers.2": 2,
+              "in_blocks.9.out_layers.2": 2,
+              "in_blocks.10.dwconv": 4,
+              "in_blocks.11.in_layers.2": 2,
+              "in_blocks.11.out_layers.2": 2,
+              "in_blocks.12.in_layers.2": 2,
+              "in_blocks.12.out_layers.2": 2,
+              "in_blocks.13.dwconv": 4,
+              "in_blocks.14.in_layers.2": 2,
+              "in_blocks.14.out_layers.2": 2,
+              "in_blocks.15.in_layers.2": 2,
+              "in_blocks.15.out_layers.2": 2,
+              "in_blocks.16.dwconv": 4,
+              "in_blocks.17.in_layers.2": 2,
+              "in_blocks.17.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "out_blocks.3.in_layers.2": 2,
+              "out_blocks.3.out_layers.2": 2,
+              "out_blocks.4.dwconv": 4,
+              "out_blocks.5.in_layers.2": 2,
+              "out_blocks.5.out_layers.2": 2,
+              "out_blocks.6.in_layers.2": 2,
+              "out_blocks.6.out_layers.2": 2,
+              "out_blocks.7.dwconv": 4,
+              "out_blocks.8.in_layers.2": 2,
+              "out_blocks.8.out_layers.2": 2,
+              "out_blocks.9.in_layers.2": 2,
+              "out_blocks.9.out_layers.2": 2,
+              "out_blocks.10.dwconv": 4,
+              "out_blocks.11.in_layers.2": 2,
+              "out_blocks.11.out_layers.2": 2,
+              "out_blocks.12.in_layers.2": 2,
+              "out_blocks.12.out_layers.2": 2,
+              "out_blocks.13.dwconv": 4,
+              "out_blocks.14.in_layers.2": 2,
+              "out_blocks.14.out_layers.2": 2,
+              "out_blocks.15.in_layers.2": 2,
+              "out_blocks.15.out_layers.2": 2,
+              "out_blocks.16.dwconv": 4,
+              "out_blocks.17.in_layers.2": 2,
+              "out_blocks.17.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            2,
+            3,
+            1,
+            7
+          ],
+          "seconds": 0.22915799356997013,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "bit_exact": true,
+          "passed": true,
+          "state": {
+            "processed_latent_frames": 13,
+            "cached_convolutions": 62,
+            "cache_bytes": 189971712,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "in_blocks.3.in_layers.2": 2,
+              "in_blocks.3.out_layers.2": 2,
+              "in_blocks.4.dwconv": 4,
+              "in_blocks.5.in_layers.2": 2,
+              "in_blocks.5.out_layers.2": 2,
+              "in_blocks.6.in_layers.2": 2,
+              "in_blocks.6.out_layers.2": 2,
+              "in_blocks.7.dwconv": 4,
+              "in_blocks.8.in_layers.2": 2,
+              "in_blocks.8.out_layers.2": 2,
+              "in_blocks.9.in_layers.2": 2,
+              "in_blocks.9.out_layers.2": 2,
+              "in_blocks.10.dwconv": 4,
+              "in_blocks.11.in_layers.2": 2,
+              "in_blocks.11.out_layers.2": 2,
+              "in_blocks.12.in_layers.2": 2,
+              "in_blocks.12.out_layers.2": 2,
+              "in_blocks.13.dwconv": 4,
+              "in_blocks.14.in_layers.2": 2,
+              "in_blocks.14.out_layers.2": 2,
+              "in_blocks.15.in_layers.2": 2,
+              "in_blocks.15.out_layers.2": 2,
+              "in_blocks.16.dwconv": 4,
+              "in_blocks.17.in_layers.2": 2,
+              "in_blocks.17.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "out_blocks.3.in_layers.2": 2,
+              "out_blocks.3.out_layers.2": 2,
+              "out_blocks.4.dwconv": 4,
+              "out_blocks.5.in_layers.2": 2,
+              "out_blocks.5.out_layers.2": 2,
+              "out_blocks.6.in_layers.2": 2,
+              "out_blocks.6.out_layers.2": 2,
+              "out_blocks.7.dwconv": 4,
+              "out_blocks.8.in_layers.2": 2,
+              "out_blocks.8.out_layers.2": 2,
+              "out_blocks.9.in_layers.2": 2,
+              "out_blocks.9.out_layers.2": 2,
+              "out_blocks.10.dwconv": 4,
+              "out_blocks.11.in_layers.2": 2,
+              "out_blocks.11.out_layers.2": 2,
+              "out_blocks.12.in_layers.2": 2,
+              "out_blocks.12.out_layers.2": 2,
+              "out_blocks.13.dwconv": 4,
+              "out_blocks.14.in_layers.2": 2,
+              "out_blocks.14.out_layers.2": 2,
+              "out_blocks.15.in_layers.2": 2,
+              "out_blocks.15.out_layers.2": 2,
+              "out_blocks.16.dwconv": 4,
+              "out_blocks.17.in_layers.2": 2,
+              "out_blocks.17.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        }
+      ],
+      "reset_replay": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_exact": true,
+        "passed": true
+      },
+      "input_gradient": {
+        "output_latent_frame": 4,
+        "future_max_abs": 0.0,
+        "current_max_abs": 0.005379488226026297,
+        "finite": true,
+        "passed": true
+      },
+      "sampled_weight_invariance": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_exact": true,
+        "passed": true
+      },
+      "passed": true
+    }
+  },
+  "limitations": [
+    "Fixed VAE-produced latent inputs; not pixel-level end-to-end causality.",
+    "Three clips for quality, one held-out clip for numerical diagnostics.",
+    "VAE is noncausal and used only to visualize/measure the same latent outputs.",
+    "No optimization, refiner, text, audio, or DMD is used.",
+    "FP32 parameter dtype does not specify every accelerator kernel internal precision.",
+    "Causality checks and decoded quality are separate outcomes."
+  ],
+  "released_node_parity": {
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "bit_exact": true,
+    "passed": true
+  },
+  "original_noncausal_future_response": {
+    "max_abs": 3.2993167638778687,
+    "rms": 0.8266635814725667,
+    "bit_exact": false,
+    "passed": true
+  },
+  "checks_passed": true,
+  "memory": {
+    "peak_allocated_gib": 4.6445207595825195,
+    "peak_reserved_gib": 4.724609375
+  },
+  "seconds": 13.962820360437036
+}

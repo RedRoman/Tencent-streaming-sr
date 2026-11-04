@@ -1,0 +1,349 @@
+{
+  "device": "cpu",
+  "architecture": "actual author classes, channels32, in2/out2",
+  "full_architecture_structure": {
+    "temporal_convolution_counts_by_kernel": {
+      "3": 50,
+      "5": 12
+    },
+    "causal_history_latent_frames": 148,
+    "longest_convolution_receptive_field": 149,
+    "original_groupnorm_dependency": "whole input clip",
+    "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+  },
+  "full_model_quality_verified": false,
+  "variants": {
+    "unchanged": {
+      "initialization": {
+        "kind": "unchanged"
+      },
+      "structure": {
+        "temporal_convolution_counts_by_kernel": {
+          "3": 10,
+          "5": 2
+        },
+        "causal_history_latent_frames": 28,
+        "longest_convolution_receptive_field": 29,
+        "original_groupnorm_dependency": "whole input clip",
+        "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+      },
+      "future_perturbation_max_abs": 0.0,
+      "prefix_max_abs": 0.0,
+      "chunks": [
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            2,
+            1,
+            4,
+            2
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            5,
+            4
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            9
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        }
+      ],
+      "future_input_gradient_max_abs": 0.0,
+      "current_input_gradient_max_abs": 0.002254297723993659,
+      "remove_restores_original_max_abs": 0.0
+    },
+    "aligned_past": {
+      "initialization": {
+        "kind": "aligned_past",
+        "converted": [
+          {
+            "module": "conv_in",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.0.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.0.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.1.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "in_blocks.2.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "in_blocks.2.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.0.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.0.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.1.dwconv",
+            "kernel": 5,
+            "discarded_future_slices": 2
+          },
+          {
+            "module": "out_blocks.2.in_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "out_blocks.2.out_layers.2",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          },
+          {
+            "module": "conv_out",
+            "kernel": 3,
+            "discarded_future_slices": 1
+          }
+        ],
+        "description": "Old past/current kernel offsets retained; old future taps discarded; older causal taps zeroed"
+      },
+      "structure": {
+        "temporal_convolution_counts_by_kernel": {
+          "3": 10,
+          "5": 2
+        },
+        "causal_history_latent_frames": 28,
+        "longest_convolution_receptive_field": 29,
+        "original_groupnorm_dependency": "whole input clip",
+        "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+      },
+      "future_perturbation_max_abs": 0.0,
+      "prefix_max_abs": 0.0,
+      "chunks": [
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            2,
+            1,
+            4,
+            2
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            5,
+            4
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        },
+        {
+          "partition": [
+            9
+          ],
+          "max_abs": 0.0,
+          "state": {
+            "processed_latent_frames": 9,
+            "cached_convolutions": 12,
+            "cache_bytes": 106752,
+            "cache_temporal_lengths": {
+              "conv_in": 2,
+              "in_blocks.0.in_layers.2": 2,
+              "in_blocks.0.out_layers.2": 2,
+              "in_blocks.1.dwconv": 4,
+              "in_blocks.2.in_layers.2": 2,
+              "in_blocks.2.out_layers.2": 2,
+              "out_blocks.0.in_layers.2": 2,
+              "out_blocks.0.out_layers.2": 2,
+              "out_blocks.1.dwconv": 4,
+              "out_blocks.2.in_layers.2": 2,
+              "out_blocks.2.out_layers.2": 2,
+              "conv_out": 2
+            }
+          }
+        }
+      ],
+      "future_input_gradient_max_abs": 0.0,
+      "current_input_gradient_max_abs": 0.005434519611299038
+    }
+  },
+  "noncausal_negative_control_future_delta": 4.462493419647217,
+  "status": "passed"
+}

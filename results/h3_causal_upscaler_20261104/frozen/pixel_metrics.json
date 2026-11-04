@@ -1,0 +1,252 @@
+{
+  "status": "completed",
+  "primary_target": "decoded matched HR reference latent, uint8 RGB before compression",
+  "secondary_target": "first43 source HR RGB frames; includes VAE reconstruction/alignment error",
+  "metric_domain": "RGB values divided by 255; all pixels/frames/channels equally weighted",
+  "vae_dtype": "float32",
+  "no_refiner": true,
+  "no_optimization": true,
+  "causality_scope": "Only the upscaler relative to fixed input latents; VAE remains noncausal",
+  "pixel_metrics_prove_causality": false,
+  "variant_semantics": {
+    "trilinear": "Direct spatial interpolation of normalized input latents",
+    "pretrained": "Published noncausal upscaler with Open-H3 N/U/D convention",
+    "causal_shifted": "Left temporal padding and per-frame GroupNorm, original kernel values unchanged",
+    "causal_aligned": "Causal operators with old past/current kernel offsets retained and future taps discarded",
+    "reference": "Matched HR latent, comparison target only"
+  },
+  "comparison_order": [
+    "pretrained",
+    "causal_shifted",
+    "causal_aligned",
+    "reference"
+  ],
+  "samples": {
+    "VIDGEN5S_0336361": {
+      "split": "train",
+      "decode_seconds": {
+        "reference": 5.844931521452963,
+        "trilinear": 5.039888519793749,
+        "pretrained": 5.037580059841275,
+        "causal_shifted": 5.037110458128154,
+        "causal_aligned": 5.040699169971049
+      },
+      "video_codecs": {
+        "reference": "mpeg4",
+        "trilinear": "mpeg4",
+        "pretrained": "mpeg4",
+        "causal_shifted": "mpeg4",
+        "causal_aligned": "mpeg4"
+      },
+      "reference_matches_pair": true,
+      "variants": {
+        "trilinear": {
+          "vs_decoded_reference": {
+            "mse": 0.026702629402279854,
+            "psnr_db": 15.73445971643816,
+            "temporal_difference_mse": 0.008838905952870846
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.026960216462612152,
+            "psnr_db": 15.692766251878824,
+            "temporal_difference_mse": 0.008698184974491596
+          }
+        },
+        "pretrained": {
+          "vs_decoded_reference": {
+            "mse": 0.008073168806731701,
+            "psnr_db": 20.929559664976782,
+            "temporal_difference_mse": 0.005782479420304298
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.00825852807611227,
+            "psnr_db": 20.83097350426072,
+            "temporal_difference_mse": 0.005707156378775835
+          }
+        },
+        "causal_shifted": {
+          "vs_decoded_reference": {
+            "mse": 0.3231824040412903,
+            "psnr_db": 4.905522928102013,
+            "temporal_difference_mse": 0.02289053052663803
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.31985771656036377,
+            "psnr_db": 4.950431674752277,
+            "temporal_difference_mse": 0.022743789479136467
+          }
+        },
+        "causal_aligned": {
+          "vs_decoded_reference": {
+            "mse": 0.013380649499595165,
+            "psnr_db": 18.735228053092943,
+            "temporal_difference_mse": 0.008051300421357155
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.013463283888995647,
+            "psnr_db": 18.708489965070235,
+            "temporal_difference_mse": 0.007904700934886932
+          }
+        }
+      },
+      "reference_vs_source_rgb_secondary": {
+        "mse": 0.0010007597738876939,
+        "psnr_db": 29.99670159679251,
+        "temporal_difference_mse": 0.0011165193282067776
+      }
+    },
+    "VIDGEN5S_0515402": {
+      "split": "train",
+      "decode_seconds": {
+        "reference": 5.0416690753772855,
+        "trilinear": 5.0620091846212745,
+        "pretrained": 5.036986145190895,
+        "causal_shifted": 5.03320346865803,
+        "causal_aligned": 5.0365653252229095
+      },
+      "video_codecs": {
+        "reference": "mpeg4",
+        "trilinear": "mpeg4",
+        "pretrained": "mpeg4",
+        "causal_shifted": "mpeg4",
+        "causal_aligned": "mpeg4"
+      },
+      "reference_matches_pair": true,
+      "variants": {
+        "trilinear": {
+          "vs_decoded_reference": {
+            "mse": 0.023807641118764877,
+            "psnr_db": 16.23283632728419,
+            "temporal_difference_mse": 0.013278830796480179
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.024366363883018494,
+            "psnr_db": 16.132092744000218,
+            "temporal_difference_mse": 0.014169878326356411
+          }
+        },
+        "pretrained": {
+          "vs_decoded_reference": {
+            "mse": 0.005284165497869253,
+            "psnr_db": 22.77023588921661,
+            "temporal_difference_mse": 0.006334589794278145
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.005814485717564821,
+            "psnr_db": 22.354886919245153,
+            "temporal_difference_mse": 0.007307654246687889
+          }
+        },
+        "causal_shifted": {
+          "vs_decoded_reference": {
+            "mse": 0.23100075125694275,
+            "psnr_db": 6.363866077000021,
+            "temporal_difference_mse": 0.0385512039065361
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.22891323268413544,
+            "psnr_db": 6.403291015343086,
+            "temporal_difference_mse": 0.03919029235839844
+          }
+        },
+        "causal_aligned": {
+          "vs_decoded_reference": {
+            "mse": 0.010822886601090431,
+            "psnr_db": 19.65656891934625,
+            "temporal_difference_mse": 0.013975032605230808
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.011262468062341213,
+            "psnr_db": 19.483664275661454,
+            "temporal_difference_mse": 0.014753659255802631
+          }
+        }
+      },
+      "reference_vs_source_rgb_secondary": {
+        "mse": 0.0012232938315719366,
+        "psnr_db": 29.12469214179275,
+        "temporal_difference_mse": 0.0019569983705878258
+      }
+    },
+    "VIDGEN5S_0380588": {
+      "split": "holdout",
+      "decode_seconds": {
+        "reference": 5.04024993814528,
+        "trilinear": 5.053575170226395,
+        "pretrained": 5.054426561109722,
+        "causal_shifted": 5.035953119397163,
+        "causal_aligned": 5.052302725613117
+      },
+      "video_codecs": {
+        "reference": "mpeg4",
+        "trilinear": "mpeg4",
+        "pretrained": "mpeg4",
+        "causal_shifted": "mpeg4",
+        "causal_aligned": "mpeg4"
+      },
+      "reference_matches_pair": true,
+      "variants": {
+        "trilinear": {
+          "vs_decoded_reference": {
+            "mse": 0.015163915231823921,
+            "psnr_db": 18.191886519990987,
+            "temporal_difference_mse": 0.0021047804038971663
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.01540384441614151,
+            "psnr_db": 18.123708765432333,
+            "temporal_difference_mse": 0.0022070552222430706
+          }
+        },
+        "pretrained": {
+          "vs_decoded_reference": {
+            "mse": 0.0013169802259653807,
+            "psnr_db": 28.804207457812616,
+            "temporal_difference_mse": 0.00079395342618227
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0014804773963987827,
+            "psnr_db": 28.295982189360927,
+            "temporal_difference_mse": 0.0008997286204248667
+          }
+        },
+        "causal_shifted": {
+          "vs_decoded_reference": {
+            "mse": 0.2699587047100067,
+            "psnr_db": 5.687026643158246,
+            "temporal_difference_mse": 0.018914151936769485
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.2659641206264496,
+            "psnr_db": 5.751769470717301,
+            "temporal_difference_mse": 0.019009917974472046
+          }
+        },
+        "causal_aligned": {
+          "vs_decoded_reference": {
+            "mse": 0.0028648823499679565,
+            "psnr_db": 25.4289320818484,
+            "temporal_difference_mse": 0.0013826882932335138
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.002898096339777112,
+            "psnr_db": 25.378871816191054,
+            "temporal_difference_mse": 0.0014754303265362978
+          }
+        }
+      },
+      "reference_vs_source_rgb_secondary": {
+        "mse": 0.0002333552693016827,
+        "psnr_db": 36.31982388038705,
+        "temporal_difference_mse": 0.0001911556755658239
+      }
+    }
+  },
+  "limitations": [
+    "No refiner, optimizer or adaptation is evaluated in this frozen surgery trial.",
+    "Train/holdout labels are inherited from the paired-data trial; neither split is optimized here.",
+    "Quality metrics and contact sheets cannot establish upscaler causality; use the separate latent probe.",
+    "The noncausal VAE may mix time context; this is not an end-to-end pixel streaming test.",
+    "Three source-video-derived pairs do not establish generalization to generated draft latents."
+  ]
+}
