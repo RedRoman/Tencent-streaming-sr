@@ -1,0 +1,150 @@
+{
+  "files_scanned": 24,
+  "findings": [],
+  "python_sources_match_executed_except_documented_default_root_redaction": [
+    "experiments/h3_causal_refiner_20261104/fixed_horizon_refiner.py",
+    "experiments/h3_causal_refiner_20261104/probe_refiner_causality.py",
+    "experiments/h3_causal_refiner_20261104/probe_refiner_fixed_shape.py",
+    "experiments/h3_causal_refiner_20261104/refiner_trace.py"
+  ],
+  "shell_syntax_checked": [
+    "experiments/h3_causal_refiner_20261104/env.sh",
+    "experiments/h3_causal_refiner_20261104/run_decode_refiner_causality.sh",
+    "experiments/h3_causal_refiner_20261104/run_decode_refiner_fixed_shape.sh",
+    "experiments/h3_causal_refiner_20261104/run_refiner_causality_probe.sh",
+    "experiments/h3_causal_refiner_20261104/run_refiner_fixed_shape.sh"
+  ],
+  "videos": [
+    {
+      "path": "results/h3_causal_refiner_20261104/fixed_shape/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_refiner_20261104/fixed_shape/fixed_block5_sigma03.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_refiner_20261104/fixed_shape/fixed_frame1_sigma03.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_refiner_20261104/variable_prefix/block5_sigma03.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_refiner_20261104/variable_prefix/comparison.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    },
+    {
+      "path": "results/h3_causal_refiner_20261104/variable_prefix/frame1_sigma03.h264.mp4",
+      "timescale": 12288,
+      "duration_ticks": 22020,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 22020,
+      "stts_entries": [
+        [
+          42,
+          512
+        ],
+        [
+          1,
+          516
+        ]
+      ],
+      "frames": 43,
+      "fps": 23.995640326975476
+    }
+  ],
+  "patterns": [
+    "hf_access_token",
+    "github_access_token",
+    "private_key",
+    "aws_access_key",
+    "bearer_credential",
+    "signed_download_url",
+    "credential_literal",
+    "private_infrastructure"
+  ],
+  "note": "Only new causal refiner snapshot audited; probe default root replaced with a portable current-directory default, no computation changed. H264/43-frame/~24fps container checks; metrics computed before video encoding. Source paths redacted, numeric evidence preserved. No weights or dataset caches included."
+}

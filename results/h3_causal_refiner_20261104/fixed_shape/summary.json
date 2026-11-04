@@ -1,0 +1,1689 @@
+{
+  "completed": true,
+  "fixed_shape_checks_passed": true,
+  "sample_id": "VIDGEN5S_0380588",
+  "noise_seed": 20262095,
+  "raw_variable_prefix_difference": {
+    "max_abs": 0.16496706008911133,
+    "rms": 0.012104426290345745,
+    "bit_exact": false
+  },
+  "shared_row_traces": [
+    {
+      "module": "proj_in.input",
+      "full_shape": [
+        1,
+        3276,
+        96
+      ],
+      "prefix_shape": [
+        1,
+        1260,
+        96
+      ],
+      "dtype": "torch.float32",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "proj_in.output",
+      "full_shape": [
+        1,
+        3276,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1260,
+        5376
+      ],
+      "dtype": "torch.float32",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "context_embedder.input",
+      "full_shape": [
+        1,
+        241,
+        5120
+      ],
+      "prefix_shape": [
+        1,
+        241,
+        5120
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "context_embedder.output",
+      "full_shape": [
+        1,
+        241,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        241,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "token_refiner.input",
+      "full_shape": [
+        1,
+        241,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        241,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "token_refiner.output",
+      "full_shape": [
+        1,
+        241,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        241,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "time_embedder.input",
+      "full_shape": [
+        2,
+        256
+      ],
+      "prefix_shape": [
+        2,
+        256
+      ],
+      "dtype": "torch.float32",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "time_embedder.output",
+      "full_shape": [
+        2,
+        2688
+      ],
+      "prefix_shape": [
+        2,
+        2688
+      ],
+      "dtype": "torch.float32",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.adaln_proj.input",
+      "full_shape": [
+        2,
+        2688
+      ],
+      "prefix_shape": [
+        2,
+        2688
+      ],
+      "dtype": "torch.float32",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.adaln_proj.output",
+      "full_shape": [
+        6,
+        5376
+      ],
+      "prefix_shape": [
+        6,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.norm1.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.norm1.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_q.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_q.output",
+      "full_shape": [
+        1,
+        3661,
+        7168
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        7168
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_k.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_k.output",
+      "full_shape": [
+        1,
+        3661,
+        7168
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        7168
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_v.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_v.output",
+      "full_shape": [
+        1,
+        3661,
+        7168
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        7168
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.norm_q.input",
+      "full_shape": [
+        1,
+        3661,
+        56,
+        128
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        56,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.norm_q.output",
+      "full_shape": [
+        1,
+        3661,
+        56,
+        128
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        56,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.norm_k.input",
+      "full_shape": [
+        1,
+        3661,
+        56,
+        128
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        56,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.norm_k.output",
+      "full_shape": [
+        1,
+        3661,
+        56,
+        128
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        56,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_out.0.input",
+      "full_shape": [
+        1,
+        3661,
+        7168
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        7168
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.001953125,
+      "rms": 1.0125345949482854e-05,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.0.attn.to_out.0.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.125,
+      "rms": 0.0010652295569722474,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.0.attn.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.125,
+      "rms": 0.0010652295569722474,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.0.norm2.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.015625,
+      "rms": 0.00010769022002328797,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.0.norm2.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.001953125,
+      "rms": 1.2363659401856777e-05,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.0.ff.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.000244140625,
+      "rms": 2.718721943282312e-06,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.0.ff.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.125,
+      "rms": 0.0029784190038776174,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.0.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.25,
+      "rms": 0.002479261246050014,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.1.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.24824515688957377,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.2.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.3003288904416541,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.3.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.33576620340673974,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.4.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.35443737775236966,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.5.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.35802144430218524,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.6.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 32.0,
+      "rms": 0.40711703517864206,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.7.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 64.0,
+      "rms": 0.5281951951479714,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.8.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 64.0,
+      "rms": 0.5430588529256238,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.9.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.4243998765774229,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.10.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.44718057577304954,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.11.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 16.0,
+      "rms": 0.4536122199567268,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.12.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 32.0,
+      "rms": 0.5074977343165986,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.13.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 64.0,
+      "rms": 0.6094633417503442,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.14.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 64.0,
+      "rms": 0.6252035637150616,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.15.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 64.0,
+      "rms": 0.737284686233205,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.16.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 64.0,
+      "rms": 0.830849131754441,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.17.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 0.9890038205282763,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.18.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.0190882532241592,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.19.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.063844421250376,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.20.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.3481734805686751,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.21.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.5148108304903558,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.22.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.5500845952689233,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.23.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.6208253737081395,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.24.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.6778266393825805,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.25.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 256.0,
+      "rms": 2.053763615530831,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.26.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 1.7780012012324986,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.27.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 192.0,
+      "rms": 2.466285018980132,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.28.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 2.7993982085797096,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.29.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 256.0,
+      "rms": 4.539808088633643,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.30.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 64.0,
+      "rms": 5.526687160985049,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.31.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 128.0,
+      "rms": 7.595856459323374,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.32.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 256.0,
+      "rms": 9.850533818815588,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.33.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 116.0,
+      "rms": 11.093348242052537,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.34.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 512.0,
+      "rms": 11.50183408358314,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.35.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 256.0,
+      "rms": 11.315631258990194,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.36.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 256.0,
+      "rms": 12.548159357665158,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.37.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 256.0,
+      "rms": 15.180685224530357,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.38.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 1024.0,
+      "rms": 22.016205080105316,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.39.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 768.0,
+      "rms": 25.67917309296756,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.40.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 512.0,
+      "rms": 29.968871574967626,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.41.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 512.0,
+      "rms": 32.363979475252165,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.42.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 512.0,
+      "rms": 35.58915963651779,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.43.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 1280.0,
+      "rms": 41.418565357336725,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.44.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 1280.0,
+      "rms": 45.80396966970291,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.45.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 1024.0,
+      "rms": 55.09858571505653,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.46.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 1024.0,
+      "rms": 71.68530764105626,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.47.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 1024.0,
+      "rms": 85.8010886863027,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.48.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 2048.0,
+      "rms": 127.9493011737362,
+      "bit_exact": false
+    },
+    {
+      "module": "transformer_blocks.49.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 2048.0,
+      "rms": 142.72094663011376,
+      "bit_exact": false
+    },
+    {
+      "module": "norm_out.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 2048.0,
+      "rms": 142.72094663011376,
+      "bit_exact": false
+    },
+    {
+      "module": "norm_out.output",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.bfloat16",
+      "max_abs": 0.02294921875,
+      "rms": 0.0008884652905918402,
+      "bit_exact": false
+    },
+    {
+      "module": "proj_out.input",
+      "full_shape": [
+        1,
+        3661,
+        5376
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        5376
+      ],
+      "dtype": "torch.float32",
+      "max_abs": 0.02294921875,
+      "rms": 0.0008884652905918402,
+      "bit_exact": false
+    },
+    {
+      "module": "proj_out.output",
+      "full_shape": [
+        1,
+        3661,
+        96
+      ],
+      "prefix_shape": [
+        1,
+        1645,
+        96
+      ],
+      "dtype": "torch.float32",
+      "max_abs": 0.031133294105529785,
+      "rms": 0.006189728828243373,
+      "bit_exact": false
+    }
+  ],
+  "first_observed_divergence": {
+    "module": "transformer_blocks.0.attn.to_out.0.input",
+    "full_shape": [
+      1,
+      3661,
+      7168
+    ],
+    "prefix_shape": [
+      1,
+      1645,
+      7168
+    ],
+    "dtype": "torch.bfloat16",
+    "max_abs": 0.001953125,
+    "rms": 1.0125345949482854e-05,
+    "bit_exact": false
+  },
+  "checks": {
+    "block5_full13_vs_zero_future_prefix5": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "frame1_full13_vs_zero_future_prefix1": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "fixed_frame1_first_rollout_replay": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    }
+  },
+  "rollouts": {
+    "fixed_block5_sigma03": {
+      "seconds": 10.24680936243385,
+      "audit": {
+        "method": "one_step_block_self_forcing_prefix_recompute",
+        "blocks": 3,
+        "model_forwards": 3,
+        "steps_per_block": 1,
+        "sigma": 0.3,
+        "clean_history_model_time": 1.0,
+        "current_model_time": 0.7,
+        "gradient_blocks": [],
+        "self_generated_history": true,
+        "future_frames_exposed": 0,
+        "history_detached": true,
+        "block_records": [
+          {
+            "block_index": 0,
+            "current_start": 0,
+            "current_end": 5,
+            "history_frames": 0,
+            "prefix_frames": 5,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 1,
+            "current_start": 5,
+            "current_end": 10,
+            "history_frames": 5,
+            "prefix_frames": 10,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 2,
+            "current_start": 10,
+            "current_end": 13,
+            "history_frames": 10,
+            "prefix_frames": 13,
+            "gradient_enabled": false,
+            "history_detached": true
+          }
+        ]
+      },
+      "execution_horizon": 13,
+      "future_slots": "zeros, masked from earlier video and static queries"
+    },
+    "fixed_block1_sigma03": {
+      "seconds": 46.09007717482746,
+      "audit": {
+        "method": "one_step_block_self_forcing_prefix_recompute",
+        "blocks": 13,
+        "model_forwards": 13,
+        "steps_per_block": 1,
+        "sigma": 0.3,
+        "clean_history_model_time": 1.0,
+        "current_model_time": 0.7,
+        "gradient_blocks": [],
+        "self_generated_history": true,
+        "future_frames_exposed": 0,
+        "history_detached": true,
+        "block_records": [
+          {
+            "block_index": 0,
+            "current_start": 0,
+            "current_end": 1,
+            "history_frames": 0,
+            "prefix_frames": 1,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 1,
+            "current_start": 1,
+            "current_end": 2,
+            "history_frames": 1,
+            "prefix_frames": 2,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 2,
+            "current_start": 2,
+            "current_end": 3,
+            "history_frames": 2,
+            "prefix_frames": 3,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 3,
+            "current_start": 3,
+            "current_end": 4,
+            "history_frames": 3,
+            "prefix_frames": 4,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 4,
+            "current_start": 4,
+            "current_end": 5,
+            "history_frames": 4,
+            "prefix_frames": 5,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 5,
+            "current_start": 5,
+            "current_end": 6,
+            "history_frames": 5,
+            "prefix_frames": 6,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 6,
+            "current_start": 6,
+            "current_end": 7,
+            "history_frames": 6,
+            "prefix_frames": 7,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 7,
+            "current_start": 7,
+            "current_end": 8,
+            "history_frames": 7,
+            "prefix_frames": 8,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 8,
+            "current_start": 8,
+            "current_end": 9,
+            "history_frames": 8,
+            "prefix_frames": 9,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 9,
+            "current_start": 9,
+            "current_end": 10,
+            "history_frames": 9,
+            "prefix_frames": 10,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 10,
+            "current_start": 10,
+            "current_end": 11,
+            "history_frames": 10,
+            "prefix_frames": 11,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 11,
+            "current_start": 11,
+            "current_end": 12,
+            "history_frames": 11,
+            "prefix_frames": 12,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 12,
+            "current_start": 12,
+            "current_end": 13,
+            "history_frames": 12,
+            "prefix_frames": 13,
+            "gradient_enabled": false,
+            "history_detached": true
+          }
+        ]
+      },
+      "execution_horizon": 13,
+      "future_slots": "zeros, masked from earlier video and static queries"
+    }
+  },
+  "seconds": 120.90050550270826,
+  "limitations": [
+    "Variable-prefix mismatch is preserved, not waived.",
+    "Fixed-shape execution is a controlled fixed-window prototype, not a KV cache or unbounded stream.",
+    "Future slots contain only zeros and cannot be attended by earlier blocks.",
+    "Full text/silence audio are fixed; upscaler and VAE remain noncausal.",
+    "One clip and seed; no optimization or generalization evidence."
+  ]
+}

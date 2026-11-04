@@ -1,0 +1,83 @@
+{
+  "base_model": "${H3_BASE_MODEL}",
+  "dtype": "float32",
+  "tiling": true,
+  "fps": 24.0,
+  "latent_denormalization": "normalized*std+mean",
+  "pixel_denormalization": "ImageNet std/mean; clamp[0,1]",
+  "inputs": {
+    "upscaled": {
+      "path": "${EXP_ROOT}/refiner_causality_probe/upscaled.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.881740402430296,
+      "video_codec": "mpeg4"
+    },
+    "block5_sigma03": {
+      "path": "${EXP_ROOT}/refiner_causality_probe/causal_rollout_sigma03.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.0513544119894505,
+      "video_codec": "mpeg4"
+    },
+    "frame1_sigma03": {
+      "path": "${EXP_ROOT}/refiner_causality_probe/strict_frame_rollout_sigma03.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.058164696209133,
+      "video_codec": "mpeg4"
+    },
+    "reference": {
+      "path": "${EXP_ROOT}/refiner_causality_probe/reference.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.045635236427188,
+      "video_codec": "mpeg4"
+    }
+  },
+  "source_metadata": {}
+}

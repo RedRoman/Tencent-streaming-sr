@@ -1,0 +1,83 @@
+{
+  "base_model": "${H3_BASE_MODEL}",
+  "dtype": "float32",
+  "tiling": true,
+  "fps": 24.0,
+  "latent_denormalization": "normalized*std+mean",
+  "pixel_denormalization": "ImageNet std/mean; clamp[0,1]",
+  "inputs": {
+    "upscaled": {
+      "path": "${EXP_ROOT}/refiner_fixed_shape/upscaled.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.9295151345431805,
+      "video_codec": "mpeg4"
+    },
+    "fixed_block5_sigma03": {
+      "path": "${EXP_ROOT}/refiner_fixed_shape/fixed_block5_sigma03.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.041007245890796,
+      "video_codec": "mpeg4"
+    },
+    "fixed_frame1_sigma03": {
+      "path": "${EXP_ROOT}/refiner_fixed_shape/fixed_block1_sigma03.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.034463349729776,
+      "video_codec": "mpeg4"
+    },
+    "reference": {
+      "path": "${EXP_ROOT}/refiner_fixed_shape/reference.pt",
+      "key": null,
+      "latent_shape": [
+        24,
+        13,
+        24,
+        42
+      ],
+      "pixel_shape": [
+        43,
+        384,
+        672,
+        3
+      ],
+      "decode_seconds": 5.036546535789967,
+      "video_codec": "mpeg4"
+    }
+  },
+  "source_metadata": {}
+}

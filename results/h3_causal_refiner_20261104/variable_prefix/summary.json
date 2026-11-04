@@ -1,0 +1,435 @@
+{
+  "completed": true,
+  "passed": false,
+  "sample_id": "VIDGEN5S_0380588",
+  "role": "real",
+  "generator_checkpoint": null,
+  "world_size": 2,
+  "physical_devices": "6,7",
+  "noise_seed": 20262095,
+  "tolerance": 0.0001,
+  "block_frames": 5,
+  "latent_frames": 13,
+  "strict_frame_requested": true,
+  "fixed_audio_shape": [
+    2,
+    32,
+    72
+  ],
+  "future_perturbation": {
+    "start_latent_frame": 5,
+    "replacement": "3 * independently seeded standard normal; only frames 5: change",
+    "seed": 20262096,
+    "input_change": {
+      "max_abs": 14.575934559106827,
+      "rms": 3.137133964890586,
+      "bit_exact": false
+    }
+  },
+  "checks": {
+    "future_perturbation_causal_first5": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "future_perturbation_dense_first5": {
+      "max_abs": 3.24187695980072,
+      "rms": 0.443802684439962,
+      "bit_exact": false,
+      "passed": true
+    },
+    "prefix5_vs_full13_causal_first5": {
+      "max_abs": 0.16496706008911133,
+      "rms": 0.012104426290345745,
+      "bit_exact": false,
+      "passed": false
+    },
+    "rollout_first_block_replay": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "future_perturbation_strict_first1": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true,
+      "sigma": 0.3,
+      "cut_latent_frame": 1,
+      "perturbation_seed": 20262097,
+      "future_input_change": {
+        "max_abs": 13.888314962387085,
+        "rms": 3.102297479688482,
+        "bit_exact": false
+      }
+    },
+    "strict_first_frame_rollout_replay": {
+      "max_abs": 0.08693903684616089,
+      "rms": 0.006686233897404935,
+      "bit_exact": false,
+      "passed": false
+    }
+  },
+  "position_prefix_checks": {
+    "prefix5_text": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "prefix5_audio": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "prefix5_video": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "prefix10_text": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "prefix10_audio": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "prefix10_video": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    }
+  },
+  "existing_output_anchors": {
+    "dense_one_untrained": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    },
+    "causal_one_untrained": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_exact": true,
+      "passed": true
+    }
+  },
+  "forward_records": [
+    {
+      "label": "causal13",
+      "frames": 13,
+      "causal": true,
+      "block_frames": 5,
+      "sigma": 0.909375,
+      "seconds": 4.6908502522856
+    },
+    {
+      "label": "causal13_future_perturbed",
+      "frames": 13,
+      "causal": true,
+      "block_frames": 5,
+      "sigma": 0.909375,
+      "seconds": 3.122295624576509
+    },
+    {
+      "label": "dense13",
+      "frames": 13,
+      "causal": false,
+      "block_frames": 5,
+      "sigma": 0.909375,
+      "seconds": 3.0504776323214173
+    },
+    {
+      "label": "dense13_future_perturbed",
+      "frames": 13,
+      "causal": false,
+      "block_frames": 5,
+      "sigma": 0.909375,
+      "seconds": 3.0178917199373245
+    },
+    {
+      "label": "causal5",
+      "frames": 5,
+      "causal": true,
+      "block_frames": 5,
+      "sigma": 0.909375,
+      "seconds": 2.8575599370524287
+    },
+    {
+      "label": "strict_frame13",
+      "frames": 13,
+      "causal": true,
+      "block_frames": 1,
+      "sigma": 0.3,
+      "seconds": 3.5917286509647965
+    },
+    {
+      "label": "strict_frame13_future_perturbed",
+      "frames": 13,
+      "causal": true,
+      "block_frames": 1,
+      "sigma": 0.3,
+      "seconds": 3.5700189573690295
+    }
+  ],
+  "rollouts": {
+    "causal_rollout_sigma0909375": {
+      "role": "real",
+      "sigma": 0.909375,
+      "seconds": 8.96775589697063,
+      "audit": {
+        "method": "one_step_block_self_forcing_prefix_recompute",
+        "blocks": 3,
+        "model_forwards": 3,
+        "steps_per_block": 1,
+        "sigma": 0.909375,
+        "clean_history_model_time": 1.0,
+        "current_model_time": 0.09062499999999996,
+        "gradient_blocks": [],
+        "self_generated_history": true,
+        "future_frames_exposed": 0,
+        "history_detached": true,
+        "block_records": [
+          {
+            "block_index": 0,
+            "current_start": 0,
+            "current_end": 5,
+            "history_frames": 0,
+            "prefix_frames": 5,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 1,
+            "current_start": 5,
+            "current_end": 10,
+            "history_frames": 5,
+            "prefix_frames": 10,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 2,
+            "current_start": 10,
+            "current_end": 13,
+            "history_frames": 10,
+            "prefix_frames": 13,
+            "gradient_enabled": false,
+            "history_detached": true
+          }
+        ]
+      },
+      "latent_path": "causal_rollout_sigma0909375.pt"
+    },
+    "causal_rollout_sigma03": {
+      "role": "real",
+      "sigma": 0.3,
+      "seconds": 8.965667033568025,
+      "audit": {
+        "method": "one_step_block_self_forcing_prefix_recompute",
+        "blocks": 3,
+        "model_forwards": 3,
+        "steps_per_block": 1,
+        "sigma": 0.3,
+        "clean_history_model_time": 1.0,
+        "current_model_time": 0.7,
+        "gradient_blocks": [],
+        "self_generated_history": true,
+        "future_frames_exposed": 0,
+        "history_detached": true,
+        "block_records": [
+          {
+            "block_index": 0,
+            "current_start": 0,
+            "current_end": 5,
+            "history_frames": 0,
+            "prefix_frames": 5,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 1,
+            "current_start": 5,
+            "current_end": 10,
+            "history_frames": 5,
+            "prefix_frames": 10,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 2,
+            "current_start": 10,
+            "current_end": 13,
+            "history_frames": 10,
+            "prefix_frames": 13,
+            "gradient_enabled": false,
+            "history_detached": true
+          }
+        ]
+      },
+      "latent_path": "causal_rollout_sigma03.pt"
+    },
+    "strict_frame_rollout_sigma03": {
+      "role": "real",
+      "sigma": 0.3,
+      "block_frames": 1,
+      "seconds": 40.38947394955903,
+      "audit": {
+        "method": "one_step_block_self_forcing_prefix_recompute",
+        "blocks": 13,
+        "model_forwards": 13,
+        "steps_per_block": 1,
+        "sigma": 0.3,
+        "clean_history_model_time": 1.0,
+        "current_model_time": 0.7,
+        "gradient_blocks": [],
+        "self_generated_history": true,
+        "future_frames_exposed": 0,
+        "history_detached": true,
+        "block_records": [
+          {
+            "block_index": 0,
+            "current_start": 0,
+            "current_end": 1,
+            "history_frames": 0,
+            "prefix_frames": 1,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 1,
+            "current_start": 1,
+            "current_end": 2,
+            "history_frames": 1,
+            "prefix_frames": 2,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 2,
+            "current_start": 2,
+            "current_end": 3,
+            "history_frames": 2,
+            "prefix_frames": 3,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 3,
+            "current_start": 3,
+            "current_end": 4,
+            "history_frames": 3,
+            "prefix_frames": 4,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 4,
+            "current_start": 4,
+            "current_end": 5,
+            "history_frames": 4,
+            "prefix_frames": 5,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 5,
+            "current_start": 5,
+            "current_end": 6,
+            "history_frames": 5,
+            "prefix_frames": 6,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 6,
+            "current_start": 6,
+            "current_end": 7,
+            "history_frames": 6,
+            "prefix_frames": 7,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 7,
+            "current_start": 7,
+            "current_end": 8,
+            "history_frames": 7,
+            "prefix_frames": 8,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 8,
+            "current_start": 8,
+            "current_end": 9,
+            "history_frames": 8,
+            "prefix_frames": 9,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 9,
+            "current_start": 9,
+            "current_end": 10,
+            "history_frames": 9,
+            "prefix_frames": 10,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 10,
+            "current_start": 10,
+            "current_end": 11,
+            "history_frames": 10,
+            "prefix_frames": 11,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 11,
+            "current_start": 11,
+            "current_end": 12,
+            "history_frames": 11,
+            "prefix_frames": 12,
+            "gradient_enabled": false,
+            "history_detached": true
+          },
+          {
+            "block_index": 12,
+            "current_start": 12,
+            "current_end": 13,
+            "history_frames": 12,
+            "prefix_frames": 13,
+            "gradient_enabled": false,
+            "history_detached": true
+          }
+        ]
+      },
+      "latent_path": "strict_frame_rollout_sigma03.pt"
+    }
+  },
+  "seconds": 125.30757125746459,
+  "peak_allocated_gib": 35.94111633300781,
+  "scope": "Conditional block causality of the refiner relative to fixed upscaled input and fixed full text/audio",
+  "limitations": [
+    "The perturbation test checks the first block boundary on one clip and one seed, not every input/boundary.",
+    "Video attention is bidirectional within each five-frame latent block; this is not framewise causality.",
+    "Optional strict-frame mode means one latent frame per block, not pixel-frame or end-to-end causality.",
+    "Full 43-frame encoded-silence audio and text stay fixed; future-audio leakage is not tested.",
+    "The upstream VAE and latent upscaler remain noncausal; no end-to-end streaming claim.",
+    "Rollouts recompute prefixes and detach generated history; no KV cache or optimization is used.",
+    "Lower sigma changes input fidelity, noise amplitude, model time and Euler step simultaneously.",
+    "Latent invariance is a causality diagnostic; decoded full-clip review is still required for quality."
+  ]
+}
