@@ -1,0 +1,41 @@
+{
+  "version": "v5",
+  "name": "H3 causal Conv3d hybrid latent upscaler",
+  "named_on": "2026-11-06",
+  "versioning": "Alias of the already completed and evaluated model; naming does not retrain or modify it.",
+  "source_commit": "b498f98fb42c4d85519c1d3e972e881b049e78c0",
+  "model_parameters": 345280216,
+  "selected_step": 1800,
+  "completed_run_updates": 2000,
+  "checkpoint_file": "best_step_001800.pt",
+  "checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+  "checkpoint_published": false,
+  "training_code": "experiments/h3_conv3d_hybrid_20261105",
+  "original_results": "results/h3_conv3d_hybrid_20261105",
+  "test16_results": "results/h3_conv3d_test16_20261105",
+  "test16_count": 16,
+  "primary_reference": "Frozen H3 VAE decoded HR",
+  "test16_primary": {
+    "psnr_db": 25.56695271380813,
+    "lpips": 0.13172106888572063,
+    "temporal_difference_mse": 0.0019087914006377105
+  },
+  "precision": {
+    "parameter_dtype": "float32",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false
+  },
+  "limitations": [
+    "Previously reused test clips; not blind evaluation.",
+    "Original bidirectional teacher remains better overall.",
+    "Latent eWarp increased 8.9624 percent vs old causal model.",
+    "Fixed-latent to upscaled-latent causal module only; original decoder remains noncausal.",
+    "Default HF32 long 163-latent 2x2 stream/full numerical parity failed; HF32-off diagnostic passed.",
+    "No refiner, decoder, DMD or Self Forcing training in this version."
+  ],
+  "evidence_sha256": {
+    "results/h3_conv3d_hybrid_20261105/snapshot_manifest.json": "7a279230569220492168b5c29bd17cbe39acad76b719aa26f111af583ef65c43",
+    "results/h3_conv3d_test16_20261105/snapshot_manifest.json": "3705874584bad4c4d138fd625d265f2577bdee078aa4fa83f92819b8373225d0",
+    "results/h3_conv3d_test16_20261105/summary.json": "525d80a5ebd9d78abc1a436f73f234e47ad7673ecb4ced25cc2f704bff5434e4"
+  }
+}
