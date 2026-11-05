@@ -1,0 +1,176 @@
+{
+  "status": "completed",
+  "student": "runs/student_distill_20261105/checkpoint/student_final.pt",
+  "variants": {
+    "teacher": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.0809149518609047,
+        "latent_mse": 0.07528479397296906,
+        "latent_rmse": 0.27438074635981485,
+        "latent_mae": 0.1870553195476532,
+        "temporal_difference_mse": 0.05630159378051758,
+        "signed_error_mean": -0.01666458323597908,
+        "prediction_std": 1.0349977016448975,
+        "reference_std": 1.0638628005981445,
+        "split": "train",
+        "seconds": 0.96
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.138392373919487,
+        "latent_mse": 0.13012763857841492,
+        "latent_rmse": 0.3607320869820356,
+        "latent_mae": 0.23905354738235474,
+        "temporal_difference_mse": 0.08264734596014023,
+        "signed_error_mean": -0.044678423553705215,
+        "prediction_std": 0.9817841053009033,
+        "reference_std": 1.0181418657302856,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.07952255010604858,
+        "latent_mse": 0.0746656134724617,
+        "latent_rmse": 0.2732500932707283,
+        "latent_mae": 0.18411774933338165,
+        "temporal_difference_mse": 0.04856938123703003,
+        "signed_error_mean": -0.03759493678808212,
+        "prediction_std": 1.0697331428527832,
+        "reference_std": 1.0839016437530518,
+        "split": "holdout",
+        "seconds": 0.22
+      }
+    },
+    "student": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.08538027107715607,
+        "latent_mse": 0.0791766420006752,
+        "latent_rmse": 0.28138344301091206,
+        "latent_mae": 0.19509367644786835,
+        "temporal_difference_mse": 0.06203626096248627,
+        "signed_error_mean": -0.015154671855270863,
+        "prediction_std": 1.033100962638855,
+        "reference_std": 1.0638628005981445,
+        "vs_teacher": {
+          "objective": 0.004799306858330965,
+          "latent_mse": 0.004161259159445763,
+          "latent_rmse": 0.06450782246709125,
+          "latent_mae": 0.049614958465099335,
+          "temporal_difference_mse": 0.006380476523190737,
+          "signed_error_mean": 0.0015099101001396775,
+          "prediction_std": 1.033100962638855,
+          "reference_std": 1.0349977016448975
+        },
+        "split": "train",
+        "seconds": 21.76
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.14215391874313354,
+        "latent_mse": 0.13326391577720642,
+        "latent_rmse": 0.36505330539142694,
+        "latent_mae": 0.2455378770828247,
+        "temporal_difference_mse": 0.08889996260404587,
+        "signed_error_mean": -0.04374413192272186,
+        "prediction_std": 0.9793593287467957,
+        "reference_std": 1.0181418657302856,
+        "vs_teacher": {
+          "objective": 0.004778743721544743,
+          "latent_mse": 0.0040659476071596146,
+          "latent_rmse": 0.06376478344007462,
+          "latent_mae": 0.049468640238046646,
+          "temporal_difference_mse": 0.007127959281206131,
+          "signed_error_mean": 0.0009342909324914217,
+          "prediction_std": 0.9793593287467957,
+          "reference_std": 0.9817841053009033
+        },
+        "split": "train",
+        "seconds": 0.12
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.3167644143104553,
+        "latent_mse": 0.3046817183494568,
+        "latent_rmse": 0.551979816976542,
+        "latent_mae": 0.3990215063095093,
+        "temporal_difference_mse": 0.12082696706056595,
+        "signed_error_mean": 0.015287506394088268,
+        "prediction_std": 1.0744444131851196,
+        "reference_std": 1.0839016437530518,
+        "vs_teacher": {
+          "objective": 0.28736165165901184,
+          "latent_mse": 0.2795439064502716,
+          "latent_rmse": 0.5287191186729222,
+          "latent_mae": 0.3816581070423126,
+          "temporal_difference_mse": 0.07817751169204712,
+          "signed_error_mean": 0.05288245156407356,
+          "prediction_std": 1.0744444131851196,
+          "reference_std": 1.0697331428527832
+        },
+        "split": "holdout",
+        "seconds": 0.12
+      }
+    }
+  },
+  "causality": {
+    "VIDGEN5S_0380588": {
+      "future_cut1_max_abs": 0.0,
+      "prefix_cut1_max_abs": 4.76837158203125e-07,
+      "future_cut13_max_abs": 0.0,
+      "prefix_cut13_max_abs": 4.76837158203125e-07,
+      "future_cut25_max_abs": 0.0,
+      "prefix_cut25_max_abs": 0.0,
+      "streaming_max_abs": 4.76837158203125e-07,
+      "passed": true
+    }
+  },
+  "pixel_metrics": {
+    "VIDGEN5S_0336361": {
+      "teacher": {
+        "vs_decoded_reference": {
+          "mse": 0.004103084560483694,
+          "psnr_db": 23.86889532564399,
+          "temporal_difference_mse": 0.0028517418541014194
+        }
+      },
+      "student": {
+        "vs_decoded_reference": {
+          "mse": 0.004899221938103437,
+          "psnr_db": 23.098728862610756,
+          "temporal_difference_mse": 0.0031289930921047926
+        }
+      }
+    },
+    "VIDGEN5S_0515402": {
+      "teacher": {
+        "vs_decoded_reference": {
+          "mse": 0.005217678379267454,
+          "psnr_db": 22.82522694575438,
+          "temporal_difference_mse": 0.0071030473336577415
+        }
+      },
+      "student": {
+        "vs_decoded_reference": {
+          "mse": 0.005847564898431301,
+          "psnr_db": 22.33024949531773,
+          "temporal_difference_mse": 0.007713510654866695
+        }
+      }
+    },
+    "VIDGEN5S_0380588": {
+      "teacher": {
+        "vs_decoded_reference": {
+          "mse": 0.0009745067218318582,
+          "psnr_db": 30.112151609133004,
+          "temporal_difference_mse": 0.0006380280829034746
+        }
+      },
+      "student": {
+        "vs_decoded_reference": {
+          "mse": 0.005969342775642872,
+          "psnr_db": 22.24073482040472,
+          "temporal_difference_mse": 0.0020335980225354433
+        }
+      }
+    }
+  },
+  "seconds": 173.8,
+  "causality_passed": true
+}

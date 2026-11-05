@@ -1,0 +1,90 @@
+{
+  "steps": 3000,
+  "params": 15028504,
+  "consistency_max_abs": 4.76837158203125e-07,
+  "final_vs_teacher": {
+    "VIDGEN5S_0336361": {
+      "objective": 0.004799306858330965,
+      "latent_mse": 0.004161259159445763,
+      "latent_rmse": 0.06450782246709125,
+      "latent_mae": 0.049614958465099335,
+      "temporal_difference_mse": 0.0063804760575294495,
+      "signed_error_mean": 0.0015099099837243557,
+      "prediction_std": 1.033100962638855,
+      "reference_std": 1.0349977016448975
+    },
+    "VIDGEN5S_0515402": {
+      "objective": 0.004778743721544743,
+      "latent_mse": 0.0040659476071596146,
+      "latent_rmse": 0.06376478344007462,
+      "latent_mae": 0.049468643963336945,
+      "temporal_difference_mse": 0.007127959281206131,
+      "signed_error_mean": 0.0009342909324914217,
+      "prediction_std": 0.9793593287467957,
+      "reference_std": 0.9817841053009033
+    },
+    "VIDGEN5S_0380588": {
+      "objective": 0.28736168146133423,
+      "latent_mse": 0.279543936252594,
+      "latent_rmse": 0.5287191468564326,
+      "latent_mae": 0.3816581070423126,
+      "temporal_difference_mse": 0.07817751169204712,
+      "signed_error_mean": 0.052882447838783264,
+      "prediction_std": 1.0744444131851196,
+      "reference_std": 1.0697331428527832
+    }
+  },
+  "log_tail": [
+    {
+      "step": 2910,
+      "loss": 0.00527,
+      "seconds": 1323.6
+    },
+    {
+      "step": 2920,
+      "loss": 0.00547,
+      "seconds": 1328.0
+    },
+    {
+      "step": 2930,
+      "loss": 0.00586,
+      "seconds": 1332.5
+    },
+    {
+      "step": 2940,
+      "loss": 0.00551,
+      "seconds": 1336.9
+    },
+    {
+      "step": 2950,
+      "loss": 0.0054,
+      "seconds": 1341.4
+    },
+    {
+      "step": 2960,
+      "loss": 0.00556,
+      "seconds": 1345.8
+    },
+    {
+      "step": 2970,
+      "loss": 0.00542,
+      "seconds": 1350.3
+    },
+    {
+      "step": 2980,
+      "loss": 0.0058,
+      "seconds": 1354.7
+    },
+    {
+      "step": 2990,
+      "loss": 0.00566,
+      "seconds": 1359.2
+    },
+    {
+      "step": 3000,
+      "loss": 0.00514,
+      "seconds": 1363.6
+    }
+  ],
+  "passed": true
+}
