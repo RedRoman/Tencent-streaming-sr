@@ -1,0 +1,307 @@
+{
+  "status": "running",
+  "source_fingerprints_sha256": "c681c90a0564a66f9d864954c8a67edd3710bc80160cb7b3c0be55b1b2086c36",
+  "files": [
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/h3_v5_motion.py",
+      "public_bytes": 9828,
+      "public_sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa",
+      "original_artifact": "${EXP_ROOT}/experiment/h3_v5_motion.py",
+      "original_bytes": 9828,
+      "original_sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa",
+      "byte_identical_to_original": true,
+      "changes": []
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/test_h3_v5_motion.py",
+      "public_bytes": 10509,
+      "public_sha256": "d291606912d1811a0cbf42229546b545ebe1d9bb8c70193cc4d3a086c1ac9abc",
+      "original_artifact": "${EXP_ROOT}/experiment/test_h3_v5_motion.py",
+      "original_bytes": 10509,
+      "original_sha256": "d291606912d1811a0cbf42229546b545ebe1d9bb8c70193cc4d3a086c1ac9abc",
+      "byte_identical_to_original": true,
+      "changes": []
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/train_h3_v5_motion.py",
+      "public_bytes": 28219,
+      "public_sha256": "3291caec661880a7b3a23d5492b72876b9dd1a59d6424f273515be904dab28e2",
+      "original_artifact": "${EXP_ROOT}/experiment/train_h3_v5_motion.py",
+      "original_bytes": 28142,
+      "original_sha256": "2319393eea9cb45e3a34da0c82f0e8619ac1f0e1b12335f9848fc86165d67304",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Resolve existing published dependencies through actual import locations.",
+        "Use actual imported sources in contract creation and final unchanged check.",
+        "Read the external base model from H3_BASE_MODEL.",
+        "Require a configured base-model location."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/h3_v5_pipeline_contract.py",
+      "public_bytes": 7766,
+      "public_sha256": "d2aef53609a2aa371b2966ac1ee9be32ec8754706594e75ae98e1ff7ff373654",
+      "original_artifact": "${EXP_ROOT}/experiment/h3_v5_pipeline_contract.py",
+      "original_bytes": 7590,
+      "original_sha256": "13b25c2571affaaf4d8727079e7b79dc9c748aaaf53cce17207ad35a0f649957",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Resolve inherited Python sources without copying or weakening checks.",
+        "Use the public code directory for launch scripts and the resolver for Python modules."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/run_h3_v5_motion_pipeline.sh",
+      "public_bytes": 1967,
+      "public_sha256": "4aa7106374a61eeab7d99804b7282695dd959eb7169b5367315be1fadfd99225",
+      "original_artifact": "${EXP_ROOT}/experiment/run_h3_v5_motion_pipeline.sh",
+      "original_bytes": 2128,
+      "original_sha256": "20cf6c466b7ae97f1f85e5c826ba8adbad98c84b9a035dc45d979ee0eb6b5fd4",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Source the new public environment, not a private runtime path.",
+        "Reuse inherited public lock/audit helpers and configured external model locations."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/run_h3_v5_motion_preflight.sh",
+      "public_bytes": 574,
+      "public_sha256": "030d12223b728e74dee350d1fb0fb4c532360200145b2674315d87d7879899d8",
+      "original_artifact": "${EXP_ROOT}/experiment/run_h3_v5_motion_preflight.sh",
+      "original_bytes": 594,
+      "original_sha256": "b37625836123ebf2da3e6615f45f19bfcf5350d9bc8a4e22d6b3257b4b1ab1f8",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Source the new public environment, not a private runtime path.",
+        "Reuse inherited public lock/audit helpers and configured external model locations."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/evaluate_h3_v5_motion.py",
+      "public_bytes": 43355,
+      "public_sha256": "38daa88c665c20c6c588cdccdb4ec4a84c1d388d23aa42c98b4fdd3739be3da1",
+      "original_artifact": "${EXP_ROOT}/experiment/evaluate_h3_v5_motion.py",
+      "original_bytes": 43418,
+      "original_sha256": "9b1274f1e716de5d62da70151c8787d93a4c4752f683d57b250173acfef1742f",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Require the public environment base-model location."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/test_h3_v5_eval.py",
+      "public_bytes": 13010,
+      "public_sha256": "5bb360a612457958201c14fb234066eda4a899c72ac955fb5dd38e3aa7149d84",
+      "original_artifact": "${EXP_ROOT}/experiment/test_h3_v5_eval.py",
+      "original_bytes": 13010,
+      "original_sha256": "5bb360a612457958201c14fb234066eda4a899c72ac955fb5dd38e3aa7149d84",
+      "byte_identical_to_original": true,
+      "changes": []
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/env.sh",
+      "public_bytes": 349,
+      "public_sha256": "7ad534a433a7a0198644f5237e9c20720026e6fdea4687d71ee7a025e576718f",
+      "original_artifact": "${EXP_ROOT}/experiment/env.sh",
+      "original_bytes": 938,
+      "original_sha256": "64451094fa9aca640bc5bfc9ba77080330f858d1706ba74798ca4eb8834e4524",
+      "byte_identical_to_original": false,
+      "changes": [
+        "New public environment inherits the existing test16/Conv3d/CMN/helper chain."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_v5_motion_20261106/README.md",
+      "public_bytes": 4539,
+      "public_sha256": "2c2762cd6232a598fa8aeb7001864b11a974a6a0284fdb597e4efad10b33480b",
+      "original_artifact": null,
+      "original_bytes": null,
+      "original_sha256": null,
+      "byte_identical_to_original": false,
+      "changes": [
+        "New documentation; pending/running is caller-selected, no completed quality claim."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight/config.json",
+      "public_bytes": 3624,
+      "public_sha256": "f644983b431936f705036090ec40f189012b2d76b4e08081ef4ceac0b6733033",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight/config.json",
+      "original_bytes": 3928,
+      "original_sha256": "e69739ea6c403e0954604a3c709b9253faca8a9a60804c85d09965fa2c37d708",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight/contract.json",
+      "public_bytes": 8868,
+      "public_sha256": "904cb5e3ade9449c6648f18b75920aab37f148c69eafef4518963b2c5c33a851",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight/contract.json",
+      "original_bytes": 9172,
+      "original_sha256": "859c3b94753612e61f81bd33d5ad33df08e480f0502a8c71592e6706f12b589d",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight/initial_causality.json",
+      "public_bytes": 954,
+      "public_sha256": "cc7da971047965f2bf9632fe0d35e1ec8cf75b550462ab27e6ce10e6a5ba4964",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight/initial_causality.json",
+      "original_bytes": 954,
+      "original_sha256": "cc7da971047965f2bf9632fe0d35e1ec8cf75b550462ab27e6ce10e6a5ba4964",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight/pixel_preflight.json",
+      "public_bytes": 19080,
+      "public_sha256": "4b87e54e525a72e64cd4070e710ae32bf03fd2e4aa78d88789e47af8dc846df4",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight/pixel_preflight.json",
+      "original_bytes": 19080,
+      "original_sha256": "4b87e54e525a72e64cd4070e710ae32bf03fd2e4aa78d88789e47af8dc846df4",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight/summary.json",
+      "public_bytes": 28875,
+      "public_sha256": "f53912a9d7fff903893f3b00b28fe0815f1ffc94d899f07c4febab215f7aca0b",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight/summary.json",
+      "original_bytes": 29483,
+      "original_sha256": "c87d80f099d52c87d464eb71c036e11a0fa6533aebafbdb457a650a58244cc2a",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight/steps.jsonl",
+      "public_bytes": 8973,
+      "public_sha256": "a6f26b1b77292a1b8e0bc289e9fea7fb683f8038a928fdfa4f527510a197c075",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight/steps.jsonl",
+      "original_bytes": 8973,
+      "original_sha256": "a6f26b1b77292a1b8e0bc289e9fea7fb683f8038a928fdfa4f527510a197c075",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight.log",
+      "public_bytes": 18210,
+      "public_sha256": "09d482c6296b75fdabf820d7f4a1fd8d66bf45d425aa7f96804db8c6193e5673",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight.log",
+      "original_bytes": 18282,
+      "original_sha256": "65915bf80751814e8accf86eec96c7d34e7e83dbbd9ca5d8397f42bdcfa6575a",
+      "byte_identical_to_original": false,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/unit_tests_v2.log",
+      "public_bytes": 1861,
+      "public_sha256": "4f8f62fcd86ccd7251d310c92988cd284aad3c8180c97df4dd0b5e5a4cccb84a",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/unit_tests_v2.log",
+      "original_bytes": 1861,
+      "original_sha256": "4f8f62fcd86ccd7251d310c92988cd284aad3c8180c97df4dd0b5e5a4cccb84a",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/launch_wrapper_failure.json",
+      "public_bytes": 294,
+      "public_sha256": "1415ccc1adeafc57768d69698c280fb882be90b5d72e657d10ffb55b923086ed",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/launch_wrapper_failure.json",
+      "original_bytes": 294,
+      "original_sha256": "1415ccc1adeafc57768d69698c280fb882be90b5d72e657d10ffb55b923086ed",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/launch_wrapper_v2_failure.json",
+      "public_bytes": 347,
+      "public_sha256": "b4e71d43cdfda2c7f060cef681153d70151b5a32caffc968712a24b1c533804d",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/launch_wrapper_v2_failure.json",
+      "original_bytes": 347,
+      "original_sha256": "b4e71d43cdfda2c7f060cef681153d70151b5a32caffc968712a24b1c533804d",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/launch_wrapper_v2_empty.log",
+      "public_bytes": 0,
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/launch_wrapper_v2_empty.log",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/preflight_delivery_manifest.json",
+      "public_bytes": 1506,
+      "public_sha256": "439e31f0359a76d2785e1f3f646942ad098faf4cf2253b76e61c809434303e73",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/preflight_delivery_manifest.json",
+      "original_bytes": 1506,
+      "original_sha256": "439e31f0359a76d2785e1f3f646942ad098faf4cf2253b76e61c809434303e73",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/evidence/PLAN.md",
+      "public_bytes": 2444,
+      "public_sha256": "054a05b6ff5537b69e4be216bd3ae7a80e2a3c11aeba9914f4893ae652a96f18",
+      "original_artifact": "${EXP_ROOT}/upscaler_v5_motion_20261106/PLAN.md",
+      "original_bytes": 2444,
+      "original_sha256": "054a05b6ff5537b69e4be216bd3ae7a80e2a3c11aeba9914f4893ae652a96f18",
+      "byte_identical_to_original": true,
+      "changes": [
+        "Private paths redacted; original embedded SHA values and failure outcomes retained."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/preflight_evidence.json",
+      "public_bytes": 1221,
+      "public_sha256": "02764c2d2671f8c6d339e0018da4fa47f25fed9032d481fd3323f8d2b4d42913",
+      "original_artifact": null,
+      "original_bytes": null,
+      "original_sha256": null,
+      "byte_identical_to_original": false,
+      "changes": [
+        "Derived from verified original preflight evidence."
+      ]
+    },
+    {
+      "public_path": "results/h3_v5_motion_20261106/README.md",
+      "public_bytes": 568,
+      "public_sha256": "7eb4fade170ee10d80b8795cd96236462741beb677a0799312a30d546f60b1e1",
+      "original_artifact": null,
+      "original_bytes": null,
+      "original_sha256": null,
+      "byte_identical_to_original": false,
+      "changes": [
+        "New evidence-only documentation."
+      ]
+    }
+  ],
+  "note": "Does not recursively hash itself; every mapped source/public file is explicit."
+}

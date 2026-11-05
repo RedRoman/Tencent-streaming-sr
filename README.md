@@ -1,6 +1,6 @@
 # Sol-H3 — 流式视频超分
 
-2026-11-06：当前已完成评估的 H3 因果 Conv3d hybrid upscaler 正式命名为 **[v5](versions/v5/README.md)**，固定对应 dev 选择的 step1800 权重。后续高变化区域伪影优化从该冻结基线继续。
+2026-11-06：当前已完成评估的 H3 因果 Conv3d hybrid upscaler 正式命名为 **[v5](versions/v5/README.md)**，固定对应 dev 选择的 step1800 权重。后续高变化区域伪影优化从该冻结基线继续。 [等预算优化实验](experiments/h3_v5_motion_20261106/README.md)已通过8步预检并启动，两臂各2000步，尚无最终质量结论。
 
 2026-11-05 [固定 step1800 的完整16条test像素补测](results/h3_conv3d_test16_20261105/README.md)已完成：新增13条与原3条合并，每条120帧、24fps、5秒，未重训或重新选模。新Conv3d相对旧causal的平均PSNR为25.5670 vs 24.3314dB，LPIPS为0.131721 vs 0.200394（降低34.27%），像素时间差分MSE降低20.26%；16条均改善。原版双向teacher仍整体更好，既有latent eWarp退步8.96%的结论保留；测试集已复用，decoder仍非因果。结果含26段新增展示视频、逐片与分类指标、抽帧观察和完整审计证据。
 

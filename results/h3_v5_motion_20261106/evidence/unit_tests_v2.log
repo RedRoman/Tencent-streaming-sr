@@ -1,0 +1,17 @@
+test_same_decoder_regions_baseline_values_and_gradients (test_h3_v5_motion.PixelRegressionTests.test_same_decoder_regions_baseline_values_and_gradients) ... ok
+test_empty_adjacent_pairs_are_graph_connected_zero (test_h3_v5_motion.RGBMotionTests.test_empty_adjacent_pairs_are_graph_connected_zero) ... ok
+test_ghost_motion_produces_gradients_for_both_losses (test_h3_v5_motion.RGBMotionTests.test_ghost_motion_produces_gradients_for_both_losses) ... ok
+test_mask_channel_mean_threshold_and_both_endpoints (test_h3_v5_motion.RGBMotionTests.test_mask_channel_mean_threshold_and_both_endpoints) ... ok
+test_only_true_rgb_adjacency_including_raw_token_drop (test_h3_v5_motion.RGBMotionTests.test_only_true_rgb_adjacency_including_raw_token_drop) ... ok
+test_real_motion_perfect_prediction_is_zero (test_h3_v5_motion.RGBMotionTests.test_real_motion_perfect_prediction_is_zero) ... ok
+test_static_target_empty_roi_and_perfect_prediction (test_h3_v5_motion.RGBMotionTests.test_static_target_empty_roi_and_perfect_prediction) ... ok
+test_target_detached_and_diagnostics_detached (test_h3_v5_motion.RGBMotionTests.test_target_detached_and_diagnostics_detached) ... ok
+test_invalid_pairs_and_out_of_bounds_are_excluded (test_h3_v5_motion.ResidualWarpTests.test_invalid_pairs_and_out_of_bounds_are_excluded) ... ok
+test_legacy_parity_with_partial_masks_and_multiple_batch (test_h3_v5_motion.ResidualWarpTests.test_legacy_parity_with_partial_masks_and_multiple_batch) ... ok
+test_nonzero_flow_and_ghost_gradient (test_h3_v5_motion.ResidualWarpTests.test_nonzero_flow_and_ghost_gradient) ... ok
+test_perfect_dynamic_target_preserves_real_change_and_legacy_metric (test_h3_v5_motion.ResidualWarpTests.test_perfect_dynamic_target_preserves_real_change_and_legacy_metric) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.852s
+
+OK
