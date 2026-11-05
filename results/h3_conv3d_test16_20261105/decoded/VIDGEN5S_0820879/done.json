@@ -1,0 +1,210 @@
+{
+  "status": "completed",
+  "contract_sha256": "06a15bc19876b51023ee1e22ddc2e3dc64b0c164ae47a5e56e1ac300dcf037b5",
+  "sample_id": "VIDGEN5S_0820879",
+  "files": {
+    "pretrained.mp4": {
+      "sha256": "fda8570cbb23542de55910df1aac30da26327237ba11537d94e0a891f31fa29c",
+      "bytes": 1560343
+    },
+    "old_causal_ewarp.mp4": {
+      "sha256": "4ee8479d537da3e1e3c780a9303cee200f04fcc80f501e948e0a1fb7c340e87b",
+      "bytes": 1930972
+    },
+    "cmn.mp4": {
+      "sha256": "7146895b1c51f8cd8eb01f60dc1ffee7fdcb6dc89c61916a54ac6228b7a2bae4",
+      "bytes": 2669537
+    },
+    "cmn_hybrid.mp4": {
+      "sha256": "662028c30e428ed6e7ccc6d0c8d65e2924fc599103b845ca4d13bb97e81bb8c3",
+      "bytes": 1711207
+    },
+    "conv3d_hybrid.mp4": {
+      "sha256": "b5a5b9b299867538ac35154bbe53b7ebf62bd3495bba74b82b817edada0ee409",
+      "bytes": 1602923
+    },
+    "reference.mp4": {
+      "sha256": "b4a0b78d9bc18d8168b2ef90a7a9764ea4da8a4c5c2df49c36c16484c25fb0e5",
+      "bytes": 1660682
+    },
+    "comparison.mp4": {
+      "sha256": "fa4b1686b9dd43c87b270dfb3d76eac20007d47d324feb04f7fafbc7b08d9f0e",
+      "bytes": 11447935
+    },
+    "comparison.png": {
+      "sha256": "d262656046bb3c60476b51b2248c5651fe99138996b6bc2fbd68295e232f7f2b",
+      "bytes": 6212282
+    },
+    "metrics.json": {
+      "sha256": "6ca53e8372b4c30f7fbeac156fb63c173c4bc2315e646d0592ae2829d998ac05",
+      "bytes": 45575
+    }
+  },
+  "media_audit": {
+    "pretrained.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 672,
+      "height": 384,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "fda8570cbb23542de55910df1aac30da26327237ba11537d94e0a891f31fa29c",
+      "bytes": 1560343
+    },
+    "old_causal_ewarp.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 672,
+      "height": 384,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "4ee8479d537da3e1e3c780a9303cee200f04fcc80f501e948e0a1fb7c340e87b",
+      "bytes": 1930972
+    },
+    "cmn.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 672,
+      "height": 384,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "7146895b1c51f8cd8eb01f60dc1ffee7fdcb6dc89c61916a54ac6228b7a2bae4",
+      "bytes": 2669537
+    },
+    "cmn_hybrid.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 672,
+      "height": 384,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "662028c30e428ed6e7ccc6d0c8d65e2924fc599103b845ca4d13bb97e81bb8c3",
+      "bytes": 1711207
+    },
+    "conv3d_hybrid.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 672,
+      "height": 384,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "b5a5b9b299867538ac35154bbe53b7ebf62bd3495bba74b82b817edada0ee409",
+      "bytes": 1602923
+    },
+    "reference.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 672,
+      "height": 384,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "b4a0b78d9bc18d8168b2ef90a7a9764ea4da8a4c5c2df49c36c16484c25fb0e5",
+      "bytes": 1660682
+    },
+    "comparison.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 4032,
+      "height": 412,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "fa4b1686b9dd43c87b270dfb3d76eac20007d47d324feb04f7fafbc7b08d9f0e",
+      "bytes": 11447935
+    },
+    "comparison.png": {
+      "passed": true,
+      "width": 4032,
+      "height": 1236,
+      "sha256": "d262656046bb3c60476b51b2248c5651fe99138996b6bc2fbd68295e232f7f2b",
+      "bytes": 6212282
+    }
+  },
+  "anchor_pixel_parity": {},
+  "latent_receipt_sha256": "eeea58e1025c770aeea15640cf5def7053a972189f04f78f36ca45000a36b49f",
+  "decoder_fingerprint": {
+    "weights": {
+      "config.json": {
+        "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+        "bytes": 2011
+      },
+      "diffusion_pytorch_model-00001-of-00003.safetensors": {
+        "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+        "bytes": 5061033024
+      },
+      "diffusion_pytorch_model-00002-of-00003.safetensors": {
+        "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+        "bytes": 4955986528
+      },
+      "diffusion_pytorch_model-00003-of-00003.safetensors": {
+        "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+        "bytes": 398539336
+      }
+    },
+    "implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+    "recipe": "data_utils.load_video_vae + decode_latent, original temporal windows, FP32, spatial tile256/overlap64"
+  },
+  "lpips_fingerprint": {
+    "network": "alex",
+    "version": "0.1",
+    "pretrained": true,
+    "spatial": false,
+    "input_range": [
+      -1,
+      1
+    ],
+    "resize": false,
+    "normalize_argument": false,
+    "backbone": {
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "bytes": 244408911
+    },
+    "linear_weights": {
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+      "bytes": 6009
+    },
+    "implementation_sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658",
+    "loaded_state_sha256": "1a801fea47e5ff48d5c64d3552b19736d2d944dda5d6eac1edcac9700a8bbd7d"
+  },
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "frozen_modules_unchanged": true
+}

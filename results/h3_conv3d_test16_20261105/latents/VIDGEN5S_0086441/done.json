@@ -1,0 +1,117 @@
+{
+  "status": "completed",
+  "contract_sha256": "06a15bc19876b51023ee1e22ddc2e3dc64b0c164ae47a5e56e1ac300dcf037b5",
+  "sample_id": "VIDGEN5S_0086441",
+  "files": {
+    "pretrained.pt": {
+      "sha256": "73dc1a5cc212fea24363535a47a18a574300dcb64bc9552beb4b8b3506ffefb2",
+      "bytes": 3582227
+    },
+    "old_causal_ewarp.pt": {
+      "sha256": "1c3e6c952c10b284fceaf2c2d82c0464e1057113b67a5f8097bf44ff88f5552e",
+      "bytes": 3582269
+    },
+    "cmn.pt": {
+      "sha256": "fef15e05956dd42a080dc4726d37de11e7656355c4b2bde117e0bd191ad05a4c",
+      "bytes": 3582114
+    },
+    "cmn_hybrid.pt": {
+      "sha256": "ad30e6f6c12386fa345e7ede6a534c46171a6cead5a716ccfbbf8ff4da73187a",
+      "bytes": 3582227
+    },
+    "conv3d_hybrid.pt": {
+      "sha256": "352ec643f81ffd83dd5d3debeb680119b053a1076aa503ecb7266a164051cf32",
+      "bytes": 3582248
+    },
+    "reference.pt": {
+      "sha256": "c48201061ab24b40056be0482b7fdd47143cefd442e567224ebe72c545e75d28",
+      "bytes": 3582220
+    }
+  },
+  "latent_metrics": {
+    "pretrained": {
+      "loss": 0.08649718016386032,
+      "latent_mse": 0.05828993022441864,
+      "ewarp_l1": 0.2820724844932556,
+      "valid_warp_fraction": 0.9853174686431885
+    },
+    "old_causal_ewarp": {
+      "loss": 0.10459335148334503,
+      "latent_mse": 0.08240669220685959,
+      "ewarp_l1": 0.22186659276485443,
+      "valid_warp_fraction": 0.9853174686431885
+    },
+    "cmn": {
+      "loss": 0.21109753847122192,
+      "latent_mse": 0.1872016191482544,
+      "ewarp_l1": 0.23895911872386932,
+      "valid_warp_fraction": 0.9853174686431885
+    },
+    "cmn_hybrid": {
+      "loss": 0.21402445435523987,
+      "latent_mse": 0.18962866067886353,
+      "ewarp_l1": 0.24395786225795746,
+      "valid_warp_fraction": 0.9853174686431885
+    },
+    "conv3d_hybrid": {
+      "loss": 0.091216079890728,
+      "latent_mse": 0.06693930923938751,
+      "ewarp_l1": 0.24276770651340485,
+      "valid_warp_fraction": 0.9853174686431885
+    }
+  },
+  "anchor_tensor_parity": {
+    "pretrained": {
+      "passed": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 3e-05,
+      "rtol": 3e-05
+    },
+    "old_causal_ewarp": {
+      "passed": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 3e-05,
+      "rtol": 3e-05
+    },
+    "cmn": {
+      "passed": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 3e-05,
+      "rtol": 3e-05
+    },
+    "cmn_hybrid": {
+      "passed": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 3e-05,
+      "rtol": 3e-05
+    },
+    "conv3d_hybrid": {
+      "passed": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 3e-05,
+      "rtol": 3e-05
+    },
+    "reference": {
+      "passed": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 3e-05,
+      "rtol": 3e-05
+    }
+  },
+  "execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  }
+}

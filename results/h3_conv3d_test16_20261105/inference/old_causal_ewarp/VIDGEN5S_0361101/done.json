@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "contract_sha256": "06a15bc19876b51023ee1e22ddc2e3dc64b0c164ae47a5e56e1ac300dcf037b5",
+  "sample_id": "VIDGEN5S_0361101",
+  "variant": "old_causal_ewarp",
+  "files": {
+    "latent.pt": {
+      "sha256": "dc0c7b855ed05342ea92608112883f60266a7ce72d752dae0615e5734510e558",
+      "bytes": 3582199
+    }
+  },
+  "latent_metrics": {
+    "loss": 0.12664110958576202,
+    "latent_mse": 0.1050981879234314,
+    "ewarp_l1": 0.21542920172214508,
+    "valid_warp_fraction": 0.9570011496543884
+  },
+  "parity": {
+    "independent_checkpoint_vs_unbound_prediction_cache": {
+      "passed": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 3e-05,
+      "rtol": 3e-05
+    }
+  },
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  }
+}

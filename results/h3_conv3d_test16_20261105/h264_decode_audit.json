@@ -1,0 +1,1727 @@
+{
+  "expected_duration_seconds": 5,
+  "expected_fps": 24,
+  "expected_frames": 120,
+  "schema_version": 1,
+  "status": "passed",
+  "tool": "h3_decode_audit.swift",
+  "video_count": 26,
+  "videos": [
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5856131,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.2077420949935913,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0014509/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "054e8766ffe3bc481912d68b42d9a7009b5781a6fa9a248f8a66a6f566d60e98",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1527680,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.06250894069671631,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0014509/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "3b84b133b914ef511b0f2e3363ad45be70efcac729086d1dc7ed594a654c3800",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5750152,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.1093130111694336,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0059416/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "3b734fb41dd5f14acf0cc05c8e435e8b289094d24be0f461ed14fcdb918ccb3a",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1510075,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05325806140899658,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0059416/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "ed4e707741210155b84c08d1dfe787f17446045f0dd91251196f884946503ae7",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5823520,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.11083996295928955,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0100402/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "a238a7845060040119b2d7346ca9468c73ef799771e92a95d8e1da36b6757852",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1538877,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05563700199127197,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0100402/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "cd0605269002a57854b977cc7accb432c63c54dae2b31ad77cb948db145966b0",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5783306,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.11061596870422363,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0184359/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "f9c137fb011eeb7c2907fb6f30eacaf9d92e3f78d9cfca2ef6627316e8e1d89b",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1492502,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05590498447418213,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0184359/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "03a049884bb0bd718ea0e2a7f5a773a1280f162c19cc114051b3e917d67e9662",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5723885,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.11076593399047852,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0288595/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "65f9880830a615d4a1bc2d25f3bb3001fc28de9ca8664f90c321f15ac605c726",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1504970,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05288994312286377,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0288595/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "0cc6d9ffe05c25b345e4bf259ad9173383dff33260079e0532faf48466362f4e",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5728321,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.1066199541091919,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0361101/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "14a99f0904f8ca1bc272106c6310f36f4e735bb6b4ecdac5c7459f5ebbaba2ed",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1475925,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.050781965255737305,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0361101/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "7502f581010190f2e6e6f70536a1d96e13a013d91b3df6e1c45f05dafeceaf77",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5820857,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.11199498176574707,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0362565/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "26c7aa600e6597da692d0ba37b287210be40a277411ffd0e7b8c1043d6d8311e",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1492892,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05518198013305664,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0362565/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "0fca0e30e4e0918544ad8bb6e703dcef16df0f774f6079ae0a79910b96460675",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5793055,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.10583996772766113,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0441001/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "8e84e2d34e7fb3c205f538dc6a7630a703d30236592850ce6dfa3095d5d11115",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1526137,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05639994144439697,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0441001/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "da7ab72f45bd43173a6f63c980f84bb0536ec50b770583ea5615f40d4e2b4b7a",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5678905,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.1105949878692627,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0496359/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "fa5fd674efff636a3948f0951d3a3e723051af3344b71289e923e5824c804cf7",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1492464,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05710601806640625,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0496359/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "43516fc2b4817ca2e812dcddf7f4016498738145b1425a8fdcc4d31c1707eb08",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5829660,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.10658907890319824,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0602499/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "04c84607383f3e51a0280acb01c2c3e853b9a4f1c4a5d4b4a3846f1a3e711e74",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1528112,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.054450035095214844,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0602499/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "ccccc8143a9723c598cf3cea76a9c3ed81b35841e979c7dec60dd6c58d1392b2",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5783354,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.11008799076080322,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0632078/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "b8544a42dab5ea954b6504c8666b783fe2874c8e2ccbd62a025d66e684b12f2c",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1528230,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.054991960525512695,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0632078/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "884e72507a9e80f118c9a4907e8776d6c8a26b692e910f10d5c45f037545c6c5",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5855325,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.10478198528289795,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0820879/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "8257f754a4a6b8812fbaffec4d28c1b716ef9b1516c31ba8b18908dfcdd79da6",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1522582,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.05475902557373047,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0820879/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "1bf0f48c1c49f787bc5ef870a8d0e2427b44c10cb6165d870e126b57c27fc984",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 5843818,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "3840x392"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.10771501064300537,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 392,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0864318/comparison.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "4c0dd588becb780571bb1272d16e9f1e2a669af323bab8a0bb03a83d30587d60",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 3840
+    },
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 5,
+        "timescale": 12288,
+        "value": 61440
+      },
+      "bytes": 1528297,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 120,
+      "decoded_sizes": [
+        "672x384"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.052989959716796875,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 384,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 4.958333333333333,
+        "timescale": 12288,
+        "value": 60928
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "decoded/VIDGEN5S_0864318/conv3d_hybrid.h264.mp4",
+      "pts_span_seconds": 4.958333333333333,
+      "reader_status": "completed",
+      "sha256": "495f4cc7417f589ee27db51277a1f9ac747357b2944004fe52691b41bd2228a6",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 5,
+          "timescale": 12288,
+          "value": 61440
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 672
+    }
+  ]
+}

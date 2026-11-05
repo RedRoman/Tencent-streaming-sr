@@ -1,0 +1,44 @@
+{
+  "status": "completed",
+  "contract_sha256": "06a15bc19876b51023ee1e22ddc2e3dc64b0c164ae47a5e56e1ac300dcf037b5",
+  "recomputed_ids": [
+    "VIDGEN5S_0086441",
+    "VIDGEN5S_0014509",
+    "VIDGEN5S_0059416",
+    "VIDGEN5S_0100402",
+    "VIDGEN5S_0184359",
+    "VIDGEN5S_0288595",
+    "VIDGEN5S_0361101",
+    "VIDGEN5S_0362565",
+    "VIDGEN5S_0441001",
+    "VIDGEN5S_0496359",
+    "VIDGEN5S_0602499",
+    "VIDGEN5S_0632078",
+    "VIDGEN5S_0820879",
+    "VIDGEN5S_0864318"
+  ],
+  "teacher_inferences": 14,
+  "old_causal_independent_prediction_checks": 14,
+  "independent_checkpoint_load_scope": "One shared independently loaded old checkpoint per invocation with unfinished predictions;14 output comparisons, not14 checkpoint loads",
+  "all16_teacher_latent_metrics": "14 fresh outputs checked against prior metrics; two un-recomputed old tests retain SHA-bound prior tensors/metrics",
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  }
+}

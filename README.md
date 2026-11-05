@@ -1,5 +1,7 @@
 # Sol-H3 — 流式视频超分
 
+2026-11-05 [固定 step1800 的完整16条test像素补测](results/h3_conv3d_test16_20261105/README.md)已完成：新增13条与原3条合并，每条120帧、24fps、5秒，未重训或重新选模。新Conv3d相对旧causal的平均PSNR为25.5670 vs 24.3314dB，LPIPS为0.131721 vs 0.200394（降低34.27%），像素时间差分MSE降低20.26%；16条均改善。原版双向teacher仍整体更好，既有latent eWarp退步8.96%的结论保留；测试集已复用，decoder仍非因果。结果含26段新增展示视频、逐片与分类指标、抽帧观察和完整审计证据。
+
 2026-11-05 [原版因果 H3 Conv3d 互补训练](results/h3_conv3d_hybrid_20261105/README.md)已完成：attempt2独立跑满2000步，含step0的dev选模选择step1800。四例全120帧平均PSNR从旧causal eWarp的23.6710提升至24.9528dB，LPIPS从0.209778降至0.140644（-32.96%）；16条复用test的latent eWarp则由0.225486升至0.245695（+8.96%，退步）。原版teacher仍有更高像素PSNR；像素仅4固定例，test已复用。attempt1中断的83步另行归档且不计最终2000；默认小空间HF32流式一致性失败与独立HF32off通过分别保留。结果含训练曲线、六列5秒视频及完整证据。
 
 2026-11-05 完成 [H3 CMN 互补训练](experiments/h3_cmn_hybrid_20261105/README.md)：融合原版 H3 teacher 蒸馏、HR latent/eWarp 与冻结 decoder 的图像 L1/LPIPS，新增 2000 步、dev 选择 step1800。四例完整 5 秒视频相较原 CMN 平均 PSNR +0.4261 dB、LPIPS −16.67%，但仍落后旧 causal eWarp 和原版 teacher；16 条 test latent eWarp 退步 2.16%。[最终指标、曲线和对比视频](results/h3_cmn_hybrid_20261105/README.md)。

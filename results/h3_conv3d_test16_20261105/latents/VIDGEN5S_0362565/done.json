@@ -1,0 +1,74 @@
+{
+  "status": "completed",
+  "contract_sha256": "06a15bc19876b51023ee1e22ddc2e3dc64b0c164ae47a5e56e1ac300dcf037b5",
+  "sample_id": "VIDGEN5S_0362565",
+  "files": {
+    "pretrained.pt": {
+      "sha256": "f8ccccb5230a2757e18d1febcbe9da97a27a07dfdcbb1f0051d07fe4c1726dbe",
+      "bytes": 3582227
+    },
+    "old_causal_ewarp.pt": {
+      "sha256": "132963effbb2b1b4d68202fe48ae21f164ed72b3272acbf6b38fac6e105b3148",
+      "bytes": 3582269
+    },
+    "cmn.pt": {
+      "sha256": "4c6af7b3afc8956cd0d5ca2f885b542c8b716b5af3a2f1b283cc5bd875aa4dea",
+      "bytes": 3582114
+    },
+    "cmn_hybrid.pt": {
+      "sha256": "9f1c867e98831052642e285980c1aa168eb484a9fc409e09e601a8beaf0c400d",
+      "bytes": 3582227
+    },
+    "conv3d_hybrid.pt": {
+      "sha256": "0746736d6b88d525f9cfc3cc01efdd6e4a751bad2cacdf821bd67a044294c132",
+      "bytes": 3582248
+    },
+    "reference.pt": {
+      "sha256": "3b7dbecd3901041f08b3beb5123ad3924234315b154fa6f69d7196d0c0c1f5a4",
+      "bytes": 3582220
+    }
+  },
+  "latent_metrics": {
+    "pretrained": {
+      "loss": 0.07929980754852295,
+      "latent_mse": 0.05306372418999672,
+      "ewarp_l1": 0.2623608112335205,
+      "valid_warp_fraction": 0.9407029151916504
+    },
+    "old_causal_ewarp": {
+      "loss": 0.09293608367443085,
+      "latent_mse": 0.07148797810077667,
+      "ewarp_l1": 0.21448108553886414,
+      "valid_warp_fraction": 0.9407029151916504
+    },
+    "cmn": {
+      "loss": 0.2261585146188736,
+      "latent_mse": 0.2041681557893753,
+      "ewarp_l1": 0.21990354359149933,
+      "valid_warp_fraction": 0.9407029151916504
+    },
+    "cmn_hybrid": {
+      "loss": 0.2210305631160736,
+      "latent_mse": 0.19843772053718567,
+      "ewarp_l1": 0.22592845559120178,
+      "valid_warp_fraction": 0.9407029151916504
+    },
+    "conv3d_hybrid": {
+      "loss": 0.08043629676103592,
+      "latent_mse": 0.057673461735248566,
+      "ewarp_l1": 0.22762836515903473,
+      "valid_warp_fraction": 0.9407029151916504
+    }
+  },
+  "anchor_tensor_parity": {},
+  "execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  }
+}

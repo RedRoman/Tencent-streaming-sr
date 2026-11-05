@@ -1,0 +1,220 @@
+{
+  "status": "evaluation_source_frozen",
+  "original_evaluator_sha256": "47326d65de8d7b89b71819af539b4c0a65af9d7fd1c74f99a8d8f22385e260de",
+  "original_wrapper_sha256": "835a5f9ee680fc4579f50f74965d72d3f4ce152c55e7654b0c8546e6ac8b3546",
+  "selected_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+  "selected_step": 1800,
+  "new_training_updates": 0,
+  "prior_published_snapshot_manifest_sha256": "7a279230569220492168b5c29bd17cbe39acad76b719aa26f111af583ef65c43",
+  "files": [
+    {
+      "public_path": "experiments/h3_conv3d_test16_20261105/evaluate_h3_conv3d_test16.py",
+      "public_sha256": "68dc34becc48e8191b865edbd5dd4162649e4ea3823529d637156927e1efe1e4",
+      "public_bytes": 34613,
+      "changes": [
+        "Read external model/upstream/weights/output from explicit environment variables. Keep module_source resolution, source guards, thresholds and all evaluation logic."
+      ],
+      "source_artifact": "${EXP_ROOT}/experiment/evaluate_h3_conv3d_test16.py",
+      "source_sha256": "47326d65de8d7b89b71819af539b4c0a65af9d7fd1c74f99a8d8f22385e260de",
+      "source_bytes": 34446,
+      "identical_to_executed_source": false
+    },
+    {
+      "public_path": "experiments/h3_conv3d_test16_20261105/run_h3_conv3d_test16.sh",
+      "public_sha256": "00cd787b8ad473f6de3ac51fe99247ccbe831d11a1afeaa2acc6c33878be7822",
+      "public_bytes": 407,
+      "changes": [
+        "Resolve public env and inherited locking helper; same single-device guarded invocation."
+      ],
+      "source_artifact": "${EXP_ROOT}/experiment/run_h3_conv3d_test16.sh",
+      "source_sha256": "835a5f9ee680fc4579f50f74965d72d3f4ce152c55e7654b0c8546e6ac8b3546",
+      "source_bytes": 427,
+      "identical_to_executed_source": false
+    },
+    {
+      "public_path": "experiments/h3_conv3d_test16_20261105/env.sh",
+      "public_sha256": "c88af3427ecde65ba83c058bebb8a18dc7e6b9a8c14c0ad3184bfe45b862125f",
+      "public_bytes": 469,
+      "changes": [
+        "Inherit existing Conv3d public environment without editing it."
+      ],
+      "source_artifact": null,
+      "identical_to_executed_source": false
+    },
+    {
+      "public_path": "experiments/h3_conv3d_test16_20261105/convert_display_videos.py",
+      "public_sha256": "7b1ab32fe157604fba98067d8239ae18d007a6b038ed043592f575f323c0df85",
+      "public_bytes": 5868,
+      "changes": [
+        "Require explicit compiled auditor path; display-only auxiliary code, outside frozen model source contract."
+      ],
+      "source_artifact": "${LOCAL_PUBLICATION_TOOLS}/convert_h3_test16_extension.py",
+      "source_sha256": "b42b295b3ca3d82d37f5369d01e17c96998ccfd8d382dbdb77087438911b4551",
+      "source_bytes": 5891,
+      "identical_to_executed_source": false
+    },
+    {
+      "public_path": "experiments/h3_conv3d_test16_20261105/audit_h264.swift",
+      "public_sha256": "ef02c22b366a12e96fd2a4d3f99786eba69829f99dab886bd65391cdb81ac718",
+      "public_bytes": 12570,
+      "changes": [
+        "Portable build/run comments only; full macOS AVAssetReader decode utility, outside model contract."
+      ],
+      "source_artifact": "${LOCAL_PUBLICATION_TOOLS}/h3_decode_audit.swift",
+      "source_sha256": "7f47a7418bbb197b3b7184b30f8e7bd04268161871afa802565be7a5d833c479",
+      "source_bytes": 12596,
+      "identical_to_executed_source": false
+    },
+    {
+      "public_path": "experiments/h3_conv3d_test16_20261105/README.md",
+      "public_sha256": "4e4319aed7d235c2cb853b6ae843160c769ffefb7d3fcf866c4cc38b85f5dd74",
+      "public_bytes": 2420,
+      "changes": [
+        "New public scope/reproduction documentation; no invented metric outcome."
+      ],
+      "source_artifact": null,
+      "identical_to_executed_source": false
+    }
+  ],
+  "resolved_import_dependencies": [
+    {
+      "module": "evaluate_h3_conv3d_hybrid",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evaluate_h3_conv3d_hybrid.py",
+      "public_sha256": "501497aa67df8ca5a60cde9ab399669670396ed1f544bbf923a8039256ef9ebe",
+      "original_runtime_source_sha256": "8189ad4da27a48b2dd1c049b40927d1039eea77794330f0f80795ee17df7a01e"
+    },
+    {
+      "module": "h3_conv3d_hybrid",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/h3_conv3d_hybrid.py",
+      "public_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "original_runtime_source_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b"
+    },
+    {
+      "module": "causal_upscaler",
+      "public_path": "experiments/h3_causal_upscaler_20261104/causal_upscaler.py",
+      "public_sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "original_runtime_source_sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+    },
+    {
+      "module": "evaluate_h3_hybrid",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/evaluate_h3_hybrid.py",
+      "public_sha256": "2fb6b29be443451a43eb8f9c4341bd5154f5a9bca0346a3c00138c50c18cf34c",
+      "original_runtime_source_sha256": "2fb6b29be443451a43eb8f9c4341bd5154f5a9bca0346a3c00138c50c18cf34c"
+    },
+    {
+      "module": "evaluate_h3_cmn",
+      "public_path": "experiments/h3_cmn_upscaler_20261105/evaluate_h3_cmn.py",
+      "public_sha256": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+      "original_runtime_source_sha256": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334"
+    },
+    {
+      "module": "train_h3_cmn",
+      "public_path": "experiments/h3_cmn_upscaler_20261105/train_h3_cmn.py",
+      "public_sha256": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+      "original_runtime_source_sha256": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0"
+    },
+    {
+      "module": "h3_cmn",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/h3_cmn.py",
+      "public_sha256": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+      "original_runtime_source_sha256": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f"
+    },
+    {
+      "module": "ultraflash_ewarp",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/ultraflash_ewarp.py",
+      "public_sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+      "original_runtime_source_sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    },
+    {
+      "module": "train_upscaler_ultraflash",
+      "public_path": "experiments/h3_cmn_upscaler_20261105/train_upscaler_ultraflash.py",
+      "public_sha256": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+      "original_runtime_source_sha256": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316"
+    },
+    {
+      "module": "train_upscaler_trial",
+      "public_path": "experiments/h3_upscaler_trial_20261104/train_upscaler_trial.py",
+      "public_sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "original_runtime_source_sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+    },
+    {
+      "module": "data_utils",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/data_utils.py",
+      "public_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "original_runtime_source_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+    },
+    {
+      "module": "decode_results",
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/decode_results.py",
+      "public_sha256": "f138289228c1d37a607464d0552fd1e05a0f8e823a599eb10e77d84fc4dc75af",
+      "original_runtime_source_sha256": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c"
+    },
+    {
+      "module": "evaluate_causal_upscaler_pixels",
+      "public_path": "experiments/h3_causal_upscaler_20261104/evaluate_causal_upscaler_pixels.py",
+      "public_sha256": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+      "original_runtime_source_sha256": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77"
+    },
+    {
+      "module": "prepare_data",
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/prepare_data.py",
+      "public_sha256": "6d71484547e2329bba8fb6e205fc25681ed37864eaa0fbf013c6c786ca2630f8",
+      "original_runtime_source_sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8"
+    },
+    {
+      "module": "train_h3_conv3d_hybrid",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/train_h3_conv3d_hybrid.py",
+      "public_sha256": "9555c6bbdc3e226162780b3c83216b71feb2c711e6233d0b1230c3204676498e",
+      "original_runtime_source_sha256": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7"
+    },
+    {
+      "module": "h3_hybrid_pixel",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/h3_hybrid_pixel.py",
+      "public_sha256": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+      "original_runtime_source_sha256": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2"
+    }
+  ],
+  "inherited_shell_dependencies": [
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/env.sh",
+      "public_sha256": "353cec541bc376562f7233924dada401ca43df435c1b20e43ed0db529efb234b"
+    },
+    {
+      "public_path": "experiments/h3_cmn_hybrid_20261105/env.sh",
+      "public_sha256": "3af3f954f817b99da65e433faa6c3e4f779174cc67a828466ce33136c65bcede"
+    },
+    {
+      "public_path": "experiments/h3_cmn_upscaler_20261105/env.sh",
+      "public_sha256": "5620732ba68a276bb647db2c13492a9bd05385755c63f2870d721611d85d0187"
+    },
+    {
+      "public_path": "experiments/h3_upscaler_ultraflash_20261104/env.sh",
+      "public_sha256": "c4d640e77e398470096d9f2a0138fc46ae27dbe661431c78dae1178869cee0d1"
+    },
+    {
+      "public_path": "experiments/h3_upscaler_5s_20261104/env.sh",
+      "public_sha256": "910c7492d800092f4403f65173373f2d80bf9279db5f58e0212483027d1bb4e7"
+    },
+    {
+      "public_path": "experiments/h3_causal_upscaler_20261104/env.sh",
+      "public_sha256": "54a4e59569103ed27dcbe928326ab7aa26a1df2fc5cb7b32fdeab93ba5e5d605"
+    },
+    {
+      "public_path": "experiments/h3_upscaler_trial_20261104/env.sh",
+      "public_sha256": "c952e3be64e61df4bc89a81e56fe45217fe55afd0663a01939661144867e78a6"
+    },
+    {
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/env.sh",
+      "public_sha256": "cec7ee423d2343477278f326a24118278c9622c4d02e12ec5a14f7d29bd80860"
+    },
+    {
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/locked_run.py",
+      "public_sha256": "709739b7126e9f86f185ed75cc11dfbbea24d29d5ce4d875d6e4f03dd3098ee0"
+    }
+  ],
+  "original_audit_binary_sha256": "1ca198709f35603ae53208fb1de821275628e200d583097167163fa8bcc667ed",
+  "note": "Public path adaptations have separate SHA. Original contracts retain raw-source meaning; original-history exact replay requires original source chain. Auxiliary display tools do not enter model-source contracts.",
+  "evaluation_status": "completed",
+  "original_extension_contract_sha256": "06a15bc19876b51023ee1e22ddc2e3dc64b0c164ae47a5e56e1ac300dcf037b5",
+  "original_extension_summary_sha256": "525d80a5ebd9d78abc1a436f73f234e47ad7673ecb4ced25cc2f704bff5434e4"
+}

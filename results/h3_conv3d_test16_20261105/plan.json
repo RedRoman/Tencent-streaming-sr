@@ -1,0 +1,73 @@
+{
+  "test_ids": [
+    "VIDGEN5S_0014509",
+    "VIDGEN5S_0059416",
+    "VIDGEN5S_0086441",
+    "VIDGEN5S_0100402",
+    "VIDGEN5S_0128747",
+    "VIDGEN5S_0184359",
+    "VIDGEN5S_0288595",
+    "VIDGEN5S_0361101",
+    "VIDGEN5S_0362565",
+    "VIDGEN5S_0441001",
+    "VIDGEN5S_0496359",
+    "VIDGEN5S_0602499",
+    "VIDGEN5S_0632078",
+    "VIDGEN5S_0820879",
+    "VIDGEN5S_0829322",
+    "VIDGEN5S_0864318"
+  ],
+  "new_test_ids": [
+    "VIDGEN5S_0014509",
+    "VIDGEN5S_0059416",
+    "VIDGEN5S_0100402",
+    "VIDGEN5S_0184359",
+    "VIDGEN5S_0288595",
+    "VIDGEN5S_0361101",
+    "VIDGEN5S_0362565",
+    "VIDGEN5S_0441001",
+    "VIDGEN5S_0496359",
+    "VIDGEN5S_0602499",
+    "VIDGEN5S_0632078",
+    "VIDGEN5S_0820879",
+    "VIDGEN5S_0864318"
+  ],
+  "reused_test_ids": [
+    "VIDGEN5S_0086441",
+    "VIDGEN5S_0128747",
+    "VIDGEN5S_0829322"
+  ],
+  "anchor_id": "VIDGEN5S_0086441",
+  "recomputed_ids": [
+    "VIDGEN5S_0086441",
+    "VIDGEN5S_0014509",
+    "VIDGEN5S_0059416",
+    "VIDGEN5S_0100402",
+    "VIDGEN5S_0184359",
+    "VIDGEN5S_0288595",
+    "VIDGEN5S_0361101",
+    "VIDGEN5S_0362565",
+    "VIDGEN5S_0441001",
+    "VIDGEN5S_0496359",
+    "VIDGEN5S_0602499",
+    "VIDGEN5S_0632078",
+    "VIDGEN5S_0820879",
+    "VIDGEN5S_0864318"
+  ],
+  "legacy_ids": [
+    "VIDGEN5S_0380588"
+  ],
+  "frames": 120,
+  "fps": 24,
+  "comparison_order": [
+    "pretrained",
+    "old_causal_ewarp",
+    "cmn",
+    "cmn_hybrid",
+    "conv3d_hybrid",
+    "reference"
+  ],
+  "raw_mp4_count": 98,
+  "selection": "All13 remaining retained tests plus lexicographically first old test as parity anchor; fixed model, no selection",
+  "test_reuse": "Previously inspected/reused test set, not a blind test; the anchor is recomputed but counted only once via its original record"
+}

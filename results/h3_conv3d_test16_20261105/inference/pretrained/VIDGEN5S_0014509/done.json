@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "contract_sha256": "06a15bc19876b51023ee1e22ddc2e3dc64b0c164ae47a5e56e1ac300dcf037b5",
+  "sample_id": "VIDGEN5S_0014509",
+  "variant": "pretrained",
+  "files": {
+    "latent.pt": {
+      "sha256": "89b12db1a6f83c16e16ab59cce4657daf36d17e2c50496b7a48c1285245f2105",
+      "bytes": 3582199
+    }
+  },
+  "latent_metrics": {
+    "loss": 0.11417675763368607,
+    "latent_mse": 0.08729705959558487,
+    "ewarp_l1": 0.26879698038101196,
+    "valid_warp_fraction": 0.94367915391922
+  },
+  "parity": {},
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  }
+}

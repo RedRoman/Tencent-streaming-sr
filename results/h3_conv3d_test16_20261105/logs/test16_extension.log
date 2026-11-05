@@ -1,0 +1,61 @@
+{"stage": "prepare", "status": "ready", "new_test": 13, "recomputed": 14, "selected_step": 1800}
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0086441", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0014509", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0059416", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0100402", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0184359", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0288595", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0361101", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0362565", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0441001", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0496359", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0602499", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0632078", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0820879", "passed": true}
+{"stage": "inference", "variant": "pretrained", "sample_id": "VIDGEN5S_0864318", "passed": true}
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0086441", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0014509", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0059416", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0100402", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0184359", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0288595", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0361101", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0362565", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0441001", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0496359", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0602499", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0632078", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0820879", "passed": true}
+{"stage": "inference", "variant": "old_causal_ewarp", "sample_id": "VIDGEN5S_0864318", "passed": true}
+${H3_PYTHON_ENV}/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+${H3_PYTHON_ENV}/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 27.72it/s]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 27.62it/s]
+FFmpeg lacks libx264; exporting MP4 with native MPEG-4 Part 2 at q=2
+${CANN_WORKSPACE}/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:96: SyntaxWarning: invalid escape sequence '\h'
+  """
+${CANN_WORKSPACE}/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:156: SyntaxWarning: invalid escape sequence '\h'
+  """
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0086441", "full_frames": 120, "anchor": true}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0014509", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0059416", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0100402", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0184359", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0288595", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0361101", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0362565", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0441001", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0496359", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0602499", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0632078", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0820879", "full_frames": 120, "anchor": false}
+{"stage": "pixel_evaluated", "sample_id": "VIDGEN5S_0864318", "full_frames": 120, "anchor": false}
+{"status": "completed", "test_clips": 16, "new_clips": 13, "anchor_recomputed": 1, "legacy_separate": 1, "full_decoded_mp4_files": 98}
