@@ -1,0 +1,516 @@
+{
+  "status": "training_in_progress",
+  "snapshot_date": "2026-11-05",
+  "original_initial_checkpoint_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
+  "original_training_source_sha256": {
+    "train_h3_conv3d_hybrid.py": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7",
+    "h3_conv3d_hybrid.py": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+    "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+    "h3_hybrid_pixel.py": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+    "train_h3_cmn.py": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+    "h3_cmn.py": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+    "train_upscaler_ultraflash.py": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+    "ultraflash_ewarp.py": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+    "data_utils.py": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+    "prepare_data.py": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+    "train_upscaler_trial.py": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+    "evaluate_h3_cmn.py": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+    "evaluate_causal_upscaler_pixels.py": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+    "decode_results.py": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c"
+  },
+  "contract_notice": "Public path and inherited-helper resolver changes intentionally change SHA. Never alter original-run hashes or bypass strict contracts. Fresh public runs bind public source hashes.",
+  "files": [
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/h3_conv3d_hybrid.py",
+      "public_bytes": 7416,
+      "public_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "source_artifact": "${EXP_ROOT}/experiment/h3_conv3d_hybrid.py",
+      "source_bytes": 7416,
+      "source_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "identical_to_executed_source": true,
+      "changes": []
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/train_h3_conv3d_hybrid.py",
+      "public_bytes": 23338,
+      "public_sha256": "9555c6bbdc3e226162780b3c83216b71feb2c711e6233d0b1230c3204676498e",
+      "source_artifact": "${EXP_ROOT}/experiment/train_h3_conv3d_hybrid.py",
+      "source_bytes": 23027,
+      "source_sha256": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Resolve inherited source modules through actual import locations.",
+        "Use module_source in both source-contract creation and final unchanged-source check.",
+        "Read base-model location from H3_BASE_MODEL.",
+        "Require an explicit/environment base-model path.",
+        "Read H3_UPSTREAM_DIR default.",
+        "Read H3_ULTRAFLASH_PAIRS default.",
+        "Read H3_HYBRID_TEACHER_CACHE default.",
+        "Read H3_CONV3D_INITIAL_CHECKPOINT default.",
+        "Read H3_UPSCALER_WEIGHTS default."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evaluate_h3_conv3d_hybrid.py",
+      "public_bytes": 44170,
+      "public_sha256": "501497aa67df8ca5a60cde9ab399669670396ed1f544bbf923a8039256ef9ebe",
+      "source_artifact": "${EXP_ROOT}/experiment/evaluate_h3_conv3d_hybrid.py",
+      "source_bytes": 43835,
+      "source_sha256": "8189ad4da27a48b2dd1c049b40927d1039eea77794330f0f80795ee17df7a01e",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Read H3_CONV3D_HYBRID_HOME default.",
+        "Read H3_CONV3D_HYBRID_HOME default.",
+        "Read H3_ULTRAFLASH_PAIRS default.",
+        "Read H3_HYBRID_EVALUATION default.",
+        "Read H3_CMN_EVALUATION default.",
+        "Read H3_CONV3D_INITIAL_CHECKPOINT default.",
+        "Read H3_UPSCALER_WEIGHTS default."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/plot_h3_conv3d_hybrid.py",
+      "public_bytes": 10522,
+      "public_sha256": "6427cbffe127c453b0dc7892b0e98816138286817850008ce96773122b885508",
+      "source_artifact": "${EXP_ROOT}/experiment/plot_h3_conv3d_hybrid.py",
+      "source_bytes": 10522,
+      "source_sha256": "6427cbffe127c453b0dc7892b0e98816138286817850008ce96773122b885508",
+      "identical_to_executed_source": true,
+      "changes": []
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/audit_h3_conv3d_causality.py",
+      "public_bytes": 15460,
+      "public_sha256": "07bba1042c07f9641ee8a91bfc08eb063e5231204be52241c499e3e19be405dd",
+      "source_artifact": "${EXP_ROOT}/experiment/audit_h3_conv3d_causality.py",
+      "source_bytes": 15460,
+      "source_sha256": "07bba1042c07f9641ee8a91bfc08eb063e5231204be52241c499e3e19be405dd",
+      "identical_to_executed_source": true,
+      "changes": []
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/audit_h3_conv3d_precision.py",
+      "public_bytes": 1714,
+      "public_sha256": "a11879d3fa777bef5df55bd2534df347a61aff23bf6cdf2d03a6b8602455e3f8",
+      "source_artifact": "${EXP_ROOT}/experiment/audit_h3_conv3d_precision.py",
+      "source_bytes": 1714,
+      "source_sha256": "a11879d3fa777bef5df55bd2534df347a61aff23bf6cdf2d03a6b8602455e3f8",
+      "identical_to_executed_source": true,
+      "changes": []
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/run_train_h3_conv3d_hybrid.sh",
+      "public_bytes": 1104,
+      "public_sha256": "0aa3206a905daeff7810b3ac928d3115b55b4c2f4d6d8b7fb0d55346390f45d8",
+      "source_artifact": "${EXP_ROOT}/experiment/run_train_h3_conv3d_hybrid.sh",
+      "source_bytes": 1141,
+      "source_sha256": "48b26aefe6e15cb09adf1847939309d70f053ee1d77984937325ea6dcb5e1c5a",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Replace private runtime paths with public env/helper paths and explicit external model locations; retain runtime control flow and thresholds."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/run_h3_conv3d_hybrid_pipeline.sh",
+      "public_bytes": 2905,
+      "public_sha256": "c87b73f227e7b0beb559587fa4022a33357ca58a981d7044864fb90dda45f636",
+      "source_artifact": "${EXP_ROOT}/experiment/run_h3_conv3d_hybrid_pipeline.sh",
+      "source_bytes": 3045,
+      "source_sha256": "0304d818523be50316a40c2527e456aa72ee1c1dcdfcdfa4ccc7adc266c38944",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Replace private runtime paths with public env/helper paths and explicit external model locations; retain runtime control flow and thresholds.",
+        "Pipeline guard resolves inherited source through actual imported locations.",
+        "Use module_source in public pipeline prerequisite source guard."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/run_h3_conv3d_hybrid_preflight.sh",
+      "public_bytes": 1326,
+      "public_sha256": "eec8099288def838cd779df5873c72cba1f9243ab0e70a0eac5febdea436c510",
+      "source_artifact": "${EXP_ROOT}/experiment/run_h3_conv3d_hybrid_preflight.sh",
+      "source_bytes": 1464,
+      "source_sha256": "495787ec70fda86cb219c08e3ff03a95546739377875d64845200265ab316660",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Replace private runtime paths with public env/helper paths and explicit external model locations; retain runtime control flow and thresholds."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/run_h3_conv3d_precision_diagnostic.sh",
+      "public_bytes": 651,
+      "public_sha256": "bee3c37193a313229064a05958d378f1eba39e6c2ae77a5c7e9a58b07d688bbb",
+      "source_artifact": "${EXP_ROOT}/experiment/run_h3_conv3d_precision_diagnostic.sh",
+      "source_bytes": 795,
+      "source_sha256": "455c6263d3704bbb8377447be1eedb7fdc758d3741a7fac89703689a04e6b56b",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Replace private runtime paths with public env/helper paths and explicit external model locations; retain runtime control flow and thresholds."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/env.sh",
+      "public_bytes": 577,
+      "public_sha256": "353cec541bc376562f7233924dada401ca43df435c1b20e43ed0db529efb234b",
+      "source_artifact": "${EXP_ROOT}/experiment/env.sh",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Replace original private runtime environment with inherited public CMN hybrid environment and explicit external paths."
+      ],
+      "source_bytes": 938,
+      "source_sha256": "64451094fa9aca640bc5bfc9ba77080330f858d1706ba74798ca4eb8834e4524"
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/README.md",
+      "public_bytes": 10061,
+      "public_sha256": "9f6e2d0575554f1268df1e1c508b4afb442047bb2ef7ea78d286a55c769d9d74",
+      "source_artifact": null,
+      "identical_to_executed_source": false,
+      "changes": [
+        "New public documentation or environment chain; not the runtime source."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/causal_prior_long.json",
+      "public_bytes": 56275,
+      "public_sha256": "4d666bcd3c004d50e42cb2ac14ad04075a9706d488ee409e739a950984cb6911",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/causal_prior_long.json",
+      "source_bytes": 56935,
+      "source_sha256": "401b4c8a89c0d751936a2bd3e1137e1a7f35bf57e61cf168c98fd868e7608f11",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/causal_prior_hf32_off.json",
+      "public_bytes": 58418,
+      "public_sha256": "736310fa301444d567feb553391104df003b8b096639368b5c78a366f071bdf1",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/causal_prior_hf32_off.json",
+      "source_bytes": 59342,
+      "source_sha256": "67cca236e9144e3f10ab45372c2107a80299d978b9ad0bc2fba2d7fb3db26b31",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/causal_prior_long.log",
+      "public_bytes": 959,
+      "public_sha256": "19d332c44db2a5c9da3547308c0285dcbe10b67996920b165607d83829c6d153",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/causal_prior_long.log",
+      "source_bytes": 1091,
+      "source_sha256": "fcc6ded49849292c5cf06fcd2e3bae6dcd0d171b5e71e5e98aea44ad0ef77646",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/causal_prior_hf32_off.log",
+      "public_bytes": 329,
+      "public_sha256": "fd6dd3af56cd6f1c3ef83e261ddd1993ce6ab303faf7776ef9784b4baafc3316",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/causal_prior_hf32_off.log",
+      "source_bytes": 329,
+      "source_sha256": "fd6dd3af56cd6f1c3ef83e261ddd1993ce6ab303faf7776ef9784b4baafc3316",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/causal_prior_hf32_off.launch_lock_failed.log",
+      "public_bytes": 219,
+      "public_sha256": "fb4ecc59f6d9644b1e0a9ccf9da9fd6bf629efc5f222cc6c1262c94fadad79cd",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/causal_prior_hf32_off.launch_lock_failed.log",
+      "source_bytes": 263,
+      "source_sha256": "5eb1b02ce0749a7ca02b0c4e0b5f73a386310d0a99f33a80fa9d6645d57b4cad",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/preflight_v1.log",
+      "public_bytes": 16209,
+      "public_sha256": "408d30012c65ff3f77637b8b30248014bad9f9e6330571fc3b51e7175c53867d",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1.log",
+      "source_bytes": 16281,
+      "source_sha256": "82fe4fa8db69715d42889d5ce400ff9101ac4282eb0409e34b6cb3f69f0a0823",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/preflight_v1/summary.json",
+      "public_bytes": 23419,
+      "public_sha256": "cf17283996e06c536422498a9587da6c51d0a50fdad0f6b5d84ec28755fdf466",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1/summary.json",
+      "source_bytes": 23987,
+      "source_sha256": "f27c1e5a8f4b4a5f98b0b55829b20a360f7375ee2759e50800f986b3590ec73a",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/preflight_v1/config.json",
+      "public_bytes": 2725,
+      "public_sha256": "883c4262d9b60a98052d6f751dc419f5b9a9963699a19178badd3bd60e77eba5",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1/config.json",
+      "source_bytes": 3009,
+      "source_sha256": "844a76b1bf6aa0521c0b6a2f42d23c2047f125922e1382a8c0a841599563ce4e",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/preflight_v1/contract.json",
+      "public_bytes": 7305,
+      "public_sha256": "2ba246d668dc1ae4069225b2b0760289ef2f84e20f14c78a891c4116a08465f6",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1/contract.json",
+      "source_bytes": 7589,
+      "source_sha256": "b01503295333856aff0c2aab43d5c7e5377c14648d5e97e382e3e6a04aa8db38",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/preflight_v1/steps.jsonl",
+      "public_bytes": 6985,
+      "public_sha256": "3de1e7ef4d7678883fe4c7e32f74e531b460a13b0920eb16f85e81246021e12f",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1/steps.jsonl",
+      "source_bytes": 6985,
+      "source_sha256": "3de1e7ef4d7678883fe4c7e32f74e531b460a13b0920eb16f85e81246021e12f",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/preflight_v1/pixel_preflight.json",
+      "public_bytes": 19079,
+      "public_sha256": "608d9b81b215877ebbaf80cc6658bad677c28232c03e74ee1ef0ed498543e18d",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1/pixel_preflight.json",
+      "source_bytes": 19079,
+      "source_sha256": "608d9b81b215877ebbaf80cc6658bad677c28232c03e74ee1ef0ed498543e18d",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/preflight_v1/initial_causality.json",
+      "public_bytes": 954,
+      "public_sha256": "cc7da971047965f2bf9632fe0d35e1ec8cf75b550462ab27e6ce10e6a5ba4964",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1/initial_causality.json",
+      "source_bytes": 954,
+      "source_sha256": "cc7da971047965f2bf9632fe0d35e1ec8cf75b550462ab27e6ce10e6a5ba4964",
+      "identical_to_executed_source": false,
+      "changes": [
+        "Redact private paths only; embedded provenance SHA retains original meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/preflight_evidence.json",
+      "public_bytes": 3850,
+      "public_sha256": "ffd1781fcfd36f2c9319240331c2e734a0a8d175d9c8235b3eaec98f97ef7033",
+      "source_artifact": null,
+      "identical_to_executed_source": false,
+      "changes": [
+        "Derived compact evidence from the12 mapped raw preflight/diagnostic artifacts; no new training result."
+      ]
+    }
+  ],
+  "resolved_import_dependencies": [
+    {
+      "module": "h3_conv3d_hybrid",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/h3_conv3d_hybrid.py",
+      "public_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "original_runtime_source_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "train_h3_conv3d_hybrid",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/train_h3_conv3d_hybrid.py",
+      "public_sha256": "9555c6bbdc3e226162780b3c83216b71feb2c711e6233d0b1230c3204676498e",
+      "original_runtime_source_sha256": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7",
+      "identical_to_original_runtime": false
+    },
+    {
+      "module": "evaluate_h3_conv3d_hybrid",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evaluate_h3_conv3d_hybrid.py",
+      "public_sha256": "501497aa67df8ca5a60cde9ab399669670396ed1f544bbf923a8039256ef9ebe",
+      "original_runtime_source_sha256": "8189ad4da27a48b2dd1c049b40927d1039eea77794330f0f80795ee17df7a01e",
+      "identical_to_original_runtime": false
+    },
+    {
+      "module": "plot_h3_conv3d_hybrid",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/plot_h3_conv3d_hybrid.py",
+      "public_sha256": "6427cbffe127c453b0dc7892b0e98816138286817850008ce96773122b885508",
+      "original_runtime_source_sha256": "6427cbffe127c453b0dc7892b0e98816138286817850008ce96773122b885508",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "audit_h3_conv3d_causality",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/audit_h3_conv3d_causality.py",
+      "public_sha256": "07bba1042c07f9641ee8a91bfc08eb063e5231204be52241c499e3e19be405dd",
+      "original_runtime_source_sha256": "07bba1042c07f9641ee8a91bfc08eb063e5231204be52241c499e3e19be405dd",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "audit_h3_conv3d_precision",
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/audit_h3_conv3d_precision.py",
+      "public_sha256": "a11879d3fa777bef5df55bd2534df347a61aff23bf6cdf2d03a6b8602455e3f8",
+      "original_runtime_source_sha256": "a11879d3fa777bef5df55bd2534df347a61aff23bf6cdf2d03a6b8602455e3f8",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "h3_hybrid_pixel",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/h3_hybrid_pixel.py",
+      "public_sha256": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+      "original_runtime_source_sha256": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "train_h3_cmn",
+      "public_path": "experiments/h3_cmn_upscaler_20261105/train_h3_cmn.py",
+      "public_sha256": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+      "original_runtime_source_sha256": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "h3_cmn",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/h3_cmn.py",
+      "public_sha256": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+      "original_runtime_source_sha256": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "train_upscaler_ultraflash",
+      "public_path": "experiments/h3_cmn_upscaler_20261105/train_upscaler_ultraflash.py",
+      "public_sha256": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+      "original_runtime_source_sha256": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "ultraflash_ewarp",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/ultraflash_ewarp.py",
+      "public_sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+      "original_runtime_source_sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "data_utils",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/data_utils.py",
+      "public_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "original_runtime_source_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "prepare_data",
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/prepare_data.py",
+      "public_sha256": "6d71484547e2329bba8fb6e205fc25681ed37864eaa0fbf013c6c786ca2630f8",
+      "original_runtime_source_sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "identical_to_original_runtime": false
+    },
+    {
+      "module": "train_upscaler_trial",
+      "public_path": "experiments/h3_upscaler_trial_20261104/train_upscaler_trial.py",
+      "public_sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "original_runtime_source_sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "evaluate_h3_cmn",
+      "public_path": "experiments/h3_cmn_upscaler_20261105/evaluate_h3_cmn.py",
+      "public_sha256": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+      "original_runtime_source_sha256": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "evaluate_h3_hybrid",
+      "public_path": "experiments/h3_cmn_hybrid_20261105/evaluate_h3_hybrid.py",
+      "public_sha256": "2fb6b29be443451a43eb8f9c4341bd5154f5a9bca0346a3c00138c50c18cf34c",
+      "original_runtime_source_sha256": "2fb6b29be443451a43eb8f9c4341bd5154f5a9bca0346a3c00138c50c18cf34c",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "evaluate_causal_upscaler_pixels",
+      "public_path": "experiments/h3_causal_upscaler_20261104/evaluate_causal_upscaler_pixels.py",
+      "public_sha256": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+      "original_runtime_source_sha256": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+      "identical_to_original_runtime": true
+    },
+    {
+      "module": "decode_results",
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/decode_results.py",
+      "public_sha256": "f138289228c1d37a607464d0552fd1e05a0f8e823a599eb10e77d84fc4dc75af",
+      "original_runtime_source_sha256": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c",
+      "identical_to_original_runtime": false
+    },
+    {
+      "module": "causal_upscaler",
+      "public_path": "experiments/h3_causal_upscaler_20261104/causal_upscaler.py",
+      "public_sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "original_runtime_source_sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "identical_to_original_runtime": true
+    }
+  ],
+  "inherited_shell_dependencies": [
+    {
+      "public_path": "experiments/h3_cmn_hybrid_20261105/env.sh",
+      "public_sha256": "3af3f954f817b99da65e433faa6c3e4f779174cc67a828466ce33136c65bcede"
+    },
+    {
+      "public_path": "experiments/h3_cmn_upscaler_20261105/env.sh",
+      "public_sha256": "5620732ba68a276bb647db2c13492a9bd05385755c63f2870d721611d85d0187"
+    },
+    {
+      "public_path": "experiments/h3_upscaler_ultraflash_20261104/env.sh",
+      "public_sha256": "c4d640e77e398470096d9f2a0138fc46ae27dbe661431c78dae1178869cee0d1"
+    },
+    {
+      "public_path": "experiments/h3_upscaler_5s_20261104/env.sh",
+      "public_sha256": "910c7492d800092f4403f65173373f2d80bf9279db5f58e0212483027d1bb4e7"
+    },
+    {
+      "public_path": "experiments/h3_causal_upscaler_20261104/env.sh",
+      "public_sha256": "54a4e59569103ed27dcbe928326ab7aa26a1df2fc5cb7b32fdeab93ba5e5d605"
+    },
+    {
+      "public_path": "experiments/h3_upscaler_trial_20261104/env.sh",
+      "public_sha256": "c952e3be64e61df4bc89a81e56fe45217fe55afd0663a01939661144867e78a6"
+    },
+    {
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/env.sh",
+      "public_sha256": "cec7ee423d2343477278f326a24118278c9622c4d02e12ec5a14f7d29bd80860"
+    },
+    {
+      "public_path": "experiments/h3_refiner_self_forcing_20261104/locked_run.py",
+      "public_sha256": "709739b7126e9f86f185ed75cc11dfbbea24d29d5ce4d875d6e4f03dd3098ee0"
+    }
+  ],
+  "verification": {
+    "python_ast_and_compile_files": 6,
+    "bash_syntax": "passed",
+    "static_module_resolution": "passed; PathFinder without executing torch/model imports",
+    "runtime_preflight": "8 updates verified with12 region parity checks, finite pixel gradients, frozen modules and unchanged source/precision contracts; separate failed/default and passed/HF32off long audits preserved",
+    "formal_training": "Active session, running summary and42 optimizer updates verified by parent; first scheduled dev validation pending, no final quality claim",
+    "private_path_and_secret_scan": "passed: private infrastructure, HF/GitHub tokens, private keys, AWS keys, bearer tokens, signed URLs and credential literals",
+    "public_env_chain": "passed with external dummy paths, model/NPU code not executed; EXP_CODE_DIR and first PYTHONPATH entry resolve to this snapshot",
+    "independent_read_only_review": "passed before42-step progress-only documentation update:25 mappedartifact SHA/bytes,19 module resolutions after public env,8 inherited shell SHA,14 original trainer contract SHA,original evidence SHA,Python AST,bash syntax,and private path scan; runtime/public code unchanged by later status update, mapped artifacts locally reverified"
+  },
+  "runtime_environment_source_sha256": "64451094fa9aca640bc5bfc9ba77080330f858d1706ba74798ca4eb8834e4524",
+  "runtime_environment_note": "The runtime used one local env.sh; the public environment intentionally inherits the listed existing portable shell chain. Their SHA values are separately recorded, not presented as identical sources.",
+  "formal_progress_snapshot": {
+    "completed_updates": 42,
+    "requested_updates": 2000,
+    "summary_status": "running",
+    "best_step": 0,
+    "quality_conclusion": null
+  }
+}

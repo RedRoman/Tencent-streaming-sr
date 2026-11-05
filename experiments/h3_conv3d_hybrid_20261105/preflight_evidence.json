@@ -1,0 +1,115 @@
+{
+  "status": "training_in_progress",
+  "formal_run_status_at_snapshot": "training_in_progress",
+  "quality_conclusion": null,
+  "student_parameter_count": 345280216,
+  "initial_checkpoint_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
+  "data_scope": {
+    "train": 2,
+    "dev": 1,
+    "test_opened": false,
+    "formal_split_counts": {
+      "train": 128,
+      "dev": 16,
+      "test": 16,
+      "legacy": 3
+    }
+  },
+  "updates": 8,
+  "training_seconds": 80.98465636372566,
+  "memory": {
+    "peak_allocated_gib": 25.74287462234497,
+    "peak_reserved_gib": 25.98828125
+  },
+  "pixel_head_parameter": "model.conv_out.weight",
+  "pixel_head_grad_l2": 0.3737575113773346,
+  "pixel_region_parity_checks": 12,
+  "pixel_region_max_abs": 0.0,
+  "frozen_modules_unchanged": true,
+  "source_contract_unchanged": true,
+  "execution_precision_unchanged": true,
+  "execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "production_shape_causality": {
+    "latent_shape": [
+      37,
+      12,
+      21
+    ],
+    "initial_passed": true,
+    "after8_updates_passed": true,
+    "max_abs": 0.0
+  },
+  "long_small_shape_default": {
+    "latent_shape": [
+      163,
+      2,
+      2
+    ],
+    "all_passed": false,
+    "checks": 12,
+    "failed_checks": [
+      "stream_single_frames",
+      "stream_chunks32",
+      "stream_uneven",
+      "wrapper_forward_chunk"
+    ],
+    "max_abs": 0.0011277198791503906,
+    "future_prefix_gradient_passed": true,
+    "math_flags_recorded_in_original_json": false,
+    "evidence": "evidence/causal_prior_long.json"
+  },
+  "long_small_shape_hf32_off": {
+    "latent_shape": [
+      163,
+      2,
+      2
+    ],
+    "all_passed": true,
+    "checks": 16,
+    "max_abs": 0.0,
+    "execution_precision": {
+      "torch_version": "2.7.1+cpu",
+      "torch_npu_version": "2.7.1.post2",
+      "conv_allow_hf32": false,
+      "matmul_allow_hf32": false,
+      "float32_matmul_precision": "highest"
+    },
+    "unchanged_tolerances": true,
+    "evidence": "evidence/causal_prior_hf32_off.json"
+  },
+  "limits": [
+    "Default long-context stream/full parity failed at small spatial shape. HF32off pass is a separate numerical scope, not a default-mode pass.",
+    "Only preflight evidence. No new quality claim, no end-to-end causal decoder, no arbitrary-shape equivalence guarantee.",
+    "Embedded raw hashes are not rewritten after public JSON redaction. See source_fingerprints.json for original/public byte mappings."
+  ],
+  "preflight_status": "preflight_completed",
+  "formal_progress_at_snapshot": {
+    "status": "running",
+    "completed_updates": 42,
+    "requested_updates": 2000,
+    "best_step": 0,
+    "best_step_scope": "Initial step0 candidate before first scheduled dev validation; not final checkpoint selection",
+    "initial_causality_passed": true,
+    "pixel_preflight_passed": true,
+    "latest_observed_loss_and_gradient_finite": true,
+    "evidence_scope": "Parent verified the active remote session, formal summary and steps.jsonl. This compact publication still contains byte-bound preflight evidence only; no formal completion or quality result is asserted.",
+    "initial_dev_16_mean": {
+      "latent_mse": 0.09632310131564736,
+      "ewarp_l1": 0.2325131492689252,
+      "pixel_l1": 0.0384066867409274,
+      "lpips": 0.19363801181316376,
+      "selection_score": 0.07713428977876902
+    },
+    "initial_dev_latent_metrics_match_old_causal": true
+  },
+  "updates_scope": "The updates=8 field describes preflight; formal_progress_at_snapshot records42/2000."
+}

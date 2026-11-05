@@ -1,0 +1,151 @@
+{
+  "config": {
+    "pairs": "${EXP_ROOT}/upscaler_ultraflash/pairs",
+    "teacher_cache": "${EXP_ROOT}/upscaler_hybrid/teacher_cache",
+    "initial": "${EXP_ROOT}/upscaler_ultraflash/ewarp_steps2000/best.pt",
+    "upstream": "${EXP_ROOT}/upstream",
+    "upscaler": "${EXP_ROOT}/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+    "base_model": "${H3_RUNTIME}/VDN-MiniMax-H3/h3-base",
+    "output": "${EXP_ROOT}/upscaler_conv3d_hybrid/preflight_v1",
+    "device": "npu:0",
+    "steps": 8,
+    "lr": 3e-05,
+    "min_lr": 3e-06,
+    "warmup": 2,
+    "validate_every": 4,
+    "save_every": 4,
+    "kd_weight": 0.25,
+    "warp_weight": 0.1,
+    "l1_weight": 1.0,
+    "lpips_weight": 0.2,
+    "full_every": 4,
+    "seed": 20261105,
+    "preflight": true,
+    "recipe": "Original causal H3 Conv3d + frozen bidirectional teacher + HR decoder-aware pixels",
+    "initialization": "Warm start from selected old causal eWarp weights verbatim; no repeated aligned-past transform; fresh AdamW",
+    "prior_updates": 2050,
+    "prior_selected_run_step": 2000,
+    "prior_base_updates": 50,
+    "model_config": {
+      "kind": "h3_causal_conv3d",
+      "latent_channels": 24,
+      "spatial_scale": 2,
+      "adapter_config": {
+        "version": 1,
+        "initialization": "aligned_past",
+        "temporal_padding": "left_only_zero",
+        "groupnorm": "per_frame",
+        "normalization": "D(U(N(native_normalized_H3_latent)))",
+        "spatial_scale": 2.0,
+        "temporal_chunking": false,
+        "dtype": "float32",
+        "saved_weights_already_initialized": true,
+        "reload_must_not_reinitialize_weights": true
+      }
+    },
+    "activation_checkpointing": true,
+    "dropout_mode": "disabled: original model.eval() with parameter gradients enabled",
+    "dtype": "fp32",
+    "batch_size": 1,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "dtype_scope": "FP32 parameter/input tensors; NPU internal convolution/matmul precision follows the recorded HF32 flags",
+    "selection": "Minimum mean dev RGB L1 + 0.2 LPIPS on fixed full-spatial native temporal regions, including step0",
+    "pixel_target": "Frozen H3 decoder of HR reference latent; not teacher pixels",
+    "pixel_sampling": "One full-spatial native block every4 updates, otherwise one native spatial tile interior; 4 LPIPS frames per region",
+    "temporal_pixel_scope": "Non-crossfaded real RGB positions only; no synthetic tail RGB",
+    "padding": "MSE/KD first36, eWarp35; token36 retained as decoder context and can receive pixel gradients",
+    "causal_scope": "Causal latent upscaler only; frozen original decoder remains noncausal",
+    "test_reuse": "Retained16 test +3 legacy, previously inspected; not a new blind test",
+    "loss_definition": "1 HR latent MSE + .25 teacher latent MSE + .1 eWarp + 1 RGB L1 + .2 LPIPS alex v0.1"
+  },
+  "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+  "initial_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
+  "execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "teacher_cache_ready_sha256": "af538bebaab0ddcd8016278577efc23b78f575178f12a1620baeb3e0c661cb07",
+  "train_manifest_sha256": "8b7c5384baaef4672a7d4772c4ec86dd5186ec56251671fe50d9127a882af051",
+  "dev_manifest_sha256": "c062d8d812f8b3060a80816bddc34f056b3fcb10878dd8e768327b84ba1b8701",
+  "source_sha256": {
+    "train_h3_conv3d_hybrid.py": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7",
+    "h3_conv3d_hybrid.py": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+    "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+    "h3_hybrid_pixel.py": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+    "train_h3_cmn.py": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+    "h3_cmn.py": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+    "train_upscaler_ultraflash.py": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+    "ultraflash_ewarp.py": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+    "data_utils.py": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+    "prepare_data.py": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+    "train_upscaler_trial.py": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+    "evaluate_h3_cmn.py": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+    "evaluate_causal_upscaler_pixels.py": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+    "decode_results.py": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c"
+  },
+  "original_upscaler_fingerprint": {
+    "base_weights_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+    "loader_sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+    "loaded_node_sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+    "model_class": "LatentResizer3D",
+    "parameter_count": 345280216,
+    "state_dict_format": "original_upscaler",
+    "adapter_structure": {
+      "temporal_convolution_counts_by_kernel": {
+        "3": 50,
+        "5": 12
+      },
+      "causal_history_latent_frames": 148,
+      "longest_convolution_receptive_field": 149,
+      "original_groupnorm_dependency": "whole input clip",
+      "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+    }
+  },
+  "decoder_fingerprint": {
+    "weights": {
+      "config.json": {
+        "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+        "bytes": 2011
+      },
+      "diffusion_pytorch_model-00001-of-00003.safetensors": {
+        "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+        "bytes": 5061033024
+      },
+      "diffusion_pytorch_model-00002-of-00003.safetensors": {
+        "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+        "bytes": 4955986528
+      },
+      "diffusion_pytorch_model-00003-of-00003.safetensors": {
+        "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+        "bytes": 398539336
+      }
+    },
+    "implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+    "recipe": "Frozen FP32 native H3; spatial tile256/overlap64; native temporal7/stride5"
+  },
+  "lpips_fingerprint": {
+    "network": "alex",
+    "version": "0.1",
+    "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "linear_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "implementation_sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658"
+  },
+  "floating_parameter_dtypes": {
+    "student": [
+      "torch.float32"
+    ],
+    "decoder": [
+      "torch.float32"
+    ],
+    "lpips": [
+      "torch.float32"
+    ]
+  }
+}
