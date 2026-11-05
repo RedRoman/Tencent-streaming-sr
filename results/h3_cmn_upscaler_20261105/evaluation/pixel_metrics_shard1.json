@@ -1,0 +1,340 @@
+{
+  "VIDGEN5S_0086441": {
+    "split": "test",
+    "decode_seconds": {
+      "bilinear": 12.73291957937181,
+      "cmn": 12.03041472658515,
+      "old_causal_ewarp": 11.963274955749512,
+      "pretrained": 12.013738671317697,
+      "reference": 12.018350860103965
+    },
+    "video_codecs": {
+      "bilinear": "mpeg4",
+      "cmn": "mpeg4",
+      "old_causal_ewarp": "mpeg4",
+      "pretrained": "mpeg4",
+      "reference": "mpeg4"
+    },
+    "metric_domain": "uint8 decoded RGB before MP4 compression, scaled to [0,1]",
+    "variants": {
+      "bilinear": {
+        "vs_decoded_reference": {
+          "mse": 0.03405424952507019,
+          "psnr_db": 14.678286860967484,
+          "temporal_difference_mse": 0.0027899632696062326
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.03441218286752701,
+          "psnr_db": 14.632877779093343,
+          "temporal_difference_mse": 0.0028906860388815403
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.034045424312353134,
+            "psnr_db": 14.679412487858222,
+            "temporal_difference_mse": 0.0030862141866236925
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.034411557018756866,
+            "psnr_db": 14.632956764242316,
+            "temporal_difference_mse": 0.0031978157348930836
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.034104231745004654,
+            "psnr_db": 14.67191729233937,
+            "temporal_difference_mse": 0.0010582521790638566
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.03441571071743965,
+            "psnr_db": 14.632432574199925,
+            "temporal_difference_mse": 0.001099667395465076
+          }
+        }
+      },
+      "cmn": {
+        "vs_decoded_reference": {
+          "mse": 0.014526315964758396,
+          "psnr_db": 18.378445136471097,
+          "temporal_difference_mse": 0.0019417012808844447
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.014853538013994694,
+          "psnr_db": 18.281700879667376,
+          "temporal_difference_mse": 0.0020425785332918167
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.014497179538011551,
+            "psnr_db": 18.387164826081293,
+            "temporal_difference_mse": 0.002153366804122925
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.014829928055405617,
+            "psnr_db": 18.288609558641422,
+            "temporal_difference_mse": 0.002265045652166009
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.014691418036818504,
+            "psnr_db": 18.329362834579868,
+            "temporal_difference_mse": 0.0007090281578712165
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.014987335540354252,
+            "psnr_db": 18.242755694849894,
+            "temporal_difference_mse": 0.0007510404102504253
+          }
+        }
+      },
+      "old_causal_ewarp": {
+        "vs_decoded_reference": {
+          "mse": 0.004935353994369507,
+          "psnr_db": 23.06681691568275,
+          "temporal_difference_mse": 0.0012539292220026255
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.005229231435805559,
+          "psnr_db": 22.81562136699888,
+          "temporal_difference_mse": 0.0013580466620624065
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.0050020054914057255,
+            "psnr_db": 23.008558358190516,
+            "temporal_difference_mse": 0.0013887187233194709
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.005302888806909323,
+            "psnr_db": 22.754874792461347,
+            "temporal_difference_mse": 0.0015031209914013743
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.0045576635748147964,
+            "psnr_db": 23.412577355386755,
+            "temporal_difference_mse": 0.0004671906935982406
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.004811842925846577,
+            "psnr_db": 23.176885578807113,
+            "temporal_difference_mse": 0.0005151936202310026
+          }
+        }
+      },
+      "pretrained": {
+        "vs_decoded_reference": {
+          "mse": 0.0028303591534495354,
+          "psnr_db": 25.481584519440588,
+          "temporal_difference_mse": 0.0008213971159420907
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.0030986983329057693,
+          "psnr_db": 25.088207015056028,
+          "temporal_difference_mse": 0.0009374020155519247
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.0028705475851893425,
+            "psnr_db": 25.420352494186016,
+            "temporal_difference_mse": 0.0009101032628677785
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0031422115862369537,
+            "psnr_db": 25.0276457434338,
+            "temporal_difference_mse": 0.0010366985807195306
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.002602623077109456,
+            "psnr_db": 25.845887237019184,
+            "temporal_difference_mse": 0.00030898023396730423
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.00285212229937315,
+            "psnr_db": 25.448318558173263,
+            "temporal_difference_mse": 0.0003653893363662064
+          }
+        }
+      }
+    },
+    "reference_vs_source_rgb_secondary": {
+      "mse": 0.000495679210871458,
+      "psnr_db": 33.047992953234946,
+      "temporal_difference_mse": 0.0002651661343406886
+    }
+  },
+  "VIDGEN5S_0380588": {
+    "split": "legacy",
+    "decode_seconds": {
+      "bilinear": 11.992400587536395,
+      "cmn": 12.021942260675132,
+      "old_causal_ewarp": 11.997996510006487,
+      "pretrained": 12.01937981043011,
+      "reference": 11.999007051810622
+    },
+    "video_codecs": {
+      "bilinear": "mpeg4",
+      "cmn": "mpeg4",
+      "old_causal_ewarp": "mpeg4",
+      "pretrained": "mpeg4",
+      "reference": "mpeg4"
+    },
+    "metric_domain": "uint8 decoded RGB before MP4 compression, scaled to [0,1]",
+    "variants": {
+      "bilinear": {
+        "vs_decoded_reference": {
+          "mse": 0.014481591992080212,
+          "psnr_db": 18.39183692602193,
+          "temporal_difference_mse": 0.0028943903744220734
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.014675927348434925,
+          "psnr_db": 18.333944468378608,
+          "temporal_difference_mse": 0.002956830430775881
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.015027972869575024,
+            "psnr_db": 18.230995976520717,
+            "temporal_difference_mse": 0.003043712582439184
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.015223848633468151,
+            "psnr_db": 18.174755427699278,
+            "temporal_difference_mse": 0.003107953118160367
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.01138543151319027,
+            "psnr_db": 19.43650504772509,
+            "temporal_difference_mse": 0.002063546096906066
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.011571037583053112,
+            "psnr_db": 19.366276958114028,
+            "temporal_difference_mse": 0.002114397007972002
+          }
+        }
+      },
+      "cmn": {
+        "vs_decoded_reference": {
+          "mse": 0.005038820207118988,
+          "psnr_db": 22.976711376650996,
+          "temporal_difference_mse": 0.0020568291656672955
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.005177705083042383,
+          "psnr_db": 22.85862690180583,
+          "temporal_difference_mse": 0.0021227954421192408
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.005237882025539875,
+            "psnr_db": 22.808442875514952,
+            "temporal_difference_mse": 0.00214678468182683
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.00538113946095109,
+            "psnr_db": 22.691257523622323,
+            "temporal_difference_mse": 0.0022151244338601828
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.003910803236067295,
+            "psnr_db": 24.077340341219895,
+            "temporal_difference_mse": 0.0015512057580053806
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.004024910740554333,
+            "psnr_db": 23.952437464301617,
+            "temporal_difference_mse": 0.0016036228043958545
+          }
+        }
+      },
+      "old_causal_ewarp": {
+        "vs_decoded_reference": {
+          "mse": 0.0017523482674732804,
+          "psnr_db": 27.56379576472247,
+          "temporal_difference_mse": 0.0010835628490895033
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.0019331200746819377,
+          "psnr_db": 27.137411691725937,
+          "temporal_difference_mse": 0.0011669667437672615
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.0018246277468279004,
+            "psnr_db": 27.38825725173954,
+            "temporal_difference_mse": 0.001122189569287002
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0020064751151949167,
+            "psnr_db": 26.975662221252822,
+            "temporal_difference_mse": 0.0012089238734915853
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.0013427650555968285,
+            "psnr_db": 28.71999969448856,
+            "temporal_difference_mse": 0.0008596391417086124
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0015174405416473746,
+            "psnr_db": 28.188883170173476,
+            "temporal_difference_mse": 0.0009257002384401858
+          }
+        }
+      },
+      "pretrained": {
+        "vs_decoded_reference": {
+          "mse": 0.0009745067218318582,
+          "psnr_db": 30.112151609133004,
+          "temporal_difference_mse": 0.0006380280829034746
+        },
+        "vs_source_rgb_secondary": {
+          "mse": 0.001123415888287127,
+          "psnr_db": 29.494594382606316,
+          "temporal_difference_mse": 0.0007331818924285471
+        },
+        "prefix102": {
+          "vs_decoded_reference": {
+            "mse": 0.0010275340173393488,
+            "psnr_db": 29.882037915460824,
+            "temporal_difference_mse": 0.0006654892349615693
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0011749897385016084,
+            "psnr_db": 29.299659261850852,
+            "temporal_difference_mse": 0.0007638423703610897
+          }
+        },
+        "tail18": {
+          "vs_decoded_reference": {
+            "mse": 0.0006740192766301334,
+            "psnr_db": 31.713276826718293,
+            "temporal_difference_mse": 0.00048399026854895055
+          },
+          "vs_source_rgb_secondary": {
+            "mse": 0.0008311645360663533,
+            "psnr_db": 30.80312995430745,
+            "temporal_difference_mse": 0.000562109227757901
+          }
+        }
+      }
+    },
+    "reference_vs_source_rgb_secondary": {
+      "mse": 0.0002356930635869503,
+      "psnr_db": 36.27653198511905,
+      "temporal_difference_mse": 0.00020799197955057025
+    }
+  }
+}

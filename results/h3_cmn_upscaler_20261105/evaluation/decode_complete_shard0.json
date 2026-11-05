@@ -1,0 +1,216 @@
+{
+  "status": "completed",
+  "shard_index": 0,
+  "num_shards": 2,
+  "samples": [
+    "VIDGEN5S_0128747",
+    "VIDGEN5S_0829322"
+  ],
+  "latent_summary_sha256": "b76c66721abb1e4ee58054d8ac397762a4903a9382aef4414c1e4ed7d8dfb670",
+  "metrics_sha256": "85a41e6d4d84ff36427564290738dbf4fe609dcb02a7906377d01cefd3e45a51",
+  "decoder_fingerprint": {
+    "weights": {
+      "config.json": {
+        "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+        "bytes": 2011
+      },
+      "diffusion_pytorch_model-00001-of-00003.safetensors": {
+        "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+        "bytes": 5061033024
+      },
+      "diffusion_pytorch_model-00002-of-00003.safetensors": {
+        "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+        "bytes": 4955986528
+      },
+      "diffusion_pytorch_model-00003-of-00003.safetensors": {
+        "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+        "bytes": 398539336
+      }
+    },
+    "implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+    "recipe": "data_utils.load_video_vae + decode_latent, original temporal windows, FP32, spatial tile256/overlap64"
+  },
+  "media": {
+    "VIDGEN5S_0128747": {
+      "bilinear.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "6adec3e74ed588ab10e13ea88c165cf8f7f4feece85d4814481c538075d990af",
+        "bytes": 8301331
+      },
+      "cmn.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "be679ec31acb4b85adf2082b8b4282228f8a6bb8b6f231d4c7e4606b30016e0e",
+        "bytes": 6951050
+      },
+      "old_causal_ewarp.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "79e5f44f8574e5f24e45d1937e80a34e683be531dddb3e90644433cc723acb64",
+        "bytes": 6280080
+      },
+      "pretrained.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "e0059fa18a485bca98085f66e187b7296acf321b48be9b9e2117d04eecc9614a",
+        "bytes": 5496566
+      },
+      "reference.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "5db5f01ee2973fbb7f671421afaa1267a0e16986649b7e6eee616866cffa3b96",
+        "bytes": 6688805
+      },
+      "comparison.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 3360,
+        "height": 412,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "46fdd2bc2c83fc54c3b244db53419f39662ae25416ba53d333c061e065506e1c",
+        "bytes": 34906903
+      },
+      "comparison.png": {
+        "passed": true,
+        "width": 3360,
+        "height": 1236,
+        "sha256": "d968d5beb27f93e2cc4cdbce61cc932cd6c097ef180357be0741e0edd1bf3090",
+        "bytes": 7473206
+      }
+    },
+    "VIDGEN5S_0829322": {
+      "bilinear.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "715cd430f3b5a5f2656fa53e5c545a88b6a69ceca933eb04a5ce413400389e48",
+        "bytes": 3893941
+      },
+      "cmn.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "85f2255eef9dec80288b6d799c76f728bf080246628e3463b67a87489719223f",
+        "bytes": 3400903
+      },
+      "old_causal_ewarp.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "d8080bebcf75a4605164d1525a7a34d1b8eb11140dd0a431712632d0eaab3931",
+        "bytes": 2536490
+      },
+      "pretrained.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "3a56c13f23b592472d0e66b983e53234a0277b19e61aaf02d38e0aac58fbb5fe",
+        "bytes": 1799269
+      },
+      "reference.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 672,
+        "height": 384,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "f470d14f91a74fefb8b5ea91a3bccdf56b984e8d63fb1bd1ad44fc306ebd1eb8",
+        "bytes": 1754359
+      },
+      "comparison.mp4": {
+        "passed": true,
+        "decoder": "FFmpeg full decode with showinfo and -xerror",
+        "decoded_frames": 120,
+        "width": 3360,
+        "height": 412,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 4.95833,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "4f63f8a04cc9d999741bcda0d19d2c513d3b4652d3e4b6c4380c45386c455e80",
+        "bytes": 13731852
+      },
+      "comparison.png": {
+        "passed": true,
+        "width": 3360,
+        "height": 1236,
+        "sha256": "2ee4299a35a6983499a6d6cdb479d3b67e688dfe7a2a00e4929ffc1d96e575f3",
+        "bytes": 5519945
+      }
+    }
+  },
+  "comparison_order": [
+    "bilinear",
+    "cmn",
+    "old_causal_ewarp",
+    "pretrained",
+    "reference"
+  ]
+}

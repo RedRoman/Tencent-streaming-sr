@@ -1,0 +1,138 @@
+{
+  "scope": "New CMN code/results only; no training, decoder replacement, git commit or push.",
+  "findings": [],
+  "patterns": [
+    "private_infrastructure",
+    "hf_token",
+    "github_token",
+    "private_key",
+    "aws_access_key",
+    "bearer",
+    "signed_url",
+    "credential_literal"
+  ],
+  "training_source_contract_verified": true,
+  "source_files": [
+    "h3_cmn.py",
+    "test_h3_cmn.py",
+    "train_h3_cmn.py",
+    "evaluate_h3_cmn.py",
+    "ultraflash_ewarp.py",
+    "train_upscaler_ultraflash.py",
+    "plot_h3_cmn.py"
+  ],
+  "timing_helpers_published": false,
+  "decoder_trained": false,
+  "causal_checks": 36,
+  "reload_checks": 19,
+  "videos": [
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0128747/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0128747/cmn.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0086441/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0086441/cmn.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0829322/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0829322/cmn.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0380588/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0380588/cmn.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    }
+  ],
+  "images": [
+    {
+      "path": "results/h3_cmn_upscaler_20261105/training_curves.png",
+      "width": 2400,
+      "height": 688
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0128747/comparison.png",
+      "width": 3360,
+      "height": 1236
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0086441/comparison.png",
+      "width": 3360,
+      "height": 1236
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0829322/comparison.png",
+      "width": 3360,
+      "height": 1236
+    },
+    {
+      "path": "results/h3_cmn_upscaler_20261105/VIDGEN5S_0380588/comparison.png",
+      "width": 3360,
+      "height": 1236
+    }
+  ],
+  "note": "Media validation here is container/header based, not whole-file decoding or human visual assessment."
+}

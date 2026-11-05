@@ -1,5 +1,7 @@
 # Sol-H3 — 流式视频超分
 
+2026-11-05 新增 [H3 CMN latent upscaler 实验](experiments/h3_cmn_upscaler_20261105/README.md)：约 106 万参数，从零训练 10,000 步，继续使用原 H3 decoder；36 项因果检查和 19 项独立重载检查通过。当前画质仍低于原 H3 upscaler，完整指标、失败样例与 5 秒视频见[结果目录](results/h3_cmn_upscaler_20261105/README.md)。这是 UltraFlash 思路的 H3 适配原型，不是完整论文复现或端到端流式验证。
+
 2026-11-04 新增独立研究快照：[Open-H3 refiner 的 Self Forcing + DMD 单步实验](experiments/h3_refiner_self_forcing_20261104/README.md)、[因果化与人物幻觉消融分析](experiments/h3_refiner_self_forcing_20261104/ANALYSIS.md)、[结果与视频](results/h3_refiner_self_forcing_20261104/README.md)。该实验使用 H3 自身作 refiner，训练链路已跑通但画质未达标；与下方原 Sol-H3 像素域 refiner 结果分开记录。
 
 低分辨率流式 H3 + 高清 refiner。H3 在 448×256 生成，一个 10.24M 的像素域 refiner
