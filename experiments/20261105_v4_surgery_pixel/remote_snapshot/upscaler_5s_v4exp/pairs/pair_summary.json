@@ -1,0 +1,684 @@
+[
+  {
+    "sample_id": "VIDGEN5S_0336361",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "f8fe53941be8700f1841afd80d9a201801b685955108dd8c22c41c174494dd01",
+    "metadata": {
+      "id": "VIDGEN5S_0336361",
+      "sample_id": "VIDGEN5S_0336361",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0336361.mp4",
+      "source_video_sha256": "c79a730c3cdd7a69faca4d35c994ffadbd9f1dec930852121f0370b398e20f52",
+      "original_video_sha256": "c79a730c3cdd7a69faca4d35c994ffadbd9f1dec930852121f0370b398e20f52",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0336361.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": false,
+      "scope": "Re-evaluate the same three source clips at5seconds with existing upscaler weights; inherited split labels only"
+    },
+    "seconds": 16.280515417456627
+  },
+  {
+    "sample_id": "VIDGEN5S_0515402",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "305222660caca2bdc32f1b011774f55087aca7034c254dbcc9996cc349081976",
+    "metadata": {
+      "id": "VIDGEN5S_0515402",
+      "sample_id": "VIDGEN5S_0515402",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0515402.mp4",
+      "source_video_sha256": "38afd081925db38bfa540f300b77c2be1c0f12177af4f8d6f0f6de4ebcbb47e9",
+      "original_video_sha256": "38afd081925db38bfa540f300b77c2be1c0f12177af4f8d6f0f6de4ebcbb47e9",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0515402.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": false,
+      "scope": "Re-evaluate the same three source clips at5seconds with existing upscaler weights; inherited split labels only"
+    },
+    "seconds": 15.999125164933503
+  },
+  {
+    "sample_id": "VIDGEN5S_0380588",
+    "split": "holdout",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "57734c74046f604e8699990e05d54caaee4d6898723c8016631883ddc4217668",
+    "metadata": {
+      "id": "VIDGEN5S_0380588",
+      "sample_id": "VIDGEN5S_0380588",
+      "split": "holdout",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0380588.mp4",
+      "source_video_sha256": "11e79651092aaf2101e06bc159346235c9f5dfd6f4451a403ccf647c8c967c66",
+      "original_video_sha256": "11e79651092aaf2101e06bc159346235c9f5dfd6f4451a403ccf647c8c967c66",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0380588.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": false,
+      "scope": "Re-evaluate the same three source clips at5seconds with existing upscaler weights; inherited split labels only"
+    },
+    "seconds": 15.77729244530201
+  },
+  {
+    "sample_id": "VIDGEN5S_0959914",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "71300f81bba3fd284028dc6ca6df8c802f9c2046a3e3715fac6cb127d352a8f3",
+    "metadata": {
+      "id": "VIDGEN5S_0959914",
+      "sample_id": "VIDGEN5S_0959914",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0959914.mp4",
+      "source_video_sha256": "ff7324b54edc237520ada38f826fb2e746b68c52ea8ee11e9b35e89e99d57262",
+      "original_video_sha256": "ff7324b54edc237520ada38f826fb2e746b68c52ea8ee11e9b35e89e99d57262",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0959914.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 16.199341183528304
+  },
+  {
+    "sample_id": "VIDGEN5S_0106391",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "380bdc63b7621a2e619c41304eeaa57feaef99f8f9c90d3bec2aafc2df19069a",
+    "metadata": {
+      "id": "VIDGEN5S_0106391",
+      "sample_id": "VIDGEN5S_0106391",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0106391.mp4",
+      "source_video_sha256": "f35f3bdedfa9f57f8e58c08657e1e99bad79b960d2a2b0f23a273ff9c2ba7390",
+      "original_video_sha256": "f35f3bdedfa9f57f8e58c08657e1e99bad79b960d2a2b0f23a273ff9c2ba7390",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0106391.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 16.007999281398952
+  },
+  {
+    "sample_id": "VIDGEN5S_0799819",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "764843cb126e22d4d62465967110d73b7d0bce03a63834191ba64de46db995c9",
+    "metadata": {
+      "id": "VIDGEN5S_0799819",
+      "sample_id": "VIDGEN5S_0799819",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0799819.mp4",
+      "source_video_sha256": "8b75f954e236638d980c97fed1804b4081a884f9346725cbebf14f407ba0a1a3",
+      "original_video_sha256": "8b75f954e236638d980c97fed1804b4081a884f9346725cbebf14f407ba0a1a3",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0799819.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 15.526580510661006
+  },
+  {
+    "sample_id": "VIDGEN5S_0137908",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "ad7845e975d16eb2549088ca6eb5bae2f2fd139fb981baade41e58a80f94db47",
+    "metadata": {
+      "id": "VIDGEN5S_0137908",
+      "sample_id": "VIDGEN5S_0137908",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0137908.mp4",
+      "source_video_sha256": "1eb55297346e9fe09cb8bc36a1160d65e798a97c66bb14e2dba1564b3380f3da",
+      "original_video_sha256": "1eb55297346e9fe09cb8bc36a1160d65e798a97c66bb14e2dba1564b3380f3da",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0137908.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 15.513062506914139
+  },
+  {
+    "sample_id": "VIDGEN5S_0045078",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "0c99b5f7509f41f6c687a54a3b1f6b42a52d5bf66a673fa92ae65c984da33445",
+    "metadata": {
+      "id": "VIDGEN5S_0045078",
+      "sample_id": "VIDGEN5S_0045078",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0045078.mp4",
+      "source_video_sha256": "8a8f2bcc7a815e9cd6fd3b4758050387cfa0a4be880e3a43ac09382abecd9b3d",
+      "original_video_sha256": "8a8f2bcc7a815e9cd6fd3b4758050387cfa0a4be880e3a43ac09382abecd9b3d",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0045078.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 15.41841538157314
+  },
+  {
+    "sample_id": "VIDGEN5S_0022700",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "dc38680b41526b43f678322e8b4104e4849fa6b9f9e2c810eb1b7d6902ffeb4e",
+    "metadata": {
+      "id": "VIDGEN5S_0022700",
+      "sample_id": "VIDGEN5S_0022700",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0022700.mp4",
+      "source_video_sha256": "a771cbe0726ac6341baa3a2df0ff356a47f8d3ec4fc5740840bc987d74e60d27",
+      "original_video_sha256": "a771cbe0726ac6341baa3a2df0ff356a47f8d3ec4fc5740840bc987d74e60d27",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0022700.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 15.784788547083735
+  },
+  {
+    "sample_id": "VIDGEN5S_0018018",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "6a50a2c8d64b71f981f79fbe98976fcb18636f4289a7c5cc9f1abd873a9ae69e",
+    "metadata": {
+      "id": "VIDGEN5S_0018018",
+      "sample_id": "VIDGEN5S_0018018",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0018018.mp4",
+      "source_video_sha256": "04e2587156b404e26166f8a47db6bcd320e0bee71edd01eb9ed047bac8fcd16f",
+      "original_video_sha256": "04e2587156b404e26166f8a47db6bcd320e0bee71edd01eb9ed047bac8fcd16f",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0018018.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 15.401444979012012
+  },
+  {
+    "sample_id": "VIDGEN5S_0154679",
+    "split": "train",
+    "draft_shape": [
+      24,
+      37,
+      12,
+      21
+    ],
+    "reference_shape": [
+      24,
+      37,
+      24,
+      42
+    ],
+    "source_pixel_shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "pair_file_sha256": "b1183634746c697d3dbb9ade11368a2edc4b9f8879305fc1406766e3720b1f58",
+    "metadata": {
+      "id": "VIDGEN5S_0154679",
+      "sample_id": "VIDGEN5S_0154679",
+      "split": "train",
+      "source_video_path": "/temp/liwei/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0154679.mp4",
+      "source_video_sha256": "80b09af7fcafb19e1d1dece17f3e092193d55d287f879d342ef30c376a494e10",
+      "original_video_sha256": "80b09af7fcafb19e1d1dece17f3e092193d55d287f879d342ef30c376a494e10",
+      "source_frames": 120,
+      "source_frames_encoded": 120,
+      "output_frames": 120,
+      "decoded_frames": 120,
+      "latent_frames": 37,
+      "raw_decoded_frames": 124,
+      "vae_internal_pad_frames": 16,
+      "vae_padded_input_frames": 136,
+      "vae_internal_padding": "Released VAE repeats its last input frame to a multiple of clip_length=17",
+      "decode_tail_crop_frames": 4,
+      "fps": 24.0,
+      "output_duration_seconds": 5.0,
+      "draft_pixels": [
+        336,
+        192
+      ],
+      "target_pixels": [
+        672,
+        384
+      ],
+      "posterior": "sample",
+      "posterior_seed": 42,
+      "normalization": "(raw-vae.latents_mean)/vae.latents_std",
+      "pairing": "Same first120 source-timed RGB frames at24fps; HR cover-area resize/center crop; exact2x2 area average rounded to uint8 for LR",
+      "external_time_padding": false,
+      "external_slowdown": false,
+      "source_proof_path": "source_proof/VIDGEN5S_0154679.json",
+      "base_model": "/temp/h3_training_assets_20260921/VDN-MiniMax-H3/h3-base",
+      "new_training": true,
+      "scope": "v4 expanded train split; holdout inherited bit-identically"
+    },
+    "seconds": 15.406383275054395
+  }
+]

@@ -1,0 +1,35 @@
+train 10 holdout 1
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+{"init": "fresh", "report_kind": "aligned_past"}
+{"activation_checkpointing": true}
+{"trainable_params": 345280216}
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+/home/ma-user/.local/lib/python3.12/site-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 14.46it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.00it/s]
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+{"streaming_consistency_max_abs": 0.0}
+/cache/yunfeng/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:96: SyntaxWarning: invalid escape sequence '\h'
+  """
+/cache/yunfeng/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:156: SyntaxWarning: invalid escape sequence '\h'
+  """
+{"step": 10, "loss": 0.66546, "l1": 0.22153, "lpips": 0.15279, "wav": 0.46577, "seconds": 73.7}
+{"step": 20, "loss": 0.41629, "l1": 0.0924, "lpips": 0.13507, "wav": 0.19875, "seconds": 128.0}
+{"step": 30, "loss": 0.46593, "l1": 0.13168, "lpips": 0.15435, "wav": 0.28044, "seconds": 182.5}
+{"step": 40, "loss": 0.4778, "l1": 0.12757, "lpips": 0.11853, "wav": 0.27113, "seconds": 236.9}
+{"step": 50, "loss": 0.40017, "l1": 0.10637, "lpips": 0.12096, "wav": 0.22992, "seconds": 291.4}
+{"step": 60, "loss": 0.41679, "l1": 0.1294, "lpips": 0.12705, "wav": 0.27846, "seconds": 345.9}
+{"step": 70, "loss": 0.41336, "l1": 0.12755, "lpips": 0.12745, "wav": 0.27207, "seconds": 400.4}
+{"step": 80, "loss": 0.36493, "l1": 0.09757, "lpips": 0.11692, "wav": 0.21103, "seconds": 454.9}
+{"step": 90, "loss": 0.47544, "l1": 0.14023, "lpips": 0.13439, "wav": 0.29983, "seconds": 509.4}
+{"step": 100, "loss": 0.37136, "l1": 0.09212, "lpips": 0.12528, "wav": 0.20161, "seconds": 564.3}
+{"step": 110, "loss": 0.32447, "l1": 0.09843, "lpips": 0.09242, "wav": 0.21209, "seconds": 618.8}
+{"step": 120, "loss": 0.39112, "l1": 0.12492, "lpips": 0.11797, "wav": 0.27241, "seconds": 673.3}
+{"step": 130, "loss": 0.57766, "l1": 0.20466, "lpips": 0.12382, "wav": 0.43182, "seconds": 727.7}
