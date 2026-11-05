@@ -1,0 +1,138 @@
+{
+  "scope": "Hybrid results publication only; existing portable code is SHA-verified and preserved. No training, runtime source edit, git commit or push.",
+  "training_updates": 2000,
+  "dev_includes_step0": true,
+  "dev_selected_step": 1800,
+  "frozen_decoder_lpips_unchanged": true,
+  "training_source_contract_verified": true,
+  "evaluation_source_contract_verified": true,
+  "source_mapping_verified": true,
+  "selected_checkpoint_sha_verified": true,
+  "causal_checks": 36,
+  "independent_checkpoint_reloads": 19,
+  "pixel_videos": 4,
+  "pixel_frames_per_video": 120,
+  "original_mp4_full_decodes": 24,
+  "published_h264_full_decodes": 8,
+  "privacy_patterns": [
+    "private_infrastructure",
+    "hf_token",
+    "github_token",
+    "private_key",
+    "aws_access_key",
+    "bearer",
+    "signed_url",
+    "credential_literal"
+  ],
+  "findings": [],
+  "videos": [
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0128747/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0128747/hybrid.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0086441/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0086441/hybrid.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0829322/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0829322/hybrid.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0380588/comparison.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0380588/hybrid.h264.mp4",
+      "timescale": 12288,
+      "handler": "vide",
+      "codec": "avc1",
+      "sample_duration_ticks": 61440,
+      "frames": 120,
+      "duration_seconds": 5.0,
+      "fps": 24.0
+    }
+  ],
+  "images": [
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/training_curves.png",
+      "width": 2720,
+      "height": 1530
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0128747/comparison.png",
+      "width": 3360,
+      "height": 1236
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0086441/comparison.png",
+      "width": 3360,
+      "height": 1236
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0829322/comparison.png",
+      "width": 3360,
+      "height": 1236
+    },
+    {
+      "public_path": "results/h3_cmn_hybrid_20261105/VIDGEN5S_0380588/comparison.png",
+      "width": 3360,
+      "height": 1236
+    }
+  ],
+  "note": "Container checks here supplement SHA-bound full decode audits; they do not assert human motion-quality review. Pixel means cover4fixed clips, test16+legacy3 latent sets are reused."
+}

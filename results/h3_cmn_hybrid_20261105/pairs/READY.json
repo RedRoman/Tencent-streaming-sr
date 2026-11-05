@@ -1,0 +1,32 @@
+{
+  "status": "ready",
+  "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+  "num_shards": 3,
+  "samples": 163,
+  "total_bytes": 15872429810,
+  "manifests": {
+    "train": {
+      "path": "train.jsonl",
+      "samples": 128,
+      "sha256": "8b7c5384baaef4672a7d4772c4ec86dd5186ec56251671fe50d9127a882af051"
+    },
+    "dev": {
+      "path": "dev.jsonl",
+      "samples": 16,
+      "sha256": "c062d8d812f8b3060a80816bddc34f056b3fcb10878dd8e768327b84ba1b8701"
+    },
+    "test": {
+      "path": "test.jsonl",
+      "samples": 16,
+      "sha256": "3ea4003412f81fb3f7e1bf3e0cf6ffb0e6395e620cde79c46a7947681083a23a"
+    },
+    "legacy": {
+      "path": "legacy.jsonl",
+      "samples": 3,
+      "sha256": "b8179f501c88d69f46e0e3b1d51eae4c87634b158693f6616bd2e8dba9797847"
+    }
+  },
+  "source_sha256_unique": true,
+  "posterior_seed": 42,
+  "split_seed": 20261104
+}

@@ -1,5 +1,5 @@
 {
-  "status": "training_in_progress",
+  "status": "completed",
   "snapshot_date": "2026-11-05",
   "original_plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
   "original_initial_checkpoint_sha256": "367e71c1208be096a9bb9b8905295f4592750b573e67719109e1da7dd389a767",
@@ -14,12 +14,12 @@
   "files": [
     {
       "public_path": "experiments/h3_cmn_hybrid_20261105/README.md",
-      "public_bytes": 8570,
-      "public_sha256": "f918cdc87a356b978aae6e6bda6cb0540518e70696181c88bcbee54a54416cb6",
+      "public_bytes": 8930,
+      "public_sha256": "d2c2963c6872be6591d5cdc7ba4ea5cd2136013f4282a881d48bc320c161b0fd",
       "source_artifact": null,
       "identical_to_executed_source": false,
       "changes": [
-        "New public documentation/evidence/launcher; not an executed training source."
+        "Public documentation updated with completed-run metrics and evaluation limitations; not an executed training source."
       ]
     },
     {

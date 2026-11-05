@@ -1,6 +1,6 @@
 # Sol-H3 — 流式视频超分
 
-2026-11-05 启动 [H3 CMN 互补训练](experiments/h3_cmn_hybrid_20261105/README.md)：从 CMN 最佳权重继续训练，融合原版 H3 teacher 蒸馏、HR latent/eWarp 与冻结 decoder 的图像 L1/LPIPS。真实 NPU 的解码对齐、像素梯度和 8 步预检通过；2,000 步正式训练及完整视频评估正在进行，尚无质量提升结论。
+2026-11-05 完成 [H3 CMN 互补训练](experiments/h3_cmn_hybrid_20261105/README.md)：融合原版 H3 teacher 蒸馏、HR latent/eWarp 与冻结 decoder 的图像 L1/LPIPS，新增 2000 步、dev 选择 step1800。四例完整 5 秒视频相较原 CMN 平均 PSNR +0.4261 dB、LPIPS −16.67%，但仍落后旧 causal eWarp 和原版 teacher；16 条 test latent eWarp 退步 2.16%。[最终指标、曲线和对比视频](results/h3_cmn_hybrid_20261105/README.md)。
 
 2026-11-05 新增 [H3 CMN latent upscaler 实验](experiments/h3_cmn_upscaler_20261105/README.md)：约 106 万参数，从零训练 10,000 步，继续使用原 H3 decoder；36 项因果检查和 19 项独立重载检查通过。当前画质仍低于原 H3 upscaler，完整指标、失败样例与 5 秒视频见[结果目录](results/h3_cmn_upscaler_20261105/README.md)。这是 UltraFlash 思路的 H3 适配原型，不是完整论文复现或端到端流式验证。
 

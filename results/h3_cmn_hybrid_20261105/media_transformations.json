@@ -1,0 +1,61 @@
+{
+  "videos": [
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0128747/comparison.mp4",
+      "original_sha256": "002509034640353e830661d29e0fce4f8f0904a6a8fb40e8a4763b97f5a198e6",
+      "public_path": "VIDGEN5S_0128747/comparison.h264.mp4",
+      "public_sha256": "42954c8636cd5e13a9e635b1e89c94ab6335ecdfe3b3a80c3b94f97e963fadbf",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    },
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0128747/hybrid.mp4",
+      "original_sha256": "e139023434cca22b1bcd86c22dcac99aac3b42ee7265f3c4be3da98100a2e69f",
+      "public_path": "VIDGEN5S_0128747/hybrid.h264.mp4",
+      "public_sha256": "29594c60816a8c6ef69745d4cdc89cb3a4924395e0bd91b8caeddde9301d1172",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    },
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0086441/comparison.mp4",
+      "original_sha256": "ae231e3880d151943853e32d1f5c1448b1bb181ca3582a822435cd9d5f3ca11a",
+      "public_path": "VIDGEN5S_0086441/comparison.h264.mp4",
+      "public_sha256": "897e9663a8b3f1b61559bbc35370d2d032832734878ee3fb5a3f58cefcd34711",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    },
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0086441/hybrid.mp4",
+      "original_sha256": "19acfd0b1696ea3b5942b14304fcf9a46ea51625404f44d7146c2a2528e230f5",
+      "public_path": "VIDGEN5S_0086441/hybrid.h264.mp4",
+      "public_sha256": "dd3aecbd7b093cecadd2a3c4762cb4bd9dd317e46f07fb7edba0bcf8e9ad3f88",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    },
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0829322/comparison.mp4",
+      "original_sha256": "a863996c8c7f63302b3d27ff8a3033700811eeb27226ed182b81f9488a55bd8b",
+      "public_path": "VIDGEN5S_0829322/comparison.h264.mp4",
+      "public_sha256": "2cd783dbf7f6088b393d275539be7ca0409a6c7746ca2d82b91d8a1cbbe3628a",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    },
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0829322/hybrid.mp4",
+      "original_sha256": "d159b024ae000bbba78df8bb0f1afa7603fcbecbbeddde48892bbba311566f1c",
+      "public_path": "VIDGEN5S_0829322/hybrid.h264.mp4",
+      "public_sha256": "2d6ad2bde56d76ec966d15911bcd2225027074a6511bbf678b98f426be3a445e",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    },
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0380588/comparison.mp4",
+      "original_sha256": "58b6955dcdeaa821edfb82ec4ba887af811b9a73779dc74170b6aed902a60e68",
+      "public_path": "VIDGEN5S_0380588/comparison.h264.mp4",
+      "public_sha256": "c279995c012859efb7e8e04e82bc1166104b721f93c4cafa527e6debf5e64cbd",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    },
+    {
+      "original_artifact": "evaluation/decoded/VIDGEN5S_0380588/hybrid.mp4",
+      "original_sha256": "343d327d5231e3df106a648db6a7fe4ccf160e4f3021deb90edf449a72beaa1a",
+      "public_path": "VIDGEN5S_0380588/hybrid.h264.mp4",
+      "public_sha256": "ae89eb7638321f85125d528ab702ef02221fb828e01994d007918d7ba0bc95d4",
+      "conversion": "macOS avconvert PresetHighestQuality; metrics computed before either MP4 compression; full120-frame H264 audit separately recorded"
+    }
+  ],
+  "note": "Published H264 bytes differ from original remote MP4 bytes; no original source-video content is packaged."
+}

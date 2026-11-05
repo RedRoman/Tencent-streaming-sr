@@ -1,0 +1,83 @@
+{
+  "config": {
+    "pairs": "${H3_ULTRAFLASH_PAIRS}",
+    "teacher_cache": "${H3_HYBRID_TEACHER_CACHE}",
+    "initial": "${EXP_ROOT}/upscaler_cmn/ewarp_steps10000/best_step_009500.pt",
+    "base_model": "${H3_BASE_MODEL}",
+    "output": "${H3_HYBRID_RUN_DIR}",
+    "device": "npu:0",
+    "steps": 2000,
+    "lr": 3e-05,
+    "min_lr": 3e-06,
+    "warmup": 100,
+    "validate_every": 200,
+    "save_every": 100,
+    "kd_weight": 0.25,
+    "warp_weight": 0.1,
+    "l1_weight": 1.0,
+    "lpips_weight": 0.2,
+    "full_every": 4,
+    "seed": 20261105,
+    "preflight": false,
+    "recipe": "CMN + frozen original H3 teacher + HR decoder-aware pixel supervision",
+    "initialization": "Warm start from CMN best9500; fresh AdamW and cosine schedule",
+    "prior_updates": 9500,
+    "model_config": {
+      "width": 64,
+      "blocks": 2
+    },
+    "dtype": "fp32",
+    "batch_size": 1,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "selection": "Minimum mean dev RGB L1 + 0.2 LPIPS on fixed full-spatial native temporal regions, including step0",
+    "pixel_target": "Frozen H3 decoder of HR reference latent; not teacher pixels",
+    "pixel_sampling": "One full-spatial native block every4 updates, otherwise one native spatial tile interior; 4 LPIPS frames per region",
+    "temporal_pixel_scope": "Non-crossfaded real RGB positions only; no synthetic tail RGB",
+    "padding": "MSE/KD first36, eWarp35; token36 retained as decoder context and can receive pixel gradients",
+    "causal_scope": "Causal latent upscaler only; frozen original decoder remains noncausal",
+    "test_reuse": "Retained16 test +3 legacy, previously inspected; not a new blind test",
+    "loss_definition": "1 HR latent MSE + .25 teacher latent MSE + .1 eWarp + 1 RGB L1 + .2 LPIPS alex v0.1"
+  },
+  "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+  "initial_sha256": "367e71c1208be096a9bb9b8905295f4592750b573e67719109e1da7dd389a767",
+  "teacher_cache_ready_sha256": "af538bebaab0ddcd8016278577efc23b78f575178f12a1620baeb3e0c661cb07",
+  "train_manifest_sha256": "8b7c5384baaef4672a7d4772c4ec86dd5186ec56251671fe50d9127a882af051",
+  "dev_manifest_sha256": "c062d8d812f8b3060a80816bddc34f056b3fcb10878dd8e768327b84ba1b8701",
+  "source_sha256": {
+    "train_h3_hybrid.py": "7982493b242c50db6305b71b53243a632eb7f139287323b0bc64773b242bd118",
+    "h3_hybrid_pixel.py": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+    "h3_cmn.py": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+    "ultraflash_ewarp.py": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+    "data_utils.py": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+  },
+  "decoder_fingerprint": {
+    "weights": {
+      "config.json": {
+        "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+        "bytes": 2011
+      },
+      "diffusion_pytorch_model-00001-of-00003.safetensors": {
+        "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+        "bytes": 5061033024
+      },
+      "diffusion_pytorch_model-00002-of-00003.safetensors": {
+        "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+        "bytes": 4955986528
+      },
+      "diffusion_pytorch_model-00003-of-00003.safetensors": {
+        "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+        "bytes": 398539336
+      }
+    },
+    "implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+    "recipe": "Frozen FP32 native H3; spatial tile256/overlap64; native temporal7/stride5"
+  },
+  "lpips_fingerprint": {
+    "network": "alex",
+    "version": "0.1",
+    "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "linear_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "implementation_sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658"
+  }
+}

@@ -1,6 +1,6 @@
 # H3 CMN hybrid：teacher KD + decoder-aware pixel supervision
 
-**状态：2026-11-05 正式训练进行中，尚无本轮最终质量结论。** 本目录保存唯一一个 combined warm-start 2000-step run 的实现与预检证据；最终选模、完整评估和视频结果完成后再补充。预检通过不代表质量提高。
+**状态：2026-11-05 训练及评估完成。** 本轮新增 2000 updates，包含 step0 的 dev 选模选择 step1800；训练含验证约 100.19 分钟。四例完整 120 帧平均 PSNR 从原 CMN 的 19.8782 提高到 20.3043 dB，LPIPS 从 0.37802 降至 0.31499（降低 16.67%）；仍落后旧 causal eWarp（23.6710 dB / 0.20978）和原版 teacher（25.7815 dB / 0.14107）。16 条 test 的 latent eWarp 从 0.238635 升至 0.243794（退步 2.16%）。详见[最终结果、训练曲线和 5 秒视频](../../results/h3_cmn_hybrid_20261105/README.md)。
 
 从[前轮 CMN](../h3_cmn_upscaler_20261105/README.md) 的 dev-selected step9500 继续训练，仍是 width64、每 stage 2 blocks、1,061,336 参数的同一个因果 latent upscaler。新增冻结原版 H3 upscaler 的 latent teacher KD，以及经过冻结 H3 decoder 的 RGB L1/LPIPS。teacher 不出现在部署推理链中，decoder 没有训练。本轮没有 Self Forcing、DMD、refiner 更新，也没有同预算单因素消融，不能把最终差异单独归因于某一项损失。
 
@@ -21,11 +21,11 @@ HR MSE 和 KD 使用前 36 个真实锚点 latent；eWarp 使用 35 对有效时
 
 FP32、batch1、fresh AdamW、weight decay0.01、grad clip1；新增 2000 updates，lr3e-5、min_lr3e-6、warmup100、cosine schedule、seed20261105。每 200 步按 16 个 dev 视频的固定完整空间时间区域均值 `RGB L1 + 0.2 LPIPS` 选模，包含 step0；这是区域代理选模，不是全120帧分数。test/legacy 只在选模后读取，且这些样本此前已被检查，不能称为新盲测。
 
-CMN 对固定输入 latent 保持因果；原 H3 decoder 的窗口内 attention 仍双向，因此不宣称端到端零前视。完整解码保留全部37latent，解码124帧再裁到120。最终评估计划同时报告全120帧以及 prefix102/tail18，后者标示可能受 padding context 影响的尾段。
+CMN 对固定输入 latent 保持因果；原 H3 decoder 的窗口内 attention 仍双向，因此不宣称端到端零前视。完整解码保留全部37latent，解码124帧再裁到120。最终评估同时报告全120帧以及 prefix102/tail18，后者标示可能受 padding context 影响的尾段。
 
 ## 预检证据
 
-首次预检在将完整空间多 tile 解码整体 checkpoint 时 OOM。改为**逐个原生空间 tile checkpoint，再使用原始 `_stitch_tiles`** 后，第二次 8-update 预检通过：12 项原生区域与完整解码对照的 max-abs 均为 0，RGB L1/LPIPS 的输入梯度有限且非零、区域外梯度为 0，冻结模块未改变；峰值 allocated **20.41286 GiB**（reserved 20.58594 GiB）。详见 [preflight_evidence.json](preflight_evidence.json)。这不是所有设备/尺寸的显存保证；当前正式训练完成后才能报告最终峰值与耗时。
+首次预检在将完整空间多 tile 解码整体 checkpoint 时 OOM。改为**逐个原生空间 tile checkpoint，再使用原始 `_stitch_tiles`** 后，第二次 8-update 预检通过：12 项原生区域与完整解码对照的 max-abs 均为 0，RGB L1/LPIPS 的输入梯度有限且非零、区域外梯度为 0，冻结模块未改变；峰值 allocated **20.41286 GiB**（reserved 20.58594 GiB）。详见 [preflight_evidence.json](preflight_evidence.json)。这不是所有设备/尺寸的显存保证。正式训练的冻结 decoder/LPIPS 检查通过；另有 36 项因果检查、19 条独立重载和 24 个完整视频解码检查通过。
 
 ## 环境与运行
 
@@ -66,7 +66,7 @@ bash "$EXP_CODE_DIR/run_evaluate_h3_hybrid.sh" cpu finalize 1
 bash "$EXP_CODE_DIR/run_train_h3_hybrid.sh" 5 train --resume "$H3_HYBRID_RUN_DIR/latest.pt"
 ```
 
-fresh run、preflight、latent evaluation 拒绝覆盖既有目录；不要用 pipeline 重启已经完成的训练。恢复保留 optimizer、采样 RNG、最佳 checkpoint 和已保存步骤日志，未声称 bitwise resume 已验证。最终像素对比预定五列为 pretrained、旧 causal Conv3d eWarp、CMN、hybrid、reference；旧 Conv3d 不是 Method2。四例全120帧 LPIPS 基于新解码的未压缩 RGB，不能以有损 MP4 代算；历史基线来自不同架构/预算，不能当等算力消融。
+fresh run、preflight、latent evaluation 拒绝覆盖既有目录；不要用 pipeline 重启已经完成的训练。恢复保留 optimizer、采样 RNG、最佳 checkpoint 和已保存步骤日志，未声称 bitwise resume 已验证。最终像素对比五列为 pretrained、旧 causal Conv3d eWarp、CMN、hybrid、reference；旧 Conv3d 不是 Method2。四例全120帧 LPIPS 基于新解码的未压缩 RGB，不能以有损 MP4 代算；历史基线来自不同架构/预算，不能当等算力消融。
 
 ## 源码与证据边界
 
