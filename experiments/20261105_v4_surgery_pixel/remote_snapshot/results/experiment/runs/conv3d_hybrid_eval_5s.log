@@ -1,0 +1,30 @@
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+{"conv3d_hybrid": "VIDGEN5S_0336361", "latent_mse": 0.0836734026670456}
+{"conv3d_hybrid": "VIDGEN5S_0515402", "latent_mse": 0.11099028587341309}
+{"conv3d_hybrid": "VIDGEN5S_0959914", "latent_mse": 0.06506135314702988}
+{"conv3d_hybrid": "VIDGEN5S_0106391", "latent_mse": 0.06544569134712219}
+{"conv3d_hybrid": "VIDGEN5S_0799819", "latent_mse": 0.07486197352409363}
+{"conv3d_hybrid": "VIDGEN5S_0137908", "latent_mse": 0.10518945008516312}
+{"conv3d_hybrid": "VIDGEN5S_0045078", "latent_mse": 0.08079690486192703}
+{"conv3d_hybrid": "VIDGEN5S_0022700", "latent_mse": 0.06894001364707947}
+{"conv3d_hybrid": "VIDGEN5S_0018018", "latent_mse": 0.067858025431633}
+{"conv3d_hybrid": "VIDGEN5S_0154679", "latent_mse": 0.08707638829946518}
+{"causality": "VIDGEN5S_0380588", "future_cut1_max_abs": 0.0, "prefix_cut1_max_abs": 0.0, "future_cut13_max_abs": 0.0, "prefix_cut13_max_abs": 0.0, "future_cut25_max_abs": 0.0, "prefix_cut25_max_abs": 0.0, "streaming_max_abs": 0.0, "passed": true}
+{"conv3d_hybrid": "VIDGEN5S_0380588", "latent_mse": 0.06851427257061005}
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:04,  2.21s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:04<00:02,  2.26s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.28s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.54s/it]
+FFmpeg lacks libx264; exporting MP4 with native MPEG-4 Part 2 at q=2
+{"pixel_metrics": "VIDGEN5S_0336361", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.00496091740205884, "psnr_db": 23.044380037899966, "temporal_difference_mse": 0.0033426552545279264}}}
+{"pixel_metrics": "VIDGEN5S_0515402", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.006332547403872013, "psnr_db": 21.984215505049658, "temporal_difference_mse": 0.0085596377030015}}}
+{"pixel_metrics": "VIDGEN5S_0959914", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.002206241013482213, "psnr_db": 26.563470462439824, "temporal_difference_mse": 0.0003118222812190652}}}
+{"pixel_metrics": "VIDGEN5S_0106391", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.0065702819265425205, "psnr_db": 21.824159947454262, "temporal_difference_mse": 0.002109590219333768}}}
+{"pixel_metrics": "VIDGEN5S_0799819", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.002508625853806734, "psnr_db": 26.005641062197554, "temporal_difference_mse": 0.0007282060687430203}}}
+{"pixel_metrics": "VIDGEN5S_0137908", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.004194099456071854, "psnr_db": 23.773612751794335, "temporal_difference_mse": 0.0033442899584770203}}}
+{"pixel_metrics": "VIDGEN5S_0045078", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.004649749491363764, "psnr_db": 23.325704444109117, "temporal_difference_mse": 0.005830274894833565}}}
+{"pixel_metrics": "VIDGEN5S_0022700", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.00493464944884181, "psnr_db": 23.067436936206974, "temporal_difference_mse": 0.0008058281964622438}}}
+{"pixel_metrics": "VIDGEN5S_0018018", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.002688291249796748, "psnr_db": 25.70523681552936, "temporal_difference_mse": 0.0013003856875002384}}}
+{"pixel_metrics": "VIDGEN5S_0154679", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.0008253389387391508, "psnr_db": 30.83367664789334, "temporal_difference_mse": 0.0006362461135722697}}}
+{"pixel_metrics": "VIDGEN5S_0380588", "conv3d_hybrid": {"vs_decoded_reference": {"mse": 0.0011905523715540767, "psnr_db": 29.24251495532788, "temporal_difference_mse": 0.0008072195341810584}}}
+{"completed": true, "VIDGEN5S_0380588": {"future_cut1_max_abs": 0.0, "prefix_cut1_max_abs": 0.0, "future_cut13_max_abs": 0.0, "prefix_cut13_max_abs": 0.0, "future_cut25_max_abs": 0.0, "prefix_cut25_max_abs": 0.0, "streaming_max_abs": 0.0, "passed": true}}

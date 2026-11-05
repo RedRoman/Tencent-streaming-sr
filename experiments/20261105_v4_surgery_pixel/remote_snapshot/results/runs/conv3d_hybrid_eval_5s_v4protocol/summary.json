@@ -1,0 +1,499 @@
+{
+  "status": "completed",
+  "checkpoint": "/cache/songhua/h3-regenerator-self-forcing-dmd-20261104/upscaler_conv3d_hybrid/kd_pixel_steps2000/best.pt",
+  "variants": {
+    "teacher": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.0809149518609047,
+        "latent_mse": 0.07528479397296906,
+        "latent_rmse": 0.27438074635981485,
+        "latent_mae": 0.1870553195476532,
+        "temporal_difference_mse": 0.05630159378051758,
+        "signed_error_mean": -0.01666458323597908,
+        "prediction_std": 1.0349977016448975,
+        "reference_std": 1.0638628005981445,
+        "split": "train",
+        "seconds": 0.84
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.138392373919487,
+        "latent_mse": 0.13012763857841492,
+        "latent_rmse": 0.3607320869820356,
+        "latent_mae": 0.23905354738235474,
+        "temporal_difference_mse": 0.08264734596014023,
+        "signed_error_mean": -0.044678423553705215,
+        "prediction_std": 0.9817841053009033,
+        "reference_std": 1.0181418657302856,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0959914": {
+        "objective": 0.06340795755386353,
+        "latent_mse": 0.059392765164375305,
+        "latent_rmse": 0.24370630924203687,
+        "latent_mae": 0.1693078577518463,
+        "temporal_difference_mse": 0.040151920169591904,
+        "signed_error_mean": -0.015146029181778431,
+        "prediction_std": 1.137643814086914,
+        "reference_std": 1.1427483558654785,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0106391": {
+        "objective": 0.08625403791666031,
+        "latent_mse": 0.0797533392906189,
+        "latent_rmse": 0.28240633719982083,
+        "latent_mae": 0.19442689418792725,
+        "temporal_difference_mse": 0.06500700861215591,
+        "signed_error_mean": -0.006676382850855589,
+        "prediction_std": 0.9422379732131958,
+        "reference_std": 1.0031330585479736,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0799819": {
+        "objective": 0.06999064236879349,
+        "latent_mse": 0.0659266784787178,
+        "latent_rmse": 0.2567619101010074,
+        "latent_mae": 0.17350484430789948,
+        "temporal_difference_mse": 0.04063962772488594,
+        "signed_error_mean": -0.018673088401556015,
+        "prediction_std": 0.9568392038345337,
+        "reference_std": 0.9888667464256287,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0137908": {
+        "objective": 0.0978797897696495,
+        "latent_mse": 0.09090454131364822,
+        "latent_rmse": 0.3015037998328516,
+        "latent_mae": 0.20654481649398804,
+        "temporal_difference_mse": 0.06975248456001282,
+        "signed_error_mean": 0.010659500025212765,
+        "prediction_std": 1.089853286743164,
+        "reference_std": 1.1359363794326782,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0045078": {
+        "objective": 0.08558589220046997,
+        "latent_mse": 0.07664499431848526,
+        "latent_rmse": 0.2768483236692707,
+        "latent_mae": 0.19345104694366455,
+        "temporal_difference_mse": 0.08940901607275009,
+        "signed_error_mean": -0.006446451414376497,
+        "prediction_std": 1.133565068244934,
+        "reference_std": 1.147525668144226,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0022700": {
+        "objective": 0.11511067301034927,
+        "latent_mse": 0.10843406617641449,
+        "latent_rmse": 0.3292932829202784,
+        "latent_mae": 0.2231108695268631,
+        "temporal_difference_mse": 0.06676609814167023,
+        "signed_error_mean": -0.03883662447333336,
+        "prediction_std": 0.9089483618736267,
+        "reference_std": 0.9518004655838013,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0018018": {
+        "objective": 0.06375833600759506,
+        "latent_mse": 0.05960395932197571,
+        "latent_rmse": 0.24413922118737028,
+        "latent_mae": 0.1674920618534088,
+        "temporal_difference_mse": 0.04154377058148384,
+        "signed_error_mean": -0.022385627031326294,
+        "prediction_std": 1.091229796409607,
+        "reference_std": 1.0999360084533691,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0154679": {
+        "objective": 0.09635569900274277,
+        "latent_mse": 0.09033269435167313,
+        "latent_rmse": 0.3005539790980534,
+        "latent_mae": 0.20085836946964264,
+        "temporal_difference_mse": 0.06023002043366432,
+        "signed_error_mean": -0.02087951824069023,
+        "prediction_std": 0.971253514289856,
+        "reference_std": 1.0013713836669922,
+        "split": "train",
+        "seconds": 0.22
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.07952255010604858,
+        "latent_mse": 0.0746656134724617,
+        "latent_rmse": 0.2732500932707283,
+        "latent_mae": 0.18411774933338165,
+        "temporal_difference_mse": 0.04856938123703003,
+        "signed_error_mean": -0.03759493678808212,
+        "prediction_std": 1.0697331428527832,
+        "reference_std": 1.0839016437530518,
+        "split": "holdout",
+        "seconds": 0.22
+      }
+    },
+    "conv3d_hybrid": {
+      "VIDGEN5S_0336361": {
+        "objective": 0.09103883802890778,
+        "latent_mse": 0.0836734026670456,
+        "latent_rmse": 0.2892635522616799,
+        "latent_mae": 0.20531748235225677,
+        "temporal_difference_mse": 0.07365433871746063,
+        "signed_error_mean": -0.0062665147706866264,
+        "prediction_std": 1.0204136371612549,
+        "reference_std": 1.0638628005981445,
+        "vs_teacher": {
+          "objective": 0.03887765109539032,
+          "latent_mse": 0.03659879416227341,
+          "latent_rmse": 0.191308113163748,
+          "latent_mae": 0.13937728106975555,
+          "temporal_difference_mse": 0.02278856560587883,
+          "signed_error_mean": 0.01039806753396988,
+          "prediction_std": 1.0204136371612549,
+          "reference_std": 1.0349977016448975
+        },
+        "split": "train",
+        "seconds": 0.25
+      },
+      "VIDGEN5S_0515402": {
+        "objective": 0.12157244235277176,
+        "latent_mse": 0.11099028587341309,
+        "latent_rmse": 0.33315204617923794,
+        "latent_mae": 0.23593612015247345,
+        "temporal_difference_mse": 0.10582154244184494,
+        "signed_error_mean": -0.022107023745775223,
+        "prediction_std": 0.9582528471946716,
+        "reference_std": 1.0181418657302856,
+        "vs_teacher": {
+          "objective": 0.05763493850827217,
+          "latent_mse": 0.0546284094452858,
+          "latent_rmse": 0.23372721160636345,
+          "latent_mae": 0.1619444489479065,
+          "temporal_difference_mse": 0.03006529062986374,
+          "signed_error_mean": 0.022571399807929993,
+          "prediction_std": 0.9582528471946716,
+          "reference_std": 0.9817841053009033
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0959914": {
+        "objective": 0.0704217478632927,
+        "latent_mse": 0.06506135314702988,
+        "latent_rmse": 0.2550712707206162,
+        "latent_mae": 0.18229380249977112,
+        "temporal_difference_mse": 0.05360397323966026,
+        "signed_error_mean": -0.002775755478069186,
+        "prediction_std": 1.1417949199676514,
+        "reference_std": 1.1427483558654785,
+        "vs_teacher": {
+          "objective": 0.03232146427035332,
+          "latent_mse": 0.03052574396133423,
+          "latent_rmse": 0.17471618116629675,
+          "latent_mae": 0.12767557799816132,
+          "temporal_difference_mse": 0.017957186326384544,
+          "signed_error_mean": 0.0123702771961689,
+          "prediction_std": 1.1417949199676514,
+          "reference_std": 1.137643814086914
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0106391": {
+        "objective": 0.07374013960361481,
+        "latent_mse": 0.06544569134712219,
+        "latent_rmse": 0.2558235551060969,
+        "latent_mae": 0.18346121907234192,
+        "temporal_difference_mse": 0.08294449001550674,
+        "signed_error_mean": -0.0009051974629983306,
+        "prediction_std": 0.9563493132591248,
+        "reference_std": 1.0031330585479736,
+        "vs_teacher": {
+          "objective": 0.03945297747850418,
+          "latent_mse": 0.037262436002492905,
+          "latent_rmse": 0.19303480515827426,
+          "latent_mae": 0.14134131371974945,
+          "temporal_difference_mse": 0.021905427798628807,
+          "signed_error_mean": 0.005771184340119362,
+          "prediction_std": 0.9563493132591248,
+          "reference_std": 0.9422379732131958
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0799819": {
+        "objective": 0.08042541891336441,
+        "latent_mse": 0.07486197352409363,
+        "latent_rmse": 0.27360916198858115,
+        "latent_mae": 0.19107839465141296,
+        "temporal_difference_mse": 0.055634450167417526,
+        "signed_error_mean": 0.005072493571788073,
+        "prediction_std": 0.9463226795196533,
+        "reference_std": 0.9888667464256287,
+        "vs_teacher": {
+          "objective": 0.03474774584174156,
+          "latent_mse": 0.032806556671857834,
+          "latent_rmse": 0.18112580344019963,
+          "latent_mae": 0.13301268219947815,
+          "temporal_difference_mse": 0.01941189356148243,
+          "signed_error_mean": 0.02374557964503765,
+          "prediction_std": 0.9463226795196533,
+          "reference_std": 0.9568392038345337
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0137908": {
+        "objective": 0.11485786736011505,
+        "latent_mse": 0.10518945008516312,
+        "latent_rmse": 0.32432923100633887,
+        "latent_mae": 0.2322702705860138,
+        "temporal_difference_mse": 0.09668415784835815,
+        "signed_error_mean": 0.019593078643083572,
+        "prediction_std": 1.0485115051269531,
+        "reference_std": 1.1359363794326782,
+        "vs_teacher": {
+          "objective": 0.059003300964832306,
+          "latent_mse": 0.05561055243015289,
+          "latent_rmse": 0.23581889752552251,
+          "latent_mae": 0.17052005231380463,
+          "temporal_difference_mse": 0.03392750397324562,
+          "signed_error_mean": 0.008933579549193382,
+          "prediction_std": 1.0485115051269531,
+          "reference_std": 1.089853286743164
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0045078": {
+        "objective": 0.09202740341424942,
+        "latent_mse": 0.08079690486192703,
+        "latent_rmse": 0.2842479636900272,
+        "latent_mae": 0.20507581532001495,
+        "temporal_difference_mse": 0.11230497807264328,
+        "signed_error_mean": -0.0070359413512051105,
+        "prediction_std": 1.1154954433441162,
+        "reference_std": 1.147525668144226,
+        "vs_teacher": {
+          "objective": 0.03444850444793701,
+          "latent_mse": 0.031652506440877914,
+          "latent_rmse": 0.17791151295202318,
+          "latent_mae": 0.1324143260717392,
+          "temporal_difference_mse": 0.027959968894720078,
+          "signed_error_mean": -0.0005894899368286133,
+          "prediction_std": 1.1154954433441162,
+          "reference_std": 1.133565068244934
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0022700": {
+        "objective": 0.07727967202663422,
+        "latent_mse": 0.06894001364707947,
+        "latent_rmse": 0.2625643038325649,
+        "latent_mae": 0.1872854232788086,
+        "temporal_difference_mse": 0.08339656889438629,
+        "signed_error_mean": -0.0018017967231571674,
+        "prediction_std": 0.9062122106552124,
+        "reference_std": 0.9518004655838013,
+        "vs_teacher": {
+          "objective": 0.05384979024529457,
+          "latent_mse": 0.05170970410108566,
+          "latent_rmse": 0.22739767831067595,
+          "latent_mae": 0.15803617238998413,
+          "temporal_difference_mse": 0.021400846540927887,
+          "signed_error_mean": 0.03703482449054718,
+          "prediction_std": 0.9062122106552124,
+          "reference_std": 0.9089483618736267
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0018018": {
+        "objective": 0.07370766997337341,
+        "latent_mse": 0.067858025431633,
+        "latent_rmse": 0.2604957301600796,
+        "latent_mae": 0.18674318492412567,
+        "temporal_difference_mse": 0.058496445417404175,
+        "signed_error_mean": -0.0037477968726307154,
+        "prediction_std": 1.0615450143814087,
+        "reference_std": 1.0999360084533691,
+        "vs_teacher": {
+          "objective": 0.04226144030690193,
+          "latent_mse": 0.040110424160957336,
+          "latent_rmse": 0.20027587014155585,
+          "latent_mae": 0.1455134153366089,
+          "temporal_difference_mse": 0.02151014655828476,
+          "signed_error_mean": 0.01863783225417137,
+          "prediction_std": 1.0615450143814087,
+          "reference_std": 1.091229796409607
+        },
+        "split": "train",
+        "seconds": 0.24
+      },
+      "VIDGEN5S_0154679": {
+        "objective": 0.09508433938026428,
+        "latent_mse": 0.08707638829946518,
+        "latent_rmse": 0.2950870859584763,
+        "latent_mae": 0.20720520615577698,
+        "temporal_difference_mse": 0.08007949590682983,
+        "signed_error_mean": -0.011823584325611591,
+        "prediction_std": 0.9866023063659668,
+        "reference_std": 1.0013713836669922,
+        "vs_teacher": {
+          "objective": 0.04310368746519089,
+          "latent_mse": 0.0408472865819931,
+          "latent_rmse": 0.20210711660402536,
+          "latent_mae": 0.14435550570487976,
+          "temporal_difference_mse": 0.022563990205526352,
+          "signed_error_mean": 0.00905593205243349,
+          "prediction_std": 0.9866023063659668,
+          "reference_std": 0.971253514289856
+        },
+        "split": "train",
+        "seconds": 0.25
+      },
+      "VIDGEN5S_0380588": {
+        "objective": 0.07477663457393646,
+        "latent_mse": 0.06851427257061005,
+        "latent_rmse": 0.2617523114904815,
+        "latent_mae": 0.18373852968215942,
+        "temporal_difference_mse": 0.06262365728616714,
+        "signed_error_mean": -0.018520986661314964,
+        "prediction_std": 1.0613911151885986,
+        "reference_std": 1.0839016437530518,
+        "vs_teacher": {
+          "objective": 0.037166982889175415,
+          "latent_mse": 0.03529190644621849,
+          "latent_rmse": 0.1878614022257326,
+          "latent_mae": 0.13171379268169403,
+          "temporal_difference_mse": 0.018750760704278946,
+          "signed_error_mean": 0.019073955714702606,
+          "prediction_std": 1.0613911151885986,
+          "reference_std": 1.0697331428527832
+        },
+        "split": "holdout",
+        "seconds": 0.25
+      }
+    }
+  },
+  "causality": {
+    "VIDGEN5S_0380588": {
+      "future_cut1_max_abs": 0.0,
+      "prefix_cut1_max_abs": 0.0,
+      "future_cut13_max_abs": 0.0,
+      "prefix_cut13_max_abs": 0.0,
+      "future_cut25_max_abs": 0.0,
+      "prefix_cut25_max_abs": 0.0,
+      "streaming_max_abs": 0.0,
+      "passed": true
+    }
+  },
+  "pixel_metrics": {
+    "VIDGEN5S_0336361": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.00496091740205884,
+          "psnr_db": 23.044380037899966,
+          "temporal_difference_mse": 0.0033426552545279264
+        }
+      }
+    },
+    "VIDGEN5S_0515402": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.006332547403872013,
+          "psnr_db": 21.984215505049658,
+          "temporal_difference_mse": 0.0085596377030015
+        }
+      }
+    },
+    "VIDGEN5S_0959914": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.002206241013482213,
+          "psnr_db": 26.563470462439824,
+          "temporal_difference_mse": 0.0003118222812190652
+        }
+      }
+    },
+    "VIDGEN5S_0106391": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.0065702819265425205,
+          "psnr_db": 21.824159947454262,
+          "temporal_difference_mse": 0.002109590219333768
+        }
+      }
+    },
+    "VIDGEN5S_0799819": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.002508625853806734,
+          "psnr_db": 26.005641062197554,
+          "temporal_difference_mse": 0.0007282060687430203
+        }
+      }
+    },
+    "VIDGEN5S_0137908": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.004194099456071854,
+          "psnr_db": 23.773612751794335,
+          "temporal_difference_mse": 0.0033442899584770203
+        }
+      }
+    },
+    "VIDGEN5S_0045078": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.004649749491363764,
+          "psnr_db": 23.325704444109117,
+          "temporal_difference_mse": 0.005830274894833565
+        }
+      }
+    },
+    "VIDGEN5S_0022700": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.00493464944884181,
+          "psnr_db": 23.067436936206974,
+          "temporal_difference_mse": 0.0008058281964622438
+        }
+      }
+    },
+    "VIDGEN5S_0018018": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.002688291249796748,
+          "psnr_db": 25.70523681552936,
+          "temporal_difference_mse": 0.0013003856875002384
+        }
+      }
+    },
+    "VIDGEN5S_0154679": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.0008253389387391508,
+          "psnr_db": 30.83367664789334,
+          "temporal_difference_mse": 0.0006362461135722697
+        }
+      }
+    },
+    "VIDGEN5S_0380588": {
+      "conv3d_hybrid": {
+        "vs_decoded_reference": {
+          "mse": 0.0011905523715540767,
+          "psnr_db": 29.24251495532788,
+          "temporal_difference_mse": 0.0008072195341810584
+        }
+      }
+    }
+  },
+  "seconds": 336.7,
+  "causality_passed": true
+}

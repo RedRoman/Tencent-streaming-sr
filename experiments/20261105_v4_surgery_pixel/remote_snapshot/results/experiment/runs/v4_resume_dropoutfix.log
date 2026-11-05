@@ -1,0 +1,295 @@
+train 10 holdout 1
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+{"init": "fresh", "report_kind": "aligned_past"}
+Warning: The current version of the file storing weights is old, and it is relanded due to internal bug of torch and compatibility issue. We will deprecate the loading support for this type of file in the future, please use newer torch to re-store the weight file.
+{"resume": "/cache/songhua/h3-regenerator-self-forcing-dmd-20261104/runs/v4_surgery_pixel_20261105/checkpoint/v4_step500.pt"}
+{"activation_checkpointing": true}
+{"trainable_params": 345280216}
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+/home/ma-user/.local/lib/python3.12/site-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.09it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 25.94it/s]
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+{"streaming_consistency_max_abs": 0.0}
+/cache/yunfeng/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:96: SyntaxWarning: invalid escape sequence '\h'
+  """
+/cache/yunfeng/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:156: SyntaxWarning: invalid escape sequence '\h'
+  """
+{"step": 501, "loss": 0.40851, "l1": 0.15672, "lpips": 0.0927, "wav": 0.33825, "seconds": 26.3}
+{"step": 510, "loss": 0.34487, "l1": 0.127, "lpips": 0.08566, "wav": 0.26884, "seconds": 75.2}
+{"step": 520, "loss": 0.44855, "l1": 0.15656, "lpips": 0.10095, "wav": 0.33174, "seconds": 129.5}
+{"step": 530, "loss": 0.19966, "l1": 0.0516, "lpips": 0.0717, "wav": 0.11263, "seconds": 183.9}
+{"step": 540, "loss": 0.38685, "l1": 0.12127, "lpips": 0.12762, "wav": 0.25957, "seconds": 238.3}
+{"step": 550, "loss": 0.25687, "l1": 0.07695, "lpips": 0.08788, "wav": 0.16871, "seconds": 292.7}
+{"step": 560, "loss": 0.2556, "l1": 0.0758, "lpips": 0.08265, "wav": 0.16441, "seconds": 347.2}
+{"step": 570, "loss": 0.29527, "l1": 0.10637, "lpips": 0.07133, "wav": 0.22713, "seconds": 401.7}
+{"step": 580, "loss": 0.20472, "l1": 0.05751, "lpips": 0.06609, "wav": 0.12556, "seconds": 456.1}
+{"step": 590, "loss": 0.26275, "l1": 0.09397, "lpips": 0.06174, "wav": 0.20055, "seconds": 510.5}
+{"step": 600, "loss": 0.24322, "l1": 0.07503, "lpips": 0.07517, "wav": 0.163, "seconds": 564.8}
+{"step": 610, "loss": 0.3711, "l1": 0.1432, "lpips": 0.07046, "wav": 0.30211, "seconds": 619.2}
+{"step": 620, "loss": 0.29329, "l1": 0.1035, "lpips": 0.08136, "wav": 0.22325, "seconds": 673.7}
+{"step": 630, "loss": 0.27291, "l1": 0.08964, "lpips": 0.0906, "wav": 0.19593, "seconds": 728.0}
+{"step": 640, "loss": 0.19284, "l1": 0.06165, "lpips": 0.05708, "wav": 0.1329, "seconds": 782.4}
+{"step": 650, "loss": 0.31797, "l1": 0.11501, "lpips": 0.08859, "wav": 0.24405, "seconds": 836.8}
+{"step": 660, "loss": 0.23293, "l1": 0.07949, "lpips": 0.06931, "wav": 0.17319, "seconds": 891.2}
+{"step": 670, "loss": 0.31236, "l1": 0.10643, "lpips": 0.08165, "wav": 0.22935, "seconds": 945.7}
+{"step": 680, "loss": 0.17378, "l1": 0.05542, "lpips": 0.05189, "wav": 0.11948, "seconds": 1000.1}
+{"step": 690, "loss": 0.26964, "l1": 0.09829, "lpips": 0.06786, "wav": 0.21242, "seconds": 1054.6}
+{"step": 700, "loss": 0.25349, "l1": 0.09407, "lpips": 0.06483, "wav": 0.19967, "seconds": 1109.0}
+{"step": 710, "loss": 0.29102, "l1": 0.10893, "lpips": 0.07919, "wav": 0.23519, "seconds": 1163.4}
+{"step": 720, "loss": 0.28824, "l1": 0.10533, "lpips": 0.06741, "wav": 0.22454, "seconds": 1217.9}
+{"step": 730, "loss": 0.27939, "l1": 0.10934, "lpips": 0.06481, "wav": 0.23402, "seconds": 1272.3}
+{"step": 740, "loss": 0.25797, "l1": 0.0926, "lpips": 0.06876, "wav": 0.19947, "seconds": 1327.1}
+{"step": 750, "loss": 0.1725, "l1": 0.05109, "lpips": 0.05776, "wav": 0.1121, "seconds": 1381.6}
+{"val_step": 750, "id": "VIDGEN5S_0380588", "latent_mse": 0.08339}
+{"step": 760, "loss": 0.32286, "l1": 0.12289, "lpips": 0.07529, "wav": 0.25842, "seconds": 1436.5}
+{"step": 770, "loss": 0.23926, "l1": 0.07445, "lpips": 0.0707, "wav": 0.16279, "seconds": 1490.9}
+{"step": 780, "loss": 0.22007, "l1": 0.06268, "lpips": 0.07679, "wav": 0.13587, "seconds": 1545.3}
+{"step": 790, "loss": 0.24199, "l1": 0.07368, "lpips": 0.0705, "wav": 0.15893, "seconds": 1599.7}
+{"step": 800, "loss": 0.26214, "l1": 0.09789, "lpips": 0.06557, "wav": 0.20704, "seconds": 1654.1}
+{"step": 810, "loss": 0.20408, "l1": 0.06339, "lpips": 0.06146, "wav": 0.13897, "seconds": 1708.6}
+{"step": 820, "loss": 0.24782, "l1": 0.07158, "lpips": 0.06899, "wav": 0.15371, "seconds": 1763.0}
+{"step": 830, "loss": 0.23402, "l1": 0.08285, "lpips": 0.0666, "wav": 0.1798, "seconds": 1817.4}
+{"step": 840, "loss": 0.20256, "l1": 0.06114, "lpips": 0.06543, "wav": 0.13238, "seconds": 1871.8}
+{"step": 850, "loss": 0.24631, "l1": 0.08427, "lpips": 0.0667, "wav": 0.17868, "seconds": 1926.3}
+{"step": 860, "loss": 0.18926, "l1": 0.05939, "lpips": 0.0591, "wav": 0.12859, "seconds": 1980.7}
+{"step": 870, "loss": 0.25751, "l1": 0.09365, "lpips": 0.0668, "wav": 0.19949, "seconds": 2035.2}
+{"step": 880, "loss": 0.21049, "l1": 0.06518, "lpips": 0.07049, "wav": 0.14115, "seconds": 2090.5}
+{"step": 890, "loss": 0.23942, "l1": 0.08985, "lpips": 0.05997, "wav": 0.19448, "seconds": 2144.9}
+{"step": 900, "loss": 0.24473, "l1": 0.09934, "lpips": 0.0515, "wav": 0.20879, "seconds": 2199.4}
+{"step": 910, "loss": 0.17318, "l1": 0.05546, "lpips": 0.05106, "wav": 0.12027, "seconds": 2253.8}
+{"step": 920, "loss": 0.32644, "l1": 0.1319, "lpips": 0.07237, "wav": 0.27805, "seconds": 2308.2}
+{"step": 930, "loss": 0.20026, "l1": 0.06719, "lpips": 0.06044, "wav": 0.14712, "seconds": 2362.6}
+{"step": 940, "loss": 0.23957, "l1": 0.08821, "lpips": 0.05727, "wav": 0.18784, "seconds": 2417.0}
+{"step": 950, "loss": 0.25879, "l1": 0.09124, "lpips": 0.06793, "wav": 0.19487, "seconds": 2471.5}
+{"step": 960, "loss": 0.17252, "l1": 0.05596, "lpips": 0.04712, "wav": 0.12071, "seconds": 2525.9}
+{"step": 970, "loss": 0.28059, "l1": 0.1018, "lpips": 0.06892, "wav": 0.21653, "seconds": 2580.3}
+{"step": 980, "loss": 0.25399, "l1": 0.08819, "lpips": 0.07587, "wav": 0.18964, "seconds": 2634.8}
+{"step": 990, "loss": 0.25508, "l1": 0.10029, "lpips": 0.05168, "wav": 0.21164, "seconds": 2689.2}
+{"step": 1000, "loss": 0.21921, "l1": 0.07454, "lpips": 0.06875, "wav": 0.16165, "seconds": 2743.7}
+{"val_step": 1000, "id": "VIDGEN5S_0380588", "latent_mse": 0.08908}
+{"step": 1010, "loss": 0.32, "l1": 0.11512, "lpips": 0.0936, "wav": 0.24336, "seconds": 2802.0}
+{"step": 1020, "loss": 0.20142, "l1": 0.06195, "lpips": 0.06863, "wav": 0.13608, "seconds": 2857.0}
+{"step": 1030, "loss": 0.32062, "l1": 0.11498, "lpips": 0.09209, "wav": 0.24517, "seconds": 2911.6}
+{"step": 1040, "loss": 0.16703, "l1": 0.05283, "lpips": 0.04971, "wav": 0.11552, "seconds": 2966.0}
+{"step": 1050, "loss": 0.25611, "l1": 0.09649, "lpips": 0.06154, "wav": 0.20503, "seconds": 3020.4}
+{"step": 1060, "loss": 0.17054, "l1": 0.05481, "lpips": 0.04915, "wav": 0.11927, "seconds": 3074.9}
+{"step": 1070, "loss": 0.21258, "l1": 0.08301, "lpips": 0.04574, "wav": 0.17586, "seconds": 3129.3}
+{"step": 1080, "loss": 0.12996, "l1": 0.04021, "lpips": 0.03891, "wav": 0.08785, "seconds": 3183.8}
+{"step": 1090, "loss": 0.36591, "l1": 0.14824, "lpips": 0.07917, "wav": 0.31307, "seconds": 3238.2}
+{"step": 1100, "loss": 0.19468, "l1": 0.06973, "lpips": 0.05202, "wav": 0.15044, "seconds": 3292.6}
+{"step": 1110, "loss": 0.2528, "l1": 0.09151, "lpips": 0.06918, "wav": 0.19899, "seconds": 3347.1}
+{"step": 1120, "loss": 0.24392, "l1": 0.08781, "lpips": 0.06688, "wav": 0.18747, "seconds": 3401.6}
+{"step": 1130, "loss": 0.16414, "l1": 0.05628, "lpips": 0.04488, "wav": 0.12234, "seconds": 3456.1}
+{"step": 1140, "loss": 0.2204, "l1": 0.07782, "lpips": 0.05838, "wav": 0.16614, "seconds": 3510.5}
+{"step": 1150, "loss": 0.1929, "l1": 0.06799, "lpips": 0.05295, "wav": 0.14928, "seconds": 3565.1}
+{"step": 1160, "loss": 0.21076, "l1": 0.08066, "lpips": 0.04708, "wav": 0.17227, "seconds": 3620.3}
+{"step": 1170, "loss": 0.20982, "l1": 0.07226, "lpips": 0.06209, "wav": 0.15477, "seconds": 3674.8}
+{"step": 1180, "loss": 0.18056, "l1": 0.06297, "lpips": 0.05, "wav": 0.13431, "seconds": 3729.3}
+{"step": 1190, "loss": 0.15934, "l1": 0.05316, "lpips": 0.04791, "wav": 0.1153, "seconds": 3783.7}
+{"step": 1200, "loss": 0.16805, "l1": 0.05235, "lpips": 0.05376, "wav": 0.11363, "seconds": 3838.2}
+{"step": 1210, "loss": 0.25995, "l1": 0.10023, "lpips": 0.06179, "wav": 0.21234, "seconds": 3892.7}
+{"step": 1220, "loss": 0.18963, "l1": 0.0608, "lpips": 0.06281, "wav": 0.13187, "seconds": 3947.2}
+{"step": 1230, "loss": 0.19721, "l1": 0.06905, "lpips": 0.05445, "wav": 0.15005, "seconds": 4001.6}
+{"step": 1240, "loss": 0.22786, "l1": 0.08065, "lpips": 0.05994, "wav": 0.17393, "seconds": 4056.1}
+{"step": 1250, "loss": 0.27175, "l1": 0.10429, "lpips": 0.06888, "wav": 0.22041, "seconds": 4110.6}
+{"val_step": 1250, "id": "VIDGEN5S_0380588", "latent_mse": 0.09394}
+{"step": 1260, "loss": 0.27483, "l1": 0.09798, "lpips": 0.08067, "wav": 0.20917, "seconds": 4165.4}
+{"step": 1270, "loss": 0.21544, "l1": 0.07369, "lpips": 0.0633, "wav": 0.15798, "seconds": 4220.0}
+{"step": 1280, "loss": 0.21346, "l1": 0.06948, "lpips": 0.06819, "wav": 0.15193, "seconds": 4274.4}
+{"step": 1290, "loss": 0.24704, "l1": 0.08851, "lpips": 0.06932, "wav": 0.18949, "seconds": 4328.8}
+{"step": 1300, "loss": 0.15738, "l1": 0.05117, "lpips": 0.04441, "wav": 0.11064, "seconds": 4383.9}
+{"step": 1310, "loss": 0.15672, "l1": 0.05163, "lpips": 0.04236, "wav": 0.11146, "seconds": 4438.3}
+{"step": 1320, "loss": 0.19948, "l1": 0.07006, "lpips": 0.047, "wav": 0.15259, "seconds": 4492.7}
+{"step": 1330, "loss": 0.27778, "l1": 0.09101, "lpips": 0.0912, "wav": 0.1963, "seconds": 4547.2}
+{"step": 1340, "loss": 0.14724, "l1": 0.04647, "lpips": 0.04744, "wav": 0.10197, "seconds": 4601.6}
+{"step": 1350, "loss": 0.30168, "l1": 0.10374, "lpips": 0.09038, "wav": 0.22388, "seconds": 4656.1}
+{"step": 1360, "loss": 0.15276, "l1": 0.05024, "lpips": 0.0443, "wav": 0.10842, "seconds": 4710.6}
+{"step": 1370, "loss": 0.1617, "l1": 0.05396, "lpips": 0.04844, "wav": 0.11869, "seconds": 4765.1}
+{"step": 1380, "loss": 0.22285, "l1": 0.08687, "lpips": 0.05403, "wav": 0.18328, "seconds": 4819.6}
+{"step": 1390, "loss": 0.16279, "l1": 0.05324, "lpips": 0.0515, "wav": 0.11571, "seconds": 4874.0}
+{"step": 1400, "loss": 0.15278, "l1": 0.05041, "lpips": 0.04461, "wav": 0.1095, "seconds": 4928.5}
+{"step": 1410, "loss": 0.18357, "l1": 0.05839, "lpips": 0.06242, "wav": 0.12552, "seconds": 4983.0}
+{"step": 1420, "loss": 0.21762, "l1": 0.08417, "lpips": 0.051, "wav": 0.18037, "seconds": 5037.5}
+{"step": 1430, "loss": 0.1617, "l1": 0.05516, "lpips": 0.04525, "wav": 0.12003, "seconds": 5092.0}
+{"step": 1440, "loss": 0.16894, "l1": 0.0607, "lpips": 0.0423, "wav": 0.12969, "seconds": 5147.0}
+{"step": 1450, "loss": 0.14498, "l1": 0.05255, "lpips": 0.03709, "wav": 0.11368, "seconds": 5201.5}
+{"step": 1460, "loss": 0.24757, "l1": 0.09914, "lpips": 0.05726, "wav": 0.20963, "seconds": 5256.0}
+{"step": 1470, "loss": 0.16538, "l1": 0.05825, "lpips": 0.04767, "wav": 0.12499, "seconds": 5310.4}
+{"step": 1480, "loss": 0.2717, "l1": 0.11927, "lpips": 0.04537, "wav": 0.24963, "seconds": 5364.9}
+{"step": 1490, "loss": 0.15043, "l1": 0.04856, "lpips": 0.04653, "wav": 0.10576, "seconds": 5419.3}
+{"step": 1500, "loss": 0.2181, "l1": 0.0743, "lpips": 0.06695, "wav": 0.16009, "seconds": 5473.8}
+{"val_step": 1500, "id": "VIDGEN5S_0380588", "latent_mse": 0.08895}
+{"step": 1510, "loss": 0.16759, "l1": 0.05674, "lpips": 0.04949, "wav": 0.12366, "seconds": 5532.8}
+{"step": 1520, "loss": 0.27459, "l1": 0.11197, "lpips": 0.0634, "wav": 0.23634, "seconds": 5587.2}
+{"step": 1530, "loss": 0.1832, "l1": 0.06139, "lpips": 0.05359, "wav": 0.13287, "seconds": 5641.6}
+{"step": 1540, "loss": 0.14647, "l1": 0.05007, "lpips": 0.03939, "wav": 0.10896, "seconds": 5696.0}
+{"step": 1550, "loss": 0.16792, "l1": 0.05732, "lpips": 0.04476, "wav": 0.12338, "seconds": 5750.4}
+{"step": 1560, "loss": 0.18997, "l1": 0.06634, "lpips": 0.05562, "wav": 0.14376, "seconds": 5804.8}
+{"step": 1570, "loss": 0.20364, "l1": 0.06959, "lpips": 0.06256, "wav": 0.15109, "seconds": 5859.3}
+{"step": 1580, "loss": 0.18942, "l1": 0.07321, "lpips": 0.04344, "wav": 0.1568, "seconds": 5914.2}
+{"step": 1590, "loss": 0.17792, "l1": 0.06726, "lpips": 0.04286, "wav": 0.14291, "seconds": 5968.5}
+{"step": 1600, "loss": 0.13072, "l1": 0.04442, "lpips": 0.03539, "wav": 0.09701, "seconds": 6023.0}
+{"step": 1610, "loss": 0.18803, "l1": 0.07036, "lpips": 0.04809, "wav": 0.15138, "seconds": 6077.4}
+{"step": 1620, "loss": 0.11709, "l1": 0.03747, "lpips": 0.03414, "wav": 0.08158, "seconds": 6131.8}
+{"step": 1630, "loss": 0.21855, "l1": 0.07291, "lpips": 0.06201, "wav": 0.15577, "seconds": 6186.2}
+{"step": 1640, "loss": 0.19343, "l1": 0.0615, "lpips": 0.06057, "wav": 0.13375, "seconds": 6240.6}
+{"step": 1650, "loss": 0.16033, "l1": 0.05511, "lpips": 0.04519, "wav": 0.11976, "seconds": 6295.0}
+{"step": 1660, "loss": 0.19234, "l1": 0.07567, "lpips": 0.04419, "wav": 0.16113, "seconds": 6349.4}
+{"step": 1670, "loss": 0.14361, "l1": 0.04509, "lpips": 0.04714, "wav": 0.09851, "seconds": 6403.8}
+{"step": 1680, "loss": 0.1448, "l1": 0.04531, "lpips": 0.0404, "wav": 0.0991, "seconds": 6458.2}
+{"step": 1690, "loss": 0.27131, "l1": 0.10245, "lpips": 0.07237, "wav": 0.2188, "seconds": 6512.6}
+{"step": 1700, "loss": 0.1628, "l1": 0.05798, "lpips": 0.04347, "wav": 0.12636, "seconds": 6567.1}
+{"step": 1710, "loss": 0.27519, "l1": 0.11503, "lpips": 0.05811, "wav": 0.24242, "seconds": 6621.4}
+{"step": 1720, "loss": 0.14298, "l1": 0.05144, "lpips": 0.03862, "wav": 0.11219, "seconds": 6676.4}
+{"step": 1730, "loss": 0.16331, "l1": 0.0606, "lpips": 0.04435, "wav": 0.13008, "seconds": 6730.9}
+{"step": 1740, "loss": 0.13982, "l1": 0.05278, "lpips": 0.0345, "wav": 0.1128, "seconds": 6785.3}
+{"step": 1750, "loss": 0.1479, "l1": 0.05352, "lpips": 0.04012, "wav": 0.11711, "seconds": 6839.7}
+{"val_step": 1750, "id": "VIDGEN5S_0380588", "latent_mse": 0.09308}
+{"step": 1760, "loss": 0.18934, "l1": 0.06572, "lpips": 0.05779, "wav": 0.14196, "seconds": 6894.6}
+{"step": 1770, "loss": 0.17896, "l1": 0.05863, "lpips": 0.05437, "wav": 0.12711, "seconds": 6949.1}
+{"step": 1780, "loss": 0.15931, "l1": 0.05294, "lpips": 0.04898, "wav": 0.11415, "seconds": 7003.6}
+{"step": 1790, "loss": 0.25038, "l1": 0.09576, "lpips": 0.0631, "wav": 0.20522, "seconds": 7058.0}
+{"step": 1800, "loss": 0.21919, "l1": 0.08647, "lpips": 0.04912, "wav": 0.18403, "seconds": 7112.5}
+{"step": 1810, "loss": 0.14612, "l1": 0.04678, "lpips": 0.04718, "wav": 0.10245, "seconds": 7167.0}
+{"step": 1820, "loss": 0.20374, "l1": 0.07578, "lpips": 0.05296, "wav": 0.16213, "seconds": 7221.6}
+{"step": 1830, "loss": 0.14144, "l1": 0.0469, "lpips": 0.04235, "wav": 0.1016, "seconds": 7276.0}
+{"step": 1840, "loss": 0.18293, "l1": 0.06231, "lpips": 0.05435, "wav": 0.13396, "seconds": 7330.5}
+{"step": 1850, "loss": 0.20309, "l1": 0.07423, "lpips": 0.05686, "wav": 0.1584, "seconds": 7384.9}
+{"step": 1860, "loss": 0.22313, "l1": 0.07977, "lpips": 0.06911, "wav": 0.17202, "seconds": 7439.9}
+{"step": 1870, "loss": 0.27182, "l1": 0.09862, "lpips": 0.08158, "wav": 0.21408, "seconds": 7494.4}
+{"step": 1880, "loss": 0.18401, "l1": 0.06144, "lpips": 0.05588, "wav": 0.13407, "seconds": 7548.8}
+{"step": 1890, "loss": 0.19445, "l1": 0.06709, "lpips": 0.04946, "wav": 0.14559, "seconds": 7603.2}
+{"step": 1900, "loss": 0.19419, "l1": 0.06552, "lpips": 0.05677, "wav": 0.14224, "seconds": 7657.7}
+{"step": 1910, "loss": 0.14233, "l1": 0.0472, "lpips": 0.04048, "wav": 0.1024, "seconds": 7712.1}
+{"step": 1920, "loss": 0.16004, "l1": 0.0621, "lpips": 0.03629, "wav": 0.13245, "seconds": 7766.6}
+{"step": 1930, "loss": 0.14882, "l1": 0.04905, "lpips": 0.04587, "wav": 0.10663, "seconds": 7821.1}
+{"step": 1940, "loss": 0.14708, "l1": 0.05213, "lpips": 0.03797, "wav": 0.11302, "seconds": 7875.5}
+{"step": 1950, "loss": 0.25775, "l1": 0.10303, "lpips": 0.06235, "wav": 0.21794, "seconds": 7929.9}
+{"step": 1960, "loss": 0.16788, "l1": 0.05588, "lpips": 0.05466, "wav": 0.12149, "seconds": 7984.4}
+{"step": 1970, "loss": 0.14797, "l1": 0.04599, "lpips": 0.04864, "wav": 0.09986, "seconds": 8038.8}
+{"step": 1980, "loss": 0.22388, "l1": 0.08896, "lpips": 0.04956, "wav": 0.18956, "seconds": 8093.3}
+{"step": 1990, "loss": 0.19819, "l1": 0.0737, "lpips": 0.05435, "wav": 0.15766, "seconds": 8147.7}
+{"step": 2000, "loss": 0.14308, "l1": 0.05044, "lpips": 0.04031, "wav": 0.10869, "seconds": 8202.7}
+{"val_step": 2000, "id": "VIDGEN5S_0380588", "latent_mse": 0.0963}
+{"step": 2010, "loss": 0.19788, "l1": 0.0712, "lpips": 0.05977, "wav": 0.15354, "seconds": 8261.6}
+{"step": 2020, "loss": 0.11493, "l1": 0.04065, "lpips": 0.02965, "wav": 0.08864, "seconds": 8316.1}
+{"step": 2030, "loss": 0.2824, "l1": 0.10994, "lpips": 0.07556, "wav": 0.23204, "seconds": 8370.5}
+{"step": 2040, "loss": 0.14226, "l1": 0.05268, "lpips": 0.03546, "wav": 0.11566, "seconds": 8424.9}
+{"step": 2050, "loss": 0.24196, "l1": 0.10125, "lpips": 0.04702, "wav": 0.21533, "seconds": 8479.3}
+{"step": 2060, "loss": 0.18279, "l1": 0.07035, "lpips": 0.04355, "wav": 0.15158, "seconds": 8533.7}
+{"step": 2070, "loss": 0.18024, "l1": 0.06677, "lpips": 0.04623, "wav": 0.14339, "seconds": 8588.1}
+{"step": 2080, "loss": 0.12975, "l1": 0.04538, "lpips": 0.03654, "wav": 0.09918, "seconds": 8642.6}
+{"step": 2090, "loss": 0.20783, "l1": 0.08647, "lpips": 0.04335, "wav": 0.18429, "seconds": 8697.0}
+{"step": 2100, "loss": 0.11793, "l1": 0.03808, "lpips": 0.03519, "wav": 0.08352, "seconds": 8751.5}
+{"step": 2110, "loss": 0.24403, "l1": 0.09703, "lpips": 0.04848, "wav": 0.20645, "seconds": 8805.9}
+{"step": 2120, "loss": 0.21474, "l1": 0.08023, "lpips": 0.05132, "wav": 0.17029, "seconds": 8860.3}
+{"step": 2130, "loss": 0.16938, "l1": 0.06161, "lpips": 0.04744, "wav": 0.13227, "seconds": 8914.7}
+{"step": 2140, "loss": 0.14694, "l1": 0.05456, "lpips": 0.03818, "wav": 0.1188, "seconds": 8969.6}
+{"step": 2150, "loss": 0.18423, "l1": 0.07142, "lpips": 0.04286, "wav": 0.1516, "seconds": 9024.0}
+{"step": 2160, "loss": 0.13962, "l1": 0.04823, "lpips": 0.04059, "wav": 0.10566, "seconds": 9078.5}
+{"step": 2170, "loss": 0.16195, "l1": 0.05227, "lpips": 0.05143, "wav": 0.11476, "seconds": 9132.9}
+{"step": 2180, "loss": 0.16408, "l1": 0.05102, "lpips": 0.05132, "wav": 0.11137, "seconds": 9187.3}
+{"step": 2190, "loss": 0.19031, "l1": 0.06412, "lpips": 0.06146, "wav": 0.14025, "seconds": 9241.7}
+{"step": 2200, "loss": 0.12079, "l1": 0.03714, "lpips": 0.03831, "wav": 0.08147, "seconds": 9296.1}
+{"step": 2210, "loss": 0.16307, "l1": 0.05733, "lpips": 0.04477, "wav": 0.12487, "seconds": 9350.6}
+{"step": 2220, "loss": 0.13342, "l1": 0.04285, "lpips": 0.04146, "wav": 0.09421, "seconds": 9405.0}
+{"step": 2230, "loss": 0.17063, "l1": 0.05495, "lpips": 0.05013, "wav": 0.11928, "seconds": 9459.4}
+{"step": 2240, "loss": 0.12942, "l1": 0.03999, "lpips": 0.04074, "wav": 0.08761, "seconds": 9513.8}
+{"step": 2250, "loss": 0.22052, "l1": 0.07329, "lpips": 0.07027, "wav": 0.15938, "seconds": 9568.2}
+{"val_step": 2250, "id": "VIDGEN5S_0380588", "latent_mse": 0.10044}
+{"step": 2260, "loss": 0.15017, "l1": 0.04652, "lpips": 0.04829, "wav": 0.10159, "seconds": 9623.1}
+{"step": 2270, "loss": 0.17506, "l1": 0.05925, "lpips": 0.05576, "wav": 0.12693, "seconds": 9677.5}
+{"step": 2280, "loss": 0.15424, "l1": 0.05308, "lpips": 0.04572, "wav": 0.11527, "seconds": 9732.5}
+{"step": 2290, "loss": 0.12339, "l1": 0.04308, "lpips": 0.03263, "wav": 0.09328, "seconds": 9786.9}
+{"step": 2300, "loss": 0.16216, "l1": 0.05927, "lpips": 0.04201, "wav": 0.12714, "seconds": 9841.3}
+{"step": 2310, "loss": 0.18538, "l1": 0.05891, "lpips": 0.06284, "wav": 0.12858, "seconds": 9895.7}
+{"step": 2320, "loss": 0.15767, "l1": 0.05718, "lpips": 0.04089, "wav": 0.12308, "seconds": 9950.2}
+{"step": 2330, "loss": 0.20388, "l1": 0.08154, "lpips": 0.04872, "wav": 0.17438, "seconds": 10004.6}
+{"step": 2340, "loss": 0.11514, "l1": 0.04048, "lpips": 0.03131, "wav": 0.08787, "seconds": 10059.0}
+{"step": 2350, "loss": 0.20304, "l1": 0.07681, "lpips": 0.0527, "wav": 0.16351, "seconds": 10113.4}
+{"step": 2360, "loss": 0.13636, "l1": 0.04714, "lpips": 0.03751, "wav": 0.10314, "seconds": 10167.9}
+{"step": 2370, "loss": 0.25136, "l1": 0.10814, "lpips": 0.0508, "wav": 0.23043, "seconds": 10222.3}
+{"step": 2380, "loss": 0.138, "l1": 0.05183, "lpips": 0.03443, "wav": 0.11174, "seconds": 10276.8}
+{"step": 2390, "loss": 0.20421, "l1": 0.08234, "lpips": 0.04854, "wav": 0.1743, "seconds": 10331.3}
+{"step": 2400, "loss": 0.1319, "l1": 0.04889, "lpips": 0.03336, "wav": 0.10692, "seconds": 10385.8}
+{"step": 2410, "loss": 0.27213, "l1": 0.11606, "lpips": 0.05765, "wav": 0.24371, "seconds": 10440.2}
+{"step": 2420, "loss": 0.13025, "l1": 0.04651, "lpips": 0.03535, "wav": 0.10026, "seconds": 10495.2}
+{"step": 2430, "loss": 0.19343, "l1": 0.0732, "lpips": 0.05136, "wav": 0.15659, "seconds": 10549.7}
+{"step": 2440, "loss": 0.13033, "l1": 0.04716, "lpips": 0.03431, "wav": 0.1027, "seconds": 10604.1}
+{"step": 2450, "loss": 0.30653, "l1": 0.13823, "lpips": 0.05246, "wav": 0.29069, "seconds": 10658.5}
+{"step": 2460, "loss": 0.1512, "l1": 0.05628, "lpips": 0.0412, "wav": 0.12175, "seconds": 10712.9}
+{"step": 2470, "loss": 0.19173, "l1": 0.07627, "lpips": 0.0445, "wav": 0.16319, "seconds": 10767.3}
+{"step": 2480, "loss": 0.11161, "l1": 0.03887, "lpips": 0.03118, "wav": 0.08413, "seconds": 10821.8}
+{"step": 2490, "loss": 0.12609, "l1": 0.04329, "lpips": 0.03609, "wav": 0.09407, "seconds": 10876.2}
+{"step": 2500, "loss": 0.16888, "l1": 0.06332, "lpips": 0.04235, "wav": 0.13546, "seconds": 10930.5}
+{"val_step": 2500, "id": "VIDGEN5S_0380588", "latent_mse": 0.08871}
+{"step": 2510, "loss": 0.16553, "l1": 0.06806, "lpips": 0.03477, "wav": 0.14482, "seconds": 10989.7}
+{"step": 2520, "loss": 0.15093, "l1": 0.05642, "lpips": 0.03862, "wav": 0.12299, "seconds": 11044.2}
+{"step": 2530, "loss": 0.1607, "l1": 0.06147, "lpips": 0.03961, "wav": 0.13349, "seconds": 11098.6}
+{"step": 2540, "loss": 0.20108, "l1": 0.066, "lpips": 0.06586, "wav": 0.14487, "seconds": 11153.1}
+{"step": 2550, "loss": 0.20512, "l1": 0.07846, "lpips": 0.05155, "wav": 0.16969, "seconds": 11207.5}
+{"step": 2560, "loss": 0.16152, "l1": 0.04921, "lpips": 0.0535, "wav": 0.10743, "seconds": 11262.5}
+{"step": 2570, "loss": 0.16674, "l1": 0.05557, "lpips": 0.05458, "wav": 0.12205, "seconds": 11316.9}
+{"step": 2580, "loss": 0.16262, "l1": 0.05513, "lpips": 0.04901, "wav": 0.11973, "seconds": 11371.4}
+{"step": 2590, "loss": 0.19631, "l1": 0.07296, "lpips": 0.04923, "wav": 0.1559, "seconds": 11425.9}
+{"step": 2600, "loss": 0.16745, "l1": 0.0613, "lpips": 0.04374, "wav": 0.13124, "seconds": 11480.4}
+{"step": 2610, "loss": 0.18891, "l1": 0.07186, "lpips": 0.04798, "wav": 0.15314, "seconds": 11534.8}
+{"step": 2620, "loss": 0.17922, "l1": 0.06123, "lpips": 0.05298, "wav": 0.13245, "seconds": 11589.2}
+{"step": 2630, "loss": 0.19635, "l1": 0.06612, "lpips": 0.06337, "wav": 0.14496, "seconds": 11643.6}
+{"step": 2640, "loss": 0.14815, "l1": 0.04976, "lpips": 0.04479, "wav": 0.10935, "seconds": 11698.1}
+{"step": 2650, "loss": 0.25276, "l1": 0.09412, "lpips": 0.07145, "wav": 0.20334, "seconds": 11752.5}
+{"step": 2660, "loss": 0.15156, "l1": 0.05197, "lpips": 0.04363, "wav": 0.11281, "seconds": 11807.0}
+{"step": 2670, "loss": 0.14375, "l1": 0.04682, "lpips": 0.04099, "wav": 0.10162, "seconds": 11861.4}
+{"step": 2680, "loss": 0.12759, "l1": 0.04391, "lpips": 0.03668, "wav": 0.09648, "seconds": 11915.9}
+{"step": 2690, "loss": 0.21603, "l1": 0.075, "lpips": 0.06622, "wav": 0.16129, "seconds": 11970.2}
+{"step": 2700, "loss": 0.12304, "l1": 0.04259, "lpips": 0.03475, "wav": 0.09253, "seconds": 12025.3}
+{"step": 2710, "loss": 0.1572, "l1": 0.05715, "lpips": 0.04138, "wav": 0.124, "seconds": 12079.8}
+{"step": 2720, "loss": 0.13911, "l1": 0.05058, "lpips": 0.03624, "wav": 0.11122, "seconds": 12134.1}
+{"step": 2730, "loss": 0.15887, "l1": 0.05736, "lpips": 0.03875, "wav": 0.12433, "seconds": 12188.6}
+{"step": 2740, "loss": 0.16173, "l1": 0.06117, "lpips": 0.04004, "wav": 0.13162, "seconds": 12243.0}
+{"step": 2750, "loss": 0.14375, "l1": 0.0501, "lpips": 0.03727, "wav": 0.10793, "seconds": 12297.4}
+{"val_step": 2750, "id": "VIDGEN5S_0380588", "latent_mse": 0.09306}
+{"step": 2760, "loss": 0.14138, "l1": 0.0518, "lpips": 0.03754, "wav": 0.11306, "seconds": 12352.3}
+{"step": 2770, "loss": 0.16869, "l1": 0.06255, "lpips": 0.04439, "wav": 0.13598, "seconds": 12406.7}
+{"step": 2780, "loss": 0.14015, "l1": 0.04643, "lpips": 0.03866, "wav": 0.10163, "seconds": 12461.2}
+{"step": 2790, "loss": 0.1492, "l1": 0.05041, "lpips": 0.03413, "wav": 0.10953, "seconds": 12515.6}
+{"step": 2800, "loss": 0.20034, "l1": 0.06876, "lpips": 0.06468, "wav": 0.14944, "seconds": 12570.0}
+{"step": 2810, "loss": 0.2208, "l1": 0.08642, "lpips": 0.05558, "wav": 0.18354, "seconds": 12624.4}
+{"step": 2820, "loss": 0.14586, "l1": 0.05466, "lpips": 0.03657, "wav": 0.11697, "seconds": 12678.9}
+{"step": 2830, "loss": 0.1195, "l1": 0.04073, "lpips": 0.03483, "wav": 0.08942, "seconds": 12733.4}
+{"step": 2840, "loss": 0.20886, "l1": 0.08597, "lpips": 0.04348, "wav": 0.18261, "seconds": 12788.3}
+{"step": 2850, "loss": 0.13841, "l1": 0.05202, "lpips": 0.03344, "wav": 0.11141, "seconds": 12842.7}
+{"step": 2860, "loss": 0.24033, "l1": 0.09069, "lpips": 0.06785, "wav": 0.19646, "seconds": 12897.2}
+{"step": 2870, "loss": 0.1223, "l1": 0.04094, "lpips": 0.03756, "wav": 0.08927, "seconds": 12951.6}
+{"step": 2880, "loss": 0.14454, "l1": 0.04631, "lpips": 0.04617, "wav": 0.10074, "seconds": 13006.1}
+{"step": 2890, "loss": 0.10775, "l1": 0.0375, "lpips": 0.02917, "wav": 0.08164, "seconds": 13060.6}
+{"step": 2900, "loss": 0.20672, "l1": 0.08257, "lpips": 0.04901, "wav": 0.17464, "seconds": 13115.0}
+{"step": 2910, "loss": 0.12466, "l1": 0.04734, "lpips": 0.02939, "wav": 0.10293, "seconds": 13169.4}
+{"step": 2920, "loss": 0.1486, "l1": 0.05624, "lpips": 0.03529, "wav": 0.12027, "seconds": 13223.9}
+{"step": 2930, "loss": 0.11792, "l1": 0.04154, "lpips": 0.03287, "wav": 0.09028, "seconds": 13278.3}
+{"step": 2940, "loss": 0.13921, "l1": 0.0535, "lpips": 0.03423, "wav": 0.11603, "seconds": 13332.6}
+{"step": 2950, "loss": 0.13216, "l1": 0.05137, "lpips": 0.03197, "wav": 0.10995, "seconds": 13387.1}
+{"step": 2960, "loss": 0.10741, "l1": 0.03829, "lpips": 0.03003, "wav": 0.0832, "seconds": 13441.4}
+{"step": 2970, "loss": 0.14093, "l1": 0.04661, "lpips": 0.04609, "wav": 0.10222, "seconds": 13495.8}
+{"step": 2980, "loss": 0.17574, "l1": 0.06412, "lpips": 0.04783, "wav": 0.13956, "seconds": 13550.7}
+{"step": 2990, "loss": 0.14954, "l1": 0.05816, "lpips": 0.03543, "wav": 0.12693, "seconds": 13605.1}
+{"step": 3000, "loss": 0.14704, "l1": 0.05247, "lpips": 0.04201, "wav": 0.11343, "seconds": 13659.6}
+{"val_step": 3000, "id": "VIDGEN5S_0380588", "latent_mse": 0.09561}
+Traceback (most recent call last):
+  File "/cache/songhua/h3-regenerator-self-forcing-dmd-20261104/experiment/train_v4_surgery_pixel.py", line 286, in <module>
+    main()
+  File "/cache/songhua/h3-regenerator-self-forcing-dmd-20261104/experiment/train_v4_surgery_pixel.py", line 252, in main
+    prefix = adapter.native_forward(draft[:, :, :cut].contiguous(), tuple(s["reference"].shape[-3:]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cache/songhua/h3-regenerator-self-forcing-dmd-20261104/experiment/causal_upscaler.py", line 143, in native_forward
+    raise ValueError("Expected [B,C,T,H,W] and target (same T,H,W)")
+ValueError: Expected [B,C,T,H,W] and target (same T,H,W)
+[ERROR] 2026-11-05-20:25:42 (PID:2822696, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception
