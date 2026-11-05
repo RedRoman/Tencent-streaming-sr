@@ -1,8 +1,10 @@
 # 原版 H3 causal Conv3d：teacher KD 与 decoder 像素监督
 
-**状态：正式训练进行中。** 预检通过后，已核实训练写入 **42/2000 次更新**，当前日志loss与梯度有限；运行summary为`running`。尚未到第200步dev验证，当前best_step0仅是初始候选，不是最终选模结果。这里记录截至42步的状态，**没有新的最终画质结论**。 这次按用户要求将小 CMN 学生替换为此前已因果化并微调的原版 H3 upscaler，沿用 CMN hybrid 的互补损失与数据。不会把准备完成、审计脚本存在或 FP32 tensor dtype 当作训练通过的证据。
+**状态：第一次正式尝试中断，第二次尝试已启动、正在初始化。** Attempt1已确认写入83条更新后退出，shell退出码143支持SIGTERM判断，发起者未知；未见Python traceback，未找到OOM证据。该次尚无包含optimizer/RNG的`latest.pt`，只有step0权重，无法恢复第83步的训练状态。原run目录与日志已按原字节归档，原合同和冻结模型/训练源码未改。Attempt2从同一初始权重、相同配置重新开始；本快照尚未确认新更新。**丢弃的83步不计入新run的2000步，也不拼接两次日志；没有新的最终画质结论。** 这次按用户要求将小 CMN 学生替换为此前已因果化并微调的原版 H3 upscaler，沿用 CMN hybrid 的互补损失与数据。不会把准备完成、审计脚本存在或 FP32 tensor dtype 当作训练通过的证据。
 
 初始长序列检查使用真实345M checkpoint、163个latent、2×2 latent空间尺寸。默认NPU卷积HF32设置下，未来扰动、前缀及未来梯度检查为零，但流式与整段输出的最大绝对差为 **0.00112772**，未达到原先固定的一致性阈值，原失败JSON/log保留。独立进程关闭卷积HF32后，扩展的 **16项检查全部通过、最大差为0**，阈值未改变。这支持数值执行路径随形状变化的解释，不能将它当作默认HF32模式的通过证据。训练和decoder保持先前默认数学设置以便比较recipe；真实生产尺寸12×21、37latent上的初始/预检末尾因果及分块检查均通过，最大差为0。正式训练后的相同真实尺寸检查和独立长序列HF32off检查仍须重新通过。
+
+中断发生于首次100步可恢复checkpoint之前，第二次尝试不能冒充resume。参见[attempt_history.json](evidence/attempt_history.json)与[interruption.json](evidence/failures/attempt1_terminated_step83/interruption.json)。记录保留失败run的steps、summary、contract及train.log原始SHA；这些SHA仍指归档原文件，不能用新尝试或公开副本的SHA替换。SIGTERM原因目前未知，现有证据不足以归因为OOM或某个任务。
 
 ## 模型与初始化
 
@@ -55,7 +57,7 @@ bash "$EXP_CODE_DIR/run_h3_conv3d_hybrid_preflight.sh" 5
 bash "$EXP_CODE_DIR/run_h3_conv3d_hybrid_pipeline.sh" 5
 ```
 
-当前入口按顺序保留默认精度长序列失败及其非流式因果检查，再运行HF32off严格诊断和像素预检；只有所需JSON、checkpoint与源码合同均一致且通过，pipeline才启动正式训练。本页截至42步的状态来自实际运行检查；入口本身不作为训练完成证据。新运行拒绝覆盖既有目录；不要用pipeline重复启动已有训练。训练恢复需要原始运行目录、相同源码/配置/数据/精度合同与optimizer/RNG，不声称bitwise resume已验证。旧checkpoint、模型、缓存latent、完整历史评估和teacher cache均在外部；本仓库精简JSON/视频不能代替外部tensor。
+当前入口按顺序保留默认精度长序列失败及其非流式因果检查，再运行HF32off严格诊断和像素预检；只有所需JSON、checkpoint与源码合同均一致且通过，pipeline才启动正式训练。原先截至42步的进度属于已中断的attempt1，不能当作attempt2进度；入口本身不作为训练完成证据。新运行拒绝覆盖既有目录；不要用pipeline重复启动已有训练。训练恢复需要原始运行目录、相同源码/配置/数据/精度合同与optimizer/RNG，不声称bitwise resume已验证。旧checkpoint、模型、缓存latent、完整历史评估和teacher cache均在外部；本仓库精简JSON/视频不能代替外部tensor。
 
 `H3_CONV3D_HYBRID_HOME`默认为`$EXP_ROOT/upscaler_conv3d_hybrid`；`H3_CONV3D_INITIAL_CHECKPOINT`为旧causal eWarp的best.pt；原版upscaler权重由`H3_UPSCALER_WEIGHTS`指定，pairs由`H3_ULTRAFLASH_PAIRS`指定，teacher缓存继承`H3_HYBRID_TEACHER_CACHE`。所有计算入口继续通过advisory lock和npu-smi检查卡占用。
 

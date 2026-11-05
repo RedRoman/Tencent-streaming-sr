@@ -1,5 +1,5 @@
 {
-  "status": "training_in_progress",
+  "status": "attempt2_initializing",
   "snapshot_date": "2026-11-05",
   "original_initial_checkpoint_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
   "original_training_source_sha256": {
@@ -162,8 +162,8 @@
     },
     {
       "public_path": "experiments/h3_conv3d_hybrid_20261105/README.md",
-      "public_bytes": 10061,
-      "public_sha256": "9f6e2d0575554f1268df1e1c508b4afb442047bb2ef7ea78d286a55c769d9d74",
+      "public_bytes": 10870,
+      "public_sha256": "fab539c8171de129d2394636c2c45f8958a551b963696f16633a752bb416bbc8",
       "source_artifact": null,
       "identical_to_executed_source": false,
       "changes": [
@@ -316,12 +316,38 @@
     },
     {
       "public_path": "experiments/h3_conv3d_hybrid_20261105/preflight_evidence.json",
-      "public_bytes": 3850,
-      "public_sha256": "ffd1781fcfd36f2c9319240331c2e734a0a8d175d9c8235b3eaec98f97ef7033",
+      "public_bytes": 6755,
+      "public_sha256": "5bf2b7963ae902be0d0bd869745023dffcbcff335fdb009eaa98cfa3bc6ee7b2",
       "source_artifact": null,
       "identical_to_executed_source": false,
       "changes": [
         "Derived compact evidence from the12 mapped raw preflight/diagnostic artifacts; no new training result."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/attempt_history.json",
+      "public_bytes": 2899,
+      "public_sha256": "a04dfb355af2251dd8500764501eb650df00ce8173c35182fca762ed412650c6",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/attempt_history.json",
+      "source_bytes": 2899,
+      "source_sha256": "a04dfb355af2251dd8500764501eb650df00ce8173c35182fca762ed412650c6",
+      "byte_identical_to_source_artifact": true,
+      "identical_to_executed_source": false,
+      "changes": [
+        "Byte-identical evidence copy; no private paths required redaction. Embedded SHA values retain archived attempt1 meaning."
+      ]
+    },
+    {
+      "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/failures/attempt1_terminated_step83/interruption.json",
+      "public_bytes": 2558,
+      "public_sha256": "5b43afb556582a3b8cd80678b4ed0bff1fec98e30a731446c78924442a7799d4",
+      "source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/failures/attempt1_terminated_step83/interruption.json",
+      "source_bytes": 2558,
+      "source_sha256": "5b43afb556582a3b8cd80678b4ed0bff1fec98e30a731446c78924442a7799d4",
+      "byte_identical_to_source_artifact": true,
+      "identical_to_executed_source": false,
+      "changes": [
+        "Byte-identical evidence copy; no private paths required redaction. Embedded SHA values retain archived attempt1 meaning."
       ]
     }
   ],
@@ -499,18 +525,29 @@
     "bash_syntax": "passed",
     "static_module_resolution": "passed; PathFinder without executing torch/model imports",
     "runtime_preflight": "8 updates verified with12 region parity checks, finite pixel gradients, frozen modules and unchanged source/precision contracts; separate failed/default and passed/HF32off long audits preserved",
-    "formal_training": "Active session, running summary and42 optimizer updates verified by parent; first scheduled dev validation pending, no final quality claim",
+    "formal_training": "Attempt1 terminated after83 logged updates with exit143/SIGTERM inferred,sender unknown,no Python traceback or found OOM evidence,and no resumable optimizer/RNG checkpoint. Attempt2 active andinitializing at snapshot; starts from same initial weights/config/source,no update asserted,no mixing logs or counting failed83 toward final2000.",
     "private_path_and_secret_scan": "passed: private infrastructure, HF/GitHub tokens, private keys, AWS keys, bearer tokens, signed URLs and credential literals",
     "public_env_chain": "passed with external dummy paths, model/NPU code not executed; EXP_CODE_DIR and first PYTHONPATH entry resolve to this snapshot",
-    "independent_read_only_review": "passed before42-step progress-only documentation update:25 mappedartifact SHA/bytes,19 module resolutions after public env,8 inherited shell SHA,14 original trainer contract SHA,original evidence SHA,Python AST,bash syntax,and private path scan; runtime/public code unchanged by later status update, mapped artifacts locally reverified"
+    "independent_read_only_review": "passed before42-step progress-only documentation update:25 mappedartifact SHA/bytes,19 module resolutions after public env,8 inherited shell SHA,14 original trainer contract SHA,original evidence SHA,Python AST,bash syntax,and private path scan; runtime/public code unchanged by later status update, mapped artifacts locally reverified",
+    "progress_disclosure_update": "Read original attempt_history/interruption JSON and verified all14 source hashes unchanged; added byte-identical public evidence and refreshed README/compact SHA. Original evidence untouched; no runtime source edit."
   },
   "runtime_environment_source_sha256": "64451094fa9aca640bc5bfc9ba77080330f858d1706ba74798ca4eb8834e4524",
   "runtime_environment_note": "The runtime used one local env.sh; the public environment intentionally inherits the listed existing portable shell chain. Their SHA values are separately recorded, not presented as identical sources.",
   "formal_progress_snapshot": {
-    "completed_updates": 42,
+    "attempt": 2,
+    "summary_status": "initializing",
+    "completed_updates_verified": 0,
     "requested_updates": 2000,
-    "summary_status": "running",
-    "best_step": 0,
-    "quality_conclusion": null
+    "previous_attempt_completed_logged_updates": 83,
+    "previous_attempt_updates_counted": 0,
+    "resume": false,
+    "quality_conclusion": null,
+    "observed_active_utc": "2026-11-05T07:54:03.850201+00:00"
+  },
+  "attempt_history": {
+    "public_path": "experiments/h3_conv3d_hybrid_20261105/evidence/attempt_history.json",
+    "source_sha256": "a04dfb355af2251dd8500764501eb650df00ce8173c35182fca762ed412650c6",
+    "interruption_source_sha256": "5b43afb556582a3b8cd80678b4ed0bff1fec98e30a731446c78924442a7799d4",
+    "model_and_training_source_unchanged": true
   }
 }

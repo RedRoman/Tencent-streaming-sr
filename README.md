@@ -1,6 +1,6 @@
 # Sol-H3 — 流式视频超分
 
-2026-11-05 启动 [原版因果 H3 Conv3d 互补训练](experiments/h3_conv3d_hybrid_20261105/README.md)：用已有 3.45 亿参数 causal eWarp 权重替换小 CMN，沿用相同 KD、latent/eWarp、冻结 decoder 像素损失和 2000 步计划。8 步实际尺寸预检通过；163 latent 长序列默认 HF32 分块数值检查未过、关闭 HF32 后通过，两种证据均保留。正式训练已通过初始化、16条dev的step0验证并开始参数更新，尚无本轮最终质量结论。
+2026-11-05 启动 [原版因果 H3 Conv3d 互补训练](experiments/h3_conv3d_hybrid_20261105/README.md)：用已有 3.45 亿参数 causal eWarp 权重替换小 CMN，沿用相同 KD、latent/eWarp、冻结 decoder 像素损失和 2000 步计划。8 步实际尺寸预检通过；163 latent 长序列默认 HF32 分块数值检查未过、关闭 HF32 后通过，两种证据均保留。首次运行在83条已确认更新后收到SIGTERM终止，因尚无恢复点，已完整保留证据并用相同冻结源码和配置从原初始化重开第二次运行；83步不计入新运行的2000步，尚无本轮最终质量结论。
 
 2026-11-05 完成 [H3 CMN 互补训练](experiments/h3_cmn_hybrid_20261105/README.md)：融合原版 H3 teacher 蒸馏、HR latent/eWarp 与冻结 decoder 的图像 L1/LPIPS，新增 2000 步、dev 选择 step1800。四例完整 5 秒视频相较原 CMN 平均 PSNR +0.4261 dB、LPIPS −16.67%，但仍落后旧 causal eWarp 和原版 teacher；16 条 test latent eWarp 退步 2.16%。[最终指标、曲线和对比视频](results/h3_cmn_hybrid_20261105/README.md)。
 
