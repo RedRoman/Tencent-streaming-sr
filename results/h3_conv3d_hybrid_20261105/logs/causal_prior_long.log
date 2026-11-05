@@ -1,0 +1,12 @@
+[MinimaxH3-3D] Loaded upscale model: upscaler
+  Params: 345,280,216 | Attn: forced off | Temporal: on (every=2, kernel=5) | Backend: Ascend NPU | Precision: fp32
+{"status": "failed", "mode": "actual_345m_checkpoint", "check_count": 12, "all_passed": false, "sources_unchanged": null, "seconds": 36.00002353172749, "error": "Conditional-causality check failed; see retained checks"}
+Traceback (most recent call last):
+  File "${EXP_ROOT}/experiment/audit_h3_conv3d_causality.py", line 271, in <module>
+    main()
+  File "${EXP_ROOT}/experiment/audit_h3_conv3d_causality.py", line 256, in main
+    execute(args, report)
+  File "${EXP_ROOT}/experiment/audit_h3_conv3d_causality.py", line 223, in execute
+    raise AssertionError('Conditional-causality check failed; see retained checks')
+AssertionError: Conditional-causality check failed; see retained checks
+[ERROR] 2026-11-05-15:13:43 (PID:2677963, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception

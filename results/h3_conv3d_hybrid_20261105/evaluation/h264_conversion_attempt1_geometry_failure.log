@@ -1,0 +1,16 @@
+{"output": "decoded/VIDGEN5S_0128747/conv3d_hybrid.h264.mp4", "exit_code": 0, "seconds": 2.0442591669852845}
+{"output": "decoded/VIDGEN5S_0128747/comparison.h264.mp4", "exit_code": 0, "seconds": 2.0468137910065707}
+{"output": "decoded/VIDGEN5S_0086441/conv3d_hybrid.h264.mp4", "exit_code": 0, "seconds": 2.058979333000025}
+{"output": "decoded/VIDGEN5S_0086441/comparison.h264.mp4", "exit_code": 0, "seconds": 2.0667719170160126}
+{"output": "decoded/VIDGEN5S_0829322/conv3d_hybrid.h264.mp4", "exit_code": 0, "seconds": 2.0647791250084992}
+{"output": "decoded/VIDGEN5S_0829322/comparison.h264.mp4", "exit_code": 0, "seconds": 2.0675182080012746}
+{"output": "decoded/VIDGEN5S_0380588/conv3d_hybrid.h264.mp4", "exit_code": 0, "seconds": 2.057673417002661}
+{"output": "decoded/VIDGEN5S_0380588/comparison.h264.mp4", "exit_code": 0, "seconds": 2.0619605839892756}
+Traceback (most recent call last):
+  File "/tmp/convert_h3_conv3d_hybrid_videos_20261105.py", line 116, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/convert_h3_conv3d_hybrid_videos_20261105.py", line 100, in main
+    assert (video['width'], video['height']) == expected_shape, video
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'asset_duration': {'epoch': 0, 'seconds': 5, 'timescale': 12288, 'value': 61440}, 'bytes': 5890738, 'cadence_errors': 0, 'codecs': ['avc1'], 'decoded_frames': 120, 'decoded_sizes': ['3840x392'], 'decoder': 'AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer', 'elapsed_seconds': 0.199415922164917, 'errors': [], 'first_pts': {'epoch': 0, 'seconds': 0, 'timescale': 12288, 'value': 0}, 'height': 392, 'invalid_pts': 0, 'last_pts': {'epoch': 0, 'seconds': 4.958333333333333, 'timescale': 12288, 'value': 60928}, 'last_sample_duration': {'epoch': 0, 'seconds': None, 'timescale': 0, 'value': 0}, 'max_cadence_error_seconds': 0, 'max_pts_delta_seconds': 0.041666666666666664, 'min_pts_delta_seconds': 0.041666666666666664, 'missing_image_buffers': 0, 'nominal_fps': 24, 'nonmonotonic_pts': 0, 'passed': True, 'path': 'decoded/VIDGEN5S_0128747/comparison.h264.mp4', 'pts_span_seconds': 4.958333333333333, 'reader_status': 'completed', 'sha256': '26599909c1d04ff1f245d10ff0c2cbbfa2ef7adc36e60c4226f1c8a9e1cde438', 'track_time_range': {'duration': {'epoch': 0, 'seconds': 5, 'timescale': 12288, 'value': 61440}, 'start': {'epoch': 0, 'seconds': 0, 'timescale': 1, 'value': 0}}, 'width': 3840}

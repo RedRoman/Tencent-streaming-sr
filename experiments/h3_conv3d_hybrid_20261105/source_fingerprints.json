@@ -1,5 +1,5 @@
 {
-  "status": "attempt2_initializing",
+  "status": "completed",
   "snapshot_date": "2026-11-05",
   "original_initial_checkpoint_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
   "original_training_source_sha256": {
@@ -162,8 +162,8 @@
     },
     {
       "public_path": "experiments/h3_conv3d_hybrid_20261105/README.md",
-      "public_bytes": 10870,
-      "public_sha256": "fab539c8171de129d2394636c2c45f8958a551b963696f16633a752bb416bbc8",
+      "public_bytes": 10291,
+      "public_sha256": "e6a72c4f07898ba2067d44418fda96f872d56e9149450fd0b717d36b46a15f30",
       "source_artifact": null,
       "identical_to_executed_source": false,
       "changes": [
@@ -525,11 +525,12 @@
     "bash_syntax": "passed",
     "static_module_resolution": "passed; PathFinder without executing torch/model imports",
     "runtime_preflight": "8 updates verified with12 region parity checks, finite pixel gradients, frozen modules and unchanged source/precision contracts; separate failed/default and passed/HF32off long audits preserved",
-    "formal_training": "Attempt1 terminated after83 logged updates with exit143/SIGTERM inferred,sender unknown,no Python traceback or found OOM evidence,and no resumable optimizer/RNG checkpoint. Attempt2 active andinitializing at snapshot; starts from same initial weights/config/source,no update asserted,no mixing logs or counting failed83 toward final2000.",
+    "formal_training": "Completed attempt2:2000 separate contiguous updates,step0 included in16dev selection,beststep1800;attempt1 archived83updates excluded,no concatenation. Completion/source audit documented in final result directory.",
     "private_path_and_secret_scan": "passed: private infrastructure, HF/GitHub tokens, private keys, AWS keys, bearer tokens, signed URLs and credential literals",
     "public_env_chain": "passed with external dummy paths, model/NPU code not executed; EXP_CODE_DIR and first PYTHONPATH entry resolve to this snapshot",
     "independent_read_only_review": "passed before42-step progress-only documentation update:25 mappedartifact SHA/bytes,19 module resolutions after public env,8 inherited shell SHA,14 original trainer contract SHA,original evidence SHA,Python AST,bash syntax,and private path scan; runtime/public code unchanged by later status update, mapped artifacts locally reverified",
-    "progress_disclosure_update": "Read original attempt_history/interruption JSON and verified all14 source hashes unchanged; added byte-identical public evidence and refreshed README/compact SHA. Original evidence untouched; no runtime source edit."
+    "progress_disclosure_update": "Read original attempt_history/interruption JSON and verified all14 source hashes unchanged; added byte-identical public evidence and refreshed README/compact SHA. Original evidence untouched; no runtime source edit.",
+    "final_result_scope": "16 reused test+3legacy latent;4 fixed videos with120 frames each;19 reloads,36 production-shape causal checks,16 separate final HF32off long-shape checks,28 source MP4 full-decode audits. Pixel quality is not an all16-test or blind-test claim."
   },
   "runtime_environment_source_sha256": "64451094fa9aca640bc5bfc9ba77080330f858d1706ba74798ca4eb8834e4524",
   "runtime_environment_note": "The runtime used one local env.sh; the public environment intentionally inherits the listed existing portable shell chain. Their SHA values are separately recorded, not presented as identical sources.",
@@ -549,5 +550,34 @@
     "source_sha256": "a04dfb355af2251dd8500764501eb650df00ce8173c35182fca762ed412650c6",
     "interruption_source_sha256": "5b43afb556582a3b8cd80678b4ed0bff1fec98e30a731446c78924442a7799d4",
     "model_and_training_source_unchanged": true
-  }
+  },
+  "latest_completion": {
+    "status": "completed",
+    "successful_attempt": 2,
+    "completed_updates": 2000,
+    "discarded_attempt1_updates": 83,
+    "best_step": 1800,
+    "best_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+    "original_training_summary_sha256": "e93b6a292dc606f4ce363b95ab1bd04e942e8abb3b38b37f3dcff36d5cf3ed00",
+    "original_evaluation_summary_sha256": "21d2092cec8c51fab3f2a4303f1158af624f9a0ce29b88f26f880b55ac343491",
+    "original_attempt_history_sha256": "e975533fa04840f10e9dd826504d57e0c6507ac19e1d2c0b98e0641df442c936",
+    "public_results_path": "results/h3_conv3d_hybrid_20261105",
+    "old_progress_and_evidence_fields_are_historical_snapshots": true
+  },
+  "historical_snapshot_fields": [
+    "formal_progress_snapshot",
+    "attempt_history",
+    "mapped preflight_evidence.json",
+    "mapped evidence/attempt_history.json"
+  ],
+  "historical_snapshot_notice": "These earlier progress/evidence fields and their byte hashes are intentionally retained as dated snapshots, not current run status. latest_completion and the final results directory report the completed attempt2. Original embedded hashes are never rewritten.",
+  "historical_source_snapshots": [
+    {
+      "original_source_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/attempt_history.json",
+      "original_source_sha256": "a04dfb355af2251dd8500764501eb650df00ce8173c35182fca762ed412650c6",
+      "preserved_local_artifact": "${EXP_ROOT}/upscaler_conv3d_hybrid/historical_snapshots/attempt_history_initializing.json",
+      "canonical_path_now_contains_new_completion_record": true,
+      "new_completion_record_sha256": "e975533fa04840f10e9dd826504d57e0c6507ac19e1d2c0b98e0641df442c936"
+    }
+  ]
 }

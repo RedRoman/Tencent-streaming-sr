@@ -1,0 +1,42 @@
+${H3_PYTHON_ENV}/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+${H3_PYTHON_ENV}/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.61it/s]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 23.99it/s]
+FFmpeg lacks libx264; exporting MP4 with native MPEG-4 Part 2 at q=2
+{"decoded": "VIDGEN5S_0128747", "variant": "pretrained", "vae_seconds": 12.607539599761367}
+{"decoded": "VIDGEN5S_0128747", "variant": "old_causal_ewarp", "vae_seconds": 11.814681133255363}
+{"decoded": "VIDGEN5S_0128747", "variant": "cmn", "vae_seconds": 11.822258308529854}
+{"decoded": "VIDGEN5S_0128747", "variant": "cmn_hybrid", "vae_seconds": 11.861095618456602}
+{"decoded": "VIDGEN5S_0128747", "variant": "conv3d_hybrid", "vae_seconds": 11.866544018499553}
+{"decoded": "VIDGEN5S_0128747", "variant": "reference", "vae_seconds": 11.86052099429071}
+${CANN_WORKSPACE}/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:96: SyntaxWarning: invalid escape sequence '\h'
+  """
+${CANN_WORKSPACE}/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_legacy/dynamic/gelu_grad_v2.py:156: SyntaxWarning: invalid escape sequence '\h'
+  """
+{"pixel_evaluated": "VIDGEN5S_0128747", "frames": 120, "variants": ["pretrained", "old_causal_ewarp", "cmn", "cmn_hybrid", "conv3d_hybrid"]}
+{"decoded": "VIDGEN5S_0086441", "variant": "pretrained", "vae_seconds": 11.790279561653733}
+{"decoded": "VIDGEN5S_0086441", "variant": "old_causal_ewarp", "vae_seconds": 11.829040840268135}
+{"decoded": "VIDGEN5S_0086441", "variant": "cmn", "vae_seconds": 11.859465127810836}
+{"decoded": "VIDGEN5S_0086441", "variant": "cmn_hybrid", "vae_seconds": 11.866108236834407}
+{"decoded": "VIDGEN5S_0086441", "variant": "conv3d_hybrid", "vae_seconds": 11.878574554808438}
+{"decoded": "VIDGEN5S_0086441", "variant": "reference", "vae_seconds": 11.885687566362321}
+{"pixel_evaluated": "VIDGEN5S_0086441", "frames": 120, "variants": ["pretrained", "old_causal_ewarp", "cmn", "cmn_hybrid", "conv3d_hybrid"]}
+{"decoded": "VIDGEN5S_0829322", "variant": "pretrained", "vae_seconds": 11.790599400177598}
+{"decoded": "VIDGEN5S_0829322", "variant": "old_causal_ewarp", "vae_seconds": 11.826947038061917}
+{"decoded": "VIDGEN5S_0829322", "variant": "cmn", "vae_seconds": 11.834428268484771}
+{"decoded": "VIDGEN5S_0829322", "variant": "cmn_hybrid", "vae_seconds": 11.849135833792388}
+{"decoded": "VIDGEN5S_0829322", "variant": "conv3d_hybrid", "vae_seconds": 11.914538723416626}
+{"decoded": "VIDGEN5S_0829322", "variant": "reference", "vae_seconds": 11.891214947216213}
+{"pixel_evaluated": "VIDGEN5S_0829322", "frames": 120, "variants": ["pretrained", "old_causal_ewarp", "cmn", "cmn_hybrid", "conv3d_hybrid"]}
+{"decoded": "VIDGEN5S_0380588", "variant": "pretrained", "vae_seconds": 11.800736717879772}
+{"decoded": "VIDGEN5S_0380588", "variant": "old_causal_ewarp", "vae_seconds": 11.831723329611123}
+{"decoded": "VIDGEN5S_0380588", "variant": "cmn", "vae_seconds": 11.830958710052073}
+{"decoded": "VIDGEN5S_0380588", "variant": "cmn_hybrid", "vae_seconds": 11.829636096023023}
+{"decoded": "VIDGEN5S_0380588", "variant": "conv3d_hybrid", "vae_seconds": 11.823360916227102}
+{"decoded": "VIDGEN5S_0380588", "variant": "reference", "vae_seconds": 11.871502355672419}
+{"pixel_evaluated": "VIDGEN5S_0380588", "frames": 120, "variants": ["pretrained", "old_causal_ewarp", "cmn", "cmn_hybrid", "conv3d_hybrid"]}
+{"decode_shard_completed": 0, "samples": ["VIDGEN5S_0128747", "VIDGEN5S_0086441", "VIDGEN5S_0829322", "VIDGEN5S_0380588"]}

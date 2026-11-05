@@ -1,0 +1,2850 @@
+{
+  "status": "failed",
+  "config": {
+    "device": "npu:0",
+    "initial": "${EXP_ROOT}/upscaler_ultraflash/ewarp_steps2000/best.pt",
+    "checkpoint_kind": "initial",
+    "upstream": "${EXP_ROOT}/upstream",
+    "weights": "${EXP_ROOT}/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+    "output": "${EXP_ROOT}/upscaler_conv3d_hybrid/causal_prior_long.json",
+    "seed": 20261105
+  },
+  "seed": 20261105,
+  "frames": 163,
+  "input_spatial": [
+    2,
+    2
+  ],
+  "output_spatial": [
+    4,
+    4
+  ],
+  "dtype": "float32",
+  "scope": "Student upscaler conditional on fixed native H3 latent inputs only",
+  "limitations": [
+    "Encoder, decoder, and source-pixel end-to-end causality are outside this audit.",
+    "Synthetic small spatial inputs test dependencies and caches, not long-video quality.",
+    "CPU reduced-width mode does not verify actual345M weights or NPU kernels."
+  ],
+  "sources": {
+    "audit": {
+      "path": "${EXP_ROOT}/experiment/audit_h3_conv3d_causality.py",
+      "sha256": "07bba1042c07f9641ee8a91bfc08eb063e5231204be52241c499e3e19be405dd",
+      "bytes": 15460
+    },
+    "wrapper": {
+      "path": "${EXP_ROOT}/experiment/h3_conv3d_hybrid.py",
+      "sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "bytes": 7416
+    },
+    "adapter": {
+      "path": "${EXP_ROOT}/experiment/causal_upscaler.py",
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "bytes": 10332
+    },
+    "loader_helper": {
+      "path": "${EXP_ROOT}/experiment/prepare_data.py",
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "bytes": 18150
+    },
+    "activation_checkpointing_helper": {
+      "path": "${EXP_ROOT}/experiment/train_upscaler_trial.py",
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "bytes": 21905
+    },
+    "upstream_loader": {
+      "path": "${EXP_ROOT}/upstream/open_h3/upscaler.py",
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "bytes": 1724
+    },
+    "upstream_architecture": {
+      "path": "${EXP_ROOT}/upstream/open_h3/upscaler_node.py",
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "bytes": 25218
+    }
+  },
+  "mode": "actual_345m_checkpoint",
+  "checkpoint": {
+    "path": "${EXP_ROOT}/upscaler_ultraflash/ewarp_steps2000/best_step_002000.pt",
+    "sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
+    "bytes": 1381225755
+  },
+  "released_weights": {
+    "path": "${EXP_ROOT}/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+    "sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+    "bytes": 690592992
+  },
+  "architecture": {
+    "model_class": "LatentResizer3D",
+    "model_config": {
+      "kind": "h3_causal_conv3d",
+      "latent_channels": 24,
+      "spatial_scale": 2,
+      "adapter_config": {
+        "version": 1,
+        "initialization": "aligned_past",
+        "temporal_padding": "left_only_zero",
+        "groupnorm": "per_frame",
+        "normalization": "D(U(N(native_normalized_H3_latent)))",
+        "spatial_scale": 2.0,
+        "temporal_chunking": false,
+        "dtype": "float32",
+        "saved_weights_already_initialized": true,
+        "reload_must_not_reinitialize_weights": true
+      }
+    },
+    "input_channels": 24,
+    "channels": 512,
+    "in_block_types": [
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D"
+    ],
+    "out_block_types": [
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D",
+      "ResBlockEmb3D",
+      "TemporalConv",
+      "ResBlockEmb3D"
+    ],
+    "parameter_count": 345280216,
+    "parameter_dtypes": [
+      "torch.float32"
+    ],
+    "original_model_training": false,
+    "wrapper_training": false,
+    "activation_checkpointing": false,
+    "temporal_structure": {
+      "temporal_convolution_counts_by_kernel": {
+        "3": 50,
+        "5": 12
+      },
+      "causal_history_latent_frames": 148,
+      "longest_convolution_receptive_field": 149,
+      "original_groupnorm_dependency": "whole input clip",
+      "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+    },
+    "convolutions": {
+      "conv_in": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.0.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.0.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.1.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "in_blocks.1.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.2.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.2.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.3.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.3.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.4.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "in_blocks.4.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.5.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.5.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.6.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.6.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.7.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "in_blocks.7.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.8.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.8.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.9.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.9.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.10.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "in_blocks.10.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.11.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.11.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.12.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.12.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.13.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "in_blocks.13.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.14.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.14.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.15.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.15.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.16.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "in_blocks.16.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.17.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "in_blocks.17.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.0.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.0.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.1.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "out_blocks.1.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.2.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.2.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.3.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.3.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.4.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "out_blocks.4.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.5.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.5.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.6.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.6.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.7.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "out_blocks.7.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.8.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.8.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.9.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.9.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.10.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "out_blocks.10.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.11.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.11.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.12.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.12.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.13.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "out_blocks.13.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.14.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.14.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.15.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.15.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.16.dwconv": {
+        "kernel": [
+          5,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          2,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 512
+      },
+      "out_blocks.16.pwconv": {
+        "kernel": [
+          1,
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          0,
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.17.in_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "out_blocks.17.out_layers.2": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      },
+      "conv_out": {
+        "kernel": [
+          3,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "original_padding": [
+          1,
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1,
+          1
+        ],
+        "groups": 1
+      }
+    },
+    "groupnorm": {
+      "in_blocks.0.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.0.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.1.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.2.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.2.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.3.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.3.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.4.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.5.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.5.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.6.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.6.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.7.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.8.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.8.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.9.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.9.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.10.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.11.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.11.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.12.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.12.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.13.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.14.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.14.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.15.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.15.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.16.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.17.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "in_blocks.17.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.0.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.0.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.1.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.2.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.2.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.3.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.3.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.4.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.5.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.5.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.6.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.6.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.7.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.8.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.8.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.9.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.9.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.10.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.11.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.11.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.12.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.12.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.13.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.14.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.14.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.15.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.15.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.16.norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.17.in_layers.0": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "out_blocks.17.out_norm": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      },
+      "norm_out": {
+        "groups": 32,
+        "channels": 512,
+        "eps": 1e-05,
+        "effective_time_scope": "per_frame"
+      }
+    },
+    "dropout": {
+      "in_blocks.0.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.2.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.3.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.5.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.6.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.8.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.9.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.11.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.12.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.14.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.15.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "in_blocks.17.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.0.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.2.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.3.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.5.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.6.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.8.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.9.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.11.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.12.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.14.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.15.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      },
+      "out_blocks.17.out_layers.1": {
+        "p": 0.1,
+        "training": false
+      }
+    },
+    "attention_modules": []
+  },
+  "checks": {
+    "future_cut_32": {
+      "passed": true,
+      "finite": true,
+      "allclose": true,
+      "max_abs": 0.0,
+      "bit_exact": true,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001
+    },
+    "prefix_cut_32": {
+      "passed": true,
+      "finite": true,
+      "allclose": true,
+      "max_abs": 0.0,
+      "bit_exact": true,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001
+    },
+    "future_cut_149": {
+      "passed": true,
+      "finite": true,
+      "allclose": true,
+      "max_abs": 0.0,
+      "bit_exact": true,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001
+    },
+    "prefix_cut_149": {
+      "passed": true,
+      "finite": true,
+      "allclose": true,
+      "max_abs": 0.0,
+      "bit_exact": true,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001
+    },
+    "future_cut_160": {
+      "passed": true,
+      "finite": true,
+      "allclose": true,
+      "max_abs": 0.0,
+      "bit_exact": true,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001
+    },
+    "prefix_cut_160": {
+      "passed": true,
+      "finite": true,
+      "allclose": true,
+      "max_abs": 0.0,
+      "bit_exact": true,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001
+    },
+    "stream_single_frames": {
+      "passed": false,
+      "finite": true,
+      "allclose": false,
+      "max_abs": 0.0011277198791503906,
+      "bit_exact": false,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cache": {
+        "processed_latent_frames": 163,
+        "cached_convolutions": 62,
+        "cache_bytes": 3015424,
+        "cache_temporal_lengths": {
+          "conv_in": 2,
+          "in_blocks.0.in_layers.2": 2,
+          "in_blocks.0.out_layers.2": 2,
+          "in_blocks.1.dwconv": 4,
+          "in_blocks.2.in_layers.2": 2,
+          "in_blocks.2.out_layers.2": 2,
+          "in_blocks.3.in_layers.2": 2,
+          "in_blocks.3.out_layers.2": 2,
+          "in_blocks.4.dwconv": 4,
+          "in_blocks.5.in_layers.2": 2,
+          "in_blocks.5.out_layers.2": 2,
+          "in_blocks.6.in_layers.2": 2,
+          "in_blocks.6.out_layers.2": 2,
+          "in_blocks.7.dwconv": 4,
+          "in_blocks.8.in_layers.2": 2,
+          "in_blocks.8.out_layers.2": 2,
+          "in_blocks.9.in_layers.2": 2,
+          "in_blocks.9.out_layers.2": 2,
+          "in_blocks.10.dwconv": 4,
+          "in_blocks.11.in_layers.2": 2,
+          "in_blocks.11.out_layers.2": 2,
+          "in_blocks.12.in_layers.2": 2,
+          "in_blocks.12.out_layers.2": 2,
+          "in_blocks.13.dwconv": 4,
+          "in_blocks.14.in_layers.2": 2,
+          "in_blocks.14.out_layers.2": 2,
+          "in_blocks.15.in_layers.2": 2,
+          "in_blocks.15.out_layers.2": 2,
+          "in_blocks.16.dwconv": 4,
+          "in_blocks.17.in_layers.2": 2,
+          "in_blocks.17.out_layers.2": 2,
+          "out_blocks.0.in_layers.2": 2,
+          "out_blocks.0.out_layers.2": 2,
+          "out_blocks.1.dwconv": 4,
+          "out_blocks.2.in_layers.2": 2,
+          "out_blocks.2.out_layers.2": 2,
+          "out_blocks.3.in_layers.2": 2,
+          "out_blocks.3.out_layers.2": 2,
+          "out_blocks.4.dwconv": 4,
+          "out_blocks.5.in_layers.2": 2,
+          "out_blocks.5.out_layers.2": 2,
+          "out_blocks.6.in_layers.2": 2,
+          "out_blocks.6.out_layers.2": 2,
+          "out_blocks.7.dwconv": 4,
+          "out_blocks.8.in_layers.2": 2,
+          "out_blocks.8.out_layers.2": 2,
+          "out_blocks.9.in_layers.2": 2,
+          "out_blocks.9.out_layers.2": 2,
+          "out_blocks.10.dwconv": 4,
+          "out_blocks.11.in_layers.2": 2,
+          "out_blocks.11.out_layers.2": 2,
+          "out_blocks.12.in_layers.2": 2,
+          "out_blocks.12.out_layers.2": 2,
+          "out_blocks.13.dwconv": 4,
+          "out_blocks.14.in_layers.2": 2,
+          "out_blocks.14.out_layers.2": 2,
+          "out_blocks.15.in_layers.2": 2,
+          "out_blocks.15.out_layers.2": 2,
+          "out_blocks.16.dwconv": 4,
+          "out_blocks.17.in_layers.2": 2,
+          "out_blocks.17.out_layers.2": 2,
+          "conv_out": 2
+        }
+      },
+      "cache_bytes_constant": true,
+      "processed_frames_correct": true
+    },
+    "stream_chunks32": {
+      "passed": false,
+      "finite": true,
+      "allclose": false,
+      "max_abs": 0.000629425048828125,
+      "bit_exact": false,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001,
+      "partition": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        3
+      ],
+      "cache": {
+        "processed_latent_frames": 163,
+        "cached_convolutions": 62,
+        "cache_bytes": 3015424,
+        "cache_temporal_lengths": {
+          "conv_in": 2,
+          "in_blocks.0.in_layers.2": 2,
+          "in_blocks.0.out_layers.2": 2,
+          "in_blocks.1.dwconv": 4,
+          "in_blocks.2.in_layers.2": 2,
+          "in_blocks.2.out_layers.2": 2,
+          "in_blocks.3.in_layers.2": 2,
+          "in_blocks.3.out_layers.2": 2,
+          "in_blocks.4.dwconv": 4,
+          "in_blocks.5.in_layers.2": 2,
+          "in_blocks.5.out_layers.2": 2,
+          "in_blocks.6.in_layers.2": 2,
+          "in_blocks.6.out_layers.2": 2,
+          "in_blocks.7.dwconv": 4,
+          "in_blocks.8.in_layers.2": 2,
+          "in_blocks.8.out_layers.2": 2,
+          "in_blocks.9.in_layers.2": 2,
+          "in_blocks.9.out_layers.2": 2,
+          "in_blocks.10.dwconv": 4,
+          "in_blocks.11.in_layers.2": 2,
+          "in_blocks.11.out_layers.2": 2,
+          "in_blocks.12.in_layers.2": 2,
+          "in_blocks.12.out_layers.2": 2,
+          "in_blocks.13.dwconv": 4,
+          "in_blocks.14.in_layers.2": 2,
+          "in_blocks.14.out_layers.2": 2,
+          "in_blocks.15.in_layers.2": 2,
+          "in_blocks.15.out_layers.2": 2,
+          "in_blocks.16.dwconv": 4,
+          "in_blocks.17.in_layers.2": 2,
+          "in_blocks.17.out_layers.2": 2,
+          "out_blocks.0.in_layers.2": 2,
+          "out_blocks.0.out_layers.2": 2,
+          "out_blocks.1.dwconv": 4,
+          "out_blocks.2.in_layers.2": 2,
+          "out_blocks.2.out_layers.2": 2,
+          "out_blocks.3.in_layers.2": 2,
+          "out_blocks.3.out_layers.2": 2,
+          "out_blocks.4.dwconv": 4,
+          "out_blocks.5.in_layers.2": 2,
+          "out_blocks.5.out_layers.2": 2,
+          "out_blocks.6.in_layers.2": 2,
+          "out_blocks.6.out_layers.2": 2,
+          "out_blocks.7.dwconv": 4,
+          "out_blocks.8.in_layers.2": 2,
+          "out_blocks.8.out_layers.2": 2,
+          "out_blocks.9.in_layers.2": 2,
+          "out_blocks.9.out_layers.2": 2,
+          "out_blocks.10.dwconv": 4,
+          "out_blocks.11.in_layers.2": 2,
+          "out_blocks.11.out_layers.2": 2,
+          "out_blocks.12.in_layers.2": 2,
+          "out_blocks.12.out_layers.2": 2,
+          "out_blocks.13.dwconv": 4,
+          "out_blocks.14.in_layers.2": 2,
+          "out_blocks.14.out_layers.2": 2,
+          "out_blocks.15.in_layers.2": 2,
+          "out_blocks.15.out_layers.2": 2,
+          "out_blocks.16.dwconv": 4,
+          "out_blocks.17.in_layers.2": 2,
+          "out_blocks.17.out_layers.2": 2,
+          "conv_out": 2
+        }
+      },
+      "cache_bytes_constant": true,
+      "processed_frames_correct": true
+    },
+    "stream_uneven": {
+      "passed": false,
+      "finite": true,
+      "allclose": false,
+      "max_abs": 0.0008175373077392578,
+      "bit_exact": false,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001,
+      "partition": [
+        3,
+        146,
+        14
+      ],
+      "cache": {
+        "processed_latent_frames": 163,
+        "cached_convolutions": 62,
+        "cache_bytes": 3015424,
+        "cache_temporal_lengths": {
+          "conv_in": 2,
+          "in_blocks.0.in_layers.2": 2,
+          "in_blocks.0.out_layers.2": 2,
+          "in_blocks.1.dwconv": 4,
+          "in_blocks.2.in_layers.2": 2,
+          "in_blocks.2.out_layers.2": 2,
+          "in_blocks.3.in_layers.2": 2,
+          "in_blocks.3.out_layers.2": 2,
+          "in_blocks.4.dwconv": 4,
+          "in_blocks.5.in_layers.2": 2,
+          "in_blocks.5.out_layers.2": 2,
+          "in_blocks.6.in_layers.2": 2,
+          "in_blocks.6.out_layers.2": 2,
+          "in_blocks.7.dwconv": 4,
+          "in_blocks.8.in_layers.2": 2,
+          "in_blocks.8.out_layers.2": 2,
+          "in_blocks.9.in_layers.2": 2,
+          "in_blocks.9.out_layers.2": 2,
+          "in_blocks.10.dwconv": 4,
+          "in_blocks.11.in_layers.2": 2,
+          "in_blocks.11.out_layers.2": 2,
+          "in_blocks.12.in_layers.2": 2,
+          "in_blocks.12.out_layers.2": 2,
+          "in_blocks.13.dwconv": 4,
+          "in_blocks.14.in_layers.2": 2,
+          "in_blocks.14.out_layers.2": 2,
+          "in_blocks.15.in_layers.2": 2,
+          "in_blocks.15.out_layers.2": 2,
+          "in_blocks.16.dwconv": 4,
+          "in_blocks.17.in_layers.2": 2,
+          "in_blocks.17.out_layers.2": 2,
+          "out_blocks.0.in_layers.2": 2,
+          "out_blocks.0.out_layers.2": 2,
+          "out_blocks.1.dwconv": 4,
+          "out_blocks.2.in_layers.2": 2,
+          "out_blocks.2.out_layers.2": 2,
+          "out_blocks.3.in_layers.2": 2,
+          "out_blocks.3.out_layers.2": 2,
+          "out_blocks.4.dwconv": 4,
+          "out_blocks.5.in_layers.2": 2,
+          "out_blocks.5.out_layers.2": 2,
+          "out_blocks.6.in_layers.2": 2,
+          "out_blocks.6.out_layers.2": 2,
+          "out_blocks.7.dwconv": 4,
+          "out_blocks.8.in_layers.2": 2,
+          "out_blocks.8.out_layers.2": 2,
+          "out_blocks.9.in_layers.2": 2,
+          "out_blocks.9.out_layers.2": 2,
+          "out_blocks.10.dwconv": 4,
+          "out_blocks.11.in_layers.2": 2,
+          "out_blocks.11.out_layers.2": 2,
+          "out_blocks.12.in_layers.2": 2,
+          "out_blocks.12.out_layers.2": 2,
+          "out_blocks.13.dwconv": 4,
+          "out_blocks.14.in_layers.2": 2,
+          "out_blocks.14.out_layers.2": 2,
+          "out_blocks.15.in_layers.2": 2,
+          "out_blocks.15.out_layers.2": 2,
+          "out_blocks.16.dwconv": 4,
+          "out_blocks.17.in_layers.2": 2,
+          "out_blocks.17.out_layers.2": 2,
+          "conv_out": 2
+        }
+      },
+      "cache_bytes_constant": true,
+      "processed_frames_correct": true
+    },
+    "reset_replay": {
+      "passed": true,
+      "finite": true,
+      "allclose": true,
+      "max_abs": 0.0,
+      "bit_exact": true,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001
+    },
+    "wrapper_forward_chunk": {
+      "passed": false,
+      "finite": true,
+      "allclose": false,
+      "max_abs": 0.0008175373077392578,
+      "bit_exact": false,
+      "atol": 3e-05,
+      "rtol": 3e-05,
+      "max_abs_limit": 0.0001,
+      "next_latent_index": 163
+    },
+    "input_gradient": {
+      "output_index": 149,
+      "structural_history_range": [
+        1,
+        149
+      ],
+      "future_150plus_max_abs": 0.0,
+      "excluded_index0_max_abs": 0.0,
+      "current149_max_abs": 0.29992666840553284,
+      "finite": true,
+      "passed": true,
+      "parameter_gradients_computed": false
+    }
+  },
+  "check_count": 12,
+  "all_passed": false,
+  "error_type": "AssertionError",
+  "error": "Conditional-causality check failed; see retained checks",
+  "traceback": "Traceback (most recent call last):\n  File \"${EXP_ROOT}/experiment/audit_h3_conv3d_causality.py\", line 256, in main\n    execute(args, report)\n  File \"${EXP_ROOT}/experiment/audit_h3_conv3d_causality.py\", line 223, in execute\n    raise AssertionError('Conditional-causality check failed; see retained checks')\nAssertionError: Conditional-causality check failed; see retained checks\n",
+  "seconds": 36.00002353172749
+}

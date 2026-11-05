@@ -1,0 +1,203 @@
+{
+  "schema_version": 2,
+  "status": "completed_with_documented_display_resize",
+  "acceptance": {
+    "video_count": 8,
+    "fully_decoded_frames_each": 120,
+    "fps": 24,
+    "duration_seconds": 5,
+    "codec": "H264/AVC",
+    "standalone_dimensions": [
+      672,
+      384
+    ],
+    "comparison_source_dimensions": [
+      4032,
+      412
+    ],
+    "comparison_output_dimensions": [
+      3840,
+      392
+    ],
+    "comparison_resize": "Observed PresetHighestQuality width limit of3840 with even-height rounding to392 on this macOS runtime",
+    "metric_scope": "Display copies only. All reported PSNR/LPIPS were measured on original uncompressed decoded RGB before MP4 encoding or this resize"
+  },
+  "conversion": {
+    "tool": "/usr/bin/avconvert",
+    "preset": "PresetHighestQuality",
+    "replace_flag": false,
+    "max_parallel_conversions": 2,
+    "original_helper_sha256": "7d018bf649f60cd5d549746894409e781c7d25b3e8af940e60072338f704fd8b",
+    "acceptance_helper_sha256": "96302a8bf45955e8fee7392a0f0872e61ec467a56039d68cb012d269d02a87d4",
+    "retained_failure": "The first helper had an additional original-size assertion. It failed after all8 conversions and all8 full decode audits succeeded. No H264 file was replaced."
+  },
+  "source_evaluation_summary_sha256": "21d2092cec8c51fab3f2a4303f1158af624f9a0ce29b88f26f880b55ac343491",
+  "full_decode_audit_sha256": "004dfc606b0cafa36e4fbb284cc470d2bde5844bc95410bbad587b066fdb1501",
+  "first_geometry_assertion_failure": {
+    "path": "h264_conversion_attempt1_geometry_failure.log",
+    "sha256": "4550b51dc0baa3d050320c8319afbcc84424b2553e04c12614dfe32344a68b73",
+    "evidence_origin": "Original command stdout/stderr copied verbatim from the execution-tool result"
+  },
+  "records": [
+    {
+      "source": "decoded/VIDGEN5S_0128747/comparison.mp4",
+      "source_sha256": "7ea672edc3f953fd55d848af867a3710ff93080531554d04241562e4cd192f7e",
+      "source_dimensions": [
+        4032,
+        412
+      ],
+      "source_bytes": 36166118,
+      "output": "decoded/VIDGEN5S_0128747/comparison.h264.mp4",
+      "output_sha256": "26599909c1d04ff1f245d10ff0c2cbbfa2ef7adc36e60c4226f1c8a9e1cde438",
+      "output_dimensions": [
+        3840,
+        392
+      ],
+      "output_bytes": 5890738,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": true
+    },
+    {
+      "source": "decoded/VIDGEN5S_0128747/conv3d_hybrid.mp4",
+      "source_sha256": "0d3b06e626ec9dfad5cd1d00335571bb400e35f63ac13ae38c6da2e10f368897",
+      "source_dimensions": [
+        672,
+        384
+      ],
+      "source_bytes": 4685921,
+      "output": "decoded/VIDGEN5S_0128747/conv3d_hybrid.h264.mp4",
+      "output_sha256": "e0cf8d219bcc105288eb2c4c3dd4c898bef92c385f901d9f60bce78247ae534e",
+      "output_dimensions": [
+        672,
+        384
+      ],
+      "output_bytes": 1539596,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": false
+    },
+    {
+      "source": "decoded/VIDGEN5S_0086441/comparison.mp4",
+      "source_sha256": "529d9c95c853adacf0412df832a71ed733b80cd58f73ac4206f2d5c099263789",
+      "source_dimensions": [
+        4032,
+        412
+      ],
+      "source_bytes": 16425329,
+      "output": "decoded/VIDGEN5S_0086441/comparison.h264.mp4",
+      "output_sha256": "6d86ca9c88e820123e68ec3a3b29c263b15fd59e8a93e8c1e83703421082c7a4",
+      "output_dimensions": [
+        3840,
+        392
+      ],
+      "output_bytes": 5875313,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": true
+    },
+    {
+      "source": "decoded/VIDGEN5S_0086441/conv3d_hybrid.mp4",
+      "source_sha256": "381eb85930167b6b53e5ecacb0c550a19720ba138ec60a663dbf4a68a7ca39cb",
+      "source_dimensions": [
+        672,
+        384
+      ],
+      "source_bytes": 2364090,
+      "output": "decoded/VIDGEN5S_0086441/conv3d_hybrid.h264.mp4",
+      "output_sha256": "b222f8b0b629d47da6c5851bb2797c6d67b8281f88a5df306e1ba5d62beec3a0",
+      "output_dimensions": [
+        672,
+        384
+      ],
+      "output_bytes": 1533664,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": false
+    },
+    {
+      "source": "decoded/VIDGEN5S_0829322/comparison.mp4",
+      "source_sha256": "6e13f89dda66653d11ac89c5363da888ecdc581eba414254759f4a8f09ed6617",
+      "source_dimensions": [
+        4032,
+        412
+      ],
+      "source_bytes": 14203941,
+      "output": "decoded/VIDGEN5S_0829322/comparison.h264.mp4",
+      "output_sha256": "fdf5160e6bb09862f2c011378004a07bddb29c2d35d92428390eb727ea0d0684",
+      "output_dimensions": [
+        3840,
+        392
+      ],
+      "output_bytes": 5885895,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": true
+    },
+    {
+      "source": "decoded/VIDGEN5S_0829322/conv3d_hybrid.mp4",
+      "source_sha256": "2e77c707a5512d893ce289d30561c4ece59164711a1908962217663187c1d41a",
+      "source_dimensions": [
+        672,
+        384
+      ],
+      "source_bytes": 1948086,
+      "output": "decoded/VIDGEN5S_0829322/conv3d_hybrid.h264.mp4",
+      "output_sha256": "f6e3d3fba20e67d70e720e5c0d03d52ce9335d355c6f4a867a2f0eac31bc97ec",
+      "output_dimensions": [
+        672,
+        384
+      ],
+      "output_bytes": 1540742,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": false
+    },
+    {
+      "source": "decoded/VIDGEN5S_0380588/comparison.mp4",
+      "source_sha256": "7bb4085fa49053d9eab0024a3fa20047786e0025812d6b7896bc862aac3c8e37",
+      "source_dimensions": [
+        4032,
+        412
+      ],
+      "source_bytes": 9027333,
+      "output": "decoded/VIDGEN5S_0380588/comparison.h264.mp4",
+      "output_sha256": "6a23e757908c68842f0da81d8de96464fb845dc170b8ebe61f082b661a71e495",
+      "output_dimensions": [
+        3840,
+        392
+      ],
+      "output_bytes": 5712453,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": true
+    },
+    {
+      "source": "decoded/VIDGEN5S_0380588/conv3d_hybrid.mp4",
+      "source_sha256": "35a9138d4ad162a423a1f587297aef057aab4b6aff8c639207be7a6a45dc5855",
+      "source_dimensions": [
+        672,
+        384
+      ],
+      "source_bytes": 1353675,
+      "output": "decoded/VIDGEN5S_0380588/conv3d_hybrid.h264.mp4",
+      "output_sha256": "498700338b6fb6fa94b4f877e16798504e6fac6a5af2f7899a1ce59f86b798ec",
+      "output_dimensions": [
+        672,
+        384
+      ],
+      "output_bytes": 1487296,
+      "decoded_frames": 120,
+      "fps": 24,
+      "duration_seconds": 5,
+      "spatially_resized_for_display": false
+    }
+  ]
+}

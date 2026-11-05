@@ -1,0 +1,46 @@
+{
+  "status": "terminated_before_first_resumable_checkpoint",
+  "observed_at_utc": "2026-11-05T07:53:08.535303+00:00",
+  "completed_logged_updates": 83,
+  "exit_code": 143,
+  "termination": "SIGTERM inferred from shell exit143; sender unknown",
+  "python_traceback": false,
+  "oom_evidence_found": false,
+  "resumable_checkpoint_present": false,
+  "recovery": "New attempt from original initialization, same frozen source/config; no claim of resuming step83; failed83 excluded from final2000",
+  "initial_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
+  "source_sha256": {
+    "train_h3_conv3d_hybrid.py": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7",
+    "h3_conv3d_hybrid.py": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+    "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+    "h3_hybrid_pixel.py": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+    "train_h3_cmn.py": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+    "h3_cmn.py": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+    "train_upscaler_ultraflash.py": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+    "ultraflash_ewarp.py": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+    "data_utils.py": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+    "prepare_data.py": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+    "train_upscaler_trial.py": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+    "evaluate_h3_cmn.py": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+    "evaluate_causal_upscaler_pixels.py": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+    "decode_results.py": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c"
+  },
+  "evidence_files": {
+    "kd_pixel_steps2000/steps.jsonl": {
+      "sha256": "2c4069e3ca43a360d879ccb49916e4f788601667b2d47d09bfc1d063f95d5537",
+      "bytes": 72051
+    },
+    "kd_pixel_steps2000/summary.json": {
+      "sha256": "bd68dd8f18578090bb90e73dccef11c70951c22ad360ded747b0bcc53faaddd0",
+      "bytes": 69742
+    },
+    "kd_pixel_steps2000/contract.json": {
+      "sha256": "7db3c41169a502c2dadaaca0b35c4f057749fbd865a88613f7af4cfd674930c7",
+      "bytes": 7605
+    },
+    "train.log": {
+      "sha256": "f4876ce07ef7f6a9e4160b05cc59d188bdfba20b710cc3d144674806cf865839",
+      "bytes": 18076
+    }
+  }
+}

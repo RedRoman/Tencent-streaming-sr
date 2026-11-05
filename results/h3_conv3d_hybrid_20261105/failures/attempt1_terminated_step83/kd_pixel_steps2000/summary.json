@@ -1,0 +1,2908 @@
+{
+  "status": "running",
+  "config": {
+    "pairs": "${H3_ULTRAFLASH_PAIRS}",
+    "teacher_cache": "${H3_HYBRID_TEACHER_CACHE}",
+    "initial": "${EXP_ROOT}/upscaler_ultraflash/ewarp_steps2000/best.pt",
+    "upstream": "${EXP_ROOT}/upstream",
+    "upscaler": "${EXP_ROOT}/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+    "base_model": "${H3_BASE_MODEL}",
+    "output": "${H3_CONV3D_HYBRID_RUN_DIR}",
+    "device": "npu:0",
+    "steps": 2000,
+    "lr": 3e-05,
+    "min_lr": 3e-06,
+    "warmup": 100,
+    "validate_every": 200,
+    "save_every": 100,
+    "kd_weight": 0.25,
+    "warp_weight": 0.1,
+    "l1_weight": 1.0,
+    "lpips_weight": 0.2,
+    "full_every": 4,
+    "seed": 20261105,
+    "preflight": false,
+    "recipe": "Original causal H3 Conv3d + frozen bidirectional teacher + HR decoder-aware pixels",
+    "initialization": "Warm start from selected old causal eWarp weights verbatim; no repeated aligned-past transform; fresh AdamW",
+    "prior_updates": 2050,
+    "prior_selected_run_step": 2000,
+    "prior_base_updates": 50,
+    "model_config": {
+      "kind": "h3_causal_conv3d",
+      "latent_channels": 24,
+      "spatial_scale": 2,
+      "adapter_config": {
+        "version": 1,
+        "initialization": "aligned_past",
+        "temporal_padding": "left_only_zero",
+        "groupnorm": "per_frame",
+        "normalization": "D(U(N(native_normalized_H3_latent)))",
+        "spatial_scale": 2.0,
+        "temporal_chunking": false,
+        "dtype": "float32",
+        "saved_weights_already_initialized": true,
+        "reload_must_not_reinitialize_weights": true
+      }
+    },
+    "activation_checkpointing": true,
+    "dropout_mode": "disabled: original model.eval() with parameter gradients enabled",
+    "dtype": "fp32",
+    "batch_size": 1,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "dtype_scope": "FP32 parameter/input tensors; NPU internal convolution/matmul precision follows the recorded HF32 flags",
+    "selection": "Minimum mean dev RGB L1 + 0.2 LPIPS on fixed full-spatial native temporal regions, including step0",
+    "pixel_target": "Frozen H3 decoder of HR reference latent; not teacher pixels",
+    "pixel_sampling": "One full-spatial native block every4 updates, otherwise one native spatial tile interior; 4 LPIPS frames per region",
+    "temporal_pixel_scope": "Non-crossfaded real RGB positions only; no synthetic tail RGB",
+    "padding": "MSE/KD first36, eWarp35; token36 retained as decoder context and can receive pixel gradients",
+    "causal_scope": "Causal latent upscaler only; frozen original decoder remains noncausal",
+    "test_reuse": "Retained16 test +3 legacy, previously inspected; not a new blind test",
+    "loss_definition": "1 HR latent MSE + .25 teacher latent MSE + .1 eWarp + 1 RGB L1 + .2 LPIPS alex v0.1"
+  },
+  "contract": {
+    "config": {
+      "pairs": "${H3_ULTRAFLASH_PAIRS}",
+      "teacher_cache": "${H3_HYBRID_TEACHER_CACHE}",
+      "initial": "${EXP_ROOT}/upscaler_ultraflash/ewarp_steps2000/best.pt",
+      "upstream": "${EXP_ROOT}/upstream",
+      "upscaler": "${EXP_ROOT}/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+      "base_model": "${H3_BASE_MODEL}",
+      "output": "${H3_CONV3D_HYBRID_RUN_DIR}",
+      "device": "npu:0",
+      "steps": 2000,
+      "lr": 3e-05,
+      "min_lr": 3e-06,
+      "warmup": 100,
+      "validate_every": 200,
+      "save_every": 100,
+      "kd_weight": 0.25,
+      "warp_weight": 0.1,
+      "l1_weight": 1.0,
+      "lpips_weight": 0.2,
+      "full_every": 4,
+      "seed": 20261105,
+      "preflight": false,
+      "recipe": "Original causal H3 Conv3d + frozen bidirectional teacher + HR decoder-aware pixels",
+      "initialization": "Warm start from selected old causal eWarp weights verbatim; no repeated aligned-past transform; fresh AdamW",
+      "prior_updates": 2050,
+      "prior_selected_run_step": 2000,
+      "prior_base_updates": 50,
+      "model_config": {
+        "kind": "h3_causal_conv3d",
+        "latent_channels": 24,
+        "spatial_scale": 2,
+        "adapter_config": {
+          "version": 1,
+          "initialization": "aligned_past",
+          "temporal_padding": "left_only_zero",
+          "groupnorm": "per_frame",
+          "normalization": "D(U(N(native_normalized_H3_latent)))",
+          "spatial_scale": 2.0,
+          "temporal_chunking": false,
+          "dtype": "float32",
+          "saved_weights_already_initialized": true,
+          "reload_must_not_reinitialize_weights": true
+        }
+      },
+      "activation_checkpointing": true,
+      "dropout_mode": "disabled: original model.eval() with parameter gradients enabled",
+      "dtype": "fp32",
+      "batch_size": 1,
+      "weight_decay": 0.01,
+      "grad_clip": 1.0,
+      "dtype_scope": "FP32 parameter/input tensors; NPU internal convolution/matmul precision follows the recorded HF32 flags",
+      "selection": "Minimum mean dev RGB L1 + 0.2 LPIPS on fixed full-spatial native temporal regions, including step0",
+      "pixel_target": "Frozen H3 decoder of HR reference latent; not teacher pixels",
+      "pixel_sampling": "One full-spatial native block every4 updates, otherwise one native spatial tile interior; 4 LPIPS frames per region",
+      "temporal_pixel_scope": "Non-crossfaded real RGB positions only; no synthetic tail RGB",
+      "padding": "MSE/KD first36, eWarp35; token36 retained as decoder context and can receive pixel gradients",
+      "causal_scope": "Causal latent upscaler only; frozen original decoder remains noncausal",
+      "test_reuse": "Retained16 test +3 legacy, previously inspected; not a new blind test",
+      "loss_definition": "1 HR latent MSE + .25 teacher latent MSE + .1 eWarp + 1 RGB L1 + .2 LPIPS alex v0.1"
+    },
+    "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+    "initial_sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
+    "execution_precision": {
+      "device_type": "npu",
+      "tensor_dtype": "float32",
+      "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+      "torch_version": "2.7.1+cpu",
+      "torch_npu_version": "2.7.1.post2",
+      "conv_allow_hf32": true,
+      "matmul_allow_hf32": false,
+      "float32_matmul_precision": "highest"
+    },
+    "teacher_cache_ready_sha256": "af538bebaab0ddcd8016278577efc23b78f575178f12a1620baeb3e0c661cb07",
+    "train_manifest_sha256": "8b7c5384baaef4672a7d4772c4ec86dd5186ec56251671fe50d9127a882af051",
+    "dev_manifest_sha256": "c062d8d812f8b3060a80816bddc34f056b3fcb10878dd8e768327b84ba1b8701",
+    "source_sha256": {
+      "train_h3_conv3d_hybrid.py": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7",
+      "h3_conv3d_hybrid.py": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "h3_hybrid_pixel.py": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+      "train_h3_cmn.py": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+      "h3_cmn.py": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+      "train_upscaler_ultraflash.py": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+      "ultraflash_ewarp.py": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+      "data_utils.py": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "prepare_data.py": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "train_upscaler_trial.py": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "evaluate_h3_cmn.py": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+      "evaluate_causal_upscaler_pixels.py": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+      "decode_results.py": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c"
+    },
+    "original_upscaler_fingerprint": {
+      "base_weights_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "loader_sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "loaded_node_sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "model_class": "LatentResizer3D",
+      "parameter_count": 345280216,
+      "state_dict_format": "original_upscaler",
+      "adapter_structure": {
+        "temporal_convolution_counts_by_kernel": {
+          "3": 50,
+          "5": 12
+        },
+        "causal_history_latent_frames": 148,
+        "longest_convolution_receptive_field": 149,
+        "original_groupnorm_dependency": "whole input clip",
+        "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+      }
+    },
+    "decoder_fingerprint": {
+      "weights": {
+        "config.json": {
+          "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+          "bytes": 2011
+        },
+        "diffusion_pytorch_model-00001-of-00003.safetensors": {
+          "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+          "bytes": 5061033024
+        },
+        "diffusion_pytorch_model-00002-of-00003.safetensors": {
+          "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+          "bytes": 4955986528
+        },
+        "diffusion_pytorch_model-00003-of-00003.safetensors": {
+          "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+          "bytes": 398539336
+        }
+      },
+      "implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "recipe": "Frozen FP32 native H3; spatial tile256/overlap64; native temporal7/stride5"
+    },
+    "lpips_fingerprint": {
+      "network": "alex",
+      "version": "0.1",
+      "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "linear_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+      "implementation_sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658"
+    },
+    "floating_parameter_dtypes": {
+      "student": [
+        "torch.float32"
+      ],
+      "decoder": [
+        "torch.float32"
+      ],
+      "lpips": [
+        "torch.float32"
+      ]
+    }
+  },
+  "train_count": 128,
+  "dev_count": 16,
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "parameter_count": 345280216,
+  "validation": [
+    {
+      "step": 0,
+      "samples": {
+        "VIDGEN5S_0030174": {
+          "loss": 0.12795832753181458,
+          "latent_mse": 0.10832573473453522,
+          "ewarp_l1": 0.19632594287395477,
+          "valid_warp_fraction": 0.870323121547699,
+          "pixel_l1": 0.02585713006556034,
+          "lpips": 0.2447662651538849,
+          "teacher_mse": 0.05198725312948227,
+          "selection_score": 0.07481038570404053,
+          "spec": {
+            "version": 1,
+            "block_index": 0,
+            "latent_start": 0,
+            "latent_stop": 7,
+            "raw_frame_indices": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "lpips_frame_indices": [
+              0,
+              5,
+              11,
+              16
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0093644": {
+          "loss": 0.08546401560306549,
+          "latent_mse": 0.06458687782287598,
+          "ewarp_l1": 0.20877137780189514,
+          "valid_warp_fraction": 0.9761054515838623,
+          "pixel_l1": 0.02676987648010254,
+          "lpips": 0.09396660327911377,
+          "teacher_mse": 0.056443724781274796,
+          "selection_score": 0.04556319862604141,
+          "spec": {
+            "version": 1,
+            "block_index": 1,
+            "latent_start": 5,
+            "latent_stop": 12,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0137908": {
+          "loss": 0.14481768012046814,
+          "latent_mse": 0.1166958212852478,
+          "ewarp_l1": 0.28121858835220337,
+          "valid_warp_fraction": 0.9368764162063599,
+          "pixel_l1": 0.039743706583976746,
+          "lpips": 0.1960666924715042,
+          "teacher_mse": 0.07276424765586853,
+          "selection_score": 0.07895705103874207,
+          "spec": {
+            "version": 1,
+            "block_index": 2,
+            "latent_start": 10,
+            "latent_stop": 17,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0144827": {
+          "loss": 0.10450157523155212,
+          "latent_mse": 0.08027558028697968,
+          "ewarp_l1": 0.24225996434688568,
+          "valid_warp_fraction": 0.9407595992088318,
+          "pixel_l1": 0.03700319677591324,
+          "lpips": 0.20134814083576202,
+          "teacher_mse": 0.04389895498752594,
+          "selection_score": 0.07727282494306564,
+          "spec": {
+            "version": 1,
+            "block_index": 3,
+            "latent_start": 15,
+            "latent_stop": 22,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0238125": {
+          "loss": 0.10139170289039612,
+          "latent_mse": 0.08167382329702377,
+          "ewarp_l1": 0.19717881083488464,
+          "valid_warp_fraction": 0.9838151931762695,
+          "pixel_l1": 0.022451888769865036,
+          "lpips": 0.17875054478645325,
+          "teacher_mse": 0.04289264976978302,
+          "selection_score": 0.058201998472213745,
+          "spec": {
+            "version": 1,
+            "block_index": 4,
+            "latent_start": 20,
+            "latent_stop": 27,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0295836": {
+          "loss": 0.12010066956281662,
+          "latent_mse": 0.09576686471700668,
+          "ewarp_l1": 0.24333801865577698,
+          "valid_warp_fraction": 0.9784296751022339,
+          "pixel_l1": 0.04023643210530281,
+          "lpips": 0.17142242193222046,
+          "teacher_mse": 0.06613972783088684,
+          "selection_score": 0.07452091574668884,
+          "spec": {
+            "version": 1,
+            "block_index": 5,
+            "latent_start": 25,
+            "latent_stop": 32,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0421364": {
+          "loss": 0.11872304975986481,
+          "latent_mse": 0.08731716871261597,
+          "ewarp_l1": 0.3140588104724884,
+          "valid_warp_fraction": 0.9121031761169434,
+          "pixel_l1": 0.030703293159604073,
+          "lpips": 0.15894293785095215,
+          "teacher_mse": 0.060820482671260834,
+          "selection_score": 0.06249187886714935,
+          "spec": {
+            "version": 1,
+            "block_index": 6,
+            "latent_start": 30,
+            "latent_stop": 37,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              23
+            ],
+            "rgb_frame_indices": [
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0518891": {
+          "loss": 0.09800058603286743,
+          "latent_mse": 0.08047757297754288,
+          "ewarp_l1": 0.17523013055324554,
+          "valid_warp_fraction": 0.9528344869613647,
+          "pixel_l1": 0.022793911397457123,
+          "lpips": 0.13690617680549622,
+          "teacher_mse": 0.048703406006097794,
+          "selection_score": 0.05017514526844025,
+          "spec": {
+            "version": 1,
+            "block_index": 0,
+            "latent_start": 0,
+            "latent_stop": 7,
+            "raw_frame_indices": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "lpips_frame_indices": [
+              0,
+              5,
+              11,
+              16
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0589299": {
+          "loss": 0.1442316621541977,
+          "latent_mse": 0.11933829635381699,
+          "ewarp_l1": 0.24893362820148468,
+          "valid_warp_fraction": 0.9237528443336487,
+          "pixel_l1": 0.08259129524230957,
+          "lpips": 0.34032687544822693,
+          "teacher_mse": 0.0490439310669899,
+          "selection_score": 0.15065667033195496,
+          "spec": {
+            "version": 1,
+            "block_index": 1,
+            "latent_start": 5,
+            "latent_stop": 12,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0657314": {
+          "loss": 0.13034209609031677,
+          "latent_mse": 0.10618086904287338,
+          "ewarp_l1": 0.24161222577095032,
+          "valid_warp_fraction": 0.9337301254272461,
+          "pixel_l1": 0.03831463307142258,
+          "lpips": 0.1578921526670456,
+          "teacher_mse": 0.07900165021419525,
+          "selection_score": 0.06989306211471558,
+          "spec": {
+            "version": 1,
+            "block_index": 2,
+            "latent_start": 10,
+            "latent_stop": 17,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0665341": {
+          "loss": 0.10979227721691132,
+          "latent_mse": 0.08808201551437378,
+          "ewarp_l1": 0.21710258722305298,
+          "valid_warp_fraction": 0.9768140316009521,
+          "pixel_l1": 0.041169390082359314,
+          "lpips": 0.20607206225395203,
+          "teacher_mse": 0.047037869691848755,
+          "selection_score": 0.08238380402326584,
+          "spec": {
+            "version": 1,
+            "block_index": 3,
+            "latent_start": 15,
+            "latent_stop": 22,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0760711": {
+          "loss": 0.1793166846036911,
+          "latent_mse": 0.15215528011322021,
+          "ewarp_l1": 0.27161407470703125,
+          "valid_warp_fraction": 0.9848923087120056,
+          "pixel_l1": 0.06249990686774254,
+          "lpips": 0.2861897945404053,
+          "teacher_mse": 0.06437303125858307,
+          "selection_score": 0.11973786354064941,
+          "spec": {
+            "version": 1,
+            "block_index": 4,
+            "latent_start": 20,
+            "latent_stop": 27,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0804105": {
+          "loss": 0.11896736174821854,
+          "latent_mse": 0.09628678858280182,
+          "ewarp_l1": 0.22680571675300598,
+          "valid_warp_fraction": 0.935232400894165,
+          "pixel_l1": 0.052178725600242615,
+          "lpips": 0.26402485370635986,
+          "teacher_mse": 0.0675758346915245,
+          "selection_score": 0.10498370230197906,
+          "spec": {
+            "version": 1,
+            "block_index": 5,
+            "latent_start": 25,
+            "latent_stop": 32,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0818010": {
+          "loss": 0.10858364403247833,
+          "latent_mse": 0.08684299886226654,
+          "ewarp_l1": 0.2174064815044403,
+          "valid_warp_fraction": 0.9695578217506409,
+          "pixel_l1": 0.0202274601906538,
+          "lpips": 0.0915609747171402,
+          "teacher_mse": 0.06192300468683243,
+          "selection_score": 0.03853965550661087,
+          "spec": {
+            "version": 1,
+            "block_index": 6,
+            "latent_start": 30,
+            "latent_stop": 37,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              23
+            ],
+            "rgb_frame_indices": [
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              8,
+              12
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0828086": {
+          "loss": 0.1146085262298584,
+          "latent_mse": 0.0914507657289505,
+          "ewarp_l1": 0.23157760500907898,
+          "valid_warp_fraction": 0.9768140316009521,
+          "pixel_l1": 0.044886600226163864,
+          "lpips": 0.24008092284202576,
+          "teacher_mse": 0.046227775514125824,
+          "selection_score": 0.0929027870297432,
+          "spec": {
+            "version": 1,
+            "block_index": 0,
+            "latent_start": 0,
+            "latent_stop": 7,
+            "raw_frame_indices": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "lpips_frame_indices": [
+              0,
+              5,
+              11,
+              16
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        },
+        "VIDGEN5S_0843422": {
+          "loss": 0.1063908040523529,
+          "latent_mse": 0.08571316301822662,
+          "ewarp_l1": 0.206776425242424,
+          "valid_warp_fraction": 0.9852890968322754,
+          "pixel_l1": 0.027079541236162186,
+          "lpips": 0.12989076972007751,
+          "teacher_mse": 0.05889718234539032,
+          "selection_score": 0.05305769294500351,
+          "spec": {
+            "version": 1,
+            "block_index": 1,
+            "latent_start": 5,
+            "latent_stop": 12,
+            "raw_frame_indices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "rgb_frame_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33
+            ],
+            "lpips_frame_indices": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "real_frames": 120,
+            "latent_frames": 37,
+            "spatial_mode": "full",
+            "tile_row": -1,
+            "tile_column": -1,
+            "latent_y": [
+              0,
+              24
+            ],
+            "latent_x": [
+              0,
+              42
+            ],
+            "raw_y": [
+              0,
+              384
+            ],
+            "raw_x": [
+              0,
+              672
+            ],
+            "rgb_y": [
+              0,
+              384
+            ],
+            "rgb_x": [
+              0,
+              672
+            ]
+          }
+        }
+      },
+      "mean": {
+        "loss": 0.1195744164288044,
+        "latent_mse": 0.09632310131564736,
+        "ewarp_l1": 0.2325131492689252,
+        "valid_warp_fraction": 0.9523331113159657,
+        "pixel_l1": 0.0384066867409274,
+        "lpips": 0.19363801181316376,
+        "teacher_mse": 0.05735817039385438,
+        "selection_score": 0.07713428977876902
+      }
+    }
+  ],
+  "completed_updates": 0,
+  "test_opened": false,
+  "initial_causality": {
+    "passed": true,
+    "checks": {
+      "future_1": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "prefix_1": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "future_13": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "prefix_13": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "future_25": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "prefix_25": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "chunks_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "chunks_5_5_5_5_5_5_5_2": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      },
+      "chunks_7_13_17": {
+        "passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0
+      }
+    }
+  },
+  "initial_dev": {
+    "samples": {
+      "VIDGEN5S_0030174": {
+        "loss": 0.12795832753181458,
+        "latent_mse": 0.10832573473453522,
+        "ewarp_l1": 0.19632594287395477,
+        "valid_warp_fraction": 0.870323121547699,
+        "pixel_l1": 0.02585713006556034,
+        "lpips": 0.2447662651538849,
+        "teacher_mse": 0.05198725312948227,
+        "selection_score": 0.07481038570404053,
+        "spec": {
+          "version": 1,
+          "block_index": 0,
+          "latent_start": 0,
+          "latent_stop": 7,
+          "raw_frame_indices": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "lpips_frame_indices": [
+            0,
+            5,
+            11,
+            16
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0093644": {
+        "loss": 0.08546401560306549,
+        "latent_mse": 0.06458687782287598,
+        "ewarp_l1": 0.20877137780189514,
+        "valid_warp_fraction": 0.9761054515838623,
+        "pixel_l1": 0.02676987648010254,
+        "lpips": 0.09396660327911377,
+        "teacher_mse": 0.056443724781274796,
+        "selection_score": 0.04556319862604141,
+        "spec": {
+          "version": 1,
+          "block_index": 1,
+          "latent_start": 5,
+          "latent_stop": 12,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0137908": {
+        "loss": 0.14481768012046814,
+        "latent_mse": 0.1166958212852478,
+        "ewarp_l1": 0.28121858835220337,
+        "valid_warp_fraction": 0.9368764162063599,
+        "pixel_l1": 0.039743706583976746,
+        "lpips": 0.1960666924715042,
+        "teacher_mse": 0.07276424765586853,
+        "selection_score": 0.07895705103874207,
+        "spec": {
+          "version": 1,
+          "block_index": 2,
+          "latent_start": 10,
+          "latent_stop": 17,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0144827": {
+        "loss": 0.10450157523155212,
+        "latent_mse": 0.08027558028697968,
+        "ewarp_l1": 0.24225996434688568,
+        "valid_warp_fraction": 0.9407595992088318,
+        "pixel_l1": 0.03700319677591324,
+        "lpips": 0.20134814083576202,
+        "teacher_mse": 0.04389895498752594,
+        "selection_score": 0.07727282494306564,
+        "spec": {
+          "version": 1,
+          "block_index": 3,
+          "latent_start": 15,
+          "latent_stop": 22,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0238125": {
+        "loss": 0.10139170289039612,
+        "latent_mse": 0.08167382329702377,
+        "ewarp_l1": 0.19717881083488464,
+        "valid_warp_fraction": 0.9838151931762695,
+        "pixel_l1": 0.022451888769865036,
+        "lpips": 0.17875054478645325,
+        "teacher_mse": 0.04289264976978302,
+        "selection_score": 0.058201998472213745,
+        "spec": {
+          "version": 1,
+          "block_index": 4,
+          "latent_start": 20,
+          "latent_stop": 27,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0295836": {
+        "loss": 0.12010066956281662,
+        "latent_mse": 0.09576686471700668,
+        "ewarp_l1": 0.24333801865577698,
+        "valid_warp_fraction": 0.9784296751022339,
+        "pixel_l1": 0.04023643210530281,
+        "lpips": 0.17142242193222046,
+        "teacher_mse": 0.06613972783088684,
+        "selection_score": 0.07452091574668884,
+        "spec": {
+          "version": 1,
+          "block_index": 5,
+          "latent_start": 25,
+          "latent_stop": 32,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0421364": {
+        "loss": 0.11872304975986481,
+        "latent_mse": 0.08731716871261597,
+        "ewarp_l1": 0.3140588104724884,
+        "valid_warp_fraction": 0.9121031761169434,
+        "pixel_l1": 0.030703293159604073,
+        "lpips": 0.15894293785095215,
+        "teacher_mse": 0.060820482671260834,
+        "selection_score": 0.06249187886714935,
+        "spec": {
+          "version": 1,
+          "block_index": 6,
+          "latent_start": 30,
+          "latent_stop": 37,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            23
+          ],
+          "rgb_frame_indices": [
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            8,
+            12
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0518891": {
+        "loss": 0.09800058603286743,
+        "latent_mse": 0.08047757297754288,
+        "ewarp_l1": 0.17523013055324554,
+        "valid_warp_fraction": 0.9528344869613647,
+        "pixel_l1": 0.022793911397457123,
+        "lpips": 0.13690617680549622,
+        "teacher_mse": 0.048703406006097794,
+        "selection_score": 0.05017514526844025,
+        "spec": {
+          "version": 1,
+          "block_index": 0,
+          "latent_start": 0,
+          "latent_stop": 7,
+          "raw_frame_indices": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "lpips_frame_indices": [
+            0,
+            5,
+            11,
+            16
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0589299": {
+        "loss": 0.1442316621541977,
+        "latent_mse": 0.11933829635381699,
+        "ewarp_l1": 0.24893362820148468,
+        "valid_warp_fraction": 0.9237528443336487,
+        "pixel_l1": 0.08259129524230957,
+        "lpips": 0.34032687544822693,
+        "teacher_mse": 0.0490439310669899,
+        "selection_score": 0.15065667033195496,
+        "spec": {
+          "version": 1,
+          "block_index": 1,
+          "latent_start": 5,
+          "latent_stop": 12,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0657314": {
+        "loss": 0.13034209609031677,
+        "latent_mse": 0.10618086904287338,
+        "ewarp_l1": 0.24161222577095032,
+        "valid_warp_fraction": 0.9337301254272461,
+        "pixel_l1": 0.03831463307142258,
+        "lpips": 0.1578921526670456,
+        "teacher_mse": 0.07900165021419525,
+        "selection_score": 0.06989306211471558,
+        "spec": {
+          "version": 1,
+          "block_index": 2,
+          "latent_start": 10,
+          "latent_stop": 17,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0665341": {
+        "loss": 0.10979227721691132,
+        "latent_mse": 0.08808201551437378,
+        "ewarp_l1": 0.21710258722305298,
+        "valid_warp_fraction": 0.9768140316009521,
+        "pixel_l1": 0.041169390082359314,
+        "lpips": 0.20607206225395203,
+        "teacher_mse": 0.047037869691848755,
+        "selection_score": 0.08238380402326584,
+        "spec": {
+          "version": 1,
+          "block_index": 3,
+          "latent_start": 15,
+          "latent_stop": 22,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0760711": {
+        "loss": 0.1793166846036911,
+        "latent_mse": 0.15215528011322021,
+        "ewarp_l1": 0.27161407470703125,
+        "valid_warp_fraction": 0.9848923087120056,
+        "pixel_l1": 0.06249990686774254,
+        "lpips": 0.2861897945404053,
+        "teacher_mse": 0.06437303125858307,
+        "selection_score": 0.11973786354064941,
+        "spec": {
+          "version": 1,
+          "block_index": 4,
+          "latent_start": 20,
+          "latent_stop": 27,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0804105": {
+        "loss": 0.11896736174821854,
+        "latent_mse": 0.09628678858280182,
+        "ewarp_l1": 0.22680571675300598,
+        "valid_warp_fraction": 0.935232400894165,
+        "pixel_l1": 0.052178725600242615,
+        "lpips": 0.26402485370635986,
+        "teacher_mse": 0.0675758346915245,
+        "selection_score": 0.10498370230197906,
+        "spec": {
+          "version": 1,
+          "block_index": 5,
+          "latent_start": 25,
+          "latent_stop": 32,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0818010": {
+        "loss": 0.10858364403247833,
+        "latent_mse": 0.08684299886226654,
+        "ewarp_l1": 0.2174064815044403,
+        "valid_warp_fraction": 0.9695578217506409,
+        "pixel_l1": 0.0202274601906538,
+        "lpips": 0.0915609747171402,
+        "teacher_mse": 0.06192300468683243,
+        "selection_score": 0.03853965550661087,
+        "spec": {
+          "version": 1,
+          "block_index": 6,
+          "latent_start": 30,
+          "latent_stop": 37,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            23
+          ],
+          "rgb_frame_indices": [
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            8,
+            12
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0828086": {
+        "loss": 0.1146085262298584,
+        "latent_mse": 0.0914507657289505,
+        "ewarp_l1": 0.23157760500907898,
+        "valid_warp_fraction": 0.9768140316009521,
+        "pixel_l1": 0.044886600226163864,
+        "lpips": 0.24008092284202576,
+        "teacher_mse": 0.046227775514125824,
+        "selection_score": 0.0929027870297432,
+        "spec": {
+          "version": 1,
+          "block_index": 0,
+          "latent_start": 0,
+          "latent_stop": 7,
+          "raw_frame_indices": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "lpips_frame_indices": [
+            0,
+            5,
+            11,
+            16
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      },
+      "VIDGEN5S_0843422": {
+        "loss": 0.1063908040523529,
+        "latent_mse": 0.08571316301822662,
+        "ewarp_l1": 0.206776425242424,
+        "valid_warp_fraction": 0.9852890968322754,
+        "pixel_l1": 0.027079541236162186,
+        "lpips": 0.12989076972007751,
+        "teacher_mse": 0.05889718234539032,
+        "selection_score": 0.05305769294500351,
+        "spec": {
+          "version": 1,
+          "block_index": 1,
+          "latent_start": 5,
+          "latent_stop": 12,
+          "raw_frame_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "rgb_frame_indices": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "lpips_frame_indices": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "real_frames": 120,
+          "latent_frames": 37,
+          "spatial_mode": "full",
+          "tile_row": -1,
+          "tile_column": -1,
+          "latent_y": [
+            0,
+            24
+          ],
+          "latent_x": [
+            0,
+            42
+          ],
+          "raw_y": [
+            0,
+            384
+          ],
+          "raw_x": [
+            0,
+            672
+          ],
+          "rgb_y": [
+            0,
+            384
+          ],
+          "rgb_x": [
+            0,
+            672
+          ]
+        }
+      }
+    },
+    "mean": {
+      "loss": 0.1195744164288044,
+      "latent_mse": 0.09632310131564736,
+      "ewarp_l1": 0.2325131492689252,
+      "valid_warp_fraction": 0.9523331113159657,
+      "pixel_l1": 0.0384066867409274,
+      "lpips": 0.19363801181316376,
+      "teacher_mse": 0.05735817039385438,
+      "selection_score": 0.07713428977876902
+    }
+  },
+  "best_step": 0,
+  "best_validation_score": 0.07713428977876902
+}

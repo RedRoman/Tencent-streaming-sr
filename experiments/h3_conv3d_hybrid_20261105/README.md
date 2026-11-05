@@ -1,10 +1,10 @@
 # 原版 H3 causal Conv3d：teacher KD 与 decoder 像素监督
 
-**状态：第一次正式尝试中断，第二次尝试已启动、正在初始化。** Attempt1已确认写入83条更新后退出，shell退出码143支持SIGTERM判断，发起者未知；未见Python traceback，未找到OOM证据。该次尚无包含optimizer/RNG的`latest.pt`，只有step0权重，无法恢复第83步的训练状态。原run目录与日志已按原字节归档，原合同和冻结模型/训练源码未改。Attempt2从同一初始权重、相同配置重新开始；本快照尚未确认新更新。**丢弃的83步不计入新run的2000步，也不拼接两次日志；没有新的最终画质结论。** 这次按用户要求将小 CMN 学生替换为此前已因果化并微调的原版 H3 upscaler，沿用 CMN hybrid 的互补损失与数据。不会把准备完成、审计脚本存在或 FP32 tensor dtype 当作训练通过的证据。
+**状态：attempt2训练与最终评估完成。** 本次独立完成2000次追加更新，dev含step0选中step1800，训练含dev验证144.57分钟。四例全120帧平均PSNR从旧causal eWarp的23.6710提高到24.9528dB，LPIPS从0.209778降至0.140644；16条复用test的latent MSE从0.094213降至0.082800，eWarp却从0.225486升至0.245695，如实保留这项退步。像素仅4固定例，非完整16-test像素评测，也不是新盲测。[最终指标、曲线及六列5秒视频](../../results/h3_conv3d_hybrid_20261105/README.md)。
 
-初始长序列检查使用真实345M checkpoint、163个latent、2×2 latent空间尺寸。默认NPU卷积HF32设置下，未来扰动、前缀及未来梯度检查为零，但流式与整段输出的最大绝对差为 **0.00112772**，未达到原先固定的一致性阈值，原失败JSON/log保留。独立进程关闭卷积HF32后，扩展的 **16项检查全部通过、最大差为0**，阈值未改变。这支持数值执行路径随形状变化的解释，不能将它当作默认HF32模式的通过证据。训练和decoder保持先前默认数学设置以便比较recipe；真实生产尺寸12×21、37latent上的初始/预检末尾因果及分块检查均通过，最大差为0。正式训练后的相同真实尺寸检查和独立长序列HF32off检查仍须重新通过。
+Attempt1在83条更新后退出，exit143支持SIGTERM判断，发起者未知，未见Python traceback或找到OOM证据。没有带optimizer/RNG的恢复点，因此attempt2从相同初始权重、冻结源码与配置重新开始，83步不计最终2000，也不拼接日志。本目录的preflight_evidence/attempt_history及其SHA映射保留为当时快照，旧initializing状态不是当前进度；当前完成记录见[最终attempt_history](../../results/h3_conv3d_hybrid_20261105/attempt_history.json)。旧失败文件和原始合同未改写。
 
-中断发生于首次100步可恢复checkpoint之前，第二次尝试不能冒充resume。参见[attempt_history.json](evidence/attempt_history.json)与[interruption.json](evidence/failures/attempt1_terminated_step83/interruption.json)。记录保留失败run的steps、summary、contract及train.log原始SHA；这些SHA仍指归档原文件，不能用新尝试或公开副本的SHA替换。SIGTERM原因目前未知，现有证据不足以归因为OOM或某个任务。
+四例生产尺寸37latent的36项因果/分块检查、19条独立checkpoint重载、28段原始MP4全片解码以及选中checkpoint的163latent HF32off审计均完成并通过。原先默认HF32、2×2小空间163latent stream/full最大差0.00112772的失败继续保留，不能用HF32off通过替换默认模式结论；原H3 decoder仍非因果，不宣称RGB端到端零前视。
 
 ## 模型与初始化
 
@@ -29,7 +29,7 @@ L = HR latent MSE +0.25 × teacher latent MSE
 
 像素监督复用原H3 decoder的7-latent、stride5时间窗与tile256/overlap64空间逻辑。每4步中1步使用完整空间时间区域，3步使用单个原生tile内部区域；所有时间窗口可采到的真实位置合计为90/120帧，排除跨窗混合位置与合成尾帧，含frame119。这不是每步覆盖90帧，也不是完整视频loss的无偏估计。L1使用所选区域全部有效帧和未截断浮点RGB；LPIPS每区域4帧，RGB clamp至[0,1]后映射到[-1,1]。预测解码保留autograd，目标解码no_grad；VAE和LPIPS参数冻结。
 
-计划追加2000 updates，batch1、fresh AdamW、weight decay0.01、clip1、lr3e-5→3e-6、warmup100、cosine、seed20261105。参数和输入存储为float32；执行合同另外记录NPU卷积/矩阵HF32标志、torch/torch_npu版本与matmul precision，不能仅凭dtype宣称内部运算使用完整FP32尾数。实际预检沿用conv HF32=true、matmul HF32=false，正式训练仍须保持并核验其合同设置。
+本轮已完成2000次追加updates，batch1、fresh AdamW、weight decay0.01、clip1、lr3e-5→3e-6、warmup100、cosine、seed20261105。参数和输入存储为float32；执行合同另外记录NPU卷积/矩阵HF32标志、torch/torch_npu版本与matmul precision，不能仅凭dtype宣称内部运算使用完整FP32尾数。实际预检沿用conv HF32=true、matmul HF32=false，正式训练保持同一设置，起止执行精度合同已核验未变。
 
 每200步在16个dev视频的固定完整空间时间区域计算 `RGB L1 +0.2 LPIPS` 均值，含step0，取首次最小值。该选模是区域代理，不是完整120帧分数。选定后才读取test/legacy；没有使用test选权重。
 
@@ -39,7 +39,7 @@ L = HR latent MSE +0.25 × teacher latent MSE
 
 真实345M权重已做163-latent小空间输入上的未来扰动、前缀、混合分块、cache reset、未来/历史输入梯度检查，结果按上述精度模式分别报告；8-update像素预检已完成。小空间检查验证运算与状态语义，不验证长视频主观质量。预检检查原生区域/完整解码一致性、decoder到学生的非零梯度、全部学生参数梯度连接以及冻结模块未变。任何失败保留原输出和源码SHA；修正后使用新的输出目录与对应合同。8-step预检训练含验证80.98秒，峰值allocated为25.7429GiB（reserved25.9883GiB），decoder到学生输出head梯度L2为0.3737575，冻结模块与执行精度设置未变；详细检查和原始/公开证据SHA见[preflight_evidence.json](preflight_evidence.json)与`evidence/`。
 
-正式训练后计划独立重载19条样本，四条固定视频进行36项因果/分块检查，并逐例解码全部120帧。六列顺序是 **原版teacher → 旧causal eWarp → 原CMN → CMN hybrid → 新Conv3d hybrid → decoded HR reference**。旧causal eWarp不是Method2的15M学生；本实验没有直接重训Method2。
+正式训练后已独立重载19条样本，四条固定视频的36项因果/分块检查均通过，并逐例解码全部120帧。六列顺序是 **原版teacher → 旧causal eWarp → 原CMN → CMN hybrid → 新Conv3d hybrid → decoded HR reference**。旧causal eWarp不是Method2的15M学生；本实验没有直接重训Method2。
 
 PSNR、LPIPS及时间差分指标在压缩前RGB上计算，主目标是相同冻结decoder解码的HR reference，源RGB仅作次要对照。像素指标只有3条选定test+1条legacy，不能写成16-test完整像素均值；latent指标覆盖16test+3legacy。完整视频还拆分prefix102/tail18，并对28个原始MP4做全片技术解码检查。发布的视频转换不参与指标计算。
 
@@ -57,7 +57,7 @@ bash "$EXP_CODE_DIR/run_h3_conv3d_hybrid_preflight.sh" 5
 bash "$EXP_CODE_DIR/run_h3_conv3d_hybrid_pipeline.sh" 5
 ```
 
-当前入口按顺序保留默认精度长序列失败及其非流式因果检查，再运行HF32off严格诊断和像素预检；只有所需JSON、checkpoint与源码合同均一致且通过，pipeline才启动正式训练。原先截至42步的进度属于已中断的attempt1，不能当作attempt2进度；入口本身不作为训练完成证据。新运行拒绝覆盖既有目录；不要用pipeline重复启动已有训练。训练恢复需要原始运行目录、相同源码/配置/数据/精度合同与optimizer/RNG，不声称bitwise resume已验证。旧checkpoint、模型、缓存latent、完整历史评估和teacher cache均在外部；本仓库精简JSON/视频不能代替外部tensor。
+当前入口按顺序保留默认精度长序列失败及其非流式因果检查，再运行HF32off严格诊断和像素预检；只有所需JSON、checkpoint与源码合同均一致且通过，pipeline才启动正式训练。旧42步与attempt2初始化记录均属于历史快照；当前完成证据以最终结果目录为准。入口本身不作为训练完成证据。新运行拒绝覆盖既有目录；不要用pipeline重复启动已有训练。训练恢复需要原始运行目录、相同源码/配置/数据/精度合同与optimizer/RNG，不声称bitwise resume已验证。旧checkpoint、模型、缓存latent、完整历史评估和teacher cache均在外部；本仓库精简JSON/视频不能代替外部tensor。
 
 `H3_CONV3D_HYBRID_HOME`默认为`$EXP_ROOT/upscaler_conv3d_hybrid`；`H3_CONV3D_INITIAL_CHECKPOINT`为旧causal eWarp的best.pt；原版upscaler权重由`H3_UPSCALER_WEIGHTS`指定，pairs由`H3_ULTRAFLASH_PAIRS`指定，teacher缓存继承`H3_HYBRID_TEACHER_CACHE`。所有计算入口继续通过advisory lock和npu-smi检查卡占用。
 

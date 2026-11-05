@@ -1,0 +1,876 @@
+{
+  "status": "ready",
+  "contract": {
+    "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+    "teacher_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+    "teacher": "Unmodified original bidirectional H3, wrapper D(U(N(z))), FP32",
+    "source_sha256": "cd2c0a0f04d5ca5f262b22b206db2874a5b57a7c4d4c538601bb1f031d445929"
+  },
+  "records": {
+    "VIDGEN5S_0009240": {
+      "path": "VIDGEN5S_0009240.pt",
+      "sha256": "242fb68a2b8827192eb38408b4569aec7f21e4fe994c4417c990ea8dba9fa3a3",
+      "split": "train",
+      "pair_sha256": "42fd0f2546484bb284a8b8af6e95a3fdd106899dba8c56a02c812b0a3c356311"
+    },
+    "VIDGEN5S_0012101": {
+      "path": "VIDGEN5S_0012101.pt",
+      "sha256": "65a590e34ef86bd796c329f5ba316742983a31fb8ef515c8a0c68d50ca17f29d",
+      "split": "train",
+      "pair_sha256": "f1b85cdf227fb2c9ea2424eac35965e3730e7a4592b8dd9b43e19fc0d508b5dc"
+    },
+    "VIDGEN5S_0012726": {
+      "path": "VIDGEN5S_0012726.pt",
+      "sha256": "ce8a48508bc0a1c3ec95612580b5bdde746f58e3df00b781cd60373cc4e47998",
+      "split": "train",
+      "pair_sha256": "69f18585a001d1a525f1f26070f8561f4a682a143c68346d4158b3ceee1617cc"
+    },
+    "VIDGEN5S_0014272": {
+      "path": "VIDGEN5S_0014272.pt",
+      "sha256": "5197b74729f017e954476e66cfafa2f0f808160f82859f3adaac68de38d35d88",
+      "split": "train",
+      "pair_sha256": "7ab778fd401a835b6d37f0ccd4ff7fd6abf51b0b3079139e3cf5bfe510c1c255"
+    },
+    "VIDGEN5S_0015154": {
+      "path": "VIDGEN5S_0015154.pt",
+      "sha256": "7391e934824048c7602d3af37d946abb13567cdcbaf8c434ef544dac6f3b27b2",
+      "split": "train",
+      "pair_sha256": "bbd3fee342eafce8df09a8a626242cb3c10633b1f0cefba583290cd1a90586da"
+    },
+    "VIDGEN5S_0019900": {
+      "path": "VIDGEN5S_0019900.pt",
+      "sha256": "171279e39a2764660106a9ffb45dc69dc2e49d0e5ffceab2e6a8b67edb38dbd9",
+      "split": "train",
+      "pair_sha256": "d39f3276b06934befdbf7ecec02db3ec8f1a704e332fc2066bc477f9cb394bc8"
+    },
+    "VIDGEN5S_0022700": {
+      "path": "VIDGEN5S_0022700.pt",
+      "sha256": "551eb70484a8c84dd9c062d9bf9aa7708db4dd564402f6b7c486242a4e503fc9",
+      "split": "train",
+      "pair_sha256": "9a18ef168d95cd7fa1ff7e75ebbad553b39528a0f6e1b2f2ce4fee4a445a8cb3"
+    },
+    "VIDGEN5S_0025613": {
+      "path": "VIDGEN5S_0025613.pt",
+      "sha256": "bf9f0f74bad9751a205c17bebfa47d29c7673f478a685b2130ef945bf7b92a19",
+      "split": "train",
+      "pair_sha256": "7f5dfc9e330c6e0ad32e8238d4570e3cfc2cfbcce96789252d2163937fd76f42"
+    },
+    "VIDGEN5S_0026937": {
+      "path": "VIDGEN5S_0026937.pt",
+      "sha256": "943da28acd4d0744f359313b021fa0c14876d11570a908cf8641973ebd29a1d6",
+      "split": "train",
+      "pair_sha256": "0a050cc9ce1e5fd0a48d18be7f4b5aef0cea6372fd1936d630fed90e27a756b4"
+    },
+    "VIDGEN5S_0029421": {
+      "path": "VIDGEN5S_0029421.pt",
+      "sha256": "6ae2fba881341ad326f31e2176f8710b20d688d1f1443c034dee2b049625af64",
+      "split": "train",
+      "pair_sha256": "173da5322bd5197a130adab936f93e2e4e1821b24c6522f99fca69767b1a629a"
+    },
+    "VIDGEN5S_0030985": {
+      "path": "VIDGEN5S_0030985.pt",
+      "sha256": "60e1f28d61975f384fdef9831283d40792795eef17ebf1852a5bdfdcb48d255d",
+      "split": "train",
+      "pair_sha256": "a349a54e0238f93707c551cc23b6e9a68fa50e81e8da8923772af4ad3dddad7b"
+    },
+    "VIDGEN5S_0036531": {
+      "path": "VIDGEN5S_0036531.pt",
+      "sha256": "eedba2b52104388cedfa4887c34b5361a30d5d971101f615f6201c932217228a",
+      "split": "train",
+      "pair_sha256": "265453545d9d231345cf5eced6ac4c9050972390d78197162b5797c86540d98b"
+    },
+    "VIDGEN5S_0054026": {
+      "path": "VIDGEN5S_0054026.pt",
+      "sha256": "0a306534de80f98401a000dee6e30254ae91e1535879b76e4bb845a38436d288",
+      "split": "train",
+      "pair_sha256": "a8dcaa937eab0a214040ab008a050cacce832900c210814e8de6910060783837"
+    },
+    "VIDGEN5S_0056204": {
+      "path": "VIDGEN5S_0056204.pt",
+      "sha256": "d1627981e47645dbe88b130e5af3344cb72367ab5374ada6c07de3ab4cf176b7",
+      "split": "train",
+      "pair_sha256": "8905db71cb99da50bb37cc155e4087139d00fde5597e232a6385190b8ef56b51"
+    },
+    "VIDGEN5S_0056841": {
+      "path": "VIDGEN5S_0056841.pt",
+      "sha256": "cc8bdc963e384c5e35fc9ba3afc1b3e0d3d395df2f78b5ad230af25595527d46",
+      "split": "train",
+      "pair_sha256": "ac989612338dca47405c01ee55a7ee5fe3a430dd5878d548e1adbe7671a53cfd"
+    },
+    "VIDGEN5S_0057030": {
+      "path": "VIDGEN5S_0057030.pt",
+      "sha256": "67726ff4bc3040df46d51793e401fbb2b0cff4c868d1cd3c3e6497f879dfde6a",
+      "split": "train",
+      "pair_sha256": "74ad26a264cf71ecaff0ee506de7b79dc825f7ca323671b9d2a475af2077a7fc"
+    },
+    "VIDGEN5S_0065635": {
+      "path": "VIDGEN5S_0065635.pt",
+      "sha256": "cbf581120ac13186130f4bb131cc67fbad3448e78296b7769efff7fdc24849e7",
+      "split": "train",
+      "pair_sha256": "c6f543321b2ab69690afc7824a27517391e1d47e2f2cd6b1ec2c471b9ff127be"
+    },
+    "VIDGEN5S_0065736": {
+      "path": "VIDGEN5S_0065736.pt",
+      "sha256": "a15bc88aeee770b38c13f7667f5091e99a8881475156b6acf49eba1d2e090e2b",
+      "split": "train",
+      "pair_sha256": "32aac3cbb8b0b7fda29a2e0158184c4c2b06ee7390602d6e80eadc0007f263dd"
+    },
+    "VIDGEN5S_0067831": {
+      "path": "VIDGEN5S_0067831.pt",
+      "sha256": "84b292664e3af849da03ad1d5f790f996210f2b62e384123d810b8cf0631f9ab",
+      "split": "train",
+      "pair_sha256": "c899b639bab0d603e30306b62cca97491efe364d0d1b14e1d7c1eb7e065d2d06"
+    },
+    "VIDGEN5S_0074062": {
+      "path": "VIDGEN5S_0074062.pt",
+      "sha256": "c23e788cb6be1a6d1144d81fd5971c83a9feba51e809c7d1c9c0de23bcbef520",
+      "split": "train",
+      "pair_sha256": "474ff274903df2ca6cdad136321cabb80ba9c4407da303af0fc7c59ff7845c1b"
+    },
+    "VIDGEN5S_0077840": {
+      "path": "VIDGEN5S_0077840.pt",
+      "sha256": "f499bccbfd363cfc27f4008d92ddbe60cb24fc2a049c6e9a7bbdd83e586f29ab",
+      "split": "train",
+      "pair_sha256": "bfbcc71cb0ccbc914831826a8f74ad99be42dd904dcf5d0ab9988ac5abcb4891"
+    },
+    "VIDGEN5S_0078947": {
+      "path": "VIDGEN5S_0078947.pt",
+      "sha256": "fdde49c9f8f093d704569a038aba3776924bc46fcf8309c0c6046b2f69316cb9",
+      "split": "train",
+      "pair_sha256": "abd4bc6a61cf0e2017d4994cb0070d4486364103fa908ae574d32e549647d17a"
+    },
+    "VIDGEN5S_0084263": {
+      "path": "VIDGEN5S_0084263.pt",
+      "sha256": "f1abeabeeea99833bfadc4e82544fadad54a5ca6322b0515caabeee0e62f0849",
+      "split": "train",
+      "pair_sha256": "0567fa213f34a871d64c31cff9cdf80c8b623a15c8361cba352edeb7589560c1"
+    },
+    "VIDGEN5S_0084311": {
+      "path": "VIDGEN5S_0084311.pt",
+      "sha256": "969bc1cb15f66feb86b877c5e04f61ddc7f8f9a81796c3cbd5a07b9c9bacd3d9",
+      "split": "train",
+      "pair_sha256": "a1619a7784a705671b04cdf900d1346455278d41b8fecb27ce78fa716acb85a5"
+    },
+    "VIDGEN5S_0089479": {
+      "path": "VIDGEN5S_0089479.pt",
+      "sha256": "ddc374f1814ecf2b84a61ff32f2eca0ac5e221eea91c87f4c41e68df0aacd135",
+      "split": "train",
+      "pair_sha256": "df59192a007bf67fc9af8808825bce4a9a22d3db29990b907d99df773b6ba240"
+    },
+    "VIDGEN5S_0102034": {
+      "path": "VIDGEN5S_0102034.pt",
+      "sha256": "5985fba868a40d0cd7db11eef4ce387b5adc1a55c2e57b39534a5493a06e2af7",
+      "split": "train",
+      "pair_sha256": "f4196cb67c98eb3f4c633f0b0fb069fff1b83abc905bbdf13bb6f112ba67e9f1"
+    },
+    "VIDGEN5S_0106391": {
+      "path": "VIDGEN5S_0106391.pt",
+      "sha256": "ade8ab27bcc8beb8eaff00c47355ece34e4fd2672cc98de588f6328ed9b081f3",
+      "split": "train",
+      "pair_sha256": "4a994be1d1d965736fed9f250d06a55df16d6a3bfffbb8216a6b07a8aae16857"
+    },
+    "VIDGEN5S_0107349": {
+      "path": "VIDGEN5S_0107349.pt",
+      "sha256": "378de2bb1300df947c6e735bca421c77d98de6fce50ad9f6e64cc704561bfd01",
+      "split": "train",
+      "pair_sha256": "85e3b16578bce2375d7055e3cbe69bdce3501bb48a65e3c8a36d67423b6991c8"
+    },
+    "VIDGEN5S_0110378": {
+      "path": "VIDGEN5S_0110378.pt",
+      "sha256": "1ba1689157fc74ed29146800f49535bceedaebbca7daf799e831ccc70adfc5db",
+      "split": "train",
+      "pair_sha256": "914542ecd69fbec7fd4156bfbfd9fe4706a0c30fb5b7b6668a8852a0e44527d7"
+    },
+    "VIDGEN5S_0112030": {
+      "path": "VIDGEN5S_0112030.pt",
+      "sha256": "f8a38869f05748b61fa9806480c8def302c3a09ff32cd2aa1aad1835c2e5807f",
+      "split": "train",
+      "pair_sha256": "20274b8f025e2e067301c48ad4cbc6bc8e988f07c85645ffd807bbcce73a3120"
+    },
+    "VIDGEN5S_0115908": {
+      "path": "VIDGEN5S_0115908.pt",
+      "sha256": "2841257f7969d7a57529ab712239af71fede061f8df48757630e44d25bf90bbf",
+      "split": "train",
+      "pair_sha256": "69b8a4b0a6b54a1dc4cd56cd0cf4dce51ee78c398c45b3740c7aefccc8ce10a4"
+    },
+    "VIDGEN5S_0117609": {
+      "path": "VIDGEN5S_0117609.pt",
+      "sha256": "b67560edc299bce81fd8177b75f50b89e563a77d73485ce9f517c3fc5d229ebe",
+      "split": "train",
+      "pair_sha256": "f32cf2db294b2b7bd2cb0b3229fb8d01b8c86fb2041028b5f628a0c5396a7d5b"
+    },
+    "VIDGEN5S_0119033": {
+      "path": "VIDGEN5S_0119033.pt",
+      "sha256": "6128e496d75984c3f7fe830ba950b6837afb8778c8795567398fa2c1bb778034",
+      "split": "train",
+      "pair_sha256": "25a06b5dbbd2e0bef6b9ed018212184a9813a9fcebfe2841acc3c6a01ab89d35"
+    },
+    "VIDGEN5S_0123495": {
+      "path": "VIDGEN5S_0123495.pt",
+      "sha256": "834e503775a17e479736f9a0ba7590c966c83eb589fc7371ab9d52f95078c04a",
+      "split": "train",
+      "pair_sha256": "59085582be0d2c072f0bb2c9cbda25ae43af17cd88f3d33617a276f7b8bfe8ce"
+    },
+    "VIDGEN5S_0136683": {
+      "path": "VIDGEN5S_0136683.pt",
+      "sha256": "14b92ce231a5bb73a98d31a57429f72637528b3ebb3f5afd3623ecf77cd8a300",
+      "split": "train",
+      "pair_sha256": "6cedd35bdb35e674a60079736110a04792a090739c84b9d0f4dd9b4cdba2fcf7"
+    },
+    "VIDGEN5S_0137798": {
+      "path": "VIDGEN5S_0137798.pt",
+      "sha256": "3cf247f31302856a628279734d043546519e736edce97d48831db140da20c54d",
+      "split": "train",
+      "pair_sha256": "07020b4badb0dff5f368ad72c0b3efb32b2abc09d2d01265cd1191390e97e1cb"
+    },
+    "VIDGEN5S_0138397": {
+      "path": "VIDGEN5S_0138397.pt",
+      "sha256": "0004fbbf04b083a4ca0e8609deb65aebdb932d0669d428de6148c9416c03b8f1",
+      "split": "train",
+      "pair_sha256": "34e4ca83b47af559fc2dbd0f2f1e331aa57b4f9ea087b40ab2b9cfcc1938d626"
+    },
+    "VIDGEN5S_0140953": {
+      "path": "VIDGEN5S_0140953.pt",
+      "sha256": "4da5705e46e4db492737a9366718a0efaa4c57583fa0b3a098c98296d3edc51e",
+      "split": "train",
+      "pair_sha256": "c760fcda16e9c863211001f2898d07eeab5be11e649f3afa00bfab08e7c4591f"
+    },
+    "VIDGEN5S_0150832": {
+      "path": "VIDGEN5S_0150832.pt",
+      "sha256": "c465411f96214182bc0572bd93de6578491738e16efaf27d1cacd38936964034",
+      "split": "train",
+      "pair_sha256": "0f823dbf8777be7e4acec091694612f3410ed2b8c62133700f3365392f47ddab"
+    },
+    "VIDGEN5S_0153979": {
+      "path": "VIDGEN5S_0153979.pt",
+      "sha256": "c2da76c2cde1b0684afa49535408f3d1e5a5246d69ef84e905c4dba2d0660518",
+      "split": "train",
+      "pair_sha256": "4a916769ea9951b3e4dd3daa59199200d002b3e9eed05d84c944507dd0c81145"
+    },
+    "VIDGEN5S_0160425": {
+      "path": "VIDGEN5S_0160425.pt",
+      "sha256": "c2be5f54d69763e4fb3a4f07c9abafb56f21c1b3df3fca644ed6d8cf634a186d",
+      "split": "train",
+      "pair_sha256": "88b3563e42a11982c50c40514b6db26c09c57c3a8637bd6ab0aae23e92c1faa0"
+    },
+    "VIDGEN5S_0163090": {
+      "path": "VIDGEN5S_0163090.pt",
+      "sha256": "c557987085ac9aed221b68f3e640296503245ab1c4274b8ad758e8115687252d",
+      "split": "train",
+      "pair_sha256": "28841330e19096c538064514b1d23c8fe34706554e007b68e79dd57862503001"
+    },
+    "VIDGEN5S_0166426": {
+      "path": "VIDGEN5S_0166426.pt",
+      "sha256": "5bc9c13c99797cd434a4e591fac9c13c82dbc1342335b9eeeb811b90b381b83c",
+      "split": "train",
+      "pair_sha256": "1f63395344667bb68625f9ed2e987649856b0659db20bb24d3365a1f0f7cc7f1"
+    },
+    "VIDGEN5S_0171279": {
+      "path": "VIDGEN5S_0171279.pt",
+      "sha256": "bfebea76e03efbcfc1dac0b1298fd6eae4d10b539997e2d2012336304132b8ec",
+      "split": "train",
+      "pair_sha256": "9755a050a9770608eb7faa699bfe2d0b6ece46ef1168a21ffeca9997d36da6c1"
+    },
+    "VIDGEN5S_0176584": {
+      "path": "VIDGEN5S_0176584.pt",
+      "sha256": "81ad959f2090b4198329e34a2f12bdf1e997d50c5c928a7f3e339312fe09a2f6",
+      "split": "train",
+      "pair_sha256": "538db125c39fd898ba6d1dd80ae05c1289aac7d04b8208c2da004b5dfb2359c3"
+    },
+    "VIDGEN5S_0178724": {
+      "path": "VIDGEN5S_0178724.pt",
+      "sha256": "7cbfa44f61c5f6d127cc25ecf1e78b42ac484731a8afadbce3d54a6728f63b6d",
+      "split": "train",
+      "pair_sha256": "011316ede39e9e6eb8b9d7eb3c28bb90d2186394cbc39ee482086027c56d16af"
+    },
+    "VIDGEN5S_0182801": {
+      "path": "VIDGEN5S_0182801.pt",
+      "sha256": "7913a5ecd8de0eec409ae129904ba742969b954c074f05caaa44146f94c06b23",
+      "split": "train",
+      "pair_sha256": "7a2b65391827f6b42c925a1bdc33f47ce116ccac85ed748773c9ee488c66d501"
+    },
+    "VIDGEN5S_0186331": {
+      "path": "VIDGEN5S_0186331.pt",
+      "sha256": "0214341fa52129158841a839f9ffa7544dbf822db028b07ebf86acac1b8795c1",
+      "split": "train",
+      "pair_sha256": "b3e0b69f9b279a28f77752ba574d7a1a683f81f07a0493fc43245267008da133"
+    },
+    "VIDGEN5S_0191380": {
+      "path": "VIDGEN5S_0191380.pt",
+      "sha256": "a394061e31c93b7557b4bd186a534349e74d8a26eba3f00ab8c14991e5edd90a",
+      "split": "train",
+      "pair_sha256": "0161d59c6c2667955940917a64f5dc167f2f76d357a6bde2e1a276d8565dac70"
+    },
+    "VIDGEN5S_0207487": {
+      "path": "VIDGEN5S_0207487.pt",
+      "sha256": "ff8a5125f68f674384b5ea489fc3b031ca8bf7593e5f45c6e53010d5471da937",
+      "split": "train",
+      "pair_sha256": "45da8c356a5c260456191ecb76ee1917434c1d614368eb300354fa605c1d18bc"
+    },
+    "VIDGEN5S_0207885": {
+      "path": "VIDGEN5S_0207885.pt",
+      "sha256": "09bb73a632eb20c177d7cf2d2aeeb92224cc088a79b26a61b2797a9c8acd03c0",
+      "split": "train",
+      "pair_sha256": "6453f6885794c6eb6eaa9ba4e9873e466ff819b1f86ba89585e496af6098e3c2"
+    },
+    "VIDGEN5S_0210776": {
+      "path": "VIDGEN5S_0210776.pt",
+      "sha256": "3cb2993f423d8742161acf210dd779c97341f6dd25cc28404b4d292577f3e6c8",
+      "split": "train",
+      "pair_sha256": "d25057d4bdd7712b56e7ff22d5e327d9da4d4ef28c138641add4285c72b43a8f"
+    },
+    "VIDGEN5S_0228708": {
+      "path": "VIDGEN5S_0228708.pt",
+      "sha256": "0a037b522cc7137fe5c7dce7feead1208ba02deed840c3727bb03042ddcdd099",
+      "split": "train",
+      "pair_sha256": "c42748dcd0324fab078472f843246f927bb3cb8765b1c58deaa2e5c105179915"
+    },
+    "VIDGEN5S_0232271": {
+      "path": "VIDGEN5S_0232271.pt",
+      "sha256": "643b765efd29dc194c943c4791feee43034cf35787935f7354706951b3592e2e",
+      "split": "train",
+      "pair_sha256": "302e3716bf9a9abe1713b32de5cd845b1efc659ca616ec7b5ef9c7f6f44eadb2"
+    },
+    "VIDGEN5S_0234063": {
+      "path": "VIDGEN5S_0234063.pt",
+      "sha256": "bf5aa673117f78508f2dd9ee4c46a7c2dc71b9bac88f1409f9bb808bb6ca4971",
+      "split": "train",
+      "pair_sha256": "e4f30ec59a9fb280655f1aeb7b0296011d2203e031b12c12a282845400ebdfbd"
+    },
+    "VIDGEN5S_0234082": {
+      "path": "VIDGEN5S_0234082.pt",
+      "sha256": "aef843d9229d93bb1618142472534cbd7fb6da956401e48d85c214774221d6ef",
+      "split": "train",
+      "pair_sha256": "82f713119e0b6811b20598279ab6da7cd72b3c6383da5e8f0b2fa00daae2b8b0"
+    },
+    "VIDGEN5S_0234265": {
+      "path": "VIDGEN5S_0234265.pt",
+      "sha256": "aa5e03eecd0da9f57860ecbb3709a34a1655f904ebe2b57dc8f7697e6b52f4ac",
+      "split": "train",
+      "pair_sha256": "e560d4a89353d53d5c6822ff58b3bd17423d4b41a1d08018385add6e25c53cf9"
+    },
+    "VIDGEN5S_0238904": {
+      "path": "VIDGEN5S_0238904.pt",
+      "sha256": "b0dc33365bed363dd1c242c33d1c673032e61de8eb600e06d23f08e7a7e8ccdc",
+      "split": "train",
+      "pair_sha256": "faa76cf18cd78184e340525194a183c3530d9e49943612ec8da012c9c25a7871"
+    },
+    "VIDGEN5S_0244090": {
+      "path": "VIDGEN5S_0244090.pt",
+      "sha256": "a32ab5ac206349a25ccb409631958f6860418d9a75c7cf6bec15e61e0b4a1cda",
+      "split": "train",
+      "pair_sha256": "655da086f1f54f33b96e90eae47ed976c1e6582e67807cb641b5926f27b878a9"
+    },
+    "VIDGEN5S_0244537": {
+      "path": "VIDGEN5S_0244537.pt",
+      "sha256": "bbf8d5aabdb7292706eec2487ab0f255c957b62614c1874bfb6ef0049148f809",
+      "split": "train",
+      "pair_sha256": "45143e54a9096b6e40598390ce263dfaaad429adc3115b94868735fa378d6325"
+    },
+    "VIDGEN5S_0246036": {
+      "path": "VIDGEN5S_0246036.pt",
+      "sha256": "73b16ce65232da3ce45d474dcc232387e059ad341ce87a4e07b170fe2814ae98",
+      "split": "train",
+      "pair_sha256": "0d4b45f2ed2bfbad6d9613e04bdd8aa120f78395a31a2dc7e5b182680c593dde"
+    },
+    "VIDGEN5S_0264726": {
+      "path": "VIDGEN5S_0264726.pt",
+      "sha256": "018681a6ca0d3004a8c16a39098a78bf950f10f49aea25759025e0feac36a919",
+      "split": "train",
+      "pair_sha256": "2b0ad167d32a45fd3064dc1768be3fa72882902a7beb8e95c0a775e045e05cce"
+    },
+    "VIDGEN5S_0270082": {
+      "path": "VIDGEN5S_0270082.pt",
+      "sha256": "2b808d45b9859278778ea45d34660ede25467cd9db5cc3d03f6cb8f8bee0fb7d",
+      "split": "train",
+      "pair_sha256": "1ee1840ed58db71fad1e96fb6fe36b09c7f06f5c1527c856d0679b1e31525968"
+    },
+    "VIDGEN5S_0307741": {
+      "path": "VIDGEN5S_0307741.pt",
+      "sha256": "19b1959e7041adfe16571aa7c5694969dbeb5c1591024efe6243ce515b1464ef",
+      "split": "train",
+      "pair_sha256": "9f6b367bd649daf3912fb51def53a4de67c7e0e2786d1fda0b2efa12b99f55f7"
+    },
+    "VIDGEN5S_0314380": {
+      "path": "VIDGEN5S_0314380.pt",
+      "sha256": "361c5315845b97d9671279dc8457647fb775e6896a0b91e2bae9056c72d3bf75",
+      "split": "train",
+      "pair_sha256": "6abe23551555e9084f85d52c201079b6abd509996e4098e15983872b1a24d35c"
+    },
+    "VIDGEN5S_0317062": {
+      "path": "VIDGEN5S_0317062.pt",
+      "sha256": "ba9c28ef3c428060f56cde01d1db873c61be43c551f75c9c4029eb50a1be9921",
+      "split": "train",
+      "pair_sha256": "ac429da8d77548ad6839c4f81fb90eee1eb2acb5c5d0c6a7b27d9b1fa058c8c8"
+    },
+    "VIDGEN5S_0323550": {
+      "path": "VIDGEN5S_0323550.pt",
+      "sha256": "7365dbc7442554bbd42874b01f360684b1faeae790ff4289ba71e0cd8ddddf95",
+      "split": "train",
+      "pair_sha256": "fabce4394f4e3e77e6b753d6105d6b623591878a7deffc9bb057a64572d1e027"
+    },
+    "VIDGEN5S_0333333": {
+      "path": "VIDGEN5S_0333333.pt",
+      "sha256": "8b18c397faf32912d04868e3998a6b04d8a57446e5d532e2b01c217e362d6eb5",
+      "split": "train",
+      "pair_sha256": "c85ae171f4ec00dfb47214c803f520d8d7290ca9547e46a19b601f93eda2c79d"
+    },
+    "VIDGEN5S_0337386": {
+      "path": "VIDGEN5S_0337386.pt",
+      "sha256": "6275cfa42076d3e701f6485a11d782f60b18619731c5f94f2ca8ef8440ea7837",
+      "split": "train",
+      "pair_sha256": "99f2ba17f54cb578b070ffbd7bd6c42430d8db7649136d6c0d0741bb7597205c"
+    },
+    "VIDGEN5S_0353678": {
+      "path": "VIDGEN5S_0353678.pt",
+      "sha256": "fd75edc39a0b9b9875dadf9ea79fe8468a24693ad42e481b5bc6bd48e3e56fda",
+      "split": "train",
+      "pair_sha256": "c3362cb9fd7b529afc959e69d729abfe392ad811c35e53577db74174b118fbaa"
+    },
+    "VIDGEN5S_0370843": {
+      "path": "VIDGEN5S_0370843.pt",
+      "sha256": "9f6f2a06d1e20cc8af7b057a8aec52ed29404b6a05057dcce192c06ea74175ae",
+      "split": "train",
+      "pair_sha256": "ede74415639aedc0f5bf2d9f906a7c3858ad3ce7177e12f565f527d246f766c8"
+    },
+    "VIDGEN5S_0372408": {
+      "path": "VIDGEN5S_0372408.pt",
+      "sha256": "65015655fa90b1d01b7b123064ad36dffc2a9bd384953c8fd32a9b2117e55071",
+      "split": "train",
+      "pair_sha256": "55a919c77f1f43559cc06a000b7d2a18db3d15b12361033011aa40c9efeb7dc4"
+    },
+    "VIDGEN5S_0381221": {
+      "path": "VIDGEN5S_0381221.pt",
+      "sha256": "c223054c118f13f73ad531084898cef0a4bf04390eea3c3bd92f764df8f0fd23",
+      "split": "train",
+      "pair_sha256": "db191beb5521efa5a6291a4370b75b4386aef8643e14b409db1049ac6471123a"
+    },
+    "VIDGEN5S_0395052": {
+      "path": "VIDGEN5S_0395052.pt",
+      "sha256": "bfe257496228830df8ebe476ed78dd0a10c56addfdc1b5e261d457d1677ceb71",
+      "split": "train",
+      "pair_sha256": "e57903ed0de54363dfd33e4795a81531a7fd79aacda4025b55f72e5103bb4ddd"
+    },
+    "VIDGEN5S_0425205": {
+      "path": "VIDGEN5S_0425205.pt",
+      "sha256": "3c6e5493511fde7734f9565ca9e723193b42226145fc9c95d175bec414310b88",
+      "split": "train",
+      "pair_sha256": "5b093c61fa939310b9a6b9681ea525f46e98c5b26f691a7299b5e87e9e98649d"
+    },
+    "VIDGEN5S_0448210": {
+      "path": "VIDGEN5S_0448210.pt",
+      "sha256": "1e6455e686b8280a99923ceaeae5cd144c071baec41e405f54d52370fc534a28",
+      "split": "train",
+      "pair_sha256": "8bb61fadb8fdc5403278c5689ea4928ad1ea1ba8dffed723b4476dff16fa5ccd"
+    },
+    "VIDGEN5S_0452344": {
+      "path": "VIDGEN5S_0452344.pt",
+      "sha256": "8b12fb07d77a229050ffe68bccd76af56fe647d81eb0afd459885035d66c164e",
+      "split": "train",
+      "pair_sha256": "e735eefd56228bbdd6983af12e5f2afe126abf84f95cb2d38c9ab6018f6362a2"
+    },
+    "VIDGEN5S_0461924": {
+      "path": "VIDGEN5S_0461924.pt",
+      "sha256": "057da0a040de865e2569a2a08b1184ca450a832cf1f1a781376e2b40191eb6bf",
+      "split": "train",
+      "pair_sha256": "4bb5a93e9ce90e700498386585cad2ea6395f56e24bc176c173f92d3a489a12a"
+    },
+    "VIDGEN5S_0462328": {
+      "path": "VIDGEN5S_0462328.pt",
+      "sha256": "637a7a80e979c15626848d5575bde594ad7cea6fceb99e6f32753e611d11b452",
+      "split": "train",
+      "pair_sha256": "d6face7383a45f4adde8e4f6fb1374bc9d8c83b0d69af10be6d1dedcb13fa124"
+    },
+    "VIDGEN5S_0473189": {
+      "path": "VIDGEN5S_0473189.pt",
+      "sha256": "0d53db13830043031d2b5153ad7ad0cf966e033a164981d389abf7771c75ced2",
+      "split": "train",
+      "pair_sha256": "d2952e920bcdefd0d88c26ea81b925f4631274204c764cd000c5a87e5a707814"
+    },
+    "VIDGEN5S_0513751": {
+      "path": "VIDGEN5S_0513751.pt",
+      "sha256": "8ec0e667f9914410d1fc2bff998dfdc3d686ac1879f3f132bc0734b81b255c9f",
+      "split": "train",
+      "pair_sha256": "c0fcfdf91cf55309e598668ce07adeb088603df0a9fc5fcb242bf7b89ff886f8"
+    },
+    "VIDGEN5S_0543473": {
+      "path": "VIDGEN5S_0543473.pt",
+      "sha256": "64175d3c2a1f64562d165237b38e7eea46a6b2ca590fc7b5bd8147a5d84c5109",
+      "split": "train",
+      "pair_sha256": "b9133305f4f12f689485107960508df630d330c20daadcbdab1b256eb37d3a55"
+    },
+    "VIDGEN5S_0624218": {
+      "path": "VIDGEN5S_0624218.pt",
+      "sha256": "bcefdade4f058a5bfa5d045e5802023819631f490f30a695c428b8a15a17947e",
+      "split": "train",
+      "pair_sha256": "49629ce49497c1863527aa4368784e85090d1a9b3071df55c633f9b38df55c7d"
+    },
+    "VIDGEN5S_0627423": {
+      "path": "VIDGEN5S_0627423.pt",
+      "sha256": "f16cfec822e1b4b26c4d8485a6fb611ee883b0719c7ded4a337dd8cff4688e23",
+      "split": "train",
+      "pair_sha256": "1ef3260bc41615baedfb75692e7fc19cc0d0690b1aa2cdf46ad3abd158e9c270"
+    },
+    "VIDGEN5S_0634015": {
+      "path": "VIDGEN5S_0634015.pt",
+      "sha256": "368a4989d922c817fb7bb7f0de23d4d899632c4e4d6b79732a73e02f8f588d32",
+      "split": "train",
+      "pair_sha256": "3206540b104793885f1d0cb4df2350c0e75dfe4e5d85de3f8abd0cdae0f201ab"
+    },
+    "VIDGEN5S_0639161": {
+      "path": "VIDGEN5S_0639161.pt",
+      "sha256": "701f1ecf88fd3e931462fb204d79001a6d5f7006a23baa26b92aabae7584c05e",
+      "split": "train",
+      "pair_sha256": "d9ebb6ba0360fdda1504481474d775dc947d16481f67add4e78a23e853e3a151"
+    },
+    "VIDGEN5S_0641057": {
+      "path": "VIDGEN5S_0641057.pt",
+      "sha256": "4ae42aa9d67d796a72825db474d94b3f20177e8ece87d06c378c3084ca17e9aa",
+      "split": "train",
+      "pair_sha256": "c1ffaa9dbb5614ab86b3e8f5926fcc96390db1ef15054248dedc842de6433580"
+    },
+    "VIDGEN5S_0642589": {
+      "path": "VIDGEN5S_0642589.pt",
+      "sha256": "4777bd8d65c62e1c56f087dee43484ef9d69d27bf7a6e34832d552595af3919f",
+      "split": "train",
+      "pair_sha256": "c664c6d4305b7293add33c9ff8275488e9e1f68dc3a40ef72bca97e445b548f8"
+    },
+    "VIDGEN5S_0644347": {
+      "path": "VIDGEN5S_0644347.pt",
+      "sha256": "a7ebbd3f664813f871c59cde587cc96c9f9949effc3c976450db55475c551202",
+      "split": "train",
+      "pair_sha256": "654bf2fa589c25159d000aa31008b806df4c9a08c33dcad70116c52ff4247505"
+    },
+    "VIDGEN5S_0649280": {
+      "path": "VIDGEN5S_0649280.pt",
+      "sha256": "21503a0a2d057313b64354083e04f4cb5c23892b8e941554805175ce5f3e1f5a",
+      "split": "train",
+      "pair_sha256": "4e5f894f3f49e736b4207bfb7308db931f5bc70e72426dce18c8a0a3c586914f"
+    },
+    "VIDGEN5S_0650697": {
+      "path": "VIDGEN5S_0650697.pt",
+      "sha256": "5d69e325f3fe157abd4edbcef6fabd528f8cfb30b686c6676fba4001457fe08f",
+      "split": "train",
+      "pair_sha256": "1ec58b157c679739c628e087f0b006b9bc2deeb1ba480c7cfa273b0a511040f9"
+    },
+    "VIDGEN5S_0660561": {
+      "path": "VIDGEN5S_0660561.pt",
+      "sha256": "41001d33cda651c665325fad45e0d8ff895d11cfda6b661e3ca0eb378bdf112f",
+      "split": "train",
+      "pair_sha256": "8ff6f1cabab9410b7ed4a02801cfe5eb3d620590e552c0de4ffb5038e34ab71e"
+    },
+    "VIDGEN5S_0665861": {
+      "path": "VIDGEN5S_0665861.pt",
+      "sha256": "b2ebf56726800016089ab9f66b86c1daa92bfb7c848404d7e0ce4bec7af35cc0",
+      "split": "train",
+      "pair_sha256": "ac43396404382d19a7e7d6010411c438f00e25e725ec66f5a5b72626896a49c8"
+    },
+    "VIDGEN5S_0677099": {
+      "path": "VIDGEN5S_0677099.pt",
+      "sha256": "4af9aef898cdaff7afadc43a46aa709ea29e5621244ef96ccb58cdbc0cc11c82",
+      "split": "train",
+      "pair_sha256": "dff235e9004d508b44387aade4bd4dc6835e21949086cde956a3b7bad5cbc09f"
+    },
+    "VIDGEN5S_0687315": {
+      "path": "VIDGEN5S_0687315.pt",
+      "sha256": "efd0b32867f6fffe3b117b335b4814a56a56677c5b1c2679b034e4ccbf326aec",
+      "split": "train",
+      "pair_sha256": "c7ff992a86a09db0c2c0cc3c2f7f603190962d99ee33223a96328a4a957024d6"
+    },
+    "VIDGEN5S_0690208": {
+      "path": "VIDGEN5S_0690208.pt",
+      "sha256": "fe127247d8db0785ae0fea353dbac87c227229a05c54a8a25b66f1edc955b027",
+      "split": "train",
+      "pair_sha256": "07fbed35243497e02bc75916c5cff539961eeda17a0aac9c60654aabbd51c262"
+    },
+    "VIDGEN5S_0691143": {
+      "path": "VIDGEN5S_0691143.pt",
+      "sha256": "3384bb83085bbf1e0773fd2f7775299c5425ad009f421ef7401f169cc87e72b7",
+      "split": "train",
+      "pair_sha256": "f838973239d48cfae33b5af60d483b93f320cd145f4e716e0dca8113870e8b98"
+    },
+    "VIDGEN5S_0699487": {
+      "path": "VIDGEN5S_0699487.pt",
+      "sha256": "e6de385ff05ce61cb0f3aed6cab00a2e20d23044075c4424f2b7de13dd65fa69",
+      "split": "train",
+      "pair_sha256": "ff96100226e8d37984ff33a5ce93373c719ccf290e31512d0d269544eaaca1f8"
+    },
+    "VIDGEN5S_0703514": {
+      "path": "VIDGEN5S_0703514.pt",
+      "sha256": "70b70b70647a3a52acd259f71accced9e747b02c5290bc499158b91a1b4d6f87",
+      "split": "train",
+      "pair_sha256": "7eb07a501f2f31f675dc1bd31e956975ca58c21201f2b80a8d647dce8829525e"
+    },
+    "VIDGEN5S_0707646": {
+      "path": "VIDGEN5S_0707646.pt",
+      "sha256": "04e87a50200ca0820935c3f861a23c9dcab76fe753a557aaf886f7e8d3127d0d",
+      "split": "train",
+      "pair_sha256": "39f373ce2ecfa9a2d73937d5246c8019bb30cb644a203fa8b9436faafcd15e43"
+    },
+    "VIDGEN5S_0708129": {
+      "path": "VIDGEN5S_0708129.pt",
+      "sha256": "3990825d5706309394769aad613955afebfb3291655b10e12636f3a5ff6d5624",
+      "split": "train",
+      "pair_sha256": "f620f3e249e469556f148e083a596e18b2088551614ba3a3efb0b7aae05570de"
+    },
+    "VIDGEN5S_0716976": {
+      "path": "VIDGEN5S_0716976.pt",
+      "sha256": "6d3f9d12bd15906e20f298d1ab4cb4dfb2fe5f2ed47600f57cf0b2bd9321eb8a",
+      "split": "train",
+      "pair_sha256": "d3ecd024960632482ebd333aebdf09905ff446e5710bf775112945e09c000292"
+    },
+    "VIDGEN5S_0746383": {
+      "path": "VIDGEN5S_0746383.pt",
+      "sha256": "76378558fe5c020b558c33166e3d1dda4185968b706301944221f318a0320787",
+      "split": "train",
+      "pair_sha256": "6109bc1f1e6490f4e755cf4fbf8594c68bd1b3461065f89ac4648e0d2ccffea4"
+    },
+    "VIDGEN5S_0747545": {
+      "path": "VIDGEN5S_0747545.pt",
+      "sha256": "5889c13e8828c7dd0c60f017e4e2c10ea42bc4f4bcaeb9d7df87e4258c2f785a",
+      "split": "train",
+      "pair_sha256": "09665319396aed932a6341aa3b4a36e657d9679e84b281ab35f5750d006f005b"
+    },
+    "VIDGEN5S_0748007": {
+      "path": "VIDGEN5S_0748007.pt",
+      "sha256": "e147a1018849839e67ca4d02fe7c55f8e88ef8817f5690b4130b91d549a2649d",
+      "split": "train",
+      "pair_sha256": "40ebb76238f3bf3969b03951e95e3d0f840ea25484b7e32c01a0b7c0b14e595d"
+    },
+    "VIDGEN5S_0751183": {
+      "path": "VIDGEN5S_0751183.pt",
+      "sha256": "43d4afae85401fa210e3de2f033ed4d1ecb7fb575bd1b337ccddddd36392cfd8",
+      "split": "train",
+      "pair_sha256": "2d896933f5c19efba802ac4ff45a044fa0d7c4ad1129f34d67db4458e62cc905"
+    },
+    "VIDGEN5S_0753289": {
+      "path": "VIDGEN5S_0753289.pt",
+      "sha256": "a91e74720d6f486ad63858112e3f7d6c826ee941683803560ad812a2ae8758a4",
+      "split": "train",
+      "pair_sha256": "53784ef52dc9f74217c0ebb23dbeffef12e5688f35ec5c0e29936f61b75584d8"
+    },
+    "VIDGEN5S_0756415": {
+      "path": "VIDGEN5S_0756415.pt",
+      "sha256": "0706c996b39a52b426459a4dba85e1c232bd8a1af26d81957d8fb6a14bcc00d4",
+      "split": "train",
+      "pair_sha256": "e19a835f412ea313a980eda9f47a0f25953bfe24ff58b8924b4a78008737e2bb"
+    },
+    "VIDGEN5S_0764666": {
+      "path": "VIDGEN5S_0764666.pt",
+      "sha256": "696141f07db1b6fb747e5f8450a52b6bfdc20c8507fc21f63f08826a5f4aa003",
+      "split": "train",
+      "pair_sha256": "68651ca4831e3f59ea11fdf30817372d712749976b1f47cbba560f8aad6a8326"
+    },
+    "VIDGEN5S_0765400": {
+      "path": "VIDGEN5S_0765400.pt",
+      "sha256": "58f0a3959e48368581e24853a76f45925a0dcafe3b541ea6367c58bf9d41fa4f",
+      "split": "train",
+      "pair_sha256": "e67d3eb5d98a4cdeff84efe691c41fb233b7d8debfddbb0e00c402e39e2c6d60"
+    },
+    "VIDGEN5S_0769886": {
+      "path": "VIDGEN5S_0769886.pt",
+      "sha256": "7312bc6ee6e61f4a3ba63ebac1755fe98b1c14051d099f3fcfde875abd91c7a1",
+      "split": "train",
+      "pair_sha256": "251a38e45a035f98d8a1b82e6bcb1ac2db58327b442b86c771fc35ee8cc5bfd9"
+    },
+    "VIDGEN5S_0770784": {
+      "path": "VIDGEN5S_0770784.pt",
+      "sha256": "af4250c2268be5da5ac855557b708a09c6cee666df4d3054f949099008a946de",
+      "split": "train",
+      "pair_sha256": "97c38f7b16dae74c0d15a5722249f5845db96ea7ca8f4ce82ccc9b76232a311e"
+    },
+    "VIDGEN5S_0777128": {
+      "path": "VIDGEN5S_0777128.pt",
+      "sha256": "4fbf16c6bdc8791aef455a226cede201ce4477e9e5cf636ba0814f9604bcfdcb",
+      "split": "train",
+      "pair_sha256": "cbd6e4dabe4094cbb875ddc6bfb32286f78461a4998cccf9bba13708770caa2c"
+    },
+    "VIDGEN5S_0784275": {
+      "path": "VIDGEN5S_0784275.pt",
+      "sha256": "adb9d1ea4e66c3cdba39c9256dcc1f0e7c257df4f1e5cc25405e5bed216a6f1f",
+      "split": "train",
+      "pair_sha256": "ce196326daee48142560fd7a276177c3293e1c02c1b877473d93402991ed9caf"
+    },
+    "VIDGEN5S_0788534": {
+      "path": "VIDGEN5S_0788534.pt",
+      "sha256": "de4ce8c5e1319c1fbd1d278873d711049f8ec12fc5b0d5326d751f350410f2bb",
+      "split": "train",
+      "pair_sha256": "d4d5dfbe6df042b8f72c1a89abfcd7dd35a8b5377578b4ba12233ff70034c260"
+    },
+    "VIDGEN5S_0795879": {
+      "path": "VIDGEN5S_0795879.pt",
+      "sha256": "3f589e7d734ee36f8c2de25777f750a764fc476c7536fdfcce9c80bd2082d301",
+      "split": "train",
+      "pair_sha256": "c5991ef563885ed1540fd41c80a9d288a6a1e12a710f76a630a5f303fa81e03a"
+    },
+    "VIDGEN5S_0796895": {
+      "path": "VIDGEN5S_0796895.pt",
+      "sha256": "59d2638a85a59cef0d2c15047b0af16ce5c894651419141105474b3fcdaab16f",
+      "split": "train",
+      "pair_sha256": "8973abc3b4c121e94b2a24392eb99ef119306281f9ae214971377318765b4cca"
+    },
+    "VIDGEN5S_0807220": {
+      "path": "VIDGEN5S_0807220.pt",
+      "sha256": "06753dbcf32f8ba191931edd49743c6ae6bfeddd7c76ee452050b13baf7e8b41",
+      "split": "train",
+      "pair_sha256": "3b96f301070c46f94573e9f6c351d527b0b64fa5ddd774001d6c2a8dd6a8e303"
+    },
+    "VIDGEN5S_0811101": {
+      "path": "VIDGEN5S_0811101.pt",
+      "sha256": "cbc2d7b4cb9000c68bd196a7c2a3e49b493fc9499c300641a97e6b872f31cbfe",
+      "split": "train",
+      "pair_sha256": "5386bdfc8b8f2ee1471993385ceda52d37886b5f5ecf4478ef321d54ad64d122"
+    },
+    "VIDGEN5S_0812127": {
+      "path": "VIDGEN5S_0812127.pt",
+      "sha256": "ddb88c0ec98409aedd313ae13c57a6480125d71cb24620cd1283ee21412f7bbd",
+      "split": "train",
+      "pair_sha256": "bf0b0fcce244dafecb71cc2f0f32adb7f0c90b2b8141feb79a2a2f36f032bae2"
+    },
+    "VIDGEN5S_0824555": {
+      "path": "VIDGEN5S_0824555.pt",
+      "sha256": "c6223c38ed25f782f461bd20b27e9c5f5281b86d4e5d700b6feabffc3c753986",
+      "split": "train",
+      "pair_sha256": "ce1107136a56ce569276f32d6376d3e90924966b1fa5b31dee753edea200bbb9"
+    },
+    "VIDGEN5S_0826170": {
+      "path": "VIDGEN5S_0826170.pt",
+      "sha256": "4f51140217c265b088b50bf59d432ab40109c68716bf22e41e990d33cd663ac3",
+      "split": "train",
+      "pair_sha256": "213857e170953575dcb2f089e74dc1289b678ba5de3a942bdfb224c299f5b223"
+    },
+    "VIDGEN5S_0841794": {
+      "path": "VIDGEN5S_0841794.pt",
+      "sha256": "2b811faab0457d47691c94412013209fde0742ae67be6963c2f87692df44fb9d",
+      "split": "train",
+      "pair_sha256": "39978585a40dc9db226c21ac4cd826a297fb7e109a66f3b9fc8a63248d2b493c"
+    },
+    "VIDGEN5S_0861654": {
+      "path": "VIDGEN5S_0861654.pt",
+      "sha256": "66a263c63b035e22fe7c3d44b579e3868f13f342b986fec9da22235ebabc6a9f",
+      "split": "train",
+      "pair_sha256": "bb36bf105ccede074403a509ed63a41aeca9e590313bfd5915ff567929c6ce2b"
+    },
+    "VIDGEN5S_0875205": {
+      "path": "VIDGEN5S_0875205.pt",
+      "sha256": "52b2628b9320c2bd7441ddab6a6045389a85138fbf593afc42f5211253522d53",
+      "split": "train",
+      "pair_sha256": "2e9e553201b196d6ae96c648a6d6e66cc2b77cd993e7eb95be2d680c7a5284db"
+    },
+    "VIDGEN5S_0973221": {
+      "path": "VIDGEN5S_0973221.pt",
+      "sha256": "91316c2f88de813521f877c82ba4cf3ec280548c1d53cc47eae04ca2f6bcbe76",
+      "split": "train",
+      "pair_sha256": "d1f390bf305b3504ca63ed4cbd9a8f137ce7d9d709869af0b3f84ccd99698a9e"
+    },
+    "VIDGEN5S_0976543": {
+      "path": "VIDGEN5S_0976543.pt",
+      "sha256": "3646136e59ad5106eab13da3e64a664e44d4ca4b82557dd094772c6913336de2",
+      "split": "train",
+      "pair_sha256": "ca188158d47f6561a1e8817f74daced74be96c07fb268a8508a7e0a9ef21bd52"
+    },
+    "VIDGEN5S_0980387": {
+      "path": "VIDGEN5S_0980387.pt",
+      "sha256": "f86b4c57cc8034ebd87fc65e64bdf5b476caaee1c13ba8aa92d5e32e7c259a3f",
+      "split": "train",
+      "pair_sha256": "483bb8393d089d4760a06aa4172c7cba721711fb83e5e572b4190ef45e1d8f4a"
+    },
+    "VIDGEN5S_0030174": {
+      "path": "VIDGEN5S_0030174.pt",
+      "sha256": "4597055171fe5202554a08886d84d295bad96c5d46a2034f62bef3536061ed2a",
+      "split": "dev",
+      "pair_sha256": "6499045bf3309ba852be9cc0b9d85ce8ec4c8d6ccfea0cdf512f05450d88d514"
+    },
+    "VIDGEN5S_0093644": {
+      "path": "VIDGEN5S_0093644.pt",
+      "sha256": "6190cb9426276e816e319ee8676a69acf301a565dbbbd9aa66b5a726a33ac7f9",
+      "split": "dev",
+      "pair_sha256": "335bfad682973d9aa8570bb5d8f073e934ffdadbea296947d606da318d6ca920"
+    },
+    "VIDGEN5S_0137908": {
+      "path": "VIDGEN5S_0137908.pt",
+      "sha256": "00aa34ee5654fe88e4dc66e56fffa36a7666e7f3e9d66d5758e97a7dd5ae2ed6",
+      "split": "dev",
+      "pair_sha256": "b68b6b478955fa48df601500b73533bf59e1df771b0520b9990a4e51bcab2104"
+    },
+    "VIDGEN5S_0144827": {
+      "path": "VIDGEN5S_0144827.pt",
+      "sha256": "ae9ec924b4b78a861ebe0d8385887ffc235b3d3bec30a1fd1ea2201e8723cd23",
+      "split": "dev",
+      "pair_sha256": "e24d1ae70129f473e90d9bfdb985d29d8437904c209fb1751cbd9f097af534cf"
+    },
+    "VIDGEN5S_0238125": {
+      "path": "VIDGEN5S_0238125.pt",
+      "sha256": "fcb23d80eb74db71e59aa641db9d376787060c6075193bb3ea411320f5f54bb1",
+      "split": "dev",
+      "pair_sha256": "5f0af94305f76eb21547b84fca2dcab48e213d968f28a269d2220564f7909ec7"
+    },
+    "VIDGEN5S_0295836": {
+      "path": "VIDGEN5S_0295836.pt",
+      "sha256": "789cbaa945dec4727c60504f9001163b88618eda929ea5d30e42107b437283cb",
+      "split": "dev",
+      "pair_sha256": "6356063247588f5f8a2c979322077b05d695244293f7003a5f39133b2af6750b"
+    },
+    "VIDGEN5S_0421364": {
+      "path": "VIDGEN5S_0421364.pt",
+      "sha256": "45543c1802431cfb32e22762b4126ea48588046eb65120be563e0e17e0c2f565",
+      "split": "dev",
+      "pair_sha256": "60cf1efb41bb7785d553cda2a5e9e798bfc41466d555fffd97401ea1542a1ee5"
+    },
+    "VIDGEN5S_0518891": {
+      "path": "VIDGEN5S_0518891.pt",
+      "sha256": "6a69a470199d64ce576d1ac8f0c614fadcde19e24fed73d5ad54038815a5ff8b",
+      "split": "dev",
+      "pair_sha256": "9b92579b7c141332bad3d3e7fafffcd887c73fa45488c244ded8dbef69cbf93b"
+    },
+    "VIDGEN5S_0589299": {
+      "path": "VIDGEN5S_0589299.pt",
+      "sha256": "5978591cde39e5d3fb366651694fc248c8d99bddabc056252d03f2de2d610a0e",
+      "split": "dev",
+      "pair_sha256": "667e0c45d090f711f90df04c48b30b8d34b0e5c61bac969ed0902323a51af3e5"
+    },
+    "VIDGEN5S_0657314": {
+      "path": "VIDGEN5S_0657314.pt",
+      "sha256": "f6f90814aa12ee3e81ece1ae074f012d8b379083d34c5b222eb29a7088629003",
+      "split": "dev",
+      "pair_sha256": "9ae46b64a92fec0040322048395d5742229695dedd926f59e5751bb594b4482c"
+    },
+    "VIDGEN5S_0665341": {
+      "path": "VIDGEN5S_0665341.pt",
+      "sha256": "91e574a14e3927835ed248907fff6996d583736edad4450233da26b6a4b45aeb",
+      "split": "dev",
+      "pair_sha256": "fde5eca2773e249df04323dc0748f831627c89739fd712cbbc7791af8cb842dc"
+    },
+    "VIDGEN5S_0760711": {
+      "path": "VIDGEN5S_0760711.pt",
+      "sha256": "7f9fc147c9831b17dde42e4bd459e2335fe0cda1365512fe9bed32282f2fbf9a",
+      "split": "dev",
+      "pair_sha256": "3649da81dfc276efcf71965b46d547be35edd6a485958ed22926acb1bcd5a707"
+    },
+    "VIDGEN5S_0804105": {
+      "path": "VIDGEN5S_0804105.pt",
+      "sha256": "3fafa9437dc9c683d94fb721499a2eaecbad588c97f1b07d622cc836713a442a",
+      "split": "dev",
+      "pair_sha256": "7df9c50d05d8f13695f42d8d0d1f4c2676bc07155d4918987d5bd140435bdbf3"
+    },
+    "VIDGEN5S_0818010": {
+      "path": "VIDGEN5S_0818010.pt",
+      "sha256": "98fb5f0129a18dc24e4a8bd67e41cf71262c6c0f440cde66cbdef8eeaf41f99b",
+      "split": "dev",
+      "pair_sha256": "e2179db535843d3d26f362a38459ac9e3421382cb748a018c6bca196e3e9da00"
+    },
+    "VIDGEN5S_0828086": {
+      "path": "VIDGEN5S_0828086.pt",
+      "sha256": "c4488ad03de5d6452a829f5159557b39e3554a3e1a50fa9126ef13d7b3a00137",
+      "split": "dev",
+      "pair_sha256": "d2981faa6da17ec00ba95b8d90983e3189c96e26a1a07f03b63bac815b9f3712"
+    },
+    "VIDGEN5S_0843422": {
+      "path": "VIDGEN5S_0843422.pt",
+      "sha256": "c3340eb6c150f99c4e6b436f99c1e446b12fa79f2194bf41e1072da15946b583",
+      "split": "dev",
+      "pair_sha256": "c3c1a32bb2b85130b5702a33789cd630bf7c360d9fc1613b36012b9a44cb6ff6"
+    }
+  },
+  "count": 144
+}

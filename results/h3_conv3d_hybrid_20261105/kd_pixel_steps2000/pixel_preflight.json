@@ -1,0 +1,1169 @@
+{
+  "passed": true,
+  "parity": [
+    {
+      "source": "pred",
+      "spec": {
+        "version": 1,
+        "block_index": 0,
+        "latent_start": 0,
+        "latent_stop": 7,
+        "raw_frame_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "lpips_frame_indices": [
+          0,
+          5,
+          11,
+          16
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "full",
+        "tile_row": -1,
+        "tile_column": -1,
+        "latent_y": [
+          0,
+          24
+        ],
+        "latent_x": [
+          0,
+          42
+        ],
+        "raw_y": [
+          0,
+          384
+        ],
+        "raw_x": [
+          0,
+          672
+        ],
+        "rgb_y": [
+          0,
+          384
+        ],
+        "rgb_x": [
+          0,
+          672
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "pred",
+      "spec": {
+        "version": 1,
+        "block_index": 0,
+        "latent_start": 0,
+        "latent_stop": 7,
+        "raw_frame_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "lpips_frame_indices": [
+          0,
+          5,
+          11,
+          16
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "tile",
+        "tile_row": 0,
+        "tile_column": 0,
+        "latent_y": [
+          0,
+          16
+        ],
+        "latent_x": [
+          0,
+          16
+        ],
+        "raw_y": [
+          0,
+          128
+        ],
+        "raw_x": [
+          0,
+          128
+        ],
+        "rgb_y": [
+          0,
+          128
+        ],
+        "rgb_x": [
+          0,
+          128
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "pred",
+      "spec": {
+        "version": 1,
+        "block_index": 3,
+        "latent_start": 15,
+        "latent_stop": 22,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "full",
+        "tile_row": -1,
+        "tile_column": -1,
+        "latent_y": [
+          0,
+          24
+        ],
+        "latent_x": [
+          0,
+          42
+        ],
+        "raw_y": [
+          0,
+          384
+        ],
+        "raw_x": [
+          0,
+          672
+        ],
+        "rgb_y": [
+          0,
+          384
+        ],
+        "rgb_x": [
+          0,
+          672
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "pred",
+      "spec": {
+        "version": 1,
+        "block_index": 3,
+        "latent_start": 15,
+        "latent_stop": 22,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "tile",
+        "tile_row": 0,
+        "tile_column": 0,
+        "latent_y": [
+          0,
+          16
+        ],
+        "latent_x": [
+          0,
+          16
+        ],
+        "raw_y": [
+          0,
+          128
+        ],
+        "raw_x": [
+          0,
+          128
+        ],
+        "rgb_y": [
+          0,
+          128
+        ],
+        "rgb_x": [
+          0,
+          128
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "pred",
+      "spec": {
+        "version": 1,
+        "block_index": 6,
+        "latent_start": 30,
+        "latent_stop": 37,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          23
+        ],
+        "rgb_frame_indices": [
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          8,
+          12
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "full",
+        "tile_row": -1,
+        "tile_column": -1,
+        "latent_y": [
+          0,
+          24
+        ],
+        "latent_x": [
+          0,
+          42
+        ],
+        "raw_y": [
+          0,
+          384
+        ],
+        "raw_x": [
+          0,
+          672
+        ],
+        "rgb_y": [
+          0,
+          384
+        ],
+        "rgb_x": [
+          0,
+          672
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "pred",
+      "spec": {
+        "version": 1,
+        "block_index": 6,
+        "latent_start": 30,
+        "latent_stop": 37,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          23
+        ],
+        "rgb_frame_indices": [
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          8,
+          12
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "tile",
+        "tile_row": 0,
+        "tile_column": 0,
+        "latent_y": [
+          0,
+          16
+        ],
+        "latent_x": [
+          0,
+          16
+        ],
+        "raw_y": [
+          0,
+          128
+        ],
+        "raw_x": [
+          0,
+          128
+        ],
+        "rgb_y": [
+          0,
+          128
+        ],
+        "rgb_x": [
+          0,
+          128
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "reference",
+      "spec": {
+        "version": 1,
+        "block_index": 0,
+        "latent_start": 0,
+        "latent_stop": 7,
+        "raw_frame_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "lpips_frame_indices": [
+          0,
+          5,
+          11,
+          16
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "full",
+        "tile_row": -1,
+        "tile_column": -1,
+        "latent_y": [
+          0,
+          24
+        ],
+        "latent_x": [
+          0,
+          42
+        ],
+        "raw_y": [
+          0,
+          384
+        ],
+        "raw_x": [
+          0,
+          672
+        ],
+        "rgb_y": [
+          0,
+          384
+        ],
+        "rgb_x": [
+          0,
+          672
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "reference",
+      "spec": {
+        "version": 1,
+        "block_index": 0,
+        "latent_start": 0,
+        "latent_stop": 7,
+        "raw_frame_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "lpips_frame_indices": [
+          0,
+          5,
+          11,
+          16
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "tile",
+        "tile_row": 0,
+        "tile_column": 0,
+        "latent_y": [
+          0,
+          16
+        ],
+        "latent_x": [
+          0,
+          16
+        ],
+        "raw_y": [
+          0,
+          128
+        ],
+        "raw_x": [
+          0,
+          128
+        ],
+        "rgb_y": [
+          0,
+          128
+        ],
+        "rgb_x": [
+          0,
+          128
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "reference",
+      "spec": {
+        "version": 1,
+        "block_index": 3,
+        "latent_start": 15,
+        "latent_stop": 22,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "full",
+        "tile_row": -1,
+        "tile_column": -1,
+        "latent_y": [
+          0,
+          24
+        ],
+        "latent_x": [
+          0,
+          42
+        ],
+        "raw_y": [
+          0,
+          384
+        ],
+        "raw_x": [
+          0,
+          672
+        ],
+        "rgb_y": [
+          0,
+          384
+        ],
+        "rgb_x": [
+          0,
+          672
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "reference",
+      "spec": {
+        "version": 1,
+        "block_index": 3,
+        "latent_start": 15,
+        "latent_stop": 22,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "rgb_frame_indices": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "tile",
+        "tile_row": 0,
+        "tile_column": 0,
+        "latent_y": [
+          0,
+          16
+        ],
+        "latent_x": [
+          0,
+          16
+        ],
+        "raw_y": [
+          0,
+          128
+        ],
+        "raw_x": [
+          0,
+          128
+        ],
+        "rgb_y": [
+          0,
+          128
+        ],
+        "rgb_x": [
+          0,
+          128
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "reference",
+      "spec": {
+        "version": 1,
+        "block_index": 6,
+        "latent_start": 30,
+        "latent_stop": 37,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          23
+        ],
+        "rgb_frame_indices": [
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          8,
+          12
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "full",
+        "tile_row": -1,
+        "tile_column": -1,
+        "latent_y": [
+          0,
+          24
+        ],
+        "latent_x": [
+          0,
+          42
+        ],
+        "raw_y": [
+          0,
+          384
+        ],
+        "raw_x": [
+          0,
+          672
+        ],
+        "rgb_y": [
+          0,
+          384
+        ],
+        "rgb_x": [
+          0,
+          672
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "source": "reference",
+      "spec": {
+        "version": 1,
+        "block_index": 6,
+        "latent_start": 30,
+        "latent_stop": 37,
+        "raw_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          23
+        ],
+        "rgb_frame_indices": [
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "lpips_frame_indices": [
+          0,
+          4,
+          8,
+          12
+        ],
+        "real_frames": 120,
+        "latent_frames": 37,
+        "spatial_mode": "tile",
+        "tile_row": 0,
+        "tile_column": 0,
+        "latent_y": [
+          0,
+          16
+        ],
+        "latent_x": [
+          0,
+          16
+        ],
+        "raw_y": [
+          0,
+          128
+        ],
+        "raw_x": [
+          0,
+          128
+        ],
+        "rgb_y": [
+          0,
+          128
+        ],
+        "rgb_x": [
+          0,
+          128
+        ]
+      },
+      "passed": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    }
+  ],
+  "pixel_only_input_gradient": [
+    {
+      "mode": "full",
+      "loss": "pixel_l1",
+      "finite": true,
+      "max_abs": 0.00031352369114756584,
+      "outside_region_max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "mode": "full",
+      "loss": "lpips",
+      "finite": true,
+      "max_abs": 0.012948194518685341,
+      "outside_region_max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "mode": "tile",
+      "loss": "pixel_l1",
+      "finite": true,
+      "max_abs": 0.0036250660195946693,
+      "outside_region_max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "mode": "tile",
+      "loss": "lpips",
+      "finite": true,
+      "max_abs": 0.025005212053656578,
+      "outside_region_max_abs": 0.0,
+      "passed": true
+    }
+  ],
+  "frozen_parameter_grads_none": true,
+  "gradient_probe": "Detached pred plus deterministic0.01 Gaussian perturbation; no optimizer",
+  "scope": {
+    "latent_frames": 37,
+    "real_frames": 120,
+    "temporal_frames_eligible": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "temporal_frames_excluded": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      34,
+      35,
+      36,
+      37,
+      38,
+      51,
+      52,
+      53,
+      54,
+      55,
+      68,
+      69,
+      70,
+      71,
+      72,
+      85,
+      86,
+      87,
+      88,
+      89,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "full_spec_count": 7,
+    "tile_spec_count": 28,
+    "spatial_tile_recipe": [
+      256,
+      256,
+      64,
+      64
+    ],
+    "lpips_frames_per_spec": 4,
+    "l1_domain": "Unclipped ImageNet-denormalized floating RGB; all valid region frames",
+    "lpips_domain": "RGB clamped0..1 then mapped-1..1; explicit spec frame subset",
+    "sampling": "Caller-selected uniform regions; not full-video pixel-unbiased",
+    "checkpoint_decode": true,
+    "decoder_checkpoint_scope": "Each original spatial tile separately, then original _stitch_tiles",
+    "decoder_trained": false,
+    "end_to_end_causal": false
+  }
+}
