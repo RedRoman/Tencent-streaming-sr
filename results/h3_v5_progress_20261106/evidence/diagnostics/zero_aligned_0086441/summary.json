@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "sample_id": "VIDGEN5S_0086441",
+  "contract_sha256": "60e1999a122b099ee03a61703c8da58812775348593d485168ab6e51715cd5f4",
+  "checkpoint_sha256": "e989d93ec87e751d295b9ec13a0af1c41401f1d75b69c4e25b2a3596c9dbc31e",
+  "step": 0,
+  "new_training_updates": 0,
+  "latent": {
+    "sha256": "9612681b6168826b4834d6d3df3597a3ca2a4ec54d69f1d961c1df9f88b958fc",
+    "bytes": 3582497
+  },
+  "reference_parity": {
+    "equal": true,
+    "max_abs": 0,
+    "shape": [
+      120,
+      384,
+      672,
+      3
+    ],
+    "dtype": "torch.uint8",
+    "baseline_cache": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/test/VIDGEN5S_0086441/rgb.pt",
+      "sha256": "26e0aa0fc010ca4bb64d57d5dc882c417192f5b3037d07ac8f1132f0706a41e1",
+      "bytes": 185796445
+    }
+  },
+  "media_audit": {
+    "zero_aligned.mp4": {
+      "passed": true,
+      "decoder": "FFmpeg full decode with showinfo and -xerror",
+      "decoded_frames": 120,
+      "width": 672,
+      "height": 384,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.95833,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "e8c78197c196ebc590fd29ea56c257f3345692c195fa617a56422d04242a9e2d",
+      "bytes": 4039298
+    }
+  },
+  "video_codec": "mpeg4",
+  "frames": 120,
+  "fps": 24,
+  "seconds_per_video": 5,
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "frozen_model_and_decoder_unchanged": true,
+  "source_contract_unchanged": true,
+  "elapsed_seconds": 68.62552710529417
+}

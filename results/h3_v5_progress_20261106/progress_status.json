@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "snapshot_kind": "Progress evidence, not the complete final media/weight delivery",
+  "created_utc": "2026-11-06T05:17:28.550743+00:00",
+  "completed_scopes": {
+    "training": "control and motion each2000 updates; fixed selected2000; 16dev gate before16test and3legacy",
+    "conversion_factors": "4 post-hoc dev clips; original teacher/GN-only/Conv-only/both-initial plus cached trained comparators; latent stage completed, no diagnostic pixel stage",
+    "lr_roundtrip": "2 post-hoc dev clips, two LR decodes only; no new encoder/upscaler/training; independent visual review",
+    "zero_aligned_0086441": "one already-inspected test clip; original aligned initialization step0; no training; supplementary comparison",
+    "temporal_alignment": "8 inspected clips CPU latent offset scan; no NPU or RGB decoding"
+  },
+  "resolution_v2": {
+    "status": "draft_not_executed",
+    "independent_static_review": "passed",
+    "synthetic_structure_checks": 14,
+    "actual_source_replay_or_model_execution": false,
+    "original_source_sha256": "dabd36782e826ff7c0faa88bc2a2f93b1197283a53c2b0262cf7c5f0121d61fc"
+  },
+  "quality_conclusion": "Small numerical improvement does not resolve the primary visual artifacts. This is a valid optimization attempt with a negative visual outcome, not a solved-quality release.",
+  "delivery_limitations": [
+    "Complete70-video final H264 delivery and local selected motion checkpoint remain incomplete.",
+    "This snapshot excludes all weights, RGB/latent caches, and source training videos.",
+    "Embedded contract/source/checkpoint SHA values retain their original runtime meaning; use original_public_mapping.json to locate public copy SHA.",
+    "Pixel/latent test clips have been reused; this is not a blind test.",
+    "LR VAE roundtrip artifacts do not isolate the encoder alone or prove all latent information is irrecoverably lost."
+  ],
+  "media_delivery": "Five comparison video receipts and source identity are included; parent publication adds reviewed preview media separately."
+}

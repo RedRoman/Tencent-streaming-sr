@@ -1,0 +1,25 @@
+{
+  "columns": 2,
+  "config_sha256": "3dcbed457d51f1b3a3cc778eb7d82c89508f558264f29ef75b1728d642a02e39",
+  "duration_seconds": 5,
+  "fps": 24,
+  "frames": 120,
+  "height": 412,
+  "inputs": [
+    {
+      "label": "Old causal eWarp",
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/long_ewarp.mp4",
+      "sha256": "f237df9188b01e12be3ec230ff894b1b9b3613347277f71746711c0f0ac9695c"
+    },
+    {
+      "label": "Current motion - step 2000",
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/motion.mp4",
+      "sha256": "0f77daece5f2a71acdeff91d7dc581862a5800db95b03d81ead28bb567578fb7"
+    }
+  ],
+  "note": "Display-only synchronized grid, each original encoded frame decoded once; no per-panel resizing or enhancement. Metrics must use original uncompressed evaluation tensors. H264 re-encoding can alter pixels slightly.",
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/old_ewarp_vs_motion_0086441.mp4",
+  "sha256": "1db9faf8431b772ba5ce58169f51404e1384363bb61fc6f0663e9a60f531c05f",
+  "status": "completed",
+  "width": 1344
+}

@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "files": {
+    "summary.json": {
+      "bytes": 10121,
+      "sha256": "416bb2b05aeb38ad5a16ee1567cfd2469fabed7b6e46bc01d0d2bcb583b563bb",
+      "remote_sha256": "416bb2b05aeb38ad5a16ee1567cfd2469fabed7b6e46bc01d0d2bcb583b563bb",
+      "matched": true
+    },
+    "lr_roundtrip_VIDGEN5S_0421364.jpg": {
+      "bytes": 1137750,
+      "sha256": "12c7543d4e49a1048af60f63a0c6a74f8f0fafef780d073b5260f7d1bfaf5deb",
+      "remote_sha256": "12c7543d4e49a1048af60f63a0c6a74f8f0fafef780d073b5260f7d1bfaf5deb",
+      "matched": true
+    },
+    "lr_roundtrip_VIDGEN5S_0665341.jpg": {
+      "bytes": 1779747,
+      "sha256": "818585500c252a16a3420de71f4544654ec1e44bfa276f0a85c84b122f5a7c18",
+      "remote_sha256": "818585500c252a16a3420de71f4544654ec1e44bfa276f0a85c84b122f5a7c18",
+      "matched": true
+    },
+    "lr_probe_detail_VIDGEN5S_0421364.jpg": {
+      "bytes": 156187,
+      "sha256": "1730f8bc4366c84c6c53ae530c58545e08aab1f2705ead244b010e985008d7d1",
+      "remote_sha256": "1730f8bc4366c84c6c53ae530c58545e08aab1f2705ead244b010e985008d7d1",
+      "matched": true
+    },
+    "lr_probe_detail_VIDGEN5S_0665341.jpg": {
+      "bytes": 195474,
+      "sha256": "17ed987213fad84e3f7c26c87e4887a1caa7fe147ce8140c71cba9ea3379de60",
+      "remote_sha256": "17ed987213fad84e3f7c26c87e4887a1caa7fe147ce8140c71cba9ea3379de60",
+      "matched": true
+    }
+  },
+  "transfer_notes": [
+    "Initial full JPEG SFTP calls both ended SFTPConnectionLost; incomplete files were not used for visual conclusions.",
+    "Small detail JPEGs downloaded through SFTP and matched remote SHA.",
+    "Horse full JPEG obtained through read-only SSH/base64 transport. Player full JPEG completed from matching 1305600-byte prefix plus read-only SSH/base64 tail. Both final original JPEG bytes match remote SHA.",
+    "No original source, raw metric JSON, model, NPU run or original PNG was modified."
+  ],
+  "detail_crops": {
+    "VIDGEN5S_0421364": {
+      "source_png_sha256": "000c8134121cbb4e46686d506e9694cac7670c8dbb002b457bb639280360febb",
+      "crop_in_each_672x412_column": [
+        210,
+        190,
+        540,
+        412
+      ]
+    },
+    "VIDGEN5S_0665341": {
+      "source_png_sha256": "451c3933de3f5719fe88dd432c3836d08d74f935974c86e6af29443b86bda31e",
+      "crop_in_each_672x412_column": [
+        200,
+        40,
+        490,
+        300
+      ]
+    }
+  },
+  "detail_frames": [
+    17,
+    19,
+    60
+  ],
+  "detail_jpeg_quality": 82,
+  "metric_source": "Original summary.json from uncompressed uint8 RGB; no metrics from JPEG/MP4."
+}

@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "status": "all_seven_sources_ready",
+  "created_at": "2026-11-06T11:42:02.161111+08:00",
+  "primary_sample_id": "VIDGEN5S_0086441",
+  "identification": {
+    "method": "Screenshot visually matched against existing contact sheet; source dataset original_prompt exactly describes blonde bunny-ear girl, two pink-clothed monkeys, egg/baskets/forest",
+    "screenshot": {
+      "path": "${USER_REFERENCE_IMAGE}",
+      "exists": true,
+      "sha256": "d84973a8363aa0d6ee0810966a793c868aae2f78032b673c101c16376302caca",
+      "bytes": 314955
+    },
+    "matched_contact_sheet": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/comparison.png",
+      "exists": true,
+      "sha256": "35623d65886d3ff3f640ade78380c6833aa0ba0f491f5bae9543a46f77a765d2",
+      "bytes": 5991833
+    }
+  },
+  "main_six_order": [
+    "zero_aligned",
+    "aligned50",
+    "old_ewarp",
+    "v5",
+    "motion",
+    "reference"
+  ],
+  "teacher_additional_order": [
+    "pretrained",
+    "motion"
+  ],
+  "inputs": {
+    "zero_aligned": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/zero_aligned_0086441/zero_aligned.mp4",
+      "exists": true,
+      "sha256": "e8c78197c196ebc590fd29ea56c257f3345692c195fa617a56422d04242a9e2d",
+      "bytes": 4039298,
+      "status": "ready_supplementary_fixed_weight_inference",
+      "width": 672,
+      "height": 384,
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "input_kind": "standalone_mp4",
+      "checkpoint_key": "zero_aligned"
+    },
+    "aligned50": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/prior50.mp4",
+      "exists": true,
+      "sha256": "e5664f99f280aeb147b6200d2a251773579518a57a2f8c71c207200a02e87494",
+      "bytes": 4046523,
+      "status": "ready",
+      "width": 672,
+      "height": 384,
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "input_kind": "standalone_mp4",
+      "checkpoint_key": "aligned50"
+    },
+    "old_ewarp": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/long_ewarp.mp4",
+      "exists": true,
+      "sha256": "f237df9188b01e12be3ec230ff894b1b9b3613347277f71746711c0f0ac9695c",
+      "bytes": 2911823,
+      "status": "ready",
+      "width": 672,
+      "height": 384,
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "input_kind": "standalone_mp4",
+      "checkpoint_key": "old_ewarp"
+    },
+    "v5": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_conv3d_hybrid/evaluation/decoded/VIDGEN5S_0086441/conv3d_hybrid.mp4",
+      "exists": true,
+      "sha256": "381eb85930167b6b53e5ecacb0c550a19720ba138ec60a663dbf4a68a7ca39cb",
+      "bytes": 2364090,
+      "status": "ready",
+      "width": 672,
+      "height": 384,
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "input_kind": "standalone_mp4",
+      "checkpoint_key": "v5"
+    },
+    "motion": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/motion.mp4",
+      "exists": true,
+      "sha256": "0f77daece5f2a71acdeff91d7dc581862a5800db95b03d81ead28bb567578fb7",
+      "bytes": 2310611,
+      "status": "ready",
+      "width": 672,
+      "height": 384,
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "input_kind": "standalone_mp4",
+      "checkpoint_key": "motion"
+    },
+    "reference": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/reference.mp4",
+      "exists": true,
+      "sha256": "5ba83a6acdfb79562f88cc3672fc532da16a1289a0e013cd33a4446ff46191ad",
+      "bytes": 2468160,
+      "status": "ready",
+      "width": 672,
+      "height": 384,
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "input_kind": "standalone_mp4",
+      "checkpoint_key": "reference"
+    },
+    "pretrained": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/pretrained.mp4",
+      "exists": true,
+      "sha256": "5d0a2052e607bf30dc983d81562e4ccf9c1a12742a676b0f7974ec573eb9d42d",
+      "bytes": 2417496,
+      "status": "ready",
+      "width": 672,
+      "height": 384,
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "input_kind": "standalone_mp4",
+      "checkpoint_key": "pretrained"
+    }
+  },
+  "checkpoints": {
+    "zero_aligned": {
+      "checkpoint_relative_path": "upscaler_causal_finetune/aligned_past_steps50/initial_model.pt",
+      "sha256": "e989d93ec87e751d295b9ec13a0af1c41401f1d75b69c4e25b2a3596c9dbc31e",
+      "selected_updates_since_surgery": 0,
+      "description": "Published model with one aligned-past weight conversion, causal left padding and per-frame GroupNorm; no fine-tuning"
+    },
+    "aligned50": {
+      "checkpoint_relative_path": "upscaler_causal_finetune/aligned_past_steps50/checkpoint/model.pt",
+      "sha256": "76e9afc97bfc31029fecb64c249ae23d26fcdfc6745f3a2f10ccc57ce82b222c",
+      "selected_updates_since_surgery": 50,
+      "description": "Same architecture after50 updates on two13-latent-frame clips; later reevaluated on37latent/120RGBframe pairs"
+    },
+    "old_ewarp": {
+      "checkpoint_relative_path": "upscaler_ultraflash/ewarp_steps2000/best.pt",
+      "sha256": "b09291baab8265557430794b9b44154f5e05b37cc0c603228fb2c2922f38c2a6",
+      "selected_step": 2000,
+      "selected_updates_since_surgery": 2050,
+      "description": "aligned50 then2000 latentMSE+0.1raw eWarp updates"
+    },
+    "v5": {
+      "checkpoint_relative_path": "upscaler_conv3d_hybrid/kd_pixel_steps2000/best_step_001800.pt",
+      "sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+      "selected_step": 1800,
+      "selected_updates_since_surgery": 3850,
+      "description": "OldeWarp then2000 completed hybrid updates; dev selected1800"
+    },
+    "motion": {
+      "checkpoint_relative_path": "upscaler_v5_motion_20261106/motion_steps2000/best_step_002000.pt",
+      "sha256": "b4311c9e91365dfc0a5a6014d437e8d34f1c7d71bc31e12879b45b0560652d37",
+      "selected_step": 2000,
+      "selected_updates_since_surgery": 5850,
+      "description": "Frozenv5 then2000 motion arm updates; selected2000"
+    },
+    "reference": {
+      "description": "Frozen nativeH3 VAE decode of paired HR reference latent; no upscaler"
+    },
+    "pretrained": {
+      "checkpoint_relative_path": "assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+      "sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "description": "Original bidirectional teacher; not causal surgery; upscaler only, no H3 diffusion refiner"
+    }
+  },
+  "source_identity": {
+    "source_video_sha256": "f41b74863ab2b487585933d19cae263141e16fed201efbbe7f9602edd59092f3",
+    "plan_sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+    "current_pair_relative_path": "upscaler_ultraflash/pairs/samples/VIDGEN5S_0086441.pt",
+    "pair_sha256": "94377effe6f5bb344597811deefae86163bffa10dee427fb5d5687ddac97ce87",
+    "tensor_shapes": {
+      "draft": [
+        24,
+        37,
+        12,
+        21
+      ],
+      "reference": [
+        24,
+        37,
+        24,
+        42
+      ],
+      "source_pixels": [
+        120,
+        384,
+        672,
+        3
+      ]
+    },
+    "actual_pair_tensor_raw_bytes_sha256": {
+      "draft": "fc25e11ddbfd004b11c17637bc089c768af240eb6be5816dc40b6d6755700eda",
+      "reference": "bb710ff64ffb7e87f858efaeaa22c57c67212e314ccc2cf4cff6f73660f28000",
+      "source_pixels": "8b6f000d6669716e23a4e140d4618ef0ab726d3d843c00338651e4b0245baf20"
+    },
+    "read_only_cpu_checks": {
+      "ultraflash_reference_latent_equals_current_pair_reference": true,
+      "conv3d_reference_latent_equals_current_pair_reference": true,
+      "motion_saved_latent_pair_sha256_equals_current_pair": true,
+      "note": "Actual torch.load(map_location=cpu), backendautoload disabled; no NPU, forward, decode or training used for this identity audit"
+    },
+    "historical_old_reference_mp4_equals_current_reference_mp4": true,
+    "historical_v5_mp4_equals_current_v5_mp4": true,
+    "scope": "Historical50/ewarp predictions inherit the old verified run provenance, plan and same pair. Old saved latent files themselves contain only latent, not embedded pair identity; do not claim a newly rerun50/ewarp model."
+  },
+  "new_completion_script": {
+    "path": "${EXPERIMENT_ROOT}/experiment/complete_h3_zero_aligned_clip.py",
+    "exists": true,
+    "sha256": "0321e5156c23556b3b65f9bc7a6953b976ebaa80bfcca7f469aa89b9c0770156",
+    "bytes": 15162
+  },
+  "new_completion_cli": {
+    "check": "python experiment/complete_h3_zero_aligned_clip.py --root ROOT --stage check",
+    "run_after_shared_accelerator_lock": "python experiment/complete_h3_zero_aligned_clip.py --root ROOT --device npu:0 --stage all"
+  },
+  "required_after_completion": [
+    "Check zero step0 SHA and no repeated aligned conversion",
+    "Require exact reference uint8 RGB parity with existing current baseline cache",
+    "Require video full decode120frames24fps5seconds672x384",
+    "Then update zero video path/SHA from actual new summary; do not invent before execution"
+  ],
+  "provenance_documents": [
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/summary.json",
+      "exists": true,
+      "sha256": "cf8b86fa5e5d583ff2f21960064b0d800f7e3f54c7aa018696a20242a4a55fc6",
+      "bytes": 178584
+    },
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/test.jsonl",
+      "exists": true,
+      "sha256": "3ea4003412f81fb3f7e1bf3e0cf6ffb0e6395e620cde79c46a7947681083a23a",
+      "bytes": 8056
+    },
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_conv3d_hybrid/evaluation/summary.json",
+      "exists": true,
+      "sha256": "21d2092cec8c51fab3f2a4303f1158af624f9a0ce29b88f26f880b55ac343491",
+      "bytes": 323869
+    },
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/contract.json",
+      "exists": true,
+      "sha256": "765900ea019c5a711ea1850e75036e869222be5b2c3fccc25b447b0b0ac879e8",
+      "bytes": 18676
+    },
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/done.json",
+      "exists": true,
+      "sha256": "1a1a5a8554d3d84a08f32825c3132d393ddc9c0962c308924ae32a2fa7cf7a65",
+      "bytes": 6442
+    }
+  ],
+  "limits": [
+    "Original teacher is bidirectional; never label it as zero-step causal surgery.",
+    "No added training/checkpoint selection; this is a previously viewed testclip, not blindtest.",
+    "ExistingMP4s are lossy display artifacts. Same source/pair/reference/geometry does not make compressed-video pixels an uncompressed metric baseline."
+  ],
+  "zero_supplementary": {
+    "summary_sha256": "3d8d9e5e7a687c257b23d0cd520f40eb865f16301985d65d6738f31c68402355",
+    "contract_sha256": "60e1999a122b099ee03a61703c8da58812775348593d485168ab6e51715cd5f4",
+    "reference_parity_equal": true,
+    "new_training_updates": 0,
+    "scope": "One post-hoc viewed test clip; frozen historical initial, fresh inference; original decoder noncausal. No test checkpoint selection."
+  }
+}

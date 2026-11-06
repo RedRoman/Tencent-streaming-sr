@@ -1,0 +1,25 @@
+{
+  "columns": 2,
+  "config_sha256": "0feb9d48c3a75a59a37fac37a4f8a1ae7ee3b8a6b71969b6084cd761d8e524c5",
+  "duration_seconds": 5,
+  "fps": 24,
+  "frames": 120,
+  "height": 412,
+  "inputs": [
+    {
+      "label": "Original bidirectional teacher",
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/pretrained.mp4",
+      "sha256": "5d0a2052e607bf30dc983d81562e4ccf9c1a12742a676b0f7974ec573eb9d42d"
+    },
+    {
+      "label": "Current motion - step 2000",
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/motion.mp4",
+      "sha256": "0f77daece5f2a71acdeff91d7dc581862a5800db95b03d81ead28bb567578fb7"
+    }
+  ],
+  "note": "Display-only synchronized grid, each original encoded frame decoded once; no per-panel resizing or enhancement. Metrics must use original uncompressed evaluation tensors. H264 re-encoding can alter pixels slightly.",
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/original_teacher_vs_motion_0086441.mp4",
+  "sha256": "a353eac224425c3f3e515a1e45f1e3c19fafedaac8053df5ac7e53de640634c8",
+  "status": "completed",
+  "width": 1344
+}

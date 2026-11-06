@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "kind": "prediction",
+  "contract_sha256": "dd974ffafe778a6ae3209b40ac39c47dcf1f6216611aef02cc7f70a18b7a42f2",
+  "sample_id": "VIDGEN5S_0589299",
+  "split": "dev",
+  "variant": "teacher",
+  "pair_sha256": "667e0c45d090f711f90df04c48b30b8d34b0e5c61bac969ed0902323a51af3e5",
+  "factor": {
+    "aligned_causal_convs": false,
+    "frame_groupnorm": false,
+    "causal_latent": false,
+    "initialization": null,
+    "restored_original_forwards": [],
+    "scope": "Whole-clip forward only; noncausal labels are diagnostic controls, never streaming candidates"
+  },
+  "original_weights_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+  "latent_metrics": {
+    "loss": 0.12250819802284241,
+    "latent_mse": 0.09118090569972992,
+    "ewarp_l1": 0.3132728636264801,
+    "valid_warp_fraction": 0.9237528443336487,
+    "residual_ewarp_l1": 0.17973138391971588,
+    "legacy_ewarp_l1": 0.3132728636264801,
+    "target_ewarp_l1": 0.3763185143470764,
+    "temporal_difference_mse": 0.09353739768266678
+  },
+  "historical_teacher_comparison": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "bit_exact": true,
+    "note": "Fresh teacher is primary. Historical teacher comparison is reported, not assumed identical internal precision because its old READY did not record all math flags."
+  },
+  "forward_seconds": 0.20774405542761087,
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "files": {
+    "latent.pt": {
+      "sha256": "73690ab859919ffeab713327c258896c4e5f93063e793d46e84c88b211ee3e72",
+      "bytes": 3582199
+    }
+  },
+  "state_sha256_before": "c6f05679338a51bba1be3c7a46576e2d77159fcfecdc4e045c5cb90e692177f6",
+  "state_sha256_after": "c6f05679338a51bba1be3c7a46576e2d77159fcfecdc4e045c5cb90e692177f6",
+  "frozen_parameters_unchanged": true
+}

@@ -1,0 +1,436 @@
+{
+  "status": "completed",
+  "kind": "prediction",
+  "contract_sha256": "dd974ffafe778a6ae3209b40ac39c47dcf1f6216611aef02cc7f70a18b7a42f2",
+  "sample_id": "VIDGEN5S_0760711",
+  "split": "dev",
+  "variant": "convs_only",
+  "pair_sha256": "3649da81dfc276efcf71965b46d547be35edd6a485958ed22926acb1bcd5a707",
+  "factor": {
+    "aligned_causal_convs": true,
+    "frame_groupnorm": false,
+    "causal_latent": false,
+    "initialization": {
+      "kind": "aligned_past",
+      "converted": [
+        {
+          "module": "conv_in",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.0.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.0.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.1.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "in_blocks.2.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.2.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.3.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.3.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.4.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "in_blocks.5.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.5.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.6.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.6.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.7.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "in_blocks.8.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.8.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.9.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.9.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.10.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "in_blocks.11.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.11.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.12.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.12.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.13.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "in_blocks.14.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.14.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.15.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.15.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.16.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "in_blocks.17.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "in_blocks.17.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.0.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.0.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.1.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "out_blocks.2.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.2.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.3.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.3.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.4.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "out_blocks.5.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.5.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.6.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.6.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.7.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "out_blocks.8.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.8.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.9.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.9.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.10.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "out_blocks.11.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.11.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.12.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.12.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.13.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "out_blocks.14.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.14.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.15.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.15.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.16.dwconv",
+          "kernel": 5,
+          "discarded_future_slices": 2
+        },
+        {
+          "module": "out_blocks.17.in_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "out_blocks.17.out_layers.2",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        },
+        {
+          "module": "conv_out",
+          "kernel": 3,
+          "discarded_future_slices": 1
+        }
+      ],
+      "description": "Old past/current kernel offsets retained; old future taps discarded; older causal taps zeroed"
+    },
+    "restored_original_forwards": [
+      "in_blocks.0.in_layers.0",
+      "in_blocks.0.out_norm",
+      "in_blocks.1.norm",
+      "in_blocks.2.in_layers.0",
+      "in_blocks.2.out_norm",
+      "in_blocks.3.in_layers.0",
+      "in_blocks.3.out_norm",
+      "in_blocks.4.norm",
+      "in_blocks.5.in_layers.0",
+      "in_blocks.5.out_norm",
+      "in_blocks.6.in_layers.0",
+      "in_blocks.6.out_norm",
+      "in_blocks.7.norm",
+      "in_blocks.8.in_layers.0",
+      "in_blocks.8.out_norm",
+      "in_blocks.9.in_layers.0",
+      "in_blocks.9.out_norm",
+      "in_blocks.10.norm",
+      "in_blocks.11.in_layers.0",
+      "in_blocks.11.out_norm",
+      "in_blocks.12.in_layers.0",
+      "in_blocks.12.out_norm",
+      "in_blocks.13.norm",
+      "in_blocks.14.in_layers.0",
+      "in_blocks.14.out_norm",
+      "in_blocks.15.in_layers.0",
+      "in_blocks.15.out_norm",
+      "in_blocks.16.norm",
+      "in_blocks.17.in_layers.0",
+      "in_blocks.17.out_norm",
+      "out_blocks.0.in_layers.0",
+      "out_blocks.0.out_norm",
+      "out_blocks.1.norm",
+      "out_blocks.2.in_layers.0",
+      "out_blocks.2.out_norm",
+      "out_blocks.3.in_layers.0",
+      "out_blocks.3.out_norm",
+      "out_blocks.4.norm",
+      "out_blocks.5.in_layers.0",
+      "out_blocks.5.out_norm",
+      "out_blocks.6.in_layers.0",
+      "out_blocks.6.out_norm",
+      "out_blocks.7.norm",
+      "out_blocks.8.in_layers.0",
+      "out_blocks.8.out_norm",
+      "out_blocks.9.in_layers.0",
+      "out_blocks.9.out_norm",
+      "out_blocks.10.norm",
+      "out_blocks.11.in_layers.0",
+      "out_blocks.11.out_norm",
+      "out_blocks.12.in_layers.0",
+      "out_blocks.12.out_norm",
+      "out_blocks.13.norm",
+      "out_blocks.14.in_layers.0",
+      "out_blocks.14.out_norm",
+      "out_blocks.15.in_layers.0",
+      "out_blocks.15.out_norm",
+      "out_blocks.16.norm",
+      "out_blocks.17.in_layers.0",
+      "out_blocks.17.out_norm",
+      "norm_out"
+    ],
+    "scope": "Whole-clip forward only; noncausal labels are diagnostic controls, never streaming candidates"
+  },
+  "original_weights_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+  "latent_metrics": {
+    "loss": 0.42303937673568726,
+    "latent_mse": 0.39255082607269287,
+    "ewarp_l1": 0.30488547682762146,
+    "valid_warp_fraction": 0.9848923087120056,
+    "residual_ewarp_l1": 0.28029865026474,
+    "legacy_ewarp_l1": 0.30488547682762146,
+    "target_ewarp_l1": 0.3758827745914459,
+    "temporal_difference_mse": 0.17335981130599976
+  },
+  "historical_teacher_comparison": null,
+  "forward_seconds": 0.21284654457122087,
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "files": {
+    "latent.pt": {
+      "sha256": "06823894c5624adc1336218521f2b514b3aa9f3e67eff7f685917ea2f622f888",
+      "bytes": 3582199
+    }
+  },
+  "state_sha256_before": "db2c9175901c1fb36b890d332afb39244d2969647cbfdebe224f729dbb438f97",
+  "state_sha256_after": "db2c9175901c1fb36b890d332afb39244d2969647cbfdebe224f729dbb438f97",
+  "frozen_parameters_unchanged": true
+}

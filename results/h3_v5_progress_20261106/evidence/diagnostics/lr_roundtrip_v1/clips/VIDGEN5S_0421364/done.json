@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "sample_id": "VIDGEN5S_0421364",
+  "contract_sha256": "9c742b480f4c064f6c599f0a395ec69cc8a80b41722f5bf9e0fd6fb2f3ef4312",
+  "frozen_decoder_unchanged": true,
+  "execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "media_audit": {
+    "passed": true,
+    "decoder": "FFmpeg full decode with showinfo and -xerror",
+    "decoded_frames": 120,
+    "width": 2688,
+    "height": 412,
+    "first_pts_seconds": 0.0,
+    "last_pts_seconds": 4.95833,
+    "fps": 24,
+    "duration_seconds": 5.0,
+    "sha256": "4f643108ab7a3a598cf9e6ef5775ad7e75ff192cd6e57ac2804f088914fcc89a",
+    "bytes": 8383061
+  },
+  "files": {
+    "comparison.mp4": {
+      "sha256": "4f643108ab7a3a598cf9e6ef5775ad7e75ff192cd6e57ac2804f088914fcc89a",
+      "bytes": 8383061
+    },
+    "comparison.png": {
+      "sha256": "31bb13240b12240fa76cb16e02361687873f0207cb2020ffcbef1d12af8837f0",
+      "bytes": 2490546
+    },
+    "motion_contacts.png": {
+      "sha256": "000c8134121cbb4e46686d506e9694cac7670c8dbb002b457bb639280360febb",
+      "bytes": 4494910
+    },
+    "metrics.json": {
+      "sha256": "a5dd667d8f453809e6c303ca1ffdd58d4d79ef1cccbe404f09b1e4e8a600f1bd",
+      "bytes": 3808
+    }
+  }
+}

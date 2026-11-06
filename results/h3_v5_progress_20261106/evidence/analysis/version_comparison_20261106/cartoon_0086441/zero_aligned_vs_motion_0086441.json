@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/zero_aligned_0086441/zero_aligned.mp4",
+      "sha256": "e8c78197c196ebc590fd29ea56c257f3345692c195fa617a56422d04242a9e2d",
+      "label": "Aligned init - 0 updates"
+    },
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/motion.mp4",
+      "sha256": "0f77daece5f2a71acdeff91d7dc581862a5800db95b03d81ead28bb567578fb7",
+      "label": "Current motion - step 2000"
+    }
+  ],
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/zero_aligned_vs_motion_0086441.mp4",
+  "columns": 2
+}

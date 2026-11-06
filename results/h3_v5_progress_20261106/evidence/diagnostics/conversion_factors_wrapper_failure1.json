@@ -1,0 +1,7 @@
+{
+  "time_utc": "2026-11-06T02:53:41.915699+00:00",
+  "tool": "ssh_run_bg",
+  "result": "Failed to start background session: Is tmux installed on the remote host?",
+  "verified": "tmux installed, named session absent; no diagnostic Python processes, latent_execution.json or latent.log. No NPU stage started. No frozen source modified.",
+  "next": "Use saved shell launcher with a simple bash command, same frozen script and contract."
+}

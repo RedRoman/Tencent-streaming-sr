@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "command": [
+    "${RUNTIME_ASSET_ROOT}/runtime/.venv-npu/bin/python",
+    "${EXPERIMENT_ROOT}/experiment/complete_h3_zero_aligned_clip.py",
+    "--root",
+    "${EXPERIMENT_ROOT}",
+    "--stage",
+    "all",
+    "--device",
+    "npu:0"
+  ],
+  "pid": 3744893,
+  "physical_npu": 5,
+  "script_sha256": "0321e5156c23556b3b65f9bc7a6953b976ebaa80bfcca7f469aa89b9c0770156",
+  "wrapper_sha256": "d047df9f4096f226b4fd732092f1937f39eceb2f8da16c4fda2becd9d4fdfcbc",
+  "started_utc": "2026-11-06T03:43:07.711538+00:00",
+  "note": "Fixed original zero-update checkpoint supplementary cartoon comparison. No training. Fresh inference and reference/zero decode; preserve old artifacts.",
+  "exit_code": 0,
+  "ended_utc": "2026-11-06T03:45:22.919229+00:00",
+  "contract_sha256": "60e1999a122b099ee03a61703c8da58812775348593d485168ab6e51715cd5f4"
+}

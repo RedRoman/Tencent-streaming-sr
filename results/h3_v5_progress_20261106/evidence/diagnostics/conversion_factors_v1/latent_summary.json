@@ -1,0 +1,880 @@
+{
+  "status": "latent_completed",
+  "contract_sha256": "dd974ffafe778a6ae3209b40ac39c47dcf1f6216611aef02cc7f70a18b7a42f2",
+  "sample_ids": [
+    "VIDGEN5S_0421364",
+    "VIDGEN5S_0665341",
+    "VIDGEN5S_0589299",
+    "VIDGEN5S_0760711"
+  ],
+  "samples": {
+    "teacher": {
+      "VIDGEN5S_0421364": {
+        "loss": 0.10747253149747849,
+        "latent_mse": 0.06943371146917343,
+        "ewarp_l1": 0.38038820028305054,
+        "valid_warp_fraction": 0.9121031761169434,
+        "residual_ewarp_l1": 0.16503392159938812,
+        "legacy_ewarp_l1": 0.38038820028305054,
+        "target_ewarp_l1": 0.41366878151893616,
+        "temporal_difference_mse": 0.06660468876361847
+      },
+      "VIDGEN5S_0665341": {
+        "loss": 0.1134859174489975,
+        "latent_mse": 0.08637687563896179,
+        "ewarp_l1": 0.27109041810035706,
+        "valid_warp_fraction": 0.9768140316009521,
+        "residual_ewarp_l1": 0.14544449746608734,
+        "legacy_ewarp_l1": 0.27109041810035706,
+        "target_ewarp_l1": 0.31684184074401855,
+        "temporal_difference_mse": 0.0541764497756958
+      },
+      "VIDGEN5S_0589299": {
+        "loss": 0.12250819802284241,
+        "latent_mse": 0.09118090569972992,
+        "ewarp_l1": 0.3132728636264801,
+        "valid_warp_fraction": 0.9237528443336487,
+        "residual_ewarp_l1": 0.17973138391971588,
+        "legacy_ewarp_l1": 0.3132728636264801,
+        "target_ewarp_l1": 0.3763185143470764,
+        "temporal_difference_mse": 0.09353739768266678
+      },
+      "VIDGEN5S_0760711": {
+        "loss": 0.1258130818605423,
+        "latent_mse": 0.09279177337884903,
+        "ewarp_l1": 0.3302130699157715,
+        "valid_warp_fraction": 0.9848923087120056,
+        "residual_ewarp_l1": 0.16974322497844696,
+        "legacy_ewarp_l1": 0.3302130699157715,
+        "target_ewarp_l1": 0.3758827745914459,
+        "temporal_difference_mse": 0.08146199584007263
+      }
+    },
+    "gn_only": {
+      "VIDGEN5S_0421364": {
+        "loss": 0.12591306865215302,
+        "latent_mse": 0.09005176275968552,
+        "ewarp_l1": 0.3586130142211914,
+        "valid_warp_fraction": 0.9121031761169434,
+        "residual_ewarp_l1": 0.20057013630867004,
+        "legacy_ewarp_l1": 0.3586130142211914,
+        "target_ewarp_l1": 0.41366878151893616,
+        "temporal_difference_mse": 0.08655641973018646
+      },
+      "VIDGEN5S_0665341": {
+        "loss": 0.14535115659236908,
+        "latent_mse": 0.11959277093410492,
+        "ewarp_l1": 0.2575837969779968,
+        "valid_warp_fraction": 0.9768140316009521,
+        "residual_ewarp_l1": 0.18712972104549408,
+        "legacy_ewarp_l1": 0.2575837969779968,
+        "target_ewarp_l1": 0.31684184074401855,
+        "temporal_difference_mse": 0.07401897758245468
+      },
+      "VIDGEN5S_0589299": {
+        "loss": 0.15096057951450348,
+        "latent_mse": 0.12365929782390594,
+        "ewarp_l1": 0.27301284670829773,
+        "valid_warp_fraction": 0.9237528443336487,
+        "residual_ewarp_l1": 0.22557920217514038,
+        "legacy_ewarp_l1": 0.27301284670829773,
+        "target_ewarp_l1": 0.3763185143470764,
+        "temporal_difference_mse": 0.12518903613090515
+      },
+      "VIDGEN5S_0760711": {
+        "loss": 0.14385880529880524,
+        "latent_mse": 0.11230923235416412,
+        "ewarp_l1": 0.31549572944641113,
+        "valid_warp_fraction": 0.9848923087120056,
+        "residual_ewarp_l1": 0.20256143808364868,
+        "legacy_ewarp_l1": 0.31549572944641113,
+        "target_ewarp_l1": 0.3758827745914459,
+        "temporal_difference_mse": 0.09987729787826538
+      }
+    },
+    "convs_only": {
+      "VIDGEN5S_0421364": {
+        "loss": 0.4887041449546814,
+        "latent_mse": 0.45380082726478577,
+        "ewarp_l1": 0.3490332067012787,
+        "valid_warp_fraction": 0.9121031761169434,
+        "residual_ewarp_l1": 0.3096957802772522,
+        "legacy_ewarp_l1": 0.3490332067012787,
+        "target_ewarp_l1": 0.41366878151893616,
+        "temporal_difference_mse": 0.19467836618423462
+      },
+      "VIDGEN5S_0665341": {
+        "loss": 0.42321163415908813,
+        "latent_mse": 0.3970524072647095,
+        "ewarp_l1": 0.26159217953681946,
+        "valid_warp_fraction": 0.9768140316009521,
+        "residual_ewarp_l1": 0.2728844881057739,
+        "legacy_ewarp_l1": 0.26159217953681946,
+        "target_ewarp_l1": 0.31684184074401855,
+        "temporal_difference_mse": 0.1481284201145172
+      },
+      "VIDGEN5S_0589299": {
+        "loss": 0.5591453909873962,
+        "latent_mse": 0.531137228012085,
+        "ewarp_l1": 0.28008151054382324,
+        "valid_warp_fraction": 0.9237528443336487,
+        "residual_ewarp_l1": 0.31719037890434265,
+        "legacy_ewarp_l1": 0.28008151054382324,
+        "target_ewarp_l1": 0.3763185143470764,
+        "temporal_difference_mse": 0.22346539795398712
+      },
+      "VIDGEN5S_0760711": {
+        "loss": 0.42303937673568726,
+        "latent_mse": 0.39255082607269287,
+        "ewarp_l1": 0.30488547682762146,
+        "valid_warp_fraction": 0.9848923087120056,
+        "residual_ewarp_l1": 0.28029865026474,
+        "legacy_ewarp_l1": 0.30488547682762146,
+        "target_ewarp_l1": 0.3758827745914459,
+        "temporal_difference_mse": 0.17335981130599976
+      }
+    },
+    "both_initial": {
+      "VIDGEN5S_0421364": {
+        "loss": 0.43176981806755066,
+        "latent_mse": 0.4006037414073944,
+        "ewarp_l1": 0.31166064739227295,
+        "valid_warp_fraction": 0.9121031761169434,
+        "residual_ewarp_l1": 0.3021133840084076,
+        "legacy_ewarp_l1": 0.31166064739227295,
+        "target_ewarp_l1": 0.41366878151893616,
+        "temporal_difference_mse": 0.18493330478668213
+      },
+      "VIDGEN5S_0665341": {
+        "loss": 0.42483624815940857,
+        "latent_mse": 0.40187206864356995,
+        "ewarp_l1": 0.22964172065258026,
+        "valid_warp_fraction": 0.9768140316009521,
+        "residual_ewarp_l1": 0.2643581032752991,
+        "legacy_ewarp_l1": 0.22964172065258026,
+        "target_ewarp_l1": 0.31684184074401855,
+        "temporal_difference_mse": 0.13725228607654572
+      },
+      "VIDGEN5S_0589299": {
+        "loss": 0.5361021161079407,
+        "latent_mse": 0.5120338797569275,
+        "ewarp_l1": 0.24068255722522736,
+        "valid_warp_fraction": 0.9237528443336487,
+        "residual_ewarp_l1": 0.32397890090942383,
+        "legacy_ewarp_l1": 0.24068255722522736,
+        "target_ewarp_l1": 0.3763185143470764,
+        "temporal_difference_mse": 0.226776123046875
+      },
+      "VIDGEN5S_0760711": {
+        "loss": 0.3998648226261139,
+        "latent_mse": 0.3722889721393585,
+        "ewarp_l1": 0.27575862407684326,
+        "valid_warp_fraction": 0.9848923087120056,
+        "residual_ewarp_l1": 0.28107231855392456,
+        "legacy_ewarp_l1": 0.27575862407684326,
+        "target_ewarp_l1": 0.3758827745914459,
+        "temporal_difference_mse": 0.17222709953784943
+      }
+    },
+    "v5": {
+      "VIDGEN5S_0421364": {
+        "loss": 0.11025004088878632,
+        "latent_mse": 0.07491448521614075,
+        "ewarp_l1": 0.3533555567264557,
+        "valid_warp_fraction": 0.9121031761169434,
+        "residual_ewarp_l1": 0.19471774995326996,
+        "legacy_ewarp_l1": 0.3533555567264557,
+        "target_ewarp_l1": 0.41366878151893616,
+        "temporal_difference_mse": 0.08687321096658707
+      },
+      "VIDGEN5S_0665341": {
+        "loss": 0.09960102289915085,
+        "latent_mse": 0.07580305635929108,
+        "ewarp_l1": 0.23797966539859772,
+        "valid_warp_fraction": 0.9768140316009521,
+        "residual_ewarp_l1": 0.1790042370557785,
+        "legacy_ewarp_l1": 0.23797966539859772,
+        "target_ewarp_l1": 0.31684184074401855,
+        "temporal_difference_mse": 0.07149568200111389
+      },
+      "VIDGEN5S_0589299": {
+        "loss": 0.14128394424915314,
+        "latent_mse": 0.11381292343139648,
+        "ewarp_l1": 0.27471020817756653,
+        "valid_warp_fraction": 0.9237528443336487,
+        "residual_ewarp_l1": 0.21714355051517487,
+        "legacy_ewarp_l1": 0.27471020817756653,
+        "target_ewarp_l1": 0.3763185143470764,
+        "temporal_difference_mse": 0.11936530470848083
+      },
+      "VIDGEN5S_0760711": {
+        "loss": 0.15858951210975647,
+        "latent_mse": 0.12876780331134796,
+        "ewarp_l1": 0.2982170581817627,
+        "valid_warp_fraction": 0.9848923087120056,
+        "residual_ewarp_l1": 0.20931729674339294,
+        "legacy_ewarp_l1": 0.2982170581817627,
+        "target_ewarp_l1": 0.3758827745914459,
+        "temporal_difference_mse": 0.1094583049416542
+      }
+    },
+    "motion": {
+      "VIDGEN5S_0421364": {
+        "loss": 0.11124689877033234,
+        "latent_mse": 0.07364066690206528,
+        "ewarp_l1": 0.376062273979187,
+        "valid_warp_fraction": 0.9121031761169434,
+        "residual_ewarp_l1": 0.18941067159175873,
+        "legacy_ewarp_l1": 0.376062273979187,
+        "target_ewarp_l1": 0.41366878151893616,
+        "temporal_difference_mse": 0.0838441401720047
+      },
+      "VIDGEN5S_0665341": {
+        "loss": 0.10157701373100281,
+        "latent_mse": 0.07425034046173096,
+        "ewarp_l1": 0.2732667326927185,
+        "valid_warp_fraction": 0.9768140316009521,
+        "residual_ewarp_l1": 0.17098727822303772,
+        "legacy_ewarp_l1": 0.2732667326927185,
+        "target_ewarp_l1": 0.31684184074401855,
+        "temporal_difference_mse": 0.06846735626459122
+      },
+      "VIDGEN5S_0589299": {
+        "loss": 0.14202585816383362,
+        "latent_mse": 0.11098259687423706,
+        "ewarp_l1": 0.31043264269828796,
+        "valid_warp_fraction": 0.9237528443336487,
+        "residual_ewarp_l1": 0.20853425562381744,
+        "legacy_ewarp_l1": 0.31043264269828796,
+        "target_ewarp_l1": 0.3763185143470764,
+        "temporal_difference_mse": 0.1144392117857933
+      },
+      "VIDGEN5S_0760711": {
+        "loss": 0.16048620641231537,
+        "latent_mse": 0.12806370854377747,
+        "ewarp_l1": 0.32422497868537903,
+        "valid_warp_fraction": 0.9848923087120056,
+        "residual_ewarp_l1": 0.20385369658470154,
+        "legacy_ewarp_l1": 0.32422497868537903,
+        "target_ewarp_l1": 0.3758827745914459,
+        "temporal_difference_mse": 0.10696166753768921
+      }
+    }
+  },
+  "mean": {
+    "teacher": {
+      "loss": 0.11731993220746517,
+      "latent_mse": 0.08494581654667854,
+      "ewarp_l1": 0.3237411379814148,
+      "valid_warp_fraction": 0.9493905901908875,
+      "residual_ewarp_l1": 0.16498825699090958,
+      "legacy_ewarp_l1": 0.3237411379814148,
+      "target_ewarp_l1": 0.37067797780036926,
+      "temporal_difference_mse": 0.07394513301551342
+    },
+    "gn_only": {
+      "loss": 0.1415209025144577,
+      "latent_mse": 0.11140326596796513,
+      "ewarp_l1": 0.3011763468384743,
+      "valid_warp_fraction": 0.9493905901908875,
+      "residual_ewarp_l1": 0.2039601244032383,
+      "legacy_ewarp_l1": 0.3011763468384743,
+      "target_ewarp_l1": 0.37067797780036926,
+      "temporal_difference_mse": 0.09641043283045292
+    },
+    "convs_only": {
+      "loss": 0.47352513670921326,
+      "latent_mse": 0.44363532215356827,
+      "ewarp_l1": 0.2988980934023857,
+      "valid_warp_fraction": 0.9493905901908875,
+      "residual_ewarp_l1": 0.2950173243880272,
+      "legacy_ewarp_l1": 0.2988980934023857,
+      "target_ewarp_l1": 0.37067797780036926,
+      "temporal_difference_mse": 0.18490799888968468
+    },
+    "both_initial": {
+      "loss": 0.44814325124025345,
+      "latent_mse": 0.4216996654868126,
+      "ewarp_l1": 0.26443588733673096,
+      "valid_warp_fraction": 0.9493905901908875,
+      "residual_ewarp_l1": 0.29288067668676376,
+      "legacy_ewarp_l1": 0.26443588733673096,
+      "target_ewarp_l1": 0.37067797780036926,
+      "temporal_difference_mse": 0.18029720336198807
+    },
+    "v5": {
+      "loss": 0.1274311300367117,
+      "latent_mse": 0.09832456707954407,
+      "ewarp_l1": 0.29106562212109566,
+      "valid_warp_fraction": 0.9493905901908875,
+      "residual_ewarp_l1": 0.20004570856690407,
+      "legacy_ewarp_l1": 0.29106562212109566,
+      "target_ewarp_l1": 0.37067797780036926,
+      "temporal_difference_mse": 0.096798125654459
+    },
+    "motion": {
+      "loss": 0.12883399426937103,
+      "latent_mse": 0.09673432819545269,
+      "ewarp_l1": 0.3209966570138931,
+      "valid_warp_fraction": 0.9493905901908875,
+      "residual_ewarp_l1": 0.19319647550582886,
+      "legacy_ewarp_l1": 0.3209966570138931,
+      "target_ewarp_l1": 0.37067797780036926,
+      "temporal_difference_mse": 0.09342809394001961
+    }
+  },
+  "differences": {
+    "GN_change_with_symmetric_convs": {
+      "loss": 0.02420097030699253,
+      "latent_mse": 0.026457449421286583,
+      "ewarp_l1": -0.02256479114294052,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": 0.03897186741232872,
+      "legacy_ewarp_l1": -0.02256479114294052,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": 0.0224652998149395
+    },
+    "GN_change_with_aligned_convs": {
+      "loss": -0.02538188546895981,
+      "latent_mse": -0.021935656666755676,
+      "ewarp_l1": -0.034462206065654755,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": -0.0021366477012634277,
+      "legacy_ewarp_l1": -0.034462206065654755,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": -0.0046107955276966095
+    },
+    "conv_change_with_full_GN": {
+      "loss": 0.3562052045017481,
+      "latent_mse": 0.3586895056068897,
+      "ewarp_l1": -0.024843044579029083,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": 0.13002906739711761,
+      "legacy_ewarp_l1": -0.024843044579029083,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": 0.11096286587417126
+    },
+    "conv_change_with_frame_GN": {
+      "loss": 0.30662234872579575,
+      "latent_mse": 0.31029639951884747,
+      "ewarp_l1": -0.03674045950174332,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": 0.08892055228352547,
+      "legacy_ewarp_l1": -0.03674045950174332,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": 0.08388677053153515
+    },
+    "full_conversion": {
+      "loss": 0.3308233190327883,
+      "latent_mse": 0.33675384894013405,
+      "ewarp_l1": -0.05930525064468384,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": 0.1278924196958542,
+      "legacy_ewarp_l1": -0.05930525064468384,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": 0.10635207034647465
+    },
+    "v5_minus_initial": {
+      "loss": -0.32071212120354176,
+      "latent_mse": -0.3233750984072685,
+      "ewarp_l1": 0.0266297347843647,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": -0.0928349681198597,
+      "legacy_ewarp_l1": 0.0266297347843647,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": -0.08349907770752907
+    },
+    "motion_minus_v5": {
+      "loss": 0.00140286423265934,
+      "latent_mse": -0.0015902388840913773,
+      "ewarp_l1": 0.02993103489279747,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": -0.006849233061075211,
+      "legacy_ewarp_l1": 0.02993103489279747,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": -0.003370031714439392
+    },
+    "factor_interaction": {
+      "loss": -0.04958285577595234,
+      "latent_mse": -0.04839310608804226,
+      "ewarp_l1": -0.011897414922714233,
+      "valid_warp_fraction": 0.0,
+      "residual_ewarp_l1": -0.04110851511359215,
+      "legacy_ewarp_l1": -0.011897414922714233,
+      "target_ewarp_l1": 0.0,
+      "temporal_difference_mse": -0.02707609534263611
+    }
+  },
+  "per_clip_differences": {
+    "VIDGEN5S_0421364": {
+      "GN_change_with_symmetric_convs": {
+        "loss": 0.01844053715467453,
+        "latent_mse": 0.020618051290512085,
+        "ewarp_l1": -0.02177518606185913,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.03553621470928192,
+        "legacy_ewarp_l1": -0.02177518606185913,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.019951730966567993
+      },
+      "GN_change_with_aligned_convs": {
+        "loss": -0.05693432688713074,
+        "latent_mse": -0.05319708585739136,
+        "ewarp_l1": -0.03737255930900574,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.0075823962688446045,
+        "legacy_ewarp_l1": -0.03737255930900574,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.00974506139755249
+      },
+      "conv_change_with_full_GN": {
+        "loss": 0.3812316134572029,
+        "latent_mse": 0.38436711579561234,
+        "ewarp_l1": -0.03135499358177185,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.14466185867786407,
+        "legacy_ewarp_l1": -0.03135499358177185,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.12807367742061615
+      },
+      "conv_change_with_frame_GN": {
+        "loss": 0.30585674941539764,
+        "latent_mse": 0.3105519786477089,
+        "ewarp_l1": -0.04695236682891846,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.10154324769973755,
+        "legacy_ewarp_l1": -0.04695236682891846,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.09837688505649567
+      },
+      "full_conversion": {
+        "loss": 0.3242972865700722,
+        "latent_mse": 0.331170029938221,
+        "ewarp_l1": -0.06872755289077759,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.13707946240901947,
+        "legacy_ewarp_l1": -0.06872755289077759,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.11832861602306366
+      },
+      "v5_minus_initial": {
+        "loss": -0.32151977717876434,
+        "latent_mse": -0.32568925619125366,
+        "ewarp_l1": 0.04169490933418274,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.10739563405513763,
+        "legacy_ewarp_l1": 0.04169490933418274,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.09806009382009506
+      },
+      "motion_minus_v5": {
+        "loss": 0.0009968578815460205,
+        "latent_mse": -0.00127381831407547,
+        "ewarp_l1": 0.022706717252731323,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.0053070783615112305,
+        "legacy_ewarp_l1": 0.022706717252731323,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.003029070794582367
+      },
+      "factor_interaction": {
+        "loss": -0.07537486404180527,
+        "latent_mse": -0.07381513714790344,
+        "ewarp_l1": -0.015597373247146606,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.043118610978126526,
+        "legacy_ewarp_l1": -0.015597373247146606,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.029696792364120483
+      }
+    },
+    "VIDGEN5S_0665341": {
+      "GN_change_with_symmetric_convs": {
+        "loss": 0.03186523914337158,
+        "latent_mse": 0.03321589529514313,
+        "ewarp_l1": -0.01350662112236023,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.04168522357940674,
+        "legacy_ewarp_l1": -0.01350662112236023,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.01984252780675888
+      },
+      "GN_change_with_aligned_convs": {
+        "loss": 0.0016246140003204346,
+        "latent_mse": 0.004819661378860474,
+        "ewarp_l1": -0.0319504588842392,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.008526384830474854,
+        "legacy_ewarp_l1": -0.0319504588842392,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.010876134037971497
+      },
+      "conv_change_with_full_GN": {
+        "loss": 0.30972571671009064,
+        "latent_mse": 0.3106755316257477,
+        "ewarp_l1": -0.009498238563537598,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.12743999063968658,
+        "legacy_ewarp_l1": -0.009498238563537598,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.09395197033882141
+      },
+      "conv_change_with_frame_GN": {
+        "loss": 0.2794850915670395,
+        "latent_mse": 0.282279297709465,
+        "ewarp_l1": -0.027942076325416565,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.07722838222980499,
+        "legacy_ewarp_l1": -0.027942076325416565,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.06323330849409103
+      },
+      "full_conversion": {
+        "loss": 0.31135033071041107,
+        "latent_mse": 0.31549519300460815,
+        "ewarp_l1": -0.041448697447776794,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.11891360580921173,
+        "legacy_ewarp_l1": -0.041448697447776794,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.08307583630084991
+      },
+      "v5_minus_initial": {
+        "loss": -0.3252352252602577,
+        "latent_mse": -0.32606901228427887,
+        "ewarp_l1": 0.008337944746017456,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.08535386621952057,
+        "legacy_ewarp_l1": 0.008337944746017456,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.06575660407543182
+      },
+      "motion_minus_v5": {
+        "loss": 0.0019759908318519592,
+        "latent_mse": -0.0015527158975601196,
+        "ewarp_l1": 0.03528706729412079,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.008016958832740784,
+        "legacy_ewarp_l1": 0.03528706729412079,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.0030283257365226746
+      },
+      "factor_interaction": {
+        "loss": -0.030240625143051147,
+        "latent_mse": -0.028396233916282654,
+        "ewarp_l1": -0.018443837761878967,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.05021160840988159,
+        "legacy_ewarp_l1": -0.018443837761878967,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.030718661844730377
+      }
+    },
+    "VIDGEN5S_0589299": {
+      "GN_change_with_symmetric_convs": {
+        "loss": 0.028452381491661072,
+        "latent_mse": 0.032478392124176025,
+        "ewarp_l1": -0.04026001691818237,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.0458478182554245,
+        "legacy_ewarp_l1": -0.04026001691818237,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.03165163844823837
+      },
+      "GN_change_with_aligned_convs": {
+        "loss": -0.023043274879455566,
+        "latent_mse": -0.01910334825515747,
+        "ewarp_l1": -0.039398953318595886,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.006788522005081177,
+        "legacy_ewarp_l1": -0.039398953318595886,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.0033107250928878784
+      },
+      "conv_change_with_full_GN": {
+        "loss": 0.43663719296455383,
+        "latent_mse": 0.43995632231235504,
+        "ewarp_l1": -0.03319135308265686,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.13745899498462677,
+        "legacy_ewarp_l1": -0.03319135308265686,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.12992800027132034
+      },
+      "conv_change_with_frame_GN": {
+        "loss": 0.3851415365934372,
+        "latent_mse": 0.38837458193302155,
+        "ewarp_l1": -0.032330289483070374,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.09839969873428345,
+        "legacy_ewarp_l1": -0.032330289483070374,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.10158708691596985
+      },
+      "full_conversion": {
+        "loss": 0.41359391808509827,
+        "latent_mse": 0.42085297405719757,
+        "ewarp_l1": -0.07259030640125275,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.14424751698970795,
+        "legacy_ewarp_l1": -0.07259030640125275,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.13323872536420822
+      },
+      "v5_minus_initial": {
+        "loss": -0.39481817185878754,
+        "latent_mse": -0.398220956325531,
+        "ewarp_l1": 0.03402765095233917,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.10683535039424896,
+        "legacy_ewarp_l1": 0.03402765095233917,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.10741081833839417
+      },
+      "motion_minus_v5": {
+        "loss": 0.000741913914680481,
+        "latent_mse": -0.002830326557159424,
+        "ewarp_l1": 0.035722434520721436,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.008609294891357422,
+        "legacy_ewarp_l1": 0.035722434520721436,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.0049260929226875305
+      },
+      "factor_interaction": {
+        "loss": -0.05149565637111664,
+        "latent_mse": -0.051581740379333496,
+        "ewarp_l1": 0.0008610635995864868,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.03905929625034332,
+        "legacy_ewarp_l1": 0.0008610635995864868,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.028340913355350494
+      }
+    },
+    "VIDGEN5S_0760711": {
+      "GN_change_with_symmetric_convs": {
+        "loss": 0.01804572343826294,
+        "latent_mse": 0.019517458975315094,
+        "ewarp_l1": -0.014717340469360352,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.03281821310520172,
+        "legacy_ewarp_l1": -0.014717340469360352,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.01841530203819275
+      },
+      "GN_change_with_aligned_convs": {
+        "loss": -0.023174554109573364,
+        "latent_mse": -0.02026185393333435,
+        "ewarp_l1": -0.029126852750778198,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.0007736682891845703,
+        "legacy_ewarp_l1": -0.029126852750778198,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.0011327117681503296
+      },
+      "conv_change_with_full_GN": {
+        "loss": 0.29722629487514496,
+        "latent_mse": 0.29975905269384384,
+        "ewarp_l1": -0.025327593088150024,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.11055542528629303,
+        "legacy_ewarp_l1": -0.025327593088150024,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.09189781546592712
+      },
+      "conv_change_with_frame_GN": {
+        "loss": 0.25600601732730865,
+        "latent_mse": 0.2599797397851944,
+        "ewarp_l1": -0.03973710536956787,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.07851088047027588,
+        "legacy_ewarp_l1": -0.03973710536956787,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.07234980165958405
+      },
+      "full_conversion": {
+        "loss": 0.2740517407655716,
+        "latent_mse": 0.2794971987605095,
+        "ewarp_l1": -0.05445444583892822,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": 0.1113290935754776,
+        "legacy_ewarp_l1": -0.05445444583892822,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": 0.0907651036977768
+      },
+      "v5_minus_initial": {
+        "loss": -0.24127531051635742,
+        "latent_mse": -0.24352116882801056,
+        "ewarp_l1": 0.022458434104919434,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.07175502181053162,
+        "legacy_ewarp_l1": 0.022458434104919434,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.06276879459619522
+      },
+      "motion_minus_v5": {
+        "loss": 0.001896694302558899,
+        "latent_mse": -0.0007040947675704956,
+        "ewarp_l1": 0.026007920503616333,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.005463600158691406,
+        "legacy_ewarp_l1": 0.026007920503616333,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.0024966374039649963
+      },
+      "factor_interaction": {
+        "loss": -0.041220277547836304,
+        "latent_mse": -0.039779312908649445,
+        "ewarp_l1": -0.014409512281417847,
+        "valid_warp_fraction": 0.0,
+        "residual_ewarp_l1": -0.03204454481601715,
+        "legacy_ewarp_l1": -0.014409512281417847,
+        "target_ewarp_l1": 0.0,
+        "temporal_difference_mse": -0.01954801380634308
+      }
+    }
+  },
+  "factor_state_sha256": {
+    "teacher": "c6f05679338a51bba1be3c7a46576e2d77159fcfecdc4e045c5cb90e692177f6",
+    "gn_only": "c6f05679338a51bba1be3c7a46576e2d77159fcfecdc4e045c5cb90e692177f6",
+    "convs_only": "db2c9175901c1fb36b890d332afb39244d2969647cbfdebe224f729dbb438f97",
+    "both_initial": "db2c9175901c1fb36b890d332afb39244d2969647cbfdebe224f729dbb438f97"
+  },
+  "prediction_receipts": {
+    "teacher/VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/teacher/VIDGEN5S_0421364/done.json",
+      "sha256": "0e7892d2b7809ea6929a826fd930b067fdc92dbb766552749e6630035fd5fde8",
+      "bytes": 2493
+    },
+    "teacher/VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/teacher/VIDGEN5S_0665341/done.json",
+      "sha256": "88fea19b540350a8d896c3e394da5c886c91c003fe1fafeb17cc6815c3bc2bb0",
+      "bytes": 2491
+    },
+    "teacher/VIDGEN5S_0589299": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/teacher/VIDGEN5S_0589299/done.json",
+      "sha256": "6dfb7c3f0fcb4a3853fe2fa519aaa0682969ed8ab7ab8a74a8800e863ee364d7",
+      "bytes": 2491
+    },
+    "teacher/VIDGEN5S_0760711": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/teacher/VIDGEN5S_0760711/done.json",
+      "sha256": "a08ba93cc3c09540c506e3086c4149e128da50508cf17e9b1f84ca65c9461695",
+      "bytes": 2490
+    },
+    "gn_only/VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/gn_only/VIDGEN5S_0421364/done.json",
+      "sha256": "e35d756be934af42d88cc2ceb55fcb868c36b107a01043231564aef5eca29cb0",
+      "bytes": 4287
+    },
+    "gn_only/VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/gn_only/VIDGEN5S_0665341/done.json",
+      "sha256": "b535fe80d67c99bfc262989c5494f5b08079df14695d5dc00ad6201be3f00898",
+      "bytes": 4287
+    },
+    "gn_only/VIDGEN5S_0589299": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/gn_only/VIDGEN5S_0589299/done.json",
+      "sha256": "96e24dafe05966133dae34f994dfcddaa644dbd544a62f1d6fe05e6fcb306173",
+      "bytes": 4289
+    },
+    "gn_only/VIDGEN5S_0760711": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/gn_only/VIDGEN5S_0760711/done.json",
+      "sha256": "3b6874028d3ed73cfa476f3048ad09f45b858c7be4005e3fa72dc657cb95363d",
+      "bytes": 4288
+    },
+    "convs_only/VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/convs_only/VIDGEN5S_0421364/done.json",
+      "sha256": "38bc3070f53e9f298b79e43082c7ed8d7197b8810e805d0e38ac531d6c6d4770",
+      "bytes": 12380
+    },
+    "convs_only/VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/convs_only/VIDGEN5S_0665341/done.json",
+      "sha256": "169f8776f7048dbeef3f1d6bfc2c1e5945c360a4a6be7d96650d3a9f4ad577dd",
+      "bytes": 12381
+    },
+    "convs_only/VIDGEN5S_0589299": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/convs_only/VIDGEN5S_0589299/done.json",
+      "sha256": "bc04107ea0602866600dbd00c31ba0ff3ba2e6eb9da96fdd66b6b82771fa32a1",
+      "bytes": 12379
+    },
+    "convs_only/VIDGEN5S_0760711": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/convs_only/VIDGEN5S_0760711/done.json",
+      "sha256": "fe809aeb7dc68b513473ca2597d2b4cd5bd560dfdfc0851e58b14f7198f9dd13",
+      "bytes": 12380
+    },
+    "both_initial/VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/both_initial/VIDGEN5S_0421364/done.json",
+      "sha256": "d42691c6c439ef85a3c339b7e235ebd236802ff40010904f4a5d0720203e60d1",
+      "bytes": 10480
+    },
+    "both_initial/VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/both_initial/VIDGEN5S_0665341/done.json",
+      "sha256": "24b443da60c0ecb1cfc0425baed82959f3a52057d6737adb88501115d571cb2a",
+      "bytes": 10481
+    },
+    "both_initial/VIDGEN5S_0589299": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/both_initial/VIDGEN5S_0589299/done.json",
+      "sha256": "efc0cf6e5ba35b6ab703996a67bc81caeee7f03a04ee629f171eb920aa1bf68c",
+      "bytes": 10477
+    },
+    "both_initial/VIDGEN5S_0760711": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/conversion_factors_v1/predictions/both_initial/VIDGEN5S_0760711/done.json",
+      "sha256": "906c532b141930a30b54fc240f5c5ec56cd440f5a8ee3a54b0e2af057890dca6",
+      "bytes": 10478
+    }
+  },
+  "historical_teacher_comparisons": {
+    "VIDGEN5S_0421364": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "bit_exact": true,
+      "note": "Fresh teacher is primary. Historical teacher comparison is reported, not assumed identical internal precision because its old READY did not record all math flags."
+    },
+    "VIDGEN5S_0665341": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "bit_exact": true,
+      "note": "Fresh teacher is primary. Historical teacher comparison is reported, not assumed identical internal precision because its old READY did not record all math flags."
+    },
+    "VIDGEN5S_0589299": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "bit_exact": true,
+      "note": "Fresh teacher is primary. Historical teacher comparison is reported, not assumed identical internal precision because its old READY did not record all math flags."
+    },
+    "VIDGEN5S_0760711": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "bit_exact": true,
+      "note": "Fresh teacher is primary. Historical teacher comparison is reported, not assumed identical internal precision because its old READY did not record all math flags."
+    }
+  },
+  "forward_count": 16,
+  "cached_trained_predictions": 8,
+  "no_decoder_loaded": true,
+  "no_training": true,
+  "frozen_source_and_weights_unchanged": true,
+  "execution_precision_start": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "execution_precision_end": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "scope": "Four preselected inspected development clips; no train/test tensors loaded; no representative or blind claim",
+  "resolution_scope": "Existing experiment pairs: RGB LR336x192 to HR672x384; this diagnostic does not establish validity at the upstream deployment resolutions or isolate resolution-domain mismatch.",
+  "causality_scope": "Only BothInitial has complete causal latent conversion. teacher/GNonly/ConvsOnly are NONCAUSAL diagnostic controls. Decoder is noncausal for every column."
+}

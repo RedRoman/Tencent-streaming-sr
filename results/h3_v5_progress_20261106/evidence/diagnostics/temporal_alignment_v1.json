@@ -1,0 +1,2077 @@
+{
+  "status": "completed",
+  "diagnostic_only": true,
+  "created_utc": "2026-11-06T02:30:50.009447+00:00",
+  "source_code_sha256": "c726c208abd42c003a5e7343de09f5c2e161acc1cefb9a6e91014507bd0e4efb",
+  "device": "CPU",
+  "torch_threads": 1,
+  "scope": "8 deliberately selected already-inspected clips; not blind, no new training or selection. Fixed predicted latent indices6..29, GT offset-6..6, no interpolation. Negative offset means a prediction resembles an earlier reference. A nonzero optimum can indicate a lag but does not prove its mechanism; zero optimum cannot exclude mixtures/blur. No NPU operations or RGB decoding.",
+  "sources": {
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0421364.pt": "60cf1efb41bb7785d553cda2a5e9e798bfc41466d555fffd97401ea1542a1ee5",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/v5/VIDGEN5S_0421364/latent.pt": "79c70cf9221dcd42de41ecad8132a5cff528aba9da42e7b1735e980cb8654d5a",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/control/VIDGEN5S_0421364/latent.pt": "a3d735f2a45346bd3544ff8def27eccf88129f0068ba39ec72c5d44e4fed0c0e",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/motion/VIDGEN5S_0421364/latent.pt": "2ce815de19c6379b152cad84126b1d1509e3ac834b4bfbc339ec90ca54de7b28",
+    "upscaler_hybrid/teacher_cache/VIDGEN5S_0421364.pt": "45543c1802431cfb32e22762b4126ea48588046eb65120be563e0e17e0c2f565",
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0665341.pt": "fde5eca2773e249df04323dc0748f831627c89739fd712cbbc7791af8cb842dc",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/v5/VIDGEN5S_0665341/latent.pt": "d031ff81392bab425b1989681752e462e34f1fdb40440ed107685f0d699a093c",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/control/VIDGEN5S_0665341/latent.pt": "261473e9d8ae2309b32a718ebb0aea572872786d0686e85bd9ace467272e99d0",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/motion/VIDGEN5S_0665341/latent.pt": "3698f5a377568175fc9853f6634f5a828e6294fb48b85393ed9c7fc92e507a68",
+    "upscaler_hybrid/teacher_cache/VIDGEN5S_0665341.pt": "91e574a14e3927835ed248907fff6996d583736edad4450233da26b6a4b45aeb",
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0589299.pt": "667e0c45d090f711f90df04c48b30b8d34b0e5c61bac969ed0902323a51af3e5",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/v5/VIDGEN5S_0589299/latent.pt": "9a042e5a15388f3683631dcb5e92299d85e60f2c02261e25630ce7dc81bb29f3",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/control/VIDGEN5S_0589299/latent.pt": "cc5b628b09052b243f8ddb9d69592dfdf6e23b317e8ca3a1d3de478e616f6bbb",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/motion/VIDGEN5S_0589299/latent.pt": "06a2c8e5fadf1c64bc737e36d1405fd1175a40570f08789c84fbf2ef9125dd22",
+    "upscaler_hybrid/teacher_cache/VIDGEN5S_0589299.pt": "5978591cde39e5d3fb366651694fc248c8d99bddabc056252d03f2de2d610a0e",
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0760711.pt": "3649da81dfc276efcf71965b46d547be35edd6a485958ed22926acb1bcd5a707",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/v5/VIDGEN5S_0760711/latent.pt": "e9e9d2f78471c2f64d4a8c1de76b16b77a34e02a6567175229d5d18a306a4821",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/control/VIDGEN5S_0760711/latent.pt": "d040719a595ef68e1cc5daa11c4c4d8f10bd4d18edcfc9c9057cb242b1107b91",
+    "upscaler_v5_motion_20261106/evaluation/predictions/dev/motion/VIDGEN5S_0760711/latent.pt": "3de5a38e09ae8fae32944bde88d98b5757ea97563ce84ef0932750a47e4e810f",
+    "upscaler_hybrid/teacher_cache/VIDGEN5S_0760711.pt": "7f9fc147c9831b17dde42e4bd459e2335fe0cda1365512fe9bed32282f2fbf9a",
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0864318.pt": "7e86e4c2c04ed2f17ef6c6218494e0cb2186b69a9907b1de05304466313c07fe",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/v5/VIDGEN5S_0864318/latent.pt": "3b72e4621e4ca86fd81adf111fdf57209e6f72e2e532988ed41fd6daca67ff9d",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/control/VIDGEN5S_0864318/latent.pt": "8ff37f4894b0ab1f2b95e339ac4bf37fb5c44d3de3191588da82ca602884a6ab",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/motion/VIDGEN5S_0864318/latent.pt": "f9e97fbb3a5bc3a228037669cc51e1deb4fe9902ba06b7420e962cc77113257f",
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0128747.pt": "5f7144acac0604e08c7844ef020ba88b52ff8f93ff98b00cc811b2cc7ee1210f",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/v5/VIDGEN5S_0128747/latent.pt": "8d64e80a8a9740bc8d1cbb3b6056bad1bf9a34cbecdd9a1b544719715df96ca8",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/control/VIDGEN5S_0128747/latent.pt": "f41af428430958b212e6617bb50b9675fe005800b73cc0c3b523c425207e1610",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/motion/VIDGEN5S_0128747/latent.pt": "4b654df7f7b5fbd59fdcff8cf47e13b630bb5762e85561726c9020c910bd21f0",
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0086441.pt": "94377effe6f5bb344597811deefae86163bffa10dee427fb5d5687ddac97ce87",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/v5/VIDGEN5S_0086441/latent.pt": "61489e6d1af12011f8f262def0011afb25b3629e082e94fa83193cb4d33cae9b",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/control/VIDGEN5S_0086441/latent.pt": "09b81e70bf9310605c6e53ac9e7f52e697be6ffe06604cd6e717c773828de2f9",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/motion/VIDGEN5S_0086441/latent.pt": "4ec02316d8ba8b1cab3e35a90baf15b0b4c92a52d9abd0387d12e186cd90bf59",
+    "upscaler_ultraflash/pairs/samples/VIDGEN5S_0829322.pt": "09a0167b5e7da0e523b2907db2280a5bb5bc0b75fa19ef6fc4c9badedc062023",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/v5/VIDGEN5S_0829322/latent.pt": "a69d01cd063aa490ea177243c88f292b4d283358823974c071d19afaa2518d76",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/control/VIDGEN5S_0829322/latent.pt": "318cd46681a0ce5a438bd440d94341dd5ff20f1a85924a514956556783c80512",
+    "upscaler_v5_motion_20261106/evaluation/predictions/test/motion/VIDGEN5S_0829322/latent.pt": "bce74d831e83d9244e9897e4f725a59d2882199cf6d2e1acf76dbe46f208fa96"
+  },
+  "results": {
+    "VIDGEN5S_0421364": {
+      "split": "dev",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.8071011304855347,
+              "difference_mse": 0.7380780577659607
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.7167571783065796,
+              "difference_mse": 0.6511706709861755
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.7290380597114563,
+              "difference_mse": 0.8573824763298035
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.6258091926574707,
+              "difference_mse": 0.7315740585327148
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.5442796349525452,
+              "difference_mse": 0.8272191882133484
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.389893114566803,
+              "difference_mse": 0.8885499238967896
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.07820335030555725,
+              "difference_mse": 0.0869782492518425
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.4158981740474701,
+              "difference_mse": 0.9145409464836121
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.5519996881484985,
+              "difference_mse": 0.8053818345069885
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5966683626174927,
+              "difference_mse": 0.6967032551765442
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.6517590284347534,
+              "difference_mse": 0.7911196351051331
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6070331931114197,
+              "difference_mse": 0.5830284953117371
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.6708953976631165,
+              "difference_mse": 0.6818960309028625
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.8027079105377197,
+              "difference_mse": 0.7328081727027893
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.7129328846931458,
+              "difference_mse": 0.6446545720100403
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.7248583436012268,
+              "difference_mse": 0.8504689931869507
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.621575653553009,
+              "difference_mse": 0.7251728177070618
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.5395271182060242,
+              "difference_mse": 0.8187739849090576
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.3862455487251282,
+              "difference_mse": 0.8810805678367615
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.07682005316019058,
+              "difference_mse": 0.08498906344175339
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.4113065302371979,
+              "difference_mse": 0.906129002571106
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.5460981726646423,
+              "difference_mse": 0.7972455620765686
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5908865928649902,
+              "difference_mse": 0.6899160146713257
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.6460988521575928,
+              "difference_mse": 0.78437340259552
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6019325852394104,
+              "difference_mse": 0.5769196152687073
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.6650611162185669,
+              "difference_mse": 0.675505518913269
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.8240250945091248,
+              "difference_mse": 0.7791928648948669
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.7258131504058838,
+              "difference_mse": 0.6650011539459229
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.7487055659294128,
+              "difference_mse": 0.902503490447998
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.6430932283401489,
+              "difference_mse": 0.7615460753440857
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.5611292719841003,
+              "difference_mse": 0.8562126159667969
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.4093475043773651,
+              "difference_mse": 0.9441922903060913
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.07693185657262802,
+              "difference_mse": 0.08436720818281174
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.42916208505630493,
+              "difference_mse": 0.9616783857345581
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.5651140809059143,
+              "difference_mse": 0.8387149572372437
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.6084977984428406,
+              "difference_mse": 0.7246950268745422
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.6662808656692505,
+              "difference_mse": 0.8349201083183289
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6130563616752625,
+              "difference_mse": 0.5995345711708069
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.6844435930252075,
+              "difference_mse": 0.7217273712158203
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "teacher": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.8475887775421143,
+              "difference_mse": 0.7968763709068298
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.744148850440979,
+              "difference_mse": 0.6635042428970337
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.7747827768325806,
+              "difference_mse": 0.9196547865867615
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.6691341400146484,
+              "difference_mse": 0.7751896381378174
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.5834903717041016,
+              "difference_mse": 0.8672196865081787
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.42674967646598816,
+              "difference_mse": 0.9745999574661255
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.0697295144200325,
+              "difference_mse": 0.06728488206863403
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.4272099733352661,
+              "difference_mse": 0.9753026366233826
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.5651335716247559,
+              "difference_mse": 0.849577009677887
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.6101107597351074,
+              "difference_mse": 0.7338285446166992
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.6708983778953552,
+              "difference_mse": 0.8511161208152771
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6112908720970154,
+              "difference_mse": 0.5998709797859192
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.6879050135612488,
+              "difference_mse": 0.7353112101554871
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    },
+    "VIDGEN5S_0665341": {
+      "split": "dev",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.28066757321357727,
+              "difference_mse": 0.3574625551700592
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.18959669768810272,
+              "difference_mse": 0.15623539686203003
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.2562430799007416,
+              "difference_mse": 0.38436877727508545
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.24166245758533478,
+              "difference_mse": 0.31660768389701843
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.22738327085971832,
+              "difference_mse": 0.3375376760959625
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.1907193660736084,
+              "difference_mse": 0.3924677073955536
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.07438403367996216,
+              "difference_mse": 0.07144008576869965
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.20019814372062683,
+              "difference_mse": 0.4025358259677887
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.2316344529390335,
+              "difference_mse": 0.333322674036026
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.24830980598926544,
+              "difference_mse": 0.32195544242858887
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.26073500514030457,
+              "difference_mse": 0.377882182598114
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.20868277549743652,
+              "difference_mse": 0.16860723495483398
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.30178138613700867,
+              "difference_mse": 0.35969477891921997
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.27990975975990295,
+              "difference_mse": 0.35833829641342163
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.1880231648683548,
+              "difference_mse": 0.15538285672664642
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.25496962666511536,
+              "difference_mse": 0.3847411274909973
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.24048244953155518,
+              "difference_mse": 0.31674185395240784
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.2264060378074646,
+              "difference_mse": 0.33803030848503113
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.1896059811115265,
+              "difference_mse": 0.39320608973503113
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.07243487238883972,
+              "difference_mse": 0.07017745077610016
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.19900542497634888,
+              "difference_mse": 0.40299445390701294
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.23091021180152893,
+              "difference_mse": 0.3335036039352417
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.24811308085918427,
+              "difference_mse": 0.32245197892189026
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.2607201337814331,
+              "difference_mse": 0.37873512506484985
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.20808637142181396,
+              "difference_mse": 0.16777454316616058
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.301658570766449,
+              "difference_mse": 0.35993146896362305
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.2973037362098694,
+              "difference_mse": 0.40557336807250977
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.19265225529670715,
+              "difference_mse": 0.1615038514137268
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.27413874864578247,
+              "difference_mse": 0.43443673849105835
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.2569666802883148,
+              "difference_mse": 0.3476366400718689
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.24186022579669952,
+              "difference_mse": 0.36616024374961853
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2080707550048828,
+              "difference_mse": 0.4473334550857544
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.07271742820739746,
+              "difference_mse": 0.06847017258405685
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.21611152589321136,
+              "difference_mse": 0.45436543226242065
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.24609214067459106,
+              "difference_mse": 0.3659428656101227
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.26166918873786926,
+              "difference_mse": 0.3502342402935028
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.2771459221839905,
+              "difference_mse": 0.42676469683647156
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.21234282851219177,
+              "difference_mse": 0.17645655572414398
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.318514347076416,
+              "difference_mse": 0.40622904896736145
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "teacher": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.3309323787689209,
+              "difference_mse": 0.4063151478767395
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.224588081240654,
+              "difference_mse": 0.15995316207408905
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.30236515402793884,
+              "difference_mse": 0.4325156807899475
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.2823164463043213,
+              "difference_mse": 0.346483051776886
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.2639903128147125,
+              "difference_mse": 0.36094117164611816
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.23048089444637299,
+              "difference_mse": 0.45609569549560547
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.08558415621519089,
+              "difference_mse": 0.05480029806494713
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.22984464466571808,
+              "difference_mse": 0.45237016677856445
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.26216715574264526,
+              "difference_mse": 0.36583760380744934
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.27877211570739746,
+              "difference_mse": 0.3459399342536926
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.297903835773468,
+              "difference_mse": 0.4289111793041229
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.23329563438892365,
+              "difference_mse": 0.1742086559534073
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.33890092372894287,
+              "difference_mse": 0.40434524416923523
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    },
+    "VIDGEN5S_0589299": {
+      "split": "dev",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.501560628414154,
+              "difference_mse": 0.5236397981643677
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.3698338568210602,
+              "difference_mse": 0.24500031769275665
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.4538983702659607,
+              "difference_mse": 0.5476921200752258
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.4433974325656891,
+              "difference_mse": 0.5194908976554871
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.38440150022506714,
+              "difference_mse": 0.5267049074172974
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2705734372138977,
+              "difference_mse": 0.5106902718544006
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.11452487856149673,
+              "difference_mse": 0.1199863851070404
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.2952708601951599,
+              "difference_mse": 0.5379831790924072
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.3903752565383911,
+              "difference_mse": 0.5175042152404785
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.4351795017719269,
+              "difference_mse": 0.520912230014801
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.429403692483902,
+              "difference_mse": 0.5267952680587769
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.36479905247688293,
+              "difference_mse": 0.24215124547481537
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.5133554935455322,
+              "difference_mse": 0.5347757339477539
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5004155039787292,
+              "difference_mse": 0.5231412053108215
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.36838704347610474,
+              "difference_mse": 0.2442634552717209
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.4530479907989502,
+              "difference_mse": 0.5479962229728699
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.44284316897392273,
+              "difference_mse": 0.5195276737213135
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.3840228319168091,
+              "difference_mse": 0.5278506278991699
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2691643238067627,
+              "difference_mse": 0.510678768157959
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.11177460104227066,
+              "difference_mse": 0.1182825118303299
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.29309526085853577,
+              "difference_mse": 0.5380141735076904
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.38877493143081665,
+              "difference_mse": 0.5175969004631042
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.4340077042579651,
+              "difference_mse": 0.5216615200042725
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.42784491181373596,
+              "difference_mse": 0.5264230370521545
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.3629796802997589,
+              "difference_mse": 0.24136672914028168
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.5122061967849731,
+              "difference_mse": 0.5353821516036987
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5210825800895691,
+              "difference_mse": 0.5759633779525757
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.37461861968040466,
+              "difference_mse": 0.25028738379478455
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.47715890407562256,
+              "difference_mse": 0.604276716709137
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.4657100737094879,
+              "difference_mse": 0.5564097762107849
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.4055615961551666,
+              "difference_mse": 0.5639488101005554
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.29018479585647583,
+              "difference_mse": 0.5691287517547607
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.1116909310221672,
+              "difference_mse": 0.11535856127738953
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.3130357265472412,
+              "difference_mse": 0.5961326360702515
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.4079582989215851,
+              "difference_mse": 0.5552636981010437
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.45166081190109253,
+              "difference_mse": 0.556481659412384
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.4462137222290039,
+              "difference_mse": 0.5799074172973633
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.36654049158096313,
+              "difference_mse": 0.2478914111852646
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.5327990055084229,
+              "difference_mse": 0.5905717611312866
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "teacher": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5216463804244995,
+              "difference_mse": 0.5846489071846008
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.36739176511764526,
+              "difference_mse": 0.2453550398349762
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.47198808193206787,
+              "difference_mse": 0.6070889830589294
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.46116873621940613,
+              "difference_mse": 0.5591366291046143
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.3997178375720978,
+              "difference_mse": 0.5602954626083374
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2877309322357178,
+              "difference_mse": 0.5871675610542297
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.09008709341287613,
+              "difference_mse": 0.09543957561254501
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.2962714433670044,
+              "difference_mse": 0.5955963134765625
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.39836081862449646,
+              "difference_mse": 0.5581184029579163
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.4472863972187042,
+              "difference_mse": 0.5555919408798218
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.44854462146759033,
+              "difference_mse": 0.59166020154953
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.36027663946151733,
+              "difference_mse": 0.24193830788135529
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.5285165309906006,
+              "difference_mse": 0.593346357345581
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    },
+    "VIDGEN5S_0760711": {
+      "split": "dev",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5831222534179688,
+              "difference_mse": 0.4949316680431366
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.5111594200134277,
+              "difference_mse": 0.3631443977355957
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.544201672077179,
+              "difference_mse": 0.5282909274101257
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.5131666660308838,
+              "difference_mse": 0.529202401638031
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.4331342577934265,
+              "difference_mse": 0.5346286296844482
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.3018377721309662,
+              "difference_mse": 0.5212883949279785
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.1239839568734169,
+              "difference_mse": 0.10835592448711395
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.3286903202533722,
+              "difference_mse": 0.5467802882194519
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.48240071535110474,
+              "difference_mse": 0.5617591142654419
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5825260877609253,
+              "difference_mse": 0.5608440041542053
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.6281389594078064,
+              "difference_mse": 0.5646349787712097
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6214134097099304,
+              "difference_mse": 0.4301145672798157
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.7011041045188904,
+              "difference_mse": 0.5504820942878723
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5811377167701721,
+              "difference_mse": 0.4935944378376007
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.5093843340873718,
+              "difference_mse": 0.36260032653808594
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.5421809554100037,
+              "difference_mse": 0.5264672040939331
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.5116044282913208,
+              "difference_mse": 0.5285985469818115
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.43165573477745056,
+              "difference_mse": 0.5336818695068359
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.30041176080703735,
+              "difference_mse": 0.5207468271255493
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.12208565324544907,
+              "difference_mse": 0.10684531927108765
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.32689428329467773,
+              "difference_mse": 0.5453000664710999
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.48104190826416016,
+              "difference_mse": 0.5607438683509827
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5815740823745728,
+              "difference_mse": 0.5598698258399963
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.62746262550354,
+              "difference_mse": 0.5636546015739441
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6208315491676331,
+              "difference_mse": 0.42920583486557007
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.700330913066864,
+              "difference_mse": 0.5489275455474854
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5997815728187561,
+              "difference_mse": 0.5330269932746887
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.5202451348304749,
+              "difference_mse": 0.3758266270160675
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.5628584623336792,
+              "difference_mse": 0.5671063661575317
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.531821608543396,
+              "difference_mse": 0.5589638948440552
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.4514305293560028,
+              "difference_mse": 0.5640441179275513
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.31959497928619385,
+              "difference_mse": 0.5684171915054321
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.12325207144021988,
+              "difference_mse": 0.10606089234352112
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.34190833568573,
+              "difference_mse": 0.5892466306686401
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.496560275554657,
+              "difference_mse": 0.5912148952484131
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5975375771522522,
+              "difference_mse": 0.5899341702461243
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.6441110968589783,
+              "difference_mse": 0.602066159248352
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6304928064346313,
+              "difference_mse": 0.4453125
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.7179784178733826,
+              "difference_mse": 0.5877841114997864
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "teacher": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.6196548342704773,
+              "difference_mse": 0.5435607433319092
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.5361064672470093,
+              "difference_mse": 0.3806920647621155
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.5796969532966614,
+              "difference_mse": 0.5822436809539795
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.543451726436615,
+              "difference_mse": 0.5734344124794006
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.4525233805179596,
+              "difference_mse": 0.5775008797645569
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.30617964267730713,
+              "difference_mse": 0.5841585993766785
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.08910109847784042,
+              "difference_mse": 0.08123692870140076
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.32301607728004456,
+              "difference_mse": 0.6056484580039978
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.4859011471271515,
+              "difference_mse": 0.6055120825767517
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5902402997016907,
+              "difference_mse": 0.6031894087791443
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.636786162853241,
+              "difference_mse": 0.6149047017097473
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.6202473640441895,
+              "difference_mse": 0.44926556944847107
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.7121983170509338,
+              "difference_mse": 0.6019349098205566
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    },
+    "VIDGEN5S_0864318": {
+      "split": "test",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.44582027196884155,
+              "difference_mse": 0.4577799141407013
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.32366105914115906,
+              "difference_mse": 0.21167239546775818
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.3902408480644226,
+              "difference_mse": 0.4734683632850647
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.37758108973503113,
+              "difference_mse": 0.4532337188720703
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.322760671377182,
+              "difference_mse": 0.4531436562538147
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.22640854120254517,
+              "difference_mse": 0.4597419500350952
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.07891999185085297,
+              "difference_mse": 0.09307681769132614
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.24399223923683167,
+              "difference_mse": 0.4725642502307892
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.3344097435474396,
+              "difference_mse": 0.4510054588317871
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.38401681184768677,
+              "difference_mse": 0.4556889533996582
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.3894183337688446,
+              "difference_mse": 0.4672031104564667
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.33632948994636536,
+              "difference_mse": 0.22437307238578796
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.465116411447525,
+              "difference_mse": 0.465714693069458
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.44465258717536926,
+              "difference_mse": 0.4576548933982849
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.3219817578792572,
+              "difference_mse": 0.21076162159442902
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.38847339153289795,
+              "difference_mse": 0.47209247946739197
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.3762790858745575,
+              "difference_mse": 0.4523457884788513
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.32203513383865356,
+              "difference_mse": 0.4526916444301605
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2259560227394104,
+              "difference_mse": 0.45995789766311646
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.0773608610033989,
+              "difference_mse": 0.09170760214328766
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.242107093334198,
+              "difference_mse": 0.4710859954357147
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.33281636238098145,
+              "difference_mse": 0.45005637407302856
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.3829197585582733,
+              "difference_mse": 0.4548076093196869
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.3888818025588989,
+              "difference_mse": 0.46727311611175537
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.335215300321579,
+              "difference_mse": 0.2233724743127823
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.46376141905784607,
+              "difference_mse": 0.4643974304199219
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.4635138511657715,
+              "difference_mse": 0.504860520362854
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.32801347970962524,
+              "difference_mse": 0.21673329174518585
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.4094735383987427,
+              "difference_mse": 0.5217055082321167
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.39593297243118286,
+              "difference_mse": 0.4857897460460663
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.33996614813804626,
+              "difference_mse": 0.48339372873306274
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.24431000649929047,
+              "difference_mse": 0.5133248567581177
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.0765746459364891,
+              "difference_mse": 0.08917733281850815
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.2585617005825043,
+              "difference_mse": 0.5223698616027832
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.3486883044242859,
+              "difference_mse": 0.48351407051086426
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.39796051383018494,
+              "difference_mse": 0.48554593324661255
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.40536075830459595,
+              "difference_mse": 0.5148301720619202
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.33937302231788635,
+              "difference_mse": 0.23093105852603912
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.48186948895454407,
+              "difference_mse": 0.5124666094779968
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    },
+    "VIDGEN5S_0128747": {
+      "split": "test",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.4403645694255829,
+              "difference_mse": 0.46356233954429626
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.3400341272354126,
+              "difference_mse": 0.24229629337787628
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.4050789177417755,
+              "difference_mse": 0.47544339299201965
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.4009082615375519,
+              "difference_mse": 0.46134883165359497
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.35587865114212036,
+              "difference_mse": 0.46930551528930664
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2653804123401642,
+              "difference_mse": 0.46727460622787476
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.12818259000778198,
+              "difference_mse": 0.12332027405500412
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.27841639518737793,
+              "difference_mse": 0.4779822528362274
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.3606955111026764,
+              "difference_mse": 0.4691099226474762
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.3974681496620178,
+              "difference_mse": 0.4681234061717987
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.392304003238678,
+              "difference_mse": 0.47781944274902344
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.33589935302734375,
+              "difference_mse": 0.2538755536079407
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.4420458674430847,
+              "difference_mse": 0.47452500462532043
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.43639039993286133,
+              "difference_mse": 0.46205753087997437
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.33609363436698914,
+              "difference_mse": 0.2416861355304718
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.4006913900375366,
+              "difference_mse": 0.4737342894077301
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.3965011239051819,
+              "difference_mse": 0.45948296785354614
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.3519580364227295,
+              "difference_mse": 0.46828222274780273
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2616007328033447,
+              "difference_mse": 0.46600431203842163
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.1240968406200409,
+              "difference_mse": 0.12207765877246857
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.2741057276725769,
+              "difference_mse": 0.4763599634170532
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.35649731755256653,
+              "difference_mse": 0.46731671690940857
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.3938438296318054,
+              "difference_mse": 0.46700987219810486
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.38902273774147034,
+              "difference_mse": 0.47652509808540344
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.3325974643230438,
+              "difference_mse": 0.2530946433544159
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.4383496940135956,
+              "difference_mse": 0.4730011522769928
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.455402672290802,
+              "difference_mse": 0.5086554884910583
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.3425319194793701,
+              "difference_mse": 0.2487953007221222
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.4218268096446991,
+              "difference_mse": 0.5223585963249207
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.4170515239238739,
+              "difference_mse": 0.4931226670742035
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.3714419901371002,
+              "difference_mse": 0.501108705997467
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.2803029417991638,
+              "difference_mse": 0.5182900428771973
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.12348262220621109,
+              "difference_mse": 0.11982355266809464
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.2906598448753357,
+              "difference_mse": 0.5265234708786011
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.373445063829422,
+              "difference_mse": 0.5015618801116943
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.410196453332901,
+              "difference_mse": 0.499260276556015
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.40585535764694214,
+              "difference_mse": 0.5234620571136475
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.33689260482788086,
+              "difference_mse": 0.26076599955558777
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.4567853808403015,
+              "difference_mse": 0.5206181406974792
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    },
+    "VIDGEN5S_0086441": {
+      "split": "test",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.30753156542778015,
+              "difference_mse": 0.39102521538734436
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.19913947582244873,
+              "difference_mse": 0.14492957293987274
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.27934059500694275,
+              "difference_mse": 0.40732455253601074
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.2662578821182251,
+              "difference_mse": 0.34557682275772095
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.2361091673374176,
+              "difference_mse": 0.34572452306747437
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.18879251182079315,
+              "difference_mse": 0.3919728994369507
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.0672590360045433,
+              "difference_mse": 0.06477614492177963
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.20477265119552612,
+              "difference_mse": 0.41056495904922485
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.2465295046567917,
+              "difference_mse": 0.34603458642959595
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.2685917019844055,
+              "difference_mse": 0.34799933433532715
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.2714172601699829,
+              "difference_mse": 0.3910219967365265
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.20025920867919922,
+              "difference_mse": 0.1369919627904892
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.31658127903938293,
+              "difference_mse": 0.39432451128959656
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.3073466420173645,
+              "difference_mse": 0.3919892907142639
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.19816149771213531,
+              "difference_mse": 0.1445496827363968
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.27880963683128357,
+              "difference_mse": 0.40796080231666565
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.2661721706390381,
+              "difference_mse": 0.3464641273021698
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.2362799197435379,
+              "difference_mse": 0.34721076488494873
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.18849417567253113,
+              "difference_mse": 0.3930453360080719
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.0659567341208458,
+              "difference_mse": 0.06380606442689896
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.20432502031326294,
+              "difference_mse": 0.4114605188369751
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.24673862755298615,
+              "difference_mse": 0.3467675745487213
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.26941049098968506,
+              "difference_mse": 0.3496112823486328
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.2719653248786926,
+              "difference_mse": 0.3919805884361267
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.20008526742458344,
+              "difference_mse": 0.13671395182609558
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.3168736696243286,
+              "difference_mse": 0.39486607909202576
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.32672014832496643,
+              "difference_mse": 0.4446004629135132
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.20283545553684235,
+              "difference_mse": 0.14919351041316986
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.2995782196521759,
+              "difference_mse": 0.4609920382499695
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.2837875783443451,
+              "difference_mse": 0.3791878819465637
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.25186091661453247,
+              "difference_mse": 0.3749864101409912
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.20783165097236633,
+              "difference_mse": 0.4505568742752075
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.06599119305610657,
+              "difference_mse": 0.062307458370923996
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.22215092182159424,
+              "difference_mse": 0.4662090539932251
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.26153308153152466,
+              "difference_mse": 0.3797169625759125
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.28218623995780945,
+              "difference_mse": 0.3771955668926239
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.28884270787239075,
+              "difference_mse": 0.445173442363739
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.20206861197948456,
+              "difference_mse": 0.14164668321609497
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.33479854464530945,
+              "difference_mse": 0.44720757007598877
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    },
+    "VIDGEN5S_0829322": {
+      "split": "test",
+      "variants": {
+        "v5": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5005767941474915,
+              "difference_mse": 0.581338107585907
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.37032395601272583,
+              "difference_mse": 0.29035553336143494
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.46217402815818787,
+              "difference_mse": 0.6029437780380249
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.4619702100753784,
+              "difference_mse": 0.5660387873649597
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.42559340596199036,
+              "difference_mse": 0.6028247475624084
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.3210003674030304,
+              "difference_mse": 0.6344795227050781
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.106069415807724,
+              "difference_mse": 0.08130805194377899
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.3504786789417267,
+              "difference_mse": 0.6745989918708801
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.46673062443733215,
+              "difference_mse": 0.6238213777542114
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5232185125350952,
+              "difference_mse": 0.6083981990814209
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.5408922433853149,
+              "difference_mse": 0.6321168541908264
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.49360761046409607,
+              "difference_mse": 0.3786482512950897
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.6343783140182495,
+              "difference_mse": 0.642973780632019
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "control": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5010117888450623,
+              "difference_mse": 0.5796566605567932
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.3706650733947754,
+              "difference_mse": 0.28868570923805237
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.46176794171333313,
+              "difference_mse": 0.6003655195236206
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.46112507581710815,
+              "difference_mse": 0.5629335641860962
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.42520400881767273,
+              "difference_mse": 0.6010046005249023
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.32064107060432434,
+              "difference_mse": 0.632514238357544
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.10535044968128204,
+              "difference_mse": 0.07972989976406097
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.3487350344657898,
+              "difference_mse": 0.6718214750289917
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.46443942189216614,
+              "difference_mse": 0.6203160881996155
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5216423869132996,
+              "difference_mse": 0.6066259145736694
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.539537787437439,
+              "difference_mse": 0.6301376819610596
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.4921591877937317,
+              "difference_mse": 0.37698662281036377
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.6324228048324585,
+              "difference_mse": 0.6403217315673828
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        },
+        "motion": {
+          "scan": [
+            {
+              "reference_offset": -6,
+              "mse": 0.5266110301017761,
+              "difference_mse": 0.6442608833312988
+            },
+            {
+              "reference_offset": -5,
+              "mse": 0.3798679709434509,
+              "difference_mse": 0.301018089056015
+            },
+            {
+              "reference_offset": -4,
+              "mse": 0.48870182037353516,
+              "difference_mse": 0.666227400302887
+            },
+            {
+              "reference_offset": -3,
+              "mse": 0.4857041537761688,
+              "difference_mse": 0.607114315032959
+            },
+            {
+              "reference_offset": -2,
+              "mse": 0.44891873002052307,
+              "difference_mse": 0.6439194083213806
+            },
+            {
+              "reference_offset": -1,
+              "mse": 0.34594130516052246,
+              "difference_mse": 0.7051111459732056
+            },
+            {
+              "reference_offset": 0,
+              "mse": 0.10528343170881271,
+              "difference_mse": 0.07886534184217453
+            },
+            {
+              "reference_offset": 1,
+              "mse": 0.3707299530506134,
+              "difference_mse": 0.7402024865150452
+            },
+            {
+              "reference_offset": 2,
+              "mse": 0.48607417941093445,
+              "difference_mse": 0.667565107345581
+            },
+            {
+              "reference_offset": 3,
+              "mse": 0.5416597723960876,
+              "difference_mse": 0.6483813524246216
+            },
+            {
+              "reference_offset": 4,
+              "mse": 0.5618004202842712,
+              "difference_mse": 0.6919967532157898
+            },
+            {
+              "reference_offset": 5,
+              "mse": 0.5010309815406799,
+              "difference_mse": 0.3948545753955841
+            },
+            {
+              "reference_offset": 6,
+              "mse": 0.6566120386123657,
+              "difference_mse": 0.7026169300079346
+            }
+          ],
+          "best_mse_offset": 0,
+          "best_difference_offset": 0
+        }
+      }
+    }
+  }
+}

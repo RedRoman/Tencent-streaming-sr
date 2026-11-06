@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/long_ewarp.mp4",
+      "sha256": "f237df9188b01e12be3ec230ff894b1b9b3613347277f71746711c0f0ac9695c",
+      "label": "Old causal eWarp"
+    },
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/motion.mp4",
+      "sha256": "0f77daece5f2a71acdeff91d7dc581862a5800db95b03d81ead28bb567578fb7",
+      "label": "Current motion - step 2000"
+    }
+  ],
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/old_ewarp_vs_motion_0086441.mp4",
+  "columns": 2
+}

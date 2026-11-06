@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_utc": "2026-11-06T02:07:02.064081+00:00",
+  "reviewer": "Independent review subagent ${REVIEW_AGENT}",
+  "review_mode": "Read-only remote audit of completed run; no runtime edits, training restart, NPU model execution, or new video rendering/decoding. This local evidence record was written afterward at the parent agent request.",
+  "evidence_type": "Summary of actually executed standard-library Python audit commands and their returned JSON outputs. The exhaustive per-file audit result list was not saved; this record does not replace the original receipts or claim a new model/metric execution.",
+  "run": "upscaler_v5_motion_20261106",
+  "pipeline_completed_utc": "2026-11-05T22:56:52.960162+00:00",
+  "original_artifact_fingerprints": {
+    "pipeline_contract.json": {
+      "sha256": "d1685690f4095468d10e33c8f526501b277ef77737f286ea966b84bf10a22fdb",
+      "bytes": 3213
+    },
+    "pipeline_status.json": {
+      "sha256": "439c0bb503b3a64b215deca69ca4f44a6080c34323522cb5316fa13611efa1ce",
+      "bytes": 123
+    },
+    "paired_training_audit.json": {
+      "sha256": "1a659ab0b4d69f44db063e5201a2c49fb48edf0fca49614ae051833163fa0d3c",
+      "bytes": 1198
+    },
+    "control_steps2000/summary.json": {
+      "sha256": "a2792480fd91d4367e15102f3c709e7cccc7cd74edf25a83ffc7a8209a91a893",
+      "bytes": 427775
+    },
+    "motion_steps2000/summary.json": {
+      "sha256": "0b9c0bf6710e08229b46a3495790d03b382ca574d3779367a6f5f62d95c38878",
+      "bytes": 427933
+    },
+    "evaluation/contract.json": {
+      "sha256": "765900ea019c5a711ea1850e75036e869222be5b2c3fccc25b447b0b0ac879e8",
+      "bytes": 18676
+    },
+    "evaluation/summary.json": {
+      "sha256": "4c81848f24cec07e50b4cbd6d3c03982987f4c46020f7e075cfe95972f52e0ea",
+      "bytes": 974047
+    },
+    "evaluation/dev_summary.json": {
+      "sha256": "7a88f67262f3df90afdb49ed66496e0f5f4d58da3cbf0e95714458fe00416487",
+      "bytes": 754296
+    },
+    "evaluation/test_summary.json": {
+      "sha256": "0f4b75d3f73cc141eb2a78f44a592dbfa553dbc4e4c54844ee2f5a3e227596f3",
+      "bytes": 970453
+    }
+  },
+  "anchor_local_remote_byte_match": true,
+  "training_contract_audit": {
+    "status": "passed",
+    "actual_files_hashed": 43,
+    "arms": {
+      "control": {
+        "completed_updates": 2000,
+        "best_step": 2000,
+        "validation_includes_step0": true,
+        "training_seconds": 8679.561806592159
+      },
+      "motion": {
+        "completed_updates": 2000,
+        "best_step": 2000,
+        "validation_includes_step0": true,
+        "training_seconds": 8732.301218125038
+      }
+    },
+    "verified_scope": [
+      "Updates are contiguous1..2000 for each arm; finite numeric step metrics.",
+      "Validation steps0,200,...,2000; eligibility recomputed from fixed step0 global/L1/LPIPS guard; recorded best equals first eligible minimum score.",
+      "Each step has identical sample_id, spatial/temporal/LPIPS spec, and learning rate across arms; non-objective configurations identical; full step0 dev records exactly equal.",
+      "Actual runtime source fingerprints, selected checkpoint SHA, pipeline/preflight dependencies, training summary/log bindings and current LPIPS files match contracts.",
+      "Frozen-module and precision evidence consistent across summaries/contracts; default NPU convolution HF32=true and matmul HF32=false."
+    ],
+    "selected_checkpoint_sha256": {
+      "v5": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+      "control": "0013d84532276cbcdeebde8e990c3215891e4d7a49c3e2ee0b5b349a1270e4e5",
+      "motion": "b4311c9e91365dfc0a5a6014d437e8d34f1c7d71bc31e12879b45b0560652d37"
+    }
+  },
+  "separate_current_asset_audit": {
+    "status": "passed",
+    "vae_files": [
+      "config.json",
+      "diffusion_pytorch_model-00001-of-00003.safetensors",
+      "diffusion_pytorch_model-00002-of-00003.safetensors",
+      "diffusion_pytorch_model-00003-of-00003.safetensors"
+    ],
+    "actual_vae_bytes_and_sha_match": true,
+    "original_upscaler_weights_and_loader_and_node_sha_match": true,
+    "note": "These asset reads are separate from the43-file training-contract count and the577-file receipt audit. Counts must not be summed as a deduplicated total."
+  },
+  "evaluation_receipt_audit": {
+    "status": "passed",
+    "files_hashed": 577,
+    "bytes_hashed": 7721422511,
+    "receipt_count": 175,
+    "clips": 35,
+    "split_counts": {
+      "dev": 16,
+      "test": 16,
+      "legacy": 3
+    },
+    "mp4_files": 175,
+    "scalar_rechecks": 2304,
+    "scope": [
+      "Checked exact required file sets, SHA and bytes for105 prediction receipts,35 baseline-cache receipts,35 decode receipts, and their evidence links.",
+      "Checked selected checkpoint, pair identity, manifest/split IDs, source contracts, frozen-module statements and precision bindings;163 unique source-video SHA values in the manifests.",
+      "Checked every175 MP4 current SHA against existing FFmpeg full-decode evidence:120 frames,24fps,5s,firstPTS0,lastPTS119/24; single672x384 and comparison2688x412. No new video decode was performed by this review.",
+      "Checked per-clip metrics against summary copies;120 LPIPS frame values and region means;PSNR from MSE;global score;all regional/latent/transition equal-clip aggregate means.",
+      "Checked36 blend-touching plus83 nonblend-only pairs cover all119 transitions exactly; weighted transition delta/MSE reproduce full120 within floating-point tolerance.",
+      "Recomputed all five dev-gate conditions for both arms. Verified source/contract/checkpoint links of dev/test/final records and file mtime ordering:dev summary then test-opened receipt then first heldout prediction."
+    ],
+    "largest_transition_recombine_abs": 5.807070171948148e-09,
+    "gate_recomputed": true,
+    "test_opened_after_dev": true,
+    "times_utc": {
+      "dev": {
+        "first_prediction": "2026-11-05T21:46:10.268718+00:00",
+        "last_decode": "2026-11-05T22:17:08.084107+00:00"
+      },
+      "test": {
+        "first_prediction": "2026-11-05T22:18:45.874603+00:00",
+        "last_decode": "2026-11-05T22:49:12.453213+00:00"
+      },
+      "legacy": {
+        "first_prediction": "2026-11-05T22:49:22.069459+00:00",
+        "last_decode": "2026-11-05T22:55:51.759400+00:00"
+      }
+    }
+  },
+  "causality_evidence_audit": {
+    "default_production_shape": {
+      "control": {
+        "checks": 36,
+        "max_abs": 0.0
+      },
+      "motion": {
+        "checks": 36,
+        "max_abs": 0.0
+      }
+    },
+    "separate_hf32_off_long163_input2x2": {
+      "control": {
+        "checks": 16,
+        "max_abs": 0.0,
+        "audit_sha256": "1153102c8f083d144ba0c21e9967833cc02b023a0e7e80eaff100f3522d8e7c2"
+      },
+      "motion": {
+        "checks": 16,
+        "max_abs": 0.0,
+        "audit_sha256": "ad3a05de767ea330ed82eb12d33d450296a123d87a87c470687567daca71ab59"
+      }
+    },
+    "long_audit_checkpoint_and_source_bindings_verified": true,
+    "note": "Existing completed audit evidence, independently checked; no new NPU causality runs. The two precision/shape scopes are distinct. Decoder remains noncausal."
+  },
+  "observed_test16_full120": {
+    "v5": {
+      "psnr_db": 25.5669527138,
+      "lpips": 0.1317210689,
+      "motion_l1": 0.078091037,
+      "delta_l1": 0.0185856058,
+      "temporal_difference_mse": 0.0019087915
+    },
+    "control": {
+      "psnr_db": 25.6540845151,
+      "lpips": 0.1295539671,
+      "motion_l1": 0.0774600238,
+      "delta_l1": 0.0184268623,
+      "temporal_difference_mse": 0.0018821457
+    },
+    "motion": {
+      "psnr_db": 25.8484637537,
+      "lpips": 0.1283458614,
+      "motion_l1": 0.0748487201,
+      "delta_l1": 0.0180272572,
+      "temporal_difference_mse": 0.0017992296
+    },
+    "values_note": "Rounded from actual summary; exact values remain in fingerprinted source artifacts."
+  },
+  "regressions_and_limits": [
+    "Test full120 LPIPS versus v5 is worse for VIDGEN5S_0864318 (+0.000100399).",
+    "Test full120 LPIPS versus matched control is worse for VIDGEN5S_0086441 (+0.000832763), VIDGEN5S_0100402 (+0.000510118), VIDGEN5S_0128747 (+0.001725598), VIDGEN5S_0864318 (+0.001206553).",
+    "Test tail18 LPIPS versus v5 is additionally worse for VIDGEN5S_0128747 and VIDGEN5S_0361101.",
+    "Test raw latent eWarp increases12.53181% versus v5 and13.20178% versus control; target-residual eWarp is a different metric and cannot replace this regression.",
+    "RGB metrics compare with frozen-decoder HR-reference RGB, not a separately measured source-RGB target in this run.",
+    "Previously inspected16test plus3legacy, not blind; single seed; only90/120 frames have direct training pixel coverage; original frozen decoder is noncausal.",
+    "High-change ROI also includes illumination changes and cuts; no independently labeled high-speed/occlusion/cut subgroup proof.",
+    "Audit recomputed scalar relationships and aggregates from recorded metrics, not fresh model outputs, LPIPS inference or all RGB pixel losses."
+  ],
+  "blocking_findings": []
+}

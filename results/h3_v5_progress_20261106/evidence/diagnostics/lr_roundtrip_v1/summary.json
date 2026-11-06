@@ -1,0 +1,292 @@
+{
+  "status": "completed",
+  "contract_sha256": "9c742b480f4c064f6c599f0a395ec69cc8a80b41722f5bf9e0fd6fb2f3ef4312",
+  "sample_ids": [
+    "VIDGEN5S_0421364",
+    "VIDGEN5S_0665341"
+  ],
+  "samples": {
+    "VIDGEN5S_0421364": {
+      "sample_id": "VIDGEN5S_0421364",
+      "frames": 120,
+      "native_lr_roundtrip": {
+        "pixel_l1": 0.018304070737179753,
+        "mse": 0.0017370463886509629,
+        "psnr_db": 27.601885833570897,
+        "delta_l1": 0.021332453923467644,
+        "temporal_difference_mse": 0.0026322318534438244,
+        "motion_roi_l1": 0.04623423594489846,
+        "motion_pair_pixels": 1388691,
+        "motion_roi_fraction": 0.18089149722388956,
+        "frames": 120,
+        "adjacent_pairs": 119,
+        "roi_threshold": 0.05
+      },
+      "common384_vs_raw_source": {
+        "raw LR bicubic": {
+          "pixel_l1": 0.004813580940288502,
+          "mse": 0.00022861851389509354,
+          "psnr_db": 36.40888602650696,
+          "delta_l1": 0.00686574478243551,
+          "temporal_difference_mse": 0.0004168622974502907,
+          "motion_roi_l1": 0.013980898728992164,
+          "motion_pair_pixels": 5528060,
+          "motion_roi_fraction": 0.1800218785430839,
+          "frames": 120,
+          "adjacent_pairs": 119,
+          "roi_threshold": 0.05
+        },
+        "LR VAE roundtrip bicubic": {
+          "pixel_l1": 0.019068502541818275,
+          "mse": 0.0019510280707311903,
+          "psnr_db": 27.097364820785938,
+          "delta_l1": 0.022583859290890806,
+          "temporal_difference_mse": 0.003051795063817137,
+          "motion_roi_l1": 0.04824894112711407,
+          "motion_pair_pixels": 5528060,
+          "motion_roi_fraction": 0.1800218785430839,
+          "frames": 120,
+          "adjacent_pairs": 119,
+          "roi_threshold": 0.05
+        },
+        "HR384 VAE roundtrip": {
+          "pixel_l1": 0.009787128813058942,
+          "mse": 0.00044040876100847297,
+          "psnr_db": 33.56144050236637,
+          "delta_l1": 0.011927650717486327,
+          "temporal_difference_mse": 0.0007656760251223714,
+          "motion_roi_l1": 0.02268907222810141,
+          "motion_pair_pixels": 5528060,
+          "motion_roi_fraction": 0.1800218785430839,
+          "frames": 120,
+          "adjacent_pairs": 119,
+          "roi_threshold": 0.05
+        }
+      },
+      "native_raw_lr": {
+        "sha256": "8dadc2ae923a3171987b8f5cf671c9f5dee11d64abead39a2308de7ee758d9b8",
+        "shape": [
+          120,
+          192,
+          336,
+          3
+        ],
+        "dtype": "torch.uint8",
+        "hash_scope": "Raw contiguous RGB bytes, frame order"
+      },
+      "native_lr_reconstruction": {
+        "sha256": "c6de7f1693a18a84ebc293f094c09a92baa8c88a4f8d95798621b0caa8fbe9a8",
+        "shape": [
+          120,
+          192,
+          336,
+          3
+        ],
+        "dtype": "torch.uint8",
+        "hash_scope": "Raw contiguous RGB bytes, frame order"
+      },
+      "displayed_raw_rgb": {
+        "raw source384": {
+          "sha256": "5e492a337626daac507d03c16dff0935a8d70f686ed8e128704d40ea92d1c6b3",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        },
+        "raw LR bicubic": {
+          "sha256": "a10a0a1141b9bfb5af28157a5e7c5840fe640419e185fb23da7db466818c1d55",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        },
+        "LR VAE roundtrip bicubic": {
+          "sha256": "4be5655f61399eb5fa52db0280dc453b759ec848006fddee15968abc49f863a0",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        },
+        "HR384 VAE roundtrip": {
+          "sha256": "f5a170471dd8adbe1b98c5b775c1cbefb9d0cb999a10eb48dcbd94226445c832",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        }
+      },
+      "decode_seconds": 3.1167320730164647,
+      "no_upscaler_or_encoder_invoked": true,
+      "metric_scope": "Uncompressed uint8/255. Native LR reconstruction versus rawLR; common384 all paths versus SAME raw source384. No LPIPS or lossy-MP4 metrics."
+    },
+    "VIDGEN5S_0665341": {
+      "sample_id": "VIDGEN5S_0665341",
+      "frames": 120,
+      "native_lr_roundtrip": {
+        "pixel_l1": 0.02522008665156638,
+        "mse": 0.0017257269648982584,
+        "psnr_db": 27.630279148884288,
+        "delta_l1": 0.011934843533282998,
+        "temporal_difference_mse": 0.0007197606447706273,
+        "motion_roi_l1": 0.05946842627068608,
+        "motion_pair_pixels": 415322,
+        "motion_roi_fraction": 0.0541000254268374,
+        "frames": 120,
+        "adjacent_pairs": 119,
+        "roi_threshold": 0.05
+      },
+      "common384_vs_raw_source": {
+        "raw LR bicubic": {
+          "pixel_l1": 0.0093550176929588,
+          "mse": 0.0003943368531881851,
+          "psnr_db": 34.0413263355737,
+          "delta_l1": 0.006337224466533781,
+          "temporal_difference_mse": 0.0003957242293778408,
+          "motion_roi_l1": 0.03130584803109093,
+          "motion_pair_pixels": 1771079,
+          "motion_roi_fraction": 0.05767538135045685,
+          "frames": 120,
+          "adjacent_pairs": 119,
+          "roi_threshold": 0.05
+        },
+        "LR VAE roundtrip bicubic": {
+          "pixel_l1": 0.02698958497488035,
+          "mse": 0.0020546452987661493,
+          "psnr_db": 26.872631412256197,
+          "delta_l1": 0.01335217377798656,
+          "temporal_difference_mse": 0.001070437787096234,
+          "motion_roi_l1": 0.06734210649607797,
+          "motion_pair_pixels": 1771079,
+          "motion_roi_fraction": 0.05767538135045685,
+          "frames": 120,
+          "adjacent_pairs": 119,
+          "roi_threshold": 0.05
+        },
+        "HR384 VAE roundtrip": {
+          "pixel_l1": 0.01245802258855105,
+          "mse": 0.0004438593282848657,
+          "psnr_db": 33.527546484206766,
+          "delta_l1": 0.008508395198011586,
+          "temporal_difference_mse": 0.00039224346529895206,
+          "motion_roi_l1": 0.03367030899214179,
+          "motion_pair_pixels": 1771079,
+          "motion_roi_fraction": 0.05767538135045685,
+          "frames": 120,
+          "adjacent_pairs": 119,
+          "roi_threshold": 0.05
+        }
+      },
+      "native_raw_lr": {
+        "sha256": "19c37bef78f526c0459c6020045e13c399b092570631715865077eaaf01ba5e8",
+        "shape": [
+          120,
+          192,
+          336,
+          3
+        ],
+        "dtype": "torch.uint8",
+        "hash_scope": "Raw contiguous RGB bytes, frame order"
+      },
+      "native_lr_reconstruction": {
+        "sha256": "d6aef6f52e3c0c567b16e4ebbc5e739ae59f58cbaeca6ad7a84fc60420c0127c",
+        "shape": [
+          120,
+          192,
+          336,
+          3
+        ],
+        "dtype": "torch.uint8",
+        "hash_scope": "Raw contiguous RGB bytes, frame order"
+      },
+      "displayed_raw_rgb": {
+        "raw source384": {
+          "sha256": "0e669deb034a00635b43ffde5e3e7121f0939faedba0e646aea9f0981350effa",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        },
+        "raw LR bicubic": {
+          "sha256": "adc3b52b4096328060e69efbfe34cc7ecae606c466d2255f40c57ff1e37eb774",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        },
+        "LR VAE roundtrip bicubic": {
+          "sha256": "cfc858cff14e107648e4baba28c30b0af425fcc30ad0375dbf3e8ffab22f48d2",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        },
+        "HR384 VAE roundtrip": {
+          "sha256": "d39174431b8a2ad2ccdf4df9b3e797d2b42545836d4aaca8d4d52357a9a06c19",
+          "shape": [
+            120,
+            384,
+            672,
+            3
+          ],
+          "dtype": "torch.uint8",
+          "hash_scope": "Raw contiguous RGB bytes, frame order"
+        }
+      },
+      "decode_seconds": 2.280445011332631,
+      "no_upscaler_or_encoder_invoked": true,
+      "metric_scope": "Uncompressed uint8/255. Native LR reconstruction versus rawLR; common384 all paths versus SAME raw source384. No LPIPS or lossy-MP4 metrics."
+    }
+  },
+  "receipts": {
+    "VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/lr_roundtrip_v1/clips/VIDGEN5S_0421364/done.json",
+      "sha256": "18a91457a2e4a95c5a1e970e41e796cb0ce739ce37eac4a32e4f8526ebc820ff",
+      "bytes": 1504
+    },
+    "VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/lr_roundtrip_v1/clips/VIDGEN5S_0665341/done.json",
+      "sha256": "96fe6e826b46d95caa9da745804a336a50e86175f0465017ffd40a39037efe4d",
+      "bytes": 1504
+    }
+  },
+  "new_decodes": 2,
+  "new_encodes": 0,
+  "upscaler_forwards": 0,
+  "training_updates": 0,
+  "full_decoded_mp4_files": 2,
+  "frozen_inputs_and_sources_unchanged": true,
+  "limitations": [
+    "Two previously inspected problem dev clips, post-hoc and not representative/blind.",
+    "A bad LR reconstruction locates damage in the VAE encoder/decoder roundtrip, not the encoder alone.",
+    "A clean LR reconstruction does not prove preservation of all fine information needed by the upscaler.",
+    "No new encode, no upscaler, no motion-loss change, no saved model weights. Frozen decoder remains noncausal."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "sample_id": "VIDGEN5S_0086441",
+  "contract_sha256": "60e1999a122b099ee03a61703c8da58812775348593d485168ab6e51715cd5f4",
+  "latent": {
+    "sha256": "9612681b6168826b4834d6d3df3597a3ca2a4ec54d69f1d961c1df9f88b958fc",
+    "bytes": 3582497
+  },
+  "causality": {
+    "sha256": "24fbd54a32d218b3bff913d4de800b5a5f6489ccdc022b0bb25713ab4efeef63",
+    "bytes": 9956
+  },
+  "execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "frozen_parameters_unchanged": true,
+  "new_training_updates": 0
+}

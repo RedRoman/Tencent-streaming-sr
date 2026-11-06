@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "diagnostic": "Post-hoc two-dev LR VAE roundtrip probe",
+  "sample_ids": [
+    "VIDGEN5S_0421364",
+    "VIDGEN5S_0665341"
+  ],
+  "data": {
+    "VIDGEN5S_0421364": {
+      "pair": {
+        "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/samples/VIDGEN5S_0421364.pt",
+        "sha256": "60cf1efb41bb7785d553cda2a5e9e798bfc41466d555fffd97401ea1542a1ee5",
+        "bytes": 97376870
+      },
+      "hr_rgb": {
+        "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0421364/rgb.pt",
+        "sha256": "65680d13dcf038d42508247ec82b771afbb2c2636be67bc0481bdf5c45d69122",
+        "bytes": 185796445
+      },
+      "hr_receipt": {
+        "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0421364/done.json",
+        "sha256": "bb746451d6bbea569f1618a70701fcb9a904b74780f9d87cd61a607f3553f756",
+        "bytes": 1839
+      },
+      "source_video_sha256": "9587384b798ddd40652ee5c667e9d94ca5fcddb97d9d87e493c4a94341a86234"
+    },
+    "VIDGEN5S_0665341": {
+      "pair": {
+        "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/samples/VIDGEN5S_0665341.pt",
+        "sha256": "fde5eca2773e249df04323dc0748f831627c89739fd712cbbc7791af8cb842dc",
+        "bytes": 97376870
+      },
+      "hr_rgb": {
+        "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0665341/rgb.pt",
+        "sha256": "4367caedab1acfdcc6881e4488517d9b83ebd16c779f5304513323871571f564",
+        "bytes": 185796445
+      },
+      "hr_receipt": {
+        "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0665341/done.json",
+        "sha256": "d89bf127ede8862f44012a667574ea694fcb3ab71b8dcf376eb1ee7d8d2cf64e",
+        "bytes": 1839
+      },
+      "source_video_sha256": "4e4e7cae34d8590f41eba8def35d894b875d6b6a040e5078bccd00cc62aee35e"
+    }
+  },
+  "files": {
+    "script": {
+      "path": "${SCRATCH}/diagnose_h3_v5_lr_roundtrip.py",
+      "sha256": "4f56da5fa99dbae3be07057276eca55c3528e971caf52691466a8cad79d8a6cc",
+      "bytes": 14759
+    },
+    "historical_contract": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/contract.json",
+      "sha256": "765900ea019c5a711ea1850e75036e869222be5b2c3fccc25b447b0b0ac879e8",
+      "bytes": 18676
+    },
+    "dev_manifest": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/dev.jsonl",
+      "sha256": "c062d8d812f8b3060a80816bddc34f056b3fcb10878dd8e768327b84ba1b8701",
+      "bytes": 8045
+    },
+    "source/causal_upscaler.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/causal_upscaler.py",
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "bytes": 10332
+    },
+    "source/data_utils.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/data_utils.py",
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "bytes": 9603
+    },
+    "source/decode_results.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/decode_results.py",
+      "sha256": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c",
+      "bytes": 6308
+    },
+    "source/evaluate_causal_upscaler_pixels.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/evaluate_causal_upscaler_pixels.py",
+      "sha256": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+      "bytes": 7588
+    },
+    "source/evaluate_h3_cmn.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/evaluate_h3_cmn.py",
+      "sha256": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+      "bytes": 32998
+    },
+    "source/evaluate_h3_conv3d_hybrid.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/evaluate_h3_conv3d_hybrid.py",
+      "sha256": "8189ad4da27a48b2dd1c049b40927d1039eea77794330f0f80795ee17df7a01e",
+      "bytes": 43835
+    },
+    "source/evaluate_h3_conv3d_test16.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/evaluate_h3_conv3d_test16.py",
+      "sha256": "47326d65de8d7b89b71819af539b4c0a65af9d7fd1c74f99a8d8f22385e260de",
+      "bytes": 34446
+    },
+    "source/h3_cmn.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/h3_cmn.py",
+      "sha256": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+      "bytes": 10111
+    },
+    "source/h3_conv3d_hybrid.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/h3_conv3d_hybrid.py",
+      "sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "bytes": 7416
+    },
+    "source/h3_hybrid_pixel.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/h3_hybrid_pixel.py",
+      "sha256": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+      "bytes": 17383
+    },
+    "source/h3_v5_motion.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/h3_v5_motion.py",
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa",
+      "bytes": 9828
+    },
+    "source/prepare_data.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/prepare_data.py",
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "bytes": 18150
+    },
+    "source/train_h3_cmn.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/train_h3_cmn.py",
+      "sha256": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+      "bytes": 13111
+    },
+    "source/train_h3_conv3d_hybrid.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/train_h3_conv3d_hybrid.py",
+      "sha256": "93551f803e4c33fc1f9b2fa0a0f978f8497b48cb5a561a942aad94c4d92feec7",
+      "bytes": 23027
+    },
+    "source/train_h3_v5_motion.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/train_h3_v5_motion.py",
+      "sha256": "2319393eea9cb45e3a34da0c82f0e8619ac1f0e1b12335f9848fc86165d67304",
+      "bytes": 28142
+    },
+    "source/train_upscaler_trial.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/train_upscaler_trial.py",
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "bytes": 21905
+    },
+    "source/train_upscaler_ultraflash.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/train_upscaler_ultraflash.py",
+      "sha256": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+      "bytes": 15674
+    },
+    "source/ultraflash_ewarp.py": {
+      "path": "${EXPERIMENT_ROOT}/experiment/ultraflash_ewarp.py",
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+      "bytes": 6288
+    },
+    "vae/config.json": {
+      "path": "${H3_BASE_MODEL}/vae/config.json",
+      "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+      "bytes": 2011
+    },
+    "vae/diffusion_pytorch_model-00001-of-00003.safetensors": {
+      "path": "${H3_BASE_MODEL}/vae/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+      "bytes": 5061033024
+    },
+    "vae/diffusion_pytorch_model-00002-of-00003.safetensors": {
+      "path": "${H3_BASE_MODEL}/vae/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+      "bytes": 4955986528
+    },
+    "vae/diffusion_pytorch_model-00003-of-00003.safetensors": {
+      "path": "${H3_BASE_MODEL}/vae/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+      "bytes": 398539336
+    },
+    "vae/implementation": {
+      "path": "${RUNTIME_ASSET_ROOT}/runtime/diffusers-patched/src/diffusers/models/autoencoders/autoencoder_kl_minimax_h3.py",
+      "sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "bytes": 41346
+    },
+    "pair/VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/samples/VIDGEN5S_0421364.pt",
+      "sha256": "60cf1efb41bb7785d553cda2a5e9e798bfc41466d555fffd97401ea1542a1ee5",
+      "bytes": 97376870
+    },
+    "hr_rgb/VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0421364/rgb.pt",
+      "sha256": "65680d13dcf038d42508247ec82b771afbb2c2636be67bc0481bdf5c45d69122",
+      "bytes": 185796445
+    },
+    "hr_receipt/VIDGEN5S_0421364": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0421364/done.json",
+      "sha256": "bb746451d6bbea569f1618a70701fcb9a904b74780f9d87cd61a607f3553f756",
+      "bytes": 1839
+    },
+    "pair/VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/samples/VIDGEN5S_0665341.pt",
+      "sha256": "fde5eca2773e249df04323dc0748f831627c89739fd712cbbc7791af8cb842dc",
+      "bytes": 97376870
+    },
+    "hr_rgb/VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0665341/rgb.pt",
+      "sha256": "4367caedab1acfdcc6881e4488517d9b83ebd16c779f5304513323871571f564",
+      "bytes": 185796445
+    },
+    "hr_receipt/VIDGEN5S_0665341": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/dev/VIDGEN5S_0665341/done.json",
+      "sha256": "d89bf127ede8862f44012a667574ea694fcb3ab71b8dcf376eb1ee7d8d2cf64e",
+      "bytes": 1839
+    }
+  },
+  "decoder_fingerprint": {
+    "weights": {
+      "config.json": {
+        "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+        "bytes": 2011
+      },
+      "diffusion_pytorch_model-00001-of-00003.safetensors": {
+        "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+        "bytes": 5061033024
+      },
+      "diffusion_pytorch_model-00002-of-00003.safetensors": {
+        "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+        "bytes": 4955986528
+      },
+      "diffusion_pytorch_model-00003-of-00003.safetensors": {
+        "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+        "bytes": 398539336
+      }
+    },
+    "implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+    "recipe": "Frozen FP32 native H3; spatial tile256/overlap64; native temporal7/stride5"
+  },
+  "execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "compute": {
+    "new_decodes": 2,
+    "new_encodes": 0,
+    "upscaler_forwards": 0,
+    "training_updates": 0,
+    "comparison_mp4": 2
+  },
+  "frames": 120,
+  "fps": 24,
+  "raw_lr_pixels": [
+    336,
+    192
+  ],
+  "common_pixels": [
+    672,
+    384
+  ],
+  "comparison_order": [
+    "raw source384",
+    "raw LR bicubic",
+    "LR VAE roundtrip bicubic",
+    "HR384 VAE roundtrip"
+  ],
+  "resizing": "RawLR=exact2x2 average of cached source384, round/clamp uint8; both LR displays use identical per-frame bicubic align_corners=False antialias=True, clamp/round uint8.",
+  "metric_scope": "Uncompressed uint8/255. Native LR reconstruction versus rawLR; common384 all paths versus SAME raw source384. No LPIPS or lossy-MP4 metrics.",
+  "limitations": [
+    "Two previously inspected problem dev clips, post-hoc and not representative/blind.",
+    "A bad LR reconstruction locates damage in the VAE encoder/decoder roundtrip, not the encoder alone.",
+    "A clean LR reconstruction does not prove preservation of all fine information needed by the upscaler.",
+    "No new encode, no upscaler, no motion-loss change, no saved model weights. Frozen decoder remains noncausal."
+  ],
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/lr_roundtrip_v1"
+}

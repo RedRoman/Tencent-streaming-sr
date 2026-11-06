@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "Current progress snapshot, not all-media final delivery",
+  "historical_manifests": [
+    {
+      "path": "results/h3_conv3d_hybrid_20261105/snapshot_manifest.json",
+      "files_verified": 84,
+      "sha256": "7a279230569220492168b5c29bd17cbe39acad76b719aa26f111af583ef65c43"
+    },
+    {
+      "path": "results/h3_conv3d_test16_20261105/snapshot_manifest.json",
+      "files_verified": 159,
+      "sha256": "3705874584bad4c4d138fd625d265f2577bdee078aa4fa83f92819b8373225d0"
+    },
+    {
+      "path": "results/h3_v5_motion_20261106/publication_manifest.json",
+      "files_verified": 25,
+      "sha256": "4ded5d9a69167765d3ad52da29a7fd4fb45cff8ac1f59934fb000d1b3956b046"
+    }
+  ],
+  "audited_h264_videos": 5,
+  "frames_each": 120,
+  "fps": 24,
+  "seconds": 5,
+  "preview_gif_frames": 30,
+  "preview_gif_ms": 5000,
+  "private_path_and_token_scan": "passed, including URL-decoded strings",
+  "python_ast_parse": "passed",
+  "new_markdown_links": "passed",
+  "weights_or_training_caches_included": false
+}

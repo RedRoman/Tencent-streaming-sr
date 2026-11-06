@@ -1,0 +1,41 @@
+{
+  "status": "frozen",
+  "created_utc": "2026-11-05T16:43:20.820795+00:00",
+  "sources": {
+    "train_h3_v5_motion.py": "2319393eea9cb45e3a34da0c82f0e8619ac1f0e1b12335f9848fc86165d67304",
+    "h3_v5_motion.py": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa",
+    "test_h3_v5_motion.py": "d291606912d1811a0cbf42229546b545ebe1d9bb8c70193cc4d3a086c1ac9abc",
+    "evaluate_h3_v5_motion.py": "9b1274f1e716de5d62da70151c8787d93a4c4752f683d57b250173acfef1742f",
+    "test_h3_v5_eval.py": "5bb360a612457958201c14fb234066eda4a899c72ac955fb5dd38e3aa7149d84",
+    "run_h3_v5_motion_pipeline.sh": "20cf6c466b7ae97f1f85e5c826ba8adbad98c84b9a035dc45d979ee0eb6b5fd4",
+    "h3_v5_pipeline_contract.py": "13b25c2571affaaf4d8727079e7b79dc9c748aaaf53cce17207ad35a0f649957",
+    "run_h3_v5_motion_preflight.sh": "b37625836123ebf2da3e6615f45f19bfcf5350d9bc8a4e22d6b3257b4b1ab1f8",
+    "audit_h3_conv3d_precision.py": "a11879d3fa777bef5df55bd2534df347a61aff23bf6cdf2d03a6b8602455e3f8",
+    "audit_h3_conv3d_causality.py": "07bba1042c07f9641ee8a91bfc08eb063e5231204be52241c499e3e19be405dd",
+    "locked_run.py": "6e8968f8d0024f13b7cf5f6ab53004daa1f560b28541a6e01b2cbb9a97ef7fe9",
+    "env.sh": "64451094fa9aca640bc5bfc9ba77080330f858d1706ba74798ca4eb8834e4524"
+  },
+  "inherited_sources": {
+    "train_h3_v5_motion.py": "2319393eea9cb45e3a34da0c82f0e8619ac1f0e1b12335f9848fc86165d67304",
+    "h3_v5_motion.py": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa",
+    "h3_conv3d_hybrid.py": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+    "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+    "h3_hybrid_pixel.py": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+    "train_h3_cmn.py": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+    "h3_cmn.py": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+    "train_upscaler_ultraflash.py": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+    "ultraflash_ewarp.py": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+    "data_utils.py": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+    "prepare_data.py": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+    "train_upscaler_trial.py": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+    "evaluate_h3_cmn.py": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+    "evaluate_causal_upscaler_pixels.py": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+    "decode_results.py": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c"
+  },
+  "preflight_summary_sha256": "c87d80f099d52c87d464eb71c036e11a0fa6533aebafbdb457a650a58244cc2a",
+  "initial_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+  "updates_per_arm": 2000,
+  "selection": "Same fixed sparse16dev rule including step0; full120dev gate before test",
+  "test_reuse": "Existing reused16test plus3legacy, never blind; no test checkpoint selection",
+  "model_scope": "Only fixed-latent to upscaled-latent causal module; frozen decoder noncausal"
+}

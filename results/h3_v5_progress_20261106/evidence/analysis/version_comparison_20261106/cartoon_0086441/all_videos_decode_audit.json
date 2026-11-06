@@ -1,0 +1,351 @@
+{
+  "expected_duration_seconds" : 5,
+  "expected_fps" : 24,
+  "expected_frames" : 120,
+  "schema_version" : 1,
+  "status" : "passed",
+  "tool" : "h3_decode_audit.swift",
+  "video_count" : 5,
+  "videos" : [
+    {
+      "asset_duration" : {
+        "epoch" : 0,
+        "seconds" : 5,
+        "timescale" : 600,
+        "value" : 3000
+      },
+      "bytes" : 12684367,
+      "cadence_errors" : 0,
+      "codecs" : [
+        "avc1"
+      ],
+      "decoded_frames" : 120,
+      "decoded_sizes" : [
+        "2016x824"
+      ],
+      "decoder" : "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds" : 0.2006000280380249,
+      "errors" : [
+
+      ],
+      "first_pts" : {
+        "epoch" : 0,
+        "seconds" : 0,
+        "timescale" : 600,
+        "value" : 0
+      },
+      "height" : 824,
+      "invalid_pts" : 0,
+      "last_pts" : {
+        "epoch" : 0,
+        "seconds" : 4.958333333333333,
+        "timescale" : 600,
+        "value" : 2975
+      },
+      "last_sample_duration" : {
+        "epoch" : 0,
+        "seconds" : null,
+        "timescale" : 0,
+        "value" : 0
+      },
+      "max_cadence_error_seconds" : 0,
+      "max_pts_delta_seconds" : 0.041666666666666664,
+      "min_pts_delta_seconds" : 0.041666666666666664,
+      "missing_image_buffers" : 0,
+      "nominal_fps" : 24,
+      "nonmonotonic_pts" : 0,
+      "passed" : true,
+      "path" : "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/all_six_0086441.mp4",
+      "pts_span_seconds" : 4.958333333333333,
+      "reader_status" : "completed",
+      "sha256" : "a04e8086cf6e7e97ccd85d0e4cd0285e5f3a328435c90c775f107dd547bb1612",
+      "track_time_range" : {
+        "duration" : {
+          "epoch" : 0,
+          "seconds" : 5,
+          "timescale" : 600,
+          "value" : 3000
+        },
+        "start" : {
+          "epoch" : 0,
+          "seconds" : 0,
+          "timescale" : 1,
+          "value" : 0
+        }
+      },
+      "width" : 2016
+    },
+    {
+      "asset_duration" : {
+        "epoch" : 0,
+        "seconds" : 5,
+        "timescale" : 600,
+        "value" : 3000
+      },
+      "bytes" : 12492193,
+      "cadence_errors" : 0,
+      "codecs" : [
+        "avc1"
+      ],
+      "decoded_frames" : 120,
+      "decoded_sizes" : [
+        "1344x412"
+      ],
+      "decoder" : "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds" : 0.09348595142364502,
+      "errors" : [
+
+      ],
+      "first_pts" : {
+        "epoch" : 0,
+        "seconds" : 0,
+        "timescale" : 600,
+        "value" : 0
+      },
+      "height" : 412,
+      "invalid_pts" : 0,
+      "last_pts" : {
+        "epoch" : 0,
+        "seconds" : 4.958333333333333,
+        "timescale" : 600,
+        "value" : 2975
+      },
+      "last_sample_duration" : {
+        "epoch" : 0,
+        "seconds" : null,
+        "timescale" : 0,
+        "value" : 0
+      },
+      "max_cadence_error_seconds" : 0,
+      "max_pts_delta_seconds" : 0.041666666666666664,
+      "min_pts_delta_seconds" : 0.041666666666666664,
+      "missing_image_buffers" : 0,
+      "nominal_fps" : 24,
+      "nonmonotonic_pts" : 0,
+      "passed" : true,
+      "path" : "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/early50_vs_motion_0086441.mp4",
+      "pts_span_seconds" : 4.958333333333333,
+      "reader_status" : "completed",
+      "sha256" : "092b7b071a09a142fa43b121d2a0eeec0df51267a00f6c4c125994ece010cf36",
+      "track_time_range" : {
+        "duration" : {
+          "epoch" : 0,
+          "seconds" : 5,
+          "timescale" : 600,
+          "value" : 3000
+        },
+        "start" : {
+          "epoch" : 0,
+          "seconds" : 0,
+          "timescale" : 1,
+          "value" : 0
+        }
+      },
+      "width" : 1344
+    },
+    {
+      "asset_duration" : {
+        "epoch" : 0,
+        "seconds" : 5,
+        "timescale" : 600,
+        "value" : 3000
+      },
+      "bytes" : 12504200,
+      "cadence_errors" : 0,
+      "codecs" : [
+        "avc1"
+      ],
+      "decoded_frames" : 120,
+      "decoded_sizes" : [
+        "1344x412"
+      ],
+      "decoder" : "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds" : 0.098428964614868164,
+      "errors" : [
+
+      ],
+      "first_pts" : {
+        "epoch" : 0,
+        "seconds" : 0,
+        "timescale" : 600,
+        "value" : 0
+      },
+      "height" : 412,
+      "invalid_pts" : 0,
+      "last_pts" : {
+        "epoch" : 0,
+        "seconds" : 4.958333333333333,
+        "timescale" : 600,
+        "value" : 2975
+      },
+      "last_sample_duration" : {
+        "epoch" : 0,
+        "seconds" : null,
+        "timescale" : 0,
+        "value" : 0
+      },
+      "max_cadence_error_seconds" : 0,
+      "max_pts_delta_seconds" : 0.041666666666666664,
+      "min_pts_delta_seconds" : 0.041666666666666664,
+      "missing_image_buffers" : 0,
+      "nominal_fps" : 24,
+      "nonmonotonic_pts" : 0,
+      "passed" : true,
+      "path" : "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/old_ewarp_vs_motion_0086441.mp4",
+      "pts_span_seconds" : 4.958333333333333,
+      "reader_status" : "completed",
+      "sha256" : "1db9faf8431b772ba5ce58169f51404e1384363bb61fc6f0663e9a60f531c05f",
+      "track_time_range" : {
+        "duration" : {
+          "epoch" : 0,
+          "seconds" : 5,
+          "timescale" : 600,
+          "value" : 3000
+        },
+        "start" : {
+          "epoch" : 0,
+          "seconds" : 0,
+          "timescale" : 1,
+          "value" : 0
+        }
+      },
+      "width" : 1344
+    },
+    {
+      "asset_duration" : {
+        "epoch" : 0,
+        "seconds" : 5,
+        "timescale" : 600,
+        "value" : 3000
+      },
+      "bytes" : 12480755,
+      "cadence_errors" : 0,
+      "codecs" : [
+        "avc1"
+      ],
+      "decoded_frames" : 120,
+      "decoded_sizes" : [
+        "1344x412"
+      ],
+      "decoder" : "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds" : 0.092771053314208984,
+      "errors" : [
+
+      ],
+      "first_pts" : {
+        "epoch" : 0,
+        "seconds" : 0,
+        "timescale" : 600,
+        "value" : 0
+      },
+      "height" : 412,
+      "invalid_pts" : 0,
+      "last_pts" : {
+        "epoch" : 0,
+        "seconds" : 4.958333333333333,
+        "timescale" : 600,
+        "value" : 2975
+      },
+      "last_sample_duration" : {
+        "epoch" : 0,
+        "seconds" : null,
+        "timescale" : 0,
+        "value" : 0
+      },
+      "max_cadence_error_seconds" : 0,
+      "max_pts_delta_seconds" : 0.041666666666666664,
+      "min_pts_delta_seconds" : 0.041666666666666664,
+      "missing_image_buffers" : 0,
+      "nominal_fps" : 24,
+      "nonmonotonic_pts" : 0,
+      "passed" : true,
+      "path" : "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/original_teacher_vs_motion_0086441.mp4",
+      "pts_span_seconds" : 4.958333333333333,
+      "reader_status" : "completed",
+      "sha256" : "a353eac224425c3f3e515a1e45f1e3c19fafedaac8053df5ac7e53de640634c8",
+      "track_time_range" : {
+        "duration" : {
+          "epoch" : 0,
+          "seconds" : 5,
+          "timescale" : 600,
+          "value" : 3000
+        },
+        "start" : {
+          "epoch" : 0,
+          "seconds" : 0,
+          "timescale" : 1,
+          "value" : 0
+        }
+      },
+      "width" : 1344
+    },
+    {
+      "asset_duration" : {
+        "epoch" : 0,
+        "seconds" : 5,
+        "timescale" : 600,
+        "value" : 3000
+      },
+      "bytes" : 12507669,
+      "cadence_errors" : 0,
+      "codecs" : [
+        "avc1"
+      ],
+      "decoded_frames" : 120,
+      "decoded_sizes" : [
+        "1344x412"
+      ],
+      "decoder" : "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds" : 0.087543010711669922,
+      "errors" : [
+
+      ],
+      "first_pts" : {
+        "epoch" : 0,
+        "seconds" : 0,
+        "timescale" : 600,
+        "value" : 0
+      },
+      "height" : 412,
+      "invalid_pts" : 0,
+      "last_pts" : {
+        "epoch" : 0,
+        "seconds" : 4.958333333333333,
+        "timescale" : 600,
+        "value" : 2975
+      },
+      "last_sample_duration" : {
+        "epoch" : 0,
+        "seconds" : null,
+        "timescale" : 0,
+        "value" : 0
+      },
+      "max_cadence_error_seconds" : 0,
+      "max_pts_delta_seconds" : 0.041666666666666664,
+      "min_pts_delta_seconds" : 0.041666666666666664,
+      "missing_image_buffers" : 0,
+      "nominal_fps" : 24,
+      "nonmonotonic_pts" : 0,
+      "passed" : true,
+      "path" : "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/zero_aligned_vs_motion_0086441.mp4",
+      "pts_span_seconds" : 4.958333333333333,
+      "reader_status" : "completed",
+      "sha256" : "e6ad69611bcf34859232ae2670a848cbd8b5887bdc00ba31f5922b1d1386f871",
+      "track_time_range" : {
+        "duration" : {
+          "epoch" : 0,
+          "seconds" : 5,
+          "timescale" : 600,
+          "value" : 3000
+        },
+        "start" : {
+          "epoch" : 0,
+          "seconds" : 0,
+          "timescale" : 1,
+          "value" : 0
+        }
+      },
+      "width" : 1344
+    }
+  ]
+}

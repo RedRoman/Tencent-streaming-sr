@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "sample_id": "VIDGEN5S_0086441",
+  "split": "test",
+  "variant": "zero_aligned",
+  "step": 0,
+  "new_training_updates": 0,
+  "initial_sha256": "e989d93ec87e751d295b9ec13a0af1c41401f1d75b69c4e25b2a3596c9dbc31e",
+  "adapter_config": {
+    "version": 1,
+    "initialization": "aligned_past",
+    "temporal_padding": "left_only_zero",
+    "groupnorm": "per_frame",
+    "normalization": "D(U(N(native_normalized_H3_latent)))",
+    "spatial_scale": 2.0,
+    "temporal_chunking": false,
+    "dtype": "float32",
+    "saved_weights_already_initialized": true,
+    "reload_must_not_reinitialize_weights": true
+  },
+  "assets": {
+    "initial_checkpoint": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_causal_finetune/aligned_past_steps50/initial_model.pt",
+      "sha256": "e989d93ec87e751d295b9ec13a0af1c41401f1d75b69c4e25b2a3596c9dbc31e",
+      "bytes": 1381224195
+    },
+    "prior50_summary": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_causal_finetune/aligned_past_steps50/summary.json",
+      "sha256": "799bd2106739f6cee5b8e0a0ba245f16ce1f056b9d41c85f703742d0e6db627a",
+      "bytes": 80900
+    },
+    "old_5s_summary": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_5s/evaluation/summary.json",
+      "sha256": "5594a12df0a58e56d773c0a48106c2da95a6021ccfa63cdf606c754b2dc773be",
+      "bytes": 82507
+    },
+    "current_evaluation_contract": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/contract.json",
+      "sha256": "765900ea019c5a711ea1850e75036e869222be5b2c3fccc25b447b0b0ac879e8",
+      "bytes": 18676
+    },
+    "current_done_receipt": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/done.json",
+      "sha256": "1a1a5a8554d3d84a08f32825c3132d393ddc9c0962c308924ae32a2fa7cf7a65",
+      "bytes": 6442
+    },
+    "baseline_rgb_receipt": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/test/VIDGEN5S_0086441/done.json",
+      "sha256": "e3c9451d978d7bb8947387b1f6a5c518536f41606ce5dff6c9518894a4fe60e2",
+      "bytes": 1840
+    },
+    "baseline_rgb": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/baseline_cache/test/VIDGEN5S_0086441/rgb.pt",
+      "sha256": "26e0aa0fc010ca4bb64d57d5dc882c417192f5b3037d07ac8f1132f0706a41e1",
+      "bytes": 185796445
+    },
+    "pair": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/samples/VIDGEN5S_0086441.pt",
+      "sha256": "94377effe6f5bb344597811deefae86163bffa10dee427fb5d5687ddac97ce87",
+      "bytes": 97376870
+    },
+    "source_video": {
+      "path": "${DATASET_ROOT}/vidgen1m-h3-5s-selected-493-20261017/videos/VIDGEN5S_0086441.mp4",
+      "sha256": "f41b74863ab2b487585933d19cae263141e16fed201efbbe7f9602edd59092f3",
+      "bytes": 1123808
+    },
+    "plan": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/plan.json",
+      "sha256": "c21c9c0ef6c8dbb115ed5f57462a7627ccf3b76e4b4e9560976ced6f653d450f",
+      "bytes": 118291
+    },
+    "ready": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/READY.json",
+      "sha256": "b2a7cbf10aebdf31850c9e41644c0d6df484a10d47227e3a7a5f7ad495845d4d",
+      "bytes": 895
+    },
+    "test_manifest": {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/pairs/test.jsonl",
+      "sha256": "3ea4003412f81fb3f7e1bf3e0cf6ffb0e6395e620cde79c46a7947681083a23a",
+      "bytes": 8056
+    },
+    "upscaler_base_weights": {
+      "path": "${EXPERIMENT_ROOT}/assets/latent_upsampler/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+      "sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "bytes": 690592992
+    },
+    "upstream_loader": {
+      "path": "${EXPERIMENT_ROOT}/upstream/open_h3/upscaler.py",
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "bytes": 1724
+    },
+    "upstream_node": {
+      "path": "${EXPERIMENT_ROOT}/upstream/open_h3/upscaler_node.py",
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "bytes": 25218
+    },
+    "decoder_implementation": {
+      "path": "${RUNTIME_ASSET_ROOT}/runtime/diffusers-patched/src/diffusers/models/autoencoders/autoencoder_kl_minimax_h3.py",
+      "sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "bytes": 41346
+    }
+  },
+  "imported_source_files": {
+    "causal_upscaler.py": {
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "bytes": 10332
+    },
+    "complete_h3_zero_aligned_clip.py": {
+      "sha256": "0321e5156c23556b3b65f9bc7a6953b976ebaa80bfcca7f469aa89b9c0770156",
+      "bytes": 15162
+    },
+    "data_utils.py": {
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "bytes": 9603
+    },
+    "decode_results.py": {
+      "sha256": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c",
+      "bytes": 6308
+    },
+    "evaluate_causal_upscaler_pixels.py": {
+      "sha256": "b270d80dde5b8058e68bdc1ed9d9ca5e37315f4e1f52c0ce48619b2cefb64b77",
+      "bytes": 7588
+    },
+    "evaluate_h3_cmn.py": {
+      "sha256": "124c904d8fd971e10b088aa8c2b582e9f887431020abf2f2ac60c633ab3d4334",
+      "bytes": 32998
+    },
+    "evaluate_upscaler_5s.py": {
+      "sha256": "442651a9face8d16c1b3b7a088bd7abfe3ebab1f13219ea204b5bf2f692e0c19",
+      "bytes": 8908
+    },
+    "h3_cmn.py": {
+      "sha256": "f2fce39d1207d30b3e3322f58e429462ee3880230abc4ea8f95574c758661f9f",
+      "bytes": 10111
+    },
+    "h3_conv3d_hybrid.py": {
+      "sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "bytes": 7416
+    },
+    "h3_hybrid_pixel.py": {
+      "sha256": "6818a9f8f2bad7d79c18c4fe6a870e968dffaee81c91628d806dd32318f174f2",
+      "bytes": 17383
+    },
+    "h3_v5_motion.py": {
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa",
+      "bytes": 9828
+    },
+    "prepare_data.py": {
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "bytes": 18150
+    },
+    "train_causal_upscaler.py": {
+      "sha256": "fecfc569f800d340a9130fb6fe56bafb51de0202d108fb84665edd001093ea98",
+      "bytes": 21085
+    },
+    "train_h3_cmn.py": {
+      "sha256": "56efa896d65e8427d2417405bab77cddbeccc2fa1973a7ba6eed9d987a0811e0",
+      "bytes": 13111
+    },
+    "train_h3_v5_motion.py": {
+      "sha256": "2319393eea9cb45e3a34da0c82f0e8619ac1f0e1b12335f9848fc86165d67304",
+      "bytes": 28142
+    },
+    "train_upscaler_trial.py": {
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "bytes": 21905
+    },
+    "train_upscaler_ultraflash.py": {
+      "sha256": "acc6fa63b1b09f52fbf09c454b832d362ca19ac71b0c18bf21f0d8c6e4afd316",
+      "bytes": 15674
+    },
+    "ultraflash_ewarp.py": {
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+      "bytes": 6288
+    }
+  },
+  "decoder_weights": {
+    "config.json": {
+      "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+      "bytes": 2011
+    },
+    "diffusion_pytorch_model-00001-of-00003.safetensors": {
+      "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+      "bytes": 5061033024
+    },
+    "diffusion_pytorch_model-00002-of-00003.safetensors": {
+      "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+      "bytes": 4955986528
+    },
+    "diffusion_pytorch_model-00003-of-00003.safetensors": {
+      "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+      "bytes": 398539336
+    }
+  },
+  "expected_execution_precision": {
+    "device_type": "npu",
+    "tensor_dtype": "float32",
+    "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+    "torch_version": "2.7.1+cpu",
+    "torch_npu_version": "2.7.1.post2",
+    "conv_allow_hf32": true,
+    "matmul_allow_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "target_pixels": [
+    672,
+    384
+  ],
+  "frames": 120,
+  "fps": 24,
+  "duration_seconds": 5,
+  "normalization": "D(U(N(native_normalized_H3_latent)))",
+  "target_latent_shape": [
+    24,
+    37,
+    24,
+    42
+  ],
+  "source_video_sha256": "f41b74863ab2b487585933d19cae263141e16fed201efbbe7f9602edd59092f3",
+  "pair_sha256": "94377effe6f5bb344597811deefae86163bffa10dee427fb5d5687ddac97ce87",
+  "base_model": "${H3_BASE_MODEL}",
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/zero_aligned_0086441",
+  "checkpoint_loading": "Load saved step0 state verbatim; install causal operators; NEVER repeat aligned_past conversion",
+  "scope": "One previously viewed test clip; fixed weights, no training or checkpoint selection; VAE decoder noncausal"
+}

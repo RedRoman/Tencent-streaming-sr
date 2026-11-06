@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "updates_per_arm": 2000,
+  "same_sample_region_lpips_lr_schedule": true,
+  "initial_dev_mean_abs_differences": {
+    "loss": 0.0,
+    "latent_mse": 0.0,
+    "ewarp_l1": 0.0,
+    "valid_warp_fraction": 0.0,
+    "pixel_l1": 0.0,
+    "lpips": 0.0,
+    "motion_l1": 0.0,
+    "delta_l1": 0.0,
+    "motion_roi_fraction": 0.0,
+    "adjacent_pair_count": 0.0,
+    "adjacent_pair_fraction": 0.0,
+    "teacher_mse": 0.0,
+    "global_score": 0.0,
+    "selection_score": 0.0
+  },
+  "bound_long_causality_audits": {
+    "control": {
+      "audit_sha256": "1153102c8f083d144ba0c21e9967833cc02b023a0e7e80eaff100f3522d8e7c2",
+      "checkpoint_sha256": "0013d84532276cbcdeebde8e990c3215891e4d7a49c3e2ee0b5b349a1270e4e5",
+      "frames": 163,
+      "checks": 16,
+      "conv_allow_hf32": false
+    },
+    "motion": {
+      "audit_sha256": "ad3a05de767ea330ed82eb12d33d450296a123d87a87c470687567daca71ab59",
+      "checkpoint_sha256": "b4311c9e91365dfc0a5a6014d437e8d34f1c7d71bc31e12879b45b0560652d37",
+      "frames": 163,
+      "checks": 16,
+      "conv_allow_hf32": false
+    }
+  },
+  "scope": "Both objectives share model, data, optimizer, schedule and fixed selection; no test accessed"
+}

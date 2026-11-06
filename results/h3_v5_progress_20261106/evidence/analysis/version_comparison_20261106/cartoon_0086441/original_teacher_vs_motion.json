@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_ultraflash/evaluation/decoded/VIDGEN5S_0086441/pretrained.mp4",
+      "sha256": "5d0a2052e607bf30dc983d81562e4ccf9c1a12742a676b0f7974ec573eb9d42d",
+      "label": "Original bidirectional teacher"
+    },
+    {
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/motion.mp4",
+      "sha256": "0f77daece5f2a71acdeff91d7dc581862a5800db95b03d81ead28bb567578fb7",
+      "label": "Current motion - step 2000"
+    }
+  ],
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/original_teacher_vs_motion_0086441.mp4",
+  "columns": 2
+}

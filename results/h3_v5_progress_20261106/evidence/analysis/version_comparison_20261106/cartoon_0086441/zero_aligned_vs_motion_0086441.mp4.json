@@ -1,0 +1,25 @@
+{
+  "columns": 2,
+  "config_sha256": "b28a48ab61cf9e2318f1e794a01c3b7470dc76d0b9d10b9ab28c570af4204feb",
+  "duration_seconds": 5,
+  "fps": 24,
+  "frames": 120,
+  "height": 412,
+  "inputs": [
+    {
+      "label": "Aligned init - 0 updates",
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/diagnostics/zero_aligned_0086441/zero_aligned.mp4",
+      "sha256": "e8c78197c196ebc590fd29ea56c257f3345692c195fa617a56422d04242a9e2d"
+    },
+    {
+      "label": "Current motion - step 2000",
+      "path": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/evaluation/decoded/test/VIDGEN5S_0086441/motion.mp4",
+      "sha256": "0f77daece5f2a71acdeff91d7dc581862a5800db95b03d81ead28bb567578fb7"
+    }
+  ],
+  "note": "Display-only synchronized grid, each original encoded frame decoded once; no per-panel resizing or enhancement. Metrics must use original uncompressed evaluation tensors. H264 re-encoding can alter pixels slightly.",
+  "output": "${EXPERIMENT_ROOT}/upscaler_v5_motion_20261106/analysis/version_comparison_20261106/cartoon_0086441/zero_aligned_vs_motion_0086441.mp4",
+  "sha256": "e6ad69611bcf34859232ae2670a848cbd8b5887bdc00ba31f5922b1d1386f871",
+  "status": "completed",
+  "width": 1344
+}

@@ -1,6 +1,10 @@
 # Sol-H3 — 流式视频超分
 
-2026-11-06：当前已完成评估的 H3 因果 Conv3d hybrid upscaler 正式命名为 **[v5](versions/v5/README.md)**，固定对应 dev 选择的 step1800 权重。后续高变化区域伪影优化从该冻结基线继续。 [等预算优化实验](experiments/h3_v5_motion_20261106/README.md)已通过8步预检并启动，两臂各2000步，尚无最终质量结论。
+2026-11-06：**[六项同片对比与最新诊断](results/h3_v5_progress_20261106/README.md)** 已发布：用户指定动画的零更新改造、50步、旧 eWarp、v5、motion、HR 参考，以及原版双向 teacher 的双栏对照。**motion 两臂训练和评估已结束：指标小幅改善，主要视觉伪影未解决**；原始 latent eWarp 退步，未将其推荐为新交付版本。v5 仍固定为 [step1800 基线](versions/v5/README.md)。
+
+[![六项动态预览：点击查看完整5秒视频](results/h3_v5_progress_20261106/media/six_panel_preview.gif)](results/h3_v5_progress_20261106/media/all_six_0086441.mp4)
+
+**[完整六格 MP4](results/h3_v5_progress_20261106/media/all_six_0086441.mp4) · [四组双栏与诊断报告](results/h3_v5_progress_20261106/README.md)**。上排：零更新 / 50步 / 旧 eWarp；下排：v5 / motion / decoded HR 参考。本快照已发布选定对比视频，其余批量媒体与本地权重归档仍在后续交付范围。
 
 2026-11-05 [固定 step1800 的完整16条test像素补测](results/h3_conv3d_test16_20261105/README.md)已完成：新增13条与原3条合并，每条120帧、24fps、5秒，未重训或重新选模。新Conv3d相对旧causal的平均PSNR为25.5670 vs 24.3314dB，LPIPS为0.131721 vs 0.200394（降低34.27%），像素时间差分MSE降低20.26%；16条均改善。原版双向teacher仍整体更好，既有latent eWarp退步8.96%的结论保留；测试集已复用，decoder仍非因果。结果含26段新增展示视频、逐片与分类指标、抽帧观察和完整审计证据。
 
