@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "repository": "RedRoman/Tencent-streaming-sr",
+  "tag": "h3-v5-weights-20261106",
+  "release_id": 436171051,
+  "release_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/tag/h3-v5-weights-20261106",
+  "verified_utc": "2026-11-06T06:35:54.507794+00:00",
+  "verification_phase": "draft assets verified before publication",
+  "url_note": "Canonical tag URLs become active when this draft is published; size, SHA256 and asset IDs were verified against the GitHub API before publication.",
+  "scope": "Five FP32 weight files and 21 support files; excludes this receipt to avoid self-reference.",
+  "weight_files": 5,
+  "weight_bytes": 6905767832,
+  "assets": [
+    {
+      "name": "LICENSE",
+      "asset_id": 716167675,
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "github_digest": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/LICENSE"
+    },
+    {
+      "name": "LICENSE.upstream-node-MIT",
+      "asset_id": 716167677,
+      "bytes": 1069,
+      "sha256": "86805fe49f63c8957e4427f7e7f26fba687c6cea05fa9249bf36f9d3316a0734",
+      "github_digest": "sha256:86805fe49f63c8957e4427f7e7f26fba687c6cea05fa9249bf36f9d3316a0734",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/LICENSE.upstream-node-MIT"
+    },
+    {
+      "name": "NOTICE",
+      "asset_id": 716167666,
+      "bytes": 1248,
+      "sha256": "e4e1186755df7e5b58a500b94cdb8ff8fce09616928dbe195b3a777ffaa87af3",
+      "github_digest": "sha256:e4e1186755df7e5b58a500b94cdb8ff8fce09616928dbe195b3a777ffaa87af3",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/NOTICE"
+    },
+    {
+      "name": "README.md",
+      "asset_id": 716167665,
+      "bytes": 8863,
+      "sha256": "bf5b92a7d1751e5e1315cd0ff18217fe7291b92f958da9e298e792cc66b9283a",
+      "github_digest": "sha256:bf5b92a7d1751e5e1315cd0ff18217fe7291b92f958da9e298e792cc66b9283a",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/README.md"
+    },
+    {
+      "name": "cpu_load_validation.json",
+      "asset_id": 716167674,
+      "bytes": 1938,
+      "sha256": "0a74993f1af21e9237f7650dd44e7135e83ebe7c3100c94d6d6150a1a25a7b89",
+      "github_digest": "sha256:0a74993f1af21e9237f7650dd44e7135e83ebe7c3100c94d6d6150a1a25a7b89",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/cpu_load_validation.json"
+    },
+    {
+      "name": "files_manifest.json",
+      "asset_id": 716167697,
+      "bytes": 3605,
+      "sha256": "2d07a434167ea001357d70c6fb006a75b827bc857ed5d0550ef5bf7e4fe7c761",
+      "github_digest": "sha256:2d07a434167ea001357d70c6fb006a75b827bc857ed5d0550ef5bf7e4fe7c761",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/files_manifest.json"
+    },
+    {
+      "name": "h3_causal_aligned50_config.json",
+      "asset_id": 716167698,
+      "bytes": 2441,
+      "sha256": "791c1eff9fbad45d42f154d1cc50ca6b354d89600d8d015636b1b2da68d30b57",
+      "github_digest": "sha256:791c1eff9fbad45d42f154d1cc50ca6b354d89600d8d015636b1b2da68d30b57",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_aligned50_config.json"
+    },
+    {
+      "name": "h3_causal_aligned50_fp32.safetensors",
+      "asset_id": 716166428,
+      "bytes": 1381153568,
+      "sha256": "29e3555fb220d647b7b745aa035eca5425dd361deba62b6ba971714500a77eec",
+      "github_digest": "sha256:29e3555fb220d647b7b745aa035eca5425dd361deba62b6ba971714500a77eec",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_aligned50_fp32.safetensors"
+    },
+    {
+      "name": "h3_causal_aligned50_tensor_validation.json",
+      "asset_id": 716167702,
+      "bytes": 84496,
+      "sha256": "2f5847e61fdb4e07facae8a0aec3d46ccef51bb8b81981c120e345d279c834cc",
+      "github_digest": "sha256:2f5847e61fdb4e07facae8a0aec3d46ccef51bb8b81981c120e345d279c834cc",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_aligned50_tensor_validation.json"
+    },
+    {
+      "name": "h3_causal_motion_config.json",
+      "asset_id": 716167711,
+      "bytes": 2439,
+      "sha256": "1a795adb273d032445af49a7f08c507f841b94ba6a2a405d25eda9a5cddf7911",
+      "github_digest": "sha256:1a795adb273d032445af49a7f08c507f841b94ba6a2a405d25eda9a5cddf7911",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_motion_config.json"
+    },
+    {
+      "name": "h3_causal_motion_fp32.safetensors",
+      "asset_id": 716156647,
+      "bytes": 1381153568,
+      "sha256": "a7f10b0a7eb7cd14b643d7dc110653c854ddb1b0a65354d477f43b62621a0b44",
+      "github_digest": "sha256:a7f10b0a7eb7cd14b643d7dc110653c854ddb1b0a65354d477f43b62621a0b44",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_motion_fp32.safetensors"
+    },
+    {
+      "name": "h3_causal_motion_tensor_validation.json",
+      "asset_id": 716167738,
+      "bytes": 84493,
+      "sha256": "4b3fdd33b08f45bb119978501ea23d504129fe1061106873561718bce2040f5d",
+      "github_digest": "sha256:4b3fdd33b08f45bb119978501ea23d504129fe1061106873561718bce2040f5d",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_motion_tensor_validation.json"
+    },
+    {
+      "name": "h3_causal_old_ewarp_config.json",
+      "asset_id": 716167745,
+      "bytes": 2445,
+      "sha256": "8f1ec881cc710015fb70bd8894ede7e6fa892f3a2cc1dd957f30b3c1db84e5b8",
+      "github_digest": "sha256:8f1ec881cc710015fb70bd8894ede7e6fa892f3a2cc1dd957f30b3c1db84e5b8",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_old_ewarp_config.json"
+    },
+    {
+      "name": "h3_causal_old_ewarp_fp32.safetensors",
+      "asset_id": 716171544,
+      "bytes": 1381153568,
+      "sha256": "fcfc25d7545cf2470836330101c9f0eb049824c8475ab09716a31be3be3f32c5",
+      "github_digest": "sha256:fcfc25d7545cf2470836330101c9f0eb049824c8475ab09716a31be3be3f32c5",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_old_ewarp_fp32.safetensors"
+    },
+    {
+      "name": "h3_causal_old_ewarp_tensor_validation.json",
+      "asset_id": 716167760,
+      "bytes": 84496,
+      "sha256": "e17d81322c0451dad20cf21120fbb51f84d86bade4665cffbf013a396f4a3c4b",
+      "github_digest": "sha256:e17d81322c0451dad20cf21120fbb51f84d86bade4665cffbf013a396f4a3c4b",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_old_ewarp_tensor_validation.json"
+    },
+    {
+      "name": "h3_causal_v5_config.json",
+      "asset_id": 716167766,
+      "bytes": 2431,
+      "sha256": "1ee9735eeb03749e5fbc61570380c5ae87bde6a21f284353c6a4fca89675b327",
+      "github_digest": "sha256:1ee9735eeb03749e5fbc61570380c5ae87bde6a21f284353c6a4fca89675b327",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_v5_config.json"
+    },
+    {
+      "name": "h3_causal_v5_fp32.safetensors",
+      "asset_id": 716151068,
+      "bytes": 1381153560,
+      "sha256": "a9331b3e16ada52a504b71ebf5a60e9149a1e0dc92d9bdda36247a4e714a3e31",
+      "github_digest": "sha256:a9331b3e16ada52a504b71ebf5a60e9149a1e0dc92d9bdda36247a4e714a3e31",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_v5_fp32.safetensors"
+    },
+    {
+      "name": "h3_causal_v5_tensor_validation.json",
+      "asset_id": 716167764,
+      "bytes": 84489,
+      "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75",
+      "github_digest": "sha256:071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_v5_tensor_validation.json"
+    },
+    {
+      "name": "h3_causal_zero_aligned_config.json",
+      "asset_id": 716167781,
+      "bytes": 2445,
+      "sha256": "c1258188aa2ce7933130ebb91b46dc84365648db1d9e44399c3b2603bbf40cd8",
+      "github_digest": "sha256:c1258188aa2ce7933130ebb91b46dc84365648db1d9e44399c3b2603bbf40cd8",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_zero_aligned_config.json"
+    },
+    {
+      "name": "h3_causal_zero_aligned_fp32.safetensors",
+      "asset_id": 716162032,
+      "bytes": 1381153568,
+      "sha256": "30ff18236a79b718e15bd86dbbff5c44d506f28bd9dfa22a6ad416528d433fa5",
+      "github_digest": "sha256:30ff18236a79b718e15bd86dbbff5c44d506f28bd9dfa22a6ad416528d433fa5",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_zero_aligned_fp32.safetensors"
+    },
+    {
+      "name": "h3_causal_zero_aligned_tensor_validation.json",
+      "asset_id": 716167793,
+      "bytes": 84499,
+      "sha256": "52f5d7be631b5ddb643edc03d2746e025c5d2c43ccc64e01d31507b52ecf99c7",
+      "github_digest": "sha256:52f5d7be631b5ddb643edc03d2746e025c5d2c43ccc64e01d31507b52ecf99c7",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/h3_causal_zero_aligned_tensor_validation.json"
+    },
+    {
+      "name": "license_provenance.json",
+      "asset_id": 716167803,
+      "bytes": 1198,
+      "sha256": "691b64b2e9fe3dc7c0536aef055524093e797fb952fd35ca7390ec6bdc8ac134",
+      "github_digest": "sha256:691b64b2e9fe3dc7c0536aef055524093e797fb952fd35ca7390ec6bdc8ac134",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/license_provenance.json"
+    },
+    {
+      "name": "load_h3_causal_release.py",
+      "asset_id": 716167820,
+      "bytes": 5621,
+      "sha256": "118591b6b3baabd66478995db10af68704fb7b0323123a0e88db0b3b945ff42c",
+      "github_digest": "sha256:118591b6b3baabd66478995db10af68704fb7b0323123a0e88db0b3b945ff42c",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/load_h3_causal_release.py"
+    },
+    {
+      "name": "public_import_validation.json",
+      "asset_id": 716167822,
+      "bytes": 1178,
+      "sha256": "a67aa13f676b5db600f69617cb64c1af868cf810d1c1748ca566f5e2e2dfe160",
+      "github_digest": "sha256:a67aa13f676b5db600f69617cb64c1af868cf810d1c1748ca566f5e2e2dfe160",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/public_import_validation.json"
+    },
+    {
+      "name": "public_runtime_dependencies.json",
+      "asset_id": 716167840,
+      "bytes": 2494,
+      "sha256": "319d00ae8a7355f12289b027d3f93bf2552fd889f19fd2f973a21c30f1ba5396",
+      "github_digest": "sha256:319d00ae8a7355f12289b027d3f93bf2552fd889f19fd2f973a21c30f1ba5396",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/public_runtime_dependencies.json"
+    },
+    {
+      "name": "weights_manifest.json",
+      "asset_id": 716167844,
+      "bytes": 6476,
+      "sha256": "056e3095563438cd13b1e72b4453caa8f2d8ac1d7cf441e60e949646837f1169",
+      "github_digest": "sha256:056e3095563438cd13b1e72b4453caa8f2d8ac1d7cf441e60e949646837f1169",
+      "state": "uploaded",
+      "download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-v5-weights-20261106/weights_manifest.json"
+    }
+  ]
+}

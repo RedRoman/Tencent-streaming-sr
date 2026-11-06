@@ -1,0 +1,3236 @@
+{
+  "status": "passed",
+  "variant": "motion",
+  "original_checkpoint_sha256": "b4311c9e91365dfc0a5a6014d437e8d34f1c7d71bc31e12879b45b0560652d37",
+  "original_checkpoint_sha256_after": "b4311c9e91365dfc0a5a6014d437e8d34f1c7d71bc31e12879b45b0560652d37",
+  "public_weights_sha256": "a7f10b0a7eb7cd14b643d7dc110653c854ddb1b0a65354d477f43b62621a0b44",
+  "tensor_count": 322,
+  "parameter_count": 345280216,
+  "all_tensors_bitwise_equal": true,
+  "tensor_dtype_unchanged": true,
+  "optimizer_included": false,
+  "rng_included": false,
+  "original_contract_included": false,
+  "checks": {
+    "conv_in.weight": {
+      "shape": [
+        512,
+        24,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 331776,
+      "tensor_sha256": "6bd2506ca929575e98ee8a9d8fd3ee781c141533de67c56667b25096ffbcf0fa",
+      "bitwise_equal": true
+    },
+    "conv_in.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a7d008f0aa8fad5389cfabc409dd4dd82582a8e2021ac57fa4485f623c931f64",
+      "bitwise_equal": true
+    },
+    "embed.0.weight": {
+      "shape": [
+        64,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 64,
+      "tensor_sha256": "1ef9758c90867a6cfa0b124cff5ec3893b762d1da7a6d86554daf761b41e9e90",
+      "bitwise_equal": true
+    },
+    "embed.0.bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "numel": 64,
+      "tensor_sha256": "fc93f0594a9b6eaa4846c7a6020486b32cd4292177e856c3f5aed606ce5fac54",
+      "bitwise_equal": true
+    },
+    "embed.2.weight": {
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 4096,
+      "tensor_sha256": "74a6ee78bb5f73d163ecfb5348f45a96d59e89727ee107bd5f2eb1e151eba75b",
+      "bitwise_equal": true
+    },
+    "embed.2.bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "numel": 64,
+      "tensor_sha256": "c063fb7fc7ca4e53fa931e090a20817e1a338b7a76a49b0bb132aa6e5c435a03",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ba3a5b9b6c09104d37bc059022665a57585bc6d5280b0f0390812e457f8bdf50",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "9368b025bbb35f1ff3c2af6dfe199f4682b6f24f2c9d64700a27cd8432894b77",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "ef235312c018d167de596e9f0baf4814494091f2bc56829129bfe7680eb649f9",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "37ce369c89085bc85500a676505775822701148e1239cdcbd0db76ba29cf5066",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "7446f2226dfd946e8a4ef92b036ee62796f75d279b87ab8a209c47eca5752d31",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "12f7d389b53d9585e6019574a15b47736cb05fe4eafa49ed5f41a4d9f9343844",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a5281af0dec1cff133268985db4761ba077bb2ebab9962b773d83db2376992c8",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7b20ccb2fbbb42d3c4503d9bfa70971af30a4a7ae7b7c0dde159d25b856b97bb",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "beace791fec9b2aabbb9bf2d1bbff7bc113d8b6033566c28692d2d1fa07d2f68",
+      "bitwise_equal": true
+    },
+    "in_blocks.0.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "5e3a2cb8d598fb9515bdd74e2ba6c35241283573a6d4e24b978d8a7a178e27fc",
+      "bitwise_equal": true
+    },
+    "in_blocks.1.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "56cd41f92fd8384307a9087771caa39ef411968462cfbecd70489702cc174f40",
+      "bitwise_equal": true
+    },
+    "in_blocks.1.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "6ad89e85a957408fa4ee80ac971067942d8c03861e74c0fe62a8a6a8d2b27971",
+      "bitwise_equal": true
+    },
+    "in_blocks.1.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "398e2b75ef0c0e3f658fba98de5703973cfcf9724fb161f925b43b79324de743",
+      "bitwise_equal": true
+    },
+    "in_blocks.1.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "5c6629416cc3b2d3dcbc0702f3d5c7c82f30c5f07f9775cdcea4cb8463805c20",
+      "bitwise_equal": true
+    },
+    "in_blocks.1.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "cb68c5c5e942c25a695d3e34f5fb1a5f7d5eb420e59bb5599d65c1f06a7822df",
+      "bitwise_equal": true
+    },
+    "in_blocks.1.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "d0b88c518e1b4fcb901b96a3273d6af6eb7c18893c63acbf1c3c988d7ee23d6d",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "08ce9920459393e6d9a664c8f4a00ae16e6ed6d529b1e6969de6794baae23c7b",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "c1f12750bca51dcc37640ee733bcbbf4bda89f9d480513f530874d0f35d91e10",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "6487271bca08331363a0e465d1913f704012351f3905e8300544731e4bbbf110",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "438bda8c5ee809976f49f0d2992f7d3d1ddbd7cab173c4dbdd014e73a5c5c020",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "ca5ba2f51407a2faf208f686f244e11d71c7371bd2a6dc98e65afd5e555d51f3",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "18615b1577cc319d91c6466af227e17d0db7b37a8569cd926d30e36649d89330",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "8690afb0b127a32f50b4d8bd873cd321c668b03c56996b246fb14e9441bb8552",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "8ce8554b0a68d40cff6441cfa8770bb127d7a81a43dfb8203b2fc2b4a98e64f2",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "5e4aa5494dc6847036b473a773fb2d2d03f9bca66b41e859fecc32f4028407a4",
+      "bitwise_equal": true
+    },
+    "in_blocks.2.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "cf596beff1425493c153b02cdb185bdffd1344659249533a6a4eb30cc10d9895",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "9a768ace72df0e88579c1916a0ca2686a74fd0baa4050930933ef7716cef03b1",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7030f2ff64170a5385b97b4fa1c9df60149b86769229bd87d66d69f3c13dbc7a",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "28db6d4e6e4da5735f4a286016199d702675b86abb850650848344cc8db17ac7",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "eca5f29311a8c415f73755d6a70c3363712db7278e4ec0895200926de65bec96",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "1205e796248671cee6ac7c2d5ff69ff38dff89c999181702a4614fa4bf96cd40",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "b1af06ac057e48e0a313a64a4ecb4d3938949b9e2c280e1ccabbabb5c117200d",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4dd18b3fbf3545f35647c7ae2dd1fcf1569378f87b9d2d2c33216fe2cc032fbf",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "f4abdf5f6f23f2be2acc9bb80d773a4cb4f28c400f7fdc001f62e15b6201789b",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "b47725c88c255a2177463f5697665b269afb2eb9cfaa20f77d0460ef94d8c339",
+      "bitwise_equal": true
+    },
+    "in_blocks.3.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "95d2eaff3d7bf914c1b2fc565d5bd6401d047d4b54d167a3e14c6a54c1178743",
+      "bitwise_equal": true
+    },
+    "in_blocks.4.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "57d068d77c53f8e0e1cb547e1efeb3e34e21d3ad54092098600211fe2d7743a9",
+      "bitwise_equal": true
+    },
+    "in_blocks.4.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "05083ad930651cae6f86516c447c8d09aae51e6fbc33381996a2bb291a11c85c",
+      "bitwise_equal": true
+    },
+    "in_blocks.4.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "762f74b5b572c1cb3a47a0b0cec20fb2b870db3dbaec875edfe6993509f70a6f",
+      "bitwise_equal": true
+    },
+    "in_blocks.4.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "b6a85348bcbd6b8a0e53ac9f3f65387e31888078c75003321aafa0979a31de19",
+      "bitwise_equal": true
+    },
+    "in_blocks.4.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "04c474556b9d6df48f61a827726b1d82168685e6814467dc17b2ef2adca46c96",
+      "bitwise_equal": true
+    },
+    "in_blocks.4.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ed33f8e4b030c845cf992b55e51df23d82aed7d1fb480bb0ccc60e613b890dd6",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4b853adac66f84c07c1561e2b512dad4b862bb68852e1c8976a421731be2fff6",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "9c9bfec610d244808aeddccc33800765ed4b2c476e02c47b1c1cdc0d3b2705fa",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "3aba844a4fc1e5ff631779d1c03871779d46ce74cd6740b6d907e2383fcc5878",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "004361795012491efa676c9e5ffa7612cecf1775db25361b3df53a4c90c4bf0b",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "4da97c92a0b4306aa4e364ab9188a0caf2fe1e8da194f3407be1700d66b18426",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "0824221d8e3947b0a1be46ae84b83f34d90bb48c8f5ca5c8fc4186b1febadda9",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "b9eb12ba41efcf28811c50489638b8aed36996000be5a46715cdd78bf4bbcd83",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "65663321deb0bf0e4b5a1c4f4ae295515f15c7936f16194c53f347007a2cf7d6",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "ed1b2e3e6987e1a8dae2f7d9c7a879e70dc8dcbc909fbd738f65e629b3bfde17",
+      "bitwise_equal": true
+    },
+    "in_blocks.5.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "fd7def1abf3792dccddd4ece7942332c0e64bd023775d071896f4d207da78d12",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "11f08546141bb7965dbafc298e69825c08786b6bfd4c7fbb54dd03afbb293a54",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4e68e6974409c9e3d31f92c5aeb1fbc15755eaac71b111552820ccb22c03ead1",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "668c66af57f3fa0400355bef732674148809eadef3a65a33a498a49909c3c202",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a033a0af616aa3473c2486a740742d17796b3606df0b1455701c36500a23ed9f",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "25acc2fa793cafe856f1c31737a9a5b84246a264dbe5c15b53bfd0b18b4a5d33",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "297b6b549ea47cda78eee2dd4ac32064fd4a8fa2ed7953582aa61ef742362c75",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "e10b310aee07ad73249fb59a397e8cb71b3dfd0adfda61aff41030447f94aa54",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7192f0acd43b170931700e615026b3e900af50c1ce677e6ff424481206d81400",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "7d173359af7ba20d95e2cf62027f528fd993b8467becf4e37f18c9a42578216f",
+      "bitwise_equal": true
+    },
+    "in_blocks.6.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "2551a71f6b678e2576982194b3f55f79c68fdb8c0d9ae6111da424d0b04b4df7",
+      "bitwise_equal": true
+    },
+    "in_blocks.7.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a08d7a64953dce82ece5c3f261469aa38f8347d671cb04d3770fcaf516ab8906",
+      "bitwise_equal": true
+    },
+    "in_blocks.7.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "c58437dd198ff6a340c8b7ed5731f67cd4040756179071fcd6ad0fab7164d643",
+      "bitwise_equal": true
+    },
+    "in_blocks.7.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "99108ddca4be709414ef7e42e62dd91c3155f72b4ad8450d3166d9797b81162a",
+      "bitwise_equal": true
+    },
+    "in_blocks.7.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "50484e59e57f571b222c2c174845b2a48bf57c4bbfdfa28066840c87e08f04db",
+      "bitwise_equal": true
+    },
+    "in_blocks.7.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "aa892372164bbf85ac03a43a882556d98e077de5f3246210c98b692b5d915a1a",
+      "bitwise_equal": true
+    },
+    "in_blocks.7.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "84575993b176b50bffb81e350b1db3363a1c44c89749a397fd66b6d379ada62c",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "fd1bcb37479434e1151a7d28a8e80cdd057e85a0c7d38ea331abcee2c3e41202",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "b3e9021cbb43adae681aa9bc60dc0f5b417f5ff880754eac6b794a3eb10d52cb",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "4e5bf5dbb243529ea4463a35840e46af30a54ec2e4456384909b1f8adc71d6c3",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "48428353631b01d636fffbd3072b70e8fb3980c5b3fc93807a241f12ecc3d199",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "2aa6ab2071d01a658d3adc46fc6c43aee17e521dcf772c93a6fde82b3ecf616b",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "b89890f34db4476c3d681da21867b630ccc23e34c52dff14711a4325dba88747",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "c59c516f240b14c206adf70c03b464be93c554eb38ffc4f56e3ca42614373cb5",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a62a4003683eef2caaac51a1790080ef5aa28f86c6f924277d59bc2fff8cc2bd",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "943777b3ac8456ff20344252d0d246a9ebe37d594c9bb43132362265ef870247",
+      "bitwise_equal": true
+    },
+    "in_blocks.8.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "5a280b90b74508e22fd4f4d473b059f68159e9da4ece1f60ee3de5a57008c904",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "59b210d938c61678197c7cfdffe8a063a41e034626713bb00dd41187270ad384",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ff25e254d0cff3bb8698a34984edc5a64752a10b28e09103c86922010e790bf9",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "d15df873ed3e2a784ad455bca19715fc7a802d77378235b47f9e177e6de38f78",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "36b60b7073d03138bcddda6584cda6236334b7483393167037c7f53a941f7bd9",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "f765e0c766d6c155a4912a9c4ce750912cdfb922cf4dc03081b7b189400d36cf",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "eea9f330c85bea629ce566d36404f9ff7fa2f8b7b9b2b791449698d3e2748651",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ff7aa0e513abb31a83c265cfa3d233fc893810712ecebec67d6ca5fcd4015ab3",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "e67fc64a0a18434970d500e563d03591d91842a60feddcc0cc20815af92e4047",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "5e79d8a8b49af10f515ef941b3b33265b9d2529ca5cacf8d46c899dd2b01f16e",
+      "bitwise_equal": true
+    },
+    "in_blocks.9.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "566be3bf394672cc1cadecb9d1220dca7e4f331ef2bcf28193e8d43f9a2d51a4",
+      "bitwise_equal": true
+    },
+    "in_blocks.10.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0549d19dec5fb3c94a7ba761de8d4f28459fff3a11a9b973a5813c740c7b68f0",
+      "bitwise_equal": true
+    },
+    "in_blocks.10.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "d33c943e0f5b333f5b1385e0104fe4171919fd69245df9727ab11bed6d7c3166",
+      "bitwise_equal": true
+    },
+    "in_blocks.10.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "982f4c2c13814b7c95fe9d112856b076cd9820edfaf21ea27b4f6b651c27e20e",
+      "bitwise_equal": true
+    },
+    "in_blocks.10.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a8447253a4941c73f2a68f67516a389d8b669e502b795a27faaa05c0e7585314",
+      "bitwise_equal": true
+    },
+    "in_blocks.10.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "d3b883ef74d2dd5777458f7afcdef3615fdb9cda5c9364c158546fc1495dfe3e",
+      "bitwise_equal": true
+    },
+    "in_blocks.10.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a8b6b80376e02f8206d6d78726a8f718683a401a88d5a87c2d4af0bf887979aa",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "f8ab77fcfdc63d7dff2ca9b23890bf89219bcd9bc50c6f6c0b1740e0b1b6cc8b",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "8420b8ef52e46206be228574acfbc27c3d351175da9c9983706003b790f25ab5",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "00349cc7504e463fc6ab9b81cd2c9685e3f49d1542da2822de2a74c06cdf2294",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4a5833601225b520409cb38a1dbc00e2c239fd457c51c18522ee9b24a50f57cd",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "08913323902c5525b8acbc883d706220d0a3d1b7d62913688c366e8a7acdf8f0",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "d01f84f1766caa2c6e939e2315d2398e4e30d74636ff22e733b0cf056a8233f0",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7cc0b1ddbb717b8b656ef06f677837c6f45b392204dc26ff2106afbb618bec70",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "9599c56f7d037eba22c03a49a1215ba833ea19adc08282128a12f66ecb797c65",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "abdd394ac48c2da47e71004faf623a26814fe5260d558214038b38c5235f3d56",
+      "bitwise_equal": true
+    },
+    "in_blocks.11.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ea7af357c6d1b19865b0f5c53b45b0b12bf90c0992201775d1c78bd1fd0759e5",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "b6124d29a6c5faeb2f4b8db47cd6a95ec6fe86287a66a2173e5b1d62b721fd06",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "d9641d39656b9bb4b8dc0714e3b9c8d31e975f08791fa4b044280a8d591b32dc",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "4a106de6d550de0bb523272d5861bb801cbb3f6444bf3655df34bcac77bab37d",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "67185f04bf982a18ac0e8e0a0802be8968c202f708da15608495ca0c80f057ba",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "d2987f62b7993352016b5382480dbaf1b248c1d9729160afd5b240f0d1b15cb5",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "5381a37edc46f76bd53898aae1fe732e7b3a39cb7d1161493644b5e3aafe9847",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "df9937e4b701c42bd9ccd4dd706196a2166c820422e23398a3ab162bddf6ef41",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "6d84c398c644a84c114cdf2d87b05590ecf5327ae4490ac6448258b9f925e5a2",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "7d3954eef2179ef070d967751734249cbce7655f9d5ea26879a9d2b5e09c4ce5",
+      "bitwise_equal": true
+    },
+    "in_blocks.12.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "497a9f7aa0457086b02db1a090f2f12875b54e44835fd6a2384dca8f6f27181f",
+      "bitwise_equal": true
+    },
+    "in_blocks.13.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "58140275177cc99e92e5b4b5d244aea56b484d276154adc059bc2251028f7d74",
+      "bitwise_equal": true
+    },
+    "in_blocks.13.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "afcadedc59b7490186966774a1472154e00f86c6692c4019581e3f9762c05bf9",
+      "bitwise_equal": true
+    },
+    "in_blocks.13.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "902969ec570f549eb18699444a7c78580afd38be7db4619001bee3d40f9902fd",
+      "bitwise_equal": true
+    },
+    "in_blocks.13.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0d8dacc6a1aa3a4acfec44020228cf59d9c7e7d996eaa30149be4eeb03f0e3cd",
+      "bitwise_equal": true
+    },
+    "in_blocks.13.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "474c3bfa153e5cf9de5dfc1850477e776f92d4898f49ff2bf8c61b4eab899b56",
+      "bitwise_equal": true
+    },
+    "in_blocks.13.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "55bfa8d0fdf9dd3a8b9e36d31903b510c1534e0bd1a9c295ed7c1c36f37985e6",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "61b6a8fea2e2309fd08d33cfbcd43a07483bef492b5762d92533a9bc019275de",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ca282bacd899735d7eca5b95e2fcc9b6b978d809202cd8896b17567249c471b5",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "e21d9eb965c57c3c263801d753a713009562e812ec0ae3eb83c1e2d00f9826cf",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4ae5d93fcd10a4f9e9d4ae49e4301daba15cf6ca758091bb8833ea980b35c3ac",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "71b70d6753cc64272d52dd7af18c589e4b388cf119ed8ad0b387e4b62d520e61",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "138ae89697500315af895d183473e2e8a72249cd87f75d8bfdf95cfd8ee75538",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "49886de2fc2ae83621396232262e7f78df555e56b180a81541e54234dffc3547",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "6deb6d5bb973874717281dde3325a094cbacf96237b40e08d72dced432a059ff",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "c8fd8c5f8cbd5c3bfcf1064e2819d45ceb3716e3237716d6de302e981925ee27",
+      "bitwise_equal": true
+    },
+    "in_blocks.14.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4e57978eb16fb73540bf9243c56ae9103994377d608dd2d14db9890a497a5aaa",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "77885cc57a3f50e97bee9bfe095b45aa32bf7625e94aa4e29eb3eda5415a2a3b",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "222995a0e39ec8efac295ddf24288afda62664e5990796cf7d57d8626ac8f13c",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "567075a98829c8a2f031c6ccb485cfa46993027b0e4c17c6e83b43f421f9eaf3",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "07d8a25b69ed534de22b2c6e1b1155821675c9fdf4f32957a9938b93e39a0894",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "ecfab62e6d4f155d85b5983c9a5e0ac73809401cb31951c47596e83ee9710a8e",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "9a082ef846e6e6185dc737ab58e8d42237ae1ef745d361847a4ac1b584425548",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "bddcf1d6cc111733736352e9a13d5a45809e0d1513ef9b633912869f6578592f",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "1ec6cda3c75056fb0ca2bc96549f42f2216777722583b1aa48c409d578318ec2",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "dccf966c6515afa72814e4a5f007ca16fcba597a8d737287dd5af4f4c77a62f6",
+      "bitwise_equal": true
+    },
+    "in_blocks.15.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0d8b6bf4497333899ddbf92b7c1ad1bc933316c3dfecee1d5161da15362f6867",
+      "bitwise_equal": true
+    },
+    "in_blocks.16.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "f28b2a1ecd6d36b76e6d6e5d9b245072dad5227308b9dd0789e6c1ec2a5c7066",
+      "bitwise_equal": true
+    },
+    "in_blocks.16.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "dd28a175d41e1e0803a4f106d862b231df032a2725a399a4eab91b47c318dba0",
+      "bitwise_equal": true
+    },
+    "in_blocks.16.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "8b4e3c3a74e75a8fc0eb8c7828fe665fcdef2aa90f6c4c8600485eca4f609375",
+      "bitwise_equal": true
+    },
+    "in_blocks.16.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "b7ec44a6199ed7771092e051930340f42071f96a982ee55a1d4a37ed826e8aa9",
+      "bitwise_equal": true
+    },
+    "in_blocks.16.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "08051a4b5d68e1f2dc4fbb1273c0aab7aed482780c4424e454cc5d98cc7d808e",
+      "bitwise_equal": true
+    },
+    "in_blocks.16.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "36ef62e9914f2fdead38e5ecf465a55c9a76f525a0845b0f58a80d7aa1a21ea3",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "10fcf1732fc27e694b4b44ea00baacf04f24fdc76c0048b7ff9f18e8d522c937",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "5ff2cb0487742e4d09c3ebd7b64ae53a4580645eec8c03a6011377b357baa308",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "e892c7b8fcf5608a54db64721d11d1f460eaf038f8e11edae43a78ca3f87abb2",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "569518e88f377af0f576f028d1454305da1bb99cfcb81bc16fafd640ab76013b",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "a8d3810c9bb0df3c64e242f5f9786a92aaf8bbcd32a8ea96b7bc12489bb91509",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "bcdcd1894babc4eedcbe005f7efe43787c293cf1f65342747c0b7811ee1fd07c",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a61e22fb1b600d0ee84b76bab067fc9818f8f53ee641d2d3f69cb69513490b0f",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "d42b5e617745d3d618e37e65991547635d9007f3d3a952aeca112bc86a97a617",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "b8cc219a438b23ed434f9f92c0664f01cfe1e73d08f8b8ead0af98f26d6a28fa",
+      "bitwise_equal": true
+    },
+    "in_blocks.17.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "221864eb44f16ba9575216e3b2909c1bf594e44788cbc5d3eaa7d021fd87bc00",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "5702e9800c7a060ae53bb1498a3aa6a3cdbab3d923b1bb71ef02aa4046542b09",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "66708fb8616e8247cb56a5e2b02789b51f5a35dc06930507cbac1973ef397af3",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "ab79c0c58baa8e0381a3e5aa1c56f66c5f0ab30498126d27343b0fba1248ce97",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "8b6979368e685c9d1779f2a8c1b6b27f325c7e58a8967438bd51d1a9d5b7b419",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "cb990003e287b9fde8b107d3f376fbe47cbcb81a04d4f3d10db8e90cba570bfe",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "35f6f9b1d439e5f6c032234f05b29a5e6c592503cfff14fea4a9271112caef25",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "176aadac4ccb5e5f0ca9492ed5335b79d0f82c862a99ffce82647235659a3d55",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "12cffd07557fb54a3a44c7697d6d0f8a65c8eefb07df94a5a5886054024fccc7",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "d0cac27327dfdcce54f3afbdf3fc2e46ad239e60181b773a6603f737ba0be3ce",
+      "bitwise_equal": true
+    },
+    "out_blocks.0.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "8e05d43988ac0c3ab400127c402ab0a67bac669c3aaa139f4eb9b8a275c872b0",
+      "bitwise_equal": true
+    },
+    "out_blocks.1.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "c409ddb4589e4497432c3fe1034210a880a3d44d7e6f2ed1e3383c86a3b9d8aa",
+      "bitwise_equal": true
+    },
+    "out_blocks.1.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "294041eae1475030e07beaba51d5982cf2b1efc7b3da1e6cdb0557991d144c77",
+      "bitwise_equal": true
+    },
+    "out_blocks.1.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "2de49dc58e1f9f69083a1fc903fa25d28b0fad5528db65433d0b443b10d51310",
+      "bitwise_equal": true
+    },
+    "out_blocks.1.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "3d4bcf2b61d8c23b2b32588dc127a6420ae7de9e21ef3968cd091f7f3131bc14",
+      "bitwise_equal": true
+    },
+    "out_blocks.1.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "59427fbf135244da05470a7df54bb34b9ef90170569a8486061c3a106faf50db",
+      "bitwise_equal": true
+    },
+    "out_blocks.1.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "703c78236f509674096548ce3b3eacbff6fec2fe81602e16c5e4b2d7b578578e",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0cf59213c07b9b9d80518c23b436e8573f9a9b08ba1d11e5483c03e1442b3b7a",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "196ac4035adace884d7b84d908dd9fdd6f9fa796adc6028ee2b6abf14f21a4f7",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "e07075e12ac595dcf146d6e3c054bfa02d7c8bcc3649366fbba1172982f23862",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "e02fc25f64bcf33495f6454da1a193bc9c9ed73939a44eae0807558ffcd274d9",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "1dd26250e9db71049ba9a72d87812d931fe684306da8aac7074957bc2305b427",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "82b422415888c211b13c56365eea2ab6a2b63b856643fe3b28c502eb173380f4",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "90765d7f5d562ece5f1d4d0cfd1604c0f0c9319e338c33cd579725df0e8f769a",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "eda17f1cc931364a4598ae571767c953332f9fa6f0fbecb23fa1de7f83ff11dd",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "1f05b71cf3561ff0ba9e798de396faeb389bf1bb4ba1b5e4582f8ade54ddd372",
+      "bitwise_equal": true
+    },
+    "out_blocks.2.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "1437a2a6070bc31b97d5618617450f2909e829c061fcaa84a2037f65f2df98c8",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "e5e443a48f568d047764d8f15ea8eb5cd52477d46c36775091f9855bb52bc1ea",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "21c5382c7aa1d5b0b30f19360b26a7600766abc515faa62967b609af62987b21",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "37ef922bd77021b32c6e70e6409344c2409c1ca9849d1e06ba92680d0dfcec21",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4a6ec2c59d5016f8a45f2a8ddfcf098d65594bcb3ffb9b826fa90da6a4712ab9",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "88d8ab7b321a97445410fa46ab160181e17ca5e0166a6b8730c029f8ffad1a75",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "79605a10e04ecb99aa14ca21f592aecf375c2f80ca2c2625138c26071e693e3c",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "50cfea1506789a323f15ee15f375d781829914787e1408be83ac34a2cbc033de",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0a9ca144f6a845357cff1d379cbfa7c2f59e140237bc3f88cd2b63614bad37a1",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "ac22cd69f2a67da428adb2fd30b6354deb17d50c7fc2964e983f7ea434a96f8b",
+      "bitwise_equal": true
+    },
+    "out_blocks.3.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "691c803ada3edca93fbb5691a5255d604f9fe964a5bf577dc2bb0aa2ab40be88",
+      "bitwise_equal": true
+    },
+    "out_blocks.4.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "f0e53132882f46a9c8070ae4f4463af64f7f2e5af0c0074f42fc6ab7c63b66d2",
+      "bitwise_equal": true
+    },
+    "out_blocks.4.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "9ff74dc6fda1f560781d52c1354115744b52f9acf791767ed9a2c9e5e11d4732",
+      "bitwise_equal": true
+    },
+    "out_blocks.4.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "50b10a603ad12fdafd3b1fc9c21da2405a5deb158e7e0f697685cc33e4002b71",
+      "bitwise_equal": true
+    },
+    "out_blocks.4.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "54ee429575d636f4919b4a12f95d3e60dd9668ffa0bd0466b2bdf200177bbab2",
+      "bitwise_equal": true
+    },
+    "out_blocks.4.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "e406a34b93a6f46012db0237dbaa2008c5f0f48540cb728794d4ddc5068b5c14",
+      "bitwise_equal": true
+    },
+    "out_blocks.4.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "74c016d1abe0bc4107f14791d1dd2b23fbefe376a3728a99501b4b7a231d65f5",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "c5dc29da8ef8bad598f4f6a607cd4464ed5ad46736d92ac2194f8e419eaf7709",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "14bf3e6e41689ef71b1f4c9561f1b8460bd66d3d2d2c1e3b6bfe9484c8340cbb",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "82c13c3645de7057dd4c0f031b35a599361429264af35b53fa00e75a3588774a",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "08c0d181ab4480a10e3fa2db66e3bc2443fa80945d588dfe3d506086a901f230",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "03cbb831018e1d4d739f6440cbc67c805c2979553dbff626b10171c7de918c73",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "12ff1628a1a9f0fea66cac3b4291574662a7996f4f4c591965eb3be258b598cf",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7f364883bbacd8cc0fcdb6690273e75335e7e0fee91853601f6fec00a13caea1",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "e18a9d8e132d214af16a26c28498b3379a6ba46848dde386c2a3bff112ae0ea3",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "88ca96b04c982fb1ac3a6e39c019214a60a16be36b4d0c59eaf8f52d4b09d5b0",
+      "bitwise_equal": true
+    },
+    "out_blocks.5.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "342b28ab22e9f0ffd25fa41ab99a448163111f0e1b3d89b2f0d72192634346a3",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "cea4a0d516aa528ed158b02c6be8d0a527a6ed1e102de1854c9e5e8e19e8f4bd",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7f1d4c43280f68e4f3221b432f23002e1ecec16e27bc822459c6d92dfc707389",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "d85a08d86afbbb100a90a62763591ad053a5768410ed07f77e35c8a1e312d8f1",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "d6af9465ebb9ba0d4bd455c714d74eea5bd1fe4f6a52f20028310b0bb09cc713",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "74727532c5879d3bdf88174a30c4b36087a25545858664222cf8df0088e0f585",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "f439c6438137d03c08d9e4b21fa38917f76f55c350254dcb396adb7961c53df2",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "2ae57442c6c3c42e759ac4b389964134243a77b7a4a4ca598a9814d80ba5f980",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "05bb6b5e93bf90973383e07c98de1b8fc312cb6be6afedf9cca00a41de839456",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "c908c06085273fcdaa2d634fb4c68545438ba01f92eeff8eb0ca5979a39704e5",
+      "bitwise_equal": true
+    },
+    "out_blocks.6.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "2368d2424dc056575dbbf252288754f4f81dd369bb4041a9700995e80edc6399",
+      "bitwise_equal": true
+    },
+    "out_blocks.7.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a996bb2c6f2b48c88c55a6f329a8996cc739a800c5c0fa5788ee13a865084982",
+      "bitwise_equal": true
+    },
+    "out_blocks.7.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4d0bff3783e53b3027ccf549dccb4126fb42714828a8602aff7b86fe3edb552b",
+      "bitwise_equal": true
+    },
+    "out_blocks.7.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "5d89e12aad3cbc622a225292099f8c0ae1067567a13d94aeb7be6a6218f6fd96",
+      "bitwise_equal": true
+    },
+    "out_blocks.7.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "799a1c79f6a8039104fdf180adb34021b793d5dfe74c8078781b3a93750f0677",
+      "bitwise_equal": true
+    },
+    "out_blocks.7.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "6c19953c899ca6df863e1a46fb3e5b39892682b42663087fd79bb9d0dc4da10c",
+      "bitwise_equal": true
+    },
+    "out_blocks.7.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "27e1f0807c1b99dccb5c24b6c85a468ed13c964e4b163689f13992cf13c5c18a",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "db17dd076bcc2e60b9aca201ea468dc919b06d900f53c6419209a06b4b1acedf",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "d71659e80a0ab2fb5dc9c94b22cca20df34a67cfcb8672d6977c25a7d9dc6978",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "5588ee3025d78e1d9356eaff0f4940fcce82126c889e146955aa067e4a1f522f",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ba21ca4280d9fc8954353f03b4bfbffa3e053e8a25f16c51510aed09a7bbc534",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "d84188c0272a768107db26576e766b07fde9bb087479e1046f48e66f8f73a21c",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "1b2ecef5d9cf095aabb3367545152a439d10dcce8f232ed0b6922ea40d5d2f5c",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "894b8907d921d8081f60fb2b7fea0cc7d16c1d0d58f6bb17a96c6b41409b8b67",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "bad5f6f5e087e11c368fc1e907f99ed5b4f08295de1cbc3f93cca1d03b4ee8c1",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "389b4de0345a810a26827faeaf06994ac22916e1def5f82d193639c2b4083996",
+      "bitwise_equal": true
+    },
+    "out_blocks.8.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "eede746c7d3fa1cc9e9b03e4a6b5a793039591eadf79fdfa7dccb474dd4a606b",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "646b5613227133fdaf2700a135761dee23403bc9d378d0e60c0e5bf2e8fd28db",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "b37e76f8566ad37c9f0eb0735c9370c1ec3be62680cfecf439ab8b48101dd5bb",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "56e9cf9dc84aefc166563fc86bc932e987fb53c82deae66e65e819ad9e23ac66",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0809e831d8412245546a891bc5676d959777a49e051ccaeb969d18e4932ce76c",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "e4327c6df53300ea3f81da8bc8433ce3390417c60f31f487640d99e91bb7db48",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "7884ac4153a7aa9548822a8077d65eae39a34f9e95d15a8c0a3cb6eab695b7d7",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "1652565b4b29dc481ff1c9c2c3fab00431fd992cb188221ab043d2bfe2ffe5a9",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "80ec4c7779a669adeb97324ca53e9bc09c4fecafe7ca5631f6109d50db70786b",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "2d2d1556268bd401f80747a101cf7e25085df46748d84c997eaf700f928e4598",
+      "bitwise_equal": true
+    },
+    "out_blocks.9.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4d05058b40d485fae4b5835ee82cd18b38de8b08af1862014f6a227832036c71",
+      "bitwise_equal": true
+    },
+    "out_blocks.10.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a88a70bb0da825d92fd2114e44026c24d258f512b8e130e3ec42ca91f17f36f2",
+      "bitwise_equal": true
+    },
+    "out_blocks.10.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "11d6485062a7cc8d1418055db7d56549124974931239d5463a46405d68607602",
+      "bitwise_equal": true
+    },
+    "out_blocks.10.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "3fbf59c41059c204a0bce7d90ef4e7aba28c6255b010baac37e50a055e36d08f",
+      "bitwise_equal": true
+    },
+    "out_blocks.10.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "5d9327e26d18c5e8ced57747095d6edcba7fad4b3613863ae02ffc8cf72605ce",
+      "bitwise_equal": true
+    },
+    "out_blocks.10.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "804e6ff5daff3d5daed6e0531f1784941f184ead75f9dd3f3e2ed2a4625e3f9c",
+      "bitwise_equal": true
+    },
+    "out_blocks.10.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "74dd3884ffa4b11802b7c78c04e61391ca02a717a4be8c8028aec45cc8d5b9bb",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "c09e66754b819296bc8f679f95fc9e82731b91cc0f0e01edf6585bb24e845a3b",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a0da3961551d97468cb301b87108ab4259799f7398a0d94311b9136a69267e44",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "80c19628b4ceb056bbf69ac9018a716866366e8be6200a380081bbaf4d40af0b",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "f60769c5cd14eb23ac5985d4acef115f35d6eccf745b672eff9de124f436648d",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "2448f611cfa92e250a759c3e0abfeabd2e526e2346b15e2091ef63622ebcd8ed",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "a62b49cb656fe6d950e4677edd4b39c0f35146f15e4dad8b00acda2d38873afa",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "2db577564d3961b58993ce01d92661f2ebb14c354d120356cfc7955b0421f565",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a3eac59ccc0da6012bb7d905aaa60bb2cd7ec20e46f4c80a9189cca3505bca01",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "039df493f2f5b19ac8c456a3374cdbf4b2b5018b8147852b9067f622efd3db63",
+      "bitwise_equal": true
+    },
+    "out_blocks.11.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "37916ba9c706f32b0c282f6edf99baa2c474e1412fa561ef6fa5946c8b5fe90e",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "699cbc5aeb1a1778c23a2867173445a10bf46b50f5ba8b88edc259a354cb52ef",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "ade41490ac053746132d91e7e38650890506087c3e7c962d39714782f1c46cf5",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "cf08fa27768a34ba5a96bc8ac2c6224ca8417b7eb5877e14fbd70468b6fe326b",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a62a53abb6ec19679e35d3840d1c20bd45c42b6b9c26f15a7cb96c79eccddbb2",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "8b625440293ecf11ede18bf40e0ed9443d3c7cbf93baf586fcc316cbd76a5391",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "edba4cd1183ad42d04cf3c5dfcdabe13639cfb7e945de28fa613ac5f5f2d2de3",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0e30ee01bb3645467840a646238aed00d8f720f4caebd243609742ab53afa200",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7cbefcb29dcbcebe392023f9f26d86c7daf0840ab9edb7f3002fdcba70218f90",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "ae68a81c42549b3fd435ea08b5ed8fefc6894beba0aa9b8fc9544fdabcdf3871",
+      "bitwise_equal": true
+    },
+    "out_blocks.12.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "9d730cfab3efc5887757e6be71e635c4d85ea2d10184a1d1699e0067499a4de4",
+      "bitwise_equal": true
+    },
+    "out_blocks.13.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "2d5eb9b35f5080f993780bad1906832a84b58d3553e30efc80dc7c123efdb1c3",
+      "bitwise_equal": true
+    },
+    "out_blocks.13.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "fec99b6fa7ffde2af4a8d785d3e2a1ede135a52e3eab6f8e990ca75223c424dd",
+      "bitwise_equal": true
+    },
+    "out_blocks.13.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "0c3f58a4a58e27ed31cfc3958de9eaba40534c3f8f7055c9de6ac4372a3fe0d9",
+      "bitwise_equal": true
+    },
+    "out_blocks.13.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "afe07cc95499d6f892e1351bae419526f760a69501e6a5cf1d6fdfbe494040a1",
+      "bitwise_equal": true
+    },
+    "out_blocks.13.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "a17f47db081fa67e1944e68c44bc2073a0b571d2ce5fc89357c22b905e21fc88",
+      "bitwise_equal": true
+    },
+    "out_blocks.13.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a2ab5a3947a48ec4d04a308562d636c79695c5ded86e2ca92d97c4a29d3be837",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "87c2045df882e90388f566f10d113da4bc02ae8e949b3cae0adcf4734ce550c1",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "60112b59f41fbc13319d28ce2c27fb190d6eef16a2efd2d9e1ef75fc92430936",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "d112bcf9b51b31f612296ca790210fbb914f106ae81ffbc5f3345996f184d774",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0c3ece546a4b3fe0acf0b62ec71bb41161b5e4935682e42ec7991ed264146f2e",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "666b4a392c38e637a98f85ba80ee917cf1a32e551f22c3d2ac7f9e81383497d1",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "253fd7c5b5c02a8297a3c60d061af00e674573d54df501e1821c84ce33c0fbf4",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "089749d18577a35d4cd1026cd1edf3cbff87016795e6aee97b7078e34051b830",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "fa79fef49100dca449676bd3ca9bae5039d8cd1d566a0df6c8d8f43b823f8e60",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "d63084f1abe0231bf212772b90d98a36406495f187cebc7faecb2f4e99e9d094",
+      "bitwise_equal": true
+    },
+    "out_blocks.14.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "4e8f48f02185dd3702704431695ae5634f32bdecb1575c9c52962682592d46c1",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0a20efcf59a184cadb0eef4c4c42aac1f62e4e5153e042e2c8ea6a8cbf32e6d4",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "df886bfb833cd037edd9ef7e3e387f731054dd389e7951fa89e3f0fd1f16f102",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "c4ccd1b408e35d4fac4eea683d89382229008bbdb043f6f31fc68fadac9651bd",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "541121c1d5bde575c809e66fd3011ffc192c5bb1508649b0808d6fadc87e10d0",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "0b80741eda5d7b5b446d3194abd9ae27f4edbadf9a14eec0801d233918d5718d",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "03fbf23209881a4085ec9593f3de85b7ebd6c0102f9ba0f9df971ea59df7b1ee",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "2cdc8f3a3ec320fdc45bd3f378df16bc3022e4f7956a26a85d857bfd359e532e",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "36c0a3bf8bc151ba1d6d13c52f88f8fa0249956b3688bcd48f0f1676eb8aa056",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "86555a45eaa49f0e6eea4534b97091036a50df485405eb2d3f7c38057923971b",
+      "bitwise_equal": true
+    },
+    "out_blocks.15.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0f87ac2eb3111b7985d09cd72b79a53e6bf8a75780c7cd77f129bee7b90bfbf7",
+      "bitwise_equal": true
+    },
+    "out_blocks.16.norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "18b6640b7559d822a7b85e8bcdd6f086c90b32caa59d485698cc4ecc79aeeb52",
+      "bitwise_equal": true
+    },
+    "out_blocks.16.norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "8fbf35e226d1b03890246c5a5d74ddcc06e00aa1312329cea060c0c652570acc",
+      "bitwise_equal": true
+    },
+    "out_blocks.16.dwconv.weight": {
+      "shape": [
+        512,
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 2560,
+      "tensor_sha256": "38c39a8cac988714cdaf1f3a364998a85eb8507dfafe4113a326c72c298bc16c",
+      "bitwise_equal": true
+    },
+    "out_blocks.16.dwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "0b0b84415b06cbb765d0bda786bd6fe041db6699997fbb942a1961da7b82a08d",
+      "bitwise_equal": true
+    },
+    "out_blocks.16.pwconv.weight": {
+      "shape": [
+        512,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "numel": 262144,
+      "tensor_sha256": "a32e0121b57facd77dd9c8868c6dd03d23bd709f9bedf48c43866f44b74b9668",
+      "bitwise_equal": true
+    },
+    "out_blocks.16.pwconv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "84e66c7561aeb09b1deaa43165698ebaed8e78026bca4f5309e9c9884efe8b7e",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.in_layers.0.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "79c42339c726b8a80ad03bbb1a7983fa08f066fda89e79b24f4857631c4bcd4d",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.in_layers.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "25981cd1f3989a1159bc1c82ef74e7efa966536127b57fa5a35db1f0418a1a5e",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.in_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "d2791e9b26e9b8ad8a914a5f88d00c05b7a382178099c113ecddc2ec92a7cee0",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.in_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "23e8799b424f7792f0ba36d4f274a5d0926cae5b947ec5188f77eab881b6178a",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.emb_layers.1.weight": {
+      "shape": [
+        1024,
+        64
+      ],
+      "dtype": "float32",
+      "numel": 65536,
+      "tensor_sha256": "5c2e7b7bb596fc3bdb2c61222bc617145012a889c19bee6cf97318ec615c9654",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.emb_layers.1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32",
+      "numel": 1024,
+      "tensor_sha256": "7757d18b948ba49bb6954c6a4046f1384738fac8335a5c0b4690d74760944601",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.out_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "cd8a79c5b518b1a7ef8a013935eedba0f621e4d23603cd9d9d63155a5fc00b57",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.out_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "7ccfc4b69a1c9322f7d0450ec4bab42d352662579cba07a54222753153751827",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.out_layers.2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 7077888,
+      "tensor_sha256": "d225593e93ef610c4376963fe56e263625f216e7c3720a7616851052d4013251",
+      "bitwise_equal": true
+    },
+    "out_blocks.17.out_layers.2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "a346f4dae7cf1ece9daa53e8f269aedf63ab132a3f8566d974f6c592d21ca132",
+      "bitwise_equal": true
+    },
+    "norm_out.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "026227a27a01d627d367bb6224cde25cfcb8204b6db76fffa044568b80320641",
+      "bitwise_equal": true
+    },
+    "norm_out.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "numel": 512,
+      "tensor_sha256": "80f7404f91c6408827ce3ffb4daec4d7b84cb6dc93359d9ad7ed6c092fffa59a",
+      "bitwise_equal": true
+    },
+    "conv_out.weight": {
+      "shape": [
+        24,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "numel": 331776,
+      "tensor_sha256": "71a4838a3048f1739a8f229eab3743a890611c18d34502a1f9ced9ab07d427b3",
+      "bitwise_equal": true
+    },
+    "conv_out.bias": {
+      "shape": [
+        24
+      ],
+      "dtype": "float32",
+      "numel": 24,
+      "tensor_sha256": "2d35f233d3b2bb9fee7e3d01a6396dd7efa6b8aee6986e98bfc8da2ebf7fdddd",
+      "bitwise_equal": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "internal": [
+    {
+      "module": "causal_upscaler.py",
+      "repository_path": "experiments/h3_causal_upscaler_20261104/causal_upscaler.py",
+      "public_sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "original_runtime_sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "binding": "exact_original_runtime_bytes"
+    },
+    {
+      "module": "h3_conv3d_hybrid.py",
+      "repository_path": "experiments/h3_conv3d_hybrid_20261105/h3_conv3d_hybrid.py",
+      "public_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "original_runtime_sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "binding": "exact_original_runtime_bytes"
+    },
+    {
+      "module": "data_utils.py",
+      "repository_path": "experiments/h3_cmn_hybrid_20261105/data_utils.py",
+      "public_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "original_runtime_sha256": null,
+      "binding": "public_dependency_import_verified"
+    },
+    {
+      "module": "prepare_data.py",
+      "repository_path": "experiments/h3_refiner_self_forcing_20261104/prepare_data.py",
+      "public_sha256": "6d71484547e2329bba8fb6e205fc25681ed37864eaa0fbf013c6c786ca2630f8",
+      "original_runtime_sha256": null,
+      "binding": "public_dependency_import_verified"
+    },
+    {
+      "module": "train_upscaler_trial.py",
+      "repository_path": "experiments/h3_upscaler_trial_20261104/train_upscaler_trial.py",
+      "public_sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "original_runtime_sha256": null,
+      "binding": "public_dependency_import_verified"
+    }
+  ],
+  "external": [
+    {
+      "name": "upscaler.py",
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "bytes": 1724,
+      "url": "https://raw.githubusercontent.com/NVlabs/Sana/781e8341fb3b29d3aea5d50265772e9619340b66/models/Open-H3-Regenerate-2K/open_h3/upscaler.py"
+    },
+    {
+      "name": "upscaler_node.py",
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "bytes": 25218,
+      "url": "https://raw.githubusercontent.com/NVlabs/Sana/781e8341fb3b29d3aea5d50265772e9619340b66/models/Open-H3-Regenerate-2K/open_h3/upscaler_node.py"
+    }
+  ],
+  "source_commit": "781e8341fb3b29d3aea5d50265772e9619340b66",
+  "runtime_reinitialization_forbidden": true
+}

@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "model_count": 5,
+  "scope": "CPU actual architecture + causal adapter load; no forward or accelerator",
+  "checks": [
+    {
+      "status": "passed",
+      "scope": "CPU architecture+adapter load and per-tensor equality; no forward/NPU",
+      "variant": "v5",
+      "tensors_checked": 322,
+      "parameter_count": 345280216,
+      "all_tensors_bitwise_equal": true,
+      "aligned_past_reinitialization_called": false,
+      "frozen_inference_parameters": true
+    },
+    {
+      "status": "passed",
+      "scope": "CPU architecture+adapter load and per-tensor equality; no forward/NPU",
+      "variant": "motion",
+      "tensors_checked": 322,
+      "parameter_count": 345280216,
+      "all_tensors_bitwise_equal": true,
+      "aligned_past_reinitialization_called": false,
+      "frozen_inference_parameters": true
+    },
+    {
+      "status": "passed",
+      "scope": "CPU architecture+adapter load and per-tensor equality; no forward/NPU",
+      "variant": "zero_aligned",
+      "tensors_checked": 322,
+      "parameter_count": 345280216,
+      "all_tensors_bitwise_equal": true,
+      "aligned_past_reinitialization_called": false,
+      "frozen_inference_parameters": true
+    },
+    {
+      "status": "passed",
+      "scope": "CPU architecture+adapter load and per-tensor equality; no forward/NPU",
+      "variant": "aligned50",
+      "tensors_checked": 322,
+      "parameter_count": 345280216,
+      "all_tensors_bitwise_equal": true,
+      "aligned_past_reinitialization_called": false,
+      "frozen_inference_parameters": true
+    },
+    {
+      "status": "passed",
+      "scope": "CPU architecture+adapter load and per-tensor equality; no forward/NPU",
+      "variant": "old_ewarp",
+      "tensors_checked": 322,
+      "parameter_count": 345280216,
+      "all_tensors_bitwise_equal": true,
+      "aligned_past_reinitialization_called": false,
+      "frozen_inference_parameters": true
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Sol-H3 — 流式视频超分
 
+2026-11-06：**[五版 H3 因果 upscaler 权重与加载说明](weights/h3_v5_20261106/README.md)**，对应零更新、50 步、旧 eWarp、v5 和 motion 的同片对比。权重通过 [GitHub Release](https://github.com/RedRoman/Tencent-streaming-sr/releases/tag/h3-v5-weights-20261106) 下载；保留原始 FP32 参数，并提供配置、原始/公开 SHA256 与 CPU 加载核验。
+
 2026-11-06：**[六项同片对比与最新诊断](results/h3_v5_progress_20261106/README.md)** 已发布：用户指定动画的零更新改造、50步、旧 eWarp、v5、motion、HR 参考，以及原版双向 teacher 的双栏对照。**motion 两臂训练和评估已结束：指标小幅改善，主要视觉伪影未解决**；原始 latent eWarp 退步，未将其推荐为新交付版本。v5 仍固定为 [step1800 基线](versions/v5/README.md)。
 
 [![六项动态预览：点击查看完整5秒视频](results/h3_v5_progress_20261106/media/six_panel_preview.gif)](results/h3_v5_progress_20261106/media/all_six_0086441.mp4)

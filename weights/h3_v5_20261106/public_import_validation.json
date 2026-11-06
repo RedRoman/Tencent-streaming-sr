@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "isolated public module imports only; no model construction, forward, or NPU",
+  "torch_version": "2.7.1+cpu",
+  "records": [
+    {
+      "module": "data_utils",
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "file": "data_utils.py"
+    },
+    {
+      "module": "prepare_data",
+      "sha256": "6d71484547e2329bba8fb6e205fc25681ed37864eaa0fbf013c6c786ca2630f8",
+      "file": "prepare_data.py"
+    },
+    {
+      "module": "train_upscaler_trial",
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "file": "train_upscaler_trial.py"
+    },
+    {
+      "module": "causal_upscaler",
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "file": "causal_upscaler.py"
+    },
+    {
+      "module": "h3_conv3d_hybrid",
+      "sha256": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b",
+      "file": "h3_conv3d_hybrid.py"
+    },
+    {
+      "module": "load_h3_causal_release",
+      "sha256": "118591b6b3baabd66478995db10af68704fb7b0323123a0e88db0b3b945ff42c",
+      "file": "load_h3_causal_release.py"
+    }
+  ]
+}

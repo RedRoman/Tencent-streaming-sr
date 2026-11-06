@@ -1,0 +1,21 @@
+H3 causal upscaler experimental derivatives, 2026-11-06
+
+Upstream community weights: LBH-123-AI/Minimax_h3_latent_Upscaler.
+The upstream model card declares Apache-2.0. LICENSE reproduces the standard
+Apache License 2.0 text associated with that declaration.
+
+Upstream node code: LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.
+Copyright (c) 2026 LBH-123-AI. Its MIT license text is reproduced verbatim in
+LICENSE.upstream-node-MIT, including upstream formatting. The Open-H3 loader
+and node files are external source dependencies pinned by SHA in each config.
+
+Modifications: temporal Conv3d left padding, per-frame GroupNorm, aligned-past
+kernel initialization, then the documented staged experimental fine-tuning.
+The five exported checkpoints preserve their saved original-name FP32 tensors;
+export to safetensors and causal loading do not realign or quantize parameters.
+See README.md for version steps, provenance, quality limitations and scope.
+
+These notices cover the identified community upscaler sources and modifications;
+they do not relicense the whole repository or all H3 components. No H3 base,
+VAE/decoder, diffusion refiner or original bidirectional teacher weights are
+included. Those components have independent licensing terms.

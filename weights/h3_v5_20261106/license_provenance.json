@@ -1,0 +1,30 @@
+{
+  "fetched_at_utc": "2026-11-06T06:26:40.520663+00:00",
+  "records": [
+    {
+      "file": "apache_LICENSE.txt",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "upstream_node_LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler/main/LICENSE",
+      "bytes": 1069,
+      "sha256": "86805fe49f63c8957e4427f7e7f26fba687c6cea05fa9249bf36f9d3316a0734"
+    },
+    {
+      "file": "upstream_model_card.md",
+      "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/raw/main/README.md",
+      "bytes": 6251,
+      "sha256": "9244f27ea73066ebf125e43789655d7b2020d3c839c616c1348fe7a0df81853e"
+    }
+  ],
+  "model_card_license_declaration": "license: apache-2.0",
+  "scope": "Upstream model-card declaration and separate node-code license; excludes H3 base/decoder/refiner; not a repository-wide relicensing",
+  "copied_files": {
+    "LICENSE": "apache_LICENSE.txt",
+    "LICENSE.upstream-node-MIT": "upstream_node_LICENSE.txt"
+  },
+  "upstream_node_license_preserved_verbatim": true
+}

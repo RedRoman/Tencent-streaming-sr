@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant": "aligned50",
+  "model_config": {
+    "kind": "h3_causal_conv3d",
+    "latent_channels": 24,
+    "spatial_scale": 2,
+    "adapter_config": {
+      "version": 1,
+      "initialization": "aligned_past",
+      "temporal_padding": "left_only_zero",
+      "groupnorm": "per_frame",
+      "normalization": "D(U(N(native_normalized_H3_latent)))",
+      "spatial_scale": 2.0,
+      "temporal_chunking": false,
+      "dtype": "float32",
+      "saved_weights_already_initialized": true,
+      "reload_must_not_reinitialize_weights": true
+    }
+  },
+  "adapter_config": {
+    "version": 1,
+    "initialization": "aligned_past",
+    "temporal_padding": "left_only_zero",
+    "groupnorm": "per_frame",
+    "normalization": "D(U(N(native_normalized_H3_latent)))",
+    "spatial_scale": 2.0,
+    "temporal_chunking": false,
+    "dtype": "float32",
+    "saved_weights_already_initialized": true,
+    "reload_must_not_reinitialize_weights": true
+  },
+  "state_dict_format": "original_upscaler",
+  "parameter_count": 345280216,
+  "tensor_count": 322,
+  "dtype": "float32",
+  "weights_file": "h3_causal_aligned50_fp32.safetensors",
+  "weights_sha256": "29e3555fb220d647b7b745aa035eca5425dd361deba62b6ba971714500a77eec",
+  "original_checkpoint_sha256": "76e9afc97bfc31029fecb64c249ae23d26fcdfc6745f3a2f10ccc57ce82b222c",
+  "selected_run_step": 50,
+  "selected_updates_since_causal_conversion": 50,
+  "causal_scope": "Upscaler relative to fixed latent inputs only; decoder is not included and remains noncausal",
+  "modified_from_upstream": true,
+  "quantized": false,
+  "already_aligned_weights": true,
+  "reinitialization_forbidden": true,
+  "runtime_source_sha256": {
+    "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+    "h3_conv3d_hybrid.py": "02b7630ada0f87561ed5fd003ed95f3fe6dd38b9bc8942f96c36015120e4fe4b"
+  },
+  "upstream_source_sha256": {
+    "upscaler.py": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+    "upscaler_node.py": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437"
+  },
+  "upstream_model": "LBH-123-AI/Minimax_h3_latent_Upscaler",
+  "upstream_model_card_license": "Apache-2.0",
+  "upstream_node_code_license": "MIT",
+  "license_scope_note": "Model-card and code-license declarations are recorded separately; no H3 base/decoder/refiner weights are bundled. H3 dependency and downstream terms may independently apply."
+}
