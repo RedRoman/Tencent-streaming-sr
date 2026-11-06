@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-06",
+  "status": "completed_read_only_no_matching_native_hr_or_production_lr_found_in_checked_scope",
+  "scope": {
+    "remote_host": "${REMOTE_HOST}",
+    "experiment_root": "${EXP_ROOT}",
+    "local_project": "${LOCAL_PROJECT}",
+    "known_related_datasets": [
+      "${DATASET_493}",
+      "${DATASET_1187}",
+      "${DATASET_5000}",
+      "${PRIVATE_PATH}/MultiCamVideo-Dataset"
+    ],
+    "related_metadata_only": [
+      "${PRIVATE_PATH}/manifests",
+      "${PRIVATE_PATH}/manifests"
+    ],
+    "restrictions_honored": [
+      "No NPU operations",
+      "No training",
+      "No original data edits",
+      "No new data download",
+      "No model or full latent tensor load",
+      "No archive extraction",
+      "No unrelated personal data search"
+    ]
+  },
+  "latest_parent_requirement": {
+    "lr_latent_shape": [
+      1,
+      24,
+      67,
+      44,
+      80
+    ],
+    "lr_rgb_size_wh": [
+      1280,
+      704
+    ],
+    "target_latent_shape": [
+      1,
+      24,
+      67,
+      68,
+      120
+    ],
+    "target_rgb_size_wh": [
+      1920,
+      1088
+    ],
+    "temporal_mapping": "Frame count to T67 must be fixed from actual VAE/pipeline contract; this audit does not infer it or pad short inputs."
+  },
+  "main_findings": [
+    "The existing 493 sources are native MiniMax-H3 API-generated 768P videos. VIDGEN-1M supplied caption/prompt provenance; these are not downsampled VIDGEN source videos.",
+    "Every row of the current 493 manifest is 1344x768, 124 frames, 24fps. No native 1920x1080/1088 source or paired higher-resolution alternate was found.",
+    "All 493 metadata rows were recursively inspected for explicit http/https URL fields: zero found. H3 task IDs and caption-source scene IDs are present, but no higher-resolution generation result URL or same-generation 1080 alternate is recorded.",
+    "Recovering an original VIDGEN/YouTube scene cannot make it frame-aligned HR ground truth for the newly generated H3 clip. It would be a distinct source dataset.",
+    "A related 1187 collection contains 345-frame native 1344x768 videos, suitable as sufficient-length raw material for a NEW diagnostic 1280x704 encoding if the exact frame selection is later fixed. It is not native1088 HR and not an existing production T67 latent.",
+    "The existing 1187 H3 VAE caches are 24x102x24x42 or 24x102x16x28, not 24x67x44x80.",
+    "A bounded search of the experiment's 1432 JSON/JSONL/Python/Markdown files found no exact 67,44,80 or 1280,704 geometry metadata/code. No unsupported claim is made about unindexed binary tensors or locations outside the checked scope."
+  ],
+  "manifest_evidence": [
+    {
+      "path": "${DATASET_493}/dataset.jsonl",
+      "sha256": "52c3838f74684cc9d882f7ba9fc375eb77cccac0e650221e793ee79a6d70f17d",
+      "count": 493,
+      "uniform_geometry": [
+        1344,
+        768,
+        124
+      ],
+      "fps": 24,
+      "model": "MiniMax-H3",
+      "resolution_request": "768P",
+      "explicit_url_field_count": 0
+    },
+    {
+      "path": "${DATASET_493}/dataset_manifest.jsonl",
+      "sha256": "9bde8dd77560345c8c6e9eb9e048c79214fa8127bc877e9621ed5b5e458f98d8",
+      "count": 493,
+      "uniform_geometry": [
+        1344,
+        768,
+        124
+      ]
+    },
+    {
+      "path": "${DATASET_1187}/dataset.jsonl",
+      "sha256": "2919600edfe04e5210fa0fa181e1e98b4a6f85c594fdd684ad658bf1f49e170b",
+      "count": 1187,
+      "uniform_geometry": [
+        1344,
+        768,
+        345
+      ],
+      "fps": 24,
+      "duration_seconds": 14.375,
+      "model": "MiniMax-H3",
+      "resolution_request": "768P",
+      "exact_matches_to_problem_5s_ids": []
+    },
+    {
+      "path": "${DATASET_5000}/verified_dataset.jsonl",
+      "sha256": "2580ba174601c9910467488f7baa86986fe93b5020ba95c09ff1428760dd61e3",
+      "count_at_read": 3147,
+      "uniform_geometry": [
+        1344,
+        768,
+        124
+      ],
+      "fps": 24
+    },
+    {
+      "path": "${DATASET_5000}/dataset_manifest.jsonl",
+      "sha256": "9c15af18ffd12d15487605caba4e1ae1bb2f6ca1c61efd31a1941cc54fdfca45",
+      "count_at_read": 3862,
+      "geometry_present_count": 3385,
+      "all_geometry_present": [
+        1344,
+        768,
+        124
+      ],
+      "other_states_count": 477,
+      "native1080_candidate_count": 0,
+      "note": "Active campaign metadata is a read-time snapshot; verified_dataset subset has a separate count."
+    }
+  ],
+  "actual_ffprobe_verified_problem_sources": [
+    {
+      "id": "VIDGEN5S_0421364",
+      "path": "${DATASET_493}/videos/VIDGEN5S_0421364.mp4",
+      "width": 1344,
+      "height": 768,
+      "frames": 124,
+      "fps": "24/1",
+      "duration": 5.166667,
+      "sha256_matches_manifest": true,
+      "sha256": "9587384b798ddd40652ee5c667e9d94ca5fcddb97d9d87e493c4a94341a86234",
+      "generation_task_id": "452636540797209",
+      "caption_source_scene_id": "nI-q1HwiNbY-Scene-0099"
+    },
+    {
+      "id": "VIDGEN5S_0665341",
+      "path": "${DATASET_493}/videos/VIDGEN5S_0665341.mp4",
+      "width": 1344,
+      "height": 768,
+      "frames": 124,
+      "fps": "24/1",
+      "duration": 5.166667,
+      "sha256_matches_manifest": true,
+      "sha256": "4e4e7cae34d8590f41eba8def35d894b875d6b6a040e5078bccd00cc62aee35e",
+      "generation_task_id": "452638208471299",
+      "caption_source_scene_id": "FNM2r_BHMsw-Scene-0003"
+    },
+    {
+      "id": "VIDGEN5S_0086441",
+      "path": "${DATASET_493}/videos/VIDGEN5S_0086441.mp4",
+      "width": 1344,
+      "height": 768,
+      "frames": 124,
+      "fps": "24/1",
+      "duration": 5.166667,
+      "sha256_matches_manifest": true,
+      "sha256": "f41b74863ab2b487585933d19cae263141e16fed201efbbe7f9602edd59092f3",
+      "generation_task_id": "452922886943003",
+      "caption_source_scene_id": "_iRdptzMxek-Scene-0060"
+    }
+  ],
+  "actual_ffprobe_verified_long_diagnostic_candidates": [
+    {
+      "id": "VIDGEN_0001",
+      "path": "${DATASET_1187}/videos/VIDGEN_0001.mp4",
+      "width": 1344,
+      "height": 768,
+      "frames": 345,
+      "fps": "24/1",
+      "duration": 14.375,
+      "sha256": "7a3e59f32066c22490afd21819e0c799a625a933897d6af1d501d3b45ea86eab",
+      "role": "new LR diagnostic encoding source only; not production latent and not native1088 ground truth"
+    },
+    {
+      "id": "VIDGEN_0002",
+      "path": "${DATASET_1187}/videos/VIDGEN_0002.mp4",
+      "width": 1344,
+      "height": 768,
+      "frames": 345,
+      "fps": "24/1",
+      "duration": 14.375,
+      "sha256": "d2c6d3b03d4df4d55a576e6a21016f76b7e28d95e2af2f40657f90056edc2301",
+      "role": "new LR diagnostic encoding source only; not production latent and not native1088 ground truth"
+    },
+    {
+      "id": "VIDGEN_0003",
+      "path": "${DATASET_1187}/videos/VIDGEN_0003.mp4",
+      "width": 1344,
+      "height": 768,
+      "frames": 345,
+      "fps": "24/1",
+      "duration": 14.375,
+      "sha256": "9ac2000668f1d3fcf3c8e6df1741e47d9a5ebff7b3e362ccae21eb3c50cb13f5",
+      "role": "new LR diagnostic encoding source only; not production latent and not native1088 ground truth"
+    }
+  ],
+  "existing_latent_cache_evidence": [
+    {
+      "root": "${DATASET_1187}/vae_pixelx2",
+      "evidence_files": [
+        "ENCODING_CONFIG.json",
+        "video_index.jsonl"
+      ],
+      "count": 1187,
+      "latent_shape": [
+        24,
+        102,
+        24,
+        42
+      ],
+      "pixel_size_wh": [
+        672,
+        384
+      ],
+      "dtype": "bfloat16",
+      "sample_id": "VIDGEN_0001",
+      "sample_latent_path": "${DATASET_1187}/vae_pixelx2/video/VIDGEN_0001.pt",
+      "sample_declared_sha256": "e074587eace3f48e437580a3ca0a6d0458fe967d905e704e64090a7206f9d3d2",
+      "matches_required_geometry": false
+    },
+    {
+      "root": "${DATASET_1187}/vae_pixelx3",
+      "evidence_files": [
+        "ENCODING_CONFIG.json",
+        "video_index.jsonl"
+      ],
+      "count": 1187,
+      "latent_shape": [
+        24,
+        102,
+        16,
+        28
+      ],
+      "pixel_size_wh": [
+        448,
+        256
+      ],
+      "dtype": "bfloat16",
+      "sample_id": "VIDGEN_0001",
+      "sample_latent_path": "${DATASET_1187}/vae_pixelx3/video/VIDGEN_0001.pt",
+      "sample_declared_sha256": "90eb6dea123fa2abddea51d6469ad7c67e28b20df66a491e7f054f4f0ced4158",
+      "matches_required_geometry": false
+    }
+  ],
+  "other_candidate_rejected": {
+    "root": "${PRIVATE_PATH}/MultiCamVideo-Dataset",
+    "declared_repo": "KlingTeam/MultiCamVideo-Dataset",
+    "revision": "4e7d995480cfa915f7c3721e616ed14789d87ff7",
+    "format": "local split compressed archive, not extracted",
+    "readme_declared_geometry": [
+      1280,
+      1280,
+      81
+    ],
+    "fps": 15,
+    "provenance": "Unreal Engine 5 multi-camera render dataset",
+    "reason_unsuitable_as_direct_guard": "1280-wide square frames do not supply native1920x1088 16:9 content without enlargement; 81@15fps cannot provide the required unpadded long T67 production clip. Not matching current generated clips.",
+    "actual_video_probe": false
+  },
+  "local_scan": {
+    "mp4_count_in_current_project": 423,
+    "raw_inputs_in_assets_or_upstream": 0,
+    "other_media_role": "experiment outputs, comparisons, reconstructions; wide comparison canvases do not count as native HR source"
+  },
+  "recommendations_for_root": [
+    "Keep an actual production LR latent fixture distinct from a re-encoded long768 diagnostic. Request/provide the real upstream LR artifact with source/shape/normalization/precision/generation provenance when available.",
+    "The three long768 candidates permit a geometry-only fixed-weight diagnostic at the user latent size after freezing temporal and pixel preprocessing, without claiming nativeHR recovery or production-distribution match.",
+    "Formal HR guard remains blocked by absence of native1920x1080/1088 paired source in the checked scope. New nativeHR data must have sufficient real frames and a new fixed split; do not upscale768 ground truth or silently remove the HR guard.",
+    "Teacher output may supervise distillation, but it is not independent native HR ground truth.",
+    "VIDGEN-1M source revision and scene IDs could be used to research a new high-resolution source dataset, but no availability/HD variant was verified here and its pixels would not pair to these H3 generations."
+  ],
+  "limits": [
+    "ffprobe checks inspected stored frame counts and headers for six source MP4s; no claim of new full-frame decode audit.",
+    "No archive extraction or full scan outside bounded known project/dataset metadata.",
+    "No higher-resolution remote URL request or new API generation performed.",
+    "No binary latent files loaded; shape claims derive from encoding config and index receipts."
+  ]
+}

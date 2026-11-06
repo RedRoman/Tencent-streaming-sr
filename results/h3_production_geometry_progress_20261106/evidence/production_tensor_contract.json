@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "source": "Latest explicit human production tensor specification",
+  "recorded_utc": "2026-11-06T11:31:14.440597+00:00",
+  "status": "human_shapes_and_output_time_confirmed_surrogate_diagnostic_preparation",
+  "lr_latent_shape": [
+    1,
+    24,
+    67,
+    44,
+    80
+  ],
+  "hr_latent_shape": [
+    1,
+    24,
+    67,
+    68,
+    120
+  ],
+  "vae_spatial_downsample": 16,
+  "actual_input_pixels": {
+    "width": 1280,
+    "height": 704
+  },
+  "actual_output_pixels": {
+    "width": 1920,
+    "height": 1088
+  },
+  "nominal_input": "1280x720",
+  "nominal_output": "1920x1080",
+  "spatial_ratios": {
+    "height": 1.5454545454545454,
+    "width": 1.5
+  },
+  "temporal_contract": "Preserve all67 latent frames; do not substitute37 or fabricate67 by padding old120frame clips.",
+  "supersedes_assistant_assumptions": [
+    "Actual720 input height requiring45 latent rows",
+    "Old37 latent frames /120 visibleframes /24fps /5seconds as production contract",
+    "Exact2x spatial ratio"
+  ],
+  "pending": {
+    "production_lr_path": "private_not_requested_again",
+    "production_caller_path": "private_not_requested_again",
+    "normalization_confirmation": null,
+    "fps": 24,
+    "source_frame_count": "Surrogate reader will take226 real frames from sufficiently long source",
+    "output_kept_frame_count": 226,
+    "temporal_crop_rule": "No extra tail trim if current67-token decoder returns226; preserve all226 output frames; verify actual decoder result"
+  },
+  "implementation_observations": {
+    "current_frozen_vae_formula_raw_decoded_frames_for67": 226,
+    "raw_frame_count_status": "Static formula only; not yet executed at production shape, not final retained frames.",
+    "upstream_1080_spatial_crop": "center4:1084 of1088; verify production caller",
+    "model_target_size": [
+      67,
+      68,
+      120
+    ],
+    "adapter_scale_embedding_formula": "mean(68/44,120/80)=1.5227272727272727; verify production teacher call parity",
+    "upstream_wrapper_temporal_chunking": false,
+    "upstream_wrapper_precision": "bf16; current frozen NPU diagnostic precision differs and must be disclosed",
+    "source_reader_frames": 226,
+    "encoder_internal_padding_frames_if_current_implementation": 12
+  },
+  "required_next": "Build labelled surrogate1280x704/226realframes input from approved long768 sources, expect67x44x80, fixedteacher/v5/motion output67x68x120 then226frames center crop1080; preserve oldsources and distinguish teacheragreement from absentnative1080HRguard.",
+  "updated_utc": "2026-11-06T11:36:06.214067+00:00",
+  "human_confirmed_output": {
+    "width": 1920,
+    "height": 1080,
+    "frames": 226,
+    "fps": 24,
+    "duration_seconds": 9.416666666666666
+  },
+  "privacy": "Human declines private production path; do not ask again or search for it. Use explicitly labelled reproducible surrogate inputs."
+}

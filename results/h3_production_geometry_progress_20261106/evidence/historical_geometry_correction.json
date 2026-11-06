@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-11-06T11:21:00Z",
+  "human_requirement": "完整流程 LR720p 到1080p",
+  "target_visible_pixels": {
+    "input": [
+      1280,
+      720
+    ],
+    "output": [
+      1920,
+      1080
+    ]
+  },
+  "status": "384to768_data_preparation_intentionally_stopped_requirement_superseded_no_new_training",
+  "supersedes_decision_sha256": "6436569d98eba719e0655621c60ad5db441163b21bdd81842d3fa67a4ca655d2",
+  "prior_geometry": {
+    "older_experiments": "336x192 to672x384",
+    "new_preparation": "672x384 to1344x768"
+  },
+  "source_of_prior_geometry": "Original experiment_manifest.json identifies small real-weight pipeline validation. Later pair producers inherited hard-coded672x384 target with half-size draft; subsequent diagnostic selected cached384 input and native768 target from existing1344x768 sources. Not a model restriction.",
+  "model_constraint_correction": "Upstream target_size and causal adapter support variable spatial targets. Exact2x is current experimental pair/trainer constraint, not inherent network restriction.",
+  "upstream_1080_output": "Compute at1920x1088 and center crop decoded rows to1080. Existing upstream input presets768p and576p do not establish a720p production reader.",
+  "stop_evidence": {
+    "remote_receipt": "${EXP_ROOT}/upscaler_teacher_distill_384to768_20261106/analysis/superseded_by_user_720to1080_20261106/stop_receipt.json",
+    "sha256": "1be446b8dded86038d1972d44a44bed65474af8388550718effefe217cf27673",
+    "own_launcher": 10227,
+    "own_child": 10381,
+    "signal": "SIGTERM to identity-verified own launcher; wrapper reaped own child",
+    "both_processes_absent": true,
+    "original_launcher_status": "failed: Controlled data preparation termination15; intentional stop not model failure"
+  },
+  "next_steps": [
+    "Validate exact720 input preprocessing and1920x1088 computation/crop to1080 using new source/version/protocol. Do not silently use768 preset or720->1440->1080.",
+    "Compare fixed teacher and causal checkpoint at user geometry before further training. Preserve teacher-only versus complete refiner scope explicitly.",
+    "New variable-scale loader, ROI/tile mapping, teacher cache, guards and causal validation required; do not change frozen exact2x sources in place.",
+    "Current1344x768 dataset lacks true native1080 HR. Never upsample it and call it ground-truth1080. Resolve authentic high-resolution supervision/guard sources separately.",
+    "No restart of384to768 data preparation or formal training from that geometry."
+  ]
+}

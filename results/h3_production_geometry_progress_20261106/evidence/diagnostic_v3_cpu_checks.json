@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "checks": 10,
+  "scope": "CPU numpy/static exact-source tile planner,226reader coverage,crop,temporalregions; no model or real source decode",
+  "actual704_encode_validated": false,
+  "static_geometry": {
+    "status": "static_tile_geometry_passed",
+    "implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+    "dimensions": {
+      "704": {
+        "starts": [
+          0,
+          144,
+          288,
+          448
+        ],
+        "lengths": [
+          256,
+          256,
+          256,
+          256
+        ],
+        "overlaps": [
+          112,
+          112,
+          96
+        ],
+        "stitched_latent_length": 44
+      },
+      "1280": {
+        "starts": [
+          0,
+          160,
+          320,
+          496,
+          672,
+          848,
+          1024
+        ],
+        "lengths": [
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256
+        ],
+        "overlaps": [
+          96,
+          96,
+          80,
+          80,
+          80,
+          80
+        ],
+        "stitched_latent_length": 80
+      },
+      "1088": {
+        "starts": [
+          0,
+          160,
+          320,
+          480,
+          656,
+          832
+        ],
+        "lengths": [
+          256,
+          256,
+          256,
+          256,
+          256,
+          256
+        ],
+        "overlaps": [
+          96,
+          96,
+          96,
+          80,
+          80
+        ],
+        "stitched_latent_length": 68
+      },
+      "1920": {
+        "starts": [
+          0,
+          176,
+          352,
+          528,
+          704,
+          896,
+          1088,
+          1280,
+          1472,
+          1664
+        ],
+        "lengths": [
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256
+        ],
+        "overlaps": [
+          80,
+          80,
+          80,
+          80,
+          64,
+          64,
+          64,
+          64,
+          64
+        ],
+        "stitched_latent_length": 120
+      }
+    },
+    "spatial_compression_ratio": 16,
+    "input_expected_latent": [
+      44,
+      80
+    ],
+    "target_latent": [
+      68,
+      120
+    ],
+    "exact_704_encode_measured": false,
+    "limitation": "Pure tile arithmetic only. Actual encoder shape/finite output remains a fail-closed latent-stage gate."
+  },
+  "geometry": {
+    "lr_latent_shape": [
+      1,
+      24,
+      67,
+      44,
+      80
+    ],
+    "target_latent_shape": [
+      1,
+      24,
+      67,
+      68,
+      120
+    ],
+    "input_pixels": [
+      1280,
+      704
+    ],
+    "raw_output_pixels": [
+      1920,
+      1088
+    ],
+    "visible_output_pixels": [
+      1920,
+      1080
+    ],
+    "frames": 226,
+    "fps": 24,
+    "source_first_frame": 0,
+    "source_last_frame": 225,
+    "source_crop_xywh": [
+      32,
+      32,
+      1280,
+      704
+    ],
+    "decoder_crop_rows": [
+      4,
+      1084
+    ],
+    "external_temporal_padding": false,
+    "internal_vae_pad_frames": 12,
+    "posterior": "sample",
+    "posterior_seed": 42,
+    "teacher_temporal_chunking": false,
+    "teacher_scale": 1.5227272727272727,
+    "scope": "Reproducible surrogate at human-specified shape/time; not private production assets or native1080 HR"
+  }
+}

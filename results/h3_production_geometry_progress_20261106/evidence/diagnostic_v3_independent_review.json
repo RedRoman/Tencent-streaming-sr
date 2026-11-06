@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-11-06T11:42:57.536149+00:00",
+  "status": "source_and_local_cpu_review_passed_real_cpu_prepare_and_launcher_still_required",
+  "reviewer": "native_hr_source_audit (independent of prepare_720_diagnostic author)",
+  "reviewed_source_sha256": "1dfc47a50b85fc67119629b9e1be2b3907a890eeaef7ebc97f46010e376ad269",
+  "reviewed_preparation_sha256": "580c88ef7cb65eb1acc4986dce23b82b21d56aa9158534801aee2d2598377953",
+  "files": [
+    {
+      "path": "${PRIVATE_PATH}/diagnose_h3_720to1080_v3.py",
+      "sha256": "1dfc47a50b85fc67119629b9e1be2b3907a890eeaef7ebc97f46010e376ad269",
+      "bytes": 46887
+    },
+    {
+      "path": "${PRIVATE_PATH}/h3_720to1080_v3_preparation.json",
+      "sha256": "580c88ef7cb65eb1acc4986dce23b82b21d56aa9158534801aee2d2598377953",
+      "bytes": 12090
+    },
+    {
+      "path": "${PRIVATE_PATH}/h3_720to1080_surrogate_geometry_v3.json",
+      "sha256": "a9d8061c61358c519a47fc88d25334d7de58923c19445ac54a06711c51d6b212",
+      "bytes": 790
+    },
+    {
+      "path": "${PRIVATE_PATH}/h3_720_vae_source_72cf83.py",
+      "sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "bytes": 41346
+    },
+    {
+      "path": "${PRIVATE_PATH}/test_h3_720to1080_independent_review_v3_fixture2.py",
+      "sha256": "1b4ee78695f743eaa48a308ac6a7ec2297537f04bbc8852277c35ba69fec4db9",
+      "bytes": 6252
+    },
+    {
+      "path": "${PRIVATE_PATH}/h3_720to1080_independent_cpu_v3_fixture2.log",
+      "sha256": "18da2cd2a0d04ecaba406ebc9739c5603cf28030e928bf4e63054e6e7b111174",
+      "bytes": 1423
+    },
+    {
+      "path": "${PRIVATE_PATH}/test_h3_720to1080_independent_review_v3.py",
+      "sha256": "d8b1987507e34e072bfd49eb6b5e57dd986d8b7a2d41057b808ad6f7276fb21d",
+      "bytes": 5960
+    },
+    {
+      "path": "${PRIVATE_PATH}/h3_720to1080_independent_cpu_v3.log",
+      "sha256": "3c77d9e2fc99432c13cd67547ab3004b535a31f2f1d65de2fda390c13812c539",
+      "bytes": 7091
+    }
+  ],
+  "author_source_changed_by_reviewer": false,
+  "test_result": {
+    "tests_run": 16,
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "command": [
+      "python3",
+      "${PRIVATE_PATH}/test_h3_720to1080_independent_review_v3_fixture2.py"
+    ],
+    "scope": "Local NumPy/stdlib/AST and synthetic malformed JSON receipts. No remote real-reader execution, model loading, torch/NPU operation, upload, training or decoding performed by this review."
+  },
+  "test_fixture_history": {
+    "initial_fixture_error": "First reviewer-only synthetic receipt omitted decoder_fingerprint and LPIPS identity required by candidate; 5 of 16 tests errored before reaching target conditions. Candidate source was not changed. Initial fixture and log preserved; corrected fixture2 supplies complete valid fields and all 16 tests pass.",
+    "source_bug": false
+  },
+  "checks": [
+    {
+      "name": "exact_geometry",
+      "result": "passed_source_and_cpu",
+      "detail": "Input[1,24,67,44,80], target[1,24,67,68,120]. 1280x704 center crop at(32,32) from1344x768; output1920x1088 then vertical4:1084 ->1920x1080. Crop is not mislabeled16:9; source shape is20:11."
+    },
+    {
+      "name": "real_input_temporal_contract",
+      "result": "passed_source_and_synthetic_reader",
+      "detail": "trim=end_frame=226 with -vsync0, two showinfo stages, no fps resampling/pad/loop. Reject wrong length, duplicate/omitted frame index, wrong PTS/fps/dimensions. Actual source decode still required."
+    },
+    {
+      "name": "vae_temporal_mapping",
+      "result": "passed_static_exact_source",
+      "detail": "226 source frames internally pad12 ->238; exact VAE clip17/token_drop3 maps to67. Exact source decode formula67tokens ->226. Both decode calls use keep_frames=None and assert raw226 before spatial crop; no temporal trim hides mismatch."
+    },
+    {
+      "name": "model_target_and_chunking",
+      "result": "passed_source",
+      "detail": "Teacher uses frozen wrapper_forward explicit(67,68,120), enable_chunking=False; student.adapter.native_forward explicit target bypasses old exact2x student.forward. Frozen upstream wrapper AST checks chunkingFalse/align32/bf16 declaration; diagnostic intentionally keeps historicalFP32 storage and actualHF32 flags."
+    },
+    {
+      "name": "precision_and_weights",
+      "result": "passed_source",
+      "detail": "Historical decoder/upscaler/LPIPS/source/checkpoint fingerprints bound; selectedv5step1800 andmotionstep2000 fixed. ParameterFP32/eval/no_grad checks and version counters. execution_precision start/end equality; no silent flag change. Actual runtime checks pending."
+    },
+    {
+      "name": "metric_scope",
+      "result": "passed_source",
+      "detail": "Teacher-derived ROI and teacher agreement only at full1080; LR roundtrip compared only to exact704 input. Explicit no native1080HR, no productionLR parity claim, no formalHRguard training unblock. Newwarp omitted with disclosure rather than reusing incompatibleold2xflow."
+    },
+    {
+      "name": "receipt_and_media_finalization",
+      "result": "passed_adversarial_cpu_fixtures",
+      "detail": "Valid fixture passes; missingaudit/wrongdimensions/wrong226framecount/wrongcrop reject. Five exact MP4 audit names perclip, exactdimensions/PTS count, artifactSHA, decoder/LPIPS/source chain checked; ten226f/24fps videos expected."
+    },
+    {
+      "name": "temporal_regions",
+      "result": "passed_cpu",
+      "detail": "67token decode has12 blended boundaries ->60blendframes/166nonblend;72blendtouching/153nonblendpairs partition all225pairs, including224->225. No claim of decoder causality."
+    },
+    {
+      "name": "memory_and_lifecycle",
+      "result": "source_review_with_runtime_limit",
+      "detail": "One model at a time; VAE unloaded before upscaler. Metrics oneframe/pair at a time. FullFP32 raw226x1088x1920 output alone5.665GB and additionalconversions/workspace make actualpeak unknown. No fallback geometry/precision/chunking allowed onOOM."
+    },
+    {
+      "name": "duplicate_and_resume",
+      "result": "passed_source_and_guard_cpu_external_launcher_pending",
+      "detail": "Existingpartial encoding/prediction/pixels dirs reject; immutableJSON mismatch rejects; noallstage/autoretry/auto-resume. Scientificscript lacks internalNPUmutex bydesign; reviewed externalstage mutex+threeNPUlocks are mandatory before actualdevice invocation."
+    },
+    {
+      "name": "source_privacy_and_truth",
+      "result": "passed_source",
+      "detail": "Only two previously auditedlongsourcepaths VIDGEN_0001/0002 used. No privateproductionpathsearch or ask. Surrogate explicitly distinguished from actualproductionLR and native1080GT."
+    }
+  ],
+  "remaining_execution_gates": [
+    "Root-reviewed external launcher with exclusive stage mutex, NPU7 three locks, actual npu-smi idle/ownership check, verified sourceSHA and oldprocess absence.",
+    "Real remote CPU prepare/check must revalidate frozen asset/sourceSHA and both226frame actualreaders; source/CPU synthetic pass is not an execution pass.",
+    "Actual704 encoder must return exact24x67x44x80 finiteFP32; noinputshape substitution on failure.",
+    "Inspect completedlatent receipts before independentpixels stage; actualfull1088decode226frames and allMP4audits required.",
+    "Visualinspection must follow realoutputs; metricagreement alone is not visual success and nativeHRguard remains unavailable."
+  ],
+  "recommendation": "Proceed with real CPU prepare/check and independent launcher review. No source/CPU blocker found for this frozen candidate. Do not directly invoke NPU scientific stages."
+}

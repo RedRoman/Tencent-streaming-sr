@@ -1,0 +1,85 @@
+{
+  "scope": "Selected evidence copies. Embedded SHA fields continue to identify original runtime artifacts, not sanitized files. Original files were read without modification. Missing referenced artifacts are not claimed packaged or revalidated.",
+  "files": [
+    {
+      "original_artifact": "analysis/production_tensor_contract_20261106.json",
+      "original_bytes": 2869,
+      "original_sha256": "1ce7534315bce96e58dd20dd6b68acff851a9be8b8d2942ad39e63f4ff480994",
+      "public_path": "evidence/production_tensor_contract.json",
+      "public_bytes": 2869,
+      "public_sha256": "1ce7534315bce96e58dd20dd6b68acff851a9be8b8d2942ad39e63f4ff480994",
+      "byte_identical": true,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    },
+    {
+      "original_artifact": "analysis/geometry_requirement_correction_20261106.json",
+      "original_bytes": 2605,
+      "original_sha256": "c4f2be4e48ba635b007dc907753dedeff089d50746604ffa33c39498d40fc2b5",
+      "public_path": "evidence/historical_geometry_correction.json",
+      "public_bytes": 2561,
+      "public_sha256": "7cde17bbae1375e31c129095ae0483eb674a3600fd1950c2744b14f45fe51d84",
+      "byte_identical": false,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    },
+    {
+      "original_artifact": "analysis/h3_native1080_source_audit_20261106.json",
+      "original_bytes": 10837,
+      "original_sha256": "82d267efdfaac5233b4e0b30ebe3eb6f429c3dbff7981cd1b170b3610e87d806",
+      "public_path": "evidence/native_hr_source_audit.json",
+      "public_bytes": 10728,
+      "public_sha256": "d0b4919f9882003a4b77a0001fc09ebe8b5542bc42533c664190da9f16504d23",
+      "byte_identical": false,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    },
+    {
+      "original_artifact": "diagnostics/resolution_chain_v2/summary.json",
+      "original_bytes": 205903,
+      "original_sha256": "32404b80d56d939e1d6f7f70a4e5bf99f42ae490a9081a16a22e10fc880b4356",
+      "public_path": "evidence/resolution_summary.json",
+      "public_bytes": 205111,
+      "public_sha256": "8f72e15c76926251fc85bb96bb3bc3e7a174b2f9b678ede72b3fdcb30a4da415",
+      "byte_identical": false,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    },
+    {
+      "original_artifact": "diagnostics/resolution_chain_v2/latent_summary.json",
+      "original_bytes": 16419,
+      "original_sha256": "ab41ac07ae2525f8037a440a47a199373f8340658a430bfd18f4bcff2355d9a6",
+      "public_path": "evidence/resolution_latent_summary.json",
+      "public_bytes": 15715,
+      "public_sha256": "60efda4fc6af2f428d95ec996ef281b8727d7fc22edefe4c91f1ff103837b284",
+      "byte_identical": false,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    },
+    {
+      "original_artifact": "analysis/production67_diagnostic_preparation_20261106/source_reviewed_v3/h3_720to1080_v3_cpu_checks.json",
+      "original_bytes": 3365,
+      "original_sha256": "7a68fe36f3b03d09d9a0df74bce3e9caab6cdb848e1c716569a8f78873e50e7a",
+      "public_path": "evidence/diagnostic_v3_cpu_checks.json",
+      "public_bytes": 3365,
+      "public_sha256": "7a68fe36f3b03d09d9a0df74bce3e9caab6cdb848e1c716569a8f78873e50e7a",
+      "byte_identical": true,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    },
+    {
+      "original_artifact": "analysis/production67_diagnostic_preparation_20261106/source_reviewed_v3/h3_720to1080_v3_independent_review.json",
+      "original_bytes": 7499,
+      "original_sha256": "9f1ba618ffb4908d9c24237a661be92125f9556767e8ecf68dd6beb5a5134f17",
+      "public_path": "evidence/diagnostic_v3_independent_review.json",
+      "public_bytes": 7598,
+      "public_sha256": "c33af69bb19e595d90fa3990f48a51412fda46bf636594dd7d0c8050509859a4",
+      "byte_identical": false,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    },
+    {
+      "original_artifact": "analysis/production67_diagnostic_preparation_20261106/source_reviewed_v3/h3_720to1080_surrogate_geometry_v3.json",
+      "original_bytes": 790,
+      "original_sha256": "a9d8061c61358c519a47fc88d25334d7de58923c19445ac54a06711c51d6b212",
+      "public_path": "evidence/diagnostic_v3_surrogate_geometry.json",
+      "public_bytes": 791,
+      "public_sha256": "9aab2f1cc93285e3d9772c98210b8899f00bec8a026ef941e6cea683238ab2c6",
+      "byte_identical": false,
+      "transformation": "JSON serialization and private path/host parameterization; numeric fields and embedded original source/artifact SHA values retained"
+    }
+  ]
+}

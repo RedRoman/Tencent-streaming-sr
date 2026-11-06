@@ -1,0 +1,49 @@
+{
+  "lr_latent_shape": [
+    1,
+    24,
+    67,
+    44,
+    80
+  ],
+  "target_latent_shape": [
+    1,
+    24,
+    67,
+    68,
+    120
+  ],
+  "input_pixels": [
+    1280,
+    704
+  ],
+  "raw_output_pixels": [
+    1920,
+    1088
+  ],
+  "visible_output_pixels": [
+    1920,
+    1080
+  ],
+  "frames": 226,
+  "fps": 24,
+  "source_first_frame": 0,
+  "source_last_frame": 225,
+  "source_crop_xywh": [
+    32,
+    32,
+    1280,
+    704
+  ],
+  "decoder_crop_rows": [
+    4,
+    1084
+  ],
+  "external_temporal_padding": false,
+  "internal_vae_pad_frames": 12,
+  "posterior": "sample",
+  "posterior_seed": 42,
+  "teacher_temporal_chunking": false,
+  "teacher_scale": 1.5227272727272727,
+  "scope": "Reproducible surrogate at human-specified shape/time; not private production assets or native1080 HR"
+}

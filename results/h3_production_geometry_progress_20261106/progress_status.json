@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "as_of_utc": "2026-11-06T11:48:44.781764+00:00",
+  "as_of_asia_shanghai": "2026-11-06T19:48:44.781764+08:00",
+  "snapshot_kind": "Progress report and sanitized evidence; no new training result or production quality claim",
+  "new_teacher_distillation": {
+    "formal_training_started": false,
+    "formal_optimizer_updates": 0,
+    "actual_production_geometry_npu_preflight_completed": false,
+    "status": "corrected_geometry_diagnostic_preparation",
+    "reason": "Prior exact2x/small-resolution experiment was superseded by the user-provided production shape and time contract"
+  },
+  "remote_read_only_observation": {
+    "checked_utc": "2026-11-06T11:48:44.781764+00:00",
+    "matching_teacher_training_or_new_diagnostic_processes": [],
+    "scope": "ps command lines matching this task teacher trainer/runner and new720 diagnostic; old stop receipt inspected; not a machine-wide no-training claim"
+  },
+  "superseded_data_preparation": {
+    "geometry": "672x384 to1344x768",
+    "ended_utc": "2026-11-06T11:21:18.495176+00:00",
+    "status": "intentional_stop_for_specification_correction",
+    "original_launcher_status": "failed",
+    "original_error": "Controlled data preparation termination: 15",
+    "new_optimizer_training_started": false,
+    "verified_original_stop_receipt_sha256": "1be446b8dded86038d1972d44a44bed65474af8388550718effefe217cf27673",
+    "note": "Original failed status is retained as historical evidence; termination was requested because the geometry was superseded, not because a model-quality failure was observed"
+  },
+  "new_diagnostic_v3": {
+    "reviewed_source_sha256": "1dfc47a50b85fc67119629b9e1be2b3907a890eeaef7ebc97f46010e376ad269",
+    "author_static_checks": 10,
+    "independent_synthetic_cpu_tests_passed": 16,
+    "independent_synthetic_cpu_tests_skipped": 0,
+    "actual_production_shape_model_execution_verified": false,
+    "scope": "Local NumPy/stdlib/AST and synthetic receipt tests only; reviewed source is referenced by original SHA, not packaged here as a runnable release"
+  },
+  "completed_old_motion_experiment": {
+    "updates_per_arm": 2000,
+    "clips_evaluated": 35,
+    "raw_mp4_full_decode_audit_count": 175,
+    "conclusion": "Small metric improvements; main visual artifacts unresolved",
+    "test16_decoded_hr_psnr_v5_control_motion": [
+      25.56695,
+      25.65408,
+      25.84846
+    ],
+    "test16_decoded_hr_lpips_v5_control_motion": [
+      0.131721,
+      0.129554,
+      0.128346
+    ],
+    "motion_vs_v5_roi_change_percent": -4.15,
+    "motion_vs_v5_delta_change_percent": -3.0,
+    "motion_vs_v5_raw_latent_ewarp_change_percent": 12.53,
+    "motion_vs_control_raw_latent_ewarp_change_percent": 13.2
+  },
+  "remaining_gates": [
+    "Actual source-reader and model checks at the corrected shape/time",
+    "Fixed teacher/v5/motion diagnostic and full226-frame video checks; visual inspection",
+    "Matched variable-scale/time training data and ROI/tile/flow mapping",
+    "Resolve native1080 HR quality guard; teacher targets alone are not native ground truth",
+    "Independent review, paired8-update and actual optimizer/RNG restoration preflight before formal training"
+  ],
+  "publication_scope": "New report plus selected sanitized evidence; reuses links to existing six-panel videos and inference weights. No cache, new weight or training script execution."
+}
