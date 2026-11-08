@@ -1,0 +1,442 @@
+{
+  "precision": {
+    "dtype": "float32",
+    "conv_hf32": false,
+    "matmul_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "mode": {
+    "deterministic_algorithms": true,
+    "warn_only": false
+  },
+  "runtime_assets": {
+    "vae/config.json": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/config.json",
+      "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+      "bytes": 2011
+    },
+    "vae/diffusion_pytorch_model-00001-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+      "bytes": 5061033024
+    },
+    "vae/diffusion_pytorch_model-00002-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+      "bytes": 4955986528
+    },
+    "vae/diffusion_pytorch_model-00003-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+      "bytes": 398539336
+    },
+    "vae/diffusion_pytorch_model.safetensors.index.json": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model.safetensors.index.json",
+      "bytes": 74228,
+      "sha256": "15f6d44553c3c616b0dc999920aa784f92ecee7e4201f1f99ac405cfbf3061ca"
+    },
+    "implementation/autoencoder": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/models/autoencoders/autoencoder_kl_minimax_h3.py",
+      "bytes": 41346,
+      "sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2"
+    },
+    "implementation/attention": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/models/attention_dispatch.py",
+      "bytes": 147586,
+      "sha256": "5fa72380e153fc6e9cddd23848800958e1431fbfe1402e60595c250e75c77eb1"
+    },
+    "implementation/package": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/__init__.py",
+      "bytes": 65741,
+      "sha256": "29f8bdd216eabda0ff43449d866aa1b4d92a1e89e43129c99c9e59b03a6564a3"
+    },
+    "lpips/backbone": {
+      "path": "/path/to/runtime-home/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "bytes": 244408911
+    },
+    "lpips/linear": {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+      "bytes": 6009
+    },
+    "lpips/implementation": {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/lpips/lpips.py",
+      "sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658",
+      "bytes": 10101
+    }
+  },
+  "base_model": "/path/to/model-assets/VDN-MiniMax-H3/h3-base",
+  "decoder_implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+  "lpips_fingerprint": {
+    "network": "alex",
+    "version": "0.1",
+    "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "linear_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "implementation_sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658"
+  },
+  "runtime_evidence_files": [
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/version.info",
+      "bytes": 281,
+      "sha256": "cd841c9ab92a2331b262b1d242590533a5d9a4a0f8c9b957ebfd48cfd8056cf0"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/aarch64-linux/ascend_toolkit_install.info",
+      "bytes": 251,
+      "sha256": "aa39b3467a94a77dfb317900c5242f98222ccb964fc30c93bf13465de5696a53"
+    },
+    {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/version.py",
+      "bytes": 85,
+      "sha256": "97c3d630af9e4d5739564d2b27c93b83f49b5f1684f54bb5a5350214ae11d6b0"
+    },
+    {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/csrc/aten/npu_native_functions_by_codegen.yaml",
+      "bytes": 215537,
+      "sha256": "0b2265792c52bae1cc4fc4946ea72f02fd3fd1e6f1024e43cfbe2251a04f604c"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/dynamic/grid_sampler2_d_grad.py",
+      "bytes": 10904,
+      "sha256": "3431d31c51d8a43fbc914ec999e24c26bcc9fcad82c6554d7ae122230cd02ce1"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/ascendc/grid_sampler2_d_grad/grid_sampler2_d_grad.cpp",
+      "bytes": 6108,
+      "sha256": "5e1bd4cca4c87d9470a4a903ef30a3083890ba825de53f0aa35d0a54c7457c05"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/ascendc/grid_sampler2_d_grad/grid_sampler2_d_grad.h",
+      "bytes": 53103,
+      "sha256": "650f0fbc606e2b1e8ebd50f96320651c8f82b2caf1e113d0c1eeec0f1e86a6f2"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/config/ascend910b/ops_cv/grid_sampler2_d_grad.json",
+      "bytes": 6784,
+      "sha256": "47edc737524889d04e44dbd8ba86e27c91025604125ecf8fb5f222496703037a"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/ascend910b/ops_cv/grid_sampler2_d_grad/GridSamplerGrad_fp32_json_high_performance.json",
+      "bytes": 4003,
+      "sha256": "3fbd99f8bf307937149d5c1ec2d6b004e7a94ae3011aba92606214de7056ddd9"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/ascend910b/ops_cv/grid_sampler2_d_grad/GridSamplerGrad_fp32_json_high_performance.o",
+      "bytes": 242560,
+      "sha256": "b4e2ac902e8d9241937e6eeea5b2af2896983e21f6240dc5b5c6f543e5416fab"
+    }
+  ],
+  "selected_cann_home": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1",
+  "schema": "h3-production67-limiteddev-execution-plan-v1",
+  "stage_directory": "/path/to/staging/h3_production67_limiteddev_20261107_v1",
+  "output": "/path/to/h3-project/upscaler_production67_limiteddev_20261107",
+  "stages": [
+    "step0",
+    "control",
+    "teacher"
+  ],
+  "physical_devices": [
+    4,
+    7
+  ],
+  "counts": {
+    "train": 2,
+    "dev": 3,
+    "test": 0
+  },
+  "updates_per_arm": 2000,
+  "save_every": 100,
+  "selection_every": 200,
+  "seed": 20261107,
+  "test_access": false,
+  "formal16dev_claim": false,
+  "limiteddev_training_user_authorized": true,
+  "old_failures_preserved": true,
+  "reused_evidence": {
+    "actual_345M_CPU_load": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_345M_CPU_load.json",
+      "bytes": 17133,
+      "sha256": "df258b5529e89ccb704525dec919cf76b598db324925fb331a7e65b79c335800"
+    },
+    "actual_explicit_wrapper_parity": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_explicit_wrapper_parity.json",
+      "bytes": 53546,
+      "sha256": "f99005bb4656ed782c1783db9e5c3748d37d70224ad171f070932cc01f5f3a0b"
+    },
+    "actual_67_HF32off_causal": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_67_HF32off_causal.json",
+      "bytes": 52433,
+      "sha256": "e2d38504c0684cf43eba3a49246c698d4c6fdb0daa894828d3321a52d51469c1"
+    },
+    "actual_decoder_leaf_HF32off": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_decoder_leaf_HF32off.json",
+      "bytes": 177919,
+      "sha256": "67c4f900ac0e998352053564373df7fa43252439ec68a07e732bade947e78084"
+    },
+    "actual_control8": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_control8.json",
+      "bytes": 156021,
+      "sha256": "231466f7d88c1782d2a8a4b746429f482d4e0c6967a066b1e087b0227347a101"
+    },
+    "actual_teacher8": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_teacher8.json",
+      "bytes": 156015,
+      "sha256": "170f50162c03e7b1c5075e7688451355009637a1289c179154badd791d9ba381"
+    },
+    "actual_strictdet11_restore": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_strictdet11_restore.json",
+      "bytes": 7264,
+      "sha256": "06c940cf770be90ccb3fd19803e7d683d6f77ea6eb67ce3b23dcd293f2870b89"
+    },
+    "actual_strictdet11_CPU_exit": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_strictdet11_CPU_exit.json",
+      "bytes": 1761,
+      "sha256": "2c86da1d5fda46014361b97acab395518c0d6b1e40c83c2de93ae780200adf75"
+    }
+  },
+  "router": {
+    "path": "upscaler_v5_motion_20261106/analysis/production67_five_cache_registry_v1/router.json",
+    "bytes": 2661,
+    "sha256": "729586146a7f329feed9fe40731651ca1d1a4c3b5a8dfe453b4e29d662c351ac"
+  },
+  "limits": [
+    "Current accepted train2/dev3 only; no formal16dev or test result.",
+    "Existing heterogeneous cache-generation modes preserved; training strict deterministic FP32 HF32off.",
+    "One actual shared three-dev sparse step0; fresh arms verified against all322 original v5 tensor values.",
+    "Final full226/nativeHR guard remains separate; sparse selection is not that gate."
+  ],
+  "files": {
+    "causal_upscaler.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/causal_upscaler.py",
+      "bytes": 10332,
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+    },
+    "check_h3_production67_explicit_hf32off_npu_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/check_h3_production67_explicit_hf32off_npu_v1.py",
+      "bytes": 18757,
+      "sha256": "68b82163f18b5b733deeebb4c922bf01f7d855883de18e7d0d2c054e4acb169c"
+    },
+    "check_h3_production67_paired8_npu_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/check_h3_production67_paired8_npu_v1.py",
+      "bytes": 11922,
+      "sha256": "865bf7c7ce561623021267985effa51878ef9434fa7ad1039ec04074753389d0"
+    },
+    "data_utils.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/data_utils.py",
+      "bytes": 9603,
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+    },
+    "h3_causal_v5_tensor_validation.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_causal_v5_tensor_validation.json",
+      "bytes": 84489,
+      "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75"
+    },
+    "h3_conv3d_explicit_target_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_conv3d_explicit_target_v1.py",
+      "bytes": 12825,
+      "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6"
+    },
+    "h3_production67_cann_determinism_evidence_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_cann_determinism_evidence_v1.json",
+      "bytes": 9178,
+      "sha256": "98cb21e044d1a7557f03ea07f0a60e2287ab01d4a8ab886159c1525d11deb46e"
+    },
+    "h3_production67_cann_imports_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_cann_imports_v1.py",
+      "bytes": 3217,
+      "sha256": "cfc334f1a3568315a1ccd88020e9b6785de689dfcd5914972449c6fe5faa2996"
+    },
+    "h3_production67_cohort_router_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_cohort_router_v1.py",
+      "bytes": 13096,
+      "sha256": "4dd024b749c7134d3aaf2c4686da3f913909edc9b858fa8081c4f6396a4de2aa"
+    },
+    "h3_production67_dataset_binding_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_dataset_binding_v2.py",
+      "bytes": 14312,
+      "sha256": "4fb6fe4c9823dbdd233c726f06e398f29854a3e507875e7b56ea6683b6236941"
+    },
+    "h3_production67_deterministic_restore_core_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_deterministic_restore_core_v1.py",
+      "bytes": 21406,
+      "sha256": "837ed1ef87126dc6a6387208012502a193b0d6cbdf54cd1418982e8af91b3126"
+    },
+    "h3_production67_geometry_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_geometry_v1.py",
+      "bytes": 13298,
+      "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383"
+    },
+    "h3_production67_limiteddev_core_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_core_v1.py",
+      "bytes": 28316,
+      "sha256": "b07513005e30e2faec2f58f298ec774ee6143a9eac685d249809dec34c994af0"
+    },
+    "h3_production67_limiteddev_data_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_data_v1.py",
+      "bytes": 3925,
+      "sha256": "fe2a6e20c3a4779a73a947001f792896576d9d43b22cf29eddcaea9d3a9fcc75"
+    },
+    "h3_production67_limiteddev_sparse_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_sparse_v1.py",
+      "bytes": 15477,
+      "sha256": "1eb3260693beba137b11ba196677b512fef2eb47e06bf3a5fe47785fa75d7ccd"
+    },
+    "h3_production67_limiteddev_train_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_train_v1.py",
+      "bytes": 11330,
+      "sha256": "147b6a89c145a36849c653fd3711b0309c2220d8792aaa685dbb7cee93f64bf0"
+    },
+    "h3_production67_mixed_cohort_policy_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_mixed_cohort_policy_v1.json",
+      "bytes": 49534,
+      "sha256": "3141c281a426ffd6b5d25feaec7118a066ba8fe4ccff01b7a3ad48c4fe9d0f76"
+    },
+    "h3_production67_pair_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pair_loader_v1.py",
+      "bytes": 24155,
+      "sha256": "5d3ea3d6e8d59896e5c2b664addf3a5bba5d4700efa525a0335125973124602b"
+    },
+    "h3_production67_pair_loader_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pair_loader_v2.py",
+      "bytes": 34547,
+      "sha256": "1b7b1f41996b5cc00fe45e33a35261e5d159ce03b96fb43f1f3b0ab6be00d47d"
+    },
+    "h3_production67_paired8_core_v3.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_paired8_core_v3.py",
+      "bytes": 17076,
+      "sha256": "6014641a62291e0732903bfacf96dd8ad3f3f24a780ad333ffd966e2111b20d6"
+    },
+    "h3_production67_pixel_decoder_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pixel_decoder_v1.py",
+      "bytes": 11351,
+      "sha256": "79af08a57ec3c3c8743631a49aac66ecb0628a3eb1bd90e7a486862d73ccd752"
+    },
+    "h3_production67_pixel_specs_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pixel_specs_v1.py",
+      "bytes": 7708,
+      "sha256": "50ea70c63a31ce14a3aec11b5072d369bcbd2d6b739a08b049e08cd40e2edfd0"
+    },
+    "h3_production67_train_step_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_train_step_v1.py",
+      "bytes": 17025,
+      "sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997"
+    },
+    "h3_production67_v5_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_v5_loader_v1.py",
+      "bytes": 14056,
+      "sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512"
+    },
+    "h3_teacher_distill.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_teacher_distill.py",
+      "bytes": 13244,
+      "sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1"
+    },
+    "h3_v5_motion.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_v5_motion.py",
+      "bytes": 9828,
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa"
+    },
+    "make_h3_production67_paired8_binding_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/make_h3_production67_paired8_binding_v1.py",
+      "bytes": 1974,
+      "sha256": "4433f3f6e69b70cfd12f08fcdcbc6aed719263cf2df3905bfdd8d4d33584bdc4"
+    },
+    "prepare_data.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/prepare_data.py",
+      "bytes": 18150,
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8"
+    },
+    "reused_actual_345M_CPU_load.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_345M_CPU_load.json",
+      "bytes": 17133,
+      "sha256": "df258b5529e89ccb704525dec919cf76b598db324925fb331a7e65b79c335800"
+    },
+    "reused_actual_67_HF32off_causal.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_67_HF32off_causal.json",
+      "bytes": 52433,
+      "sha256": "e2d38504c0684cf43eba3a49246c698d4c6fdb0daa894828d3321a52d51469c1"
+    },
+    "reused_actual_control8.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_control8.json",
+      "bytes": 156021,
+      "sha256": "231466f7d88c1782d2a8a4b746429f482d4e0c6967a066b1e087b0227347a101"
+    },
+    "reused_actual_decoder_leaf_HF32off.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_decoder_leaf_HF32off.json",
+      "bytes": 177919,
+      "sha256": "67c4f900ac0e998352053564373df7fa43252439ec68a07e732bade947e78084"
+    },
+    "reused_actual_explicit_wrapper_parity.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_explicit_wrapper_parity.json",
+      "bytes": 53546,
+      "sha256": "f99005bb4656ed782c1783db9e5c3748d37d70224ad171f070932cc01f5f3a0b"
+    },
+    "reused_actual_strictdet11_CPU_exit.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_strictdet11_CPU_exit.json",
+      "bytes": 1761,
+      "sha256": "2c86da1d5fda46014361b97acab395518c0d6b1e40c83c2de93ae780200adf75"
+    },
+    "reused_actual_strictdet11_restore.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_strictdet11_restore.json",
+      "bytes": 7264,
+      "sha256": "06c940cf770be90ccb3fd19803e7d683d6f77ea6eb67ce3b23dcd293f2870b89"
+    },
+    "reused_actual_teacher8.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/reused_actual_teacher8.json",
+      "bytes": 156015,
+      "sha256": "170f50162c03e7b1c5075e7688451355009637a1289c179154badd791d9ba381"
+    },
+    "run_h3_production67_limiteddev_train_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/run_h3_production67_limiteddev_train_v1.py",
+      "bytes": 9154,
+      "sha256": "365dcdb1f15f4e5a43eadc5c5f0cc8898093b85fa09111b1429ea5f87abd4958"
+    },
+    "run_h3_production67_limiteddev_train_v1.sh": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/run_h3_production67_limiteddev_train_v1.sh",
+      "bytes": 465,
+      "sha256": "96d42b27ce3f161330445c67c7c9c283cc484e7e9b4145efd6dba1a0fdcfbdec"
+    },
+    "run_h3_surrogate67_npu4_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/run_h3_surrogate67_npu4_v1.py",
+      "bytes": 22386,
+      "sha256": "fd50e29519d7deeee4ca0f7663ca5ec11575009a6a6e8b958af5e3fdf8855cc5"
+    },
+    "smoke_h3_production67_v5_full_cpu_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/smoke_h3_production67_v5_full_cpu_v1.py",
+      "bytes": 18841,
+      "sha256": "b50fa4c03bad4eef7dc864ffe1c51b6cfc3f1ec9b206869cc5a1fa395540cfb5"
+    },
+    "surrogate67_contract.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/surrogate67_contract.json",
+      "bytes": 37409,
+      "sha256": "41f3e018aa90760945659e42abf13adb91374452f884723fe3078096a4825879"
+    },
+    "train_upscaler_trial.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/train_upscaler_trial.py",
+      "bytes": 21905,
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+    },
+    "ultraflash_ewarp.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/ultraflash_ewarp.py",
+      "bytes": 6288,
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    },
+    "upscaler.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/upscaler.py",
+      "bytes": 1724,
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521"
+    },
+    "upscaler_node.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/upscaler_node.py",
+      "bytes": 25218,
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437"
+    }
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "b73b072a8e746265d4f9e44654b88472fc73e44d1aee8c8036ad2fa6f2390a8c",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

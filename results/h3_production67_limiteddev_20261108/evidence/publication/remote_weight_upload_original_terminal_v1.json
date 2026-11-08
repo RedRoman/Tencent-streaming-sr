@@ -1,0 +1,40 @@
+{
+  "schema": "h3-limiteddev-single-weight-upload-v1",
+  "status": "failed_no_retry",
+  "pid": 2387666,
+  "started_utc": "2026-11-08T13:43:43.935579+00:00",
+  "release_id": 438270407,
+  "tag": "h3-limiteddev-226f-20261108",
+  "asset_name": "h3_limiteddev_teacher_step2000_fp32.pt",
+  "expected_bytes": 1381220283,
+  "expected_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "source": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/best_step_2000.pt",
+  "script_sha256": "be062f3ebc7523de44ef8e5d6ef9709fb79c9d0065e741bb7d95c6154be30151",
+  "automatic_retries": 0,
+  "token_storage": "none; private stdin then memory only",
+  "sent": 1381220283,
+  "source_freshly_verified": true,
+  "source_stat": {
+    "device": 64769,
+    "inode": 113511028,
+    "bytes": 1381220283,
+    "mtime_ns": 1794114631653165571,
+    "ctime_ns": 1794114631653165571
+  },
+  "upload_started_utc": "2026-11-08T13:43:52.343763+00:00",
+  "last_progress_utc": "2026-11-08T13:49:00.754475+00:00",
+  "stream_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "failure": {
+    "event": "failed_no_retry",
+    "error_type": "ValueError",
+    "inspect_remote_status_and_GitHub_asset_before_any_new_attempt": true,
+    "ended_utc": "2026-11-08T13:49:38.399430+00:00"
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "c971abfb392dae41434038ff33c523568f17df5a4d72811e8bf942108126269f",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "frozen_prepublication_evidence": true,
+    "not_an_original_executable_contract": true
+  }
+}

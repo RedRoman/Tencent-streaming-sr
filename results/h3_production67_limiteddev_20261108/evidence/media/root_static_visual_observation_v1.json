@@ -1,0 +1,48 @@
+{
+  "utc": "2026-11-08T08:42:11.232618+00:00",
+  "method": "Actual model visual inspection of the one displayed static PNG via view_image",
+  "image": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/native_crop_004.png",
+    "bytes": 1043201,
+    "sha256": "fba202ce4a4f233957f6808378c25d078018c2f9820d5359cff975485eab9134"
+  },
+  "scope": {
+    "sample": "WingIt_dev_3586_3811",
+    "local_frame": 113,
+    "source_frame": 3699,
+    "crop_xywh": [
+      1072,
+      360,
+      512,
+      512
+    ],
+    "display": "1536x624; 3 same-location 512x512 crops at native scale plus112px labels",
+    "columns": [
+      "sparse-selected teacher student step2000 PROVISIONAL full226conditionsFAILED",
+      "OriginalOpenH3bidirectional",
+      "verified nativeHR GT"
+    ]
+  },
+  "observations": [
+    "All3columns depict the same pose and spatial crop; identity labels and failed/provisional status are visible.",
+    "Candidate and original bidirectional output are visually similar in this static crop. Both soften surfaces and thin edges compared with the nativeHR reference.",
+    "Both model outputs show colored irregular fringes around the goggles/ear boundaries and altered small mouth/eye-highlight details compared with GT.",
+    "This static image supports shared teacher/student artifacts in this crop; it does not establish causality or which route is better over the clip."
+  ],
+  "not_checked": [
+    "Continuous playback",
+    "Other225frames",
+    "Native full-frame videos",
+    "Temporal flicker severity",
+    "All84contacts"
+  ],
+  "continuous_visual_review_complete": false,
+  "visual_quality_passed": false,
+  "full226_technical_or_scalar_audit_is_not_subjective_visual_pass": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "dadb9e99933b86c7bf1c436b535031ec9066c54e6a503b8942d5fe3bb291f34a",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

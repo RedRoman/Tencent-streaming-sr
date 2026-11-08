@@ -1,0 +1,149 @@
+{
+  "schema": "h3-limiteddev-H264-file-v4",
+  "status": "completed_one_H264_full226_technical_audit",
+  "adapter_plan_sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8",
+  "render_sha256": "0c871145247fd9b142ce1b3a7d24b09dae28a3bdf3eb478e8b67cceefb3dcead",
+  "spec": {
+    "sample_id": "WingIt_dev_3586_3811",
+    "route": "fixed_dog_face_full226",
+    "relative_path": "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+    "width": 1536,
+    "height": 624,
+    "fixed_xywh": [
+      560,
+      48,
+      512,
+      512
+    ],
+    "source_definition_index": 0,
+    "source_region": "dog_face",
+    "all_frames": [
+      0,
+      225
+    ],
+    "tracking": false,
+    "spatial_resize": false
+  },
+  "source": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+    "bytes": 13517550,
+    "sha256": "7f927ad993b96f4883dec9d5880cccd58b043cb35d6223faffe4d50818b08ef4"
+  },
+  "source_audit": {
+    "path": "/path/to/h3-project/upscaler_production67_limiteddev_media_20261107_v3/attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+    "bytes": 28366,
+    "sha256": "40a58045f59366670310e593b4d16f9fd12c63f24e55f34fd9e534ed1ee9933c"
+  },
+  "output": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+    "bytes": 8183688,
+    "sha256": "71bc29abfe60efdcd0d78a5f01ac6a1dd5c4edcb446a6c8720f9a9d7e2a2fbf8"
+  },
+  "audit": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+    "bytes": 2003,
+    "sha256": "37a6192d31d4b7706c80942e6160a29a151e6bf8b29979a15f160e932a456359"
+  },
+  "tools": {
+    "avconvert": {
+      "path": "/usr/bin/avconvert",
+      "bytes": 227200,
+      "sha256": "9219b2bbefe96fef5fd9c1a0d240e2267a2b32447bf1ea7c0718365a24f177d9"
+    },
+    "auditor": {
+      "path": "/path/to/staging/h3_decode_audit",
+      "bytes": 199152,
+      "sha256": "1ca198709f35603ae53208fb1de821275628e200d583097167163fa8bcc667ed"
+    }
+  },
+  "selected_steps": {
+    "control": 0,
+    "teacher": 2000
+  },
+  "labels": {
+    "teacher_student": [
+      "Best causal candidate (teacher arm)",
+      "limiteddev_20261107 | sparse best step 2000",
+      "PROVISIONAL: FULL226 CONDITIONS FAILED",
+      "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+      "abdebc052ee9f18f6780624de912e0b5",
+      "FP32; HF32 off; latent causal"
+    ],
+    "teacher": [
+      "Open H3 original bidirectional upsampler",
+      "Original upstream weight SHA256:",
+      "4f57821f5837f32f7142b67d815606db",
+      "d7550f194e5c769f7d6c3f83b146a5e6",
+      "Latent: FP32 HF32 off; det unbound",
+      "Decode: FP32 HF32 off; strictdet"
+    ],
+    "native_hr": [
+      "GT reference | verified native HR",
+      "Wing It official HQ | frames 3586..3811",
+      "Aligned native RGB SHA256:",
+      "9597a1492860fa87f2e61e796ee5fdb3",
+      "1094ad9a1554c4598421da70d8af1ba9",
+      "Native 1920x1080; same frame indices"
+    ],
+    "control": [
+      "Control frozen best | step 0"
+    ],
+    "v5": [
+      "Initial v5 | step 1800"
+    ]
+  },
+  "encode_cleanup": {
+    "pid": 27420,
+    "pgid": 27420,
+    "signals": [],
+    "reaped": true,
+    "returncode": 0,
+    "live_group_members_at_end": [],
+    "leader_identity": "already_exited"
+  },
+  "audit_cleanup": {
+    "pid": 27436,
+    "pgid": 27436,
+    "signals": [],
+    "reaped": true,
+    "returncode": 0,
+    "live_group_members_at_end": [],
+    "leader_identity": "already_exited"
+  },
+  "encode_command": [
+    "/usr/bin/avconvert",
+    "--source",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+    "--output",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+    "--preset",
+    "PresetHighestQuality"
+  ],
+  "audit_command": [
+    "/path/to/staging/h3_decode_audit",
+    "--root",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811",
+    "--output",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+    "--expect-frames",
+    "226",
+    "--expect-fps",
+    "24",
+    "--expect-duration",
+    "9.416666666666666",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4"
+  ],
+  "codec": "H264",
+  "no_resize": true,
+  "scientific_decodes": 0,
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "continuous_playback_reviewed": false,
+  "visual_quality_passed": false,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "2322cb15cfc03ed06fc27a42952f6de7a3faa4f63c64e70eb4467117204b50be",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

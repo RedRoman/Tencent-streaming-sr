@@ -1,0 +1,176 @@
+{
+  "schema": "h3-full67-metadata-derived-interpretation-v1",
+  "created_utc": "2026-11-08T05:31:40.106462+00:00",
+  "sources": [
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/ElephantsDream_dev_13070_13295/v5.json",
+      "bytes": 3973,
+      "sha256": "99c5f70173e924b379f9b252264a442b3ddb7fc07effdbf78146159b6a67b906"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/ElephantsDream_dev_13070_13295/control.json",
+      "bytes": 3011,
+      "sha256": "1520bef11d22e8861d277b4713be1831d294590e8eb64b216adbdc9c2eb7350d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/ElephantsDream_dev_13070_13295/teacher_student.json",
+      "bytes": 3032,
+      "sha256": "3d983b361ec71a3b07e7d7b25cf6343a7d214b1d483d7b2024b9ed1238d0be9e"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_300_525/v5.json",
+      "bytes": 3947,
+      "sha256": "de6ead05512dca11a022e138a14a9000e536732986a447f8cb721e5d567a67ae"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_300_525/control.json",
+      "bytes": 2985,
+      "sha256": "7c31c6aecc4940012bd14fdc2877ad5f6e9ef8d695c59867dc693a7ddae4cf78"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_300_525/teacher_student.json",
+      "bytes": 3001,
+      "sha256": "c95cbe61a3924c3b339664790637f12cad18ed8a6cef99474c9cdb9a62ee7c6b"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_3586_3811/v5.json",
+      "bytes": 3953,
+      "sha256": "ddb66388cb83bc96c924b2797c48361bf55946cfebb949c011a26dc5473f96a6"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_3586_3811/control.json",
+      "bytes": 2991,
+      "sha256": "2b3d8af0a5924f5b09eb2530e3fe735fcd002a17c3bc78f941c191e03f95ea95"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_3586_3811/teacher_student.json",
+      "bytes": 3008,
+      "sha256": "96e462cc337a299f599ccff91f4c9b4446bb7ffce88866f88e0b91546df3753f"
+    }
+  ],
+  "rows": [
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "teacher_selected_step": 2000,
+      "control_selected_step": 0,
+      "control_v5_latent_file_SHA_equal": true,
+      "teacher_student_latent_metrics": {
+        "hr_latent_mse": 0.20564550161361694,
+        "legacy_ewarp_l1": 0.19841217994689941,
+        "teacher_mse": 0.029040616005659103,
+        "hr_residual_ewarp_l1": 0.17628712952136993,
+        "hr_target_ewarp_l1": 0.24277754127979279,
+        "teacher_residual_ewarp_l1": 0.08616046607494354,
+        "teacher_target_ewarp_l1": 0.20807784795761108
+      },
+      "v5_latent_metrics": {
+        "hr_latent_mse": 0.2339930534362793,
+        "legacy_ewarp_l1": 0.17247891426086426,
+        "teacher_mse": 0.05879592150449753,
+        "hr_residual_ewarp_l1": 0.18642276525497437,
+        "hr_target_ewarp_l1": 0.24277754127979279,
+        "teacher_residual_ewarp_l1": 0.11361177265644073,
+        "teacher_target_ewarp_l1": 0.20807784795761108
+      },
+      "teacher_vs_v5_percent": {
+        "hr_latent_mse": -12.114698024735137,
+        "legacy_ewarp_l1": 15.035615105283306,
+        "teacher_mse": -50.60777131720322,
+        "hr_residual_ewarp_l1": -5.4369088022815815,
+        "hr_target_ewarp_l1": 0.0,
+        "teacher_residual_ewarp_l1": -24.16237854549571,
+        "teacher_target_ewarp_l1": 0.0
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "teacher_selected_step": 2000,
+      "control_selected_step": 0,
+      "control_v5_latent_file_SHA_equal": true,
+      "teacher_student_latent_metrics": {
+        "hr_latent_mse": 0.10536304861307144,
+        "legacy_ewarp_l1": 0.2947567105293274,
+        "teacher_mse": 0.03347375616431236,
+        "hr_residual_ewarp_l1": 0.16329839825630188,
+        "hr_target_ewarp_l1": 0.331582635641098,
+        "teacher_residual_ewarp_l1": 0.094357430934906,
+        "teacher_target_ewarp_l1": 0.3156367540359497
+      },
+      "v5_latent_metrics": {
+        "hr_latent_mse": 0.11481086909770966,
+        "legacy_ewarp_l1": 0.24849843978881836,
+        "teacher_mse": 0.048572905361652374,
+        "hr_residual_ewarp_l1": 0.17461808025836945,
+        "hr_target_ewarp_l1": 0.331582635641098,
+        "teacher_residual_ewarp_l1": 0.1271093785762787,
+        "teacher_target_ewarp_l1": 0.3156367540359497
+      },
+      "teacher_vs_v5_percent": {
+        "hr_latent_mse": -8.229029671918653,
+        "legacy_ewarp_l1": 18.61511516121419,
+        "teacher_mse": -31.085538501183784,
+        "hr_residual_ewarp_l1": -6.482537195070903,
+        "hr_target_ewarp_l1": 0.0,
+        "teacher_residual_ewarp_l1": -25.766743578026496,
+        "teacher_target_ewarp_l1": 0.0
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "teacher_selected_step": 2000,
+      "control_selected_step": 0,
+      "control_v5_latent_file_SHA_equal": true,
+      "teacher_student_latent_metrics": {
+        "hr_latent_mse": 0.10598552972078323,
+        "legacy_ewarp_l1": 0.2945653200149536,
+        "teacher_mse": 0.03025881201028824,
+        "hr_residual_ewarp_l1": 0.17203491926193237,
+        "hr_target_ewarp_l1": 0.33095043897628784,
+        "teacher_residual_ewarp_l1": 0.0974399596452713,
+        "teacher_target_ewarp_l1": 0.3125014305114746
+      },
+      "v5_latent_metrics": {
+        "hr_latent_mse": 0.12903106212615967,
+        "legacy_ewarp_l1": 0.26063963770866394,
+        "teacher_mse": 0.04686408117413521,
+        "hr_residual_ewarp_l1": 0.18119923770427704,
+        "hr_target_ewarp_l1": 0.33095043897628784,
+        "teacher_residual_ewarp_l1": 0.12201930582523346,
+        "teacher_target_ewarp_l1": 0.3125014305114746
+      },
+      "teacher_vs_v5_percent": {
+        "hr_latent_mse": -17.860453154174415,
+        "legacy_ewarp_l1": 13.016317320165594,
+        "teacher_mse": -35.43282776023271,
+        "hr_residual_ewarp_l1": -5.05759216123256,
+        "hr_target_ewarp_l1": 0.0,
+        "teacher_residual_ewarp_l1": -20.143817417849274,
+        "teacher_target_ewarp_l1": 0.0
+      }
+    }
+  ],
+  "equal_clip_teacher_vs_v5_percent": {
+    "hr_latent_mse": -12.732618302519016,
+    "legacy_ewarp_l1": 15.568452667103628,
+    "teacher_mse": -39.848644910444364,
+    "hr_residual_ewarp_l1": -5.646878039026837,
+    "hr_target_ewarp_l1": 0.0,
+    "teacher_residual_ewarp_l1": -23.37279968451019,
+    "teacher_target_ewarp_l1": 0.0
+  },
+  "no_new_model_forward_decode_or_optimizer": true,
+  "all67_tokens_66_flow_pairs": true,
+  "full226_pixel_evaluation_completed": false,
+  "visual_quality_passed": false,
+  "limits": [
+    "Raw latent eWarp is unconditioned warped-prediction difference; target-residual eWarp measures discrepancy from target motion. Neither alone establishes perceptual video quality.",
+    "Three dev windows from two films; no test or formal16dev.",
+    "All three control step0 prediction files have same SHA as original v5 prediction files in this actual evaluation."
+  ],
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "b8d9355fd5299b2e83210edac819f381591297e4dd58d52abadadc3bc0268c6e",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

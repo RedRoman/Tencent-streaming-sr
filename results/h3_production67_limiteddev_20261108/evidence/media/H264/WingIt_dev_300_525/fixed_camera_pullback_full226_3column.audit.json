@@ -1,0 +1,83 @@
+{
+  "expected_duration_seconds": 9.416666666666666,
+  "expected_fps": 24,
+  "expected_frames": 226,
+  "schema_version": 1,
+  "status": "passed",
+  "tool": "h3_decode_audit.swift",
+  "video_count": 1,
+  "videos": [
+    {
+      "asset_duration": {
+        "epoch": 0,
+        "seconds": 9.4169921875,
+        "timescale": 12288,
+        "value": 115716
+      },
+      "bytes": 7059879,
+      "cadence_errors": 0,
+      "codecs": [
+        "avc1"
+      ],
+      "decoded_frames": 226,
+      "decoded_sizes": [
+        "1536x624"
+      ],
+      "decoder": "AVAssetReader / Version 26.3.1 (a) (Build 25D771280a) / decoded 32BGRA CVPixelBuffer",
+      "elapsed_seconds": 0.21160900592803955,
+      "errors": [],
+      "first_pts": {
+        "epoch": 0,
+        "seconds": 0,
+        "timescale": 12288,
+        "value": 0
+      },
+      "height": 624,
+      "invalid_pts": 0,
+      "last_pts": {
+        "epoch": 0,
+        "seconds": 9.375,
+        "timescale": 12288,
+        "value": 115200
+      },
+      "last_sample_duration": {
+        "epoch": 0,
+        "seconds": null,
+        "timescale": 0,
+        "value": 0
+      },
+      "max_cadence_error_seconds": 0,
+      "max_pts_delta_seconds": 0.041666666666666664,
+      "min_pts_delta_seconds": 0.041666666666666664,
+      "missing_image_buffers": 0,
+      "nominal_fps": 24,
+      "nonmonotonic_pts": 0,
+      "passed": true,
+      "path": "fixed_camera_pullback_full226_3column.mp4",
+      "pts_span_seconds": 9.375,
+      "reader_status": "completed",
+      "sha256": "2473aaf8e6b343daa2b1fe65ba3852f740ca5a2081e2db8bf7ac026170ececba",
+      "track_time_range": {
+        "duration": {
+          "epoch": 0,
+          "seconds": 9.4169921875,
+          "timescale": 12288,
+          "value": 115716
+        },
+        "start": {
+          "epoch": 0,
+          "seconds": 0,
+          "timescale": 1,
+          "value": 0
+        }
+      },
+      "width": 1536
+    }
+  ],
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "d83e2d46f2c697699f221026f99cac88339f57d5d6a8cb972db4a810c97e5c3d",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

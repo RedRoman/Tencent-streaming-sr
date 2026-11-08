@@ -1,0 +1,82 @@
+{
+  "schema": "h3-limiteddev-H264-subset-v4",
+  "status": "completed_subset",
+  "adapter_plan_sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8",
+  "render_sha256": "0c871145247fd9b142ce1b3a7d24b09dae28a3bdf3eb478e8b67cceefb3dcead",
+  "subset": "priority",
+  "paths": [
+    "WingIt_dev_3586_3811/comparison_3column.mp4",
+    "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+    "WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+    "ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+    "WingIt_dev_300_525/comparison_3column.mp4",
+    "WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4"
+  ],
+  "results": [
+    {
+      "relative_path": "WingIt_dev_3586_3811/comparison_3column.mp4",
+      "reused_completed": false,
+      "receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column_conversion_receipt.json",
+        "bytes": 5450,
+        "sha256": "e9f860bdd7e4e1595e1d49f32683443181fa0af09a9796cedcab7450fd5d43fa"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+      "reused_completed": false,
+      "receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column_conversion_receipt.json",
+        "bytes": 5803,
+        "sha256": "2322cb15cfc03ed06fc27a42952f6de7a3faa4f63c64e70eb4467117204b50be"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+      "reused_completed": false,
+      "receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column_conversion_receipt.json",
+        "bytes": 5860,
+        "sha256": "9534560de2063491d0adf6839ac95c55f0192cab33417bde28ebe19284287857"
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+      "reused_completed": false,
+      "receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column_conversion_receipt.json",
+        "bytes": 5558,
+        "sha256": "98ee4b4199cf42d65e071bcb2a4dba064c5c5f2236a9241297945e2b710e4cb2"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/comparison_3column.mp4",
+      "reused_completed": false,
+      "receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column_conversion_receipt.json",
+        "bytes": 5424,
+        "sha256": "92e47ea8b74cb180f9aa1024fe044c2f7e97f2d7d9089b51a06da1e4e4c83b5d"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+      "reused_completed": false,
+      "receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column_conversion_receipt.json",
+        "bytes": 5879,
+        "sha256": "c928bc771b20eb6a8971ca432b03bc28fa751b31e7412ac757f7f6fc288823b8"
+      }
+    }
+  ],
+  "actual_H264_completed_count": 6,
+  "full21_video_technical_complete": false,
+  "contacts_delivery_complete_not_claimed": true,
+  "continuous_playback_reviewed": false,
+  "visual_quality_passed": false,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "e7ee073b74c06208dfdad480dc12df4d26b216da9907d31de91573fa39e47a1a",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

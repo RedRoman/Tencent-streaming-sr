@@ -1,0 +1,1608 @@
+{
+  "schema": "h3-limiteddev-retainedRGB-media-plan-v3",
+  "status": "candidate_not_executed",
+  "stage_directory": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3",
+  "dev_order": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "evaluation_plan_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+  "evaluation_execution_manifest_sha256": "f2c12d031e9f8138554aa8048497c58217dd537471be527ac90087ce78131f0a",
+  "frozen_evaluation_plan": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_full226_science_plan_v1.json",
+    "bytes": 20527,
+    "sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737"
+  },
+  "files": {
+    "convert_h3_limiteddev_retained_media_v3.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/convert_h3_limiteddev_retained_media_v3.py",
+      "bytes": 8332,
+      "sha256": "e86f9a9006d2834b6ac89b7b383cc760e7e7d093f18fcd76547801d8208c84e1"
+    },
+    "export_h3_limiteddev_retained_rgb_v3.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/export_h3_limiteddev_retained_rgb_v3.py",
+      "bytes": 8988,
+      "sha256": "0123763253d56b635aa389b0fc60d2c5b17dff4b1e453dc024d3e68c84575d59"
+    },
+    "h3_limiteddev_media_common_v3.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_media_common_v3.py",
+      "bytes": 27322,
+      "sha256": "88e4f5296fdae971e87d432e237fad4027a3fc4d5cebb39ef34ed41b0ef9db3c"
+    },
+    "h3_limiteddev_original_display_identity_policy_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_original_display_identity_policy_v1.json",
+      "bytes": 19278,
+      "sha256": "95e78b52f5be858f6ed209553afd6bbf875f25daec0b383fb780093581a540b4"
+    },
+    "h3_production67_limiteddev_eval_contract_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_production67_limiteddev_eval_contract_v1.py",
+      "bytes": 9568,
+      "sha256": "ca49f41fb1f9398c088d627c16ad9472bca28b59a07dbf72af2b83139f38710f"
+    },
+    "original_Wing300_source_decision_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_Wing300_source_decision_v1.json",
+      "bytes": 16521,
+      "sha256": "e2ac60b0ebda3ab6b7d3c83a759b4f3bdf65faedf48ab69d8c1e34fcfe0547ea"
+    },
+    "original_Wing_media_plan_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_Wing_media_plan_v1.json",
+      "bytes": 13811,
+      "sha256": "6c7cfbb1d6baf0431e1f31e5532f5ae89b7af8c414846c5d913b19438d999b0e"
+    },
+    "original_full226_science_plan_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_full226_science_plan_v1.json",
+      "bytes": 20527,
+      "sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737"
+    },
+    "original_three_column_main_media_requirement_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_main_media_requirement_v1.json",
+      "bytes": 2569,
+      "sha256": "6c445b05c484a837a48a7d21dfd5ab8a9352d6b6cfce2943970b939251de1bf2"
+    },
+    "original_three_column_media_identity_review_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_media_identity_review_v1.json",
+      "bytes": 47768,
+      "sha256": "772cc3386a0f7566e19e5c2cf5c8cdb91c5e997348aea1be9c7a311a24481fa6"
+    },
+    "run_h3_surrogate67_npu4_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/run_h3_surrogate67_npu4_v1.py",
+      "bytes": 22386,
+      "sha256": "fd50e29519d7deeee4ca0f7663ca5ec11575009a6a6e8b958af5e3fdf8855cc5"
+    }
+  },
+  "source_crop_authority": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_Wing_media_plan_v1.json",
+    "bytes": 13811,
+    "sha256": "6c7cfbb1d6baf0431e1f31e5532f5ae89b7af8c414846c5d913b19438d999b0e"
+  },
+  "motion_source_authority": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_Wing300_source_decision_v1.json",
+    "bytes": 16521,
+    "sha256": "e2ac60b0ebda3ab6b7d3c83a759b4f3bdf65faedf48ab69d8c1e34fcfe0547ea"
+  },
+  "authority_originals": {
+    "Wing_face_hand": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/h3_production67_wing_media_plan_v1.json",
+      "bytes": 13811,
+      "sha256": "6c7cfbb1d6baf0431e1f31e5532f5ae89b7af8c414846c5d913b19438d999b0e"
+    },
+    "Wing300_camera_motion": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/formal_source_capacity_20261107/wing300_root_source_decision_v1/wing300_source_decision.json",
+      "bytes": 16521,
+      "sha256": "e2ac60b0ebda3ab6b7d3c83a759b4f3bdf65faedf48ab69d8c1e34fcfe0547ea"
+    },
+    "science": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_plan_v1.json",
+      "bytes": 20527,
+      "sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737"
+    }
+  },
+  "shape": [
+    226,
+    1080,
+    1920,
+    3
+  ],
+  "fps": 24,
+  "duration_seconds": 9.416666666666666,
+  "preview_wh": [
+    2880,
+    652
+  ],
+  "preview_layout": "One synchronized three-column row: frozen teacher-arm best causal candidate, Open H3 original bidirectional upsampler, GT reference accepted native HR. Each960x540 exact2x box average nearest-even,112px identity header with round/selected step/full weightSHA/actual precision and explicit0.5x scale.",
+  "native_video_wh": [
+    1920,
+    1080
+  ],
+  "native_crop_contact_wh": [
+    1536,
+    624
+  ],
+  "crops": {
+    "WingIt_dev_3586_3811": [
+      {
+        "frame": 0,
+        "source_frame": 3586,
+        "region": "dog_face",
+        "xywh": [
+          560,
+          48,
+          512,
+          512
+        ],
+        "selected_from_native_source_only": true,
+        "selection_kind": "prior_native_source_face_hand_definition",
+        "selected_from_model_outputs": false,
+        "id": "source_face_hand_1"
+      },
+      {
+        "frame": 0,
+        "source_frame": 3586,
+        "region": "cat_face_hand",
+        "xywh": [
+          1008,
+          560,
+          512,
+          512
+        ],
+        "selected_from_native_source_only": true,
+        "selection_kind": "prior_native_source_face_hand_definition",
+        "selected_from_model_outputs": false,
+        "id": "source_face_hand_2"
+      },
+      {
+        "frame": 113,
+        "source_frame": 3699,
+        "region": "dog_face",
+        "xywh": [
+          512,
+          80,
+          512,
+          512
+        ],
+        "selected_from_native_source_only": true,
+        "selection_kind": "prior_native_source_face_hand_definition",
+        "selected_from_model_outputs": false,
+        "id": "source_face_hand_3"
+      },
+      {
+        "frame": 113,
+        "source_frame": 3699,
+        "region": "cat_face_hand",
+        "xywh": [
+          1072,
+          360,
+          512,
+          512
+        ],
+        "selected_from_native_source_only": true,
+        "selection_kind": "prior_native_source_face_hand_definition",
+        "selected_from_model_outputs": false,
+        "id": "source_face_hand_4"
+      },
+      {
+        "frame": 225,
+        "source_frame": 3811,
+        "region": "dog_face",
+        "xywh": [
+          352,
+          32,
+          512,
+          512
+        ],
+        "selected_from_native_source_only": true,
+        "selection_kind": "prior_native_source_face_hand_definition",
+        "selected_from_model_outputs": false,
+        "id": "source_face_hand_5"
+      },
+      {
+        "frame": 225,
+        "source_frame": 3811,
+        "region": "cat_face_hand",
+        "xywh": [
+          1072,
+          328,
+          512,
+          512
+        ],
+        "selected_from_native_source_only": true,
+        "selection_kind": "prior_native_source_face_hand_definition",
+        "selected_from_model_outputs": false,
+        "id": "source_face_hand_6"
+      }
+    ],
+    "ElephantsDream_dev_13070_13295": [
+      {
+        "id": "fixed_grid_f0_x0_y0",
+        "frame": 0,
+        "xywh": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x512_y0",
+        "frame": 0,
+        "xywh": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1024_y0",
+        "frame": 0,
+        "xywh": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1408_y0",
+        "frame": 0,
+        "xywh": [
+          1408,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x0_y284",
+        "frame": 0,
+        "xywh": [
+          0,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x512_y284",
+        "frame": 0,
+        "xywh": [
+          512,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1024_y284",
+        "frame": 0,
+        "xywh": [
+          1024,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1408_y284",
+        "frame": 0,
+        "xywh": [
+          1408,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x0_y568",
+        "frame": 0,
+        "xywh": [
+          0,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x512_y568",
+        "frame": 0,
+        "xywh": [
+          512,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1024_y568",
+        "frame": 0,
+        "xywh": [
+          1024,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1408_y568",
+        "frame": 0,
+        "xywh": [
+          1408,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x0_y0",
+        "frame": 113,
+        "xywh": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x512_y0",
+        "frame": 113,
+        "xywh": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1024_y0",
+        "frame": 113,
+        "xywh": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1408_y0",
+        "frame": 113,
+        "xywh": [
+          1408,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x0_y284",
+        "frame": 113,
+        "xywh": [
+          0,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x512_y284",
+        "frame": 113,
+        "xywh": [
+          512,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1024_y284",
+        "frame": 113,
+        "xywh": [
+          1024,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1408_y284",
+        "frame": 113,
+        "xywh": [
+          1408,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x0_y568",
+        "frame": 113,
+        "xywh": [
+          0,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x512_y568",
+        "frame": 113,
+        "xywh": [
+          512,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1024_y568",
+        "frame": 113,
+        "xywh": [
+          1024,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1408_y568",
+        "frame": 113,
+        "xywh": [
+          1408,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13183
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x0_y0",
+        "frame": 225,
+        "xywh": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x512_y0",
+        "frame": 225,
+        "xywh": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1024_y0",
+        "frame": 225,
+        "xywh": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1408_y0",
+        "frame": 225,
+        "xywh": [
+          1408,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x0_y284",
+        "frame": 225,
+        "xywh": [
+          0,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x512_y284",
+        "frame": 225,
+        "xywh": [
+          512,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1024_y284",
+        "frame": 225,
+        "xywh": [
+          1024,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1408_y284",
+        "frame": 225,
+        "xywh": [
+          1408,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x0_y568",
+        "frame": 225,
+        "xywh": [
+          0,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x512_y568",
+        "frame": 225,
+        "xywh": [
+          512,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1024_y568",
+        "frame": 225,
+        "xywh": [
+          1024,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1408_y568",
+        "frame": 225,
+        "xywh": [
+          1408,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      }
+    ],
+    "WingIt_dev_300_525": [
+      {
+        "id": "fixed_grid_f0_x0_y0",
+        "frame": 0,
+        "xywh": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x512_y0",
+        "frame": 0,
+        "xywh": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1024_y0",
+        "frame": 0,
+        "xywh": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1408_y0",
+        "frame": 0,
+        "xywh": [
+          1408,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x0_y284",
+        "frame": 0,
+        "xywh": [
+          0,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x512_y284",
+        "frame": 0,
+        "xywh": [
+          512,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1024_y284",
+        "frame": 0,
+        "xywh": [
+          1024,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1408_y284",
+        "frame": 0,
+        "xywh": [
+          1408,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x0_y568",
+        "frame": 0,
+        "xywh": [
+          0,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x512_y568",
+        "frame": 0,
+        "xywh": [
+          512,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1024_y568",
+        "frame": 0,
+        "xywh": [
+          1024,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f0_x1408_y568",
+        "frame": 0,
+        "xywh": [
+          1408,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 300
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x0_y0",
+        "frame": 113,
+        "xywh": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x512_y0",
+        "frame": 113,
+        "xywh": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1024_y0",
+        "frame": 113,
+        "xywh": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1408_y0",
+        "frame": 113,
+        "xywh": [
+          1408,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x0_y284",
+        "frame": 113,
+        "xywh": [
+          0,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x512_y284",
+        "frame": 113,
+        "xywh": [
+          512,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1024_y284",
+        "frame": 113,
+        "xywh": [
+          1024,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1408_y284",
+        "frame": 113,
+        "xywh": [
+          1408,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x0_y568",
+        "frame": 113,
+        "xywh": [
+          0,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x512_y568",
+        "frame": 113,
+        "xywh": [
+          512,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1024_y568",
+        "frame": 113,
+        "xywh": [
+          1024,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f113_x1408_y568",
+        "frame": 113,
+        "xywh": [
+          1408,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 413
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x0_y0",
+        "frame": 225,
+        "xywh": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x512_y0",
+        "frame": 225,
+        "xywh": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1024_y0",
+        "frame": 225,
+        "xywh": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1408_y0",
+        "frame": 225,
+        "xywh": [
+          1408,
+          0,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x0_y284",
+        "frame": 225,
+        "xywh": [
+          0,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x512_y284",
+        "frame": 225,
+        "xywh": [
+          512,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1024_y284",
+        "frame": 225,
+        "xywh": [
+          1024,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1408_y284",
+        "frame": 225,
+        "xywh": [
+          1408,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x0_y568",
+        "frame": 225,
+        "xywh": [
+          0,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x512_y568",
+        "frame": 225,
+        "xywh": [
+          512,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1024_y568",
+        "frame": 225,
+        "xywh": [
+          1024,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "fixed_grid_f225_x1408_y568",
+        "frame": 225,
+        "xywh": [
+          1408,
+          568,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 525
+        }
+      },
+      {
+        "id": "source_camera_pullback_438",
+        "frame": 138,
+        "xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "fixed_center_during_previously_source_reviewed438to443_camera_pullback_not_model_selected",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 438
+        }
+      },
+      {
+        "id": "source_camera_pullback_439",
+        "frame": 139,
+        "xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "fixed_center_during_previously_source_reviewed438to443_camera_pullback_not_model_selected",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 439
+        }
+      },
+      {
+        "id": "source_camera_pullback_440",
+        "frame": 140,
+        "xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "fixed_center_during_previously_source_reviewed438to443_camera_pullback_not_model_selected",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 440
+        }
+      },
+      {
+        "id": "source_camera_pullback_441",
+        "frame": 141,
+        "xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "fixed_center_during_previously_source_reviewed438to443_camera_pullback_not_model_selected",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 441
+        }
+      },
+      {
+        "id": "source_camera_pullback_442",
+        "frame": 142,
+        "xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "fixed_center_during_previously_source_reviewed438to443_camera_pullback_not_model_selected",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 442
+        }
+      },
+      {
+        "id": "source_camera_pullback_443",
+        "frame": 143,
+        "xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "fixed_center_during_previously_source_reviewed438to443_camera_pullback_not_model_selected",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 443
+        }
+      }
+    ]
+  },
+  "counts": {
+    "comparison_videos": 3,
+    "native1080_videos": 15,
+    "native_crop_contacts": 84,
+    "scientific_decodes": 0,
+    "model_forwards": 0,
+    "metric_evaluations": 0,
+    "optimizer_updates": 0,
+    "temporal_crop_videos": 3
+  },
+  "ffmpeg": {
+    "path": "/usr/local/ffmpeg/bin/ffmpeg",
+    "bytes": 267408,
+    "sha256": "93297f600fed448a70cc23fa49e5a0e152cf23d0a0a80b7977801b980a443f23"
+  },
+  "ffmpeg_prior_actual_evidence": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_wing_media_20261107/delivery_v1/extracted/export/report.json",
+    "bytes": 11158,
+    "sha256": "960dc3a9de0c491f5cc9ffc50b5567977b0fa5c47e247126e9cd83b614e3c6b1"
+  },
+  "ffmpeg_prior_version": "ffmpeg version 4.2 Copyright (c) 2000-2019 the FFmpeg developers",
+  "original_codec": "mpeg4/q2/yuv420p; explicit same CPU encoder, no libx264 claim/no fallback",
+  "local_H264_tools": {
+    "avconvert": {
+      "path": "/usr/bin/avconvert",
+      "bytes": 227200,
+      "sha256": "9219b2bbefe96fef5fd9c1a0d240e2267a2b32447bf1ea7c0718365a24f177d9"
+    },
+    "auditor": {
+      "path": "/path/to/staging/h3_decode_audit",
+      "bytes": 199152,
+      "sha256": "1ca198709f35603ae53208fb1de821275628e200d583097167163fa8bcc667ed"
+    }
+  },
+  "H264_flow": "Separate local input-root with exact complete render receipt SHA and member whitelist; all21 avconvert HighestQuality copies into newattempt, full h3_decode_audit each226/24/codec/dimensions/PTS/SHA. No original overwritten. No array/cache download required.",
+  "minimum_render_free_bytes": 17179869184,
+  "minimum_H264_free_bytes": 8589934592,
+  "attempts": "Explicit positive attempt; initial1; later attempt only after allprior failure evidence and exact preceding failureSHA. No automatic retry/waiter. Global writerflock, exclusive outputs, only owned childPGID termination/reap.",
+  "limits": [
+    "Fixed three dev windows, only two films; two Wing windows correlated. No model-dependent crop/window/frame selection.",
+    "Six priorWing face/hand crops retain original source definitions. ED and Wing300 use fixed all-canvas grids at0/113/225, explicitly not claimed face/hand localization. Additional Wing300 central512 source-camera438..443 positions are predeclared.",
+    "Input arrays are alreadyvisible1080; no extra4-rowcrop, normalization, dequantization, latent or model access. NPYfileSHA and rawRGBsequenceSHA are separate.",
+    "Comparison preview is spatially reduced display-only. Native single routes and512crops do not spatiallyresize; original NPY remains authoritative.",
+    "Original MPEG4 and separate H264 are lossy inspection videos, not metric recomputation or original colorimetric equivalence.",
+    "Technical full226/24fps/PTS/codec/wholeSHA audit does not establish native24fps subjective playback or visual success.",
+    "No public upload here. Private rawprovenance must be sanitized and mapped original/publicSHA in a separate future publication step.",
+    "Three full226/24 fixed source ROI three-column videos required;84 still contacts do not replace full-time media or actual24fps subjective review.",
+    "Main causal column is the frozen teacher-arm best checkpoint, not a cross-arm/experiment ranking or latest step. Failed full226 keeps the same candidate and shows PROVISIONAL/FAILED; no fallback/reselection.",
+    "Original bidirectional teacher and nativeGT identities must match the reviewed perdev policy. Teacher is not native truth; decodedHR and enlargedLR cannot be GT.",
+    "Full selected weightSHA is visible in every main/crop header; no truncation. Single1920x1080 files retain unmodifiedRGB and carry identity through filename/manifest.",
+    "Open-H3 integrated released author LatentResizer3D upsampler only, original bidirectional temporal convolutions and original clip-wide GroupNorm. Not the complete Open-H3/refiner pipeline or a claim of private BF16 production elementwise parity."
+  ],
+  "actual_full226_input_available": false,
+  "actual_media_rendered": false,
+  "test_unlocked": false,
+  "formal16dev_claim": false,
+  "temporal_crops": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "route": "fixed_dog_face_full226",
+      "xywh": [
+        560,
+        48,
+        512,
+        512
+      ],
+      "source_definition_index": 0,
+      "source_region": "dog_face"
+    },
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "route": "fixed_cat_face_hand_full226",
+      "xywh": [
+        1008,
+        560,
+        512,
+        512
+      ],
+      "source_definition_index": 1,
+      "source_region": "cat_face_hand"
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "route": "fixed_camera_pullback_full226",
+      "xywh": [
+        704,
+        284,
+        512,
+        512
+      ],
+      "source_definition_index": null,
+      "source_region": "fixed_central_camera_pullback_region"
+    }
+  ],
+  "temporal_crop_wh": [
+    1536,
+    624
+  ],
+  "temporal_crop_semantics": "Three full226/24 fixed-source unscaled512 crop videos: two Wing3586 face/face-hand rectangles and one Wing300 center[704,284,512,512] matching prior six source-camera pullback contacts. No tracking/adaptation/model selection. Three columns,112px identity headers; subjects may leave ROI.",
+  "prior_candidate_not_executed": {
+    "path": "/path/to/staging/h3_limiteddev_retained_rgb_media_preparation_v2.json",
+    "bytes": 10845,
+    "sha256": "085d8c1742bb78dc4bd1ff5dd9d940b5cc5b08497335492fbe99239ee4ac2a99"
+  },
+  "round": "limiteddev_20261107",
+  "native_routes": [
+    "native_hr",
+    "teacher",
+    "v5",
+    "control",
+    "teacher_student"
+  ],
+  "main_routes": [
+    "teacher_student",
+    "teacher",
+    "native_hr"
+  ],
+  "primary_causal_selection": "frozen_teacher_arm_best_checkpoint_no_cross_arm_ranking",
+  "label_header_pixels": 112,
+  "display_requirement": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_main_media_requirement_v1.json",
+    "bytes": 2569,
+    "sha256": "6c445b05c484a837a48a7d21dfd5ab8a9352d6b6cfce2943970b939251de1bf2"
+  },
+  "display_identity_review": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_media_identity_review_v1.json",
+    "bytes": 47768,
+    "sha256": "772cc3386a0f7566e19e5c2cf5c8cdb91c5e997348aea1be9c7a311a24481fa6"
+  },
+  "display_identity_policy": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_original_display_identity_policy_v1.json",
+    "bytes": 19278,
+    "sha256": "95e78b52f5be858f6ed209553afd6bbf875f25daec0b383fb780093581a540b4"
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "77f4d052ae16a042ff9f1df0bf15788e0615a1c17c0462c4d70a971516a38d62",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

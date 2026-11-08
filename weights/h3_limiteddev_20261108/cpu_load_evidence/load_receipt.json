@@ -1,0 +1,47 @@
+{
+  "actual_decoder_count": 0,
+  "actual_device_runtime_loaded_by_loader": false,
+  "actual_forward_count": 0,
+  "actual_parameter_count": 345280216,
+  "actual_parameter_devices": [
+    "cpu"
+  ],
+  "actual_scientific_forward_or_decode": false,
+  "actual_tensor_count": 322,
+  "aligned_initialization_called": false,
+  "backend_autoload": "0",
+  "config_sha256": "ad1c03b0e59af4bfe30c57d20628647762575a44a0f4874a574bb3f5f36be706",
+  "device_visibility": {
+    "ASCEND_RT_VISIBLE_DEVICES": "",
+    "ASCEND_VISIBLE_DEVICES": "",
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "explicit_target": [
+    67,
+    68,
+    120
+  ],
+  "optimizer_or_rng_loaded": false,
+  "source_sha256": {
+    "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+    "h3_conv3d_explicit_target_v1.py": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6",
+    "h3_production67_geometry_v1.py": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383",
+    "upscaler.py": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+    "upscaler_node.py": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437"
+  },
+  "status": "cpu_load_and_322_tensor_bitwise_checks_passed",
+  "strict_deterministic": true,
+  "torch_npu_imported": false,
+  "torch_version": "2.7.1+cpu",
+  "warn_only": false,
+  "weights": {
+    "bytes": 1381220283,
+    "sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5"
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "35cb2e1d2dcff795699c7da1b553112810d18fdccbbf431e16b2e448223beafc",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

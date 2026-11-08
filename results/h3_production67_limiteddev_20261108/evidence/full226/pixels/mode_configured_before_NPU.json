@@ -1,0 +1,22 @@
+{
+  "stage": "pixels",
+  "mode": {
+    "deterministic_algorithms": true,
+    "warn_only": false
+  },
+  "NPU_initialized": false,
+  "torch": "2.7.1+cpu",
+  "torch_npu": "2.7.1.post2",
+  "CANN_vendor": {
+    "find_spec_origin": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/python/site-packages/tbe/__init__.py",
+    "tbe_init_sha256": "edea56738f5239851bf84b2f0ff88aced003bf14a2ec1b1eafa90118ccaa64cc",
+    "import_executed": true,
+    "imported_origin": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/python/site-packages/tbe/__init__.py"
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "06969e3831ac02167268126cd80e88576f03bc1f856f61d31d3517c948e6956f",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

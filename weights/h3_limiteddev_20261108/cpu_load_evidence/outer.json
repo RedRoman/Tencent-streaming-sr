@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-08T05:38:24.761552+00:00",
+  "finished_utc": "2026-11-08T05:38:48.720152+00:00",
+  "parent_pid": 1776181,
+  "child_pid": 1776182,
+  "child_pgid": 1776182,
+  "exit_code": 0,
+  "child_reaped": true,
+  "timed_out": false,
+  "source_files": {
+    "load_h3_limiteddev_inference.py": {
+      "bytes": 13890,
+      "sha256": "5664fd98b25b7d915b3796b7e73ba4df0369fad9a614e0ddecf3f33f10b36a66"
+    },
+    "h3_limiteddev_teacher_step2000_config.json": {
+      "bytes": 4959,
+      "sha256": "ad1c03b0e59af4bfe30c57d20628647762575a44a0f4874a574bb3f5f36be706"
+    }
+  },
+  "log": {
+    "bytes": 1349,
+    "sha256": "2f5d645d598c0ccec2b59506f460037658179c62bcba09c1a85e965a77a1d242"
+  },
+  "load_receipt": {
+    "bytes": 1467,
+    "sha256": "35cb2e1d2dcff795699c7da1b553112810d18fdccbbf431e16b2e448223beafc"
+  },
+  "optimizer_updates": 0,
+  "scientific_forward_count": 0,
+  "decoder_count": 0,
+  "NPU_actions": 0,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "aacdd100c5b18de594d2b9ee1aa70c3514691e9c07de810ed135bb350c2536d2",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

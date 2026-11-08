@@ -1,0 +1,196 @@
+{
+  "observed_utc": "2026-11-08T05:17:55.028168+00:00",
+  "scope": "readonly_compact_actual_metadata_no_payload_read",
+  "arms": {
+    "control": {
+      "attempt": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/attempt.json",
+        "bytes": 19484623,
+        "sha256": "13f6c45df48b4ab5594bd0eaddd1e89785c3e8078f7325e85f24c74613239111"
+      },
+      "status_fields": {
+        "status": "completed2000_awaiting_separate_full226_dev_gate",
+        "completed_updates": 2000,
+        "optimizer_updates_this_attempt": 2000,
+        "last_confirmed_optimizer_update": 2000,
+        "optimizer_step_started": false,
+        "partial_optimizer_update_possible": null,
+        "exception": null,
+        "exception_type": null
+      },
+      "steps": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/steps.jsonl",
+        "bytes": 9495090,
+        "sha256": "1f90ac4a26acbff4d8d43ff529348d16aef1516a27f4c97d04644dc6de39d09c",
+        "complete_rows": 2000,
+        "partial_lines": 0,
+        "sequential": true,
+        "one_optimizer_update_each": true,
+        "all_numeric_finite": true,
+        "last": {
+          "step": 2000,
+          "sample_id": "Caminandes3_train_168_393",
+          "lr": 1e-06,
+          "loss": 0.11853182315826416,
+          "gradient_norm_before_clip": 0.7444819211959839,
+          "seconds": 24.524604727514088
+        }
+      },
+      "launch": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/launches/control_attempt1.json",
+        "bytes": 11554,
+        "sha256": "5f7218eb6f610de69a09448747641dab94a9b597796eb3cb27d2ab43b0440398",
+        "data": {
+          "status": "completed",
+          "parent_pid": 1806359,
+          "child_pid": 1806976,
+          "child_pgid": 1806976,
+          "physical_npu": 4,
+          "started_utc": "2026-11-07T00:54:21.365101+00:00",
+          "finished_utc": "2026-11-08T05:10:19.238790+00:00",
+          "exit_code": 0,
+          "optimizer_updates": 2000
+        }
+      },
+      "latest_checkpoint_receipt": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_2000.receipt.json",
+        "bytes": 573,
+        "sha256": "9156a9b332ee104654db2e82c5636af5991f4f4486d6c7b4102559a0533d9d86",
+        "data": {
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_2000.pt",
+          "bytes": 4149003725,
+          "sha256": "f899290591cd9b33e7fc05c3e848a7f9cd5e98d7d746f36fcc2644713b461ce4",
+          "completed_updates": 2000,
+          "arm": "control",
+          "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+          "schedule_sha256": "d28ba8684c0963226a0e946e32eeacbc25566b9a0f5ae34f716f1eca929a7ad6",
+          "registry_sha256": "729586146a7f329feed9fe40731651ca1d1a4c3b5a8dfe453b4e29d662c351ac"
+        }
+      },
+      "selection": {
+        "best_step": 0,
+        "best_score": 0.042039719891423986,
+        "history_count": 11,
+        "last": {
+          "step": 2000,
+          "metrics": {
+            "hr_pixel_l1": 0.014631981961429119,
+            "hr_lpips": 0.0737445702155431,
+            "teacher_pixel_l1": 0.013437543374796709,
+            "teacher_lpips": 0.048606625447670616,
+            "teacher_motion_l1": 0.04235505064328512,
+            "teacher_delta_l1": 0.00788629986345768,
+            "hr_global_score": 0.029380896004537742,
+            "teacher_global_score": 0.023158868464330833,
+            "selection_score": 0.04591365375866493
+          },
+          "guard_pass": true
+        }
+      },
+      "failure_files": [],
+      "processes": {
+        "exit_code": 1,
+        "stdout": "    PID    PPID    PGID                  STARTED STAT COMMAND\n",
+        "stderr": ""
+      }
+    },
+    "teacher": {
+      "attempt": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/attempt.json",
+        "bytes": 19486769,
+        "sha256": "6c02bbf429d24681213bee5392ac7ae41181e1d754c181ca66e6db170636c94f"
+      },
+      "status_fields": {
+        "status": "completed2000_awaiting_separate_full226_dev_gate",
+        "completed_updates": 2000,
+        "optimizer_updates_this_attempt": 2000,
+        "last_confirmed_optimizer_update": 2000,
+        "optimizer_step_started": false,
+        "partial_optimizer_update_possible": null,
+        "exception": null,
+        "exception_type": null
+      },
+      "steps": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/steps.jsonl",
+        "bytes": 9497229,
+        "sha256": "22cfc43e4fe0424dc21a52bc90951654ea2cc4704bc131c2deea1ebe2d4b877a",
+        "complete_rows": 2000,
+        "partial_lines": 0,
+        "sequential": true,
+        "one_optimizer_update_each": true,
+        "all_numeric_finite": true,
+        "last": {
+          "step": 2000,
+          "sample_id": "Caminandes3_train_168_393",
+          "lr": 1e-06,
+          "loss": 0.043557386845350266,
+          "gradient_norm_before_clip": 0.734222948551178,
+          "seconds": 24.495788879692554
+        }
+      },
+      "launch": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/launches/teacher_attempt1.json",
+        "bytes": 11554,
+        "sha256": "d8575eb09d4e0e132105e6465238e94de69a73cc6c4b86ff156dc36f237880c8",
+        "data": {
+          "status": "completed",
+          "parent_pid": 1806847,
+          "child_pid": 1806991,
+          "child_pgid": 1806991,
+          "physical_npu": 7,
+          "started_utc": "2026-11-07T00:54:23.664598+00:00",
+          "finished_utc": "2026-11-08T05:11:53.167732+00:00",
+          "exit_code": 0,
+          "optimizer_updates": 2000
+        }
+      },
+      "latest_checkpoint_receipt": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_2000.receipt.json",
+        "bytes": 573,
+        "sha256": "785e30ce737adeb4821d9b84cacf016c0cc71ab425e82cff36ba73827503cdc3",
+        "data": {
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_2000.pt",
+          "bytes": 4149003725,
+          "sha256": "5e12295767c4ca99b196e9d2abed7837424f6c713b02cb881f8db76f8dcd13b8",
+          "completed_updates": 2000,
+          "arm": "teacher",
+          "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+          "schedule_sha256": "d28ba8684c0963226a0e946e32eeacbc25566b9a0f5ae34f716f1eca929a7ad6",
+          "registry_sha256": "729586146a7f329feed9fe40731651ca1d1a4c3b5a8dfe453b4e29d662c351ac"
+        }
+      },
+      "selection": {
+        "best_step": 2000,
+        "best_score": 0.03095996125290791,
+        "history_count": 11,
+        "last": {
+          "step": 2000,
+          "metrics": {
+            "hr_pixel_l1": 0.016354279903074104,
+            "hr_lpips": 0.08203903088967006,
+            "teacher_pixel_l1": 0.009580027932922045,
+            "teacher_lpips": 0.03265833109617233,
+            "teacher_motion_l1": 0.027070777490735054,
+            "teacher_delta_l1": 0.006564391776919365,
+            "hr_global_score": 0.03276208608100811,
+            "teacher_global_score": 0.016111694152156512,
+            "selection_score": 0.03095996125290791
+          },
+          "guard_pass": true
+        }
+      },
+      "failure_files": [],
+      "processes": {
+        "exit_code": 1,
+        "stdout": "    PID    PPID    PGID                  STARTED STAT COMMAND\n",
+        "stderr": ""
+      }
+    }
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "af2faff441221a8c4e789ed3116bdd933dce7ce408dce5c97ee00ce3ee0abbd3",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

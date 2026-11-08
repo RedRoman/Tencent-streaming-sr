@@ -1,0 +1,37 @@
+{
+  "utc": "2026-11-08T05:39:20.869153+00:00",
+  "files": [
+    {
+      "name": "started.json",
+      "bytes": 2135,
+      "sha256": "e0a843dbe82ab2f977d90885d349bff9e15cdf9468dab8324e582c6e0200cded"
+    },
+    {
+      "name": "outer.json",
+      "bytes": 955,
+      "sha256": "aacdd100c5b18de594d2b9ee1aa70c3514691e9c07de810ed135bb350c2536d2"
+    },
+    {
+      "name": "load_receipt.json",
+      "bytes": 1467,
+      "sha256": "35cb2e1d2dcff795699c7da1b553112810d18fdccbbf431e16b2e448223beafc"
+    },
+    {
+      "name": "child.log",
+      "bytes": 1349,
+      "sha256": "2f5d645d598c0ccec2b59506f460037658179c62bcba09c1a85e965a77a1d242"
+    }
+  ],
+  "post_exit_process_observation": {
+    "exit": 1,
+    "stdout": "    PID    PPID    PGID                  STARTED STAT COMMAND\n"
+  },
+  "root_checks_passed": true,
+  "scope": "Actual new inference loader CPU model-only load and all322 FP32 tensor bitwise equality; no new forward/decoder/NPU/optimizer/GitHub publication",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "4687291fb9f84cab9dff0aba35d6937eaad1475059cb5f474a7ef213f4d1a638",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

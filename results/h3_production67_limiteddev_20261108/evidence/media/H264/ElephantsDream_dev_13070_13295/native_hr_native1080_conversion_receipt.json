@@ -1,0 +1,135 @@
+{
+  "schema": "h3-limiteddev-H264-file-v4",
+  "status": "completed_one_H264_full226_technical_audit",
+  "adapter_plan_sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8",
+  "render_sha256": "0c871145247fd9b142ce1b3a7d24b09dae28a3bdf3eb478e8b67cceefb3dcead",
+  "spec": {
+    "sample_id": "ElephantsDream_dev_13070_13295",
+    "route": "native_hr",
+    "relative_path": "ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+    "width": 1920,
+    "height": 1080
+  },
+  "source": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+    "bytes": 8673595,
+    "sha256": "01d9fea46d7a8b0e46514e99cca1407f46414ba831081a667187f2c371f5312b"
+  },
+  "source_audit": {
+    "path": "/path/to/h3-project/upscaler_production67_limiteddev_media_20261107_v3/attempt_1/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+    "bytes": 28592,
+    "sha256": "e88a2dbac0bc46abf9b9c717a5d3eaa328d34895f4994213019c89773a0e8a75"
+  },
+  "output": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+    "bytes": 9791304,
+    "sha256": "638d3338a047201618c2fbe0307a25733008de466919ee53f43e670375c315d2"
+  },
+  "audit": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+    "bytes": 1995,
+    "sha256": "09dc560fc75857d41767f0952107f43df1299149c6d40b37f99ad2fe25afdd28"
+  },
+  "tools": {
+    "avconvert": {
+      "path": "/usr/bin/avconvert",
+      "bytes": 227200,
+      "sha256": "9219b2bbefe96fef5fd9c1a0d240e2267a2b32447bf1ea7c0718365a24f177d9"
+    },
+    "auditor": {
+      "path": "/path/to/staging/h3_decode_audit",
+      "bytes": 199152,
+      "sha256": "1ca198709f35603ae53208fb1de821275628e200d583097167163fa8bcc667ed"
+    }
+  },
+  "selected_steps": {
+    "control": 0,
+    "teacher": 2000
+  },
+  "labels": {
+    "teacher_student": [
+      "Best causal candidate (teacher arm)",
+      "limiteddev_20261107 | sparse best step 2000",
+      "PROVISIONAL: FULL226 CONDITIONS FAILED",
+      "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+      "abdebc052ee9f18f6780624de912e0b5",
+      "FP32; HF32 off; latent causal"
+    ],
+    "teacher": [
+      "Open H3 original bidirectional upsampler",
+      "Original upstream weight SHA256:",
+      "4f57821f5837f32f7142b67d815606db",
+      "d7550f194e5c769f7d6c3f83b146a5e6",
+      "Latent: FP32 HF32 off; det strict",
+      "Decode: FP32 HF32 off; strictdet"
+    ],
+    "native_hr": [
+      "GT reference | verified native HR",
+      "ED native PNG | publisher 13070..13295",
+      "Aligned native RGB SHA256:",
+      "834b704e6baa0fc35d7440c6050bba1f",
+      "a35d15eba4a1240525ac20545d2fa7e3",
+      "Native 1920x1080; same frame indices"
+    ],
+    "control": [
+      "Control frozen best | step 0"
+    ],
+    "v5": [
+      "Initial v5 | step 1800"
+    ]
+  },
+  "encode_cleanup": {
+    "pid": 29295,
+    "pgid": 29295,
+    "signals": [],
+    "reaped": true,
+    "returncode": 0,
+    "live_group_members_at_end": [],
+    "leader_identity": "already_exited"
+  },
+  "audit_cleanup": {
+    "pid": 29313,
+    "pgid": 29313,
+    "signals": [],
+    "reaped": true,
+    "returncode": 0,
+    "live_group_members_at_end": [],
+    "leader_identity": "already_exited"
+  },
+  "encode_command": [
+    "/usr/bin/avconvert",
+    "--source",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+    "--output",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+    "--preset",
+    "PresetHighestQuality"
+  ],
+  "audit_command": [
+    "/path/to/staging/h3_decode_audit",
+    "--root",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295",
+    "--output",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+    "--expect-frames",
+    "226",
+    "--expect-fps",
+    "24",
+    "--expect-duration",
+    "9.416666666666666",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4"
+  ],
+  "codec": "H264",
+  "no_resize": true,
+  "scientific_decodes": 0,
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "continuous_playback_reviewed": false,
+  "visual_quality_passed": false,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "76939c8a052f5a693e11186d7f5a483f4ea5890cef6184638d807a364baff196",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

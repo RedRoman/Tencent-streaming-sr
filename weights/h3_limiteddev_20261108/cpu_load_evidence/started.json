@@ -1,0 +1,29 @@
+{
+  "status": "running",
+  "started_utc": "2026-11-08T05:38:24.761552+00:00",
+  "parent_pid": 1776181,
+  "child_pid": 1776182,
+  "child_pgid": 1776182,
+  "source_files": {
+    "load_h3_limiteddev_inference.py": {
+      "bytes": 13890,
+      "sha256": "5664fd98b25b7d915b3796b7e73ba4df0369fad9a614e0ddecf3f33f10b36a66"
+    },
+    "h3_limiteddev_teacher_step2000_config.json": {
+      "bytes": 4959,
+      "sha256": "ad1c03b0e59af4bfe30c57d20628647762575a44a0f4874a574bb3f5f36be706"
+    }
+  },
+  "command": [
+    "/path/to/model-assets/runtime/.venv-npu/bin/python",
+    "-c",
+    "import sys,json,os\nfrom pathlib import Path\nsys.path.insert(0,'/path/to/staging/h3_limiteddev_public_inference_20261108_v1')\nimport load_h3_limiteddev_inference as L\nstage=Path('/path/to/staging/h3_production67_limiteddev_eval_20261107_v1')\np=Path('/path/to/staging/h3_limiteddev_public_inference_20261108_v1')\nstudent,receipt=L.load_cpu(p/'h3_limiteddev_teacher_step2000_config.json',config_sha256='ad1c03b0e59af4bfe30c57d20628647762575a44a0f4874a574bb3f5f36be706',checkpoint='/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/best_step_2000.pt',tensor_schema=stage/'h3_causal_v5_tensor_validation.json',source_paths={name:stage/name for name in L.SOURCE_SHAS})\nimport torch\nassert 'torch_npu' not in sys.modules\nassert all(z.device.type=='cpu' for z in student.parameters())\nassert len(student.original_state_dict())==322\nreceipt.update(torch_version=torch.__version__,torch_npu_imported=False,actual_parameter_devices=sorted({str(z.device) for z in student.parameters()}),strict_deterministic=torch.are_deterministic_algorithms_enabled(),warn_only=torch.is_deterministic_algorithms_warn_only_enabled(),backend_autoload=os.environ.get('TORCH_DEVICE_BACKEND_AUTOLOAD'),device_visibility={k:os.environ.get(k) for k in ('ASCEND_VISIBLE_DEVICES','ASCEND_RT_VISIBLE_DEVICES','CUDA_VISIBLE_DEVICES')},actual_scientific_forward_or_decode=False)\nprint(json.dumps(receipt,sort_keys=True,allow_nan=False))\n"
+  ],
+  "scope": "one CPU inference-loader validation; no scientific forwards/decoder/NPU/optimizer",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "e0a843dbe82ab2f977d90885d349bff9e15cdf9468dab8324e582c6e0200cded",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "h3-lpips01-first-actual-forward-crosscheck-v1",
+  "utc": "2026-11-08T12:28:45.681548+00:00",
+  "actual_updates_observed": 3,
+  "first_schedule_equal": true,
+  "raw_terms_count": 21,
+  "raw_terms_equal_count": 21,
+  "raw_terms_exactly_equal": true,
+  "changed_loss": {
+    "old": 0.10591881722211838,
+    "new": 0.10113994032144547,
+    "old_fp32_reconstruction": 0.10591881722211838,
+    "new_fp32_reconstruction": 0.10113994032144547,
+    "reconstruct_old_exact": true,
+    "reconstruct_new_exact": true,
+    "mathematical_expected_delta": -0.004778871685266495,
+    "observed_delta": -0.004778876900672913
+  },
+  "finite_gradient_old": 0.7476558089256287,
+  "finite_gradient_new": 0.7405614852905273,
+  "passed_actual_full_spatial_backward": true,
+  "all_observed_steps_finite": true,
+  "quality_improvement_claim": false,
+  "explanation": "Initial raw terms and input schedule are identical; actual first loss matches FP32 reconstruction with only training LPIPS0.2 changed to0.1. Training loss change is not a quality improvement claim.",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "02a1792e9146087f8958650a50f736a26e55676510ae2d36d35362f9806f122d",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true,
+    "frozen_prepublication_evidence": true
+  }
+}

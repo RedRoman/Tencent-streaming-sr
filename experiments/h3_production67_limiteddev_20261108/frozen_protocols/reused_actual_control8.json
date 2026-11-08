@@ -1,0 +1,5148 @@
+{
+  "status": "passed_engineering_stage",
+  "stage": "control",
+  "plan_sha256": "3976fd0fc4c48770778d4335cdc31f10ee3d2291949b51aa303c982641066070",
+  "data_binding_sha256": "7bfd9bad28d75d4dd2f32b47bc94f72a80dfbaf72d570bd8cd404900011acf0e",
+  "physical_npu": 4,
+  "protocol_sha256": "031a04b660c4380cf330cdd6272dac270f2a9cd605d31165ed3809c30cf1b201",
+  "result": {
+    "schema": "h3-production67-paired8-engineering-v3",
+    "status": "completed_eight_engineering_updates_not_formal_training",
+    "arm": "control",
+    "protocol_sha256": "031a04b660c4380cf330cdd6272dac270f2a9cd605d31165ed3809c30cf1b201",
+    "schedule_sha256": "8c2247653b972e4fd430e5508ef0dab97356dad6b8f600cca8c5cf27ed187511",
+    "schedule": [
+      {
+        "step": 1,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 1.0000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 5,
+            "rgb_frame_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 90,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 91,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 92,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 93,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 94,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 95,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 96,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 97,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 98,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 99,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 100,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 101,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "full_spatial",
+              "tile_row": -1,
+              "tile_column": -1,
+              "target_latent_yx": [
+                0,
+                68,
+                0,
+                120
+              ],
+              "decoder_raw_tile_origin_yx": [
+                0,
+                0
+              ],
+              "decoder_raw_tile_hw": [
+                1088,
+                1920
+              ],
+              "decoder_local_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "raw_global_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "visible_global_box_yx": [
+                0,
+                1080,
+                0,
+                1920
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 44,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 11924,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 0,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 1280,
+                    "denominator": 1
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  2,
+                  702,
+                  0,
+                  1280
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            3,
+            4,
+            6,
+            7
+          ]
+        }
+      },
+      {
+        "step": 2,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 2.0000000000000002e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 9,
+            "rgb_frame_indices": [
+              158,
+              159,
+              160,
+              161,
+              162,
+              163,
+              164,
+              165,
+              166,
+              167,
+              168,
+              169
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 158,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 159,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 160,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 161,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 162,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 163,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 164,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 165,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 166,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 167,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 168,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 169,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 2,
+              "tile_column": 7,
+              "target_latent_yx": [
+                20,
+                36,
+                80,
+                96
+              ],
+              "decoder_raw_tile_origin_yx": [
+                320,
+                1280
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                160,
+                64,
+                192
+              ],
+              "raw_global_box_yx": [
+                416,
+                480,
+                1344,
+                1472
+              ],
+              "visible_global_box_yx": [
+                412,
+                476,
+                1344,
+                1472
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 4576,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 5280,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 896,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 2944,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  269,
+                  311,
+                  896,
+                  982
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            1,
+            6,
+            8
+          ]
+        }
+      },
+      {
+        "step": 3,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 3.0000000000000004e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 7,
+            "rgb_frame_indices": [
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 124,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 125,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 126,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 127,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 128,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 129,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 130,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 131,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 132,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 133,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 134,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 135,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 1,
+              "tile_column": 4,
+              "target_latent_yx": [
+                10,
+                26,
+                44,
+                60
+              ],
+              "decoder_raw_tile_origin_yx": [
+                160,
+                704
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                160,
+                80,
+                192
+              ],
+              "raw_global_box_yx": [
+                256,
+                320,
+                784,
+                896
+              ],
+              "visible_global_box_yx": [
+                252,
+                316,
+                784,
+                896
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 2816,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 3520,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1568,
+                    "denominator": 3
+                  },
+                  {
+                    "numerator": 1792,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  165,
+                  208,
+                  522,
+                  598
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            1,
+            5,
+            11
+          ]
+        }
+      },
+      {
+        "step": 4,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 4.0000000000000003e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 5,
+            "rgb_frame_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 90,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 91,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 92,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 93,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 94,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 95,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 96,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 97,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 98,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 99,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 100,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 101,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 0,
+              "tile_column": 4,
+              "target_latent_yx": [
+                0,
+                16,
+                44,
+                60
+              ],
+              "decoder_raw_tile_origin_yx": [
+                0,
+                704
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                4,
+                160,
+                80,
+                192
+              ],
+              "raw_global_box_yx": [
+                4,
+                160,
+                784,
+                896
+              ],
+              "visible_global_box_yx": [
+                0,
+                156,
+                784,
+                896
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 44,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1760,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1568,
+                    "denominator": 3
+                  },
+                  {
+                    "numerator": 1792,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  2,
+                  104,
+                  522,
+                  598
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            1,
+            6,
+            7,
+            10
+          ]
+        }
+      },
+      {
+        "step": 5,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 5.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 4,
+            "rgb_frame_indices": [
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 73,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 74,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 75,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 76,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 77,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 78,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 79,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 80,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 81,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 82,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 83,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 84,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "full_spatial",
+              "tile_row": -1,
+              "tile_column": -1,
+              "target_latent_yx": [
+                0,
+                68,
+                0,
+                120
+              ],
+              "decoder_raw_tile_origin_yx": [
+                0,
+                0
+              ],
+              "decoder_raw_tile_hw": [
+                1088,
+                1920
+              ],
+              "decoder_local_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "raw_global_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "visible_global_box_yx": [
+                0,
+                1080,
+                0,
+                1920
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 44,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 11924,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 0,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 1280,
+                    "denominator": 1
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  2,
+                  702,
+                  0,
+                  1280
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            5,
+            6,
+            10
+          ]
+        }
+      },
+      {
+        "step": 6,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 6.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 9,
+            "rgb_frame_indices": [
+              158,
+              159,
+              160,
+              161,
+              162,
+              163,
+              164,
+              165,
+              166,
+              167,
+              168,
+              169
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 158,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 159,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 160,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 161,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 162,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 163,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 164,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 165,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 166,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 167,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 168,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 169,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 3,
+              "tile_column": 9,
+              "target_latent_yx": [
+                30,
+                46,
+                104,
+                120
+              ],
+              "decoder_raw_tile_origin_yx": [
+                480,
+                1664
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                176,
+                64,
+                256
+              ],
+              "raw_global_box_yx": [
+                576,
+                656,
+                1728,
+                1920
+              ],
+              "visible_global_box_yx": [
+                572,
+                652,
+                1728,
+                1920
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 6336,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 7216,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1152,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 1280,
+                    "denominator": 1
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  372,
+                  425,
+                  1152,
+                  1280
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            3,
+            5,
+            6,
+            9
+          ]
+        }
+      },
+      {
+        "step": 7,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 7.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 8,
+            "rgb_frame_indices": [
+              141,
+              142,
+              143,
+              144,
+              145,
+              146,
+              147,
+              148,
+              149,
+              150,
+              151,
+              152
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 141,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 142,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 143,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 144,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 145,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 146,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 147,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 148,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 149,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 150,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 151,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 152,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 2,
+              "tile_column": 0,
+              "target_latent_yx": [
+                20,
+                36,
+                0,
+                16
+              ],
+              "decoder_raw_tile_origin_yx": [
+                320,
+                0
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                160,
+                0,
+                176
+              ],
+              "raw_global_box_yx": [
+                416,
+                480,
+                0,
+                176
+              ],
+              "visible_global_box_yx": [
+                412,
+                476,
+                0,
+                176
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 4576,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 5280,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 0,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 352,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  269,
+                  311,
+                  0,
+                  118
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            2,
+            6,
+            10
+          ]
+        }
+      },
+      {
+        "step": 8,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 8.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 11,
+            "rgb_frame_indices": [
+              192,
+              193,
+              194,
+              195,
+              196,
+              197,
+              198,
+              199,
+              200,
+              201,
+              202,
+              203
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 192,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 193,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 194,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 195,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 196,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 197,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 198,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 199,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 200,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 201,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 202,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 203,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 4,
+              "tile_column": 5,
+              "target_latent_yx": [
+                41,
+                57,
+                56,
+                72
+              ],
+              "decoder_raw_tile_origin_yx": [
+                656,
+                896
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                80,
+                176,
+                64,
+                192
+              ],
+              "raw_global_box_yx": [
+                736,
+                832,
+                960,
+                1088
+              ],
+              "visible_global_box_yx": [
+                732,
+                828,
+                960,
+                1088
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 8096,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 9152,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 640,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 2176,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  476,
+                  539,
+                  640,
+                  726
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            1,
+            7,
+            10,
+            11
+          ]
+        }
+      }
+    ],
+    "precision": {
+      "dtype": "float32",
+      "conv_hf32": false,
+      "matmul_hf32": false,
+      "float32_matmul_precision": "highest"
+    },
+    "completed_updates": 8,
+    "optimizer_updates_this_attempt": 8,
+    "first_full_spatial_backward_admission": "passed_actual_same_graph",
+    "optimizer_step_started": false,
+    "resume": null,
+    "admission": {
+      "scope": "real_production67_paired8_engineering",
+      "formal_training_allowed": false,
+      "native_HR_pair_accepted": true,
+      "physical_NPU_locks_held": true,
+      "first_step_admission": "full_spatial_loss_backward_then_finite_nonzero_clip_then_optimizer",
+      "data_acceptance_sha256": "897bdc68c81236829d628a143094c1a4503808c5e57332b4703d8aab728bafc7",
+      "launch_receipt_sha256": "48a2c4b3e0d606313e07430cadf2de80ea60ee1cf7e6ae1dd4a0d801bfd35176"
+    },
+    "formal_training_allowed": false,
+    "original_default_HF32_gate_passed": false,
+    "checkpoints": [
+      {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_paired8_engineering_v1/control/updates/checkpoint_step_003.pt",
+        "bytes": 4143734221,
+        "sha256": "dcd0ae35d3acdf8380f5b4631e536cf09954c6db94e002ffc16c16ce11edf89e",
+        "completed_updates": 3,
+        "arm": "control",
+        "protocol_sha256": "031a04b660c4380cf330cdd6272dac270f2a9cd605d31165ed3809c30cf1b201",
+        "schedule_sha256": "8c2247653b972e4fd430e5508ef0dab97356dad6b8f600cca8c5cf27ed187511"
+      },
+      {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_paired8_engineering_v1/control/updates/checkpoint_step_006.pt",
+        "bytes": 4143734221,
+        "sha256": "56c3841a203e198dd2da196f8e56b9c12d3dd3856f8ca42bfa5c23296fb60681",
+        "completed_updates": 6,
+        "arm": "control",
+        "protocol_sha256": "031a04b660c4380cf330cdd6272dac270f2a9cd605d31165ed3809c30cf1b201",
+        "schedule_sha256": "8c2247653b972e4fd430e5508ef0dab97356dad6b8f600cca8c5cf27ed187511"
+      },
+      {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_paired8_engineering_v1/control/updates/checkpoint_step_008.pt",
+        "bytes": 4143734221,
+        "sha256": "1da23f4dd8b52e4772f3aac163c29b0809b9e23feef74e70c465fe88285b5ab0",
+        "completed_updates": 8,
+        "arm": "control",
+        "protocol_sha256": "031a04b660c4380cf330cdd6272dac270f2a9cd605d31165ed3809c30cf1b201",
+        "schedule_sha256": "8c2247653b972e4fd430e5508ef0dab97356dad6b8f600cca8c5cf27ed187511"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 1.0000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 5,
+            "rgb_frame_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 90,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 91,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 92,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 93,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 94,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 95,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 96,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 97,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 98,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 99,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 100,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 101,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "full_spatial",
+              "tile_row": -1,
+              "tile_column": -1,
+              "target_latent_yx": [
+                0,
+                68,
+                0,
+                120
+              ],
+              "decoder_raw_tile_origin_yx": [
+                0,
+                0
+              ],
+              "decoder_raw_tile_hw": [
+                1088,
+                1920
+              ],
+              "decoder_local_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "raw_global_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "visible_global_box_yx": [
+                0,
+                1080,
+                0,
+                1920
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 44,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 11924,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 0,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 1280,
+                    "denominator": 1
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  2,
+                  702,
+                  0,
+                  1280
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            3,
+            4,
+            6,
+            7
+          ]
+        },
+        "loss": 0.19929800927639008,
+        "hr_latent_mse": 0.11427799612283707,
+        "legacy_ewarp_l1": 0.20322169363498688,
+        "teacher_mse": 0.048836469650268555,
+        "hr_residual_ewarp_l1": 0.19895660877227783,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.12050656974315643,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.012670120224356651,
+        "hr_lpips": 0.08551844209432602,
+        "hr_motion_l1": 0.04348018765449524,
+        "hr_delta_l1": 0.0070067099295556545,
+        "hr_motion_roi_fraction": 0.021542945876717567,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.009230765514075756,
+        "teacher_lpips": 0.04778871685266495,
+        "teacher_motion_l1": 0.026145517826080322,
+        "teacher_delta_l1": 0.004806505050510168,
+        "teacher_motion_roi_fraction": 0.021542945876717567,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 0.8968210816383362,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 108.19036218617111,
+        "peak_allocated": 59366300160,
+        "peak_reserved": 61505273856
+      },
+      {
+        "step": 2,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 2.0000000000000002e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 9,
+            "rgb_frame_indices": [
+              158,
+              159,
+              160,
+              161,
+              162,
+              163,
+              164,
+              165,
+              166,
+              167,
+              168,
+              169
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 158,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 159,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 160,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 161,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 162,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 163,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 164,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 165,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 166,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 167,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 168,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 169,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 2,
+              "tile_column": 7,
+              "target_latent_yx": [
+                20,
+                36,
+                80,
+                96
+              ],
+              "decoder_raw_tile_origin_yx": [
+                320,
+                1280
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                160,
+                64,
+                192
+              ],
+              "raw_global_box_yx": [
+                416,
+                480,
+                1344,
+                1472
+              ],
+              "visible_global_box_yx": [
+                412,
+                476,
+                1344,
+                1472
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 4576,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 5280,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 896,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 2944,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  269,
+                  311,
+                  896,
+                  982
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            1,
+            6,
+            8
+          ]
+        },
+        "loss": 0.22581975162029266,
+        "hr_latent_mse": 0.11405670642852783,
+        "legacy_ewarp_l1": 0.2032240629196167,
+        "teacher_mse": 0.048770971596241,
+        "hr_residual_ewarp_l1": 0.19894692301750183,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.120501808822155,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.03232774883508682,
+        "hr_lpips": 0.10311871021986008,
+        "hr_motion_l1": 0.042675212025642395,
+        "hr_delta_l1": 0.026932593435049057,
+        "hr_motion_roi_fraction": 0.11398039013147354,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.021525906398892403,
+        "teacher_lpips": 0.043254829943180084,
+        "teacher_motion_l1": 0.025337520986795425,
+        "teacher_delta_l1": 0.0177554152905941,
+        "teacher_motion_roi_fraction": 0.11398039013147354,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 1.0238772630691528,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 20.607431383803487,
+        "peak_allocated": 58243817984,
+        "peak_reserved": 64042827776
+      },
+      {
+        "step": 3,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 3.0000000000000004e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 7,
+            "rgb_frame_indices": [
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 124,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 125,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 126,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 127,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 128,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 129,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 130,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 131,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 132,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 133,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 134,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 135,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 7,
+                    "latent_start": 35,
+                    "latent_stop": 42,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 1,
+              "tile_column": 4,
+              "target_latent_yx": [
+                10,
+                26,
+                44,
+                60
+              ],
+              "decoder_raw_tile_origin_yx": [
+                160,
+                704
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                160,
+                80,
+                192
+              ],
+              "raw_global_box_yx": [
+                256,
+                320,
+                784,
+                896
+              ],
+              "visible_global_box_yx": [
+                252,
+                316,
+                784,
+                896
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 2816,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 3520,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1568,
+                    "denominator": 3
+                  },
+                  {
+                    "numerator": 1792,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  165,
+                  208,
+                  522,
+                  598
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            1,
+            5,
+            11
+          ]
+        },
+        "loss": 0.17815443873405457,
+        "hr_latent_mse": 0.11364863067865372,
+        "legacy_ewarp_l1": 0.20322772860527039,
+        "teacher_mse": 0.048653699457645416,
+        "hr_residual_ewarp_l1": 0.19892892241477966,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.12049343436956406,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.008689258247613907,
+        "hr_lpips": 0.02308712899684906,
+        "hr_motion_l1": 0.036202240735292435,
+        "hr_delta_l1": 0.005208415910601616,
+        "hr_motion_roi_fraction": 0.0216238833963871,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.00661071203649044,
+        "teacher_lpips": 0.009588324464857578,
+        "teacher_motion_l1": 0.020424671471118927,
+        "teacher_delta_l1": 0.0036363941617310047,
+        "teacher_motion_roi_fraction": 0.0216238833963871,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 1.293594479560852,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 21.140000009909272,
+        "peak_allocated": 58242661888,
+        "peak_reserved": 64053313536
+      },
+      {
+        "step": 4,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 4.0000000000000003e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 5,
+            "rgb_frame_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 90,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 91,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 92,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 93,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 94,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 95,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 96,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 97,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 98,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 99,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 100,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 101,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 5,
+                    "latent_start": 25,
+                    "latent_stop": 32,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 0,
+              "tile_column": 4,
+              "target_latent_yx": [
+                0,
+                16,
+                44,
+                60
+              ],
+              "decoder_raw_tile_origin_yx": [
+                0,
+                704
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                4,
+                160,
+                80,
+                192
+              ],
+              "raw_global_box_yx": [
+                4,
+                160,
+                784,
+                896
+              ],
+              "visible_global_box_yx": [
+                0,
+                156,
+                784,
+                896
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 44,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1760,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1568,
+                    "denominator": 3
+                  },
+                  {
+                    "numerator": 1792,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  2,
+                  104,
+                  522,
+                  598
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            1,
+            6,
+            7,
+            10
+          ]
+        },
+        "loss": 0.15659843385219574,
+        "hr_latent_mse": 0.11307187378406525,
+        "legacy_ewarp_l1": 0.20322495698928833,
+        "teacher_mse": 0.04849386215209961,
+        "hr_residual_ewarp_l1": 0.1989041566848755,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.12048427760601044,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.006166380364447832,
+        "hr_lpips": 0.02348700910806656,
+        "hr_motion_l1": 0.0,
+        "hr_delta_l1": 0.00324450945481658,
+        "hr_motion_roi_fraction": 0.0,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.004840938374400139,
+        "teacher_lpips": 0.017934102565050125,
+        "teacher_motion_l1": 0.0,
+        "teacher_delta_l1": 0.002574400044977665,
+        "teacher_motion_roi_fraction": 0.0,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 0.8969023823738098,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 20.59979979880154,
+        "peak_allocated": 58254500864,
+        "peak_reserved": 64053313536
+      },
+      {
+        "step": 5,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 5.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 4,
+            "rgb_frame_indices": [
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 73,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 74,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 75,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 76,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 77,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 78,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 79,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 80,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 81,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 82,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 83,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 84,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 4,
+                    "latent_start": 20,
+                    "latent_stop": 27,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "full_spatial",
+              "tile_row": -1,
+              "tile_column": -1,
+              "target_latent_yx": [
+                0,
+                68,
+                0,
+                120
+              ],
+              "decoder_raw_tile_origin_yx": [
+                0,
+                0
+              ],
+              "decoder_raw_tile_hw": [
+                1088,
+                1920
+              ],
+              "decoder_local_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "raw_global_box_yx": [
+                4,
+                1084,
+                0,
+                1920
+              ],
+              "visible_global_box_yx": [
+                0,
+                1080,
+                0,
+                1920
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 44,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 11924,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 0,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 1280,
+                    "denominator": 1
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  2,
+                  702,
+                  0,
+                  1280
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            5,
+            6,
+            10
+          ]
+        },
+        "loss": 0.19625578820705414,
+        "hr_latent_mse": 0.11229409277439117,
+        "legacy_ewarp_l1": 0.20321810245513916,
+        "teacher_mse": 0.04828350991010666,
+        "hr_residual_ewarp_l1": 0.1988702416419983,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.12047188729047775,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.014005590230226517,
+        "hr_lpips": 0.10459063947200775,
+        "hr_motion_l1": 0.02879791148006916,
+        "hr_delta_l1": 0.013405518606305122,
+        "hr_motion_roi_fraction": 0.17383500933647156,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.010631575249135494,
+        "teacher_lpips": 0.062155675143003464,
+        "teacher_motion_l1": 0.020688481628894806,
+        "teacher_delta_l1": 0.009289934299886227,
+        "teacher_motion_roi_fraction": 0.17383500933647156,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 0.8854100108146667,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 93.8872347669676,
+        "peak_allocated": 62128870400,
+        "peak_reserved": 64053313536
+      },
+      {
+        "step": 6,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 6.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 9,
+            "rgb_frame_indices": [
+              158,
+              159,
+              160,
+              161,
+              162,
+              163,
+              164,
+              165,
+              166,
+              167,
+              168,
+              169
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 158,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 159,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 160,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 161,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 162,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 163,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 164,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 165,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 166,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 167,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 168,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 169,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 9,
+                    "latent_start": 45,
+                    "latent_stop": 52,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 3,
+              "tile_column": 9,
+              "target_latent_yx": [
+                30,
+                46,
+                104,
+                120
+              ],
+              "decoder_raw_tile_origin_yx": [
+                480,
+                1664
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                176,
+                64,
+                256
+              ],
+              "raw_global_box_yx": [
+                576,
+                656,
+                1728,
+                1920
+              ],
+              "visible_global_box_yx": [
+                572,
+                652,
+                1728,
+                1920
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 6336,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 7216,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 1152,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 1280,
+                    "denominator": 1
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  372,
+                  425,
+                  1152,
+                  1280
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            3,
+            5,
+            6,
+            9
+          ]
+        },
+        "loss": 0.18221862614154816,
+        "hr_latent_mse": 0.11132709681987762,
+        "legacy_ewarp_l1": 0.2032279074192047,
+        "teacher_mse": 0.04803333431482315,
+        "hr_residual_ewarp_l1": 0.19882696866989136,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.12045295536518097,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.014421653002500534,
+        "hr_lpips": 0.04437526315450668,
+        "hr_motion_l1": 0.02676505781710148,
+        "hr_delta_l1": 0.011606268584728241,
+        "hr_motion_roi_fraction": 0.08576587587594986,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.01043077651411295,
+        "teacher_lpips": 0.02823728695511818,
+        "teacher_motion_l1": 0.01704021915793419,
+        "teacher_delta_l1": 0.008862914517521858,
+        "teacher_motion_roi_fraction": 0.08576587587594986,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 0.9511102437973022,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 22.734478642232716,
+        "peak_allocated": 58252213760,
+        "peak_reserved": 64009273344
+      },
+      {
+        "step": 7,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 7.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 8,
+            "rgb_frame_indices": [
+              141,
+              142,
+              143,
+              144,
+              145,
+              146,
+              147,
+              148,
+              149,
+              150,
+              151,
+              152
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 141,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 142,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 143,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 144,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 145,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 146,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 147,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 148,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 149,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 150,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 151,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 152,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 8,
+                    "latent_start": 40,
+                    "latent_stop": 47,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 2,
+              "tile_column": 0,
+              "target_latent_yx": [
+                20,
+                36,
+                0,
+                16
+              ],
+              "decoder_raw_tile_origin_yx": [
+                320,
+                0
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                96,
+                160,
+                0,
+                176
+              ],
+              "raw_global_box_yx": [
+                416,
+                480,
+                0,
+                176
+              ],
+              "visible_global_box_yx": [
+                412,
+                476,
+                0,
+                176
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 4576,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 5280,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 0,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 352,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  269,
+                  311,
+                  0,
+                  118
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            0,
+            2,
+            6,
+            10
+          ]
+        },
+        "loss": 0.15188813209533691,
+        "hr_latent_mse": 0.11019682884216309,
+        "legacy_ewarp_l1": 0.20321612060070038,
+        "teacher_mse": 0.04776502400636673,
+        "hr_residual_ewarp_l1": 0.19877654314041138,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.12043552100658417,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.0070527344942092896,
+        "hr_lpips": 0.008773142471909523,
+        "hr_motion_l1": 0.0,
+        "hr_delta_l1": 0.0053251804783940315,
+        "hr_motion_roi_fraction": 0.0,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.006118064746260643,
+        "teacher_lpips": 0.005700253881514072,
+        "teacher_motion_l1": 0.0,
+        "teacher_delta_l1": 0.0039568617939949036,
+        "teacher_motion_roi_fraction": 0.0,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 0.8295495510101318,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 20.603110713884234,
+        "peak_allocated": 58247284224,
+        "peak_reserved": 62285414400
+      },
+      {
+        "step": 8,
+        "sample_id": "Charge_train_3856_4081",
+        "lr": 8.000000000000001e-07,
+        "spec": {
+          "region": {
+            "schema": "h3-production67-visible-pixel-spec-v1-cpu-proposal",
+            "geometry_sha256": "4bfff8ef23421423572f6871b8e0d0bcbb85f6e25664b234105509de54d230b8",
+            "temporal_scope": "nonblend_only",
+            "block_index": 11,
+            "rgb_frame_indices": [
+              192,
+              193,
+              194,
+              195,
+              196,
+              197,
+              198,
+              199,
+              200,
+              201,
+              202,
+              203
+            ],
+            "temporal_assembly": [
+              {
+                "rgb_frame": 192,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 8,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 193,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 9,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 194,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 10,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 195,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 11,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 196,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 12,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 197,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 13,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 198,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 14,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 199,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 15,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 200,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 16,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 201,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 17,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 202,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 18,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "rgb_frame": 203,
+                "region": "nonblend",
+                "contributions": [
+                  {
+                    "block_index": 11,
+                    "latent_start": 55,
+                    "latent_stop": 62,
+                    "raw_frame_index": 19,
+                    "weight": {
+                      "numerator": 1,
+                      "denominator": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "lpips_packed_positions": [
+              0,
+              4,
+              7,
+              11
+            ],
+            "spatial": {
+              "spatial_mode": "stable_tile_interior",
+              "tile_row": 4,
+              "tile_column": 5,
+              "target_latent_yx": [
+                41,
+                57,
+                56,
+                72
+              ],
+              "decoder_raw_tile_origin_yx": [
+                656,
+                896
+              ],
+              "decoder_raw_tile_hw": [
+                256,
+                256
+              ],
+              "decoder_local_box_yx": [
+                80,
+                176,
+                64,
+                192
+              ],
+              "raw_global_box_yx": [
+                736,
+                832,
+                960,
+                1088
+              ],
+              "visible_global_box_yx": [
+                732,
+                828,
+                960,
+                1088
+              ],
+              "lr_geometry_enclosure": {
+                "lr_exact_edges_y0_y1_x0_x1": [
+                  {
+                    "numerator": 8096,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 9152,
+                    "denominator": 17
+                  },
+                  {
+                    "numerator": 640,
+                    "denominator": 1
+                  },
+                  {
+                    "numerator": 2176,
+                    "denominator": 3
+                  }
+                ],
+                "lr_outward_cover_y0_y1_x0_x1": [
+                  476,
+                  539,
+                  640,
+                  726
+                ],
+                "meaning": "Geometric enclosure only; not an interpolation footprint or model receptive field"
+              }
+            },
+            "actual_decode_or_gradient_validated": false,
+            "training_objective_adopted": false
+          },
+          "lpips_packed_positions": [
+            1,
+            7,
+            10,
+            11
+          ]
+        },
+        "loss": 0.1550920605659485,
+        "hr_latent_mse": 0.10890689492225647,
+        "legacy_ewarp_l1": 0.20320585370063782,
+        "teacher_mse": 0.04748193547129631,
+        "hr_residual_ewarp_l1": 0.19871744513511658,
+        "hr_target_ewarp_l1": 0.29309195280075073,
+        "teacher_residual_ewarp_l1": 0.12041518837213516,
+        "teacher_target_ewarp_l1": 0.25172892212867737,
+        "hr_pixel_l1": 0.009817210026085377,
+        "hr_lpips": 0.018856942653656006,
+        "hr_motion_l1": 0.0,
+        "hr_delta_l1": 0.004271752201020718,
+        "hr_motion_roi_fraction": 0.0,
+        "hr_adjacent_pair_count": 11.0,
+        "hr_adjacent_pair_fraction": 1.0,
+        "teacher_pixel_l1": 0.007792224176228046,
+        "teacher_lpips": 0.014151967130601406,
+        "teacher_motion_l1": 0.0,
+        "teacher_delta_l1": 0.003274962306022644,
+        "teacher_motion_roi_fraction": 0.0,
+        "teacher_adjacent_pair_count": 11.0,
+        "teacher_adjacent_pair_fraction": 1.0,
+        "gradient_norm_before_clip": 0.7859495282173157,
+        "optimizer_updates": 1,
+        "formal_training_preflight_passed": false,
+        "seconds": 22.220745178870857,
+        "peak_allocated": 58248822272,
+        "peak_reserved": 62285414400
+      }
+    ],
+    "optimizer_step_pending_update": 8,
+    "last_confirmed_optimizer_update": 8
+  },
+  "initial_load": {
+    "scope": "actual_CPU_load_only_no_forward_or_optimizer",
+    "original_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+    "original_checkpoint_file_verified": true,
+    "selected_step": 1800,
+    "tensor_count": 322,
+    "parameter_count": 345280216,
+    "strict_names_shapes_dtype_values_passed": true,
+    "parameter_identity_preserved": true,
+    "aligned_initialization_called": false,
+    "effective_input": [
+      1,
+      24,
+      67,
+      44,
+      80
+    ],
+    "explicit_target": [
+      67,
+      68,
+      120
+    ],
+    "total_latent_tokens": 67,
+    "historical_adapter_scale": 2.0,
+    "historical_scale_is_not_current_geometry": true,
+    "frozen_sources": {
+      "causal_upscaler.py": {
+        "path": "/path/to/staging/h3_production67_paired8_npu_20261106_v2/causal_upscaler.py",
+        "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+      },
+      "h3_production67_geometry_v1.py": {
+        "path": "/path/to/staging/h3_production67_paired8_npu_20261106_v2/h3_production67_geometry_v1.py",
+        "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383"
+      },
+      "h3_conv3d_explicit_target_v1.py": {
+        "path": "/path/to/staging/h3_production67_paired8_npu_20261106_v2/h3_conv3d_explicit_target_v1.py",
+        "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6"
+      },
+      "train_upscaler_trial.py": {
+        "path": "/path/to/staging/h3_production67_paired8_npu_20261106_v2/train_upscaler_trial.py",
+        "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+      }
+    },
+    "block_checkpointing": {
+      "enabled": false,
+      "decoder_checkpointing_installed": false
+    },
+    "optimizer_or_rng_restored": false,
+    "decoder_gradient_or_memory_preflight_passed": false,
+    "actual345M_forward_stream_HF32_or_training_passed": false,
+    "formal_training_allowed": false
+  },
+  "CANN_vendor": {
+    "find_spec_origin": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/python/site-packages/tbe/__init__.py",
+    "tbe_init_sha256": "edea56738f5239851bf84b2f0ff88aced003bf14a2ec1b1eafa90118ccaa64cc",
+    "import_executed": true,
+    "imported_origin": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/python/site-packages/tbe/__init__.py"
+  },
+  "optimizer_updates_this_attempt": 8,
+  "formal_training_allowed": false,
+  "paired8_plus_restore_gate_passed": false,
+  "limits": "Real engineering updates only. This single-source preflight does not establish full train/dev/test geometry or native-quality gates. Matched arms and controlled restoration must be separately accepted; original default-HF32 failure remains.",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "231466f7d88c1782d2a8a4b746429f482d4e0c6967a066b1e087b0227347a101",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

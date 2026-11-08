@@ -1,0 +1,473 @@
+{
+  "status": "passed_actual345M_CPU_load_only",
+  "started_utc": "2026-11-06T15:21:07.976224+00:00",
+  "completed_utc": "2026-11-06T15:21:47.059717+00:00",
+  "pid": 717625,
+  "execution_plan_sha256": "9bc7054be55f2b3e78c2932484b54627ed90d4678259dd1a52fd8caa14f51a66",
+  "torch_version": "2.7.1+cpu",
+  "torch_source": {
+    "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch/__init__.py",
+    "bytes": 100862,
+    "sha256": "9801e75447c7f585545f989f8a21940b60e0c4cc888effb2f08e739664b4b904",
+    "inode": 44176004,
+    "device": 194,
+    "mtime_ns": 1776403669000000000
+  },
+  "einops_version": "0.8.0",
+  "einops_source": {
+    "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/einops/__init__.py",
+    "bytes": 422,
+    "sha256": "51d8b127d09286510e41fc34c5c53acd8b6b027e83bab821ea309059d71a40ae",
+    "inode": 34737594,
+    "device": 194,
+    "mtime_ns": 1776403513000000000
+  },
+  "cpu_threads": 1,
+  "interop_threads": 1,
+  "torch_npu_imported": false,
+  "source_before": {
+    "h3_production67_v5_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_production67_v5_loader_v1.py",
+      "bytes": 14056,
+      "sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512",
+      "inode": 59116032,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "h3_conv3d_explicit_target_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_conv3d_explicit_target_v1.py",
+      "bytes": 12825,
+      "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6",
+      "inode": 59116033,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "h3_production67_geometry_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_production67_geometry_v1.py",
+      "bytes": 13298,
+      "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383",
+      "inode": 59116034,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "causal_upscaler.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/causal_upscaler.py",
+      "bytes": 10332,
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "inode": 59116035,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "train_upscaler_trial.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/train_upscaler_trial.py",
+      "bytes": 21905,
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "inode": 59116036,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "data_utils.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/data_utils.py",
+      "bytes": 9603,
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "inode": 59116037,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "prepare_data.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/prepare_data.py",
+      "bytes": 18150,
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "inode": 59116038,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "upscaler.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/upscaler.py",
+      "bytes": 1724,
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "inode": 59116039,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "upscaler_node.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/upscaler_node.py",
+      "bytes": 25218,
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "inode": 59116040,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    },
+    "h3_causal_v5_tensor_validation.json": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_causal_v5_tensor_validation.json",
+      "bytes": 84489,
+      "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75",
+      "inode": 59116041,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    },
+    "surrogate67_contract.json": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/surrogate67_contract.json",
+      "bytes": 37409,
+      "sha256": "41f3e018aa90760945659e42abf13adb91374452f884723fe3078096a4825879",
+      "inode": 59116042,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    },
+    "smoke_h3_production67_v5_full_cpu_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/smoke_h3_production67_v5_full_cpu_v1.py",
+      "bytes": 18841,
+      "sha256": "b50fa4c03bad4eef7dc864ffe1c51b6cfc3f1ec9b206869cc5a1fa395540cfb5",
+      "inode": 59116043,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    }
+  },
+  "source_after": {
+    "h3_production67_v5_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_production67_v5_loader_v1.py",
+      "bytes": 14056,
+      "sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512",
+      "inode": 59116032,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "h3_conv3d_explicit_target_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_conv3d_explicit_target_v1.py",
+      "bytes": 12825,
+      "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6",
+      "inode": 59116033,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "h3_production67_geometry_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_production67_geometry_v1.py",
+      "bytes": 13298,
+      "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383",
+      "inode": 59116034,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "causal_upscaler.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/causal_upscaler.py",
+      "bytes": 10332,
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "inode": 59116035,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "train_upscaler_trial.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/train_upscaler_trial.py",
+      "bytes": 21905,
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "inode": 59116036,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "data_utils.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/data_utils.py",
+      "bytes": 9603,
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "inode": 59116037,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "prepare_data.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/prepare_data.py",
+      "bytes": 18150,
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "inode": 59116038,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "upscaler.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/upscaler.py",
+      "bytes": 1724,
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "inode": 59116039,
+      "device": 194,
+      "mtime_ns": 1793978397226589661
+    },
+    "upscaler_node.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/upscaler_node.py",
+      "bytes": 25218,
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "inode": 59116040,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    },
+    "h3_causal_v5_tensor_validation.json": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_causal_v5_tensor_validation.json",
+      "bytes": 84489,
+      "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75",
+      "inode": 59116041,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    },
+    "surrogate67_contract.json": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/surrogate67_contract.json",
+      "bytes": 37409,
+      "sha256": "41f3e018aa90760945659e42abf13adb91374452f884723fe3078096a4825879",
+      "inode": 59116042,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    },
+    "smoke_h3_production67_v5_full_cpu_v1.py": {
+      "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/smoke_h3_production67_v5_full_cpu_v1.py",
+      "bytes": 18841,
+      "sha256": "b50fa4c03bad4eef7dc864ffe1c51b6cfc3f1ec9b206869cc5a1fa395540cfb5",
+      "inode": 59116043,
+      "device": 194,
+      "mtime_ns": 1793978397230589763
+    }
+  },
+  "upstream_before": {
+    "upscaler_loader": {
+      "path": "/path/to/h3-project/upstream/open_h3/upscaler.py",
+      "bytes": 1724,
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "inode": 113541780,
+      "device": 64769,
+      "mtime_ns": 1793776268102689300
+    },
+    "upscaler_node": {
+      "path": "/path/to/h3-project/upstream/open_h3/upscaler_node.py",
+      "bytes": 25218,
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "inode": 113541781,
+      "device": 64769,
+      "mtime_ns": 1793776268102849000
+    }
+  },
+  "upstream_after": {
+    "upscaler_loader": {
+      "path": "/path/to/h3-project/upstream/open_h3/upscaler.py",
+      "bytes": 1724,
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "inode": 113541780,
+      "device": 64769,
+      "mtime_ns": 1793776268102689300
+    },
+    "upscaler_node": {
+      "path": "/path/to/h3-project/upstream/open_h3/upscaler_node.py",
+      "bytes": 25218,
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "inode": 113541781,
+      "device": 64769,
+      "mtime_ns": 1793776268102849000
+    }
+  },
+  "checkpoint_before": {
+    "alias": "/path/to/h3-project/upscaler_conv3d_hybrid/kd_pixel_steps2000/best.pt",
+    "alias_is_symlink": true,
+    "alias_link_text": "best_step_001800.pt",
+    "alias_inode": 114099029,
+    "alias_mtime_ns": 1793874128535782273,
+    "canonical": {
+      "path": "/path/to/h3-project/upscaler_conv3d_hybrid/kd_pixel_steps2000/best_step_001800.pt",
+      "bytes": 1381232411,
+      "sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+      "inode": 114099025,
+      "device": 64769,
+      "mtime_ns": 1793873240193109877
+    }
+  },
+  "checkpoint_after": {
+    "alias": "/path/to/h3-project/upscaler_conv3d_hybrid/kd_pixel_steps2000/best.pt",
+    "alias_is_symlink": true,
+    "alias_link_text": "best_step_001800.pt",
+    "alias_inode": 114099029,
+    "alias_mtime_ns": 1793874128535782273,
+    "canonical": {
+      "path": "/path/to/h3-project/upscaler_conv3d_hybrid/kd_pixel_steps2000/best_step_001800.pt",
+      "bytes": 1381232411,
+      "sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+      "inode": 114099025,
+      "device": 64769,
+      "mtime_ns": 1793873240193109877
+    }
+  },
+  "archive_metadata_audit": {
+    "storage_count": 322,
+    "storage_bytes": 1381120864,
+    "expected_model_parameter_bytes": 1381120864,
+    "pickle_bytes": 45302,
+    "pickle_sha256": "e81919defb7e7e0dabbc91fe4a49c57e3662523a6e834689a54b85d114875b3a",
+    "forbidden_optimizer_rng_keys_found": [],
+    "inspection": "ZIP/pickle opcodes only, no unpickling by this check"
+  },
+  "architecture_config": {
+    "in_channels": 24,
+    "in_blocks": 12,
+    "out_blocks": 12,
+    "channels": 512,
+    "dropout": 0.1,
+    "attn": false,
+    "temporal_every": 2,
+    "temporal_kernel": 5
+  },
+  "actual_parameter_count": 345280216,
+  "actual_tensor_count": 322,
+  "actual_model_parameter_bytes": 1381120864,
+  "parameter_identity_preserved_through_strict_load_and_wrapper": true,
+  "bit_values_match_all322_published_original_tensor_hashes": true,
+  "strict_loader_receipt": {
+    "scope": "actual_CPU_load_only_no_forward_or_optimizer",
+    "original_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+    "original_checkpoint_file_verified": true,
+    "selected_step": 1800,
+    "tensor_count": 322,
+    "parameter_count": 345280216,
+    "strict_names_shapes_dtype_values_passed": true,
+    "parameter_identity_preserved": true,
+    "aligned_initialization_called": false,
+    "effective_input": [
+      1,
+      24,
+      67,
+      44,
+      80
+    ],
+    "explicit_target": [
+      67,
+      68,
+      120
+    ],
+    "total_latent_tokens": 67,
+    "historical_adapter_scale": 2.0,
+    "historical_scale_is_not_current_geometry": true,
+    "frozen_sources": {
+      "causal_upscaler.py": {
+        "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/causal_upscaler.py",
+        "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+      },
+      "h3_production67_geometry_v1.py": {
+        "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_production67_geometry_v1.py",
+        "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383"
+      },
+      "h3_conv3d_explicit_target_v1.py": {
+        "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/h3_conv3d_explicit_target_v1.py",
+        "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6"
+      },
+      "train_upscaler_trial.py": {
+        "path": "/path/to/staging/h3_production67_v5_full_cpu_20261106_v1/train_upscaler_trial.py",
+        "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+      }
+    },
+    "block_checkpointing": {
+      "enabled": false,
+      "decoder_checkpointing_installed": false
+    },
+    "optimizer_or_rng_restored": false,
+    "decoder_gradient_or_memory_preflight_passed": false,
+    "actual345M_forward_stream_HF32_or_training_passed": false,
+    "formal_training_allowed": false
+  },
+  "effective_input": [
+    1,
+    24,
+    67,
+    44,
+    80
+  ],
+  "explicit_target": [
+    67,
+    68,
+    120
+  ],
+  "historical_scale2_is_only_provenance": true,
+  "construction_note": "Original architecture CPU constructor executes its normal allocation/initialization before strict copy; no aligned-past initializer or kernel shift is called on saved v5 weights.",
+  "memory_samples": [
+    {
+      "stage": "before_import",
+      "memory": {
+        "mem_available_bytes": 1560042217472,
+        "proc_self": {
+          "VmPeak": "45760 kB",
+          "VmSize": "37568 kB",
+          "VmHWM": "36392 kB",
+          "VmRSS": "22364 kB",
+          "Threads": "1"
+        },
+        "ru_maxrss_bytes": 37265408,
+        "ru_maxrss_units": "Linux KiB converted to bytes",
+        "cgroup": {
+          "limit_bytes": 1520999997440,
+          "current_bytes": 50515877888,
+          "headroom_bytes": 1470484119552,
+          "source_directory": "/sys/fs/cgroup/memory"
+        },
+        "rlimit_as": [
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "stage": "constructed_CPU_before_v5_load",
+      "memory": {
+        "mem_available_bytes": 1558930735104,
+        "proc_self": {
+          "VmPeak": "1799708 kB",
+          "VmSize": "1799708 kB",
+          "VmHWM": "1565572 kB",
+          "VmRSS": "1565572 kB",
+          "Threads": "1"
+        },
+        "ru_maxrss_bytes": 1603145728,
+        "ru_maxrss_units": "Linux KiB converted to bytes",
+        "cgroup": {
+          "limit_bytes": 1520999997440,
+          "current_bytes": 51690782720,
+          "headroom_bytes": 1469309214720,
+          "source_directory": "/sys/fs/cgroup/memory"
+        },
+        "rlimit_as": [
+          12884901888,
+          -1
+        ]
+      }
+    },
+    {
+      "stage": "strict_v5_load_and_wrap_complete",
+      "memory": {
+        "mem_available_bytes": 1558553903104,
+        "proc_self": {
+          "VmPeak": "3241808 kB",
+          "VmSize": "1873444 kB",
+          "VmHWM": "3010344 kB",
+          "VmRSS": "1642216 kB",
+          "Threads": "1"
+        },
+        "ru_maxrss_bytes": 3082592256,
+        "ru_maxrss_units": "Linux KiB converted to bytes",
+        "cgroup": {
+          "limit_bytes": 1520999997440,
+          "current_bytes": 52217249792,
+          "headroom_bytes": 1468782747648,
+          "source_directory": "/sys/fs/cgroup/memory"
+        },
+        "rlimit_as": [
+          12884901888,
+          -1
+        ]
+      }
+    }
+  ],
+  "address_space_cap_bytes": 12884901888,
+  "measured_peak_RSS_bytes": 3082592256,
+  "memory_scope": "CPU construction+checkpoint deserialize+strict copy/hash only; not NPU, inference activations, decoder, backward, optimizer or training peak.",
+  "base_pretrained_weights_read": false,
+  "forward_executed": false,
+  "gradient_executed": false,
+  "optimizer_created_or_restored": false,
+  "decoder_loaded": false,
+  "NPU_model_execution": false,
+  "formal_training_allowed": false,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "df258b5529e89ccb704525dec919cf76b598db324925fb331a7e65b79c335800",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

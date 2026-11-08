@@ -1,0 +1,54 @@
+{
+  "schema": "h3-limiteddev-inference-source-references-v1",
+  "status": "candidate_inventory_not_downloader",
+  "scientific_source_files": [
+    {
+      "name": "causal_upscaler.py",
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "source_bytes_unchanged": true,
+      "bundled_in_candidate": false,
+      "existing_repository_path": "experiments/h3_causal_upscaler_20261104/causal_upscaler.py"
+    },
+    {
+      "name": "h3_production67_geometry_v1.py",
+      "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383",
+      "source_bytes_unchanged": true,
+      "bundled_in_candidate": false,
+      "proposed_new_repository_path": "experiments/h3_production67_limiteddev_20261108/h3_production67_geometry_v1.py",
+      "publication_status": "not_yet_published"
+    },
+    {
+      "name": "h3_conv3d_explicit_target_v1.py",
+      "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6",
+      "source_bytes_unchanged": true,
+      "bundled_in_candidate": false,
+      "proposed_new_repository_path": "experiments/h3_production67_limiteddev_20261108/h3_conv3d_explicit_target_v1.py",
+      "publication_status": "not_yet_published"
+    },
+    {
+      "name": "upscaler.py",
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "source_bytes_unchanged": true,
+      "bundled_in_candidate": false,
+      "upstream_url": "https://raw.githubusercontent.com/NVlabs/Sana/781e8341fb3b29d3aea5d50265772e9619340b66/models/Open-H3-Regenerate-2K/open_h3/upscaler.py",
+      "notice": "Retain upstream notices; separately recorded node code MIT and model-card Apache-2.0 declarations."
+    },
+    {
+      "name": "upscaler_node.py",
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "source_bytes_unchanged": true,
+      "bundled_in_candidate": false,
+      "upstream_url": "https://raw.githubusercontent.com/NVlabs/Sana/781e8341fb3b29d3aea5d50265772e9619340b66/models/Open-H3-Regenerate-2K/open_h3/upscaler_node.py",
+      "notice": "Retain upstream notices; separately recorded node code MIT and model-card Apache-2.0 declarations."
+    }
+  ],
+  "tensor_schema": {
+    "name": "h3_causal_v5_tensor_validation.json",
+    "existing_repository_path": "weights/h3_v5_20261106/h3_causal_v5_tensor_validation.json",
+    "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75",
+    "use": "322 exact tensor names/shapes only; old tensor value hashes do not apply to selected step2000"
+  },
+  "code_changes": "New packaging loader calls frozen architecture/adapter. No scientific source modified or copied.",
+  "no_old_v5_payload_required": true,
+  "no_original_teacher_payload_required": true
+}

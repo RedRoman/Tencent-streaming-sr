@@ -1,0 +1,57 @@
+{
+  "schema": "h3-limiteddev-H264-subset-adapter-plan-v4",
+  "status": "candidate_not_executed",
+  "adapter_source": {
+    "path": "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+    "bytes": 13551,
+    "sha256": "7ec2379b1a8ab31aae22861c4628ad274e986aca5fa6d6efd1a30bb51e20f690"
+  },
+  "frozen_v3_plan": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_retained_rgb_media_plan_v3.json",
+    "bytes": 48129,
+    "sha256": "77f4d052ae16a042ff9f1df0bf15788e0615a1c17c0462c4d70a971516a38d62"
+  },
+  "render_sha256": "0c871145247fd9b142ce1b3a7d24b09dae28a3bdf3eb478e8b67cceefb3dcead",
+  "output_root": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4",
+  "subsets": {
+    "priority": [
+      "WingIt_dev_3586_3811/comparison_3column.mp4",
+      "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+      "WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+      "ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+      "WingIt_dev_300_525/comparison_3column.mp4",
+      "WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4"
+    ],
+    "native": [
+      "WingIt_dev_3586_3811/native_hr_native1080.mp4",
+      "WingIt_dev_3586_3811/teacher_native1080.mp4",
+      "WingIt_dev_3586_3811/v5_native1080.mp4",
+      "WingIt_dev_3586_3811/control_native1080.mp4",
+      "WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+      "ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+      "ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+      "ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+      "ElephantsDream_dev_13070_13295/control_native1080.mp4",
+      "ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+      "WingIt_dev_300_525/native_hr_native1080.mp4",
+      "WingIt_dev_300_525/teacher_native1080.mp4",
+      "WingIt_dev_300_525/v5_native1080.mp4",
+      "WingIt_dev_300_525/control_native1080.mp4",
+      "WingIt_dev_300_525/teacher_student_native1080.mp4"
+    ]
+  },
+  "scope": "CPU avconvert copies only; frozen21+84 media/science/labels not changed",
+  "all_visual_acceptance_flags": false,
+  "allow_missing_unselected_files": true,
+  "reject_missing_selected_video_or_audit": true,
+  "reject_unknown_partial_in_final_source_root": true,
+  "no_implicit_retry": true,
+  "one_writer_for_all_batches": true,
+  "reuse_only_completed_per_file_full_SHA_and_226_PTS_audit": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

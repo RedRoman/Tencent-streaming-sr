@@ -1,0 +1,2920 @@
+{
+  "schema": "h3-limiteddev-independent-actual-H26421-audit-v1",
+  "utc": "2026-11-08T11:49:11.787128+00:00",
+  "status": "all21_file_identity_and_existing_full226_technical_receipts_verified_not_subjective_acceptance",
+  "scope": "Read-only local metadata and streaming SHA of completed21 H264 and21 original MP4 files. No codec invocation, decode, transcode, NPU/model/scientific evaluation, arrays/weights, remote/network, state or clone edits.",
+  "actual_actions": {
+    "H264_files_hashed": 21,
+    "original_MP4_files_hashed": 21,
+    "new_decode": 0,
+    "new_encode": 0,
+    "new_NPU_or_training": 0
+  },
+  "delivery_manifest": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/full21_H264_delivery_v1.json",
+    "bytes": 34618,
+    "sha256": "d705e8a696119c120203ff6e54cbd0386338806747bbcf4c9dc8089a173c5c81"
+  },
+  "full21_receipt": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/full21_video_receipt.json",
+    "bytes": 9675,
+    "sha256": "80953828a6e23d5934faa4f6b093629e7a1fcca7d7bfbef96cba79c2d3079ed4"
+  },
+  "frozen_adapter_plan": {
+    "path": "/path/to/staging/h3_limiteddev_H264_subset_plan_v4.json",
+    "bytes": 2501,
+    "sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8"
+  },
+  "frozen_v3_plan": {
+    "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_retained_rgb_media_plan_v3.json",
+    "bytes": 48129,
+    "sha256": "77f4d052ae16a042ff9f1df0bf15788e0615a1c17c0462c4d70a971516a38d62"
+  },
+  "original_render_receipt": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/render_receipt.json",
+    "bytes": 328926,
+    "sha256": "0c871145247fd9b142ce1b3a7d24b09dae28a3bdf3eb478e8b67cceefb3dcead"
+  },
+  "outer_batches": [
+    {
+      "attempt": 1,
+      "subset": "priority",
+      "outer": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt1/exit_receipt.json",
+        "bytes": 2040,
+        "sha256": "ac27d0f58cbc6ae0b904a113a9f1911b76e0847b80ac49f2e030651191571fab"
+      },
+      "started": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt1/started.json",
+        "bytes": 1177,
+        "sha256": "70d3ff02d8577513f5bc1a80e84814b425fef5cdc2c6d3cdb1ce374c2e87719c"
+      },
+      "parent_pid": 27391,
+      "child_pid": 27392,
+      "child_pgid": 27392,
+      "exit_code": 0,
+      "reaped": true,
+      "live_group_members_at_end": [],
+      "start_utc": "2026-11-08T09:43:09.613271+00:00",
+      "finished_utc": "2026-11-08T09:43:24.791221+00:00",
+      "batch": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/batch_receipt.json",
+        "bytes": 4118,
+        "sha256": "e7ee073b74c06208dfdad480dc12df4d26b216da9907d31de91573fa39e47a1a"
+      },
+      "converted_here": 6,
+      "reused_count": 0
+    },
+    {
+      "attempt": 2,
+      "subset": "native",
+      "outer": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt2/exit_receipt.json",
+        "bytes": 2038,
+        "sha256": "abb6563aae66822ce09de768b2587be1fa76e43db2164f423acde7bef782b7eb"
+      },
+      "started": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt2/started.json",
+        "bytes": 1175,
+        "sha256": "bf6aab5abaf1857acb390bd73e39f3923c089ee8817273b8f9f4ef4c73ed497e"
+      },
+      "parent_pid": 29193,
+      "child_pid": 29194,
+      "child_pgid": 29194,
+      "exit_code": 0,
+      "reaped": true,
+      "live_group_members_at_end": [],
+      "start_utc": "2026-11-08T11:27:47.575631+00:00",
+      "finished_utc": "2026-11-08T11:28:27.532603+00:00",
+      "batch": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/batch_receipt.json",
+        "bytes": 9267,
+        "sha256": "60fdd3489a5b823bfe38442061ef4d77b6d4e1dc33cf10f016e4ce9320538881"
+      },
+      "converted_here": 15,
+      "reused_count": 0
+    }
+  ],
+  "counts": {
+    "unique_videos": 21,
+    "main_three_column": 3,
+    "native1080_single_route": 15,
+    "fixed_no_tracking_512px_regions_three_column": 3,
+    "H264_bytes": 212464627,
+    "H264_total_decoded_frames_in_prior_audits": 4746,
+    "original_PTS_rows_independently_checked": 4746,
+    "successful_encode_and_audit_children": 42
+  },
+  "completeness": {
+    "all_expected_paths_exact": true,
+    "no_duplicates": true,
+    "all_output_and_audit_full_SHA_verified": true,
+    "all_original_source_and_audit_full_SHA_verified": true,
+    "all_original_PTS_rows_checked": true,
+    "all_H264_full_decode_audit_flags_and_cadence_summaries_verified": true,
+    "all_batches_real_exit0_reaped_empty_groups": true,
+    "all42_codec_audit_children_report_reaped_returncode0_emptygroup": true,
+    "all_tools_source_original_mapping_and_labels_match": true,
+    "no_source_or_result_replacement": true
+  },
+  "selected_steps": {
+    "control": 0,
+    "teacher": 2000
+  },
+  "main_column_routes": [
+    "teacher_student",
+    "teacher",
+    "native_hr"
+  ],
+  "quality_boundary": {
+    "full226_nativeHR_L1_guard_still_failed": true,
+    "PROVISIONAL_FAILED_label_preserved": true,
+    "original_teacher_is_bidirectional_not_student": true,
+    "nativeHR_not_decodedHR_teacher_or_upscaledLR": true,
+    "no_cross_arm_ranking_or_checkpoint_reselection": true,
+    "test_locked": true,
+    "visual_quality_passed": false,
+    "continuous_visual_review_performed_by_this_audit": false,
+    "metadata_labels_verified_not_new_OCR_or_visual_inspection": true
+  },
+  "PTS_boundary": "Original MPEG4 audit retains226 explicit PTS rows per clip and these were checked. H264 AVAssetReader audit retains full-stream coverage/count and per-stream extrema/error counters, not every226 raw PTS row; this audit verifies those SHA-bound completed decode receipts without redecoding. All21 report226 decoded frames,24fps,zero cadence/invalid/nonmonotonic/missing-image errors,first0,last9.375,duration226/24 and avc1.",
+  "remaining_delivery_boundary": "This report covers the21 completed videos. It does not claim all84 contacts delivered, weight transfer completed, GitHub/Release publication, or subjective visual acceptance.",
+  "main_videos_for_delivery": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column.mp4",
+        "bytes": 11044074,
+        "sha256": "a639c77f2f078ce74be913476449f7342fee43387ac5ebfc003b1a6532fd0a94"
+      },
+      "width": 2880,
+      "height": 652,
+      "frames": 226,
+      "fps": 24,
+      "duration_seconds": 9.416666666666666,
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+        "bytes": 10941116,
+        "sha256": "9e88bcd3a739b234c39600107f0ddbe822bd5caad087a2140639f2524b458ac6"
+      },
+      "width": 2880,
+      "height": 652,
+      "frames": 226,
+      "fps": 24,
+      "duration_seconds": 9.416666666666666,
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "ED native PNG | publisher 13070..13295",
+          "Aligned native RGB SHA256:",
+          "834b704e6baa0fc35d7440c6050bba1f",
+          "a35d15eba4a1240525ac20545d2fa7e3",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column.mp4",
+        "bytes": 9248143,
+        "sha256": "3422c4759b498f0b1413c969508840dcff8aeefe53998cc961cb9f7ebaf30fcc"
+      },
+      "width": 2880,
+      "height": 652,
+      "frames": 226,
+      "fps": 24,
+      "duration_seconds": 9.416666666666666,
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    }
+  ],
+  "videos": [
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "comparison",
+        "relative_path": "ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+        "width": 2880,
+        "height": 652
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+        "bytes": 10941116,
+        "sha256": "9e88bcd3a739b234c39600107f0ddbe822bd5caad087a2140639f2524b458ac6"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column.audit.json",
+        "bytes": 1992,
+        "sha256": "64dba77cf26b71cf65551291d459296e54ba58ea42cc58c54cd20d7804f43491"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column_conversion_receipt.json",
+        "bytes": 5558,
+        "sha256": "98ee4b4199cf42d65e071bcb2a4dba064c5c5f2236a9241297945e2b710e4cb2"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+        "bytes": 17127765,
+        "sha256": "207bf4329659f7e26903af0b9ccb54917067cd040e2c384aa245a8a854236b7c"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/comparison_3column.audit.json",
+        "bytes": 28364,
+        "sha256": "953dcfba59b380e7f487f257a193f8af3e5bb8dae4aa6fcf79be90e6675525db"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        2880,
+        652
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 27460,
+          "pgid": 27460,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 27477,
+          "pgid": 27477,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "ED native PNG | publisher 13070..13295",
+          "Aligned native RGB SHA256:",
+          "834b704e6baa0fc35d7440c6050bba1f",
+          "a35d15eba4a1240525ac20545d2fa7e3",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/comparison_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "comparison",
+        "relative_path": "WingIt_dev_300_525/comparison_3column.mp4",
+        "width": 2880,
+        "height": 652
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column.mp4",
+        "bytes": 9248143,
+        "sha256": "3422c4759b498f0b1413c969508840dcff8aeefe53998cc961cb9f7ebaf30fcc"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column.audit.json",
+        "bytes": 1979,
+        "sha256": "84a03e573fbe8e477a23aea04a786603daef31645119ba9bf19e2d9fb099b127"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column_conversion_receipt.json",
+        "bytes": 5424,
+        "sha256": "92e47ea8b74cb180f9aa1024fe044c2f7e97f2d7d9089b51a06da1e4e4c83b5d"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/comparison_3column.mp4",
+        "bytes": 12043159,
+        "sha256": "2f70f60bdda3ae4f1e414d037a5dfb81c5249ddd3ecffdcaf712604f4e00df36"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/comparison_3column.audit.json",
+        "bytes": 28352,
+        "sha256": "93a3fe16d4185c4a78ca15f5301811e088b4878474b64db91ec147c513f4401d"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        2880,
+        652
+      ],
+      "duration_seconds": 9.4169921875,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 27484,
+          "pgid": 27484,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 27499,
+          "pgid": 27499,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "fixed_camera_pullback_full226",
+        "relative_path": "WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+        "width": 1536,
+        "height": 624,
+        "fixed_xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "source_definition_index": null,
+        "source_region": "fixed_central_camera_pullback_region",
+        "all_frames": [
+          0,
+          225
+        ],
+        "tracking": false,
+        "spatial_resize": false
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+        "bytes": 7059879,
+        "sha256": "2473aaf8e6b343daa2b1fe65ba3852f740ca5a2081e2db8bf7ac026170ececba"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.audit.json",
+        "bytes": 1998,
+        "sha256": "d83e2d46f2c697699f221026f99cac88339f57d5d6a8cb972db4a810c97e5c3d"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column_conversion_receipt.json",
+        "bytes": 5879,
+        "sha256": "c928bc771b20eb6a8971ca432b03bc28fa751b31e7412ac757f7f6fc288823b8"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+        "bytes": 8218839,
+        "sha256": "5595742068c28498996e52554003ccd4feb0e44894bcf0324779446535bb54d4"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.audit.json",
+        "bytes": 28370,
+        "sha256": "fa8b571bf6b40acbc8078fa346c5bdf6adc3767c1fd03ddbf301de6ba8762f7d"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1536,
+        624
+      ],
+      "duration_seconds": 9.4169921875,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 27508,
+          "pgid": 27508,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 27523,
+          "pgid": 27523,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/comparison_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "comparison",
+        "relative_path": "WingIt_dev_3586_3811/comparison_3column.mp4",
+        "width": 2880,
+        "height": 652
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column.mp4",
+        "bytes": 11044074,
+        "sha256": "a639c77f2f078ce74be913476449f7342fee43387ac5ebfc003b1a6532fd0a94"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column.audit.json",
+        "bytes": 1992,
+        "sha256": "93b9d395357499e8f025c449171bd577c4df34d2c47caf87d43365d37a81b7f9"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column_conversion_receipt.json",
+        "bytes": 5450,
+        "sha256": "e9f860bdd7e4e1595e1d49f32683443181fa0af09a9796cedcab7450fd5d43fa"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/comparison_3column.mp4",
+        "bytes": 26591677,
+        "sha256": "3a75db87b69066d84cadaa525352937d1320bda7afc90a2374ddb4bbd771dd5e"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/comparison_3column.audit.json",
+        "bytes": 28354,
+        "sha256": "65fb2f076c324a7fb900c24e98aa9db8d8f46d4fd5c4e7cf7275293be655bc16"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        2880,
+        652
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 27393,
+          "pgid": 27393,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 27408,
+          "pgid": 27408,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "fixed_cat_face_hand_full226",
+        "relative_path": "WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+        "width": 1536,
+        "height": 624,
+        "fixed_xywh": [
+          1008,
+          560,
+          512,
+          512
+        ],
+        "source_definition_index": 1,
+        "source_region": "cat_face_hand",
+        "all_frames": [
+          0,
+          225
+        ],
+        "tracking": false,
+        "spatial_resize": false
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+        "bytes": 8114335,
+        "sha256": "e45d670c5ca8fad402c40d92fb3a6b88d3d12d57e691bf9e0c6e04137481efc3"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.audit.json",
+        "bytes": 2008,
+        "sha256": "17a02aab44478f674e4f888330589bda80f8b762d53b210edcbc297250a9e5da"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column_conversion_receipt.json",
+        "bytes": 5860,
+        "sha256": "9534560de2063491d0adf6839ac95c55f0192cab33417bde28ebe19284287857"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+        "bytes": 10252782,
+        "sha256": "c1d143460c718256930fdab09ef31f00007b9cb0d4e7794156d99ad51716dbb8"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.audit.json",
+        "bytes": 28371,
+        "sha256": "633e669743c56b147e97db9483867fab9a7684be94f8f44c5c671ebb9cd892f2"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1536,
+        624
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 27442,
+          "pgid": 27442,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 27454,
+          "pgid": 27454,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "fixed_dog_face_full226",
+        "relative_path": "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+        "width": 1536,
+        "height": 624,
+        "fixed_xywh": [
+          560,
+          48,
+          512,
+          512
+        ],
+        "source_definition_index": 0,
+        "source_region": "dog_face",
+        "all_frames": [
+          0,
+          225
+        ],
+        "tracking": false,
+        "spatial_resize": false
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+        "bytes": 8183688,
+        "sha256": "71bc29abfe60efdcd0d78a5f01ac6a1dd5c4edcb446a6c8720f9a9d7e2a2fbf8"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+        "bytes": 2003,
+        "sha256": "37a6192d31d4b7706c80942e6160a29a151e6bf8b29979a15f160e932a456359"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column_conversion_receipt.json",
+        "bytes": 5803,
+        "sha256": "2322cb15cfc03ed06fc27a42952f6de7a3faa4f63c64e70eb4467117204b50be"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+        "bytes": 13517550,
+        "sha256": "7f927ad993b96f4883dec9d5880cccd58b043cb35d6223faffe4d50818b08ef4"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+        "bytes": 28366,
+        "sha256": "40a58045f59366670310e593b4d16f9fd12c63f24e55f34fd9e534ed1ee9933c"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1536,
+        624
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 27420,
+          "pgid": 27420,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 27436,
+          "pgid": 27436,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/control_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "control",
+        "relative_path": "ElephantsDream_dev_13070_13295/control_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080.mp4",
+        "bytes": 11147455,
+        "sha256": "948cd14d440703fb248122930f9b8c11c6de8bec2e697727dd2bb275fc9150b5"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "e99f17ca5810b7f811958abf106f1325e471835c98eed5947910deb6ec1796ad"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080_conversion_receipt.json",
+        "bytes": 5556,
+        "sha256": "9795f827e431a49c28a3fe60db107c239610326b3fbd617751da6bd361226329"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/control_native1080.mp4",
+        "bytes": 17450616,
+        "sha256": "e5bbb18003633800ff2c9223968cf7e083b6043ab8fea2a492ef1a2bbe785a36"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/control_native1080.audit.json",
+        "bytes": 28591,
+        "sha256": "9eb58fc3a92fb2bdefdd24ac2a11daa01bf30cb2ba6c3e8b11afdb61a039ff1c"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29382,
+          "pgid": 29382,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29394,
+          "pgid": 29394,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "ED native PNG | publisher 13070..13295",
+          "Aligned native RGB SHA256:",
+          "834b704e6baa0fc35d7440c6050bba1f",
+          "a35d15eba4a1240525ac20545d2fa7e3",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "native_hr",
+        "relative_path": "ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+        "bytes": 9791304,
+        "sha256": "638d3338a047201618c2fbe0307a25733008de466919ee53f43e670375c315d2"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+        "bytes": 1995,
+        "sha256": "09dc560fc75857d41767f0952107f43df1299149c6d40b37f99ad2fe25afdd28"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080_conversion_receipt.json",
+        "bytes": 5574,
+        "sha256": "76939c8a052f5a693e11186d7f5a483f4ea5890cef6184638d807a364baff196"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+        "bytes": 8673595,
+        "sha256": "01d9fea46d7a8b0e46514e99cca1407f46414ba831081a667187f2c371f5312b"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+        "bytes": 28592,
+        "sha256": "e88a2dbac0bc46abf9b9c717a5d3eaa328d34895f4994213019c89773a0e8a75"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29295,
+          "pgid": 29295,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29313,
+          "pgid": 29313,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "ED native PNG | publisher 13070..13295",
+          "Aligned native RGB SHA256:",
+          "834b704e6baa0fc35d7440c6050bba1f",
+          "a35d15eba4a1240525ac20545d2fa7e3",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "teacher",
+        "relative_path": "ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+        "bytes": 11130176,
+        "sha256": "1b66c6e30a0f1e80c5336c64a8d945bd3cb88018e44038c9333d6e97c274bfe6"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "0ab614cd69f590be2a35e917c040c46a233ced93665d81f43fd3c73161b224d7"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080_conversion_receipt.json",
+        "bytes": 5556,
+        "sha256": "eeabf4abe9db000f589bb48e1d7095614b785115e957d1c36df2d2d520dd6e5d"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+        "bytes": 19150076,
+        "sha256": "1197f4adbe91ee314930dd46ec2333986b1c8c335d8bde22ead02454e1662a9e"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/teacher_native1080.audit.json",
+        "bytes": 28591,
+        "sha256": "6c19ac0acffce4c3c6a464ba454d4c76add6fafcb2225cc44b7ef67fcc81601b"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29326,
+          "pgid": 29326,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29356,
+          "pgid": 29356,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "ED native PNG | publisher 13070..13295",
+          "Aligned native RGB SHA256:",
+          "834b704e6baa0fc35d7440c6050bba1f",
+          "a35d15eba4a1240525ac20545d2fa7e3",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "teacher_student",
+        "relative_path": "ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+        "bytes": 11105457,
+        "sha256": "05b44980c2b5628295ce00b0b3c8705bae71d7438f614fa6ce938c76a890d3b4"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080.audit.json",
+        "bytes": 2001,
+        "sha256": "e32619e1d74ee46f1845861800b52c86943b18cc9db0041f0aabef710969ab2d"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080_conversion_receipt.json",
+        "bytes": 5636,
+        "sha256": "e0229136a778ac9265633e82c007badb5b43a65791cbfa5892b48ee20ec0a6b6"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+        "bytes": 19354083,
+        "sha256": "a3d57cd2ad4f3f61e1a0d989ac33d3623f345c8727f5159725be459ac01c0dfd"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/teacher_student_native1080.audit.json",
+        "bytes": 28599,
+        "sha256": "49188adbc84673644bf9235a5b079128d2e6dca498d51ce0e91b698ae194f960"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29401,
+          "pgid": 29401,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29413,
+          "pgid": 29413,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "ED native PNG | publisher 13070..13295",
+          "Aligned native RGB SHA256:",
+          "834b704e6baa0fc35d7440c6050bba1f",
+          "a35d15eba4a1240525ac20545d2fa7e3",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "v5",
+        "relative_path": "ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+        "bytes": 11147455,
+        "sha256": "e8aac8d93a50c6a5e8b2cd4d2fa8ed995cae63cbd9a2c478f6fa00ad8ac3d720"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080.audit.json",
+        "bytes": 1989,
+        "sha256": "08191ce41dac36ac3ee58db2c65c270335c03c157f2ccedf8d80ba5fc8230da1"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080_conversion_receipt.json",
+        "bytes": 5506,
+        "sha256": "31d6cb92264a25d1e7ea48beabbcba1557b6ad106a63fc702c09d39d558d5b1d"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+        "bytes": 17450616,
+        "sha256": "e5bbb18003633800ff2c9223968cf7e083b6043ab8fea2a492ef1a2bbe785a36"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/v5_native1080.audit.json",
+        "bytes": 28586,
+        "sha256": "d9cb11fb8e2bb3d2b504c989809ba01648d285870566223430130a95b77fea2f"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29363,
+          "pgid": 29363,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29375,
+          "pgid": 29375,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "ED native PNG | publisher 13070..13295",
+          "Aligned native RGB SHA256:",
+          "834b704e6baa0fc35d7440c6050bba1f",
+          "a35d15eba4a1240525ac20545d2fa7e3",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/control_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "control",
+        "relative_path": "WingIt_dev_300_525/control_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080.mp4",
+        "bytes": 9919567,
+        "sha256": "3149ff0cfbbcda3e8f2861acee8f0edf6bb8520ee01e6e9afe7eeda3e928886d"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080.audit.json",
+        "bytes": 1981,
+        "sha256": "647a9f35577997176c801de92e8b799c246f0ec77508c672f19ddfd6f52cfc39"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080_conversion_receipt.json",
+        "bytes": 5422,
+        "sha256": "bab1a4b1116e50f5186a3a40366ccc3b38c5c05407bc9f020a2fb63219701fcd"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/control_native1080.mp4",
+        "bytes": 11127828,
+        "sha256": "28e537e357627d6cb6297c29b1bd80cd5264a464062276937db3017b08c8878b"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/control_native1080.audit.json",
+        "bytes": 28579,
+        "sha256": "c4a4d9ad599e291f696839a4447802659f0fe0b153c829ea6b0875b8c6a7a9b4"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.4169921875,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29481,
+          "pgid": 29481,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29493,
+          "pgid": 29493,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/native_hr_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "native_hr",
+        "relative_path": "WingIt_dev_300_525/native_hr_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080.mp4",
+        "bytes": 7830488,
+        "sha256": "c9f48c7d160d7e8673c9a5c4f1a0ee9564f74a045eeea942e7d965cbcc9f7b5f"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080.audit.json",
+        "bytes": 1983,
+        "sha256": "7959952f97c408e10592c6920bc32d26fc602770f3acaa6cbc267dcd5f1b6671"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080_conversion_receipt.json",
+        "bytes": 5441,
+        "sha256": "bd43242cf2159e926784e457e25b3548bc8efd01eb74ea184586e8b16dd3466f"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/native_hr_native1080.mp4",
+        "bytes": 7415236,
+        "sha256": "36ab1ab41b24fbdfa736e2155e6b92fe66ec0995e69f9f94d449832a790cff55"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/native_hr_native1080.audit.json",
+        "bytes": 28580,
+        "sha256": "8dc96e1c4f05863aa5f56ebc9bbe84bd5126608cf3db44f6ffced1c78df5599c"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.4169921875,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29420,
+          "pgid": 29420,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29436,
+          "pgid": 29436,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/teacher_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "teacher",
+        "relative_path": "WingIt_dev_300_525/teacher_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080.mp4",
+        "bytes": 9779175,
+        "sha256": "97d62a92e0866483388a0643b8161cf68fc64ed9119b3ed9fbde79c214a95f0d"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080.audit.json",
+        "bytes": 1981,
+        "sha256": "19334b6e6371a6c8af93cb1fdb79cbddc6f02cd87de7caffacd0ec1a1b560625"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080_conversion_receipt.json",
+        "bytes": 5422,
+        "sha256": "076ad839386e7146c15b0eeee45f9d4baa81e21d4e341c8fc5c0b6b6d0708ff8"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/teacher_native1080.mp4",
+        "bytes": 10952844,
+        "sha256": "672dd5a4cd098e16d29d17520c8a1cf79586071c63fbadd10f027675b018c56c"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/teacher_native1080.audit.json",
+        "bytes": 28579,
+        "sha256": "fcd212cfe04046ab1725efaf31008e763a167110974ffed76c17ec84c8eb5d49"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.4169921875,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29443,
+          "pgid": 29443,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29455,
+          "pgid": 29455,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/teacher_student_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "teacher_student",
+        "relative_path": "WingIt_dev_300_525/teacher_student_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080.mp4",
+        "bytes": 9965571,
+        "sha256": "8f9f3509340eb84863ed31cab9ed43aa012e0179cac331e9b8ba872de14b2b82"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080.audit.json",
+        "bytes": 1989,
+        "sha256": "2b95b1118c16d16250ce48eac994236ab6cd37da0c77601fcb33ced3ff63fdec"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080_conversion_receipt.json",
+        "bytes": 5502,
+        "sha256": "424b93bc0607bb1d54d5c56f300cb9279b2f4cd02e706bc778a088a12f34ebdb"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/teacher_student_native1080.mp4",
+        "bytes": 11744667,
+        "sha256": "99046a4699658df7371ec136e8d1b2b0ba273cc2c959170c10dcccec63a8a231"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/teacher_student_native1080.audit.json",
+        "bytes": 28587,
+        "sha256": "55ecf6b782984a74b82873515f04fbc0f7689be8015e3e864d5e0f0724746bb4"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.4169921875,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29500,
+          "pgid": 29500,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29522,
+          "pgid": 29522,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/v5_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "v5",
+        "relative_path": "WingIt_dev_300_525/v5_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080.mp4",
+        "bytes": 9919567,
+        "sha256": "77147033f40dbd31e6964e24dc3506cf84c37572553e5deb6b517120944f0250"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080.audit.json",
+        "bytes": 1976,
+        "sha256": "23d8b5822950471d47411af46e755ee726262676d127d42134f558065e358cb4"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080_conversion_receipt.json",
+        "bytes": 5372,
+        "sha256": "9df5f64985305ac3149bdcd2067011ce28e26950d752be05de13e472d85819b0"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/v5_native1080.mp4",
+        "bytes": 11127828,
+        "sha256": "28e537e357627d6cb6297c29b1bd80cd5264a464062276937db3017b08c8878b"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/v5_native1080.audit.json",
+        "bytes": 28574,
+        "sha256": "96e11372c4ace769141e0231f8b8862a326a013d18a483c8e1f1d8f3c1d665b1"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.4169921875,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29462,
+          "pgid": 29462,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29474,
+          "pgid": 29474,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det strict",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 300..525",
+          "Aligned native RGB SHA256:",
+          "0899bbafd7d3e0a3146595a625866170",
+          "054e45247c1b0f8d4298d0616cc7a6fc",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/control_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "control",
+        "relative_path": "WingIt_dev_3586_3811/control_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080.mp4",
+        "bytes": 11232562,
+        "sha256": "ca97261026ccc5bc54edaf249d4a6af6a935292fbf7618a69605bb0455036166"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "0e4c91381c0262f689cf45613655343fc54184657455a15cf53a448801373fcc"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080_conversion_receipt.json",
+        "bytes": 5448,
+        "sha256": "fbffe06c283c352b63d0ac5e41febc007a0b6549e52cebc33bebc4b86407a1b1"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/control_native1080.mp4",
+        "bytes": 21291104,
+        "sha256": "806c33d891f31419d05845401d8459cdc25b9d9952da91a0bb595fa89eb20a78"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/control_native1080.audit.json",
+        "bytes": 28581,
+        "sha256": "bc80b2c546aed2660b0ff19caafea64cc54b0d3e954af5e673b12a14477b922a"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29254,
+          "pgid": 29254,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29268,
+          "pgid": 29268,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/native_hr_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "native_hr",
+        "relative_path": "WingIt_dev_3586_3811/native_hr_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080.mp4",
+        "bytes": 11227339,
+        "sha256": "9f9655d814abf04160c20de20be44a17f7b712850e82152f60ed236ac006e706"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080.audit.json",
+        "bytes": 1996,
+        "sha256": "e1059440b06cabe4500e079195adeaef4d657005e9c0a362004639d112d724bf"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080_conversion_receipt.json",
+        "bytes": 5468,
+        "sha256": "935afbe153f956f65c4c7ab85a7101697e10a3496598101b97eab4d479d733c7"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/native_hr_native1080.mp4",
+        "bytes": 18622983,
+        "sha256": "60ff84d629a11c585824509c51eda89a00a7b5f41cf315edba17b1d687acebaf"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/native_hr_native1080.audit.json",
+        "bytes": 28583,
+        "sha256": "9691dabd2d90dcabd3057666d3b0b81c2e12636dc303dd5c96ca5ed42a0a6e93"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29195,
+          "pgid": 29195,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29208,
+          "pgid": 29208,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/teacher_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "teacher",
+        "relative_path": "WingIt_dev_3586_3811/teacher_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080.mp4",
+        "bytes": 11217046,
+        "sha256": "59f9b6ab34b15569e244da587c2afed4c288c3c13a99c5cde31693e1b5b5221e"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "5a964b2c5a5d3ded6ca649b3bc34bdb156caa86475ca7a296d9ee2eb0fef4b2d"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080_conversion_receipt.json",
+        "bytes": 5448,
+        "sha256": "f4f71c236d29ad3946b06ae4788e45e6896cd90c1e9711da21d917cbb469b25d"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/teacher_native1080.mp4",
+        "bytes": 22345458,
+        "sha256": "30146fae63430c2272d5373f6ef8b6da79c47c78671d799d67e00ed441cc5358"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/teacher_native1080.audit.json",
+        "bytes": 28581,
+        "sha256": "145d87d959771d5bc7b0da7c71a33f6ecdc2204380677e1e988bb2ca2eb94bfa"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29214,
+          "pgid": 29214,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29226,
+          "pgid": 29226,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "teacher_student",
+        "relative_path": "WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+        "bytes": 11227668,
+        "sha256": "7ebb2b3a16fd0071d566ba57bb35fc799c16424b03039b6f255b6cd67b353303"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080.audit.json",
+        "bytes": 2001,
+        "sha256": "cc74f03f55f9240390d8246ca22a3b512f0d8e68ddc6dfa7126b4033f04267ce"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080_conversion_receipt.json",
+        "bytes": 5528,
+        "sha256": "324550658d5c4ec856c5d296148221c265c27c0ce9c91aeae8a74fc559efb784"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+        "bytes": 23099268,
+        "sha256": "7add5e9f31f5e905a2b4b27e0a67c2b7a3e92d00080235f901563daea6f59312"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/teacher_student_native1080.audit.json",
+        "bytes": 28589,
+        "sha256": "162bfbe13bc86d264438322c06dfdc3c68ff0e0b3712b19e71a875f801d2d52a"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29275,
+          "pgid": 29275,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29288,
+          "pgid": 29288,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/v5_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "v5",
+        "relative_path": "WingIt_dev_3586_3811/v5_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080.mp4",
+        "bytes": 11232562,
+        "sha256": "cf7a831fd686a184aa357c06a8484c19444d915d8c6efa65bea0ecc59758a70e"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080.audit.json",
+        "bytes": 1989,
+        "sha256": "67388fd7b650de1b116f4982eb1e158e564486bab36f783f183b6312795ec73a"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080_conversion_receipt.json",
+        "bytes": 5398,
+        "sha256": "5d297f2a599575b4dbb15e4c8db2c11d3231fca70e8a2fc80ffb29ab42bdd133"
+      },
+      "original_source": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/v5_native1080.mp4",
+        "bytes": 21291104,
+        "sha256": "806c33d891f31419d05845401d8459cdc25b9d9952da91a0bb595fa89eb20a78"
+      },
+      "original_source_audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/v5_native1080.audit.json",
+        "bytes": 28576,
+        "sha256": "3fc75e9a4cca5809be880412f778104c864afa660063f1072a76ef3ca32261ce"
+      },
+      "original_PTS_rows_checked": 226,
+      "H264_codec": [
+        "avc1"
+      ],
+      "H264_decoded_frames": 226,
+      "fps": 24,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_seconds": 9.416666666666666,
+      "first_pts_seconds": 0,
+      "last_pts_seconds": 9.375,
+      "all_decoded_cadence_errors": 0,
+      "max_cadence_error_seconds": 0,
+      "child_cleanup": {
+        "encode_cleanup": {
+          "pid": 29233,
+          "pgid": 29233,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        },
+        "audit_cleanup": {
+          "pid": 29245,
+          "pgid": 29245,
+          "signals": [],
+          "reaped": true,
+          "returncode": 0,
+          "live_group_members_at_end": [],
+          "leader_identity": "already_exited"
+        }
+      },
+      "labels": {
+        "teacher_student": [
+          "Best causal candidate (teacher arm)",
+          "limiteddev_20261107 | sparse best step 2000",
+          "PROVISIONAL: FULL226 CONDITIONS FAILED",
+          "Weight SHA256: 7b9f43c17462fb2d0554645bc7889dc7",
+          "abdebc052ee9f18f6780624de912e0b5",
+          "FP32; HF32 off; latent causal"
+        ],
+        "teacher": [
+          "Open H3 original bidirectional upsampler",
+          "Original upstream weight SHA256:",
+          "4f57821f5837f32f7142b67d815606db",
+          "d7550f194e5c769f7d6c3f83b146a5e6",
+          "Latent: FP32 HF32 off; det unbound",
+          "Decode: FP32 HF32 off; strictdet"
+        ],
+        "native_hr": [
+          "GT reference | verified native HR",
+          "Wing It official HQ | frames 3586..3811",
+          "Aligned native RGB SHA256:",
+          "9597a1492860fa87f2e61e796ee5fdb3",
+          "1094ad9a1554c4598421da70d8af1ba9",
+          "Native 1920x1080; same frame indices"
+        ],
+        "control": [
+          "Control frozen best | step 0"
+        ],
+        "v5": [
+          "Initial v5 | step 1800"
+        ]
+      }
+    }
+  ],
+  "findings": [],
+  "input_files_unchanged_during_review": true,
+  "metadata_inputs": [
+    {
+      "path": "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+      "bytes": 13551,
+      "sha256": "7ec2379b1a8ab31aae22861c4628ad274e986aca5fa6d6efd1a30bb51e20f690"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_media_common_v3.py",
+      "bytes": 27322,
+      "sha256": "88e4f5296fdae971e87d432e237fad4027a3fc4d5cebb39ef34ed41b0ef9db3c"
+    },
+    {
+      "path": "/path/to/staging/h3_limiteddev_H264_subset_plan_v4.json",
+      "bytes": 2501,
+      "sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_retained_rgb_media_plan_v3.json",
+      "bytes": 48129,
+      "sha256": "77f4d052ae16a042ff9f1df0bf15788e0615a1c17c0462c4d70a971516a38d62"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/render_receipt.json",
+      "bytes": 328926,
+      "sha256": "0c871145247fd9b142ce1b3a7d24b09dae28a3bdf3eb478e8b67cceefb3dcead"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_original_display_identity_policy_v1.json",
+      "bytes": 19278,
+      "sha256": "95e78b52f5be858f6ed209553afd6bbf875f25daec0b383fb780093581a540b4"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_media_identity_review_v1.json",
+      "bytes": 47768,
+      "sha256": "772cc3386a0f7566e19e5c2cf5c8cdb91c5e997348aea1be9c7a311a24481fa6"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_main_media_requirement_v1.json",
+      "bytes": 2569,
+      "sha256": "6c445b05c484a837a48a7d21dfd5ab8a9352d6b6cfce2943970b939251de1bf2"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/full21_video_receipt.json",
+      "bytes": 9675,
+      "sha256": "80953828a6e23d5934faa4f6b093629e7a1fcca7d7bfbef96cba79c2d3079ed4"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/full21_H264_delivery_v1.json",
+      "bytes": 34618,
+      "sha256": "d705e8a696119c120203ff6e54cbd0386338806747bbcf4c9dc8089a173c5c81"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt2/exit_receipt.json",
+      "bytes": 2038,
+      "sha256": "abb6563aae66822ce09de768b2587be1fa76e43db2164f423acde7bef782b7eb"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/batch_receipt.json",
+      "bytes": 9267,
+      "sha256": "60fdd3489a5b823bfe38442061ef4d77b6d4e1dc33cf10f016e4ce9320538881"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt1/exit_receipt.json",
+      "bytes": 2040,
+      "sha256": "ac27d0f58cbc6ae0b904a113a9f1911b76e0847b80ac49f2e030651191571fab"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt1/started.json",
+      "bytes": 1177,
+      "sha256": "70d3ff02d8577513f5bc1a80e84814b425fef5cdc2c6d3cdb1ce374c2e87719c"
+    },
+    {
+      "path": "/path/to/staging/h3_media_v4_local_H264_driver_20261108_v1.py",
+      "bytes": 3161,
+      "sha256": "210bf39daf99c200b792b49a190f5f6ea2aa8ee4de3f39374e37a1b546f9e3de"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt1/convert.log",
+      "bytes": 414,
+      "sha256": "4bda192e8d8da2045c5d1a5509f6ea8c8fe4eababdf35b6ac258c82c3c610c67"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/batch_receipt.json",
+      "bytes": 4118,
+      "sha256": "e7ee073b74c06208dfdad480dc12df4d26b216da9907d31de91573fa39e47a1a"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column_conversion_receipt.json",
+      "bytes": 5450,
+      "sha256": "e9f860bdd7e4e1595e1d49f32683443181fa0af09a9796cedcab7450fd5d43fa"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column_conversion_receipt.json",
+      "bytes": 5803,
+      "sha256": "2322cb15cfc03ed06fc27a42952f6de7a3faa4f63c64e70eb4467117204b50be"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column_conversion_receipt.json",
+      "bytes": 5860,
+      "sha256": "9534560de2063491d0adf6839ac95c55f0192cab33417bde28ebe19284287857"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column_conversion_receipt.json",
+      "bytes": 5558,
+      "sha256": "98ee4b4199cf42d65e071bcb2a4dba064c5c5f2236a9241297945e2b710e4cb2"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column_conversion_receipt.json",
+      "bytes": 5424,
+      "sha256": "92e47ea8b74cb180f9aa1024fe044c2f7e97f2d7d9089b51a06da1e4e4c83b5d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column_conversion_receipt.json",
+      "bytes": 5879,
+      "sha256": "c928bc771b20eb6a8971ca432b03bc28fa751b31e7412ac757f7f6fc288823b8"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt2/started.json",
+      "bytes": 1175,
+      "sha256": "bf6aab5abaf1857acb390bd73e39f3923c089ee8817273b8f9f4ef4c73ed497e"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt2/convert.log",
+      "bytes": 414,
+      "sha256": "27c6f8bf0d0dbaebcc8a8be9dea4640baa6942ddd8eb7f57db85abaaf5d79825"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080_conversion_receipt.json",
+      "bytes": 5468,
+      "sha256": "935afbe153f956f65c4c7ab85a7101697e10a3496598101b97eab4d479d733c7"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080_conversion_receipt.json",
+      "bytes": 5448,
+      "sha256": "f4f71c236d29ad3946b06ae4788e45e6896cd90c1e9711da21d917cbb469b25d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080_conversion_receipt.json",
+      "bytes": 5398,
+      "sha256": "5d297f2a599575b4dbb15e4c8db2c11d3231fca70e8a2fc80ffb29ab42bdd133"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080_conversion_receipt.json",
+      "bytes": 5448,
+      "sha256": "fbffe06c283c352b63d0ac5e41febc007a0b6549e52cebc33bebc4b86407a1b1"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080_conversion_receipt.json",
+      "bytes": 5528,
+      "sha256": "324550658d5c4ec856c5d296148221c265c27c0ce9c91aeae8a74fc559efb784"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080_conversion_receipt.json",
+      "bytes": 5574,
+      "sha256": "76939c8a052f5a693e11186d7f5a483f4ea5890cef6184638d807a364baff196"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080_conversion_receipt.json",
+      "bytes": 5556,
+      "sha256": "eeabf4abe9db000f589bb48e1d7095614b785115e957d1c36df2d2d520dd6e5d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080_conversion_receipt.json",
+      "bytes": 5506,
+      "sha256": "31d6cb92264a25d1e7ea48beabbcba1557b6ad106a63fc702c09d39d558d5b1d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080_conversion_receipt.json",
+      "bytes": 5556,
+      "sha256": "9795f827e431a49c28a3fe60db107c239610326b3fbd617751da6bd361226329"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080_conversion_receipt.json",
+      "bytes": 5636,
+      "sha256": "e0229136a778ac9265633e82c007badb5b43a65791cbfa5892b48ee20ec0a6b6"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080_conversion_receipt.json",
+      "bytes": 5441,
+      "sha256": "bd43242cf2159e926784e457e25b3548bc8efd01eb74ea184586e8b16dd3466f"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080_conversion_receipt.json",
+      "bytes": 5422,
+      "sha256": "076ad839386e7146c15b0eeee45f9d4baa81e21d4e341c8fc5c0b6b6d0708ff8"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080_conversion_receipt.json",
+      "bytes": 5372,
+      "sha256": "9df5f64985305ac3149bdcd2067011ce28e26950d752be05de13e472d85819b0"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080_conversion_receipt.json",
+      "bytes": 5422,
+      "sha256": "bab1a4b1116e50f5186a3a40366ccc3b38c5c05407bc9f020a2fb63219701fcd"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080_conversion_receipt.json",
+      "bytes": 5502,
+      "sha256": "424b93bc0607bb1d54d5c56f300cb9279b2f4cd02e706bc778a088a12f34ebdb"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/outer/exit_receipt.json",
+      "bytes": 2049,
+      "sha256": "8acc93aaaa897d1d9be49470888cea197127f24e91628c98d666445a7a0fe5e7"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/pixels_originals/pixels/summary.json",
+      "bytes": 277022,
+      "sha256": "968b9e0342290f6c30b8f05117e780fc435404a5aa8b57608123015ffa05ff38"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/pixels_originals/pixels/WingIt_dev_3586_3811/summary.json",
+      "bytes": 446514,
+      "sha256": "b30b06402579d9d9dfac0d6c1434bdf3caa22d2a3f4677680e6604c53c3f654f"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/pixels_originals/pixels/ElephantsDream_dev_13070_13295/summary.json",
+      "bytes": 450254,
+      "sha256": "aba02446f40ecf84c46650986b0a652488eb29b2d536379cd62f90ebae8e2e19"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/pixels_originals/pixels/WingIt_dev_300_525/summary.json",
+      "bytes": 446945,
+      "sha256": "cf343c6d94f78fbe6c9839909d116a85c2cd64c726534ffe99e83facce637583"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column.audit.json",
+      "bytes": 1992,
+      "sha256": "64dba77cf26b71cf65551291d459296e54ba58ea42cc58c54cd20d7804f43491"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/comparison_3column.audit.json",
+      "bytes": 28364,
+      "sha256": "953dcfba59b380e7f487f257a193f8af3e5bb8dae4aa6fcf79be90e6675525db"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column.audit.json",
+      "bytes": 1979,
+      "sha256": "84a03e573fbe8e477a23aea04a786603daef31645119ba9bf19e2d9fb099b127"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/comparison_3column.audit.json",
+      "bytes": 28352,
+      "sha256": "93a3fe16d4185c4a78ca15f5301811e088b4878474b64db91ec147c513f4401d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.audit.json",
+      "bytes": 1998,
+      "sha256": "d83e2d46f2c697699f221026f99cac88339f57d5d6a8cb972db4a810c97e5c3d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.audit.json",
+      "bytes": 28370,
+      "sha256": "fa8b571bf6b40acbc8078fa346c5bdf6adc3767c1fd03ddbf301de6ba8762f7d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column.audit.json",
+      "bytes": 1992,
+      "sha256": "93b9d395357499e8f025c449171bd577c4df34d2c47caf87d43365d37a81b7f9"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/comparison_3column.audit.json",
+      "bytes": 28354,
+      "sha256": "65fb2f076c324a7fb900c24e98aa9db8d8f46d4fd5c4e7cf7275293be655bc16"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.audit.json",
+      "bytes": 2008,
+      "sha256": "17a02aab44478f674e4f888330589bda80f8b762d53b210edcbc297250a9e5da"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.audit.json",
+      "bytes": 28371,
+      "sha256": "633e669743c56b147e97db9483867fab9a7684be94f8f44c5c671ebb9cd892f2"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+      "bytes": 2003,
+      "sha256": "37a6192d31d4b7706c80942e6160a29a151e6bf8b29979a15f160e932a456359"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+      "bytes": 28366,
+      "sha256": "40a58045f59366670310e593b4d16f9fd12c63f24e55f34fd9e534ed1ee9933c"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080.audit.json",
+      "bytes": 1994,
+      "sha256": "e99f17ca5810b7f811958abf106f1325e471835c98eed5947910deb6ec1796ad"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/control_native1080.audit.json",
+      "bytes": 28591,
+      "sha256": "9eb58fc3a92fb2bdefdd24ac2a11daa01bf30cb2ba6c3e8b11afdb61a039ff1c"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+      "bytes": 1995,
+      "sha256": "09dc560fc75857d41767f0952107f43df1299149c6d40b37f99ad2fe25afdd28"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+      "bytes": 28592,
+      "sha256": "e88a2dbac0bc46abf9b9c717a5d3eaa328d34895f4994213019c89773a0e8a75"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080.audit.json",
+      "bytes": 1994,
+      "sha256": "0ab614cd69f590be2a35e917c040c46a233ced93665d81f43fd3c73161b224d7"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/teacher_native1080.audit.json",
+      "bytes": 28591,
+      "sha256": "6c19ac0acffce4c3c6a464ba454d4c76add6fafcb2225cc44b7ef67fcc81601b"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080.audit.json",
+      "bytes": 2001,
+      "sha256": "e32619e1d74ee46f1845861800b52c86943b18cc9db0041f0aabef710969ab2d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/teacher_student_native1080.audit.json",
+      "bytes": 28599,
+      "sha256": "49188adbc84673644bf9235a5b079128d2e6dca498d51ce0e91b698ae194f960"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080.audit.json",
+      "bytes": 1989,
+      "sha256": "08191ce41dac36ac3ee58db2c65c270335c03c157f2ccedf8d80ba5fc8230da1"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/v5_native1080.audit.json",
+      "bytes": 28586,
+      "sha256": "d9cb11fb8e2bb3d2b504c989809ba01648d285870566223430130a95b77fea2f"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080.audit.json",
+      "bytes": 1981,
+      "sha256": "647a9f35577997176c801de92e8b799c246f0ec77508c672f19ddfd6f52cfc39"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/control_native1080.audit.json",
+      "bytes": 28579,
+      "sha256": "c4a4d9ad599e291f696839a4447802659f0fe0b153c829ea6b0875b8c6a7a9b4"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080.audit.json",
+      "bytes": 1983,
+      "sha256": "7959952f97c408e10592c6920bc32d26fc602770f3acaa6cbc267dcd5f1b6671"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/native_hr_native1080.audit.json",
+      "bytes": 28580,
+      "sha256": "8dc96e1c4f05863aa5f56ebc9bbe84bd5126608cf3db44f6ffced1c78df5599c"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080.audit.json",
+      "bytes": 1981,
+      "sha256": "19334b6e6371a6c8af93cb1fdb79cbddc6f02cd87de7caffacd0ec1a1b560625"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/teacher_native1080.audit.json",
+      "bytes": 28579,
+      "sha256": "fcd212cfe04046ab1725efaf31008e763a167110974ffed76c17ec84c8eb5d49"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080.audit.json",
+      "bytes": 1989,
+      "sha256": "2b95b1118c16d16250ce48eac994236ab6cd37da0c77601fcb33ced3ff63fdec"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/teacher_student_native1080.audit.json",
+      "bytes": 28587,
+      "sha256": "55ecf6b782984a74b82873515f04fbc0f7689be8015e3e864d5e0f0724746bb4"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080.audit.json",
+      "bytes": 1976,
+      "sha256": "23d8b5822950471d47411af46e755ee726262676d127d42134f558065e358cb4"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/v5_native1080.audit.json",
+      "bytes": 28574,
+      "sha256": "96e11372c4ace769141e0231f8b8862a326a013d18a483c8e1f1d8f3c1d665b1"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080.audit.json",
+      "bytes": 1994,
+      "sha256": "0e4c91381c0262f689cf45613655343fc54184657455a15cf53a448801373fcc"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/control_native1080.audit.json",
+      "bytes": 28581,
+      "sha256": "bc80b2c546aed2660b0ff19caafea64cc54b0d3e954af5e673b12a14477b922a"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080.audit.json",
+      "bytes": 1996,
+      "sha256": "e1059440b06cabe4500e079195adeaef4d657005e9c0a362004639d112d724bf"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/native_hr_native1080.audit.json",
+      "bytes": 28583,
+      "sha256": "9691dabd2d90dcabd3057666d3b0b81c2e12636dc303dd5c96ca5ed42a0a6e93"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080.audit.json",
+      "bytes": 1994,
+      "sha256": "5a964b2c5a5d3ded6ca649b3bc34bdb156caa86475ca7a296d9ee2eb0fef4b2d"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/teacher_native1080.audit.json",
+      "bytes": 28581,
+      "sha256": "145d87d959771d5bc7b0da7c71a33f6ecdc2204380677e1e988bb2ca2eb94bfa"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080.audit.json",
+      "bytes": 2001,
+      "sha256": "cc74f03f55f9240390d8246ca22a3b512f0d8e68ddc6dfa7126b4033f04267ce"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/teacher_student_native1080.audit.json",
+      "bytes": 28589,
+      "sha256": "162bfbe13bc86d264438322c06dfdc3c68ff0e0b3712b19e71a875f801d2d52a"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080.audit.json",
+      "bytes": 1989,
+      "sha256": "67388fd7b650de1b116f4982eb1e158e564486bab36f783f183b6312795ec73a"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_3586_3811/v5_native1080.audit.json",
+      "bytes": 28576,
+      "sha256": "3fc75e9a4cca5809be880412f778104c864afa660063f1072a76ef3ca32261ce"
+    },
+    {
+      "path": "/usr/bin/avconvert",
+      "bytes": 227200,
+      "sha256": "9219b2bbefe96fef5fd9c1a0d240e2267a2b32447bf1ea7c0718365a24f177d9"
+    },
+    {
+      "path": "/path/to/staging/h3_decode_audit",
+      "bytes": 199152,
+      "sha256": "1ca198709f35603ae53208fb1de821275628e200d583097167163fa8bcc667ed"
+    }
+  ],
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "5478c5945436187f3875edfcfd75dcee59f1629adbde9db44622c05bd8d0f093",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

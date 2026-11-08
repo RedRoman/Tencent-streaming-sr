@@ -1,0 +1,85 @@
+{
+  "schema": "h3-root-additional-static-observation-v1",
+  "utc": "2026-11-08T12:17:49.329090+00:00",
+  "observations": [
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/native_crop_029.png",
+      "bytes": 512488,
+      "sha256": "568d0e58787ea14c404de3d885615bf018980cf68e831ddff2817988b36f9cc9",
+      "spec": {
+        "id": "fixed_grid_f225_x0_y284",
+        "frame": 225,
+        "xywh": [
+          0,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13295
+        }
+      },
+      "observation": "At frame225 the candidate and original upsampler both show softer pipe edges and smeared segmented highlights compared with GT. Candidate/teacher visual similarity is high in this crop; no quantitative winner inferred.",
+      "viewed_via": "tools.view_image actual image"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/ElephantsDream_dev_13070_13295/native_crop_007.png",
+      "bytes": 979273,
+      "sha256": "ac89abc66a0fb7490035931d146ab5c1541036ad7f847157d6bd677dc116f10e",
+      "spec": {
+        "id": "fixed_grid_f0_x1024_y284",
+        "frame": 0,
+        "xywh": [
+          1024,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "predeclared_complete_spatial_grid_not_semantic_face_hand_localization",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "native_PNG_ordinal",
+          "index": 13070
+        }
+      },
+      "observation": "At frame0 the pipe segment boundaries and highlights appear blurred and uneven in both output columns compared with GT; the candidate has localized ringing/colored edge traces. This is a static visual observation only.",
+      "viewed_via": "tools.view_image actual image"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals/WingIt_dev_300_525/native_crop_041.png",
+      "bytes": 673992,
+      "sha256": "cc0dce34abd15a6b1b64bc32659b56b99c8b85f58e0e33da7f0a28813d8bca75",
+      "spec": {
+        "id": "source_camera_pullback_442",
+        "frame": 142,
+        "xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "selection_kind": "fixed_center_during_previously_source_reviewed438to443_camera_pullback_not_model_selected",
+        "selected_from_model_outputs": false,
+        "source_time_identity": {
+          "kind": "source_video_zero_based_index",
+          "index": 442
+        }
+      },
+      "observation": "At frame142 the candidate and original upsampler both show a soft window frame with colored fringe/halo and softened panel outlines compared with GT. The wall panel texture and brightness differ from GT. One frame cannot establish flicker, motion consistency or causal attribution.",
+      "viewed_via": "tools.view_image actual image"
+    }
+  ],
+  "continuous_playback_completed": false,
+  "full_motion_or_subjective_quality_pass": false,
+  "hypothesis_link": "LPIPS coefficient ablation is independently supported as a testable pixel/perceptual tradeoff hypothesis by complete226 numeric measurements; these static observations do not prove LPIPS caused regression. No thresholds/selection changed.",
+  "old_static_observation_preserved": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/root_static_visual_observation_v1.json",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "85d5db339b7d87e85f40f45ca90d57df86fa6ad81801e575175494fa28ff548e",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

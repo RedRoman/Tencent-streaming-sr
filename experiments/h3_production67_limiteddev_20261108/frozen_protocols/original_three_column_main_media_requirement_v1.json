@@ -1,0 +1,82 @@
+{
+  "schema": "h3-three-column-main-media-human-requirement-v1",
+  "recorded_utc": "2026-11-07T13:34:15.165113+00:00",
+  "instruction_trigger_utc": "2026-11-07T13:32:02.220Z",
+  "source": "Latest h3 heartbeat relaying explicit human main-comparison layout request",
+  "main_column_order": [
+    "current_best_causal_candidate",
+    "original_Open_H3_bidirectional_upsampler",
+    "native_HR_GT_reference"
+  ],
+  "causal_column": {
+    "label_requires": [
+      "experiment_round",
+      "checkpoint_step",
+      "checkpoint_SHA",
+      "selection_and_full_evaluation_status"
+    ],
+    "selection": "Existing frozen selection and quality guards only; never latest-step shortcut or new model-dependent reselection. Best remains provisional until required full evaluation succeeds. Full evaluation failure retained without fallback."
+  },
+  "original_Open_H3_column": {
+    "requires": [
+      "original_upstream_weight_identity",
+      "original_bidirectional_path",
+      "same_LR_input",
+      "same_explicit_target_geometry",
+      "verified_cache_identity_if_reused",
+      "accurate_compute_precision"
+    ],
+    "forbidden_substitutes": [
+      "distilled_student",
+      "causal_aligned_teacher",
+      "refiner"
+    ]
+  },
+  "GT_column": {
+    "requires": [
+      "accepted_native_HR_RGB_source",
+      "verified_spatial_alignment",
+      "verified_temporal_alignment"
+    ],
+    "forbidden_substitutes": [
+      "teacher_output",
+      "decoded_HR_reconstruction",
+      "upscaled_LR"
+    ]
+  },
+  "shared_geometry": {
+    "frames": 226,
+    "fps": 24,
+    "duration_seconds": 9.416666666666666,
+    "native_width": 1920,
+    "native_height": 1080,
+    "same_frame_indices": true,
+    "same_display_scale": true,
+    "display_reduction_must_be_labelled": true
+  },
+  "deliverables": [
+    "three-column_main_comparison",
+    "native1080_single_routes",
+    "same-position_face_hand_and_large_motion_crops",
+    "full_frame_PTS_decode_SHA_technical_audit",
+    "separate_actual_continuous_visual_review"
+  ],
+  "supersedes": "Prior five-column/five-way or teacher-v5-motion user-facing main layout only",
+  "preserve": [
+    "training_and_frozen_selection",
+    "all_quantitative_baselines",
+    "old_code_and_frozen_plans",
+    "historical_videos_and_failures",
+    "separate_H264_outputs"
+  ],
+  "implementation_status": "new_v3_source_candidate_in_preparation_no_actual_media",
+  "source_candidate_owner": "/path/to/root-home/limiteddev_three_column_media",
+  "identity_reviewer": "/path/to/root-home/review_production67_helpers",
+  "no_new_NPU_or_model_or_real_media_actions": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "6c445b05c484a837a48a7d21dfd5ab8a9352d6b6cfce2943970b939251de1bf2",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

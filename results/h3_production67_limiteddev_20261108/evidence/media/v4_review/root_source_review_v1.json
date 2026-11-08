@@ -1,0 +1,52 @@
+{
+  "utc": "2026-11-08T08:55:03.271225+00:00",
+  "status": "root_source_review_passed_pending_independent_review_and_real_input_admission",
+  "files": [
+    {
+      "path": "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+      "bytes": 13551,
+      "sha256": "7ec2379b1a8ab31aae22861c4628ad274e986aca5fa6d6efd1a30bb51e20f690"
+    },
+    {
+      "path": "/path/to/staging/h3_limiteddev_H264_subset_plan_v4.json",
+      "bytes": 2501,
+      "sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8"
+    },
+    {
+      "path": "/path/to/staging/h3_media_v4_local_H264_driver_20261108_v1.py",
+      "bytes": 3161,
+      "sha256": "210bf39daf99c200b792b49a190f5f6ea2aa8ee4de3f39374e37a1b546f9e3de"
+    },
+    {
+      "path": "/path/to/staging/extract_h3_media_v3_transport_20261108_v3.py",
+      "bytes": 3663,
+      "sha256": "c7d318c00f96e675d239c25d35cc496ae4b3c210190f03a74d611343090d065b"
+    }
+  ],
+  "actual_output_root_absent": true,
+  "scope": "CPU media transport and avconvert only; no scientific recomputation",
+  "findings": [
+    "Exact complete v3 render receipt SHA is hard-pinned; complete21video84crop metadata and original teacher/nativeGT labels remain required.",
+    "Only selected subset complete MP4 and audit SHA/226frames/PTS are admitted; unrelated final input files must be in original whitelist; missing unselected payloads are permitted.",
+    "Each successful H264 file has an audited source/output/codec/tool/cleanup receipt; reuse validates all those facts under the same adapter plan; only21 actual receipts permit full21 technical receipt.",
+    "Single fixed output lock and explicit new batch directories; no partial output reuse or implicit failed retry.",
+    "Frozen avconvert and full decode/PTS auditor reused; per-file original bytes checked after conversion.",
+    "Transport archive complete hash and entire member hashes verified in staging before os.link exclusive atomic final placement; no arrays/weights transferred.",
+    "Outer driver records actual child wait/reap/PGID and exit status; no complete/visual claim before those actual receipts."
+  ],
+  "execution_conditions": [
+    "Owner alone rechecks fixed output canonical/no-symlink/no-other-writer before launch.",
+    "Priority/native package download must complete exact archive/member hashes before respective H264 subset launch.",
+    "Failure preserves outputs and original receipts; investigate then explicit new version/attempt, no blind retry.",
+    "Technical success does not establish continuous visual review or picture-quality pass.",
+    "Final public snapshot must add actual v4 source/config and original/public SHA mapping."
+  ],
+  "new_NPU_actions": 0,
+  "actual_conversions_performed_by_root": 0,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "2292e0a368aed7193f659f6322cb961f15cf5f065a5dcce3e51ee3c7275d8ad5",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

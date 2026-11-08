@@ -1,0 +1,428 @@
+{
+  "precision": {
+    "dtype": "float32",
+    "conv_hf32": false,
+    "matmul_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "mode": {
+    "deterministic_algorithms": true,
+    "warn_only": false
+  },
+  "runtime_assets": {
+    "vae/config.json": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/config.json",
+      "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+      "bytes": 2011
+    },
+    "vae/diffusion_pytorch_model-00001-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+      "bytes": 5061033024
+    },
+    "vae/diffusion_pytorch_model-00002-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+      "bytes": 4955986528
+    },
+    "vae/diffusion_pytorch_model-00003-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+      "bytes": 398539336
+    },
+    "vae/diffusion_pytorch_model.safetensors.index.json": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model.safetensors.index.json",
+      "bytes": 74228,
+      "sha256": "15f6d44553c3c616b0dc999920aa784f92ecee7e4201f1f99ac405cfbf3061ca"
+    },
+    "implementation/autoencoder": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/models/autoencoders/autoencoder_kl_minimax_h3.py",
+      "bytes": 41346,
+      "sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2"
+    },
+    "implementation/attention": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/models/attention_dispatch.py",
+      "bytes": 147586,
+      "sha256": "5fa72380e153fc6e9cddd23848800958e1431fbfe1402e60595c250e75c77eb1"
+    },
+    "implementation/package": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/__init__.py",
+      "bytes": 65741,
+      "sha256": "29f8bdd216eabda0ff43449d866aa1b4d92a1e89e43129c99c9e59b03a6564a3"
+    },
+    "lpips/backbone": {
+      "path": "/path/to/runtime-home/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "bytes": 244408911
+    },
+    "lpips/linear": {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+      "bytes": 6009
+    },
+    "lpips/implementation": {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/lpips/lpips.py",
+      "sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658",
+      "bytes": 10101
+    }
+  },
+  "base_model": "/path/to/model-assets/VDN-MiniMax-H3/h3-base",
+  "decoder_implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+  "lpips_fingerprint": {
+    "network": "alex",
+    "version": "0.1",
+    "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "linear_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "implementation_sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658"
+  },
+  "runtime_evidence_files": [
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/version.info",
+      "bytes": 281,
+      "sha256": "cd841c9ab92a2331b262b1d242590533a5d9a4a0f8c9b957ebfd48cfd8056cf0"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/aarch64-linux/ascend_toolkit_install.info",
+      "bytes": 251,
+      "sha256": "aa39b3467a94a77dfb317900c5242f98222ccb964fc30c93bf13465de5696a53"
+    },
+    {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/version.py",
+      "bytes": 85,
+      "sha256": "97c3d630af9e4d5739564d2b27c93b83f49b5f1684f54bb5a5350214ae11d6b0"
+    },
+    {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/csrc/aten/npu_native_functions_by_codegen.yaml",
+      "bytes": 215537,
+      "sha256": "0b2265792c52bae1cc4fc4946ea72f02fd3fd1e6f1024e43cfbe2251a04f604c"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/dynamic/grid_sampler2_d_grad.py",
+      "bytes": 10904,
+      "sha256": "3431d31c51d8a43fbc914ec999e24c26bcc9fcad82c6554d7ae122230cd02ce1"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/ascendc/grid_sampler2_d_grad/grid_sampler2_d_grad.cpp",
+      "bytes": 6108,
+      "sha256": "5e1bd4cca4c87d9470a4a903ef30a3083890ba825de53f0aa35d0a54c7457c05"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/ascendc/grid_sampler2_d_grad/grid_sampler2_d_grad.h",
+      "bytes": 53103,
+      "sha256": "650f0fbc606e2b1e8ebd50f96320651c8f82b2caf1e113d0c1eeec0f1e86a6f2"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/config/ascend910b/ops_cv/grid_sampler2_d_grad.json",
+      "bytes": 6784,
+      "sha256": "47edc737524889d04e44dbd8ba86e27c91025604125ecf8fb5f222496703037a"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/ascend910b/ops_cv/grid_sampler2_d_grad/GridSamplerGrad_fp32_json_high_performance.json",
+      "bytes": 4003,
+      "sha256": "3fbd99f8bf307937149d5c1ec2d6b004e7a94ae3011aba92606214de7056ddd9"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/ascend910b/ops_cv/grid_sampler2_d_grad/GridSamplerGrad_fp32_json_high_performance.o",
+      "bytes": 242560,
+      "sha256": "b4e2ac902e8d9241937e6eeea5b2af2896983e21f6240dc5b5c6f543e5416fab"
+    }
+  ],
+  "selected_cann_home": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1",
+  "router": {
+    "path": "upscaler_v5_motion_20261106/analysis/production67_five_cache_registry_v1/router.json",
+    "bytes": 2661,
+    "sha256": "729586146a7f329feed9fe40731651ca1d1a4c3b5a8dfe453b4e29d662c351ac"
+  },
+  "schema": "h3-production67-limiteddev-full226-plan-v1",
+  "stage_directory": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1",
+  "output": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1",
+  "stages": [
+    "infer",
+    "pixels"
+  ],
+  "physical_devices": [
+    4,
+    7
+  ],
+  "protocol": {
+    "schema": "h3-production67-limiteddev-full226-protocol-v1",
+    "status": "candidate_not_executed_future_terminal_binding_required",
+    "training_protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+    "terminal_binder_source_sha256": "a9036ec0ae9d4763080aa69b772ebcbab658db9f7e5e600662f2c22c0e3b8078",
+    "terminal_policy_sha256": "9f047f243634ffdc4db569a23ffb98c5a107198387c3424a603e23427f74b055",
+    "terminal_result": "Required future real terminal JSON plus exactSHA, reproduced by binder v2; actual2000 each/continuous paired schedule/earliest guard-best required. No future SHA asserted now.",
+    "dev_order": [
+      "WingIt_dev_3586_3811",
+      "ElephantsDream_dev_13070_13295",
+      "WingIt_dev_300_525"
+    ],
+    "models": [
+      "initial_v5_step1800",
+      "frozen_selected_control",
+      "frozen_selected_teacher"
+    ],
+    "best0_allowed": true,
+    "negative_result_allowed": true,
+    "selected_payload_admission": "Exact full-file bytes/SHA before and after weights_only CPU load; exact model-only schema/arm/step/protocol/initializer/selectedmetrics; 322 names/shapes/CPUFP32/finite and345280216 params; strict copy/readback. No optimizer/RNG payload accepted.",
+    "data_access": "Unchanged typed two-cohort router, explicit dev accessor only, strict loader2 real payloadSHA/shape/finite/native226 and teacher lineage; same fixed identities as terminal shared step0. Native PNG remains PNG identity.",
+    "frozen_metric_source_sha256": "d6f0d6c588930dd00b7536840e0d675bd0f001975728c7e3278aaf3db139b7f0",
+    "LR_BCTHW": [
+      1,
+      24,
+      67,
+      44,
+      80
+    ],
+    "target_BCTHW": [
+      1,
+      24,
+      67,
+      68,
+      120
+    ],
+    "raw_decode_THWC": [
+      226,
+      1088,
+      1920,
+      3
+    ],
+    "visible_THWC": [
+      226,
+      1080,
+      1920,
+      3
+    ],
+    "spatial_crop": [
+      4,
+      1084,
+      0,
+      1920
+    ],
+    "time_crop": null,
+    "fps": [
+      24,
+      1
+    ],
+    "frame_regions": {
+      "full226": 226,
+      "prefix208": 208,
+      "tail18": 18,
+      "blend": 60,
+      "nonblend": 166
+    },
+    "transition_pairs": {
+      "all": 225,
+      "blend_touching": 72,
+      "nonblend_only": 153
+    },
+    "latent_tokens": 67,
+    "latent_flow_pairs": 66,
+    "metrics": "Original rgb_metrics/regressions/engineering_conditions functions, original explicit_forward67/latent_terms_all + frozen lossAST; same decodedHR meanabsRGB delta>=.05 ROI for all models/targets. Teacher agreement, decodedHR guard and nativeHR guard reported separately.",
+    "aggregation": "Equal clip arithmetic means, mean clip PSNR (not pooledMSE PSNR), equal clip ROI/delta; overall three windows equal, two correlated Wing windows explicit. Per-clip raw metrics/regressions and film/cohort diagnostics retained. No new per-film acceptance gate.",
+    "thresholds": {
+      "teacher_global_ROI_delta": "strictly below BOTH initialv5 andselectedcontrol minus1e-8",
+      "epsilon": 1e-08,
+      "decodedHR_and_nativeHR_guards_vs_v5": {
+        "global_score": 1.01,
+        "pixel_L1": 1.02,
+        "LPIPS": 1.02
+      }
+    },
+    "failure_action": "Keep negative completed result; no reselection/test unlock/threshold adjustment/automatic retry. Execution failures preserve partial evidence; do not classify as quality pass.",
+    "retention": "Same decoded uint8 RGB used by metrics retained as 15 lossless NPY (teacher+decodedHR+3predictions perclip); original3native arrays referenced. 5route media native/teacher/v5/control/teacherStudent can reuse these exactRGB without new VAE call. No video encoding now.",
+    "call_budget": {
+      "new_student_forwards": 9,
+      "new_VAE_decodes": 15,
+      "new_teacher_forwards": 0,
+      "new_encoder_forwards": 0,
+      "optimizer_updates": 0,
+      "additional_scientific_media_decodes": 0
+    },
+    "test_unlocked": false,
+    "checkpoint_reselection": false,
+    "formal16dev_gate_passed": false,
+    "visual_quality_passed": false,
+    "limits": [
+      "Fixed limited-dev3, only two source films and two correlated Wing windows; not formal16dev, no statistical/generalization claim.",
+      "Selected best0 and valid negative outcome are retained; full226 results never choose another checkpoint.",
+      "Original generation mode unbound and strictdet caches remain separate immutable cohorts; new strict evaluation does not relabel cache history.",
+      "Verified native public source, synthetic area704x1280 LR and reflect4 HRcompute are not private production input parity.",
+      "Teacher is original upscaler+noncausal VAE decoder, not native truth or refiner; only student latent mapping is causal.",
+      "Old default-HF32 failure and previous restore failures remain recorded; no new preflight rerun is prescribed.",
+      "LosslessRGB retention/metric completion is not a playable video, audited videoPTS, native24fps continuous visual review or proof artifacts are solved."
+    ]
+  },
+  "protocol_descriptor": {
+    "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_protocol_v1.json",
+    "bytes": 4765,
+    "sha256": "3e1cd5cb2499d4ee5b8bf9f82eeeabde10786190bda7382596c80e1e815f9c9a"
+  },
+  "minimum_free_bytes": {
+    "infer": 2147483648,
+    "pixels": 34359738368
+  },
+  "future_launcher_contract": "Separate owned infer/pixels process only, actualnpu-smi andphysicalcardthreeflock held, independentPGID, strict childwait/reap, noall/retry. No launcher included or executed in this candidate. infer actualouterexit0 + complete/reportSHA required before pixels.",
+  "files": {
+    "causal_upscaler.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/causal_upscaler.py",
+      "bytes": 10332,
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+    },
+    "check_h3_production67_explicit_hf32off_npu_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/check_h3_production67_explicit_hf32off_npu_v1.py",
+      "bytes": 18757,
+      "sha256": "68b82163f18b5b733deeebb4c922bf01f7d855883de18e7d0d2c054e4acb169c"
+    },
+    "data_utils.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/data_utils.py",
+      "bytes": 9603,
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+    },
+    "evaluate_h3_production67_limiteddev_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/evaluate_h3_production67_limiteddev_v1.py",
+      "bytes": 24747,
+      "sha256": "31f2c8a76f53020864464ca3d489763115c463b0c32dc58f8bdbc0403de0e295"
+    },
+    "evaluate_h3_production67_wing_v4.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/evaluate_h3_production67_wing_v4.py",
+      "bytes": 29519,
+      "sha256": "852e4209c75876adf638778098e6c3cd011425822127a63e69b9e612f08c3593"
+    },
+    "h3_causal_v5_tensor_validation.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_causal_v5_tensor_validation.json",
+      "bytes": 84489,
+      "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75"
+    },
+    "h3_conv3d_explicit_target_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_conv3d_explicit_target_v1.py",
+      "bytes": 12825,
+      "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6"
+    },
+    "h3_production67_cann_imports_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_cann_imports_v1.py",
+      "bytes": 3217,
+      "sha256": "cfc334f1a3568315a1ccd88020e9b6785de689dfcd5914972449c6fe5faa2996"
+    },
+    "h3_production67_cohort_router_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_cohort_router_v1.py",
+      "bytes": 13096,
+      "sha256": "4dd024b749c7134d3aaf2c4686da3f913909edc9b858fa8081c4f6396a4de2aa"
+    },
+    "h3_production67_dataset_binding_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_dataset_binding_v2.py",
+      "bytes": 14312,
+      "sha256": "4fb6fe4c9823dbdd233c726f06e398f29854a3e507875e7b56ea6683b6236941"
+    },
+    "h3_production67_eval_metrics_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_eval_metrics_v1.py",
+      "bytes": 6025,
+      "sha256": "d6f0d6c588930dd00b7536840e0d675bd0f001975728c7e3278aaf3db139b7f0"
+    },
+    "h3_production67_geometry_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_geometry_v1.py",
+      "bytes": 13298,
+      "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383"
+    },
+    "h3_production67_limiteddev_eval_contract_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_eval_contract_v1.py",
+      "bytes": 9568,
+      "sha256": "ca49f41fb1f9398c088d627c16ad9472bca28b59a07dbf72af2b83139f38710f"
+    },
+    "h3_production67_limiteddev_full226_protocol_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_protocol_v1.json",
+      "bytes": 4765,
+      "sha256": "3e1cd5cb2499d4ee5b8bf9f82eeeabde10786190bda7382596c80e1e815f9c9a"
+    },
+    "h3_production67_limiteddev_terminal_binding_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_terminal_binding_v2.py",
+      "bytes": 21939,
+      "sha256": "a9036ec0ae9d4763080aa69b772ebcbab658db9f7e5e600662f2c22c0e3b8078"
+    },
+    "h3_production67_limiteddev_terminal_policy_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_terminal_policy_v1.json",
+      "bytes": 10980,
+      "sha256": "9f047f243634ffdc4db569a23ffb98c5a107198387c3424a603e23427f74b055"
+    },
+    "h3_production67_mixed_cohort_policy_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_mixed_cohort_policy_v1.json",
+      "bytes": 49534,
+      "sha256": "3141c281a426ffd6b5d25feaec7118a066ba8fe4ccff01b7a3ad48c4fe9d0f76"
+    },
+    "h3_production67_pair_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_pair_loader_v1.py",
+      "bytes": 24155,
+      "sha256": "5d3ea3d6e8d59896e5c2b664addf3a5bba5d4700efa525a0335125973124602b"
+    },
+    "h3_production67_pair_loader_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_pair_loader_v2.py",
+      "bytes": 34547,
+      "sha256": "1b7b1f41996b5cc00fe45e33a35261e5d159ce03b96fb43f1f3b0ab6be00d47d"
+    },
+    "h3_production67_pixel_specs_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_pixel_specs_v1.py",
+      "bytes": 7708,
+      "sha256": "50ea70c63a31ce14a3aec11b5072d369bcbd2d6b739a08b049e08cd40e2edfd0"
+    },
+    "h3_production67_train_step_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_train_step_v1.py",
+      "bytes": 17025,
+      "sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997"
+    },
+    "h3_production67_v5_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_v5_loader_v1.py",
+      "bytes": 14056,
+      "sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512"
+    },
+    "h3_teacher_distill.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_teacher_distill.py",
+      "bytes": 13244,
+      "sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1"
+    },
+    "h3_v5_motion.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_v5_motion.py",
+      "bytes": 9828,
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa"
+    },
+    "prepare_data.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/prepare_data.py",
+      "bytes": 18150,
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8"
+    },
+    "smoke_h3_production67_v5_full_cpu_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/smoke_h3_production67_v5_full_cpu_v1.py",
+      "bytes": 18841,
+      "sha256": "b50fa4c03bad4eef7dc864ffe1c51b6cfc3f1ec9b206869cc5a1fa395540cfb5"
+    },
+    "surrogate67_contract.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/surrogate67_contract.json",
+      "bytes": 37409,
+      "sha256": "41f3e018aa90760945659e42abf13adb91374452f884723fe3078096a4825879"
+    },
+    "train_upscaler_trial.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/train_upscaler_trial.py",
+      "bytes": 21905,
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+    },
+    "ultraflash_ewarp.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/ultraflash_ewarp.py",
+      "bytes": 6288,
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    },
+    "upscaler.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/upscaler.py",
+      "bytes": 1724,
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521"
+    },
+    "upscaler_node.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/upscaler_node.py",
+      "bytes": 25218,
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437"
+    }
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "schema": "h3-limiteddev-original-teacher-native-display-policy-v1",
+  "status": "metadata_verified_no_new_science",
+  "dev_order": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "same_LR_and_explicit_target_verified": true,
+  "original_bidirectional_path_verified": true,
+  "native_source_alignment_verified": true,
+  "new_model_calls": 0,
+  "test_unlocked": false,
+  "review_sha256": "772cc3386a0f7566e19e5c2cf5c8cdb91c5e997348aea1be9c7a311a24481fa6",
+  "clips": {
+    "WingIt_dev_3586_3811": {
+      "pair_record_sha256": "e9a0e9e4dd5c7422e930c5c3f7eed92f23c405231ca9b5fa4e6656a5a3679153",
+      "teacher_record_sha256": "bdb02937c97004d5fb0cbac832fb061c7bf467d1fbba15065ec5443e3105d99d",
+      "child_contract_sha256": "914394c15e50d593fbd9ff63a3202feea8ed8731b66bc1b57fb3d9d76c2da3f8",
+      "native_array": {
+        "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+        "bytes": 1405900928,
+        "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+      },
+      "source_identity_sha256": "2a9fb97e3e1b3e2588ce4a8fa3c06d02cae05dd77a9652ff51c3e2316ab6a30c",
+      "native_RGB_sha256": "9597a1492860fa87f2e61e796ee5fdb31094ad9a1554c4598421da70d8af1ba9",
+      "upstream_weight_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "teacher_variant": "original_upstream_bidirectional",
+      "causal_aligned_or_student_substitution": false,
+      "native_is_teacher_or_decoded_or_upscaled_LR": false,
+      "teacher_generation_precision": {
+        "device_type": "npu",
+        "tensor_dtype": "float32",
+        "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+        "torch_version": "2.7.1+cpu",
+        "torch_npu_version": "2.7.1.post2",
+        "conv_allow_hf32": false,
+        "matmul_allow_hf32": false,
+        "float32_matmul_precision": "highest"
+      },
+      "teacher_generation_mode_semantics": "determinism policy unbound in original generation recipe; absence is not false or true",
+      "teacher_generation_precision_label": "Latent: FP32 HF32 off; det unbound",
+      "native_source_label": "Wing It official HQ | frames 3586..3811",
+      "source_time": {
+        "count": 226,
+        "source_indices": [
+          3586,
+          3811
+        ],
+        "first_pts": [
+          1836032,
+          12288
+        ],
+        "last_pts": [
+          1951232,
+          12288
+        ],
+        "cadence": "1/24",
+        "basis": "measured_video_track_PTS",
+        "native_numbers_one_based": null
+      },
+      "native_source_identity": {
+        "kind": "original_source_native_crop_or_identity",
+        "is_upscaled": false,
+        "is_model_output": false,
+        "visible_hw": [
+          1080,
+          1920
+        ],
+        "source_raster_hw": [
+          1080,
+          1920
+        ],
+        "source_crop_y0_y1_x0_x1": [
+          0,
+          1080,
+          0,
+          1920
+        ],
+        "source_video_sha256": "02df6e4471517eeb6d67db553078b02b1a859c61761f0004dfeae0744cbc26d6",
+        "native_hr_rgb_sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733",
+        "source_window_receipt_sha256": "8813b4d23dc44af79893983d91093fdb26c6136eae2e3426cf4f0210286238cb"
+      },
+      "teacher_label": {
+        "kind": "frozen_bidirectional_upscaler",
+        "native_hr_ground_truth": false,
+        "input_draft_sha256": "e122add68c2ebb2a38ab7963dc0988c2301198cd52849435323f4aaf7c821c8c",
+        "checkpoint_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+        "adapter_sha256": "b5314817fa9794126cd832aaeca6a44b8bc59613b903d59d5458d9b856dabeec",
+        "normalization_binding_sha256": "7295286b2fc1cdd4f57f62034b42aaf57ec79078181141b81d25a300faa22fe1",
+        "execution_precision_sha256": "9c7eb23200a5a7dc60490580d19c0ee5be7eb8b1fe4dc50193b7bd10a4a77bef",
+        "explicit_target_thw": [
+          67,
+          68,
+          120
+        ],
+        "enable_chunking": false
+      },
+      "teacher_original_fingerprint": {
+        "base_weights_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+        "loader_sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+        "loaded_node_sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+        "model_class": "LatentResizer3D",
+        "parameter_count": 345280216,
+        "state_dict_format": "original_upscaler",
+        "adapter_structure": {
+          "temporal_convolution_counts_by_kernel": {
+            "3": 50,
+            "5": 12
+          },
+          "causal_history_latent_frames": 148,
+          "longest_convolution_receptive_field": 149,
+          "original_groupnorm_dependency": "whole input clip",
+          "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+        }
+      },
+      "teacher_generation_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_wing_data_20261107/npu_owner_attempt1/completed_originals/data/teacher/teacher_generation.json",
+        "bytes": 1126,
+        "sha256": "0e0d6aabfe029975db4aec19e2e55e735757db2ff2cd026a671fdd4e81ff326a"
+      },
+      "same_LR_draft_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/data_v1/pair/arrays/draft.npy",
+        "bytes": 22640768,
+        "sha256": "e122add68c2ebb2a38ab7963dc0988c2301198cd52849435323f4aaf7c821c8c"
+      },
+      "original_teacher_latent_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/data_v1/teacher/teacher.npy",
+        "bytes": 52485248,
+        "sha256": "c98802a0686977a28f4df6e3eccbab81e2bca2340d73cef074515df42a70f40b"
+      },
+      "native_source_authority": {
+        "path": "/path/to/h3-project/public_native_hr_engineering_20261107/wing_it_3586_3811/native_hq_acceptance_v1.json",
+        "bytes": 37081,
+        "sha256": "efee2dbb3304cca1cde0382b09f92ba2ef9be56bed6f9ca2a5b356a3cbbea02b"
+      },
+      "alignment": "All routes use the same local output frame 0..225 from this pair. Native identity1080 is padded reflect4 to1088 then synthetic area704 LR; predictions decode226x1088 and crop4:1084 only. No temporal offset or reindex is permitted."
+    },
+    "ElephantsDream_dev_13070_13295": {
+      "pair_record_sha256": "0ed5b8aee3856565ae5e87053b1c6c3a635734f7e42dfb36e2794472c0cb618c",
+      "teacher_record_sha256": "1f76abb09baa0b5f0b972d423fbdbe03fc1e8991ce468a2af83ff6b4e2eb9571",
+      "child_contract_sha256": "a29abd7f05f6db1937914233f8dc8a66d0a0d9da5c1889edf26658042b1cc3dc",
+      "native_array": {
+        "path": "/path/to/h3-project/upscaler_production67_ed13070_dev_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+        "bytes": 1405900928,
+        "sha256": "a893b2ce581b9af207bced0bb4ae4e97b3fa6a2da7cd824a7c5d60c39ad4289a"
+      },
+      "source_identity_sha256": "038fc8e05d6bb88ac2c2cfc60052e935f027c6812a8c1ef6408c2b53d8444e9f",
+      "native_RGB_sha256": "834b704e6baa0fc35d7440c6050bba1fa35d15eba4a1240525ac20545d2fa7e3",
+      "upstream_weight_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "teacher_variant": "original_upstream_bidirectional",
+      "causal_aligned_or_student_substitution": false,
+      "native_is_teacher_or_decoded_or_upscaled_LR": false,
+      "teacher_generation_precision": {
+        "device_type": "npu",
+        "tensor_dtype": "float32",
+        "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+        "torch_version": "2.7.1+cpu",
+        "torch_npu_version": "2.7.1.post2",
+        "conv_allow_hf32": false,
+        "matmul_allow_hf32": false,
+        "float32_matmul_precision": "highest",
+        "deterministic_algorithms": true,
+        "deterministic_warn_only": false
+      },
+      "teacher_generation_mode_semantics": "strict true/warn false explicitly bound",
+      "teacher_generation_precision_label": "Latent: FP32 HF32 off; det strict",
+      "native_source_label": "ED native PNG | publisher 13070..13295",
+      "source_time": {
+        "count": 226,
+        "source_indices": [
+          13069,
+          13294
+        ],
+        "first_pts": [
+          13069,
+          24
+        ],
+        "last_pts": [
+          13294,
+          24
+        ],
+        "cadence": "1/24",
+        "basis": "publisher_nominal_24fps_not_intrinsic_PTS",
+        "native_numbers_one_based": [
+          13070,
+          13295
+        ]
+      },
+      "native_source_identity": {
+        "kind": "original_source_native_crop_or_identity",
+        "is_upscaled": false,
+        "is_model_output": false,
+        "visible_hw": [
+          1080,
+          1920
+        ],
+        "source_raster_hw": [
+          1080,
+          1920
+        ],
+        "source_crop_y0_y1_x0_x1": [
+          0,
+          1080,
+          0,
+          1920
+        ],
+        "source_kind": "native_png_sequence",
+        "native_png_source_sha256": "47f5c869ccb362562a80ac76dabfcc1a5dfa90ce90bfdc39978cd883cfcf7dbf",
+        "native_hr_rgb_sha256": "a893b2ce581b9af207bced0bb4ae4e97b3fa6a2da7cd824a7c5d60c39ad4289a",
+        "source_window_receipt_sha256": "923ad80478aebe602fdd107b0064403bf665c4b3ff99de6dbaf965a15bdff4e5"
+      },
+      "teacher_label": {
+        "kind": "frozen_bidirectional_upscaler",
+        "native_hr_ground_truth": false,
+        "input_draft_sha256": "d1cfbfc67a900e8be2eb392841c641675169d5972216201ad7982c97f650505f",
+        "checkpoint_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+        "adapter_sha256": "5977e7451e2d6779357c594f279687d0b2c1a9a8da975060c9d8576ac6ef0548",
+        "normalization_binding_sha256": "7295286b2fc1cdd4f57f62034b42aaf57ec79078181141b81d25a300faa22fe1",
+        "execution_precision_sha256": "33f7dd94ed7130b2a5f183d0471489a63a6c2b0c1789e73edc36f92f1250b66f",
+        "explicit_target_thw": [
+          67,
+          68,
+          120
+        ],
+        "enable_chunking": false
+      },
+      "teacher_original_fingerprint": {
+        "base_weights_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+        "loader_sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+        "loaded_node_sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+        "model_class": "LatentResizer3D",
+        "parameter_count": 345280216,
+        "state_dict_format": "original_upscaler",
+        "adapter_structure": {
+          "temporal_convolution_counts_by_kernel": {
+            "3": 50,
+            "5": 12
+          },
+          "causal_history_latent_frames": 148,
+          "longest_convolution_receptive_field": 149,
+          "original_groupnorm_dependency": "whole input clip",
+          "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+        }
+      },
+      "teacher_generation_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_ed13070_data_20261107/actual_execution_v1/completed_evidence_v2/data/teacher/teacher_generation.json",
+        "bytes": 1136,
+        "sha256": "3121c716b390e07f90bc3fd2fde97b3b4750471b85f6d106a380f2aee1f6b063"
+      },
+      "same_LR_draft_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_ed13070_dev_20261107/data_v1/pair/arrays/draft.npy",
+        "bytes": 22640768,
+        "sha256": "d1cfbfc67a900e8be2eb392841c641675169d5972216201ad7982c97f650505f"
+      },
+      "original_teacher_latent_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_ed13070_dev_20261107/data_v1/teacher/teacher.npy",
+        "bytes": 52485248,
+        "sha256": "0b0ea6f04378b2714924b93753ce95cca04ac76aaf2edb104d2a8c2d4e107553"
+      },
+      "native_source_authority": {
+        "path": "/path/to/h3-project/upscaler_production67_ed13070_dev_20261107/data_v1/pair/source/root_source_decision.json",
+        "bytes": 4386,
+        "sha256": "f2bf010b7c36509bd372fdb3d2c0ae71bf4223bad7d69eae8c25a7e25b59f043"
+      },
+      "alignment": "All routes use the same local output frame 0..225 from this pair. Native identity1080 is padded reflect4 to1088 then synthetic area704 LR; predictions decode226x1088 and crop4:1084 only. No temporal offset or reindex is permitted."
+    },
+    "WingIt_dev_300_525": {
+      "pair_record_sha256": "641b40dd22d92366465c5d3b943b61580f86d63199372584b5ba1f51df7d3a3a",
+      "teacher_record_sha256": "0a98d7407d7e116d94d37bf2323c7ba144e2daa8c4a62ed4988ef592070b0858",
+      "child_contract_sha256": "b6f1a1e68169a1f75db4c5c36f1c7eb86bcf4c3c625e965da12cfc0ecfcad7cd",
+      "native_array": {
+        "path": "/path/to/h3-project/upscaler_production67_wing300_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+        "bytes": 1405900928,
+        "sha256": "cd6852a3dc094bbab5231d9e1bc46192b0ee45d11a834f55e6a0747c9f50c7e8"
+      },
+      "source_identity_sha256": "43edfe23e2cd79409da84308917df7b1a58eeb112373fb8b440542d91a7a991e",
+      "native_RGB_sha256": "0899bbafd7d3e0a3146595a625866170054e45247c1b0f8d4298d0616cc7a6fc",
+      "upstream_weight_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "teacher_variant": "original_upstream_bidirectional",
+      "causal_aligned_or_student_substitution": false,
+      "native_is_teacher_or_decoded_or_upscaled_LR": false,
+      "teacher_generation_precision": {
+        "device_type": "npu",
+        "tensor_dtype": "float32",
+        "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+        "torch_version": "2.7.1+cpu",
+        "torch_npu_version": "2.7.1.post2",
+        "conv_allow_hf32": false,
+        "matmul_allow_hf32": false,
+        "float32_matmul_precision": "highest",
+        "deterministic_algorithms": true,
+        "deterministic_warn_only": false
+      },
+      "teacher_generation_mode_semantics": "strict true/warn false explicitly bound",
+      "teacher_generation_precision_label": "Latent: FP32 HF32 off; det strict",
+      "native_source_label": "Wing It official HQ | frames 300..525",
+      "source_time": {
+        "count": 226,
+        "source_indices": [
+          300,
+          525
+        ],
+        "first_pts": [
+          153600,
+          12288
+        ],
+        "last_pts": [
+          268800,
+          12288
+        ],
+        "cadence": "1/24",
+        "basis": "measured_video_track_PTS",
+        "native_numbers_one_based": null
+      },
+      "native_source_identity": {
+        "kind": "original_source_native_crop_or_identity",
+        "is_upscaled": false,
+        "is_model_output": false,
+        "visible_hw": [
+          1080,
+          1920
+        ],
+        "source_raster_hw": [
+          1080,
+          1920
+        ],
+        "source_crop_y0_y1_x0_x1": [
+          0,
+          1080,
+          0,
+          1920
+        ],
+        "source_video_sha256": "02df6e4471517eeb6d67db553078b02b1a859c61761f0004dfeae0744cbc26d6",
+        "native_hr_rgb_sha256": "cd6852a3dc094bbab5231d9e1bc46192b0ee45d11a834f55e6a0747c9f50c7e8",
+        "source_window_receipt_sha256": "444195f0afc06d87847361c47b6755169f0c0212d7dfa7dc3cb41b94adbaf4f4"
+      },
+      "teacher_label": {
+        "kind": "frozen_bidirectional_upscaler",
+        "native_hr_ground_truth": false,
+        "input_draft_sha256": "2d5008bc74f0f4f2680f059582c4e8081f0dcb20243367f60a0f57111d0df566",
+        "checkpoint_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+        "adapter_sha256": "5977e7451e2d6779357c594f279687d0b2c1a9a8da975060c9d8576ac6ef0548",
+        "normalization_binding_sha256": "7295286b2fc1cdd4f57f62034b42aaf57ec79078181141b81d25a300faa22fe1",
+        "execution_precision_sha256": "33f7dd94ed7130b2a5f183d0471489a63a6c2b0c1789e73edc36f92f1250b66f",
+        "explicit_target_thw": [
+          67,
+          68,
+          120
+        ],
+        "enable_chunking": false
+      },
+      "teacher_original_fingerprint": {
+        "base_weights_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+        "loader_sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+        "loaded_node_sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+        "model_class": "LatentResizer3D",
+        "parameter_count": 345280216,
+        "state_dict_format": "original_upscaler",
+        "adapter_structure": {
+          "temporal_convolution_counts_by_kernel": {
+            "3": 50,
+            "5": 12
+          },
+          "causal_history_latent_frames": 148,
+          "longest_convolution_receptive_field": 149,
+          "original_groupnorm_dependency": "whole input clip",
+          "causal_groupnorm_dependency": "current frame channels and spatial dimensions"
+        }
+      },
+      "teacher_generation_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_wing300_data_20261107/completed_data_evidence_v1/data_v1/teacher/teacher_generation.json",
+        "bytes": 1124,
+        "sha256": "0a7aa638b4c3cb8b988717af99d3b709e49d252b9d0bbff5653626a831a7d1a0"
+      },
+      "same_LR_draft_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_wing300_engineering_20261107/data_v1/pair/arrays/draft.npy",
+        "bytes": 22640768,
+        "sha256": "2d5008bc74f0f4f2680f059582c4e8081f0dcb20243367f60a0f57111d0df566"
+      },
+      "original_teacher_latent_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_wing300_engineering_20261107/data_v1/teacher/teacher.npy",
+        "bytes": 52485248,
+        "sha256": "b1091818e1425224d11b1d2097d1843850a28bc09371884f3e822162b3f2f640"
+      },
+      "native_source_authority": {
+        "path": "/path/to/h3-project/public_native_hr_engineering_20261107/wing_it_300_525/root_source_decision.json",
+        "bytes": 16521,
+        "sha256": "e2ac60b0ebda3ab6b7d3c83a759b4f3bdf65faedf48ab69d8c1e34fcfe0547ea"
+      },
+      "alignment": "All routes use the same local output frame 0..225 from this pair. Native identity1080 is padded reflect4 to1088 then synthetic area704 LR; predictions decode226x1088 and crop4:1084 only. No temporal offset or reindex is permitted."
+    }
+  },
+  "terminology": "Open-H3 integrated released author LatentResizer3D upsampler only, original bidirectional temporal convolutions and original clip-wide GroupNorm. Not the complete Open-H3/refiner pipeline or a claim of private BF16 production elementwise parity.",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "95e78b52f5be858f6ed209553afd6bbf875f25daec0b383fb780093581a540b4",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

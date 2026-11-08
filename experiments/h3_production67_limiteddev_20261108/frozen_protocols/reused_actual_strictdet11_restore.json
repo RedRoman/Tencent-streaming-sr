@@ -1,0 +1,208 @@
+{
+  "status": "completed_distinct_deterministic_restore_comparison",
+  "deterministic_restore_comparison_passed": true,
+  "source": {
+    "path": "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/check_h3_production67_deterministic_restore_results_v1.py",
+    "bytes": 14518,
+    "sha256": "69d4cddc195dc439e0cb0c16e0e841c89c1d34c5fef78d702e92935b7548f319"
+  },
+  "source_plan": {
+    "path": "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/h3_production67_deterministic_restore_plan_v1.json",
+    "bytes": 22972,
+    "sha256": "a234b03b86a5296a84eee4cf4ab6151219ebd706a54d51bfff5230ba73d9783c"
+  },
+  "original_checker": {
+    "path": "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/check_h3_production67_paired8_results_v1.py",
+    "bytes": 12201,
+    "sha256": "dd147a0d9f64237d6b43f20863af3f7b520bc866ff129bb9f11e6e9512eeee35"
+  },
+  "original_comparator": {
+    "path": "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/run_h3_teacher_resume_probe_npu7.py",
+    "bytes": 25435,
+    "sha256": "f28046f0551815d8bfd306d96dd7bd9711a546159e4bf956649bc9a376c7ac0f"
+  },
+  "stage_reports": {
+    "continuous": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_deterministic_restore_v1/continuous/report.json",
+      "bytes": 130456,
+      "sha256": "762bdcf10e0f97c0be38a08dcb4371e95e14d1c73ed34841f2f2a9ca12c630f9"
+    },
+    "branch_start": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_deterministic_restore_v1/branch_start/report.json",
+      "bytes": 119821,
+      "sha256": "a938d22647a27ecb9bf1c50c516a0d6e3282116cd226e68b6df371cadcbdc6fb"
+    },
+    "branch_finish": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_deterministic_restore_v1/branch_finish/report.json",
+      "bytes": 100240,
+      "sha256": "80bd158dd243694c033f7710b60003638fddd179a35925a509210845135db745"
+    }
+  },
+  "new_protocol_sha256": "1dd6fac4621cd22fe60e3a5441ef1c7e13aade034b6ea0e3af6eee04a9154304",
+  "original_update_protocol_sha256": "031a04b660c4380cf330cdd6272dac270f2a9cd605d31165ed3809c30cf1b201",
+  "original_control_checkpoint3": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_paired8_engineering_v1/control/updates/checkpoint_step_003.pt",
+    "bytes": 4143734221,
+    "sha256": "dcd0ae35d3acdf8380f5b4631e536cf09954c6db94e002ffc16c16ce11edf89e",
+    "completed_updates": 3,
+    "arm": "control",
+    "protocol_sha256": "031a04b660c4380cf330cdd6272dac270f2a9cd605d31165ed3809c30cf1b201",
+    "schedule_sha256": "8c2247653b972e4fd430e5508ef0dab97356dad6b8f600cca8c5cf27ed187511"
+  },
+  "new_optimizer_updates": 11,
+  "stage_update_counts": {
+    "continuous": 5,
+    "branch_start": 4,
+    "branch_finish": 2
+  },
+  "compared_logical_steps": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "actual_branch_stop_step": 7,
+  "actual_branch_save_and_restore_step": 6,
+  "comparisons": {
+    "step_metrics": {
+      "passed": true,
+      "all_bitexact": true,
+      "tensor_count": 0,
+      "tensor_elements": 0,
+      "scalar_count": 930,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "violating_elements": 0,
+      "failures": [],
+      "atol": 1e-06,
+      "rtol": 1e-05
+    },
+    "model": {
+      "passed": true,
+      "all_bitexact": true,
+      "tensor_count": 322,
+      "tensor_elements": 345280216,
+      "scalar_count": 0,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "violating_elements": 0,
+      "failures": [],
+      "atol": 1e-06,
+      "rtol": 1e-05
+    },
+    "optimizer": {
+      "passed": true,
+      "all_bitexact": true,
+      "tensor_count": 966,
+      "tensor_elements": 690560754,
+      "scalar_count": 334,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "violating_elements": 0,
+      "failures": [],
+      "atol": 1e-07,
+      "rtol": 0.0001
+    },
+    "rng": {
+      "passed": true,
+      "all_bitexact": true,
+      "tensor_count": 2,
+      "tensor_elements": 5072,
+      "scalar_count": 627,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "violating_elements": 0,
+      "failures": [],
+      "atol": 0.0,
+      "rtol": 0.0
+    }
+  },
+  "branch_before_stop_vs_continuous": {
+    "passed": true,
+    "all_bitexact": true,
+    "tensor_count": 0,
+    "tensor_elements": 0,
+    "scalar_count": 744,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "violating_elements": 0,
+    "failures": [],
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "unsaved7_vs_replayed7": {
+    "passed": true,
+    "all_bitexact": true,
+    "tensor_count": 0,
+    "tensor_elements": 0,
+    "scalar_count": 186,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "violating_elements": 0,
+    "failures": [],
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "unchanged_tolerances": {
+    "model": {
+      "atol": 1e-06,
+      "rtol": 1e-05
+    },
+    "optimizer": {
+      "atol": 1e-07,
+      "rtol": 0.0001
+    },
+    "step_metrics": {
+      "atol": 1e-06,
+      "rtol": 1e-05
+    },
+    "restored_state": {
+      "atol": 0.0,
+      "rtol": 0.0
+    }
+  },
+  "bound_prior_evidence": {
+    "leaf_prepare": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_leaf_ab_v1/prepare_P/report.json",
+      "bytes": 22764,
+      "sha256": "00cd033b2604694312492e65f758140e716eb742b245dc295795fc79cd6781b6"
+    },
+    "leaf_baseline": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_leaf_ab_v1/baseline/report.json",
+      "bytes": 37272,
+      "sha256": "b629bf0a6414a9a4019ce4bc3e3dcfbefabf128696274bcb41d1e185d585bd05"
+    },
+    "leaf_deterministic": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_leaf_ab_v1/deterministic/report.json",
+      "bytes": 37208,
+      "sha256": "5f2168ce4a9e4f82764375ce678127ebb60aa88ebae0efae8d056390a2b4a9fd"
+    },
+    "crossmode": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_leaf_ab_v1/crossmode_actual_v2.json",
+      "bytes": 14777,
+      "sha256": "ce3eb6717b5588c722fbb47ae2f7ac052bf5d5c1bed59f973c0aafb1600a0e91"
+    },
+    "old_common_prefix_failure": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_common_prefix_engineering_v1/common_prefix_comparison_actual_v1.json",
+      "bytes": 5805,
+      "sha256": "b062136a46db840c53fce58252933a8bbc211d4d3c929b3c2eae9ad6d88aed72"
+    }
+  },
+  "original_restore_acceptance_remains_failed": true,
+  "old_common_prefix_acceptance_remains_failed": true,
+  "old_failure_modified": false,
+  "formal_training_allowed": false,
+  "read_only_checker_NPU_or_optimizer_actions": 0,
+  "limits": [
+    "SingleCharge new deterministic engineering protocol only; not formal multi-film quality or training readiness.",
+    "Normal stop7/save6/restore6 is not SIGTERM or crash recovery.",
+    "Exact live restore is checked by pinned executed core; final states and complete metric rows are independently compared."
+  ],
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "06c940cf770be90ccb3fd19803e7d683d6f77ea6eb67ce3b23dcd293f2870b89",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "schema": "h3-limiteddev-next-single-variable-objective-independent-analysis-v1",
+  "utc": "2026-11-08T12:14:11.381517+00:00",
+  "status": "recommend_training_only_teacher_LPIPS_0p1_ablation_hypothesis_not_validated",
+  "scope": "Local existing scalar evidence and frozen source review only. No source modification, new scientific evaluation, gradients, tensor/path/to/artifact-storage/weight/media reads, network, NPU, optimizer, registry or shared-state changes.",
+  "recommendation": {
+    "single_intervention": "teacher training LPIPS coefficient 0.2 -> 0.1",
+    "old_coefficients": {
+      "teacher_mse": 1.25,
+      "teacher_residual_ewarp_l1": 0.1,
+      "teacher_pixel_l1": 1.0,
+      "teacher_lpips": 0.2,
+      "teacher_motion_l1": 0.5,
+      "teacher_delta_l1": 0.2
+    },
+    "candidate_coefficients": {
+      "teacher_mse": 1.25,
+      "teacher_residual_ewarp_l1": 0.1,
+      "teacher_pixel_l1": 1.0,
+      "teacher_lpips": 0.1,
+      "teacher_motion_l1": 0.5,
+      "teacher_delta_l1": 0.2
+    },
+    "why_this_first": "The native perceptual-versus-pixel tradeoff is visible in the completed results and this isolates only the LPIPS contribution without changing the other teacher objectives. A half-weight is a simple predeclared level, not a fitted optimum.",
+    "strength_of_evidence": "Plausible ablation, not causal attribution or predicted success. Existing scalar losses do not measure per-term gradient magnitude or conflict.",
+    "single_new_arm_updates": 2000,
+    "old_complete_control_and_teacher_reused_without_retraining": true
+  },
+  "actual_negative_result": {
+    "aggregate_full226": {
+      "native_hr": {
+        "pixel_l1": {
+          "baseline": 0.018659726680863572,
+          "teacher2000": 0.019174938303058567,
+          "percent_change": 2.761088793028077
+        },
+        "lpips": {
+          "baseline": 0.1104572538758977,
+          "teacher2000": 0.10547748992664624,
+          "percent_change": -4.508317719763699
+        },
+        "global_score": {
+          "baseline": 0.04075117745604311,
+          "teacher2000": 0.04027043628838781,
+          "percent_change": -1.1796988398037334
+        },
+        "motion_l1": {
+          "baseline": 0.05327202304802753,
+          "teacher2000": 0.04957309573974939,
+          "percent_change": -6.943470693694809
+        },
+        "delta_l1": {
+          "baseline": 0.01350586717004655,
+          "teacher2000": 0.01334637450948238,
+          "percent_change": -1.1809138839888322
+        },
+        "PSNR_mean_clip_change_db": -0.17264913093561773
+      },
+      "decoded_hr": {
+        "pixel_l1": {
+          "baseline": 0.017042368892195653,
+          "teacher2000": 0.01693359273554521,
+          "percent_change": -0.6382689949884668
+        },
+        "lpips": {
+          "baseline": 0.09346493898415636,
+          "teacher2000": 0.0902611682065117,
+          "percent_change": -3.4277781727196643
+        },
+        "global_score": {
+          "baseline": 0.03573535668902692,
+          "teacher2000": 0.03498582637684755,
+          "percent_change": -2.0974474067850135
+        },
+        "motion_l1": {
+          "baseline": 0.05269325933632088,
+          "teacher2000": 0.04861430482961985,
+          "percent_change": -7.740941741080443
+        },
+        "delta_l1": {
+          "baseline": 0.013170121735329872,
+          "teacher2000": 0.012952381135228412,
+          "percent_change": -1.6532922358443614
+        },
+        "PSNR_mean_clip_change_db": -0.0796680718572631
+      },
+      "teacher": {
+        "pixel_l1": {
+          "baseline": 0.01300802112317982,
+          "teacher2000": 0.009784406555849499,
+          "percent_change": -24.781744562099128
+        },
+        "lpips": {
+          "baseline": 0.05235469140178334,
+          "teacher2000": 0.03543604163117817,
+          "percent_change": -32.31544168748338
+        },
+        "global_score": {
+          "baseline": 0.02347895940353649,
+          "teacher2000": 0.01687161488208513,
+          "percent_change": -28.14155605403933
+        },
+        "motion_l1": {
+          "baseline": 0.037807004533091326,
+          "teacher2000": 0.02742525327459393,
+          "percent_change": -27.45986196661141
+        },
+        "delta_l1": {
+          "baseline": 0.00930357279418346,
+          "teacher2000": 0.007584664088653481,
+          "percent_change": -18.475791435787237
+        },
+        "PSNR_mean_clip_change_db": 2.141820157300856
+      }
+    },
+    "per_clip": {
+      "WingIt_dev_3586_3811": {
+        "full226_frame_counts": {
+          "native_L1_regressed": 118,
+          "native_MSE_regressed": 133,
+          "native_LPIPS_regressed": 0,
+          "native_LPIPS_improved": 226,
+          "native_perframe_PSNR_lower": 133,
+          "teacher_global_improved": 226,
+          "teacher_global_improves_and_native_L1_regresses": 118,
+          "native_L1_worse_but_decodedHR_L1_better": 20
+        },
+        "native_full226_percent_change": {
+          "l1": -0.6537278664226709,
+          "mse": -1.1584074357217977,
+          "lpips": -5.419280746648902,
+          "global_score": -3.0834235152259915
+        },
+        "teacher_full226_percent_change": {
+          "l1": -21.479527497524064,
+          "mse": -35.583856871337474,
+          "lpips": -30.682937608348972,
+          "global_score": -25.32054780914821
+        },
+        "decodedHR_full226_percent_change": {
+          "l1": -1.2760219202386125,
+          "mse": -1.678035877076256,
+          "lpips": -2.44137026111213,
+          "global_score": -1.836042852252029
+        },
+        "native_L1_change_by_region_percent": {
+          "full226": -0.6537278664226709,
+          "prefix208": -0.7277615964106365,
+          "tail18": 0.17267491837393845,
+          "blend": -0.04469893314119622,
+          "nonblend": -0.8686511716045064
+        },
+        "share_of_net_equalclip_native_L1_delta_percent": -9.161932864002372,
+        "generation_cohort": "original_generation_mode_unbound"
+      },
+      "ElephantsDream_dev_13070_13295": {
+        "full226_frame_counts": {
+          "native_L1_regressed": 223,
+          "native_MSE_regressed": 223,
+          "native_LPIPS_regressed": 55,
+          "native_LPIPS_improved": 171,
+          "native_perframe_PSNR_lower": 223,
+          "teacher_global_improved": 226,
+          "teacher_global_improves_and_native_L1_regresses": 223,
+          "native_L1_worse_but_decodedHR_L1_better": 44
+        },
+        "native_full226_percent_change": {
+          "l1": 8.303554928616851,
+          "mse": 13.69603779925772,
+          "lpips": -0.7268335506107282,
+          "global_score": 2.9825866537041
+        },
+        "teacher_full226_percent_change": {
+          "l1": -26.19322872757245,
+          "mse": -35.963262954526385,
+          "lpips": -32.1506300182055,
+          "global_score": -29.15537794508155
+        },
+        "decodedHR_full226_percent_change": {
+          "l1": 2.150417818476136,
+          "mse": 9.977023897143411,
+          "lpips": -0.7232655534585186,
+          "global_score": 0.4689026994121326
+        },
+        "native_L1_change_by_region_percent": {
+          "full226": 8.303554928616851,
+          "prefix208": 8.22698973929137,
+          "tail18": 9.175883684144303,
+          "blend": 5.001626090142008,
+          "nonblend": 9.566942956109049
+        },
+        "share_of_net_equalclip_native_L1_delta_percent": 86.03886769163847,
+        "generation_cohort": "strictdet_generation"
+      },
+      "WingIt_dev_300_525": {
+        "full226_frame_counts": {
+          "native_L1_regressed": 200,
+          "native_MSE_regressed": 197,
+          "native_LPIPS_regressed": 0,
+          "native_LPIPS_improved": 226,
+          "native_perframe_PSNR_lower": 197,
+          "teacher_global_improved": 226,
+          "teacher_global_improves_and_native_L1_regresses": 200,
+          "native_L1_worse_but_decodedHR_L1_better": 25
+        },
+        "native_full226_percent_change": {
+          "l1": 1.9527962337130056,
+          "mse": 0.25583878058246246,
+          "lpips": -7.702841891183332,
+          "global_score": -3.1798723178073085
+        },
+        "teacher_full226_percent_change": {
+          "l1": -27.00494169707206,
+          "mse": -44.78843723468869,
+          "lpips": -33.94925441694131,
+          "global_score": -30.01101822551795
+        },
+        "decodedHR_full226_percent_change": {
+          "l1": -2.1134838089701735,
+          "mse": -2.2879976875485486,
+          "lpips": -7.349101762389254,
+          "global_score": -4.792818700722212
+        },
+        "native_L1_change_by_region_percent": {
+          "full226": 1.9527962337130056,
+          "prefix208": 1.4443301747945725,
+          "tail18": 9.551844951472566,
+          "blend": 0.9231829900214095,
+          "nonblend": 2.353201354826151
+        },
+        "share_of_net_equalclip_native_L1_delta_percent": 23.123065172363898,
+        "generation_cohort": "strictdet_generation"
+      }
+    },
+    "old_selection": {
+      "control": 0,
+      "teacher": 2000
+    },
+    "raw_latent_ewarp_percent_change": 15.568452667103628,
+    "old_full226_conditions_preserved": {
+      "teacher_conditions": {
+        "teacher_global_score_below_v5": true,
+        "teacher_motion_l1_below_v5": true,
+        "teacher_delta_l1_below_v5": true,
+        "teacher_global_score_below_control": true,
+        "teacher_motion_l1_below_control": true,
+        "teacher_delta_l1_below_control": true
+      },
+      "quality_guards": {
+        "decoded_hr": {
+          "global_score": true,
+          "pixel_l1": true,
+          "lpips": true
+        },
+        "native_hr": {
+          "global_score": true,
+          "pixel_l1": false,
+          "lpips": true
+        }
+      },
+      "all_engineering_conditions": false,
+      "strict_absolute_improvement": 1e-08,
+      "guard_factors": {
+        "global_score": 1.01,
+        "pixel_l1": 1.02,
+        "lpips": 1.02
+      },
+      "formal16dev_gate_passed": false,
+      "test_unlocked": false,
+      "checkpoint_reselection": false,
+      "scope": "Fixed limited-dev3 equal-clip aggregate full226; no reselection, test unlock or visual claim."
+    },
+    "nativeHR_failure_is_not_teacher_agreement_failure": true
+  },
+  "challenge_to_hypothesis": [
+    "ED native L1 worsens on223/226 frames while teacher agreement improves on all226. This is also consistent with teacher-target bias, even if the LPIPS coefficient is reduced. The remaining teacher latent MSE, RGB L1, ROI and delta can still favor teacher over native appearance.",
+    "ED nonblend native L1 regresses more than blend (+9.56694% vs +5.00163%); the broad failure is not explained solely by the60 unsupervised blend frames or the18-frame tail.",
+    "Both Wing windows improve native LPIPS on every frame despite many L1 regressions. This motivates the tradeoff test but does not establish LPIPS as its cause.",
+    "Raw latent eWarp worsened; a perceptual-weight reduction is not a targeted remedy for that separate diagnostic. Preserve and report it.",
+    "Existing sparse selection covers41frames/38pairs across3clips from2films. Full226 native guard failed despite sparse acceptance. This selection-coverage limitation remains even after a coefficient change.",
+    "All currentdev results informed this new hypothesis. The new experiment is posthoc on the same limiteddev set, not a new blind test or evidence of generalization."
+  ],
+  "why_not_other_single_change_first": {
+    "teacher_RGB_L1_1_to_2": "May be worth a later ablation, but changes L1 relative to all other latent/warp/ROI/delta terms, not just perceptual balance, and still targets teacher rather than native truth. Not more directly supported by current evidence.",
+    "native_HR_gradient_mix": "Would more directly optimize native fidelity, but changes the declared teacher-only supervision contract and cannot be smuggled into this single-coefficient experiment. Native remains independent evaluation/guard.",
+    "warp_or_delta_weight_change": "Current negative aggregate gate is native L1; existing teacher ROI/delta already improve. Current scalar evidence does not justify changing a motion term simultaneously.",
+    "blend_or_geometry_change": "Not the same intervention and broad nonblend regressions argue against doing this first in the same run."
+  },
+  "actual_implementation_entry": {
+    "source": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_teacher_distill.py",
+      "bytes": 13244,
+      "sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1"
+    },
+    "function": "training_objective",
+    "line": 225,
+    "teacher_coefficient_expression": ".2*pixels['teacher_lpips']",
+    "callsite": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_train_step_v1.py",
+      "line": 259,
+      "expression": "recipe.training_objective(terms, pixels, arm=arm, control_recipe='motion')"
+    },
+    "recipe_construction": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_train_step_v1.py",
+      "line": 49,
+      "function": "frozen_recipe",
+      "behavior": "SHA-pinned AST extraction of original numerical functions; source hashes reject editing historical recipe bytes."
+    },
+    "worker_recipe_creation": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_train_v1.py",
+      "line": 81
+    },
+    "evaluation_selection_same_file_but_distinct_functions": [
+      "selection_fields: HR and teacher global remain L1+0.2LPIPS; selection adds0.5ROI+0.2delta",
+      "hr_guard: original factors global1.01/L1 1.02/LPIPS1.02"
+    ],
+    "sparse_evaluator_owns_old_recipe": {
+      "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_sparse_v1.py",
+      "line": 166,
+      "note": "Loads core.frozen_recipe independently; training change must not alter evaluator recipe or baseline provenance."
+    }
+  },
+  "minimal_new_source_requirements": [
+    "Use a new explicitly pinned training recipe/objective source and new protocol/output identity. Keep frozen original sources untouched; do not global-replace .2 or monkeypatch shared modules.",
+    "Return the same original six teacher terms with only teacher_lpips coefficient0.1. Prefer the explicit expression with one changed literal rather than old_total minus0.1*LPIPS, which introduces a different subtraction/cancellation path.",
+    "Retain old recipe functions for schedule, ROI/masks/normalization, evaluation, selection, HRguard, and restore. New objective source/provenance must be named in run/checkpoint receipts.",
+    "Minimal scalar basis checks should prove coefficients [1.25,0.1,1,0.1,0.5,0.2], unchanged control objective, unchanged selection_fields/hr_guard; no need to rerun old345M/paired8/causal/restore probes for this coefficient edit.",
+    "Fresh originalv5 full322 state check, newAdamW seed20261107, exact original2000 sample/spec/LPIPS-frame/LR schedule, same per200 sparse plan and best0/earliestguard-min rule, sameFP32/HF32off strictdet beforeNPU; bind and reuse actual commonstep0 if all evaluation/data/initial state identities are unchanged.",
+    "Record independent nativeHR and decodedHR guards exactly as before; preserve detached decodedHR-derived motion mask without adding nativeHR gradients.",
+    "Reuse historical selected control0 and teacher2000 with actual prior manifests, not a falsely relabeled new pair. Test remainslocked and no formal16dev claim."
+  ],
+  "predeclared_readout": {
+    "primary_hypothesis": "Relative to originalLPIPS0.2 teacher run, lowerLPIPS weight moves the frozen-selected candidate toward better full226 native L1/PSNR, particularly ED, while retaining original teacher-agreement and native/decoded-HR gates.",
+    "support": "Reduced native L1 regression and better frozen full226 gate outcome would support usefulness on these fixeddev clips. It would not prove mechanism, newseed robustness or visual artifact resolution.",
+    "not_supported": "If teacher LPIPS worsens while native L1/PSNR stay unchanged or worsen, the intended tradeoff mechanism is unsupported on this setting. If only teacher agreement improves but nativeguard still fails, no quality pass.",
+    "checkpoints": "Use the unchanged sparse guarded selection rule; never choose a different checkpoint after full226 fails. If selectedstep differs between runs, report that explicitly and avoid claiming a pure matched-step output comparison.",
+    "metrics": "Keep evaluationglobal L1+0.2LPIPS. Report raw native L1/LPIPS/PSNR, teacher global/ROI/delta vs v5/control and originalteacher0.2, perclip regressions, blend/nonblend/prefix/tail and rawlatentewarp. Lower trainingloss with0.1 is not comparable to old0.2 total as a quality score.",
+    "no_extra_compute_mandated_by_this_memo": true
+  },
+  "inputs": {
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/frame_regression_localization_v1.json": {
+      "bytes": 196453,
+      "sha256": "1299904df4841b16932b400ca86ff656ba0bc458a4557cd443ae16a2d5041c1d"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/pixels_originals/pixels/summary.json": {
+      "bytes": 277022,
+      "sha256": "968b9e0342290f6c30b8f05117e780fc435404a5aa8b57608123015ffa05ff38"
+    },
+    "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_teacher_distill.py": {
+      "bytes": 13244,
+      "sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1"
+    },
+    "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_train_step_v1.py": {
+      "bytes": 17025,
+      "sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997"
+    },
+    "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_core_v1.py": {
+      "bytes": 28316,
+      "sha256": "b07513005e30e2faec2f58f298ec774ee6143a9eac685d249809dec34c994af0"
+    },
+    "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_sparse_v1.py": {
+      "bytes": 15477,
+      "sha256": "1eb3260693beba137b11ba196677b512fef2eb47e06bf3a5fe47785fa75d7ccd"
+    },
+    "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_train_v1.py": {
+      "bytes": 11330,
+      "sha256": "147b6a89c145a36849c653fd3711b0309c2220d8792aaa685dbb7cee93f64bf0"
+    },
+    "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_plan_v1.json": {
+      "bytes": 20952,
+      "sha256": "b73b072a8e746265d4f9e44654b88472fc73e44d1aee8c8036ad2fa6f2390a8c"
+    }
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "2989ce90fb16edb6ab70b261d865fe824602009754b63a9b2249cad28f887183",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

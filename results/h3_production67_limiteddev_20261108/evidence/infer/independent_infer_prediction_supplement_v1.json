@@ -1,0 +1,493 @@
+{
+  "SHA_relation_boundary": "For all three dev clips, selected control step0 and v5 have identical reported output NPY SHA/byte count and identical seven recorded metrics. These are remote producer descriptors checked against original reports, not newly read arrays or locally measured maxabs. Identical tensor_facts SHA describes schema facts, not parameter values.",
+  "all_inputs_before_after_SHA_equal": true,
+  "blocking_findings": [],
+  "created_utc": "2026-11-08T05:31:19.673359+00:00",
+  "driver": {
+    "path": "/path/to/staging/audit_h3_limiteddev_infer_prediction_supplement_v1.py",
+    "sha256": "92b9bfb6c9e150deeccff7bbc8eb954ffea69e5aaf2881b05acfacc4871ee20b"
+  },
+  "equal_clip_means_of_reported_latent_metrics": {
+    "control": {
+      "hr_latent_mse": 0.15927832822004953,
+      "hr_residual_ewarp_l1": 0.18074669440587363,
+      "hr_target_ewarp_l1": 0.30177020529905957,
+      "legacy_ewarp_l1": 0.22720566391944885,
+      "teacher_mse": 0.051410969346761703,
+      "teacher_residual_ewarp_l1": 0.1209134856859843,
+      "teacher_target_ewarp_l1": 0.27873867750167847
+    },
+    "teacher_student": {
+      "hr_latent_mse": 0.1389980266491572,
+      "hr_residual_ewarp_l1": 0.1705401490132014,
+      "hr_target_ewarp_l1": 0.30177020529905957,
+      "legacy_ewarp_l1": 0.2625780701637268,
+      "teacher_mse": 0.030924394726753235,
+      "teacher_residual_ewarp_l1": 0.09265261888504028,
+      "teacher_target_ewarp_l1": 0.27873867750167847
+    },
+    "v5": {
+      "hr_latent_mse": 0.15927832822004953,
+      "hr_residual_ewarp_l1": 0.18074669440587363,
+      "hr_target_ewarp_l1": 0.30177020529905957,
+      "legacy_ewarp_l1": 0.22720566391944885,
+      "teacher_mse": 0.051410969346761703,
+      "teacher_residual_ewarp_l1": 0.1209134856859843,
+      "teacher_target_ewarp_l1": 0.27873867750167847
+    }
+  },
+  "finite_evidence_boundary": "Each completed receipt has no standalone output-finite field. SHA-pinned worker checks every prediction element and every latent term finite before saving the completed receipt. This audit checks the seven recorded scalars are finite and verifies the completed source/receipt chain; it does not itself read or recheck tensor elements.",
+  "full67_and66_pair_evidence_boundary": "Frozen explicit_forward67 enforces LR67x44x80 and target67x68x120; latent_terms_all explicitly supplies valid_frames=67 and uses all adjacent 66 pairs. Historical inbounds/valid masks remain in raw and residual eWarp; full pair coverage is not a claim that every spatial pixel is unmasked.",
+  "input_shape": [
+    1,
+    24,
+    67,
+    44,
+    80
+  ],
+  "inputs": {
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/independent_infer_audit_v1.json": {
+      "bytes": 22651,
+      "sha256": "41a24c85eba61703433d99ac84a0c2eab90c42a247a0df64e87dc73a9c0fb88a"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_report.json": {
+      "bytes": 21617,
+      "sha256": "7440bef54804982e7d2da1dc0b989e7bf12c30358146123e1f561796cfc63452"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/ElephantsDream_dev_13070_13295/control.json": {
+      "bytes": 3011,
+      "sha256": "1520bef11d22e8861d277b4713be1831d294590e8eb64b216adbdc9c2eb7350d"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/ElephantsDream_dev_13070_13295/teacher_student.json": {
+      "bytes": 3032,
+      "sha256": "3d983b361ec71a3b07e7d7b25cf6343a7d214b1d483d7b2024b9ed1238d0be9e"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/ElephantsDream_dev_13070_13295/v5.json": {
+      "bytes": 3973,
+      "sha256": "99c5f70173e924b379f9b252264a442b3ddb7fc07effdbf78146159b6a67b906"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_300_525/control.json": {
+      "bytes": 2985,
+      "sha256": "7c31c6aecc4940012bd14fdc2877ad5f6e9ef8d695c59867dc693a7ddae4cf78"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_300_525/teacher_student.json": {
+      "bytes": 3001,
+      "sha256": "c95cbe61a3924c3b339664790637f12cad18ed8a6cef99474c9cdb9a62ee7c6b"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_300_525/v5.json": {
+      "bytes": 3947,
+      "sha256": "de6ead05512dca11a022e138a14a9000e536732986a447f8cb721e5d567a67ae"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_3586_3811/control.json": {
+      "bytes": 2991,
+      "sha256": "2b3d8af0a5924f5b09eb2530e3fe735fcd002a17c3bc78f941c191e03f95ea95"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_3586_3811/teacher_student.json": {
+      "bytes": 3008,
+      "sha256": "96e462cc337a299f599ccff91f4c9b4446bb7ffce88866f88e0b91546df3753f"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals/WingIt_dev_3586_3811/v5.json": {
+      "bytes": 3953,
+      "sha256": "ddb66388cb83bc96c924b2797c48361bf55946cfebb949c011a26dc5473f96a6"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_prediction_originals_manifest.json": {
+      "bytes": 1702,
+      "sha256": "615bf66725ec5c172faf0fabfa04d8f7bd7c055d8a509b9a210131642686598d"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/evaluate_h3_production67_limiteddev_v1.py": {
+      "bytes": 24747,
+      "sha256": "31f2c8a76f53020864464ca3d489763115c463b0c32dc58f8bdbc0403de0e295"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_plan_v1.json": {
+      "bytes": 20527,
+      "sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_train_step_v1.py": {
+      "bytes": 17025,
+      "sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_v5_motion.py": {
+      "bytes": 9828,
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/ultraflash_ewarp.py": {
+      "bytes": 6288,
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    }
+  },
+  "interpretation_limits": [
+    "Teacher2000 reported output SHA differs on all three dev clips; this alone is not a quality result.",
+    "Teacher latent MSE improves while raw legacy eWarp is higher on all three clips; raw eWarp is retained without replacing it by residual eWarp.",
+    "Inference receipt audit does not evaluate decoded RGB, native-HR guards, full226 perceptual metrics or subjective video quality.",
+    "No formal16dev gate or test unlock is claimed; source-generation cohort differences remain explicit."
+  ],
+  "mode": {
+    "deterministic_algorithms": true,
+    "warn_only": false
+  },
+  "model_output_shape": [
+    1,
+    24,
+    67,
+    68,
+    120
+  ],
+  "per_clip": {
+    "ElephantsDream_dev_13070_13295": {
+      "control_step0_equals_v5_all_seven_reported_scalar_metrics": true,
+      "control_step0_equals_v5_reported_NPY_file_SHA_and_bytes": true,
+      "latent_descriptors": {
+        "control": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/control.npy",
+          "sha256": "b902be8ef74a548de19f8cd7fd9f5bc5fc4f8e73ee0d2f2dcfc07df9fff4ee2e"
+        },
+        "teacher_student": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/teacher_student.npy",
+          "sha256": "bf60f324b407105a6e61af8b28475fd12fe2cc01c4ff8d4ab0d8150705fa62fb"
+        },
+        "v5": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/v5.npy",
+          "sha256": "b902be8ef74a548de19f8cd7fd9f5bc5fc4f8e73ee0d2f2dcfc07df9fff4ee2e"
+        }
+      },
+      "prediction_receipts": {
+        "control": {
+          "bytes": 3011,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/control.json",
+          "sha256": "1520bef11d22e8861d277b4713be1831d294590e8eb64b216adbdc9c2eb7350d"
+        },
+        "teacher_student": {
+          "bytes": 3032,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/teacher_student.json",
+          "sha256": "3d983b361ec71a3b07e7d7b25cf6343a7d214b1d483d7b2024b9ed1238d0be9e"
+        },
+        "v5": {
+          "bytes": 3973,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/v5.json",
+          "sha256": "99c5f70173e924b379f9b252264a442b3ddb7fc07effdbf78146159b6a67b906"
+        }
+      },
+      "reported_latent_metrics": {
+        "control": {
+          "hr_latent_mse": 0.2339930534362793,
+          "hr_residual_ewarp_l1": 0.18642276525497437,
+          "hr_target_ewarp_l1": 0.24277754127979279,
+          "legacy_ewarp_l1": 0.17247891426086426,
+          "teacher_mse": 0.05879592150449753,
+          "teacher_residual_ewarp_l1": 0.11361177265644073,
+          "teacher_target_ewarp_l1": 0.20807784795761108
+        },
+        "teacher_student": {
+          "hr_latent_mse": 0.20564550161361694,
+          "hr_residual_ewarp_l1": 0.17628712952136993,
+          "hr_target_ewarp_l1": 0.24277754127979279,
+          "legacy_ewarp_l1": 0.19841217994689941,
+          "teacher_mse": 0.029040616005659103,
+          "teacher_residual_ewarp_l1": 0.08616046607494354,
+          "teacher_target_ewarp_l1": 0.20807784795761108
+        },
+        "v5": {
+          "hr_latent_mse": 0.2339930534362793,
+          "hr_residual_ewarp_l1": 0.18642276525497437,
+          "hr_target_ewarp_l1": 0.24277754127979279,
+          "legacy_ewarp_l1": 0.17247891426086426,
+          "teacher_mse": 0.05879592150449753,
+          "teacher_residual_ewarp_l1": 0.11361177265644073,
+          "teacher_target_ewarp_l1": 0.20807784795761108
+        }
+      },
+      "same_draft_descriptor": {
+        "bytes": 22640768,
+        "ctime_ns": 1794004177709384032,
+        "device": 64769,
+        "inode": 113508366,
+        "mtime_ns": 1794004177709384032,
+        "path": "/path/to/h3-project/upscaler_production67_ed13070_dev_20261107/data_v1/pair/arrays/draft.npy",
+        "sha256": "d1cfbfc67a900e8be2eb392841c641675169d5972216201ad7982c97f650505f"
+      },
+      "same_input_identity_for_all_three_models": {
+        "child_contract_sha256": "a29abd7f05f6db1937914233f8dc8a66d0a0d9da5c1889edf26658042b1cc3dc",
+        "pair_record_sha256": "0ed5b8aee3856565ae5e87053b1c6c3a635734f7e42dfb36e2794472c0cb618c",
+        "teacher_record_sha256": "1f76abb09baa0b5f0b972d423fbdbe03fc1e8991ce468a2af83ff6b4e2eb9571"
+      },
+      "source_generation_cohort": "strictdet_generation",
+      "source_group": "elephants_dream",
+      "target_ewarp_scalars_equal_across_three_models": true,
+      "teacher2000_vs_v5_reported_scalar_percent_change": {
+        "hr_latent_mse": -12.114698024735137,
+        "hr_residual_ewarp_l1": -5.4369088022815815,
+        "hr_target_ewarp_l1": 0.0,
+        "legacy_ewarp_l1": 15.035615105283306,
+        "teacher_mse": -50.60777131720322,
+        "teacher_residual_ewarp_l1": -24.16237854549571,
+        "teacher_target_ewarp_l1": 0.0
+      },
+      "teacher_step2000_NPY_file_SHA_differs_from_v5": true
+    },
+    "WingIt_dev_300_525": {
+      "control_step0_equals_v5_all_seven_reported_scalar_metrics": true,
+      "control_step0_equals_v5_reported_NPY_file_SHA_and_bytes": true,
+      "latent_descriptors": {
+        "control": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/control.npy",
+          "sha256": "61d7310ef75e4734c8e8a9b789fbb2737918b575c35661ca51921bbda22bf815"
+        },
+        "teacher_student": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/teacher_student.npy",
+          "sha256": "77a0e466e3ab9aa852618a0bff1b824f07b858dad5c60e7fbf88009228692b3d"
+        },
+        "v5": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/v5.npy",
+          "sha256": "61d7310ef75e4734c8e8a9b789fbb2737918b575c35661ca51921bbda22bf815"
+        }
+      },
+      "prediction_receipts": {
+        "control": {
+          "bytes": 2985,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/control.json",
+          "sha256": "7c31c6aecc4940012bd14fdc2877ad5f6e9ef8d695c59867dc693a7ddae4cf78"
+        },
+        "teacher_student": {
+          "bytes": 3001,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/teacher_student.json",
+          "sha256": "c95cbe61a3924c3b339664790637f12cad18ed8a6cef99474c9cdb9a62ee7c6b"
+        },
+        "v5": {
+          "bytes": 3947,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/v5.json",
+          "sha256": "de6ead05512dca11a022e138a14a9000e536732986a447f8cb721e5d567a67ae"
+        }
+      },
+      "reported_latent_metrics": {
+        "control": {
+          "hr_latent_mse": 0.11481086909770966,
+          "hr_residual_ewarp_l1": 0.17461808025836945,
+          "hr_target_ewarp_l1": 0.331582635641098,
+          "legacy_ewarp_l1": 0.24849843978881836,
+          "teacher_mse": 0.048572905361652374,
+          "teacher_residual_ewarp_l1": 0.1271093785762787,
+          "teacher_target_ewarp_l1": 0.3156367540359497
+        },
+        "teacher_student": {
+          "hr_latent_mse": 0.10536304861307144,
+          "hr_residual_ewarp_l1": 0.16329839825630188,
+          "hr_target_ewarp_l1": 0.331582635641098,
+          "legacy_ewarp_l1": 0.2947567105293274,
+          "teacher_mse": 0.03347375616431236,
+          "teacher_residual_ewarp_l1": 0.094357430934906,
+          "teacher_target_ewarp_l1": 0.3156367540359497
+        },
+        "v5": {
+          "hr_latent_mse": 0.11481086909770966,
+          "hr_residual_ewarp_l1": 0.17461808025836945,
+          "hr_target_ewarp_l1": 0.331582635641098,
+          "legacy_ewarp_l1": 0.24849843978881836,
+          "teacher_mse": 0.048572905361652374,
+          "teacher_residual_ewarp_l1": 0.1271093785762787,
+          "teacher_target_ewarp_l1": 0.3156367540359497
+        }
+      },
+      "same_draft_descriptor": {
+        "bytes": 22640768,
+        "ctime_ns": 1794006483612201237,
+        "device": 64769,
+        "inode": 113508656,
+        "mtime_ns": 1794006483612201237,
+        "path": "/path/to/h3-project/upscaler_production67_wing300_engineering_20261107/data_v1/pair/arrays/draft.npy",
+        "sha256": "2d5008bc74f0f4f2680f059582c4e8081f0dcb20243367f60a0f57111d0df566"
+      },
+      "same_input_identity_for_all_three_models": {
+        "child_contract_sha256": "b6f1a1e68169a1f75db4c5c36f1c7eb86bcf4c3c625e965da12cfc0ecfcad7cd",
+        "pair_record_sha256": "641b40dd22d92366465c5d3b943b61580f86d63199372584b5ba1f51df7d3a3a",
+        "teacher_record_sha256": "0a98d7407d7e116d94d37bf2323c7ba144e2daa8c4a62ed4988ef592070b0858"
+      },
+      "source_generation_cohort": "strictdet_generation",
+      "source_group": "wing_it",
+      "target_ewarp_scalars_equal_across_three_models": true,
+      "teacher2000_vs_v5_reported_scalar_percent_change": {
+        "hr_latent_mse": -8.229029671918653,
+        "hr_residual_ewarp_l1": -6.482537195070903,
+        "hr_target_ewarp_l1": 0.0,
+        "legacy_ewarp_l1": 18.61511516121419,
+        "teacher_mse": -31.085538501183784,
+        "teacher_residual_ewarp_l1": -25.766743578026496,
+        "teacher_target_ewarp_l1": 0.0
+      },
+      "teacher_step2000_NPY_file_SHA_differs_from_v5": true
+    },
+    "WingIt_dev_3586_3811": {
+      "control_step0_equals_v5_all_seven_reported_scalar_metrics": true,
+      "control_step0_equals_v5_reported_NPY_file_SHA_and_bytes": true,
+      "latent_descriptors": {
+        "control": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/control.npy",
+          "sha256": "64a9aad9353668097456854ee136274b8bbfe69a69da15940588084d5ad18ac8"
+        },
+        "teacher_student": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/teacher_student.npy",
+          "sha256": "d3bf9af56716b96e9f84ef49acdb7ca321a6192888d042a858e50a8ac92ebab0"
+        },
+        "v5": {
+          "bytes": 52485248,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/v5.npy",
+          "sha256": "64a9aad9353668097456854ee136274b8bbfe69a69da15940588084d5ad18ac8"
+        }
+      },
+      "prediction_receipts": {
+        "control": {
+          "bytes": 2991,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/control.json",
+          "sha256": "2b3d8af0a5924f5b09eb2530e3fe735fcd002a17c3bc78f941c191e03f95ea95"
+        },
+        "teacher_student": {
+          "bytes": 3008,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/teacher_student.json",
+          "sha256": "96e462cc337a299f599ccff91f4c9b4446bb7ffce88866f88e0b91546df3753f"
+        },
+        "v5": {
+          "bytes": 3953,
+          "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/v5.json",
+          "sha256": "ddb66388cb83bc96c924b2797c48361bf55946cfebb949c011a26dc5473f96a6"
+        }
+      },
+      "reported_latent_metrics": {
+        "control": {
+          "hr_latent_mse": 0.12903106212615967,
+          "hr_residual_ewarp_l1": 0.18119923770427704,
+          "hr_target_ewarp_l1": 0.33095043897628784,
+          "legacy_ewarp_l1": 0.26063963770866394,
+          "teacher_mse": 0.04686408117413521,
+          "teacher_residual_ewarp_l1": 0.12201930582523346,
+          "teacher_target_ewarp_l1": 0.3125014305114746
+        },
+        "teacher_student": {
+          "hr_latent_mse": 0.10598552972078323,
+          "hr_residual_ewarp_l1": 0.17203491926193237,
+          "hr_target_ewarp_l1": 0.33095043897628784,
+          "legacy_ewarp_l1": 0.2945653200149536,
+          "teacher_mse": 0.03025881201028824,
+          "teacher_residual_ewarp_l1": 0.0974399596452713,
+          "teacher_target_ewarp_l1": 0.3125014305114746
+        },
+        "v5": {
+          "hr_latent_mse": 0.12903106212615967,
+          "hr_residual_ewarp_l1": 0.18119923770427704,
+          "hr_target_ewarp_l1": 0.33095043897628784,
+          "legacy_ewarp_l1": 0.26063963770866394,
+          "teacher_mse": 0.04686408117413521,
+          "teacher_residual_ewarp_l1": 0.12201930582523346,
+          "teacher_target_ewarp_l1": 0.3125014305114746
+        }
+      },
+      "same_draft_descriptor": {
+        "bytes": 22640768,
+        "ctime_ns": 1793987607353941671,
+        "device": 64769,
+        "inode": 113836791,
+        "mtime_ns": 1793987607353941671,
+        "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/data_v1/pair/arrays/draft.npy",
+        "sha256": "e122add68c2ebb2a38ab7963dc0988c2301198cd52849435323f4aaf7c821c8c"
+      },
+      "same_input_identity_for_all_three_models": {
+        "child_contract_sha256": "914394c15e50d593fbd9ff63a3202feea8ed8731b66bc1b57fb3d9d76c2da3f8",
+        "pair_record_sha256": "e9a0e9e4dd5c7422e930c5c3f7eed92f23c405231ca9b5fa4e6656a5a3679153",
+        "teacher_record_sha256": "bdb02937c97004d5fb0cbac832fb061c7bf467d1fbba15065ec5443e3105d99d"
+      },
+      "source_generation_cohort": "original_generation_mode_unbound",
+      "source_group": "wing_it",
+      "target_ewarp_scalars_equal_across_three_models": true,
+      "teacher2000_vs_v5_reported_scalar_percent_change": {
+        "hr_latent_mse": -17.860453154174415,
+        "hr_residual_ewarp_l1": -5.05759216123256,
+        "hr_target_ewarp_l1": 0.0,
+        "legacy_ewarp_l1": 13.016317320165594,
+        "teacher_mse": -35.43282776023271,
+        "teacher_residual_ewarp_l1": -20.143817417849274,
+        "teacher_target_ewarp_l1": 0.0
+      },
+      "teacher_step2000_NPY_file_SHA_differs_from_v5": true
+    }
+  },
+  "plan_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+  "precision": {
+    "conv_hf32": false,
+    "dtype": "float32",
+    "float32_matmul_precision": "highest",
+    "matmul_hf32": false
+  },
+  "prior_audit_preserved": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/independent_infer_audit_v1.json",
+    "sha256": "41a24c85eba61703433d99ac84a0c2eab90c42a247a0df64e87dc73a9c0fb88a"
+  },
+  "saved_output_shape": [
+    24,
+    67,
+    68,
+    120
+  ],
+  "schema": "h3-limiteddev-infer-prediction-independent-metadata-supplement-v1",
+  "scope": {
+    "actual_new_model_or_decoder_or_optimizer_actions": 0,
+    "adjacent_latent_pairs": 66,
+    "array_or_checkpoint_reads": 0,
+    "dev_clips": 3,
+    "films": 2,
+    "latent_tokens": 67,
+    "local_small_JSON_and_frozen_source_only": true,
+    "prediction_receipts_verified": 9,
+    "remote_actions": 0,
+    "shared_state_modified": false
+  },
+  "selected_steps": {
+    "control": 0,
+    "teacher_student": 2000,
+    "v5_initializer_checkpoint_step": 1800
+  },
+  "source_bindings": {
+    "evaluate_h3_production67_limiteddev_v1.py": {
+      "bytes": 24747,
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/evaluate_h3_production67_limiteddev_v1.py",
+      "sha256": "31f2c8a76f53020864464ca3d489763115c463b0c32dc58f8bdbc0403de0e295"
+    },
+    "h3_production67_train_step_v1.py": {
+      "bytes": 17025,
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_train_step_v1.py",
+      "sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997"
+    },
+    "h3_v5_motion.py": {
+      "bytes": 9828,
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_v5_motion.py",
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa"
+    },
+    "ultraflash_ewarp.py": {
+      "bytes": 6288,
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/ultraflash_ewarp.py",
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    }
+  },
+  "status": "passed_local_small_receipt_binding_audit_not_independent_tensor_recomputation",
+  "teacher2000_vs_v5_equal_clip_mean_percent_change": {
+    "hr_latent_mse": -12.732618302519016,
+    "hr_residual_ewarp_l1": -5.6468780390268485,
+    "hr_target_ewarp_l1": 0.0,
+    "legacy_ewarp_l1": 15.568452667103628,
+    "teacher_mse": -39.848644910444364,
+    "teacher_residual_ewarp_l1": -23.37279968451019,
+    "teacher_target_ewarp_l1": 0.0
+  },
+  "terminal_binding_sha256": "3d733a4cdea0d8d86151c21161447c68e9684f2db344f7fcd844c5c61c4af24d",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "1321a9f2b71e50010a668a47e06fad59f8a306e047bf863baaebebaccdf36229",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "h3-media-v4-local-parent-exit-v1",
+  "utc": "2026-11-08T09:43:09.613271+00:00",
+  "parent_pid": 27391,
+  "command_argv": [
+    "/path/to/local-toolchain/opt/python@3.14/bin/python3.14",
+    "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+    "--adapter-plan",
+    "/path/to/staging/h3_limiteddev_H264_subset_plan_v4.json",
+    "--adapter-plan-sha256",
+    "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8",
+    "--source-root",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/downloaded/originals",
+    "--subset",
+    "priority",
+    "--attempt",
+    "1"
+  ],
+  "environment_override": {
+    "ASCEND_VISIBLE_DEVICES": "",
+    "ASCEND_RT_VISIBLE_DEVICES": "",
+    "CUDA_VISIBLE_DEVICES": "",
+    "TORCH_DEVICE_BACKEND_AUTOLOAD": "0",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "driver": {
+    "path": "/path/to/staging/h3_media_v4_local_H264_driver_20261108_v1.py",
+    "bytes": 3161,
+    "sha256": "210bf39daf99c200b792b49a190f5f6ea2aa8ee4de3f39374e37a1b546f9e3de"
+  },
+  "retry": false,
+  "child_pid": 27392,
+  "child_pgid": 27392,
+  "finished_utc": "2026-11-08T09:43:24.791221+00:00",
+  "exit_code": 0,
+  "child_reaped": true,
+  "live_group_members_at_end": [],
+  "log": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt1/convert.log",
+    "bytes": 414,
+    "sha256": "4bda192e8d8da2045c5d1a5509f6ea8c8fe4eababdf35b6ac258c82c3c610c67"
+  },
+  "status": "completed",
+  "batch_receipt.json": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/batch_receipt.json",
+    "bytes": 4118,
+    "sha256": "e7ee073b74c06208dfdad480dc12df4d26b216da9907d31de91573fa39e47a1a"
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "ac27d0f58cbc6ae0b904a113a9f1911b76e0847b80ac49f2e030651191571fab",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

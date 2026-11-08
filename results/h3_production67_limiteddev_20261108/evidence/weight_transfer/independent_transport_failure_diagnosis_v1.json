@@ -1,0 +1,124 @@
+{
+  "schema": "h3-selected-weight-original-transfer-independent-failure-diagnosis-v1",
+  "utc": "2026-11-08T12:48:56.026632+00:00",
+  "status": "confirmed_remote_connection_close_stderr_underlying_disconnect_reason_unproven",
+  "scope": "Read-only local original transfer session status, exact session log, matching temporary launch script, installed remote_ssh implementation and existing pause/resume receipts. No process signals, transfers, remote command, NPU/model/path/to/artifact-storage/weight bytes, private production paths, shared state or tool source modifications. Configuration discovery emitted only the installed MCP executable location; secrets/credentials were not emitted or copied.",
+  "session": "h3-limiteddev-selected-weight-20261108-v1",
+  "observed_errors_redacted": [
+    "Connection to <remote host> closed by remote host.",
+    "scp: Connection closed",
+    "__EXIT__:255"
+  ],
+  "status_tool_actual": "[h3-limiteddev-selected-weight-20261108-v1 FAILED (exit 255)]",
+  "evidence": {
+    "tools.py": {
+      "path": "/path/to/local-home/remote-ssh/src/remote_ssh/tools.py",
+      "bytes": 30468,
+      "sha256": "98797f67d5c0ae88dc6ba9dfde553f42ee9d2459ee55014a935815e382f20592"
+    },
+    "h3-limiteddev-selected-weight-20261108-v1.log": {
+      "path": "/path/to/local-home/.cache/remote-ssh/h3-limiteddev-selected-weight-20261108-v1.log",
+      "bytes": 225,
+      "sha256": "be17bedb63152ffc5b41af638a308070356ff8fd8fb00cc8d3077366c1d228fe"
+    },
+    "remote-ssh-mcp": {
+      "path": "/path/to/local-home/.remote-ssh-venv/bin/remote-ssh-mcp",
+      "bytes": 194,
+      "sha256": "d025862b3b0440e9792ddf32b411e62878c41bcea64f6f68643602cdedfc7811"
+    },
+    "paused_for_media_receipt_v1.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/paused_for_media_receipt_v1.json",
+      "bytes": 1025,
+      "sha256": "90ec33836504cffc4b5282e2f8d9c7ec0e6131e458aecd17ec2dbdfb13d74621"
+    },
+    "resume_after_media_intent_v1.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/resume_after_media_intent_v1.json",
+      "bytes": 1383,
+      "sha256": "68cfec9eab1016ca0b90398eac9e471d7aceff7ed13cdc5b29adcb025e28d36f"
+    },
+    "resume_after_media_failed_outcome_v1.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/resume_after_media_failed_outcome_v1.json",
+      "bytes": 2038,
+      "sha256": "6ecede9e2695310ace8472ce7f35146e2febdc21e4d42eaba9fab48c52328066"
+    },
+    "matching_original_launch_script": {
+      "path": "/path/to/local-temporary/mcp_xfer_x95fdy_0.sh",
+      "bytes": 569,
+      "sha256": "3bd05340982d0d356474a89107af3aa70caaec54a5383da2bd40660502c2f3b9"
+    }
+  },
+  "source_function_lines": {
+    "_transfer_log_path": {
+      "first_line": 560,
+      "last_line": 561
+    },
+    "_run_local_transfer_bg": {
+      "first_line": 564,
+      "last_line": 587
+    },
+    "_local_transfer_status": {
+      "first_line": 598,
+      "last_line": 635
+    },
+    "_scp_ssh_opts": {
+      "first_line": 700,
+      "last_line": 709
+    },
+    "tool_ssh_download_bg": {
+      "first_line": 771,
+      "last_line": 803
+    }
+  },
+  "tool_behavior": {
+    "stdout_and_stderr_persisted_in_session_log": true,
+    "local_transfer_status_hides_stderr_after_exit_marker": true,
+    "status_terminal_details_only_rsync_summary_if_present": true,
+    "scp_command_not_verbose": true,
+    "scp_launch_no_explicit_ServerAlive_options": true,
+    "ssh_config_may_supply_effective_options_not_independently_rechecked_here": true,
+    "same_session_name_would_truncate_log_in_run_local_transfer_bg": true,
+    "new_recovery_session_needed_to_preserve_original_log": true,
+    "transfer_tool_default_scp_has_no_verified_resume_logic": true
+  },
+  "timeline": {
+    "SIGSTOP_utc": "2026-11-08T08:48:12.066616+00:00",
+    "SIGCONT_intent_utc": "2026-11-08T12:03:51.365104+00:00",
+    "paused_seconds": 11739.298488,
+    "original_log_mtime_utc": "2026-11-08T12:03:51.366148+00:00",
+    "failure_observed_utc": "2026-11-08T12:04:32.404710+00:00",
+    "partial_bytes_before_and_after": 25589760,
+    "original_pid": 25149,
+    "pid_absent_as_existing_failure_receipt": true,
+    "individual_error_lines_have_no_timestamps": true
+  },
+  "supported_conclusion": "The original SSH transport reported closure by the remote side; SCP then reported Connection closed and exited255 without increasing the partial file. Raw stderr was retained but not surfaced by the tool status formatter. This is more specific evidence than exit255 alone.",
+  "not_established": [
+    "No server-side reason or detailed SSH debug trace is available in this exact log.",
+    "The prolonged suspension is a plausible contributing condition, but this log does not prove a specific idle timeout, gateway timeout, server restart or other network mechanism.",
+    "Log mtime is approximately the resume time; it does not timestamp when the connection actually became unusable during the pause.",
+    "This diagnosis does not claim checksum corruption, disk exhaustion or invalid credentials."
+  ],
+  "root_reported_recovery_preconditions_not_repeated_here": {
+    "remote_regular_expected_bytes": 1381220283,
+    "local_prefix_bytes": 25589760,
+    "local_prefix_matches_remote_prefix_sha256": "dd8d7f64e6e474920b2f17a229997dea417dec169f02387a2d13454232160637",
+    "remote_rsync_unavailable": true,
+    "effective_ServerAliveInterval_before_recovery": 0,
+    "free_disk_GB_approx": 99.8
+  },
+  "recovery_assessment": {
+    "proposed_by_root": "Separate selected_weight_download_v2, copy only verified prefix into new.partial, new SFTP reget session with ServerAliveInterval15 and ServerAliveCountMax3, persistent stdout/stderr, complete expectedSHA before atomic rename, no automatic retry.",
+    "assessment": "Appropriate bounded recovery: restarts transport instead of attempting to resurrect the terminated SCP, uses the proven prefix rather than blind append, preserves failed evidence, and keeps incomplete content distinct from the completed asset.",
+    "no_change_to_original_partial_or_original_log": true,
+    "must_retain_expected_final_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+    "keepalive_not_a_proof_or_guarantee_against_future_disconnect": true,
+    "actual_new_download_or_success_not_claimed": true
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "51ebc25abf4e5595b5ae5466d356f674a3489120c9e049e943fcb943e4ddcfd1",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true,
+    "frozen_prepublication_evidence": true
+  }
+}

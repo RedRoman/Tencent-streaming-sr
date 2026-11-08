@@ -1,0 +1,36 @@
+{
+  "schema": "h3-H264-subset-v4-synthetic-CPU-receipt-v1",
+  "utc": "2026-11-08T08:52:32.566506+00:00",
+  "command_argv": [
+    "/path/to/local-toolchain/opt/python@3.14/bin/python3.14",
+    "/path/to/staging/test_h3_limiteddev_H264_subset_v4.py"
+  ],
+  "exit_code": 0,
+  "tests_passed": 12,
+  "tests_skipped": 0,
+  "synthetic_bytes_only": true,
+  "codecs_executed": 0,
+  "scientific_computation": 0,
+  "source": {
+    "path": "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+    "bytes": 13551,
+    "sha256": "7ec2379b1a8ab31aae22861c4628ad274e986aca5fa6d6efd1a30bb51e20f690"
+  },
+  "tests": {
+    "path": "/path/to/staging/test_h3_limiteddev_H264_subset_v4.py",
+    "bytes": 8854,
+    "sha256": "4f9f3db85a13897ca8583538d1bcb352d3dd7744f660107c68dad3201ecf43e4"
+  },
+  "log": {
+    "path": "/path/to/staging/h3_limiteddev_H264_subset_v4_cpu_final.log",
+    "bytes": 1491,
+    "sha256": "7b12f1e50dee0fc4c361a2ccdf7ebdcc9c67f293334b1ed15f66c54901ffa5b2"
+  },
+  "prior_old_v3_tests_reexecuted": false,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "e3892ef214f2d645b98e2af9f0bfe5d40715bd643e606944ad9189b047fcd372",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

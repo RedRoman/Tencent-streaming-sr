@@ -1,0 +1,332 @@
+{
+  "schema": "h3-production67-singleWing-media-export-v1",
+  "stage_directory": "/path/to/staging/h3_production67_wing_media_20261107_v1",
+  "output": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/media_v1",
+  "stages": [
+    "export"
+  ],
+  "files": {
+    "export_h3_production67_wing_media_v1.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/export_h3_production67_wing_media_v1.py",
+      "bytes": 15043,
+      "sha256": "897c6f99fb5ed109f29fb95ff9270266c1d5437c07ac01392f974ab3e3ed08b9"
+    },
+    "run_h3_production67_wing_media_v1.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/run_h3_production67_wing_media_v1.py",
+      "bytes": 8743,
+      "sha256": "c00e4bbbc6d0fd0af5c7e58d95ce1466bee9466d56f3bd8a9c3bbdedac8efe69"
+    },
+    "run_h3_production67_wing_media_v1.sh": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/run_h3_production67_wing_media_v1.sh",
+      "bytes": 459,
+      "sha256": "6425a921b2e515a048deb8b5d0f0f160e99509a18887064cb941f9f1e75d8bc2"
+    },
+    "test_h3_production67_wing_media_v1.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/test_h3_production67_wing_media_v1.py",
+      "bytes": 3573,
+      "sha256": "70ab5805172b9af9412e17ff312fc6c6a0209f60b4b3a29622bb869976ca768f"
+    },
+    "data_utils.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/data_utils.py",
+      "bytes": 9603,
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+    },
+    "decode_results.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/decode_results.py",
+      "bytes": 6308,
+      "sha256": "541dd5dfaae43200f5282b454af7edddfac3b54dafba217d73463af0575b194c"
+    },
+    "diagnose_h3_720to1080_v3.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/diagnose_h3_720to1080_v3.py",
+      "bytes": 46887,
+      "sha256": "1dfc47a50b85fc67119629b9e1be2b3907a890eeaef7ebc97f46010e376ad269"
+    },
+    "h3_production67_cann_imports_v1.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/h3_production67_cann_imports_v1.py",
+      "bytes": 3217,
+      "sha256": "cfc334f1a3568315a1ccd88020e9b6785de689dfcd5914972449c6fe5faa2996"
+    },
+    "run_h3_surrogate67_npu4_v1.py": {
+      "path": "/path/to/staging/h3_production67_wing_media_20261107_v1/run_h3_surrogate67_npu4_v1.py",
+      "bytes": 22386,
+      "sha256": "fd50e29519d7deeee4ca0f7663ca5ec11575009a6a6e8b958af5e3fdf8855cc5"
+    }
+  },
+  "evaluation_plan": {
+    "path": "/path/to/staging/h3_production67_wing_eval_20261107_v4/h3_production67_wing_eval_plan_v4.json",
+    "bytes": 21325,
+    "sha256": "4b19c6754372b360548d25b8e1dadf0d5005063a0a2e95aad45ca1c6bd6e35eb"
+  },
+  "evaluation_binding": {
+    "path": "/path/to/staging/h3_production67_wing_eval_binding_actual_v4.json",
+    "bytes": 6744,
+    "sha256": "39faf11c69a8b1615d7923916c127a0c8d22008d5b22a69cd75b6595190bd132"
+  },
+  "completed_evidence": {
+    "summary": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/pixels/summary.json",
+      "bytes": 441168,
+      "sha256": "4ccbaafa7e5f3f6b4465ae9a28898bb9bff612a676c408857f88bbbe3618d30b"
+    },
+    "infer_complete": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/infer/complete.json",
+      "bytes": 555,
+      "sha256": "acf11ef912edcf78888a1735d4aebbe244e38a999c2c6500775fe68cd15a5577"
+    },
+    "infer_report": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/infer/report.json",
+      "bytes": 1224,
+      "sha256": "07e887b58148110f1cd128e21169db54aa8ad37c51761e68b3dea1778b9712f0"
+    },
+    "infer_launch": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/launches/infer_attempt1.json",
+      "bytes": 10237,
+      "sha256": "d2f5a7bb12e2708cf66d83139fb1d94fb6dbc598fbdf3d6752daca6519706923"
+    },
+    "pixels_complete": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/pixels/complete.json",
+      "bytes": 556,
+      "sha256": "fc1514d6a4e5c89b73277924b249b16a07315585374f811415e79cc1ae000dcd"
+    },
+    "pixels_report": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/pixels/report.json",
+      "bytes": 555,
+      "sha256": "0a55de433c8da93c19528a590c9f844607b5fe20b68564e429f17beabb89016d"
+    },
+    "pixels_launch": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/launches/pixels_attempt1.json",
+      "bytes": 10244,
+      "sha256": "c68fff588a4183e9d4167e971705c083736baf697d507411f7c74b73eda29131"
+    },
+    "payload_acceptance": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/infer_cpu_payload_acceptance_v1.json",
+      "bytes": 7389,
+      "sha256": "6750107023177cd34a7a9344720a0e2523ec5654e4980843418f873456f151e8"
+    },
+    "summary_acceptance": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/pixels_summary_cpu_acceptance_v1.json",
+      "bytes": 726,
+      "sha256": "321ea8180ee1e252888b853aa6f7503f857c5e170c6b387777c20a18fdf0a85e"
+    }
+  },
+  "precision": {
+    "dtype": "float32",
+    "conv_hf32": false,
+    "matmul_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "variants": [
+    "teacher",
+    "control",
+    "teacher_student"
+  ],
+  "frames": 226,
+  "fps": [
+    24,
+    1
+  ],
+  "preview_shape": [
+    226,
+    568,
+    2880,
+    3
+  ],
+  "native_crop_size": [
+    512,
+    512
+  ],
+  "crops": [
+    {
+      "frame": 0,
+      "source_frame": 3586,
+      "region": "dog_face",
+      "xywh": [
+        560,
+        48,
+        512,
+        512
+      ],
+      "selected_from_native_source_only": true
+    },
+    {
+      "frame": 0,
+      "source_frame": 3586,
+      "region": "cat_face_hand",
+      "xywh": [
+        1008,
+        560,
+        512,
+        512
+      ],
+      "selected_from_native_source_only": true
+    },
+    {
+      "frame": 113,
+      "source_frame": 3699,
+      "region": "dog_face",
+      "xywh": [
+        512,
+        80,
+        512,
+        512
+      ],
+      "selected_from_native_source_only": true
+    },
+    {
+      "frame": 113,
+      "source_frame": 3699,
+      "region": "cat_face_hand",
+      "xywh": [
+        1072,
+        360,
+        512,
+        512
+      ],
+      "selected_from_native_source_only": true
+    },
+    {
+      "frame": 225,
+      "source_frame": 3811,
+      "region": "dog_face",
+      "xywh": [
+        352,
+        32,
+        512,
+        512
+      ],
+      "selected_from_native_source_only": true
+    },
+    {
+      "frame": 225,
+      "source_frame": 3811,
+      "region": "cat_face_hand",
+      "xywh": [
+        1072,
+        328,
+        512,
+        512
+      ],
+      "selected_from_native_source_only": true
+    }
+  ],
+  "expected_visible_RGB_sha256": {
+    "teacher": "e6a44d145a94836a866cbbb60c6f8b7c3207a7e025f02714af6153c383052175",
+    "control": "6d81d6b4e3697777f10ddfeb22063da16588953086c6b6748c921ac724b87870",
+    "teacher_student": "1f3d480df68879748c067ddc09f96d46cb93b7a3341cca845518ac2a1ecc84ed"
+  },
+  "latents": {
+    "control": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/infer/control.npy",
+      "bytes": 52485248,
+      "sha256": "e8c0ab4a0a79df23136e395f6133d6ccc2baed204f6f72a8ba9d95b90c9fc86e"
+    },
+    "teacher_student": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4/infer/teacher_student.npy",
+      "bytes": 52485248,
+      "sha256": "12dd03fbb2e40aea477d540723a1897fda15c6802b9822bf911cc87f3fb8b59b"
+    },
+    "teacher": {
+      "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/data_v1/teacher/teacher.npy",
+      "bytes": 52485248,
+      "sha256": "c98802a0686977a28f4df6e3eccbab81e2bca2340d73cef074515df42a70f40b"
+    }
+  },
+  "native_rgb": {
+    "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+    "bytes": 1405900928,
+    "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+  },
+  "runtime_assets": {
+    "vae/config.json": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/config.json",
+      "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+      "bytes": 2011
+    },
+    "vae/diffusion_pytorch_model-00001-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+      "bytes": 5061033024
+    },
+    "vae/diffusion_pytorch_model-00002-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+      "bytes": 4955986528
+    },
+    "vae/diffusion_pytorch_model-00003-of-00003.safetensors": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+      "bytes": 398539336
+    },
+    "vae/diffusion_pytorch_model.safetensors.index.json": {
+      "path": "/path/to/model-assets/VDN-MiniMax-H3/h3-base/vae/diffusion_pytorch_model.safetensors.index.json",
+      "bytes": 74228,
+      "sha256": "15f6d44553c3c616b0dc999920aa784f92ecee7e4201f1f99ac405cfbf3061ca"
+    },
+    "implementation/autoencoder": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/models/autoencoders/autoencoder_kl_minimax_h3.py",
+      "bytes": 41346,
+      "sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2"
+    },
+    "implementation/attention": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/models/attention_dispatch.py",
+      "bytes": 147586,
+      "sha256": "5fa72380e153fc6e9cddd23848800958e1431fbfe1402e60595c250e75c77eb1"
+    },
+    "implementation/package": {
+      "path": "/path/to/model-assets/runtime/diffusers-patched/src/diffusers/__init__.py",
+      "bytes": 65741,
+      "sha256": "29f8bdd216eabda0ff43449d866aa1b4d92a1e89e43129c99c9e59b03a6564a3"
+    }
+  },
+  "base_model": "/path/to/model-assets/VDN-MiniMax-H3/h3-base",
+  "decoder_implementation_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+  "limits": {
+    "new_decoder_calls": 3,
+    "new_upscaler_calls": 0,
+    "new_encoder_calls": 0,
+    "optimizer_updates": 0,
+    "metric_evaluation_calls": 0
+  },
+  "media_inventory_observation": {
+    "observed_utc": "2026-11-06T20:40:13.987041+00:00",
+    "completed_output": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/evaluation_v4",
+    "observed_RGB_PNG_video_files": [],
+    "existing_latents_reused": true,
+    "new_decode_needed_because_completed_metric_stage_did_not_store_RGB": true
+  },
+  "display_policy": {
+    "preview": "Each1920x1080 visible RGB averaged2x to960x540, three labelled columns with28px header; display only, never used as metric input.",
+    "native_crops": "Six source-onlyfixed512x512 crops, nativeHR/teacher/control8/teacher8 four labelled columns2048x540, no image resize.",
+    "video_codec": "Use frozen data_utils codec detection: libx264 if present, otherwise explicitly report mpeg4(q2) and require separate reviewed H264 delivery conversion if needed. No false H264 claim."
+  },
+  "authority": "Candidate only; no upload/check-plan or NPU execution performed. Future execution requires parent release plus actual idle and all3locks. Media cannot block formal data/training.",
+  "formal_training_allowed": false,
+  "visual_acceptance": false,
+  "source_crop_selection": {
+    "frames_actually_viewed": [
+      {
+        "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_v1/wing_it/attempt_1/native/native_png/frame_03586.png",
+        "bytes": 2229289,
+        "sha256": "5dd78c3151aa68d1d1a359ccaa2b809aa67d3615ed3a02268afaf5f3f7506942"
+      },
+      {
+        "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_v1/wing_it/attempt_1/native/native_png/frame_03699.png",
+        "bytes": 2205213,
+        "sha256": "4e518e6967fc7a57096e1afe9669de245dbace57cb86421d0342e0e20758a782"
+      },
+      {
+        "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_v1/wing_it/attempt_1/native/native_png/frame_03811.png",
+        "bytes": 2265245,
+        "sha256": "9eacc77c30ac85e7fd97e1da7d5f97ada1d8abc8ef194a03c16b1491c05622b9"
+      }
+    ],
+    "view_scale": "1920x1080 native source only; model outputs not yet rendered",
+    "selection": "fixed first/middle/last and dog face/cat face+hand regions; no checkpoint or metric selection"
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "6c7cfbb1d6baf0431e1f31e5532f5ae89b7af8c414846c5d913b19438d999b0e",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

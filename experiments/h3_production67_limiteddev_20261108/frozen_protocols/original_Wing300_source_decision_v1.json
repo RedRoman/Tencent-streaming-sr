@@ -1,0 +1,297 @@
+{
+  "schema": "h3-wing300-root-native-source-decision-v1",
+  "utc": "2026-11-06T22:31:18.989380+00:00",
+  "status": "ACCEPTED_OFFICIAL_HQ_DECODED_SOURCE_ONLY",
+  "source_kind": "video",
+  "film": "wing_it",
+  "source_group": "wing_it",
+  "split": "dev",
+  "core_indices": [
+    300,
+    525
+  ],
+  "context_indices": [
+    276,
+    549
+  ],
+  "source_video_sha256": "02df6e4471517eeb6d67db553078b02b1a859c61761f0004dfeae0744cbc26d6",
+  "source_manifest": {
+    "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/extract_manifest.json",
+    "bytes": 303536,
+    "sha256": "d0ce333b2d442beba77d61c48ee2f576818b06d67a4bd6d15d8a0aaa75b31420"
+  },
+  "static_review": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/formal_source_capacity_20261107/wing300_native_static_review_v1/source_static_review.json",
+    "sha256": "ee9de7dc078d47da72f97f33d3c3841409d0b44e27a9449a5905bb58c6ba66a1"
+  },
+  "actual_candidate_rgb_sequence_sha256": "0899bbafd7d3e0a3146595a625866170054e45247c1b0f8d4298d0616cc7a6fc",
+  "native_visible_dimensions": [
+    1920,
+    1080
+  ],
+  "native_frames": 226,
+  "native_fps": [
+    24,
+    1
+  ],
+  "crop_y0_y1_x0_x1": [
+    0,
+    1080,
+    0,
+    1920
+  ],
+  "resize": false,
+  "nativeHQ_accepted": true,
+  "root_verified_artifact_count": 30,
+  "root_verified_artifacts": [
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/formal_source_capacity_20261107/wing300_native_execution_v1/exit_receipt.json",
+      "bytes": 4163,
+      "sha256": "4ea36e20213ad2a701ff9da5e6b3943706f7bfadd263822c86bebda528b91bb4"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/extract_manifest.json",
+      "bytes": 303536,
+      "sha256": "d0ce333b2d442beba77d61c48ee2f576818b06d67a4bd6d15d8a0aaa75b31420"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/formal_source_capacity_20261107/wing300_native_extraction_root_reviewed_v1/root_review.json",
+      "bytes": 2406,
+      "sha256": "e6a95b4bb067d3790bb5fb061143b3d2c113dfcb9eba129901ee989620476f67"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native_core_adjacency.json",
+      "bytes": 25079,
+      "sha256": "60c77dd41eef17d60e5c3e34860aa68a9c54172adad3a0b7cee5bf7f34a3a9a1"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_full/all_frames_0001.jpg",
+      "bytes": 442755,
+      "sha256": "d2ff231fad4d22b615e8245643ba0c8076d8294e9b19f35d2885b80b9cec74e8"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_full/all_frames_0002.jpg",
+      "bytes": 499188,
+      "sha256": "791bad39becd1cdaf8d7887f630a942c6583430e66915f01f5431e3ed70ce792"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_full/all_frames_0003.jpg",
+      "bytes": 430847,
+      "sha256": "16d913a2c54bda8afc8a6b6aae470cd690d675a49b809dcd384c65544a0e53a8"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_full/all_frames_0004.jpg",
+      "bytes": 297206,
+      "sha256": "8f5b365982d855cb1d0f02f55d101fc0d11c7f27dbf6f4c5daad2be39eb66670"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_native_crop/all_frames_0001.jpg",
+      "bytes": 503955,
+      "sha256": "8f2814a5f8fe91f3c8841be32b4a112d421d96d8280cfb0cf297f14b3f082a2a"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_native_crop/all_frames_0002.jpg",
+      "bytes": 571018,
+      "sha256": "fe0f824ee2793aeeced47ebd5336d5d1d13e8d616e326ac72e4d390202fe2981"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_native_crop/all_frames_0003.jpg",
+      "bytes": 489265,
+      "sha256": "c6cabdda767b1fe092b0b4b596ab369c7e7b4fdc2640084f0e985120915f9162"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/contacts_native_crop/all_frames_0004.jpg",
+      "bytes": 335736,
+      "sha256": "f2263a2d5e2572d5d9b24f2e25001bbbe3f00508116b2b7c5b33c6a67398c021"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_001.jpg",
+      "bytes": 440349,
+      "sha256": "c66919b7fe3755be04b93170e2379a1cd30ef35750e627b09e27f6a809fed8a9"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_002.jpg",
+      "bytes": 511823,
+      "sha256": "e42a77e1f54a87e86f3a1ed41b945298764b93a2a9f8b842131986ba0b1fab51"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_003.jpg",
+      "bytes": 530087,
+      "sha256": "6ad5d722e0fe51415387f3dec7a9a28b06babccae7fa38d0b3d6ffa74935c975"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_004.jpg",
+      "bytes": 537199,
+      "sha256": "3c2ac4c6790a5aa06c7184e277d1c1a8d247587d761d7f99c01e15c38c0ce0cf"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_005.jpg",
+      "bytes": 436317,
+      "sha256": "6213b71288d23e3272460cc150b1ea7f829c351237ca315ba7d97bafb8e985da"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_006.jpg",
+      "bytes": 437110,
+      "sha256": "306536cea544a52dd26fee68aaf01dc9ff5d04c37f0aa074049fdb81f39f5210"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_007.jpg",
+      "bytes": 314657,
+      "sha256": "92ae99d42430d8bb0b6b1bd7c262c5b2272f72691d1c7953845cadf0c4f8ecc6"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00300.png",
+      "bytes": 2243782,
+      "sha256": "ee4b2c046e46c4f14fde3372eca88a1b672694da91f207250795742d33247ed2"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00367.png",
+      "bytes": 2223629,
+      "sha256": "4b73319aded2c9ffb749bfd012d77901fb00b508fffe12a9014d3813fcda1259"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00438.png",
+      "bytes": 1879750,
+      "sha256": "b2ecc982d37f92529c6a4549242bb978eae31fe8e9d0923be32c2876d213ab74"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00439.png",
+      "bytes": 1369251,
+      "sha256": "df8294aff314f16f39b3d81c3d701ebbc7933ac854dd5a44fb8f2df49e26e292"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00440.png",
+      "bytes": 779563,
+      "sha256": "e4e1e31efbcbbb57431157fe030b35e9290d61f5943b8eee484ce632b51cbaf3"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00441.png",
+      "bytes": 1305277,
+      "sha256": "ee8f8f0c066d25d42dc5fc0b2aa48b9761bacd9a0897ef3fc39c26a3335c0536"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00442.png",
+      "bytes": 1594527,
+      "sha256": "8c7e21063640db3e51afe4eb234b80698f87236a4f9e9a687ec1ccedfaf1a97c"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00443.png",
+      "bytes": 1894802,
+      "sha256": "7a7f5bcc2bafe08f89558a19a2c8cf2d68905709f61c14aad62b48b2c1bed528"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00525.png",
+      "bytes": 2147589,
+      "sha256": "a2f0e4ad29f7d04ea8664d0c3dbf2be4077606876b08eb15fd49211305f6d833"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/proxy_hq_registration.json",
+      "bytes": 5922,
+      "sha256": "53bf8d029cb294814d09c46af09c4713e9db3d479c0422408825780782cbe7a7"
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/source_geometry.json",
+      "bytes": 2108,
+      "sha256": "2318c77c9490f0cac8658b80bafd5334fe26e97b185791d4d228300e64f56742"
+    }
+  ],
+  "root_actual_original_images": [
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00375.png",
+      "sha256": "1d6565219e8fc3b01ab0912f549be179ce509cc05e7e6edbc067b1f0bbf3311f",
+      "frame": 375,
+      "actual_viewed": true,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00438.png",
+      "sha256": "b2ecc982d37f92529c6a4549242bb978eae31fe8e9d0923be32c2876d213ab74",
+      "frame": 438,
+      "actual_viewed": true,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00439.png",
+      "sha256": "df8294aff314f16f39b3d81c3d701ebbc7933ac854dd5a44fb8f2df49e26e292",
+      "frame": 439,
+      "actual_viewed": true,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00440.png",
+      "sha256": "e4e1e31efbcbbb57431157fe030b35e9290d61f5943b8eee484ce632b51cbaf3",
+      "frame": 440,
+      "actual_viewed": true,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00441.png",
+      "sha256": "ee8f8f0c066d25d42dc5fc0b2aa48b9761bacd9a0897ef3fc39c26a3335c0536",
+      "frame": 441,
+      "actual_viewed": true,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00442.png",
+      "sha256": "8c7e21063640db3e51afe4eb234b80698f87236a4f9e9a687ec1ccedfaf1a97c",
+      "frame": 442,
+      "actual_viewed": true,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/native/native_png/frame_00443.png",
+      "sha256": "7a7f5bcc2bafe08f89558a19a2c8cf2d68905709f61c14aad62b48b2c1bed528",
+      "frame": 443,
+      "actual_viewed": true,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "root_actual_registration_page": {
+    "path": "/path/to/h3-project/public_hr_five_film_hq_20261107/native_window_extract_wing300_v1/wing_it/attempt_1/registration/proxy_full_hq_005.jpg",
+    "sha256": "6213b71288d23e3272460cc150b1ea7f829c351237ca315ba7d97bafb8e985da"
+  },
+  "root_separate_file_and_PTS_verification": "All 226 original PNG byte sizes/SHA checked and rational PTS i/24,1920x1080 checked; full RGB sequence validation by independent reviewer recorded separately.",
+  "decision_rationale": "Accept the fixed official HQ decoded1920x1080 source without resize, after all226+context static review,225 adjacency record,original native samples and source geometry verification. In438..443 the same cat/window/vehicle has consecutive intermediate views, supporting rapid continuous animated pullback. Outside-core292->293 change and534..539 motion are retained in context. No within-core source-content blocker identified at reviewed scales.",
+  "registration_scope": "All274 same-index proxy/HQ contact pairs reviewed by independent reviewer; root saw436..475. Offset0 aggregate best; no temporal correction. This is not per-frame uniqueness proof.",
+  "scope": "Native source acceptance only, not cache/training READY or formal16dev gate. HQ encoded video is not a lossless-render master or private production equivalence.",
+  "training_ready": false,
+  "pair_cache_ready": false,
+  "continuous_playback_completed": false,
+  "model_outputs_used": false,
+  "new_optimizer_updates": 0,
+  "limits": [
+    "All226 frames were statically inspected as contact thumbnails, but only the enumerated9 PNGs were inspected at original1920x1080.",
+    "No24fps continuous playback or flicker validation was performed.",
+    "Adjacent-frame numbers are thumbnail RGB differences, not native optical-flow estimates.",
+    "The official1080 encode is not claimed bit-identical to a rendering master or private production input.",
+    "No per-frame temporal offset was applied; no automatic native/data/training acceptance."
+  ],
+  "other_source_HOLD_decisions_unchanged": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "e2ac60b0ebda3ab6b7d3c83a759b4f3bdf65faedf48ab69d8c1e34fcfe0547ea",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

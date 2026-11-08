@@ -1,0 +1,98 @@
+{
+  "schema": "h3-selected-weight-recovery-observed-v2",
+  "observed_utc": "2026-11-08T12:52:41.869746+00:00",
+  "human_request": "权重下载出现了什么故障，修复",
+  "owner": "/root",
+  "failure_mechanism": "remote_closed_SSH_connection_then_scp_exit255",
+  "underlying_remote_close_cause": "not established by raw stderr",
+  "original_log": {
+    "path": "/path/to/local-home/.cache/remote-ssh/h3-limiteddev-selected-weight-20261108-v1.log",
+    "bytes": 225,
+    "sha256": "be17bedb63152ffc5b41af638a308070356ff8fd8fb00cc8d3077366c1d228fe"
+  },
+  "old_partial": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/h3_limiteddev_teacher_step2000_fp32.pt",
+    "bytes": 25589760,
+    "sha256": "dd8d7f64e6e474920b2f17a229997dea417dec169f02387a2d13454232160637"
+  },
+  "independent_diagnosis": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/independent_transport_failure_diagnosis_v1.json",
+    "bytes": 6826,
+    "sha256": "51ebc25abf4e5595b5ae5466d356f674a3489120c9e049e943fcb943e4ddcfd1"
+  },
+  "current_attempt_path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v2/attempt.json",
+  "observed_attempt": {
+    "schema": "h3-selected-weight-SFTP-resume-v2",
+    "started_utc": "2026-11-08T12:49:18.098047+00:00",
+    "status": "running",
+    "parent_pid": 34998,
+    "remote": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/best_step_2000.pt",
+    "old_partial_preserved": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/h3_limiteddev_teacher_step2000_fp32.pt",
+    "prefix_bytes": 25589760,
+    "prefix_sha256": "dd8d7f64e6e474920b2f17a229997dea417dec169f02387a2d13454232160637",
+    "expected_bytes": 1381220283,
+    "expected_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+    "partial_path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v2/h3_limiteddev_teacher_step2000_fp32.pt.partial",
+    "final_path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v2/h3_limiteddev_teacher_step2000_fp32.pt",
+    "command": [
+      "/usr/bin/sftp",
+      "-v",
+      "-b",
+      "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v2/sftp_batch.txt",
+      "-B",
+      "131072",
+      "-R",
+      "64",
+      "-oBatchMode=yes",
+      "-oConnectTimeout=20",
+      "-oServerAliveInterval=15",
+      "-oServerAliveCountMax=3",
+      "REDACTED_EXECUTION_HOST"
+    ],
+    "automatic_retries": 0,
+    "source_sha_fresh_verified_by_root": true,
+    "driver_sha256": "887d44dd7fdced277f6c60fa7e2cb723c4d233ed82ca3414a1dfdd0976ba388d",
+    "old_partial_unchanged": true,
+    "child_pid": 34999,
+    "child_pgid": 34999,
+    "observed_utc": "2026-11-08T12:52:38.302718+00:00",
+    "partial_bytes": 31488000,
+    "elapsed_seconds": 200.20359408296645
+  },
+  "observed_partial_bytes": 31619072,
+  "progress_beyond_verified_prefix": 6029312,
+  "process_identity_rows": [
+    "34998     1 34998 Ss   Sun Nov  8 20:49:18 2026     /path/to/local-toolchain/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_recovery_tools_v2/resume_selected_weight.py",
+    "34999 34998 34999 Ss   Sun Nov  8 20:49:18 2026     /usr/bin/sftp -v -b /path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v2/sftp_batch.txt -B 131072 -R 64 -oBatchMode=yes -oConnectTimeout=20 -oServerAliveInterval=15 -oServerAliveCountMax=3 REDACTED_EXECUTION_HOST"
+  ],
+  "driver": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_recovery_tools_v2/resume_selected_weight.py",
+    "bytes": 5856,
+    "sha256": "887d44dd7fdced277f6c60fa7e2cb723c4d233ed82ca3414a1dfdd0976ba388d"
+  },
+  "source_review": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_recovery_tools_v2/independent_source_review_v1.json",
+    "bytes": 2966,
+    "sha256": "1ede5770b30272afdc34e6a606d0687d837eb2ffcf20f21fa94e09ae3c894b35"
+  },
+  "launch_receipt": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_recovery_tools_v2/launch_receipt.json",
+    "bytes": 546,
+    "sha256": "a7381b5a10866c38e3f4231e49e98e1fffbb4b11822b9d6df119672011351932"
+  },
+  "remote_source_full_sha_verified_this_turn": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "remote_source_bytes_verified_this_turn": 1381220283,
+  "local_complete": false,
+  "success_gate": "exit0, reaped child, empty owned PGID, exact full bytes and SHA, preserved old partial; only then atomic final install",
+  "review_caveat": "v2 success integrity is checked. Exceptional leader exit with surviving descendant requires root to verify and clear only exact owned PGID before another attempt; cancellation may require bounded TERM/KILL supervision. Do not restart healthy transfer to change this branch. No automatic retries or second writer.",
+  "old_snapshot_unchanged": true,
+  "training_touched": false,
+  "new_NPU_actions": 0,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "1f66b859353c4493ebd00653fd4d7fdbd1318328252543f173b2d3d4d8c5a039",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true,
+    "frozen_prepublication_evidence": true
+  }
+}

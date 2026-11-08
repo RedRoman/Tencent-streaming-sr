@@ -1,0 +1,88 @@
+{
+  "schema": "h3-limiteddev-media-owner-closeout-v1",
+  "utc": "2026-11-08T12:05:09.509329+00:00",
+  "status": "media_complete_weight_transfer_failure_handed_to_root",
+  "original_mpeg4_count": 21,
+  "H264_count": 21,
+  "H264_total_bytes": 212464627,
+  "native1080_H264_count": 15,
+  "main_three_column_H264_count": 3,
+  "ROI_three_column_H264_count": 3,
+  "contact_count": 84,
+  "contacts_width_height": [
+    1536,
+    624
+  ],
+  "contact_coverage": {
+    "WingIt_dev_3586_3811": {
+      "count": 6,
+      "local_frame_indices": [
+        0,
+        113,
+        225
+      ],
+      "crops_per_frame": 2
+    },
+    "ElephantsDream_dev_13070_13295": {
+      "count": 36,
+      "local_frame_indices": [
+        0,
+        113,
+        225
+      ],
+      "crops_per_frame": 12
+    },
+    "WingIt_dev_300_525": {
+      "count": 42,
+      "grid_local_frame_indices": [
+        0,
+        113,
+        225
+      ],
+      "grid_crops_per_frame": 12,
+      "fixed_pullback_local_frame_indices": [
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ]
+    }
+  },
+  "media_transport_complete": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/all_media_local_transport_completed_v1.json",
+    "bytes": 40162,
+    "sha256": "9216af1ddda7c3c844547a68b0aff692c5049b34c2849304e96b8ff98296f880"
+  },
+  "H264_technical_complete": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/full21_H264_delivery_v1.json",
+    "bytes": 34618,
+    "sha256": "d705e8a696119c120203ff6e54cbd0386338806747bbcf4c9dc8089a173c5c81"
+  },
+  "full21_H264_receipt": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/full21_video_receipt.json",
+    "bytes": 9675,
+    "sha256": "80953828a6e23d5934faa4f6b093629e7a1fcca7d7bfbef96cba79c2d3079ed4"
+  },
+  "weight_SIGCONT_failure_preserved": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/resume_after_media_failed_outcome_v1.json",
+    "bytes": 2038,
+    "sha256": "6ecede9e2695310ace8472ce7f35146e2febdc21e4d42eaba9fab48c52328066"
+  },
+  "technical_not_subjective": true,
+  "continuous_visual_review_completed_by_media_owner": false,
+  "failed_nativeHR_quality_guard_label_preserved": true,
+  "models_NPU_scientific_decodes_optimizer_updates_in_this_media_stage": 0,
+  "no_NPY_cache_optimizer_RNG_download": true,
+  "originals_preserved": true,
+  "no_automatic_weight_retry": true,
+  "no_GitHub_or_shared_state_change": true,
+  "root_owner_of_visual_review_publication_and_weight_recovery": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "7b88b2d8ce13a9fa7d1f313d55bfea9c55831fc44f50ccee12e8f4e85b0ab3af",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

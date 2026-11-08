@@ -1,0 +1,90 @@
+{
+  "status": "passed_metadata_and_source_boundaries_only",
+  "cases": [
+    {
+      "case": "actual_sidecar_identity_geometry_mode",
+      "result": "passed"
+    },
+    {
+      "case": "all_five_recorded_scientific_sources",
+      "result": "passed"
+    },
+    {
+      "case": "original_322_names_shapes_only_schema",
+      "result": "passed"
+    },
+    {
+      "case": "reject_old_2x_target",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_37_tokens",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_HF32_enabled",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_precision_cast",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_reinitialization",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "exact_selected_metadata_only_not_tensor_check",
+      "result": "passed"
+    },
+    {
+      "case": "reject_optimizer_extra",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_RNG_extra",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_control_arm",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_nonselected_step",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_changed_lineage",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_nonfinite_metrics",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_duplicate_json_keys",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_wrong_source_before_import",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_wrong_schema_before_weights",
+      "result": "rejected_as_required"
+    },
+    {
+      "case": "reject_symlink_file",
+      "result": "rejected_as_required"
+    }
+  ],
+  "case_count": 19,
+  "actual_torch_imported": false,
+  "actual_weights_read": false,
+  "actual_model_constructed": false,
+  "actual_forward_count": 0,
+  "actual_NPU_actions": 0,
+  "actual_cpu_322_tensor_load_verified": false,
+  "loader_sha256": "5664fd98b25b7d915b3796b7e73ba4df0369fad9a614e0ddecf3f33f10b36a66",
+  "sidecar_sha256": "ad1c03b0e59af4bfe30c57d20628647762575a44a0f4874a574bb3f5f36be706"
+}

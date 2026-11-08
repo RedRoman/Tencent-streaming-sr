@@ -1,0 +1,108 @@
+{
+  "selected_environment": {
+    "ASCEND_HOME_PATH": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1",
+    "ASCEND_OPP_PATH": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp",
+    "LD_LIBRARY_PATH": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/lib64:/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/lib64/plugin/opskernel:/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/lib64/plugin/nnengine:/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/cann-8.5.2/lib64:/usr/local/Ascend/cann-8.5.2/lib64/plugin/opskernel:/usr/local/Ascend/cann-8.5.2/lib64/plugin/nnengine:/usr/local/Ascend/cann-8.5.2/opp/built-in/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64:/usr/local/Ascend/cann-8.5.2/tools/aml/lib64:/usr/local/Ascend/cann-8.5.2/tools/aml/lib64/plugin:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/lib:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/examples:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/tests/atbopstest:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/lib:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/examples:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/tests/atbopstest:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/lib:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/examples:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/tests/atbopstest:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64/driver:/usr/host-lib:/usr/host-lib64:/usr/lib/aarch64-linux-gnu/hdf5/serial:/usr/local/Ascend/ascend-toolkit/latest/compiler/lib64/plugin/nnengine:/usr/local/Ascend/ascend-toolkit/latest/compiler/lib64/plugin/opskernel:/usr/local/Ascend/ascend-toolkit/latest/lib64:/usr/local/Ascend/ascend-toolkit/latest/opp/built-in/op_impl/ai_core/tbe/op_tiling/lib/:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/toolbox/latest/Ascend-DMI/lib64:/usr/local/seccomponent/lib/:/usr/local/seccomponent/lib/openssl/"
+  },
+  "files": [
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/version.info",
+      "bytes": 281,
+      "sha256": "cd841c9ab92a2331b262b1d242590533a5d9a4a0f8c9b957ebfd48cfd8056cf0",
+      "content": "Version=9.0.1\nversion_dir=cann\nrequired_package_runtime_version=\">=8.5\"\nrequired_package_ge-executor_version=\">=8.5\"\nrequired_package_metadef_version=\">=8.5\"\nrequired_package_asc-devkit_version=\">=8.5\"\nrequired_package_bisheng-compiler_version=\">=8.5\"\ntimestamp=20260625_111312340\n"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/aarch64-linux/ascend_toolkit_install.info",
+      "bytes": 251,
+      "sha256": "aa39b3467a94a77dfb317900c5242f98222ccb964fc30c93bf13465de5696a53",
+      "content": "package_name=Ascend-cann-toolkit\nversion=9.0.1\ninnerversion=V100R001C10SPC002B220\ncompatible_version=[V100R001C21],[V100R001C22],[V100R001C23],[V100R001C25],[V100R001C10]\narch=aarch64\nos=linux\npath=/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1\n"
+    },
+    {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/version.py",
+      "bytes": 85,
+      "sha256": "97c3d630af9e4d5739564d2b27c93b83f49b5f1684f54bb5a5350214ae11d6b0",
+      "content": "__version__ = '2.7.1.post2'\ngit_version = '3be71f46df8b8ad10f4e4230aa67d83e68a48ba4'\n"
+    },
+    {
+      "path": "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/csrc/aten/npu_native_functions_by_codegen.yaml",
+      "bytes": 215537,
+      "sha256": "0b2265792c52bae1cc4fc4946ea72f02fd3fd1e6f1024e43cfbe2251a04f604c"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/dynamic/grid_sampler2_d_grad.py",
+      "bytes": 10904,
+      "sha256": "3431d31c51d8a43fbc914ec999e24c26bcc9fcad82c6554d7ae122230cd02ce1"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/ascendc/grid_sampler2_d_grad/grid_sampler2_d_grad.cpp",
+      "bytes": 6108,
+      "sha256": "5e1bd4cca4c87d9470a4a903ef30a3083890ba825de53f0aa35d0a54c7457c05"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/impl/ops_cv/ascendc/grid_sampler2_d_grad/grid_sampler2_d_grad.h",
+      "bytes": 53103,
+      "sha256": "650f0fbc606e2b1e8ebd50f96320651c8f82b2caf1e113d0c1eeec0f1e86a6f2"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/config/ascend910b/ops_cv/grid_sampler2_d_grad.json",
+      "bytes": 6784,
+      "sha256": "47edc737524889d04e44dbd8ba86e27c91025604125ecf8fb5f222496703037a"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/ascend910b/ops_cv/grid_sampler2_d_grad/GridSamplerGrad_fp32_json_high_performance.json",
+      "bytes": 4003,
+      "sha256": "3fbd99f8bf307937149d5c1ec2d6b004e7a94ae3011aba92606214de7056ddd9"
+    },
+    {
+      "path": "/path/to/artifact-storage/SHARED_LOCK_OWNER/envs/minimax-h3-npu/Ascend/cann-9.0.1/opp/built-in/op_impl/ai_core/tbe/kernel/ascend910b/ops_cv/grid_sampler2_d_grad/GridSamplerGrad_fp32_json_high_performance.o",
+      "bytes": 242560,
+      "sha256": "b4e2ac902e8d9241937e6eeea5b2af2896983e21f6240dc5b5c6f543e5416fab"
+    }
+  ],
+  "NPU_initialized": false,
+  "schema": "h3-installed-cann-determinism-readonly-evidence-v1",
+  "observations": {
+    "actual_selected_toolkit": "9.0.1",
+    "torch_npu_git": "3be71f46df8b8ad10f4e4230aa67d83e68a48ba4",
+    "installed_registration": "grid_sampler_2d_backward impl_ns: acl_op, op_api; yaml lines1879–1880",
+    "installed_910b_kernel": "C++220 path header isDeterministic tiling flag; FP32 prebuilt metadata includes d=0 and d=1 keys; binary SHA equals metadata b4e2ac90...",
+    "limitations": [
+      "This records selected environment and installed artifacts, not actual dynamic dispatch or loaded library provenance.",
+      "LD_LIBRARY_PATH retains older8.5.2 entries after chosen9.0.1; actual worker should record loaded/proc/self/maps without changing paths.",
+      "Kernel metadata deterministic=ignore does not by itself imply unsupported; same binary includes deterministic-aware tiling.",
+      "Strict torch flag exposes recognized unsupported paths as errors; successful mode flag alone is not proof every NPU kernel deterministic. Repeated full gradient evidence remains necessary."
+    ]
+  },
+  "mode_contract": {
+    "api": "torch.use_deterministic_algorithms(mode, warn_only=False)",
+    "timing": "Set once after import torch and before import torch_npu, torch.npu.set_device or any accelerator tensor operation; fresh process per mode. Verify both public getters before/after all observed forwards/backwards.",
+    "baseline": false,
+    "deterministic": true,
+    "unchanged_precision": "FP32 convHF32false/matmulfalse/highest",
+    "forbidden": "No warn_only=True, catch-and-fallback, TORCH_NPU environment changes, automatic retries, new restore tolerance or optimizer update."
+  },
+  "primary_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/pytorch/3be71f46df8b8ad10f4e4230aa67d83e68a48ba4/torch_npu/csrc/framework/OpParamMaker.cpp",
+      "supports": "Exact installed git: SetDeterministic reads at::globalContext().deterministicAlgorithms; bridges aclCompileOpt and aclrt context/system options for acl_op and op_api."
+    },
+    {
+      "url": "https://www.hiascend.com/document/detail/zh/canncommercial/900/API/aolapi/context/ops-cv/op_api_list.md",
+      "supports": "9.0.0 primary support table (not exact9.0.1binary): GridSampler2DBackward configurable; actual installed9.0.1 source separately inspected."
+    },
+    {
+      "url": "https://www.hiascend.com/document/detail/zh/CANNCommunityEdition/850/API/aolapi/context/ops-cv/aclnnGridSampler2DBackward.md",
+      "supports": "Older8.5 primaryAPI: deterministic constraints dtype notDOUBLE,C<=2048. Not used as exact-version runtime guarantee."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/main/generated/torch.use_deterministic_algorithms.html",
+      "supports": "Strict public API and runtime-error semantics for known unsupported ops; CUDA operator table is not NPU certification."
+    }
+  ],
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "98cb21e044d1a7557f03ea07f0a60e2287ab01d4a8ab886159c1525d11deb46e",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

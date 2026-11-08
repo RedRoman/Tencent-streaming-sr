@@ -1,0 +1,45 @@
+{
+  "schema": "h3-H264-subset-independent-synthetic-CPU-v1",
+  "started_utc": "2026-11-08T08:54:50.533531+00:00",
+  "finished_utc": "2026-11-08T08:54:50.944204+00:00",
+  "command": [
+    "/path/to/local-toolchain/opt/python@3.14/bin/python3.14",
+    "/path/to/staging/test_h3_limiteddev_H264_subset_v4.py"
+  ],
+  "exit_code": 0,
+  "parent_wait_completed": true,
+  "tests_run": 12,
+  "skipped": 0,
+  "environment": {
+    "ASCEND_VISIBLE_DEVICES": "",
+    "ASCEND_RT_VISIBLE_DEVICES": "",
+    "CUDA_VISIBLE_DEVICES": "",
+    "TORCH_DEVICE_BACKEND_AUTOLOAD": "0",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "log": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/independent_CPU_v1.log",
+    "bytes": 1491,
+    "sha256": "7b12f1e50dee0fc4c361a2ccdf7ebdcc9c67f293334b1ed15f66c54901ffa5b2"
+  },
+  "source": {
+    "path": "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+    "bytes": 13551,
+    "sha256": "7ec2379b1a8ab31aae22861c4628ad274e986aca5fa6d6efd1a30bb51e20f690"
+  },
+  "tests": {
+    "path": "/path/to/staging/test_h3_limiteddev_H264_subset_v4.py",
+    "bytes": 8854,
+    "sha256": "4f9f3db85a13897ca8583538d1bcb352d3dd7744f660107c68dad3201ecf43e4"
+  },
+  "real_codec_commands": 0,
+  "actual_video_or_RGB_or_model_input_reads": 0,
+  "remote_network_NPU_actions": 0,
+  "source_inputs_prepost_unchanged": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "dd8e56d663cb03970379f3c6c89cd47d29c7587df72ed0f27eac86831a5ed8c5",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

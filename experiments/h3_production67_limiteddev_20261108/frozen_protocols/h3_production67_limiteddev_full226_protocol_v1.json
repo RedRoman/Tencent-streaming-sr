@@ -1,0 +1,114 @@
+{
+  "schema": "h3-production67-limiteddev-full226-protocol-v1",
+  "status": "candidate_not_executed_future_terminal_binding_required",
+  "training_protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+  "terminal_binder_source_sha256": "a9036ec0ae9d4763080aa69b772ebcbab658db9f7e5e600662f2c22c0e3b8078",
+  "terminal_policy_sha256": "9f047f243634ffdc4db569a23ffb98c5a107198387c3424a603e23427f74b055",
+  "terminal_result": "Required future real terminal JSON plus exactSHA, reproduced by binder v2; actual2000 each/continuous paired schedule/earliest guard-best required. No future SHA asserted now.",
+  "dev_order": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "models": [
+    "initial_v5_step1800",
+    "frozen_selected_control",
+    "frozen_selected_teacher"
+  ],
+  "best0_allowed": true,
+  "negative_result_allowed": true,
+  "selected_payload_admission": "Exact full-file bytes/SHA before and after weights_only CPU load; exact model-only schema/arm/step/protocol/initializer/selectedmetrics; 322 names/shapes/CPUFP32/finite and345280216 params; strict copy/readback. No optimizer/RNG payload accepted.",
+  "data_access": "Unchanged typed two-cohort router, explicit dev accessor only, strict loader2 real payloadSHA/shape/finite/native226 and teacher lineage; same fixed identities as terminal shared step0. Native PNG remains PNG identity.",
+  "frozen_metric_source_sha256": "d6f0d6c588930dd00b7536840e0d675bd0f001975728c7e3278aaf3db139b7f0",
+  "LR_BCTHW": [
+    1,
+    24,
+    67,
+    44,
+    80
+  ],
+  "target_BCTHW": [
+    1,
+    24,
+    67,
+    68,
+    120
+  ],
+  "raw_decode_THWC": [
+    226,
+    1088,
+    1920,
+    3
+  ],
+  "visible_THWC": [
+    226,
+    1080,
+    1920,
+    3
+  ],
+  "spatial_crop": [
+    4,
+    1084,
+    0,
+    1920
+  ],
+  "time_crop": null,
+  "fps": [
+    24,
+    1
+  ],
+  "frame_regions": {
+    "full226": 226,
+    "prefix208": 208,
+    "tail18": 18,
+    "blend": 60,
+    "nonblend": 166
+  },
+  "transition_pairs": {
+    "all": 225,
+    "blend_touching": 72,
+    "nonblend_only": 153
+  },
+  "latent_tokens": 67,
+  "latent_flow_pairs": 66,
+  "metrics": "Original rgb_metrics/regressions/engineering_conditions functions, original explicit_forward67/latent_terms_all + frozen lossAST; same decodedHR meanabsRGB delta>=.05 ROI for all models/targets. Teacher agreement, decodedHR guard and nativeHR guard reported separately.",
+  "aggregation": "Equal clip arithmetic means, mean clip PSNR (not pooledMSE PSNR), equal clip ROI/delta; overall three windows equal, two correlated Wing windows explicit. Per-clip raw metrics/regressions and film/cohort diagnostics retained. No new per-film acceptance gate.",
+  "thresholds": {
+    "teacher_global_ROI_delta": "strictly below BOTH initialv5 andselectedcontrol minus1e-8",
+    "epsilon": 1e-08,
+    "decodedHR_and_nativeHR_guards_vs_v5": {
+      "global_score": 1.01,
+      "pixel_L1": 1.02,
+      "LPIPS": 1.02
+    }
+  },
+  "failure_action": "Keep negative completed result; no reselection/test unlock/threshold adjustment/automatic retry. Execution failures preserve partial evidence; do not classify as quality pass.",
+  "retention": "Same decoded uint8 RGB used by metrics retained as 15 lossless NPY (teacher+decodedHR+3predictions perclip); original3native arrays referenced. 5route media native/teacher/v5/control/teacherStudent can reuse these exactRGB without new VAE call. No video encoding now.",
+  "call_budget": {
+    "new_student_forwards": 9,
+    "new_VAE_decodes": 15,
+    "new_teacher_forwards": 0,
+    "new_encoder_forwards": 0,
+    "optimizer_updates": 0,
+    "additional_scientific_media_decodes": 0
+  },
+  "test_unlocked": false,
+  "checkpoint_reselection": false,
+  "formal16dev_gate_passed": false,
+  "visual_quality_passed": false,
+  "limits": [
+    "Fixed limited-dev3, only two source films and two correlated Wing windows; not formal16dev, no statistical/generalization claim.",
+    "Selected best0 and valid negative outcome are retained; full226 results never choose another checkpoint.",
+    "Original generation mode unbound and strictdet caches remain separate immutable cohorts; new strict evaluation does not relabel cache history.",
+    "Verified native public source, synthetic area704x1280 LR and reflect4 HRcompute are not private production input parity.",
+    "Teacher is original upscaler+noncausal VAE decoder, not native truth or refiner; only student latent mapping is causal.",
+    "Old default-HF32 failure and previous restore failures remain recorded; no new preflight rerun is prescribed.",
+    "LosslessRGB retention/metric completion is not a playable video, audited videoPTS, native24fps continuous visual review or proof artifacts are solved."
+  ],
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "3e1cd5cb2499d4ee5b8bf9f82eeeabde10786190bda7382596c80e1e815f9c9a",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

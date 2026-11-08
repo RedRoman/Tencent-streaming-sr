@@ -1,0 +1,263 @@
+{
+  "schema": "h3-terminal-small-evidence-originals-v1",
+  "created_utc": "2026-11-08T05:13:16.145336+00:00",
+  "files": {
+    "terminal_binding.json": {
+      "remote_path": "/path/to/staging/h3_limiteddev_terminal_actual_20261108_v1.json",
+      "bytes": 76422,
+      "sha256": "3d733a4cdea0d8d86151c21161447c68e9684f2db344f7fcd844c5c61c4af24d"
+    },
+    "terminal_binding_execution.json": {
+      "remote_path": "/path/to/staging/h3_limiteddev_terminal_actual_20261108_v1.execution.json",
+      "bytes": 341,
+      "sha256": "d3eae14d9ca1f5a43b10156e215459d4fc6236cff57610a29120c0f85a516551"
+    },
+    "control_outer.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/launches/control_attempt1.json",
+      "bytes": 11554,
+      "sha256": "5f7218eb6f610de69a09448747641dab94a9b597796eb3cb27d2ab43b0440398"
+    },
+    "control_step2000.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/dev_observations/step2000.json",
+      "bytes": 21690,
+      "sha256": "d6fa2527fa71d26d1dde361f874dd423ef5f65d9aee16d218c82e69575b7c3d3"
+    },
+    "control_mode_preinit.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/mode_configured_before_NPU.json",
+      "bytes": 131,
+      "sha256": "a10e5ae3b1badda8bde48fa61ce1b40796f627aa356f7d5cf398b4da5375927d"
+    },
+    "control_checkpoint0000.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0000.receipt.json",
+      "bytes": 570,
+      "sha256": "c52c2b29d6283b15b939089319ea7c3b8a7b07b32315529c7d32336316b97d83"
+    },
+    "control_checkpoint0100.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0100.receipt.json",
+      "bytes": 572,
+      "sha256": "ed7b1c4e99fa3a64483d9a34a36819dadfd67fb588d37c3639da636e37086544"
+    },
+    "control_checkpoint0200.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0200.receipt.json",
+      "bytes": 572,
+      "sha256": "cb0f69de0d9949c7943d51b210e4bfd7fd6989b3c4045db0910f3625e0d039ed"
+    },
+    "control_checkpoint0300.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0300.receipt.json",
+      "bytes": 572,
+      "sha256": "a945728d11feaa8458e565421c73baecd7ac0036221c4414d214f32b0b0a9f3a"
+    },
+    "control_checkpoint0400.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0400.receipt.json",
+      "bytes": 572,
+      "sha256": "cdf16737171b443780ca34df9a92a84577178b2b9d7cbf5c5b61b74c2274de91"
+    },
+    "control_checkpoint0500.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0500.receipt.json",
+      "bytes": 572,
+      "sha256": "052de02c876c635d525541ff3f0d3de006a1c3a14152d7650b7029cefaa20083"
+    },
+    "control_checkpoint0600.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0600.receipt.json",
+      "bytes": 572,
+      "sha256": "9c951e17b5def849b6fb27daac297b812a7a6224d7c2134821c741643db7303e"
+    },
+    "control_checkpoint0700.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0700.receipt.json",
+      "bytes": 572,
+      "sha256": "b421a66f7609f537156d48e27341953354f68c2a3c082481ca11957c3d831591"
+    },
+    "control_checkpoint0800.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0800.receipt.json",
+      "bytes": 572,
+      "sha256": "209c38ce387ec8f7e35785c7f57b1813a578514bb57e316cbd57665cf9bc216a"
+    },
+    "control_checkpoint0900.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_0900.receipt.json",
+      "bytes": 572,
+      "sha256": "6ed2c67c1ab86477056dc3870f9f09841152c5bd558c32039a769cb9d100722a"
+    },
+    "control_checkpoint1000.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1000.receipt.json",
+      "bytes": 573,
+      "sha256": "a799b406fad7bbb597aed2f78558b120aee47644afca605cbed3d4c8fe109468"
+    },
+    "control_checkpoint1100.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1100.receipt.json",
+      "bytes": 573,
+      "sha256": "eeabdd84a4d10dc5fd3091938f38cfc34b362ce7f6c6bf093054a85f5934c565"
+    },
+    "control_checkpoint1200.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1200.receipt.json",
+      "bytes": 573,
+      "sha256": "98abacf8b5f71ff280d18e905d1a2b5bc4f4a3547b85e661480efa470a74c0e0"
+    },
+    "control_checkpoint1300.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1300.receipt.json",
+      "bytes": 573,
+      "sha256": "2cbd63c17ff54ab9e36d061d497beeef2882ac1ab6dc2bffcff0988ad81ab543"
+    },
+    "control_checkpoint1400.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1400.receipt.json",
+      "bytes": 573,
+      "sha256": "e686b49cd3eda0c14aa1cef87f18381ba2062895b3a1f4b80299a1f6044820ac"
+    },
+    "control_checkpoint1500.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1500.receipt.json",
+      "bytes": 573,
+      "sha256": "1c29319dcc799aa6d72b9f844daf24f57c61f3be22aa058a60737e529ca2f8e8"
+    },
+    "control_checkpoint1600.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1600.receipt.json",
+      "bytes": 573,
+      "sha256": "5daf9c8491e7102381bda8a9a74e58a7c7898f3f6a88b09fdca2632cb841afaa"
+    },
+    "control_checkpoint1700.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1700.receipt.json",
+      "bytes": 573,
+      "sha256": "86846fa489287d912abf0785d0db95a8e20e7862ffae81ba0c59bd0344b9319b"
+    },
+    "control_checkpoint1800.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1800.receipt.json",
+      "bytes": 573,
+      "sha256": "d195b19b4f791fb3d432f762f320416d5f5384e91d9f77e18af8b7d9bbef43b8"
+    },
+    "control_checkpoint1900.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_1900.receipt.json",
+      "bytes": 573,
+      "sha256": "027cf7cf680a03191a28560b02da8122f1a39840095f8cddfd300586f7f2c867"
+    },
+    "control_checkpoint2000.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/checkpoint_step_2000.receipt.json",
+      "bytes": 573,
+      "sha256": "9156a9b332ee104654db2e82c5636af5991f4f4486d6c7b4102559a0533d9d86"
+    },
+    "teacher_outer.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/launches/teacher_attempt1.json",
+      "bytes": 11554,
+      "sha256": "d8575eb09d4e0e132105e6465238e94de69a73cc6c4b86ff156dc36f237880c8"
+    },
+    "teacher_step2000.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/dev_observations/step2000.json",
+      "bytes": 21692,
+      "sha256": "004239ab26fe02103f2c3416b0ef3098b2acb48556259a6c5a849e142ef13fa1"
+    },
+    "teacher_mode_preinit.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/mode_configured_before_NPU.json",
+      "bytes": 131,
+      "sha256": "d5b970fac1a31c90b008cef9c0bb017036d9d878d86a82e6a0bf6d719b3689a1"
+    },
+    "teacher_checkpoint0000.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0000.receipt.json",
+      "bytes": 570,
+      "sha256": "074192cb69d27af92c3ef03517a479e9500631255b2faa6f636fb4284934fb6b"
+    },
+    "teacher_checkpoint0100.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0100.receipt.json",
+      "bytes": 572,
+      "sha256": "cb30657087fa7813fa029a073f3ec61b9fccf4e9da43a47831a74a09f1d5de8d"
+    },
+    "teacher_checkpoint0200.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0200.receipt.json",
+      "bytes": 572,
+      "sha256": "3df3078a274c512f30e4d1b9385766a1a222b1a855c7b582cc61e13e4bcce74b"
+    },
+    "teacher_checkpoint0300.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0300.receipt.json",
+      "bytes": 572,
+      "sha256": "c67dc18a49438223a339eb0d919a6f2771c7c7c0b1b5623460de194bd1bf6d88"
+    },
+    "teacher_checkpoint0400.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0400.receipt.json",
+      "bytes": 572,
+      "sha256": "45cd9f319fa8b88d096abcd2c052f1ddca43e5bf3dc106b732ca0fcad2d619f5"
+    },
+    "teacher_checkpoint0500.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0500.receipt.json",
+      "bytes": 572,
+      "sha256": "aa010ba10b2e2529941f56623298419f9afc6aa720589347bedeef6ff5e504c7"
+    },
+    "teacher_checkpoint0600.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0600.receipt.json",
+      "bytes": 572,
+      "sha256": "9b15e421416c88a8a31216877c2c815f481a3e9cd76ec99bca17164e1e7669fe"
+    },
+    "teacher_checkpoint0700.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0700.receipt.json",
+      "bytes": 572,
+      "sha256": "d9c1d7cd5c66708caf6ea85f563064d3c3742a1948372b2de526a50a4ae1e716"
+    },
+    "teacher_checkpoint0800.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0800.receipt.json",
+      "bytes": 572,
+      "sha256": "0799545112a060234842af55749d8ff5733d70a1752326336167d30a1e90a220"
+    },
+    "teacher_checkpoint0900.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_0900.receipt.json",
+      "bytes": 572,
+      "sha256": "ea385b538048563c55031ea4cd77d5e8227884220e5ea621cedde035a02347e7"
+    },
+    "teacher_checkpoint1000.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1000.receipt.json",
+      "bytes": 573,
+      "sha256": "3d0d9163a4087c78210b0d97c97fad342e6759526b0175490adbba7abb8d11e0"
+    },
+    "teacher_checkpoint1100.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1100.receipt.json",
+      "bytes": 573,
+      "sha256": "5059ba1ac3f7c77872461dd481f935fda2da7c42354aec82df042858acc5a498"
+    },
+    "teacher_checkpoint1200.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1200.receipt.json",
+      "bytes": 573,
+      "sha256": "178e3383292449c7339fd9a3f64d0688917d7c0cc5f7991162f575192e3d8567"
+    },
+    "teacher_checkpoint1300.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1300.receipt.json",
+      "bytes": 573,
+      "sha256": "ea399f8cc7c3f8fc31c0aac502457e3f65d8f89aa9f26db6d691063dec8f090c"
+    },
+    "teacher_checkpoint1400.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1400.receipt.json",
+      "bytes": 573,
+      "sha256": "a072ec5ca1e045224736811c8dc4670db3c961b111b1525f53eae4950cadff8a"
+    },
+    "teacher_checkpoint1500.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1500.receipt.json",
+      "bytes": 573,
+      "sha256": "3566ff9e5c3ccc396bb4ecc32443e6ab516a487cb13a46f6fa405aee156829b4"
+    },
+    "teacher_checkpoint1600.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1600.receipt.json",
+      "bytes": 573,
+      "sha256": "a5341ecf9717f10084fcedb73c80fa6ed640f547dace2312293b1728a06a525b"
+    },
+    "teacher_checkpoint1700.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1700.receipt.json",
+      "bytes": 573,
+      "sha256": "dc879aece5a08d57e3dfb4d252e33ab7388b28ca7b25b43dfffbb3aa77382b66"
+    },
+    "teacher_checkpoint1800.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1800.receipt.json",
+      "bytes": 573,
+      "sha256": "10f60bbad13e9ad0f5c090a2e5aaf7111654713812d0321a2b61fabfb54b1789"
+    },
+    "teacher_checkpoint1900.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_1900.receipt.json",
+      "bytes": 573,
+      "sha256": "c51f88e2f8674c1af6f0bbe5f52d63bb47a1294e275d392c2ffc51520ea3b25e"
+    },
+    "teacher_checkpoint2000.receipt.json": {
+      "remote_path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/checkpoint_step_2000.receipt.json",
+      "bytes": 573,
+      "sha256": "785e30ce737adeb4821d9b84cacf016c0cc71ab425e82cff36ba73827503cdc3"
+    }
+  },
+  "selected_model_or_optimizer_payloads_included": false,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "634cb955d5d9903576a48c7faf965afb2cfbd197f4aadd56d2b83c356674ed1f",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

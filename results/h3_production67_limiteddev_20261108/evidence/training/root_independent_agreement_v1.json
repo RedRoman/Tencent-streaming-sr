@@ -1,0 +1,26 @@
+{
+  "status": "exact_agreement_terminal4000_and_sparse_selection_only",
+  "root_report": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/terminal2000_actual_evidence_v1/root_terminal_interpretation_v1.json",
+    "bytes": 14855,
+    "sha256": "155e1eba91e8dda6e5e88dbab7e21e99922f8eddc4d59507916e2e9dae27f2ba"
+  },
+  "independent_report": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/terminal2000_actual_evidence_v1/independent_terminal_audit_v1.json",
+    "bytes": 149115,
+    "sha256": "f3aba3d51c616412a03bc398f2810a53524bacd37b91e19e622295c64ba38759"
+  },
+  "selected_steps": {
+    "control": 0,
+    "teacher": 2000
+  },
+  "all22_history_guard_scores_match": true,
+  "all4_new_metrics_match": true,
+  "no_new_scientific_computation": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "497ac46117fb5618d3775ff87b769c2faf2a2723b87ee9177ab2443774a7d539",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "schema": "h3-H264-subset-adapter-v4-independent-review-v1",
+  "utc": "2026-11-08T08:54:50.944204+00:00",
+  "status": "passed_limited_source_and_12_synthetic_metadata_tests_no_execution_admission_claim",
+  "prep": {
+    "path": "/path/to/staging/h3_limiteddev_H264_subset_preparation_v4.json",
+    "bytes": 1710,
+    "sha256": "536a73faa6437ea6389c5329841d1d461a7fe47430fe62d675f84781623452fd"
+  },
+  "source": {
+    "path": "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+    "bytes": 13551,
+    "sha256": "7ec2379b1a8ab31aae22861c4628ad274e986aca5fa6d6efd1a30bb51e20f690"
+  },
+  "plan": {
+    "path": "/path/to/staging/h3_limiteddev_H264_subset_plan_v4.json",
+    "bytes": 2501,
+    "sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8"
+  },
+  "independent_CPU_receipt": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/independent_CPU_receipt_v1.json",
+    "bytes": 1428,
+    "sha256": "dd8e56d663cb03970379f3c6c89cd47d29c7587df72ed0f27eac86831a5ed8c5"
+  },
+  "scope": "Frozen source/JSON plus synthetic test bytes only; no real converter main, codec, media read, source RGB/weights, model, network, remote, NPU, state or staging edits.",
+  "findings": [],
+  "verified_contracts": {
+    "complete_original_render_receipt_SHA_pinned": "0c871145247fd9b142ce1b3a7d24b09dae28a3bdf3eb478e8b67cceefb3dcead",
+    "complete21_video_and84_contact_metadata_remains_required": true,
+    "original_teacher_native_GT_identity_and_frozen_selected_labels_remain_checked": true,
+    "priority6_native15_disjoint_cover_all21": true,
+    "selected_files_and_original_audit_full_SHA_required_before_and_after_conversion": true,
+    "unselected_declared_files_may_be_absent_but_unknown_partial_and_symlink_input_paths_rejected": true,
+    "source_audit_exact226_frames24fps_duration_geometry_allPTS_indices_strictly_increasing_and_hash": true,
+    "same_frozen_v3_avconvert_auditor_ChildRunner_sources": true,
+    "one_shared_flock_output_root_for_all_batches": true,
+    "new_explicit_attempt_directory_no_clobber": true,
+    "previous_failure_requires_exact_SHA_and_remains_preserved": true,
+    "successful_file_reuse_requires_full_current_output_and_audit_SHA_labels_tools_source_and_reaped_children": true,
+    "partial_without_success_receipt_never_reused_as_completed": true,
+    "history_rejects_duplicates_or_unknown_video_paths": true,
+    "full21_only_after21_distinct_success_receipts_each_reverified": true,
+    "contacts_delivery_and_continuous_visual_acceptance_never_inferred": true,
+    "no_science_model_metric_or_optimizer_calls_added": true
+  },
+  "lifecycle_review": {
+    "owned_child_reaping": "Inherited frozen ChildRunner; success requires code0,reaped,no live own process group. Failure preserves partials; finally terminates and waits only its own active child.",
+    "failure_boundary": "No auto retry. If an error occurs after durable batch receipt but before final21 write, contradictory terminals would fail closed on a new batch; this review does not assert forced cleanup of unknown processes.",
+    "locked_outputs": "All batches share OUTPUT/.writer.lock; individual attempt paths and completion receipts use exclusive creation."
+  },
+  "test_coverage": [
+    "fixed6/15 decomposition",
+    "missing unselected native/contact permitted without claiming total delivery",
+    "missing selected rejected",
+    "corrupt selected rejected",
+    "wrong render SHA rejected",
+    "full metadata/labels/identity mutations rejected",
+    "unknown partial and symlink rejected",
+    "short/duplicate/wrong-size PTS rejected",
+    "no-overwrite and explicit failed retry SHA",
+    "advance after completed subset",
+    "source audit tamper",
+    "successful reuse, duplicate receipt and changed output"
+  ],
+  "limits": [
+    "Real H264 codec support, actual21 outputs and actual fullPTS technical audits remain future work; synthetic bytes do not establish real media success.",
+    "Technical decode/PTS and exact frame count do not establish continuous subjective review.",
+    "No new scientific quality gate or accepted-best claim; original failed nativeHR guard/PROVISIONAL labels inherited.",
+    "Transport atomic installation is a caller precondition. The adapter only verifies final-root whitelist and chosen complete files."
+  ],
+  "frozen_v3_sources_rehashed_unchanged": 11,
+  "input_descriptors_verified": [
+    {
+      "path": "/path/to/staging/convert_h3_limiteddev_retained_media_v4.py",
+      "bytes": 13551,
+      "sha256": "7ec2379b1a8ab31aae22861c4628ad274e986aca5fa6d6efd1a30bb51e20f690"
+    },
+    {
+      "path": "/path/to/staging/h3_limiteddev_H264_subset_plan_v4.json",
+      "bytes": 2501,
+      "sha256": "0893fa1205797235d7c97ab8297e03d1f4f25781eeb8e9756881d7c3b0200ca8"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/CPU_receipt.json",
+      "bytes": 959,
+      "sha256": "e3892ef214f2d645b98e2af9f0bfe5d40715bd643e606944ad9189b047fcd372"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/DESIGN.txt",
+      "bytes": 1118,
+      "sha256": "2bed043d852ea39b281de58db6ca84eefcb16f324994bf12a525b33556f52e34"
+    },
+    {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/actual_future_argv.json",
+      "bytes": 2143,
+      "sha256": "ee03462793daaaf3e7fa5d2b70cf1c051b8a2819186806f9cd52e0352e3c3ff0"
+    },
+    {
+      "path": "/path/to/staging/test_h3_limiteddev_H264_subset_v4.py",
+      "bytes": 8854,
+      "sha256": "4f9f3db85a13897ca8583538d1bcb352d3dd7744f660107c68dad3201ecf43e4"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/convert_h3_limiteddev_retained_media_v3.py",
+      "bytes": 8332,
+      "sha256": "e86f9a9006d2834b6ac89b7b383cc760e7e7d093f18fcd76547801d8208c84e1"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/export_h3_limiteddev_retained_rgb_v3.py",
+      "bytes": 8988,
+      "sha256": "0123763253d56b635aa389b0fc60d2c5b17dff4b1e453dc024d3e68c84575d59"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_media_common_v3.py",
+      "bytes": 27322,
+      "sha256": "88e4f5296fdae971e87d432e237fad4027a3fc4d5cebb39ef34ed41b0ef9db3c"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_limiteddev_original_display_identity_policy_v1.json",
+      "bytes": 19278,
+      "sha256": "95e78b52f5be858f6ed209553afd6bbf875f25daec0b383fb780093581a540b4"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/h3_production67_limiteddev_eval_contract_v1.py",
+      "bytes": 9568,
+      "sha256": "ca49f41fb1f9398c088d627c16ad9472bca28b59a07dbf72af2b83139f38710f"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_Wing300_source_decision_v1.json",
+      "bytes": 16521,
+      "sha256": "e2ac60b0ebda3ab6b7d3c83a759b4f3bdf65faedf48ab69d8c1e34fcfe0547ea"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_Wing_media_plan_v1.json",
+      "bytes": 13811,
+      "sha256": "6c7cfbb1d6baf0431e1f31e5532f5ae89b7af8c414846c5d913b19438d999b0e"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_full226_science_plan_v1.json",
+      "bytes": 20527,
+      "sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_main_media_requirement_v1.json",
+      "bytes": 2569,
+      "sha256": "6c445b05c484a837a48a7d21dfd5ab8a9352d6b6cfce2943970b939251de1bf2"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/original_three_column_media_identity_review_v1.json",
+      "bytes": 47768,
+      "sha256": "772cc3386a0f7566e19e5c2cf5c8cdb91c5e997348aea1be9c7a311a24481fa6"
+    },
+    {
+      "path": "/path/to/staging/h3_production67_limiteddev_media_20261107_v3/run_h3_surrogate67_npu4_v1.py",
+      "bytes": 22386,
+      "sha256": "fd50e29519d7deeee4ca0f7663ca5ec11575009a6a6e8b958af5e3fdf8855cc5"
+    }
+  ],
+  "files_written_by_this_review": [
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/independent_CPU_v1.log",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/independent_CPU_receipt_v1.json",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/H264_subset_candidate_v4/independent_review_v1.json"
+  ],
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "7f418dd49a4a4fffcb7c5983b51d468fbe12138f708888b23c392778edefcedb",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

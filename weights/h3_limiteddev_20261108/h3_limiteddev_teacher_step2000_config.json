@@ -1,0 +1,135 @@
+{
+  "schema": "h3-limiteddev-selected-inference-sidecar-v1",
+  "publication_status": "candidate_not_published",
+  "round": "production67_limiteddev_20261107",
+  "weights": {
+    "sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+    "bytes": 1381220283,
+    "schema": "h3-production67-limiteddev-selected-weights-v1",
+    "arm": "teacher",
+    "step": 2000
+  },
+  "recommended_asset_filename": "h3_limiteddev_teacher_step2000_fp32.pt",
+  "inference_only": true,
+  "reinitialization_forbidden": true,
+  "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+  "initializer_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+  "tensor_count": 322,
+  "parameter_count": 345280216,
+  "tensor_schema_sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75",
+  "tensor_schema_value_hash_semantics": "Historical v5 value hashes are not expected for this selected model. Only names/shapes are reused.",
+  "source_sha256": {
+    "causal_upscaler.py": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+    "h3_production67_geometry_v1.py": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383",
+    "h3_conv3d_explicit_target_v1.py": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6",
+    "upscaler.py": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+    "upscaler_node.py": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437"
+  },
+  "architecture": {
+    "in_channels": 24,
+    "in_blocks": 12,
+    "out_blocks": 12,
+    "channels": 512,
+    "dropout": 0.1,
+    "attn": false,
+    "temporal_every": 2,
+    "temporal_kernel": 5
+  },
+  "historical_adapter": {
+    "version": 1,
+    "normalization": "D(U(N(native_normalized_H3_latent)))",
+    "initialization": "aligned_past",
+    "temporal_padding": "left_only_zero",
+    "groupnorm": "per_frame",
+    "spatial_scale": 2.0,
+    "temporal_chunking": false,
+    "dtype": "float32",
+    "saved_weights_already_initialized": true,
+    "reload_must_not_reinitialize_weights": true
+  },
+  "effective_geometry": {
+    "input_bcthw": [
+      1,
+      24,
+      67,
+      44,
+      80
+    ],
+    "target_bcthw": [
+      1,
+      24,
+      67,
+      68,
+      120
+    ],
+    "raw_rgb_thwc": [
+      226,
+      1088,
+      1920,
+      3
+    ],
+    "visible_crop_y0_y1_x0_x1": [
+      4,
+      1084,
+      0,
+      1920
+    ],
+    "fps": [
+      24,
+      1
+    ],
+    "historical_scale_is_not_current_geometry": true
+  },
+  "runtime_mode": {
+    "dtype": "float32",
+    "conv_hf32": false,
+    "matmul_hf32": false,
+    "float32_matmul_precision": "highest",
+    "deterministic_algorithms": true,
+    "warn_only": false
+  },
+  "selected_sparse_metrics": {
+    "hr_pixel_l1": 0.016354279903074104,
+    "hr_lpips": 0.08203903088967006,
+    "teacher_pixel_l1": 0.009580027932922045,
+    "teacher_lpips": 0.03265833109617233,
+    "teacher_motion_l1": 0.027070777490735054,
+    "teacher_delta_l1": 0.006564391776919365,
+    "hr_global_score": 0.03276208608100811,
+    "teacher_global_score": 0.016111694152156512,
+    "selection_score": 0.03095996125290791
+  },
+  "selection": {
+    "rule": "Frozen sparse-dev guard followed by minimum teacher_global_score + 0.5*teacher_motion_l1 + 0.2*teacher_delta_l1; step0 eligible.",
+    "teacher_arm_selected_step": 2000,
+    "control_arm_selected_step": 0,
+    "candidate_scope": "Selected teacher-arm model; not an asserted cross-arm or universal quality winner.",
+    "data_scope": "limited train2/dev3; 3 dev windows from 2 films; formal16dev and test not passed."
+  },
+  "quality_at_candidate_preparation": {
+    "full226_evaluation": "running_no_final_claim",
+    "full226_visual_review": "pending",
+    "test_unlocked": false,
+    "formal16dev_gate_passed": false,
+    "quality_recommendation": "provisional_until_frozen_full226_guards_and_actual_video_review",
+    "scope_note": "Sparse metrics compare decoded HR and teacher. Native HR full226 metrics and visual conclusions must be reported separately."
+  },
+  "normalization": "Unchanged causal adapter D(U(N(native-normalized H3 latent))); do not normalize twice.",
+  "causal_scope": "Upscaler relative to fixed latent inputs only. VAE/decoder remains noncausal.",
+  "excluded": [
+    "optimizer",
+    "RNG",
+    "training caches",
+    "decoder/refiner/base weights"
+  ],
+  "source_identity_evidence": {
+    "terminal_binding_sha256": "3d733a4cdea0d8d86151c21161447c68e9684f2db344f7fcd844c5c61c4af24d",
+    "infer_report_sha256": "7440bef54804982e7d2da1dc0b989e7bf12c30358146123e1f561796cfc63452"
+  },
+  "weights_original_public_mapping": {
+    "byte_identical_if_original_model_only_pt_uploaded": true,
+    "original_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+    "public_sha256_expected": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+    "serialization_changed": false
+  }
+}

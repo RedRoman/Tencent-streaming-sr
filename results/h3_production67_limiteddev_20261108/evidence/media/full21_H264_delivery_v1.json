@@ -1,0 +1,605 @@
+{
+  "schema": "h3-limiteddev-full21-H264-local-delivery-v1",
+  "utc": "2026-11-08T11:29:32.667194+00:00",
+  "status": "all_21_H264_completed_technical_not_subjective",
+  "outer": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/local_H264_v4_outer_attempt2/exit_receipt.json",
+    "bytes": 2038,
+    "sha256": "abb6563aae66822ce09de768b2587be1fa76e43db2164f423acde7bef782b7eb"
+  },
+  "batch": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/batch_receipt.json",
+    "bytes": 9267,
+    "sha256": "60fdd3489a5b823bfe38442061ef4d77b6d4e1dc33cf10f016e4ce9320538881"
+  },
+  "full21_receipt": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/full21_video_receipt.json",
+    "bytes": 9675,
+    "sha256": "80953828a6e23d5934faa4f6b093629e7a1fcca7d7bfbef96cba79c2d3079ed4"
+  },
+  "videos": [
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "comparison",
+        "relative_path": "ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+        "width": 2880,
+        "height": 652
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column.mp4",
+        "bytes": 10941116,
+        "sha256": "9e88bcd3a739b234c39600107f0ddbe822bd5caad087a2140639f2524b458ac6"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column.audit.json",
+        "bytes": 1992,
+        "sha256": "64dba77cf26b71cf65551291d459296e54ba58ea42cc58c54cd20d7804f43491"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/ElephantsDream_dev_13070_13295/comparison_3column_conversion_receipt.json",
+        "bytes": 5558,
+        "sha256": "98ee4b4199cf42d65e071bcb2a4dba064c5c5f2236a9241297945e2b710e4cb2"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/comparison_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "comparison",
+        "relative_path": "WingIt_dev_300_525/comparison_3column.mp4",
+        "width": 2880,
+        "height": 652
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column.mp4",
+        "bytes": 9248143,
+        "sha256": "3422c4759b498f0b1413c969508840dcff8aeefe53998cc961cb9f7ebaf30fcc"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column.audit.json",
+        "bytes": 1979,
+        "sha256": "84a03e573fbe8e477a23aea04a786603daef31645119ba9bf19e2d9fb099b127"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/comparison_3column_conversion_receipt.json",
+        "bytes": 5424,
+        "sha256": "92e47ea8b74cb180f9aa1024fe044c2f7e97f2d7d9089b51a06da1e4e4c83b5d"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "fixed_camera_pullback_full226",
+        "relative_path": "WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+        "width": 1536,
+        "height": 624,
+        "fixed_xywh": [
+          704,
+          284,
+          512,
+          512
+        ],
+        "source_definition_index": null,
+        "source_region": "fixed_central_camera_pullback_region",
+        "all_frames": [
+          0,
+          225
+        ],
+        "tracking": false,
+        "spatial_resize": false
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.mp4",
+        "bytes": 7059879,
+        "sha256": "2473aaf8e6b343daa2b1fe65ba3852f740ca5a2081e2db8bf7ac026170ececba"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column.audit.json",
+        "bytes": 1998,
+        "sha256": "d83e2d46f2c697699f221026f99cac88339f57d5d6a8cb972db4a810c97e5c3d"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_300_525/fixed_camera_pullback_full226_3column_conversion_receipt.json",
+        "bytes": 5879,
+        "sha256": "c928bc771b20eb6a8971ca432b03bc28fa751b31e7412ac757f7f6fc288823b8"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/comparison_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "comparison",
+        "relative_path": "WingIt_dev_3586_3811/comparison_3column.mp4",
+        "width": 2880,
+        "height": 652
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column.mp4",
+        "bytes": 11044074,
+        "sha256": "a639c77f2f078ce74be913476449f7342fee43387ac5ebfc003b1a6532fd0a94"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column.audit.json",
+        "bytes": 1992,
+        "sha256": "93b9d395357499e8f025c449171bd577c4df34d2c47caf87d43365d37a81b7f9"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/comparison_3column_conversion_receipt.json",
+        "bytes": 5450,
+        "sha256": "e9f860bdd7e4e1595e1d49f32683443181fa0af09a9796cedcab7450fd5d43fa"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "fixed_cat_face_hand_full226",
+        "relative_path": "WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+        "width": 1536,
+        "height": 624,
+        "fixed_xywh": [
+          1008,
+          560,
+          512,
+          512
+        ],
+        "source_definition_index": 1,
+        "source_region": "cat_face_hand",
+        "all_frames": [
+          0,
+          225
+        ],
+        "tracking": false,
+        "spatial_resize": false
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.mp4",
+        "bytes": 8114335,
+        "sha256": "e45d670c5ca8fad402c40d92fb3a6b88d3d12d57e691bf9e0c6e04137481efc3"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column.audit.json",
+        "bytes": 2008,
+        "sha256": "17a02aab44478f674e4f888330589bda80f8b762d53b210edcbc297250a9e5da"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_cat_face_hand_full226_3column_conversion_receipt.json",
+        "bytes": 5860,
+        "sha256": "9534560de2063491d0adf6839ac95c55f0192cab33417bde28ebe19284287857"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "fixed_dog_face_full226",
+        "relative_path": "WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+        "width": 1536,
+        "height": 624,
+        "fixed_xywh": [
+          560,
+          48,
+          512,
+          512
+        ],
+        "source_definition_index": 0,
+        "source_region": "dog_face",
+        "all_frames": [
+          0,
+          225
+        ],
+        "tracking": false,
+        "spatial_resize": false
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.mp4",
+        "bytes": 8183688,
+        "sha256": "71bc29abfe60efdcd0d78a5f01ac6a1dd5c4edcb446a6c8720f9a9d7e2a2fbf8"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column.audit.json",
+        "bytes": 2003,
+        "sha256": "37a6192d31d4b7706c80942e6160a29a151e6bf8b29979a15f160e932a456359"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_1/WingIt_dev_3586_3811/fixed_dog_face_full226_3column_conversion_receipt.json",
+        "bytes": 5803,
+        "sha256": "2322cb15cfc03ed06fc27a42952f6de7a3faa4f63c64e70eb4467117204b50be"
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/control_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "control",
+        "relative_path": "ElephantsDream_dev_13070_13295/control_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080.mp4",
+        "bytes": 11147455,
+        "sha256": "948cd14d440703fb248122930f9b8c11c6de8bec2e697727dd2bb275fc9150b5"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "e99f17ca5810b7f811958abf106f1325e471835c98eed5947910deb6ec1796ad"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/control_native1080_conversion_receipt.json",
+        "bytes": 5556,
+        "sha256": "9795f827e431a49c28a3fe60db107c239610326b3fbd617751da6bd361226329"
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "native_hr",
+        "relative_path": "ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.mp4",
+        "bytes": 9791304,
+        "sha256": "638d3338a047201618c2fbe0307a25733008de466919ee53f43e670375c315d2"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080.audit.json",
+        "bytes": 1995,
+        "sha256": "09dc560fc75857d41767f0952107f43df1299149c6d40b37f99ad2fe25afdd28"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/native_hr_native1080_conversion_receipt.json",
+        "bytes": 5574,
+        "sha256": "76939c8a052f5a693e11186d7f5a483f4ea5890cef6184638d807a364baff196"
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "teacher",
+        "relative_path": "ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080.mp4",
+        "bytes": 11130176,
+        "sha256": "1b66c6e30a0f1e80c5336c64a8d945bd3cb88018e44038c9333d6e97c274bfe6"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "0ab614cd69f590be2a35e917c040c46a233ced93665d81f43fd3c73161b224d7"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_native1080_conversion_receipt.json",
+        "bytes": 5556,
+        "sha256": "eeabf4abe9db000f589bb48e1d7095614b785115e957d1c36df2d2d520dd6e5d"
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "teacher_student",
+        "relative_path": "ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080.mp4",
+        "bytes": 11105457,
+        "sha256": "05b44980c2b5628295ce00b0b3c8705bae71d7438f614fa6ce938c76a890d3b4"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080.audit.json",
+        "bytes": 2001,
+        "sha256": "e32619e1d74ee46f1845861800b52c86943b18cc9db0041f0aabef710969ab2d"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/teacher_student_native1080_conversion_receipt.json",
+        "bytes": 5636,
+        "sha256": "e0229136a778ac9265633e82c007badb5b43a65791cbfa5892b48ee20ec0a6b6"
+      }
+    },
+    {
+      "relative_path": "ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+      "spec": {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "route": "v5",
+        "relative_path": "ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080.mp4",
+        "bytes": 11147455,
+        "sha256": "e8aac8d93a50c6a5e8b2cd4d2fa8ed995cae63cbd9a2c478f6fa00ad8ac3d720"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080.audit.json",
+        "bytes": 1989,
+        "sha256": "08191ce41dac36ac3ee58db2c65c270335c03c157f2ccedf8d80ba5fc8230da1"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/ElephantsDream_dev_13070_13295/v5_native1080_conversion_receipt.json",
+        "bytes": 5506,
+        "sha256": "31d6cb92264a25d1e7ea48beabbcba1557b6ad106a63fc702c09d39d558d5b1d"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/control_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "control",
+        "relative_path": "WingIt_dev_300_525/control_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080.mp4",
+        "bytes": 9919567,
+        "sha256": "3149ff0cfbbcda3e8f2861acee8f0edf6bb8520ee01e6e9afe7eeda3e928886d"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080.audit.json",
+        "bytes": 1981,
+        "sha256": "647a9f35577997176c801de92e8b799c246f0ec77508c672f19ddfd6f52cfc39"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/control_native1080_conversion_receipt.json",
+        "bytes": 5422,
+        "sha256": "bab1a4b1116e50f5186a3a40366ccc3b38c5c05407bc9f020a2fb63219701fcd"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/native_hr_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "native_hr",
+        "relative_path": "WingIt_dev_300_525/native_hr_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080.mp4",
+        "bytes": 7830488,
+        "sha256": "c9f48c7d160d7e8673c9a5c4f1a0ee9564f74a045eeea942e7d965cbcc9f7b5f"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080.audit.json",
+        "bytes": 1983,
+        "sha256": "7959952f97c408e10592c6920bc32d26fc602770f3acaa6cbc267dcd5f1b6671"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/native_hr_native1080_conversion_receipt.json",
+        "bytes": 5441,
+        "sha256": "bd43242cf2159e926784e457e25b3548bc8efd01eb74ea184586e8b16dd3466f"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/teacher_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "teacher",
+        "relative_path": "WingIt_dev_300_525/teacher_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080.mp4",
+        "bytes": 9779175,
+        "sha256": "97d62a92e0866483388a0643b8161cf68fc64ed9119b3ed9fbde79c214a95f0d"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080.audit.json",
+        "bytes": 1981,
+        "sha256": "19334b6e6371a6c8af93cb1fdb79cbddc6f02cd87de7caffacd0ec1a1b560625"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_native1080_conversion_receipt.json",
+        "bytes": 5422,
+        "sha256": "076ad839386e7146c15b0eeee45f9d4baa81e21d4e341c8fc5c0b6b6d0708ff8"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/teacher_student_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "teacher_student",
+        "relative_path": "WingIt_dev_300_525/teacher_student_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080.mp4",
+        "bytes": 9965571,
+        "sha256": "8f9f3509340eb84863ed31cab9ed43aa012e0179cac331e9b8ba872de14b2b82"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080.audit.json",
+        "bytes": 1989,
+        "sha256": "2b95b1118c16d16250ce48eac994236ab6cd37da0c77601fcb33ced3ff63fdec"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/teacher_student_native1080_conversion_receipt.json",
+        "bytes": 5502,
+        "sha256": "424b93bc0607bb1d54d5c56f300cb9279b2f4cd02e706bc778a088a12f34ebdb"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_300_525/v5_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_300_525",
+        "route": "v5",
+        "relative_path": "WingIt_dev_300_525/v5_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080.mp4",
+        "bytes": 9919567,
+        "sha256": "77147033f40dbd31e6964e24dc3506cf84c37572553e5deb6b517120944f0250"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080.audit.json",
+        "bytes": 1976,
+        "sha256": "23d8b5822950471d47411af46e755ee726262676d127d42134f558065e358cb4"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_300_525/v5_native1080_conversion_receipt.json",
+        "bytes": 5372,
+        "sha256": "9df5f64985305ac3149bdcd2067011ce28e26950d752be05de13e472d85819b0"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/control_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "control",
+        "relative_path": "WingIt_dev_3586_3811/control_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080.mp4",
+        "bytes": 11232562,
+        "sha256": "ca97261026ccc5bc54edaf249d4a6af6a935292fbf7618a69605bb0455036166"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "0e4c91381c0262f689cf45613655343fc54184657455a15cf53a448801373fcc"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/control_native1080_conversion_receipt.json",
+        "bytes": 5448,
+        "sha256": "fbffe06c283c352b63d0ac5e41febc007a0b6549e52cebc33bebc4b86407a1b1"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/native_hr_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "native_hr",
+        "relative_path": "WingIt_dev_3586_3811/native_hr_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080.mp4",
+        "bytes": 11227339,
+        "sha256": "9f9655d814abf04160c20de20be44a17f7b712850e82152f60ed236ac006e706"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080.audit.json",
+        "bytes": 1996,
+        "sha256": "e1059440b06cabe4500e079195adeaef4d657005e9c0a362004639d112d724bf"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/native_hr_native1080_conversion_receipt.json",
+        "bytes": 5468,
+        "sha256": "935afbe153f956f65c4c7ab85a7101697e10a3496598101b97eab4d479d733c7"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/teacher_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "teacher",
+        "relative_path": "WingIt_dev_3586_3811/teacher_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080.mp4",
+        "bytes": 11217046,
+        "sha256": "59f9b6ab34b15569e244da587c2afed4c288c3c13a99c5cde31693e1b5b5221e"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080.audit.json",
+        "bytes": 1994,
+        "sha256": "5a964b2c5a5d3ded6ca649b3bc34bdb156caa86475ca7a296d9ee2eb0fef4b2d"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_native1080_conversion_receipt.json",
+        "bytes": 5448,
+        "sha256": "f4f71c236d29ad3946b06ae4788e45e6896cd90c1e9711da21d917cbb469b25d"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "teacher_student",
+        "relative_path": "WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080.mp4",
+        "bytes": 11227668,
+        "sha256": "7ebb2b3a16fd0071d566ba57bb35fc799c16424b03039b6f255b6cd67b353303"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080.audit.json",
+        "bytes": 2001,
+        "sha256": "cc74f03f55f9240390d8246ca22a3b512f0d8e68ddc6dfa7126b4033f04267ce"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/teacher_student_native1080_conversion_receipt.json",
+        "bytes": 5528,
+        "sha256": "324550658d5c4ec856c5d296148221c265c27c0ce9c91aeae8a74fc559efb784"
+      }
+    },
+    {
+      "relative_path": "WingIt_dev_3586_3811/v5_native1080.mp4",
+      "spec": {
+        "sample_id": "WingIt_dev_3586_3811",
+        "route": "v5",
+        "relative_path": "WingIt_dev_3586_3811/v5_native1080.mp4",
+        "width": 1920,
+        "height": 1080
+      },
+      "output": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080.mp4",
+        "bytes": 11232562,
+        "sha256": "cf7a831fd686a184aa357c06a8484c19444d915d8c6efa65bea0ecc59758a70e"
+      },
+      "audit": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080.audit.json",
+        "bytes": 1989,
+        "sha256": "67388fd7b650de1b116f4982eb1e158e564486bab36f783f183b6312795ec73a"
+      },
+      "conversion_receipt": {
+        "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_h264_v4/batch_attempt_2/WingIt_dev_3586_3811/v5_native1080_conversion_receipt.json",
+        "bytes": 5398,
+        "sha256": "5d297f2a599575b4dbb15e4c8db2c11d3231fca70e8a2fc80ffb29ab42bdd133"
+      }
+    }
+  ],
+  "output_bytes": 212464627,
+  "originals_preserved": true,
+  "all_full226_24fps_PTS_decode_SHA_passed": true,
+  "selected_teacher_step": 2000,
+  "quality_guard_FAILED_preserved": true,
+  "continuous_visual_review_completed": false,
+  "post_exit_process_query": [],
+  "contacts83_download_session": "h3-media-v3-contacts-download-20261108",
+  "remaining83_contacts_pending": true,
+  "root_weight_transfer_remains_paused": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "d705e8a696119c120203ff6e54cbd0386338806747bbcf4c9dc8089a173c5c81",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

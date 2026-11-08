@@ -1,0 +1,346 @@
+{
+  "schema": "h3-root-terminal2000-metadata-and-sparse-interpretation-v1",
+  "created_utc": "2026-11-08T05:16:52.391820+00:00",
+  "actual_terminal_binding": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/terminal2000_actual_evidence_v1/final_originals/terminal_binding.json",
+    "bytes": 76422,
+    "sha256": "3d733a4cdea0d8d86151c21161447c68e9684f2db344f7fcd844c5c61c4af24d"
+  },
+  "terminal_binding_cpu_execution": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/terminal2000_actual_evidence_v1/final_originals/terminal_binding_execution.json",
+    "bytes": 341,
+    "sha256": "d3eae14d9ca1f5a43b10156e215459d4fc6236cff57610a29120c0f85a516551"
+  },
+  "original_manifest": {
+    "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/terminal2000_actual_evidence_v1/final_originals/manifest.json",
+    "bytes": 16200,
+    "sha256": "634cb955d5d9903576a48c7faf965afb2cfbd197f4aadd56d2b83c356674ed1f"
+  },
+  "actual_optimizer_updates": 4000,
+  "historical_engineering_updates": 41,
+  "total_actual_observed_updates": 4041,
+  "formal16dev_optimizer_updates": 0,
+  "arms": {
+    "control": {
+      "terminal_outer": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/launches/control_attempt1.json",
+        "bytes": 11554,
+        "sha256": "5f7218eb6f610de69a09448747641dab94a9b597796eb3cb27d2ab43b0440398"
+      },
+      "finished_utc": "2026-11-08T05:10:19.238790+00:00",
+      "completed_updates": 2000,
+      "selected_step": 0,
+      "selected_model_writer_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/best_step_0000.pt",
+        "bytes": 1381220283,
+        "sha256": "e1217ffb76ab6fecd1541659edf2e9987545f7440eb91860f99d3866c586afc1",
+        "step": 0,
+        "arm": "control",
+        "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+        "initializer_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914"
+      },
+      "new_sparse_observations": {
+        "1800": {
+          "metrics": {
+            "hr_pixel_l1": 0.014569036662578583,
+            "hr_lpips": 0.07410755256811778,
+            "teacher_pixel_l1": 0.013299695837001005,
+            "teacher_lpips": 0.04916573564211527,
+            "teacher_motion_l1": 0.04212824876109759,
+            "teacher_delta_l1": 0.007867310817042986,
+            "hr_global_score": 0.02939054717620214,
+            "teacher_global_score": 0.02313284296542406,
+            "selection_score": 0.04577042950938145
+          },
+          "guard_pass": true,
+          "percent_change_vs_initial": {
+            "hr_pixel_l1": -10.272945832126833,
+            "hr_lpips": -12.871228788532306,
+            "teacher_pixel_l1": 5.425238704281998,
+            "teacher_lpips": 1.4299832648832833,
+            "teacher_motion_l1": 16.127156597507543,
+            "teacher_delta_l1": -1.1067770913450903,
+            "hr_global_score": -11.602329897085594,
+            "teacher_global_score": 3.6891377009159454,
+            "selection_score": 8.874249465964024
+          },
+          "per_clip": [
+            {
+              "sample_id": "WingIt_dev_3586_3811",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -10.270147757886704,
+                "hr_lpips": -12.54214400800927,
+                "teacher_pixel_l1": -0.5651251039965666,
+                "teacher_lpips": -2.0639057255408377,
+                "teacher_motion_l1": -7.3759358818802685,
+                "teacher_delta_l1": -4.895402489948609
+              }
+            },
+            {
+              "sample_id": "ElephantsDream_dev_13070_13295",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -9.738774273823648,
+                "hr_lpips": -13.052445068246977,
+                "teacher_pixel_l1": -5.138303274334577,
+                "teacher_lpips": -2.117593014063912,
+                "teacher_motion_l1": 6.865100331951157,
+                "teacher_delta_l1": 4.910718314251072
+              }
+            },
+            {
+              "sample_id": "WingIt_dev_300_525",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -10.725541142648265,
+                "hr_lpips": -13.123563384867209,
+                "teacher_pixel_l1": 21.67917675508475,
+                "teacher_lpips": 9.323649665342693,
+                "teacher_motion_l1": 40.181849666592214,
+                "teacher_delta_l1": -1.9172913282418769
+              }
+            }
+          ]
+        },
+        "2000": {
+          "metrics": {
+            "hr_pixel_l1": 0.014631981961429119,
+            "hr_lpips": 0.0737445702155431,
+            "teacher_pixel_l1": 0.013437543374796709,
+            "teacher_lpips": 0.048606625447670616,
+            "teacher_motion_l1": 0.04235505064328512,
+            "teacher_delta_l1": 0.00788629986345768,
+            "hr_global_score": 0.029380896004537742,
+            "teacher_global_score": 0.023158868464330833,
+            "selection_score": 0.04591365375866493
+          },
+          "guard_pass": true,
+          "percent_change_vs_initial": {
+            "hr_pixel_l1": -9.885281474463293,
+            "hr_lpips": -13.297989695556044,
+            "teacher_pixel_l1": 6.5179411055262815,
+            "teacher_lpips": 0.27652675853604425,
+            "teacher_motion_l1": 16.752339425276098,
+            "teacher_delta_l1": -0.8680820602751216,
+            "hr_global_score": -11.631357634602058,
+            "teacher_global_score": 3.8057926898385164,
+            "selection_score": 9.214937390748922
+          },
+          "per_clip": [
+            {
+              "sample_id": "WingIt_dev_3586_3811",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -9.765306779209082,
+                "hr_lpips": -12.730386196597843,
+                "teacher_pixel_l1": 0.3161903950230194,
+                "teacher_lpips": -2.819826837793482,
+                "teacher_motion_l1": -6.768033852647182,
+                "teacher_delta_l1": -4.528685358700568
+              }
+            },
+            {
+              "sample_id": "ElephantsDream_dev_13070_13295",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -10.875057190457794,
+                "hr_lpips": -13.750200982397375,
+                "teacher_pixel_l1": -5.322703053054845,
+                "teacher_lpips": -3.710058839259589,
+                "teacher_motion_l1": 5.957030128300844,
+                "teacher_delta_l1": 4.993025399222217
+              }
+            },
+            {
+              "sample_id": "WingIt_dev_300_525",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -9.210659795121078,
+                "hr_lpips": -13.577741838883695,
+                "teacher_pixel_l1": 24.134018490791643,
+                "teacher_lpips": 8.107434729399522,
+                "teacher_motion_l1": 41.68540880392146,
+                "teacher_delta_l1": -1.7896421709324373
+              }
+            }
+          ]
+        }
+      },
+      "rejected_steps_preserved": []
+    },
+    "teacher": {
+      "terminal_outer": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/launches/teacher_attempt1.json",
+        "bytes": 11554,
+        "sha256": "d8575eb09d4e0e132105e6465238e94de69a73cc6c4b86ff156dc36f237880c8"
+      },
+      "finished_utc": "2026-11-08T05:11:53.167732+00:00",
+      "completed_updates": 2000,
+      "selected_step": 2000,
+      "selected_model_writer_descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/best_step_2000.pt",
+        "bytes": 1381220283,
+        "sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+        "step": 2000,
+        "arm": "teacher",
+        "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+        "initializer_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914"
+      },
+      "new_sparse_observations": {
+        "1800": {
+          "metrics": {
+            "hr_pixel_l1": 0.016380978127320606,
+            "hr_lpips": 0.08210406949122746,
+            "teacher_pixel_l1": 0.009584583652516207,
+            "teacher_lpips": 0.03283452925582727,
+            "teacher_motion_l1": 0.027152409156163532,
+            "teacher_delta_l1": 0.006574844863886635,
+            "hr_global_score": 0.0328017920255661,
+            "teacher_global_score": 0.01615148950368166,
+            "selection_score": 0.031042663054540755
+          },
+          "guard_pass": true,
+          "percent_change_vs_initial": {
+            "hr_pixel_l1": 0.8863486168685153,
+            "hr_lpips": -3.469667553031519,
+            "teacher_pixel_l1": -24.024050487192817,
+            "teacher_lpips": -32.261651139090006,
+            "teacher_motion_l1": -25.153972386597502,
+            "teacher_delta_l1": -17.353259095138508,
+            "hr_global_score": -1.3423611041770145,
+            "teacher_global_score": -27.60362305120392,
+            "selection_score": -26.158730042172827
+          },
+          "per_clip": [
+            {
+              "sample_id": "WingIt_dev_3586_3811",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -1.6866282330657678,
+                "hr_lpips": -4.886675851844691,
+                "teacher_pixel_l1": -19.415548534772718,
+                "teacher_lpips": -28.056945322931337,
+                "teacher_motion_l1": -23.357670834089838,
+                "teacher_delta_l1": -16.61478354986946
+              }
+            },
+            {
+              "sample_id": "ElephantsDream_dev_13070_13295",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -0.3497980925069366,
+                "hr_lpips": -0.8767825592628897,
+                "teacher_pixel_l1": -30.00053668592314,
+                "teacher_lpips": -35.36573139152879,
+                "teacher_motion_l1": -23.695490805297435,
+                "teacher_delta_l1": -19.354414107354156
+              }
+            },
+            {
+              "sample_id": "WingIt_dev_300_525",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": 5.296681181312746,
+                "hr_lpips": -4.401091113528189,
+                "teacher_pixel_l1": -24.230652811522503,
+                "teacher_lpips": -34.45145752821471,
+                "teacher_motion_l1": -27.415659168003735,
+                "teacher_delta_l1": -14.75321724081551
+              }
+            }
+          ]
+        },
+        "2000": {
+          "metrics": {
+            "hr_pixel_l1": 0.016354279903074104,
+            "hr_lpips": 0.08203903088967006,
+            "teacher_pixel_l1": 0.009580027932922045,
+            "teacher_lpips": 0.03265833109617233,
+            "teacher_motion_l1": 0.027070777490735054,
+            "teacher_delta_l1": 0.006564391776919365,
+            "hr_global_score": 0.03276208608100811,
+            "teacher_global_score": 0.016111694152156512,
+            "selection_score": 0.03095996125290791
+          },
+          "guard_pass": true,
+          "percent_change_vs_initial": {
+            "hr_pixel_l1": 0.7219209289826667,
+            "hr_lpips": -3.5461338947016308,
+            "teacher_pixel_l1": -24.060163179661174,
+            "teacher_lpips": -32.62515177935694,
+            "teacher_motion_l1": -25.378991310319808,
+            "teacher_delta_l1": -17.484655894321577,
+            "hr_global_score": -1.4617842971893502,
+            "teacher_global_score": -27.78199912414553,
+            "selection_score": -26.355453050428913
+          },
+          "per_clip": [
+            {
+              "sample_id": "WingIt_dev_3586_3811",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -1.694903410292481,
+                "hr_lpips": -4.893269428858005,
+                "teacher_pixel_l1": -19.396168588436925,
+                "teacher_lpips": -28.386674792311105,
+                "teacher_motion_l1": -23.498565241284076,
+                "teacher_delta_l1": -16.706069611722597
+              }
+            },
+            {
+              "sample_id": "ElephantsDream_dev_13070_13295",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": -0.609768728705673,
+                "hr_lpips": -1.1697519087029207,
+                "teacher_pixel_l1": -30.031267115464534,
+                "teacher_lpips": -35.613583075350974,
+                "teacher_motion_l1": -23.978733301937726,
+                "teacher_delta_l1": -19.562192706197468
+              }
+            },
+            {
+              "sample_id": "WingIt_dev_300_525",
+              "percent_change_vs_initial": {
+                "hr_pixel_l1": 5.007938437531401,
+                "hr_lpips": -4.332937316458008,
+                "teacher_pixel_l1": -24.33669932259228,
+                "teacher_lpips": -34.97191368402612,
+                "teacher_motion_l1": -27.675254736145703,
+                "teacher_delta_l1": -14.83866432533717
+              }
+            }
+          ]
+        }
+      },
+      "rejected_steps_preserved": [
+        200,
+        600,
+        1000
+      ],
+      "percent_change_2000_vs1800": {
+        "hr_pixel_l1": -0.16298308952610308,
+        "hr_lpips": -0.07921483302889554,
+        "teacher_pixel_l1": -0.04753174221570067,
+        "teacher_lpips": -0.5366245950478077,
+        "teacher_motion_l1": -0.30064244008325414,
+        "teacher_delta_l1": -0.1589860625409556,
+        "hr_global_score": -0.12104809556453544,
+        "teacher_global_score": -0.24638812114559094,
+        "selection_score": -0.26641335985749803
+      }
+    }
+  },
+  "metadata_before_after_unchanged_in_actual_binder": true,
+  "root_checked_50_small_originals": true,
+  "root_actual_big_report_attempt_and_durable_steps_crosscheck": "Performed by actual SHA-pinned terminal binder on remote; binder metadata snapshot and parent wait/reap chain retained. These large JSONs were not downloaded.",
+  "selected_weight_payloads_verified_by_this_root_report": false,
+  "scope": {
+    "train_clips": 2,
+    "dev_clips": 3,
+    "dev_films": 2,
+    "sparse_frames": 41,
+    "sparse_pairs": 38,
+    "full226": false,
+    "nativeHR_RGB_quality_measured": false,
+    "test_access": false,
+    "visual_acceptance": false
+  },
+  "full226_infer_launch_started_separately": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "155e1eba91e8dda6e5e88dbab7e21e99922f8eddc4d59507916e2e9dae27f2ba",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

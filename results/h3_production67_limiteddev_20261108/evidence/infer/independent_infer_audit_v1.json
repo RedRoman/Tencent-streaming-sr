@@ -1,0 +1,446 @@
+{
+  "schema": "h3-limiteddev-actual-infer-independent-small-metadata-audit-v1",
+  "status": "passed_completed_infer_metadata_chain_not_pixel_quality_or_visual_acceptance",
+  "created_utc": "2026-11-08T05:26:02.843897+00:00",
+  "inputs": {
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals_manifest.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals_manifest.json",
+      "bytes": 3585,
+      "sha256": "1fdb877017cd90eec5e91f2df54dabb355aa30645d9976d118622c191982d3c7"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_outer.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_outer.json",
+      "bytes": 11776,
+      "sha256": "6df8ffcbd94f5ec5aa961f73deeac12b7755afb952c48994b8c3756a65d40308"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_report.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_report.json",
+      "bytes": 21617,
+      "sha256": "7440bef54804982e7d2da1dc0b989e7bf12c30358146123e1f561796cfc63452"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_complete.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_complete.json",
+      "bytes": 538,
+      "sha256": "d6eac8baf78ba78994788a3b7b55d2738cf93c2003aae944fac9bec8eba2ec65"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_mode_preinit.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_mode_preinit.json",
+      "bytes": 559,
+      "sha256": "40c8a6c1f4eedf2085e160ceee20d06383810eef9fa3b1805919cf0e2cf106b5"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_npu_smi.txt": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_npu_smi.txt",
+      "bytes": 4851,
+      "sha256": "0202f2a86ccbe56a61d5157689d32d982ab282c65d406e8fc3418b3e5bd5a6f3"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_log.txt": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/full226_evaluation_actual_v1/infer_originals/infer_log.txt",
+      "bytes": 735,
+      "sha256": "9805d1b391dbe44b6ca4ccb63ee92bcffdd05c8fb8ec210640d2ba2d67ba573f"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_plan_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_plan_v1.json",
+      "bytes": 20527,
+      "sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_launch_20261107_v1/h3_limiteddev_full226_execution_manifest_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_launch_20261107_v1/h3_limiteddev_full226_execution_manifest_v1.json",
+      "bytes": 11422,
+      "sha256": "f2c12d031e9f8138554aa8048497c58217dd537471be527ac90087ce78131f0a"
+    },
+    "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_terminal_policy_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_terminal_policy_v1.json",
+      "bytes": 10980,
+      "sha256": "9f047f243634ffdc4db569a23ffb98c5a107198387c3424a603e23427f74b055"
+    },
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/terminal2000_actual_evidence_v1/final_originals/terminal_binding.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/terminal2000_actual_evidence_v1/final_originals/terminal_binding.json",
+      "bytes": 76422,
+      "sha256": "3d733a4cdea0d8d86151c21161447c68e9684f2db344f7fcd844c5c61c4af24d"
+    },
+    "/path/to/staging/evaluate_h3_production67_limiteddev_v1.py": {
+      "path": "/path/to/staging/evaluate_h3_production67_limiteddev_v1.py",
+      "bytes": 24747,
+      "sha256": "31f2c8a76f53020864464ca3d489763115c463b0c32dc58f8bdbc0403de0e295"
+    },
+    "/path/to/staging/run_h3_limiteddev_full226_v1.py": {
+      "path": "/path/to/staging/run_h3_limiteddev_full226_v1.py",
+      "bytes": 14826,
+      "sha256": "d8c51f13c5ccbdcef545170e79f14b5cd03d9b0c0fc817115f99ce0ecfe1e6e8"
+    }
+  },
+  "all_inputs_before_after_SHA_equal": true,
+  "outer": {
+    "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/launches/infer_attempt1.json",
+    "bytes": 11776,
+    "sha256": "6df8ffcbd94f5ec5aa961f73deeac12b7755afb952c48994b8c3756a65d40308"
+  },
+  "report": {
+    "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/report.json",
+    "bytes": 21617,
+    "sha256": "7440bef54804982e7d2da1dc0b989e7bf12c30358146123e1f561796cfc63452"
+  },
+  "complete": {
+    "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/complete.json",
+    "bytes": 538,
+    "sha256": "d6eac8baf78ba78994788a3b7b55d2738cf93c2003aae944fac9bec8eba2ec65"
+  },
+  "mode_preinit": {
+    "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/mode_configured_before_NPU.json",
+    "bytes": 559,
+    "sha256": "40c8a6c1f4eedf2085e160ceee20d06383810eef9fa3b1805919cf0e2cf106b5"
+  },
+  "started_utc": "2026-11-08T05:15:05.816163+00:00",
+  "finished_utc": "2026-11-08T05:19:13.390354+00:00",
+  "physical_npu": 4,
+  "actual_parent_pid": 1741162,
+  "actual_child_pid": 1742060,
+  "cleanup": {
+    "pid": 1742060,
+    "pgid": 1742060,
+    "signals": [],
+    "reaped": true,
+    "returncode": 0,
+    "live_group_members_at_end": [],
+    "leader_identity": "already_exited"
+  },
+  "actual_forward_counts": {
+    "student_upscaler": 9,
+    "decoder": 0,
+    "optimizer": 0
+  },
+  "science_plan_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+  "terminal_binding_sha256": "3d733a4cdea0d8d86151c21161447c68e9684f2db344f7fcd844c5c61c4af24d",
+  "precision": {
+    "dtype": "float32",
+    "conv_hf32": false,
+    "matmul_hf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "mode": {
+    "deterministic_algorithms": true,
+    "warn_only": false
+  },
+  "verified_runtime_source_origins_match_frozen_plan": true,
+  "selected_model_proofs": {
+    "control": {
+      "selected_model": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/control/updates/best_step_0000.pt",
+        "bytes": 1381220283,
+        "sha256": "e1217ffb76ab6fecd1541659edf2e9987545f7440eb91860f99d3866c586afc1",
+        "step": 0,
+        "arm": "control",
+        "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+        "initializer_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914"
+      },
+      "schema": "h3-production67-limiteddev-selected-weights-v1",
+      "metrics": {
+        "hr_pixel_l1": 0.016237061160306137,
+        "hr_lpips": 0.08505520224571228,
+        "teacher_pixel_l1": 0.012615286434690157,
+        "teacher_lpips": 0.04847258577744166,
+        "teacher_motion_l1": 0.036277689039707184,
+        "teacher_delta_l1": 0.007955358906959495,
+        "hr_global_score": 0.03324810160944859,
+        "teacher_global_score": 0.02230980359017849,
+        "selection_score": 0.042039719891423986
+      },
+      "tensor_count": 322,
+      "parameter_count": 345280216,
+      "tensor_facts_sha256": "4469d3c5792336be6d2a10d0167468c9df4362bbe6d38a8551c3623a6dc2cb95",
+      "all_shapes_FP32_finite_verified": true,
+      "optimizer_or_rng_loaded": false
+    },
+    "teacher_student": {
+      "selected_model": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/teacher/updates/best_step_2000.pt",
+        "bytes": 1381220283,
+        "sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+        "step": 2000,
+        "arm": "teacher",
+        "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+        "initializer_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914"
+      },
+      "schema": "h3-production67-limiteddev-selected-weights-v1",
+      "metrics": {
+        "hr_pixel_l1": 0.016354279903074104,
+        "hr_lpips": 0.08203903088967006,
+        "teacher_pixel_l1": 0.009580027932922045,
+        "teacher_lpips": 0.03265833109617233,
+        "teacher_motion_l1": 0.027070777490735054,
+        "teacher_delta_l1": 0.006564391776919365,
+        "hr_global_score": 0.03276208608100811,
+        "teacher_global_score": 0.016111694152156512,
+        "selection_score": 0.03095996125290791
+      },
+      "tensor_count": 322,
+      "parameter_count": 345280216,
+      "tensor_facts_sha256": "4469d3c5792336be6d2a10d0167468c9df4362bbe6d38a8551c3623a6dc2cb95",
+      "all_shapes_FP32_finite_verified": true,
+      "optimizer_or_rng_loaded": false
+    },
+    "v5": {
+      "kind": "original_v5_step1800",
+      "checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+      "strict_initial_load": {
+        "scope": "actual_CPU_load_only_no_forward_or_optimizer",
+        "original_checkpoint_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+        "original_checkpoint_file_verified": true,
+        "selected_step": 1800,
+        "tensor_count": 322,
+        "parameter_count": 345280216,
+        "strict_names_shapes_dtype_values_passed": true,
+        "parameter_identity_preserved": true,
+        "aligned_initialization_called": false,
+        "effective_input": [
+          1,
+          24,
+          67,
+          44,
+          80
+        ],
+        "explicit_target": [
+          67,
+          68,
+          120
+        ],
+        "total_latent_tokens": 67,
+        "historical_adapter_scale": 2.0,
+        "historical_scale_is_not_current_geometry": true,
+        "frozen_sources": {
+          "causal_upscaler.py": {
+            "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/causal_upscaler.py",
+            "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+          },
+          "h3_production67_geometry_v1.py": {
+            "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_geometry_v1.py",
+            "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383"
+          },
+          "h3_conv3d_explicit_target_v1.py": {
+            "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_conv3d_explicit_target_v1.py",
+            "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6"
+          },
+          "train_upscaler_trial.py": {
+            "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/train_upscaler_trial.py",
+            "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+          }
+        },
+        "block_checkpointing": {
+          "enabled": false,
+          "decoder_checkpointing_installed": false
+        },
+        "optimizer_or_rng_restored": false,
+        "decoder_gradient_or_memory_preflight_passed": false,
+        "actual345M_forward_stream_HF32_or_training_passed": false,
+        "formal_training_allowed": false
+      },
+      "optimizer_or_rng_loaded": false
+    }
+  },
+  "dev_payload_proof_summaries": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "split": "dev",
+      "source_group": "wing_it",
+      "cohort": "original_generation_mode_unbound",
+      "pair_record_sha256": "e9a0e9e4dd5c7422e930c5c3f7eed92f23c405231ca9b5fa4e6656a5a3679153",
+      "teacher_record_sha256": "bdb02937c97004d5fb0cbac832fb061c7bf467d1fbba15065ec5443e3105d99d",
+      "child_contract_sha256": "914394c15e50d593fbd9ff63a3202feea8ed8731b66bc1b57fb3d9d76c2da3f8",
+      "source_identity": {
+        "source_kind": "video_source",
+        "source_collision_keys": [
+          [
+            "video_source_sha256",
+            "02df6e4471517eeb6d67db553078b02b1a859c61761f0004dfeae0744cbc26d6"
+          ]
+        ],
+        "source_frame_index_domain": "video_source_frame_index_zero_based",
+        "window_inclusive": [
+          3586,
+          3811
+        ]
+      },
+      "native_array": {
+        "path": "/path/to/h3-project/upscaler_production67_wing_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+        "bytes": 1405900928,
+        "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+      },
+      "full_payload_SHA_shape_finite_verified_by_loader2": true
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "split": "dev",
+      "source_group": "elephants_dream",
+      "cohort": "strictdet_generation",
+      "pair_record_sha256": "0ed5b8aee3856565ae5e87053b1c6c3a635734f7e42dfb36e2794472c0cb618c",
+      "teacher_record_sha256": "1f76abb09baa0b5f0b972d423fbdbe03fc1e8991ce468a2af83ff6b4e2eb9571",
+      "child_contract_sha256": "a29abd7f05f6db1937914233f8dc8a66d0a0d9da5c1889edf26658042b1cc3dc",
+      "source_identity": {
+        "source_kind": "native_png_sequence",
+        "source_collision_keys": [
+          [
+            "png_publisher_index_sha256",
+            "79dffa9cf63cf2156202df60bd816687449c369f3e50f2b4f41d9fc84c4cb7f9"
+          ],
+          [
+            "png_publisher_sequence_directory",
+            "https://media.xiph.org/ED/ED-1080-png/"
+          ]
+        ],
+        "source_frame_index_domain": "publisher_native_sequence_index_zero_based_not_proxy_PTS",
+        "window_inclusive": [
+          13069,
+          13294
+        ]
+      },
+      "native_array": {
+        "path": "/path/to/h3-project/upscaler_production67_ed13070_dev_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+        "bytes": 1405900928,
+        "sha256": "a893b2ce581b9af207bced0bb4ae4e97b3fa6a2da7cd824a7c5d60c39ad4289a"
+      },
+      "full_payload_SHA_shape_finite_verified_by_loader2": true
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "split": "dev",
+      "source_group": "wing_it",
+      "cohort": "strictdet_generation",
+      "pair_record_sha256": "641b40dd22d92366465c5d3b943b61580f86d63199372584b5ba1f51df7d3a3a",
+      "teacher_record_sha256": "0a98d7407d7e116d94d37bf2323c7ba144e2daa8c4a62ed4988ef592070b0858",
+      "child_contract_sha256": "b6f1a1e68169a1f75db4c5c36f1c7eb86bcf4c3c625e965da12cfc0ecfcad7cd",
+      "source_identity": {
+        "source_kind": "video_source",
+        "source_collision_keys": [
+          [
+            "video_source_sha256",
+            "02df6e4471517eeb6d67db553078b02b1a859c61761f0004dfeae0744cbc26d6"
+          ]
+        ],
+        "source_frame_index_domain": "video_source_frame_index_zero_based",
+        "window_inclusive": [
+          300,
+          525
+        ]
+      },
+      "native_array": {
+        "path": "/path/to/h3-project/upscaler_production67_wing300_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+        "bytes": 1405900928,
+        "sha256": "cd6852a3dc094bbab5231d9e1bc46192b0ee45d11a834f55e6a0747c9f50c7e8"
+      },
+      "full_payload_SHA_shape_finite_verified_by_loader2": true
+    }
+  ],
+  "nine_prediction_descriptors": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "variant": "v5",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/v5.json",
+        "bytes": 3953,
+        "sha256": "ddb66388cb83bc96c924b2797c48361bf55946cfebb949c011a26dc5473f96a6"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "variant": "control",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/control.json",
+        "bytes": 2991,
+        "sha256": "2b3d8af0a5924f5b09eb2530e3fe735fcd002a17c3bc78f941c191e03f95ea95"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "variant": "teacher_student",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_3586_3811/teacher_student.json",
+        "bytes": 3008,
+        "sha256": "96e462cc337a299f599ccff91f4c9b4446bb7ffce88866f88e0b91546df3753f"
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "variant": "v5",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/v5.json",
+        "bytes": 3973,
+        "sha256": "99c5f70173e924b379f9b252264a442b3ddb7fc07effdbf78146159b6a67b906"
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "variant": "control",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/control.json",
+        "bytes": 3011,
+        "sha256": "1520bef11d22e8861d277b4713be1831d294590e8eb64b216adbdc9c2eb7350d"
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "variant": "teacher_student",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/ElephantsDream_dev_13070_13295/teacher_student.json",
+        "bytes": 3032,
+        "sha256": "3d983b361ec71a3b07e7d7b25cf6343a7d214b1d483d7b2024b9ed1238d0be9e"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "variant": "v5",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/v5.json",
+        "bytes": 3947,
+        "sha256": "de6ead05512dca11a022e138a14a9000e536732986a447f8cb721e5d567a67ae"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "variant": "control",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/control.json",
+        "bytes": 2985,
+        "sha256": "7c31c6aecc4940012bd14fdc2877ad5f6e9ef8d695c59867dc693a7ddae4cf78"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "variant": "teacher_student",
+      "descriptor": {
+        "path": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1/infer/WingIt_dev_300_525/teacher_student.json",
+        "bytes": 3001,
+        "sha256": "c95cbe61a3924c3b339664790637f12cad18ed8a6cef99474c9cdb9a62ee7c6b"
+      }
+    }
+  ],
+  "scope": {
+    "dev_clips": 3,
+    "dev_films": 2,
+    "test_access": false,
+    "formal16dev": false,
+    "pixel_metrics_evaluated_this_stage": false,
+    "visual_quality_passed": false
+  },
+  "verification_boundary": {
+    "local_small_originals_verified": 6,
+    "no_local_PT_NPY_or_remote_access": true,
+    "reported_selected_model_admission": "The completed SHA-bound worker reports full selected-file SHA/schema and322 FP32 finite tensors/345280216 parameters; this independent review cross-checks proof metadata against terminal selected0/2000 descriptors and does not reread weights.",
+    "tensor_facts_sha_is_not_parameter_values": "Identical tensor_facts SHA for control andteacher records describes names/shapes/dtypes/finite/numel; it is not evidence trained parameter values are equal.",
+    "reported_payload_admission": "Three full payload checks are worker proof metadata;21 underlying arrays were not read by this reviewer.",
+    "prediction_receipts": "All9 output JSON descriptors and expected paths checked; their underlying JSON/NPY contents are not included in this local6-file package and were not independently reread. Reviewed pixels predecessor performs the actual9 receipt+latent validation.",
+    "future_pixel_execution": "Not executed or authorized by this review; root is soleexecutionowner.",
+    "scientific_actions": 0,
+    "shared_state_changes": 0,
+    "old_files_modified": 0
+  },
+  "driver": {
+    "path": "/path/to/staging/audit_h3_limiteddev_actual_infer_v1.py",
+    "sha256": "7379c5c7a4a8626bf20ed9132d58c4c77e6c9f7875e807ad81122d18e5930fd1"
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "41a24c85eba61703433d99ac84a0c2eab90c42a247a0df64e87dc73a9c0fb88a",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

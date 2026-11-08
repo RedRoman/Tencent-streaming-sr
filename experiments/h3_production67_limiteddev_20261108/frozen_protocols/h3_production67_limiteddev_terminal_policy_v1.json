@@ -1,0 +1,229 @@
+{
+  "schema": "h3-production67-limiteddev-terminal-policy-v1",
+  "training_root": "/path/to/h3-project/upscaler_production67_limiteddev_20261107",
+  "execution_plan": {
+    "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_plan_v1.json",
+    "bytes": 20952,
+    "sha256": "b73b072a8e746265d4f9e44654b88472fc73e44d1aee8c8036ad2fa6f2390a8c"
+  },
+  "physical_devices": {
+    "step0": 4,
+    "control": 4,
+    "teacher": 7
+  },
+  "protocol_sha256": "cbf2bdc35d854fd427169dda1cede22aea118a5cbaa5e0903a54d3ca2cf011e2",
+  "immutable": {
+    "protocol": {
+      "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/step0/protocol.json",
+      "bytes": 2537,
+      "sha256": "31e945995ae0f0e87c2aeb95641896a60f2ad87d604173647ab8c4da5f813c66"
+    },
+    "schedule": {
+      "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/step0/schedule.json",
+      "bytes": 15754190,
+      "sha256": "1bb5cc1344c58d565fd162ca7aadfd8b4f0c38d8c59eb4a6ecbde0bb5dacd0be"
+    },
+    "selection_plan": {
+      "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/step0/selection_plan.json",
+      "bytes": 24843,
+      "sha256": "24c0dfa93f21a2ee4ae49d192cb5da91970cd9ed0af8c2dfc8752809b109cecf"
+    },
+    "common_step0": {
+      "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/step0/common_step0.json",
+      "bytes": 25996,
+      "sha256": "4436070a30a2cf0d6259d38d6963f84c05a7ac64172fcf95faefbd6ca48775c3"
+    },
+    "payload_audit": {
+      "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/step0/payload_audit.json",
+      "bytes": 24073,
+      "sha256": "3083d422b597ba802f3bc19e52d0e0445424d88f3b84aac0bd7c50855807778f"
+    },
+    "step0_report": {
+      "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/step0/report.json",
+      "bytes": 4343,
+      "sha256": "22aa85629b252bb4e7957b30844674fc76aa400ed42c655353ba36584f283146"
+    },
+    "step0_outer": {
+      "path": "/path/to/h3-project/upscaler_production67_limiteddev_20261107/launches/step0_attempt1.json",
+      "bytes": 11428,
+      "sha256": "66437fe722a812c60b0ac83e7a8a1ef0b43d1bfbde2b9895368e25f37600e2d9"
+    }
+  },
+  "teacher_recipe": {
+    "path": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_teacher_distill.py",
+    "bytes": 13244,
+    "sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1"
+  },
+  "scope": "terminal_metadata_only; no current payload verification or evaluation admission",
+  "actual_terminal_outer_shas": "must be provided explicitly after both actual successful terminal states; absent now",
+  "durable_row_fields": [
+    "formal_training_preflight_passed",
+    "gradient_norm_before_clip",
+    "hr_adjacent_pair_count",
+    "hr_adjacent_pair_fraction",
+    "hr_delta_l1",
+    "hr_latent_mse",
+    "hr_lpips",
+    "hr_motion_l1",
+    "hr_motion_roi_fraction",
+    "hr_pixel_l1",
+    "hr_residual_ewarp_l1",
+    "hr_target_ewarp_l1",
+    "legacy_ewarp_l1",
+    "loss",
+    "lr",
+    "optimizer_updates",
+    "peak_allocated",
+    "peak_reserved",
+    "sample_id",
+    "seconds",
+    "spec",
+    "step",
+    "teacher_adjacent_pair_count",
+    "teacher_adjacent_pair_fraction",
+    "teacher_delta_l1",
+    "teacher_lpips",
+    "teacher_motion_l1",
+    "teacher_motion_roi_fraction",
+    "teacher_mse",
+    "teacher_pixel_l1",
+    "teacher_residual_ewarp_l1",
+    "teacher_target_ewarp_l1"
+  ],
+  "expected_staged_sources": {
+    "causal_upscaler.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/causal_upscaler.py",
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+    },
+    "check_h3_production67_explicit_hf32off_npu_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/check_h3_production67_explicit_hf32off_npu_v1.py",
+      "sha256": "68b82163f18b5b733deeebb4c922bf01f7d855883de18e7d0d2c054e4acb169c"
+    },
+    "check_h3_production67_paired8_npu_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/check_h3_production67_paired8_npu_v1.py",
+      "sha256": "865bf7c7ce561623021267985effa51878ef9434fa7ad1039ec04074753389d0"
+    },
+    "data_utils.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/data_utils.py",
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+    },
+    "h3_conv3d_explicit_target_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_conv3d_explicit_target_v1.py",
+      "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6"
+    },
+    "h3_production67_cann_imports_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_cann_imports_v1.py",
+      "sha256": "cfc334f1a3568315a1ccd88020e9b6785de689dfcd5914972449c6fe5faa2996"
+    },
+    "h3_production67_cohort_router_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_cohort_router_v1.py",
+      "sha256": "4dd024b749c7134d3aaf2c4686da3f913909edc9b858fa8081c4f6396a4de2aa"
+    },
+    "h3_production67_dataset_binding_v2.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_dataset_binding_v2.py",
+      "sha256": "4fb6fe4c9823dbdd233c726f06e398f29854a3e507875e7b56ea6683b6236941"
+    },
+    "h3_production67_deterministic_restore_core_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_deterministic_restore_core_v1.py",
+      "sha256": "837ed1ef87126dc6a6387208012502a193b0d6cbdf54cd1418982e8af91b3126"
+    },
+    "h3_production67_geometry_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_geometry_v1.py",
+      "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383"
+    },
+    "h3_production67_limiteddev_core_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_core_v1.py",
+      "sha256": "b07513005e30e2faec2f58f298ec774ee6143a9eac685d249809dec34c994af0"
+    },
+    "h3_production67_limiteddev_data_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_data_v1.py",
+      "sha256": "fe2a6e20c3a4779a73a947001f792896576d9d43b22cf29eddcaea9d3a9fcc75"
+    },
+    "h3_production67_limiteddev_sparse_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_sparse_v1.py",
+      "sha256": "1eb3260693beba137b11ba196677b512fef2eb47e06bf3a5fe47785fa75d7ccd"
+    },
+    "h3_production67_limiteddev_train_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_limiteddev_train_v1.py",
+      "sha256": "147b6a89c145a36849c653fd3711b0309c2220d8792aaa685dbb7cee93f64bf0"
+    },
+    "h3_production67_pair_loader_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pair_loader_v1.py",
+      "sha256": "5d3ea3d6e8d59896e5c2b664addf3a5bba5d4700efa525a0335125973124602b"
+    },
+    "h3_production67_pair_loader_v2.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pair_loader_v2.py",
+      "sha256": "1b7b1f41996b5cc00fe45e33a35261e5d159ce03b96fb43f1f3b0ab6be00d47d"
+    },
+    "h3_production67_paired8_core_v3.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_paired8_core_v3.py",
+      "sha256": "6014641a62291e0732903bfacf96dd8ad3f3f24a780ad333ffd966e2111b20d6"
+    },
+    "h3_production67_pixel_decoder_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pixel_decoder_v1.py",
+      "sha256": "79af08a57ec3c3c8743631a49aac66ecb0628a3eb1bd90e7a486862d73ccd752"
+    },
+    "h3_production67_pixel_specs_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_pixel_specs_v1.py",
+      "sha256": "50ea70c63a31ce14a3aec11b5072d369bcbd2d6b739a08b049e08cd40e2edfd0"
+    },
+    "h3_production67_train_step_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_train_step_v1.py",
+      "sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997"
+    },
+    "h3_production67_v5_loader_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_production67_v5_loader_v1.py",
+      "sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512"
+    },
+    "h3_teacher_distill.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_teacher_distill.py",
+      "sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1"
+    },
+    "h3_v5_motion.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/h3_v5_motion.py",
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa"
+    },
+    "make_h3_production67_paired8_binding_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/make_h3_production67_paired8_binding_v1.py",
+      "sha256": "4433f3f6e69b70cfd12f08fcdcbc6aed719263cf2df3905bfdd8d4d33584bdc4"
+    },
+    "prepare_data.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/prepare_data.py",
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8"
+    },
+    "run_h3_production67_limiteddev_train_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/run_h3_production67_limiteddev_train_v1.py",
+      "sha256": "365dcdb1f15f4e5a43eadc5c5f0cc8898093b85fa09111b1429ea5f87abd4958"
+    },
+    "run_h3_surrogate67_npu4_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/run_h3_surrogate67_npu4_v1.py",
+      "sha256": "fd50e29519d7deeee4ca0f7663ca5ec11575009a6a6e8b958af5e3fdf8855cc5"
+    },
+    "smoke_h3_production67_v5_full_cpu_v1.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/smoke_h3_production67_v5_full_cpu_v1.py",
+      "sha256": "b50fa4c03bad4eef7dc864ffe1c51b6cfc3f1ec9b206869cc5a1fa395540cfb5"
+    },
+    "train_upscaler_trial.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/train_upscaler_trial.py",
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+    },
+    "ultraflash_ewarp.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/ultraflash_ewarp.py",
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    },
+    "upscaler.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/upscaler.py",
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521"
+    },
+    "upscaler_node.py": {
+      "origin": "/path/to/staging/h3_production67_limiteddev_20261107_v1/upscaler_node.py",
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437"
+    }
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "9f047f243634ffdc4db569a23ffb98c5a107198387c3424a603e23427f74b055",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

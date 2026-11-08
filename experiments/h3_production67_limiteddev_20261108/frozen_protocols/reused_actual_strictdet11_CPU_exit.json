@@ -1,0 +1,42 @@
+{
+  "started_utc": "2026-11-06T19:48:20.147312+00:00",
+  "driver_pid": 1335354,
+  "driver_sha256": "80c4ff8da77903c75f93e625d9024cc3d4a6110cf14b7bbe15d50bef6b872234",
+  "command": [
+    "/path/to/runtime-home/anaconda3/envs/PyTorch-2.7.1/bin/python",
+    "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/check_h3_production67_deterministic_restore_results_v1.py",
+    "--plan",
+    "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/h3_production67_deterministic_restore_plan_v1.json",
+    "--plan-sha256",
+    "a234b03b86a5296a84eee4cf4ab6151219ebd706a54d51bfff5230ba73d9783c",
+    "--old-checker",
+    "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/check_h3_production67_paired8_results_v1.py",
+    "--old-comparator",
+    "/path/to/staging/h3_production67_deterministic_restore_20261107_v1/run_h3_teacher_resume_probe_npu7.py",
+    "--output",
+    "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_deterministic_restore_v1/deterministic_restore_comparison_actual_v1.json"
+  ],
+  "environment": {
+    "TORCH_DEVICE_BACKEND_AUTOLOAD": "0",
+    "ASCEND_VISIBLE_DEVICES": "",
+    "ASCEND_RT_VISIBLE_DEVICES": "",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONNOUSERSITE": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "source_plan_sha256": "a234b03b86a5296a84eee4cf4ab6151219ebd706a54d51bfff5230ba73d9783c",
+  "checker_sha256": "69d4cddc195dc439e0cb0c16e0e841c89c1d34c5fef78d702e92935b7548f319",
+  "NPU_actions": 0,
+  "optimizer_updates": 0,
+  "finished_utc": "2026-11-06T19:50:40.623801+00:00",
+  "exit_code": 0,
+  "log_sha256": "05879bba2f31dceccec2df6e74a35f1567e0b2b4d2f37d1d848b89f8e397d9f2",
+  "report_sha256": "06c940cf770be90ccb3fd19803e7d683d6f77ea6eb67ce3b23dcd293f2870b89",
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "2c86da1d5fda46014361b97acab395518c0d6b1e40c83c2de93ae780200adf75",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

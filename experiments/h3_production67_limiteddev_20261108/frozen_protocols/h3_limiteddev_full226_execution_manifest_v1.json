@@ -1,0 +1,244 @@
+{
+  "schema": "h3-limiteddev-full226-execution-manifest-v1",
+  "status": "candidate_not_executed",
+  "execution_stage": "/path/to/staging/h3_production67_limiteddev_eval_launch_20261107_v1",
+  "science_stage": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1",
+  "output": "/path/to/h3-project/upscaler_production67_limiteddev_evaluation_20261107_v1",
+  "stages": [
+    "infer",
+    "pixels"
+  ],
+  "physical_devices": [
+    4,
+    7
+  ],
+  "files": {
+    "run_h3_limiteddev_full226_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_launch_20261107_v1/run_h3_limiteddev_full226_v1.py",
+      "bytes": 14826,
+      "sha256": "d8c51f13c5ccbdcef545170e79f14b5cd03d9b0c0fc817115f99ce0ecfe1e6e8"
+    },
+    "run_h3_limiteddev_full226_v1.sh": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_launch_20261107_v1/run_h3_limiteddev_full226_v1.sh",
+      "bytes": 491,
+      "sha256": "f5281724e0fa2633186f8a1f0b68e9cef3eb2fb6a3933b8cc6dd5bf8c3f0df0f"
+    },
+    "run_h3_surrogate67_npu4_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_launch_20261107_v1/run_h3_surrogate67_npu4_v1.py",
+      "bytes": 22386,
+      "sha256": "fd50e29519d7deeee4ca0f7663ca5ec11575009a6a6e8b958af5e3fdf8855cc5"
+    }
+  },
+  "scientific_plan": {
+    "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_plan_v1.json",
+    "bytes": 20527,
+    "sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737"
+  },
+  "scientific_files": {
+    "causal_upscaler.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/causal_upscaler.py",
+      "bytes": 10332,
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+    },
+    "check_h3_production67_explicit_hf32off_npu_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/check_h3_production67_explicit_hf32off_npu_v1.py",
+      "bytes": 18757,
+      "sha256": "68b82163f18b5b733deeebb4c922bf01f7d855883de18e7d0d2c054e4acb169c"
+    },
+    "data_utils.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/data_utils.py",
+      "bytes": 9603,
+      "sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+    },
+    "evaluate_h3_production67_limiteddev_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/evaluate_h3_production67_limiteddev_v1.py",
+      "bytes": 24747,
+      "sha256": "31f2c8a76f53020864464ca3d489763115c463b0c32dc58f8bdbc0403de0e295"
+    },
+    "evaluate_h3_production67_wing_v4.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/evaluate_h3_production67_wing_v4.py",
+      "bytes": 29519,
+      "sha256": "852e4209c75876adf638778098e6c3cd011425822127a63e69b9e612f08c3593"
+    },
+    "h3_causal_v5_tensor_validation.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_causal_v5_tensor_validation.json",
+      "bytes": 84489,
+      "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75"
+    },
+    "h3_conv3d_explicit_target_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_conv3d_explicit_target_v1.py",
+      "bytes": 12825,
+      "sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6"
+    },
+    "h3_production67_cann_imports_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_cann_imports_v1.py",
+      "bytes": 3217,
+      "sha256": "cfc334f1a3568315a1ccd88020e9b6785de689dfcd5914972449c6fe5faa2996"
+    },
+    "h3_production67_cohort_router_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_cohort_router_v1.py",
+      "bytes": 13096,
+      "sha256": "4dd024b749c7134d3aaf2c4686da3f913909edc9b858fa8081c4f6396a4de2aa"
+    },
+    "h3_production67_dataset_binding_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_dataset_binding_v2.py",
+      "bytes": 14312,
+      "sha256": "4fb6fe4c9823dbdd233c726f06e398f29854a3e507875e7b56ea6683b6236941"
+    },
+    "h3_production67_eval_metrics_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_eval_metrics_v1.py",
+      "bytes": 6025,
+      "sha256": "d6f0d6c588930dd00b7536840e0d675bd0f001975728c7e3278aaf3db139b7f0"
+    },
+    "h3_production67_geometry_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_geometry_v1.py",
+      "bytes": 13298,
+      "sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383"
+    },
+    "h3_production67_limiteddev_eval_contract_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_eval_contract_v1.py",
+      "bytes": 9568,
+      "sha256": "ca49f41fb1f9398c088d627c16ad9472bca28b59a07dbf72af2b83139f38710f"
+    },
+    "h3_production67_limiteddev_full226_protocol_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_full226_protocol_v1.json",
+      "bytes": 4765,
+      "sha256": "3e1cd5cb2499d4ee5b8bf9f82eeeabde10786190bda7382596c80e1e815f9c9a"
+    },
+    "h3_production67_limiteddev_terminal_binding_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_terminal_binding_v2.py",
+      "bytes": 21939,
+      "sha256": "a9036ec0ae9d4763080aa69b772ebcbab658db9f7e5e600662f2c22c0e3b8078"
+    },
+    "h3_production67_limiteddev_terminal_policy_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_limiteddev_terminal_policy_v1.json",
+      "bytes": 10980,
+      "sha256": "9f047f243634ffdc4db569a23ffb98c5a107198387c3424a603e23427f74b055"
+    },
+    "h3_production67_mixed_cohort_policy_v1.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_mixed_cohort_policy_v1.json",
+      "bytes": 49534,
+      "sha256": "3141c281a426ffd6b5d25feaec7118a066ba8fe4ccff01b7a3ad48c4fe9d0f76"
+    },
+    "h3_production67_pair_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_pair_loader_v1.py",
+      "bytes": 24155,
+      "sha256": "5d3ea3d6e8d59896e5c2b664addf3a5bba5d4700efa525a0335125973124602b"
+    },
+    "h3_production67_pair_loader_v2.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_pair_loader_v2.py",
+      "bytes": 34547,
+      "sha256": "1b7b1f41996b5cc00fe45e33a35261e5d159ce03b96fb43f1f3b0ab6be00d47d"
+    },
+    "h3_production67_pixel_specs_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_pixel_specs_v1.py",
+      "bytes": 7708,
+      "sha256": "50ea70c63a31ce14a3aec11b5072d369bcbd2d6b739a08b049e08cd40e2edfd0"
+    },
+    "h3_production67_train_step_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_train_step_v1.py",
+      "bytes": 17025,
+      "sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997"
+    },
+    "h3_production67_v5_loader_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_production67_v5_loader_v1.py",
+      "bytes": 14056,
+      "sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512"
+    },
+    "h3_teacher_distill.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_teacher_distill.py",
+      "bytes": 13244,
+      "sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1"
+    },
+    "h3_v5_motion.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/h3_v5_motion.py",
+      "bytes": 9828,
+      "sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa"
+    },
+    "prepare_data.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/prepare_data.py",
+      "bytes": 18150,
+      "sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8"
+    },
+    "smoke_h3_production67_v5_full_cpu_v1.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/smoke_h3_production67_v5_full_cpu_v1.py",
+      "bytes": 18841,
+      "sha256": "b50fa4c03bad4eef7dc864ffe1c51b6cfc3f1ec9b206869cc5a1fa395540cfb5"
+    },
+    "surrogate67_contract.json": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/surrogate67_contract.json",
+      "bytes": 37409,
+      "sha256": "41f3e018aa90760945659e42abf13adb91374452f884723fe3078096a4825879"
+    },
+    "train_upscaler_trial.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/train_upscaler_trial.py",
+      "bytes": 21905,
+      "sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71"
+    },
+    "ultraflash_ewarp.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/ultraflash_ewarp.py",
+      "bytes": 6288,
+      "sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d"
+    },
+    "upscaler.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/upscaler.py",
+      "bytes": 1724,
+      "sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521"
+    },
+    "upscaler_node.py": {
+      "path": "/path/to/staging/h3_production67_limiteddev_eval_20261107_v1/upscaler_node.py",
+      "bytes": 25218,
+      "sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437"
+    }
+  },
+  "environment_source": {
+    "path": "/path/to/h3-project/experiment/env.sh",
+    "bytes": 938,
+    "sha256": "64451094fa9aca640bc5bfc9ba77080330f858d1706ba74798ca4eb8834e4524"
+  },
+  "runtime_python": "/path/to/model-assets/runtime/.venv-npu/bin/python",
+  "minimum_free_bytes": {
+    "infer": 2147483648,
+    "pixels": 34359738368
+  },
+  "parameters": {
+    "required": [
+      "stage",
+      "physical-device",
+      "execution-manifest",
+      "execution-manifest-sha256",
+      "terminal-binding",
+      "terminal-binding-sha256",
+      "terminal-policy"
+    ],
+    "pixels_required_only": [
+      "infer-outer-sha256"
+    ],
+    "optional": [
+      "check-plan"
+    ],
+    "forbidden": [
+      "all",
+      "attempt",
+      "retry",
+      "waiter",
+      "resume",
+      "fallback",
+      "test",
+      "model override"
+    ]
+  },
+  "terminal_requirement": "Future actual 2000x2 successful terminal binding-v2, full original metadata recomputation identical before admission and after execution. No terminal SHA exists in this candidate.",
+  "ownership": "One exclusive evaluation root for infer, existing exact completed infer root for pixels; global evaluation stage.lock plus all three physical card flocks nonblocking; one independent start_new_session child; actual npu-smi after device locks; parent wait then reaping/group quiescence before unlocking.",
+  "cleanup": "Unchanged fd50e295 utility signals only its owned child PGID. TERM bounded15s then KILL; unknown/uninterruptible group holds locks until verified quiescent, never false unlock. No automatic science retry.",
+  "worker_directory_ownership": "Parent creates outputroot/launches only. Frozen worker creates infer or pixels directory once. Parent records report.json separately from complete.json.",
+  "future_quality_scope": "Parent accepts complete numeric negative results and best0; no metric/selection/threshold override. Full226 completion is not visual/videoPTS/formal16dev/test acceptance.",
+  "original_sources_changed": false,
+  "actual_execution_performed": false,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "f2c12d031e9f8138554aa8048497c58217dd537471be527ac90087ce78131f0a",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

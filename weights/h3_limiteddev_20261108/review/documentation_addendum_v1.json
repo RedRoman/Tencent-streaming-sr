@@ -1,0 +1,80 @@
+{
+  "schema": "h3-public-inference-documentation-review-addendum-v1",
+  "status": "passed_exact_candidate_documentation_and_manifest_review_not_published",
+  "created_utc": "2026-11-08T05:38:17.068523+00:00",
+  "primary_review_sha256": "98ed3b2662e2893c59c2e8f0f6a1bcd8f69bc6b43172bdc0199a458fe5edca95",
+  "inputs": {
+    "candidate_manifest": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/inference_candidate_v1/candidate_manifest.json",
+      "bytes": 1698,
+      "sha256": "a1fdad6acbe14265cfa80e80d3f649d7061d36311e803cc3ef1caaa10691d80c"
+    },
+    "README.md": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/inference_candidate_v1/README.md",
+      "bytes": 5443,
+      "sha256": "e37e28607e030007a478f3e6f0dc2ab23c48b0805cb3feb97c0d1a5a9b9ebb28"
+    },
+    "check_metadata_boundaries.py": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/inference_candidate_v1/check_metadata_boundaries.py",
+      "bytes": 4838,
+      "sha256": "d8716cc65e9880386d450aa0fd363c3003f45a068bb1443235048c23ef40fb2f"
+    },
+    "h3_limiteddev_teacher_step2000_config.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/inference_candidate_v1/h3_limiteddev_teacher_step2000_config.json",
+      "bytes": 4959,
+      "sha256": "ad1c03b0e59af4bfe30c57d20628647762575a44a0f4874a574bb3f5f36be706"
+    },
+    "load_h3_limiteddev_inference.py": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/inference_candidate_v1/load_h3_limiteddev_inference.py",
+      "bytes": 13890,
+      "sha256": "5664fd98b25b7d915b3796b7e73ba4df0369fad9a614e0ddecf3f33f10b36a66"
+    },
+    "metadata_boundary_checks.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/inference_candidate_v1/metadata_boundary_checks.json",
+      "bytes": 2245,
+      "sha256": "b6bc1d501c60e096e163cfd09d32c3dfb005fd0d51ad858c210934d6efdf42ce"
+    },
+    "source_references.json": {
+      "path": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/inference_candidate_v1/source_references.json",
+      "bytes": 2761,
+      "sha256": "a58edb455c5509583cabcf3f260bd38a996a2f29cb66a03610f961379d175930"
+    }
+  },
+  "existing_repository_small_sources_verified": [
+    {
+      "path": "/path/to/workspace/tencent-streaming-sr-github/experiments/h3_causal_upscaler_20261104/causal_upscaler.py",
+      "bytes": 10332,
+      "sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677"
+    },
+    {
+      "path": "/path/to/workspace/tencent-streaming-sr-github/weights/h3_v5_20261106/h3_causal_v5_tensor_validation.json",
+      "bytes": 84489,
+      "sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75"
+    }
+  ],
+  "candidate_file_count": 6,
+  "five_source_references_equal_loader_sidecar": true,
+  "all_manifest_hashes_match": true,
+  "known_private_paths_or_credential_patterns_found": false,
+  "findings": [
+    "README correctly separates unpublished candidate, source-only tests and pending actual CPU loader verification.",
+    "Three reviewed runtime sources/frozen upstream pair and historical schema pins agree; existing clone causal source and tensor-schema byte SHA verified without modifying clone.",
+    "No network retrieval or current license/legal verification performed. Existing license provenance is described as recorded declarations, with original notices retained.",
+    "Runtime and quality status text describes preparation time; future actual CPU load/full226/video results must be added with new exact-byte documentation evidence, preserving this candidate."
+  ],
+  "blockers": [],
+  "actions": {
+    "weights_read": false,
+    "Torch_imported": false,
+    "network_or_remote": false,
+    "NPU_or_model": false,
+    "repository_modified": false,
+    "published": false
+  },
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "8c16a4814170930d33cddb3a77b841e1431299a9b9cceb220e5e6f3a681d0363",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

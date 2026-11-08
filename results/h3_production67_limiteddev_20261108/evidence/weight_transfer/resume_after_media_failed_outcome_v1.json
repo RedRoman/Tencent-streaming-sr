@@ -1,0 +1,37 @@
+{
+  "schema": "h3-selected-weight-SIGCONT-outcome-v1",
+  "utc": "2026-11-08T12:03:51.365104+00:00",
+  "action": "SIGCONT_existing_exact_identity_scp_after_all_three_media_packages_verified",
+  "pid": 25149,
+  "pause_receipt_sha256": "90ec33836504cffc4b5282e2f8d9c7ec0e6131e458aecd17ec2dbdfb13d74621",
+  "media_transport_receipt": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/media_execution_20261108_v3/all_media_local_transport_completed_v1.json",
+  "media_transport_sha256": "9216af1ddda7c3c844547a68b0aff692c5049b34c2849304e96b8ff98296f880",
+  "before": {
+    "lstart": "Sun Nov  8 16:34:26 2026",
+    "command_sha256": "cb8eb5ae60ee2d81649be81e22a0802d88d78f27cb8817dc584517d07a5e9558",
+    "identity_state": "25149 25148 25148 T+"
+  },
+  "partial_bytes_before": 25589760,
+  "session": "h3-limiteddev-selected-weight-20261108-v1",
+  "target": "/path/to/h3-project/upscaler_v5_motion_20261106/analysis/production67_limiteddev_training_20261107/publication_preparation_20261108_v1/selected_weight_download_v1/h3_limiteddev_teacher_step2000_fp32.pt",
+  "expected_bytes": 1381220283,
+  "expected_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "no_restart_no_overwrite": true,
+  "observation_utc": "2026-11-08T12:04:32.404710+00:00",
+  "status": "original_scp_failed_after_SIGCONT_no_restart",
+  "resume_intent_sha256": "68cfec9eab1016ca0b90398eac9e471d7aceff7ed13cdc5b29adcb025e28d36f",
+  "SIGCONT_sent_once": true,
+  "post_signal_pid_absent": true,
+  "post_signal_ps_exit": 1,
+  "transfer_status_actual": "[h3-limiteddev-selected-weight-20261108-v1 FAILED (exit 255)]",
+  "partial_bytes_after": 25589760,
+  "cause_unconfirmed": "The stopped transfer exited after SIGCONT; the transfer tool reports exit 255. No stderr diagnosis observed yet.",
+  "no_retry_no_restart_no_partial_overwrite": true,
+  "media_delivery_unaffected": true,
+  "_publication": {
+    "sanitized_archival_copy": true,
+    "original_sha256": "6ecede9e2695310ace8472ce7f35146e2febdc21e4d42eaba9fab48c52328066",
+    "embedded_hashes_refer_to_original_bytes": true,
+    "not_an_original_executable_contract": true
+  }
+}

@@ -1,0 +1,714 @@
+{
+  "schema": "h3-limiteddev-public-source-reference-v1",
+  "records": [
+    {
+      "name": "causal_upscaler.py",
+      "source_sha256": "8032ebd29e558d2cad7f31cb91618022892270a5d4027052f251475b04f98677",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "existing_byte_identical_repository_paths": [
+        "experiments/h3_causal_upscaler_20261104/causal_upscaler.py"
+      ],
+      "new_copy_created": false
+    },
+    {
+      "name": "check_h3_production67_explicit_hf32off_npu_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "68b82163f18b5b733deeebb4c922bf01f7d855883de18e7d0d2c054e4acb169c",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/check_h3_production67_explicit_hf32off_npu_v1.py",
+      "public_sha256": "ab919a25629df433527388313dd167446687385c3c5e4cdcea7532517475d5ce",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "check_h3_production67_paired8_npu_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "865bf7c7ce561623021267985effa51878ef9434fa7ad1039ec04074753389d0",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/check_h3_production67_paired8_npu_v1.py",
+      "public_sha256": "20adb95fbadbdb3db2e86b863ff73f2c5a467d940a7777bbeb088103253801ee",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "convert_h3_limiteddev_retained_media_v3.py",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "e86f9a9006d2834b6ac89b7b383cc760e7e7d093f18fcd76547801d8208c84e1",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/convert_h3_limiteddev_retained_media_v3.py",
+      "public_sha256": "e86f9a9006d2834b6ac89b7b383cc760e7e7d093f18fcd76547801d8208c84e1",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "data_utils.py",
+      "source_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "existing_byte_identical_repository_paths": [
+        "experiments/h3_cmn_hybrid_20261105/data_utils.py",
+        "experiments/h3_refiner_self_forcing_20261104/data_utils.py"
+      ],
+      "new_copy_created": false
+    },
+    {
+      "name": "evaluate_h3_production67_limiteddev_v1.py",
+      "roles": [
+        "evaluation"
+      ],
+      "original_sha256": "31f2c8a76f53020864464ca3d489763115c463b0c32dc58f8bdbc0403de0e295",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/evaluate_h3_production67_limiteddev_v1.py",
+      "public_sha256": "f3ea41f009474918ce2efb05277cd8e69354cd9ed0243f956905b99ab769a568",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "evaluate_h3_production67_wing_v4.py",
+      "roles": [
+        "evaluation"
+      ],
+      "original_sha256": "852e4209c75876adf638778098e6c3cd011425822127a63e69b9e612f08c3593",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/evaluate_h3_production67_wing_v4.py",
+      "public_sha256": "eff1aa1ec0306310f5cc25fde2916fc087a5d6b279f2726f4f46a99d5238258d",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "export_h3_limiteddev_retained_rgb_v3.py",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "0123763253d56b635aa389b0fc60d2c5b17dff4b1e453dc024d3e68c84575d59",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/export_h3_limiteddev_retained_rgb_v3.py",
+      "public_sha256": "0123763253d56b635aa389b0fc60d2c5b17dff4b1e453dc024d3e68c84575d59",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_causal_v5_tensor_validation.json",
+      "source_sha256": "071b3fd8b71dfde906b1f75f250d79c8d8df32f24b0c0c194b83387bf1705a75",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "existing_byte_identical_repository_paths": [
+        "weights/h3_v5_20261106/h3_causal_v5_tensor_validation.json"
+      ],
+      "new_copy_created": false
+    },
+    {
+      "name": "h3_conv3d_explicit_target_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_conv3d_explicit_target_v1.py",
+      "public_sha256": "8c5bcbd1702a252266c68cbdf131e40fa7b56366deaeef17c53a9b84dbd5b3c6",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_limiteddev_full226_execution_manifest_v1.json",
+      "roles": [
+        "evaluation_launcher"
+      ],
+      "original_sha256": "f2c12d031e9f8138554aa8048497c58217dd537471be527ac90087ce78131f0a",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_limiteddev_full226_execution_manifest_v1.json",
+      "public_sha256": "c44fdf268d55bf9bef241d3e3cd5cd7864933551dba99b973b5d3eb9f3472ae5",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_limiteddev_media_common_v3.py",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "88e4f5296fdae971e87d432e237fad4027a3fc4d5cebb39ef34ed41b0ef9db3c",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_limiteddev_media_common_v3.py",
+      "public_sha256": "e09c88bac24ff2c0ef37f609b02647ecbf94f1b4011828cc29bcf1a92b6f9c88",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_limiteddev_original_display_identity_policy_v1.json",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "95e78b52f5be858f6ed209553afd6bbf875f25daec0b383fb780093581a540b4",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_limiteddev_original_display_identity_policy_v1.json",
+      "public_sha256": "b2fa36915a5845538b78844fb66818f677a110d3cf189e92ed60662e69b9fa9e",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_limiteddev_retained_rgb_media_plan_v3.json",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "77f4d052ae16a042ff9f1df0bf15788e0615a1c17c0462c4d70a971516a38d62",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_limiteddev_retained_rgb_media_plan_v3.json",
+      "public_sha256": "ea72bcf0f879db9b64ee55653fe87946b8f1a3d83218b416cb66b8f8c7f3ee10",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_cann_determinism_evidence_v1.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "98cb21e044d1a7557f03ea07f0a60e2287ab01d4a8ab886159c1525d11deb46e",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_production67_cann_determinism_evidence_v1.json",
+      "public_sha256": "30ddc0164377b64f4e6ccf4d307f367022354ed8345d72f7cc3dbee00bc4c02a",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_cann_imports_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "cfc334f1a3568315a1ccd88020e9b6785de689dfcd5914972449c6fe5faa2996",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_cann_imports_v1.py",
+      "public_sha256": "6d3c63b63fce12856c1ee85a45153f9af1e24af14fc52ad4c6984e1aacf0b42b",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_cohort_router_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "4dd024b749c7134d3aaf2c4686da3f913909edc9b858fa8081c4f6396a4de2aa",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_cohort_router_v1.py",
+      "public_sha256": "4dd024b749c7134d3aaf2c4686da3f913909edc9b858fa8081c4f6396a4de2aa",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_dataset_binding_v2.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "4fb6fe4c9823dbdd233c726f06e398f29854a3e507875e7b56ea6683b6236941",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_dataset_binding_v2.py",
+      "public_sha256": "4fb6fe4c9823dbdd233c726f06e398f29854a3e507875e7b56ea6683b6236941",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_deterministic_restore_core_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "837ed1ef87126dc6a6387208012502a193b0d6cbdf54cd1418982e8af91b3126",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_deterministic_restore_core_v1.py",
+      "public_sha256": "837ed1ef87126dc6a6387208012502a193b0d6cbdf54cd1418982e8af91b3126",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_eval_metrics_v1.py",
+      "roles": [
+        "evaluation"
+      ],
+      "original_sha256": "d6f0d6c588930dd00b7536840e0d675bd0f001975728c7e3278aaf3db139b7f0",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_eval_metrics_v1.py",
+      "public_sha256": "d6f0d6c588930dd00b7536840e0d675bd0f001975728c7e3278aaf3db139b7f0",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_geometry_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_geometry_v1.py",
+      "public_sha256": "147765ef79549bc31fd2b9e5026d5983be2328ee12ee04743f9202543b4af383",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_core_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "b07513005e30e2faec2f58f298ec774ee6143a9eac685d249809dec34c994af0",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_limiteddev_core_v1.py",
+      "public_sha256": "b07513005e30e2faec2f58f298ec774ee6143a9eac685d249809dec34c994af0",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_data_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "fe2a6e20c3a4779a73a947001f792896576d9d43b22cf29eddcaea9d3a9fcc75",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_limiteddev_data_v1.py",
+      "public_sha256": "fe2a6e20c3a4779a73a947001f792896576d9d43b22cf29eddcaea9d3a9fcc75",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_eval_contract_v1.py",
+      "roles": [
+        "evaluation",
+        "media"
+      ],
+      "original_sha256": "ca49f41fb1f9398c088d627c16ad9472bca28b59a07dbf72af2b83139f38710f",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_limiteddev_eval_contract_v1.py",
+      "public_sha256": "ca49f41fb1f9398c088d627c16ad9472bca28b59a07dbf72af2b83139f38710f",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_full226_plan_v1.json",
+      "roles": [
+        "evaluation"
+      ],
+      "original_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_production67_limiteddev_full226_plan_v1.json",
+      "public_sha256": "f684e573f7d89c4811ffc8380476b6451b0f4279598e8918eb08d3f4e9fe5f58",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_full226_protocol_v1.json",
+      "roles": [
+        "evaluation"
+      ],
+      "original_sha256": "3e1cd5cb2499d4ee5b8bf9f82eeeabde10786190bda7382596c80e1e815f9c9a",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_production67_limiteddev_full226_protocol_v1.json",
+      "public_sha256": "e19e5cb6852492af3b6d8d2ac0cb6cca78e92088c5b8d8aa09e6e3a429e06011",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_plan_v1.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "b73b072a8e746265d4f9e44654b88472fc73e44d1aee8c8036ad2fa6f2390a8c",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_production67_limiteddev_plan_v1.json",
+      "public_sha256": "aace7c5f4ce445d328baf4017ed0c84fe6c85eef8fcdff0d34ba4c2b5ed93300",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_sparse_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "1eb3260693beba137b11ba196677b512fef2eb47e06bf3a5fe47785fa75d7ccd",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_limiteddev_sparse_v1.py",
+      "public_sha256": "1eb3260693beba137b11ba196677b512fef2eb47e06bf3a5fe47785fa75d7ccd",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_terminal_binding_v2.py",
+      "roles": [
+        "evaluation"
+      ],
+      "original_sha256": "a9036ec0ae9d4763080aa69b772ebcbab658db9f7e5e600662f2c22c0e3b8078",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_limiteddev_terminal_binding_v2.py",
+      "public_sha256": "a893ced22b98b30a7ddb4cd47a265ee1564ca4442b7acc576b9e16e82a08e2af",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_terminal_policy_v1.json",
+      "roles": [
+        "evaluation"
+      ],
+      "original_sha256": "9f047f243634ffdc4db569a23ffb98c5a107198387c3424a603e23427f74b055",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_production67_limiteddev_terminal_policy_v1.json",
+      "public_sha256": "d3bdfd2c8477f48406210b4a9f323dbc9e0baab048847bd97639b30fea4382c8",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_limiteddev_train_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "147b6a89c145a36849c653fd3711b0309c2220d8792aaa685dbb7cee93f64bf0",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_limiteddev_train_v1.py",
+      "public_sha256": "6a689f8d6bc296a3c863880aa91afdf78c7a919ca48f154ebb29a84597c1f988",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_mixed_cohort_policy_v1.json",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "3141c281a426ffd6b5d25feaec7118a066ba8fe4ccff01b7a3ad48c4fe9d0f76",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/h3_production67_mixed_cohort_policy_v1.json",
+      "public_sha256": "212000c96fa350ccd8b6042ec4845a8d830b22bc5dc91ad54f997259126dd76d",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_pair_loader_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "5d3ea3d6e8d59896e5c2b664addf3a5bba5d4700efa525a0335125973124602b",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_pair_loader_v1.py",
+      "public_sha256": "5d3ea3d6e8d59896e5c2b664addf3a5bba5d4700efa525a0335125973124602b",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_pair_loader_v2.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "1b7b1f41996b5cc00fe45e33a35261e5d159ce03b96fb43f1f3b0ab6be00d47d",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_pair_loader_v2.py",
+      "public_sha256": "1b7b1f41996b5cc00fe45e33a35261e5d159ce03b96fb43f1f3b0ab6be00d47d",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_paired8_core_v3.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "6014641a62291e0732903bfacf96dd8ad3f3f24a780ad333ffd966e2111b20d6",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_paired8_core_v3.py",
+      "public_sha256": "6014641a62291e0732903bfacf96dd8ad3f3f24a780ad333ffd966e2111b20d6",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_pixel_decoder_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "79af08a57ec3c3c8743631a49aac66ecb0628a3eb1bd90e7a486862d73ccd752",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_pixel_decoder_v1.py",
+      "public_sha256": "79af08a57ec3c3c8743631a49aac66ecb0628a3eb1bd90e7a486862d73ccd752",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_pixel_specs_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "50ea70c63a31ce14a3aec11b5072d369bcbd2d6b739a08b049e08cd40e2edfd0",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_pixel_specs_v1.py",
+      "public_sha256": "50ea70c63a31ce14a3aec11b5072d369bcbd2d6b739a08b049e08cd40e2edfd0",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_train_step_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_train_step_v1.py",
+      "public_sha256": "32bd9154fdbae7b9e5cb8ac16029014da3dae9227d276a3e90d5f37ea7877997",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_production67_v5_loader_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_production67_v5_loader_v1.py",
+      "public_sha256": "03d043154f9d920a3c63ebeb39d713a825ea32dd7f9592b4264ced8e935a4512",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_teacher_distill.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/h3_teacher_distill.py",
+      "public_sha256": "4c38c7b96ebb754b3987f8d8f30d373c6352ec87e0c45aa524500077a7cd58f1",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "h3_v5_motion.py",
+      "source_sha256": "855d262cd46e4e74e2336333599f980c640c4cc309c5c05bf4fffd33a3206faa",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "existing_byte_identical_repository_paths": [
+        "experiments/h3_v5_motion_20261106/h3_v5_motion.py"
+      ],
+      "new_copy_created": false
+    },
+    {
+      "name": "make_h3_production67_paired8_binding_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "4433f3f6e69b70cfd12f08fcdcbc6aed719263cf2df3905bfdd8d4d33584bdc4",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/make_h3_production67_paired8_binding_v1.py",
+      "public_sha256": "4433f3f6e69b70cfd12f08fcdcbc6aed719263cf2df3905bfdd8d4d33584bdc4",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "original_Wing300_source_decision_v1.json",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "e2ac60b0ebda3ab6b7d3c83a759b4f3bdf65faedf48ab69d8c1e34fcfe0547ea",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/original_Wing300_source_decision_v1.json",
+      "public_sha256": "26769a4a643a96879aac851a50adc32508255549bcfe2b33238b35b4f3d059a7",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "original_Wing_media_plan_v1.json",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "6c7cfbb1d6baf0431e1f31e5532f5ae89b7af8c414846c5d913b19438d999b0e",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/original_Wing_media_plan_v1.json",
+      "public_sha256": "e571f2948f5e4324005b21adbe0ec46fb255aacce5e15c2d17da41459c39f744",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "original_full226_science_plan_v1.json",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/original_full226_science_plan_v1.json",
+      "public_sha256": "f684e573f7d89c4811ffc8380476b6451b0f4279598e8918eb08d3f4e9fe5f58",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "original_three_column_main_media_requirement_v1.json",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "6c445b05c484a837a48a7d21dfd5ab8a9352d6b6cfce2943970b939251de1bf2",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/original_three_column_main_media_requirement_v1.json",
+      "public_sha256": "c833141350fae6277770a978620afd642c32795e4cf723d3d8b03d1ceb81e9d2",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "original_three_column_media_identity_review_v1.json",
+      "roles": [
+        "media"
+      ],
+      "original_sha256": "772cc3386a0f7566e19e5c2cf5c8cdb91c5e997348aea1be9c7a311a24481fa6",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/original_three_column_media_identity_review_v1.json",
+      "public_sha256": "beccb7fe0b2b58012ecef55548becb7b9d345bc9c128738483f8347675bb5ea7",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "prepare_data.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "2b07f8e431b884d0cb1063033f5a965192f1d6a26bf40c5d47c156198503b9b8",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/prepare_data.py",
+      "public_sha256": "ab403fc1d6e6e562fb5e9cd9076c424f911de91e9ba91fcdf846a88a8def9693",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_345M_CPU_load.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "df258b5529e89ccb704525dec919cf76b598db324925fb331a7e65b79c335800",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_345M_CPU_load.json",
+      "public_sha256": "34d9c42bbd05078eddd0b00a334bd37640ce0ba075927d2842ea79b9fe89e102",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_67_HF32off_causal.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "e2d38504c0684cf43eba3a49246c698d4c6fdb0daa894828d3321a52d51469c1",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_67_HF32off_causal.json",
+      "public_sha256": "0e06a101f9f0049107d355e9063d909c0f8b7ee586ca53b3af6675b4c22c9b8b",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_control8.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "231466f7d88c1782d2a8a4b746429f482d4e0c6967a066b1e087b0227347a101",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_control8.json",
+      "public_sha256": "c33439e4741202aeda1fb994cb13da93a0af4c3a61dd6f937a50bb0dc6539d69",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_decoder_leaf_HF32off.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "67c4f900ac0e998352053564373df7fa43252439ec68a07e732bade947e78084",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_decoder_leaf_HF32off.json",
+      "public_sha256": "c6269b95e0a08d2022a6d8e508ee9b0cdf2033dc33f47a21e8952878bf622017",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_explicit_wrapper_parity.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "f99005bb4656ed782c1783db9e5c3748d37d70224ad171f070932cc01f5f3a0b",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_explicit_wrapper_parity.json",
+      "public_sha256": "72d1577fbe06bf9e1d8756a73f51dc14adcb3180c8506e7dc978ea12eaefaf67",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_strictdet11_CPU_exit.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "2c86da1d5fda46014361b97acab395518c0d6b1e40c83c2de93ae780200adf75",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_strictdet11_CPU_exit.json",
+      "public_sha256": "62712e90ee23868a51ab64899accd66c2e3a6291786f6e87cf0c5f1d0920c260",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_strictdet11_restore.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "06c940cf770be90ccb3fd19803e7d683d6f77ea6eb67ce3b23dcd293f2870b89",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_strictdet11_restore.json",
+      "public_sha256": "bb6041b69790ea4e472905682d21ad57c22121d3c482d66e6006de8767981679",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "reused_actual_teacher8.json",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "170f50162c03e7b1c5075e7688451355009637a1289c179154badd791d9ba381",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/reused_actual_teacher8.json",
+      "public_sha256": "7b65026bbf7c075499c4d790e6ad1c2f54f9157b535aa557d4d5599ba2ee4801",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "run_h3_limiteddev_full226_v1.py",
+      "roles": [
+        "evaluation_launcher"
+      ],
+      "original_sha256": "d8c51f13c5ccbdcef545170e79f14b5cd03d9b0c0fc817115f99ce0ecfe1e6e8",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/run_h3_limiteddev_full226_v1.py",
+      "public_sha256": "a0ab1d9a7b05c9b1190f45db4be5544d514bf28315c63ff22c8edbefc0097303",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "run_h3_limiteddev_full226_v1.sh",
+      "roles": [
+        "evaluation_launcher"
+      ],
+      "original_sha256": "f5281724e0fa2633186f8a1f0b68e9cef3eb2fb6a3933b8cc6dd5bf8c3f0df0f",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/run_h3_limiteddev_full226_v1.sh",
+      "public_sha256": "2efc50494f7edf7db86a6ed67877074fab13807a2700fe2266f8aada9b974038",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "run_h3_production67_limiteddev_train_v1.py",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "365dcdb1f15f4e5a43eadc5c5f0cc8898093b85fa09111b1429ea5f87abd4958",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/run_h3_production67_limiteddev_train_v1.py",
+      "public_sha256": "f49680a5dd6ee92627f98e0241d1df0223b19d13f6c2d45e5ec83e508b61ff7c",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "run_h3_production67_limiteddev_train_v1.sh",
+      "roles": [
+        "training"
+      ],
+      "original_sha256": "96d42b27ce3f161330445c67c7c9c283cc484e7e9b4145efd6dba1a0fdcfbdec",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/run_h3_production67_limiteddev_train_v1.sh",
+      "public_sha256": "8f800ebab31df39943ac31f100faeab062b16d2201d92e51441c250759cef257",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "run_h3_surrogate67_npu4_v1.py",
+      "roles": [
+        "training",
+        "evaluation_launcher",
+        "media"
+      ],
+      "original_sha256": "fd50e29519d7deeee4ca0f7663ca5ec11575009a6a6e8b958af5e3fdf8855cc5",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/run_h3_surrogate67_npu4_v1.py",
+      "public_sha256": "0c7c67981ad20399bfd35885cc728f8dd19549156a8af24e93ed1b90ca5e823a",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "smoke_h3_production67_v5_full_cpu_v1.py",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "b50fa4c03bad4eef7dc864ffe1c51b6cfc3f1ec9b206869cc5a1fa395540cfb5",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/archived_sources/smoke_h3_production67_v5_full_cpu_v1.py",
+      "public_sha256": "89fbb849ca0fe73b582418221e523179e613e654b77834a0cd1029ed19cc944f",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "surrogate67_contract.json",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "original_sha256": "41f3e018aa90760945659e42abf13adb91374452f884723fe3078096a4825879",
+      "public_path": "experiments/h3_production67_limiteddev_20261108/frozen_protocols/surrogate67_contract.json",
+      "public_sha256": "d69cefa6e2b6352d7bd9fbce39bb2261ec259b5a6832cec1adc8840ba75ecc3e",
+      "public_copy_directly_executable_under_original_hash_protocol": false
+    },
+    {
+      "name": "train_upscaler_trial.py",
+      "source_sha256": "ae0f5d0b185600ebc1b674977b1b338607aee5aab801a4ad4cd1e8e1b6710a71",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "existing_byte_identical_repository_paths": [
+        "experiments/h3_upscaler_trial_20261104/train_upscaler_trial.py"
+      ],
+      "new_copy_created": false
+    },
+    {
+      "name": "ultraflash_ewarp.py",
+      "source_sha256": "a9cc9147b2ff46ef2b62d3d5c0f6bb0567ad2b9eaa433a90a9b402ebb03db33d",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "existing_byte_identical_repository_paths": [
+        "experiments/h3_cmn_hybrid_20261105/ultraflash_ewarp.py",
+        "experiments/h3_cmn_upscaler_20261105/ultraflash_ewarp.py",
+        "experiments/h3_upscaler_ultraflash_20261104/ultraflash_ewarp.py"
+      ],
+      "new_copy_created": false
+    },
+    {
+      "name": "upscaler.py",
+      "source_sha256": "e54959b609c5732711fd8e87b5e6cbe4e80977379d988df175afa1c7745f4521",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "upstream_url": "https://raw.githubusercontent.com/NVlabs/Sana/781e8341fb3b29d3aea5d50265772e9619340b66/models/Open-H3-Regenerate-2K/open_h3/upscaler.py",
+      "new_copy_created": false,
+      "notice": "Retain upstream source notices and separately recorded licenses."
+    },
+    {
+      "name": "upscaler_node.py",
+      "source_sha256": "f5945b500ddb38afee23c377034bf15394ba64748511a7e9608953040c4be437",
+      "roles": [
+        "training",
+        "evaluation"
+      ],
+      "upstream_url": "https://raw.githubusercontent.com/NVlabs/Sana/781e8341fb3b29d3aea5d50265772e9619340b66/models/Open-H3-Regenerate-2K/open_h3/upscaler_node.py",
+      "new_copy_created": false,
+      "notice": "Retain upstream source notices and separately recorded licenses."
+    }
+  ],
+  "source_count": 67,
+  "source_instances_deduplicated": 94,
+  "warning": "Historical plans retain original source SHA values. Sanitized source snapshots are archival. Rebind deployment paths and public-source identities in a separate new plan before execution; no such rebound training run is claimed."
+}

@@ -1,5 +1,13 @@
 # Sol-H3 — 流式视频超分
 
+## H3 完整 226 帧有限数据实验（2026-11-08）
+
+[完整指标与结论](results/h3_production67_limiteddev_20261108/README.md) · [21 条完整视频](results/h3_production67_limiteddev_20261108/VIDEO_LINKS.md) · [纯推理 loader、配置与权重状态](weights/h3_limiteddev_20261108/README.md)
+
+Control 与 teacher 各完成 2000 步，按冻结规则保留 control step0、teacher step2000。完整 226 帧评价中，teacher 候选的 native-HR L1 上升 2.7611%，超过允许的 2%，所以质量守门 **FAILED**；LPIPS 下降 4.5083%，但 PSNR 下降、raw latent eWarp 上升，不能据此宣称整体画质改善。
+
+主视频按「因果研究候选 step2000（PROVISIONAL/FAILED）→ Open H3 原版双向 upsampler → 真实 native-HR GT」排列，并提供原生1080单路与同位置局部对比。所有视频226帧/24fps，技术检查通过；连续主观审片仍未完成。本轮仅2train/3dev，两个Wing窗口相关，未通过完整16dev或test。模型权重仅通过Release交付，不进入Git；实际资产与校验结果见权重说明。
+
 2026-11-06 19:48（北京时间）：**[正式规格纠正与当前训练进度](results/h3_production_geometry_progress_20261106/README.md)**。新一轮 teacher 蒸馏**尚未启动正式训练（0步）**；旧384→768数据准备已停止。目标已纠正为 LR `[1,24,67,44,80]` → HR `[1,24,67,68,120]`，最终1920×1080、226帧、24fps。新包记录已完成的分辨率诊断、CPU审查及尚待完成的实际运行与HR质量守门；下方六项对比仍为旧尺寸结果。
 
 2026-11-06：**[五版 H3 因果 upscaler 权重与加载说明](weights/h3_v5_20261106/README.md)**，对应零更新、50 步、旧 eWarp、v5 和 motion 的同片对比。权重通过 [GitHub Release](https://github.com/RedRoman/Tencent-streaming-sr/releases/tag/h3-v5-weights-20261106) 下载；保留原始 FP32 参数，并提供配置、原始/公开 SHA256 与 CPU 加载核验。
