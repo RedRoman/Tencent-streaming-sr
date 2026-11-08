@@ -2,6 +2,8 @@
 
 ## H3 完整 226 帧有限数据实验（2026-11-08）
 
+**[发布完成与远端验收](results/h3_production67_limiteddev_20261108/PUBLICATION_VERIFIED.md)**：代码、21条完整视频及完整推理权重已发布，27个Release资产大小与SHA通过核验。
+
 [完整指标与结论](results/h3_production67_limiteddev_20261108/README.md) · [21 条完整视频](results/h3_production67_limiteddev_20261108/VIDEO_LINKS.md) · [纯推理 loader、配置与权重状态](weights/h3_limiteddev_20261108/README.md)
 
 Control 与 teacher 各完成 2000 步，按冻结规则保留 control step0、teacher step2000。完整 226 帧评价中，teacher 候选的 native-HR L1 上升 2.7611%，超过允许的 2%，所以质量守门 **FAILED**；LPIPS 下降 4.5083%，但 PSNR 下降、raw latent eWarp 上升，不能据此宣称整体画质改善。
