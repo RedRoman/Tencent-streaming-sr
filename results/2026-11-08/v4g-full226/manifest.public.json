@@ -1,0 +1,792 @@
+{
+  "schema": "v4g-full226-public-1",
+  "date": "2026-11-08",
+  "stage": "real 226-frame / 67-latent full-length evaluation and video delivery",
+  "attempt": "full226_20261108_v1",
+  "hardware_class": "single Ascend 910B3 NPU (shared host, identity redacted)",
+  "redaction": {
+    "removed_fields": [
+      "device",
+      "ffprobe_excerpt",
+      "host",
+      "path",
+      "physical_npu",
+      "shared_host",
+      "source"
+    ],
+    "removed_string_patterns": [
+      "private host absolute path prefixes",
+      "host id",
+      "device id",
+      "account/user names",
+      "local session paths",
+      "private env var names"
+    ],
+    "kept": "all measured numbers, shapes, hashes of data files, and boundaries",
+    "not_published": [
+      "source video",
+      "v4g inference weights",
+      "full VAE / teacher weights",
+      "decoded uint8 RGB caches",
+      "raw ffmpeg logs containing input paths",
+      "private host paths and local working directories"
+    ],
+    "note": "path fields are replaced by redaction markers; data-file SHA256 values are kept so the published numbers can be checked against local receipts"
+  },
+  "identity": {
+    "checkpoint": {
+      "file": "v4g_final.pt",
+      "bytes": 1381240931,
+      "sha256": "049b4a8f0ae594b397f0543775a6ccfaccb24ce3c260990fda9c8ab0d9bffe33"
+    },
+    "source_video": {
+      "file": "VIDGEN_0429.mp4",
+      "bytes": 2710499,
+      "sha256": "aa52435623bc49ed27a191bf1ac9c05fd0a999c3366271f4291297fd2693d11c"
+    },
+    "worker_script_sha256": "85e643c6ca896859aa549f19db93de21ee028a5e49dfd66e8c6c5d601f028e0a",
+    "vae_verification_scope": "config SHA256 + weight sizes/mtimes; contents not hashed"
+  },
+  "source": {
+    "source_frames": 345,
+    "source_fps": "24/1",
+    "source_pixels": [
+      768,
+      1344
+    ],
+    "used_frames": 226,
+    "construction": "first 226 consecutive real frames; no padding, no loop, no reversal",
+    "distinct_lr_frame_sha256": 226,
+    "palindrome_matches": 0,
+    "lr_reader": {
+      "filter": "fps=24,scale=1920:1088:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1088,scale=1280:704:flags=area",
+      "requested_frames": 226,
+      "received_bytes": 610959360,
+      "expected_bytes": 610959360,
+      "exact_226_frames": true,
+      "fps_filter": {
+        "input_frames": 228,
+        "output_frames": 227,
+        "dropped_frames": 1,
+        "duplicated_frames": 0
+      },
+      "output_sync": "passthrough",
+      "external_tpad": false,
+      "external_loop": false,
+      "setpts_slowdown": false,
+      "returncode": 0
+    },
+    "hr_reader": {
+      "filter": "fps=24,scale=1920:1088:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1088",
+      "requested_frames": 226,
+      "received_bytes": 1416314880,
+      "expected_bytes": 1416314880,
+      "exact_226_frames": true,
+      "fps_filter": {
+        "input_frames": 228,
+        "output_frames": 227,
+        "dropped_frames": 1,
+        "duplicated_frames": 0
+      },
+      "output_sync": "passthrough",
+      "external_tpad": false,
+      "external_loop": false,
+      "setpts_slowdown": false,
+      "returncode": 0
+    }
+  },
+  "geometry": {
+    "real_pixel_frames": 226,
+    "latent_frames": 67,
+    "released_decoded_frames": 226,
+    "draft_shape": [
+      24,
+      67,
+      44,
+      80
+    ],
+    "reference_shape": [
+      24,
+      67,
+      68,
+      120
+    ],
+    "lr_pixels": [
+      704,
+      1280
+    ],
+    "hr_pixels": [
+      1088,
+      1920
+    ],
+    "fps": 24,
+    "exact_duration_seconds": 9.416666666666666
+  },
+  "evaluation": {
+    "all_passed": true,
+    "threshold": 0.01,
+    "gates": {
+      "future_cut_every_k": {
+        "passed": true
+      },
+      "prefix_consistency": {
+        "passed": true
+      },
+      "input_tail_swap": {
+        "passed": true
+      },
+      "streaming_real67": {
+        "passed": true
+      },
+      "stream_determinism": {
+        "passed": true
+      },
+      "state_machine": {
+        "passed": true
+      }
+    },
+    "gate_details": {
+      "future_cut_every_k": {
+        "num_cuts": 66,
+        "all_exact_zero": true,
+        "worst": {
+          "k": -1,
+          "max_abs": 0.0
+        },
+        "passed": true
+      },
+      "prefix_consistency": {
+        "prefixes": [
+          1,
+          2,
+          3,
+          5,
+          8,
+          13,
+          21,
+          34,
+          50,
+          66,
+          67
+        ],
+        "worst": {
+          "k": 21,
+          "max_abs": 0.0010257959365844727
+        },
+        "passed": true
+      },
+      "input_tail_swap": {
+        "shared_frames": 20,
+        "native_max_abs": 0.0,
+        "stream_max_abs": 0.0,
+        "stream_frames_consumed": [
+          67,
+          67
+        ],
+        "passed": true
+      },
+      "streaming_real67": {
+        "max_abs": 0.0006000250577926636,
+        "per_frame_max_abs": [
+          0.0005342960357666016,
+          0.00034040212631225586,
+          0.0003845691680908203,
+          0.0004856586456298828,
+          0.0004444122314453125,
+          0.00033861398696899414,
+          0.0004918575286865234,
+          0.00034248828887939453,
+          0.00037789344787597656,
+          0.00044155120849609375,
+          0.00030159950256347656,
+          0.00036716461181640625,
+          0.0003342628479003906,
+          0.0003294944763183594,
+          0.00039947032928466797,
+          0.0002917051315307617,
+          0.0003943443298339844,
+          0.00033092498779296875,
+          0.00044727325439453125,
+          0.00037980079650878906,
+          0.0003628730773925781,
+          0.0003933906555175781,
+          0.0004317760467529297,
+          0.0003800392150878906,
+          0.000396728515625,
+          0.00038254261016845703,
+          0.0004725456237792969,
+          0.00036334991455078125,
+          0.0003552436828613281,
+          0.0003790855407714844,
+          0.0003305673599243164,
+          0.0003808736801147461,
+          0.0003669261932373047,
+          0.0003433823585510254,
+          0.00041794776916503906,
+          0.00037154555320739746,
+          0.0003731846809387207,
+          0.00035858154296875,
+          0.00036406517028808594,
+          0.00041747093200683594,
+          0.0003520548343658447,
+          0.00039315223693847656,
+          0.00032722949981689453,
+          0.00042879581451416016,
+          0.00035828351974487305,
+          0.0004163980484008789,
+          0.00036787986755371094,
+          0.00043010711669921875,
+          0.0005161762237548828,
+          0.0003724098205566406,
+          0.00035065412521362305,
+          0.0004952847957611084,
+          0.0003682374954223633,
+          0.0006000250577926636,
+          0.0004652738571166992,
+          0.0003597736358642578,
+          0.0003514289855957031,
+          0.00041985511779785156,
+          0.00040602684020996094,
+          0.00034561753273010254,
+          0.0004075169563293457,
+          0.0003579258918762207,
+          0.0003618597984313965,
+          0.0004107952117919922,
+          0.0004209280014038086,
+          0.0003865957260131836,
+          0.00041125714778900146
+        ],
+        "per_frame_max_abs_top5": [
+          0.0006000250577926636,
+          0.0005342960357666016,
+          0.0005161762237548828,
+          0.0004952847957611084,
+          0.0004918575286865234
+        ],
+        "frame_argmax": 53,
+        "state": {
+          "processed_latent_frames": 67,
+          "cached_convolutions": 62,
+          "cache_bytes": 1756385280,
+          "cache_temporal_lengths": {
+            "conv_in": 2,
+            "in_blocks.0.in_layers.2": 2,
+            "in_blocks.0.out_layers.2": 2,
+            "in_blocks.1.dwconv": 4,
+            "in_blocks.2.in_layers.2": 2,
+            "in_blocks.2.out_layers.2": 2,
+            "in_blocks.3.in_layers.2": 2,
+            "in_blocks.3.out_layers.2": 2,
+            "in_blocks.4.dwconv": 4,
+            "in_blocks.5.in_layers.2": 2,
+            "in_blocks.5.out_layers.2": 2,
+            "in_blocks.6.in_layers.2": 2,
+            "in_blocks.6.out_layers.2": 2,
+            "in_blocks.7.dwconv": 4,
+            "in_blocks.8.in_layers.2": 2,
+            "in_blocks.8.out_layers.2": 2,
+            "in_blocks.9.in_layers.2": 2,
+            "in_blocks.9.out_layers.2": 2,
+            "in_blocks.10.dwconv": 4,
+            "in_blocks.11.in_layers.2": 2,
+            "in_blocks.11.out_layers.2": 2,
+            "in_blocks.12.in_layers.2": 2,
+            "in_blocks.12.out_layers.2": 2,
+            "in_blocks.13.dwconv": 4,
+            "in_blocks.14.in_layers.2": 2,
+            "in_blocks.14.out_layers.2": 2,
+            "in_blocks.15.in_layers.2": 2,
+            "in_blocks.15.out_layers.2": 2,
+            "in_blocks.16.dwconv": 4,
+            "in_blocks.17.in_layers.2": 2,
+            "in_blocks.17.out_layers.2": 2,
+            "out_blocks.0.in_layers.2": 2,
+            "out_blocks.0.out_layers.2": 2,
+            "out_blocks.1.dwconv": 4,
+            "out_blocks.2.in_layers.2": 2,
+            "out_blocks.2.out_layers.2": 2,
+            "out_blocks.3.in_layers.2": 2,
+            "out_blocks.3.out_layers.2": 2,
+            "out_blocks.4.dwconv": 4,
+            "out_blocks.5.in_layers.2": 2,
+            "out_blocks.5.out_layers.2": 2,
+            "out_blocks.6.in_layers.2": 2,
+            "out_blocks.6.out_layers.2": 2,
+            "out_blocks.7.dwconv": 4,
+            "out_blocks.8.in_layers.2": 2,
+            "out_blocks.8.out_layers.2": 2,
+            "out_blocks.9.in_layers.2": 2,
+            "out_blocks.9.out_layers.2": 2,
+            "out_blocks.10.dwconv": 4,
+            "out_blocks.11.in_layers.2": 2,
+            "out_blocks.11.out_layers.2": 2,
+            "out_blocks.12.in_layers.2": 2,
+            "out_blocks.12.out_layers.2": 2,
+            "out_blocks.13.dwconv": 4,
+            "out_blocks.14.in_layers.2": 2,
+            "out_blocks.14.out_layers.2": 2,
+            "out_blocks.15.in_layers.2": 2,
+            "out_blocks.15.out_layers.2": 2,
+            "out_blocks.16.dwconv": 4,
+            "out_blocks.17.in_layers.2": 2,
+            "out_blocks.17.out_layers.2": 2,
+            "conv_out": 2
+          }
+        },
+        "max_cache_temporal_len": 4,
+        "cache_len_ok": true,
+        "passed": true
+      },
+      "stream_determinism": {
+        "full67_rerun_max_abs": 0.0,
+        "prefix37_of_consumed67_vs_fresh37_max_abs": 0.0,
+        "frames_consumed": [
+          67,
+          67,
+          67,
+          37
+        ],
+        "passed": true
+      },
+      "state_machine": {
+        "reset_clears_cache": true,
+        "signature_mismatch_raises": true,
+        "frames_zero_after_reset": true,
+        "passed": true
+      }
+    },
+    "metrics": {
+      "stream_vs_teacher_per_frame_mse": [
+        0.04011160880327225,
+        0.04760490357875824,
+        0.06084363907575607,
+        0.07513662427663803,
+        0.09169759601354599,
+        0.03873167932033539,
+        0.0515439547598362,
+        0.09104295819997787,
+        0.09176645427942276,
+        0.10199852287769318,
+        0.03880057856440544,
+        0.05226965621113777,
+        0.06831791251897812,
+        0.07997245341539383,
+        0.11056514829397202,
+        0.036885250359773636,
+        0.050541941076517105,
+        0.06551055610179901,
+        0.07994896918535233,
+        0.10526387393474579,
+        0.03614884987473488,
+        0.05093592405319214,
+        0.06624346226453781,
+        0.08109965920448303,
+        0.10521609336137772,
+        0.03515685722231865,
+        0.05167558789253235,
+        0.06772392988204956,
+        0.08466506004333496,
+        0.11248637735843658,
+        0.03546871244907379,
+        0.05329335853457451,
+        0.06996618956327438,
+        0.08445707708597183,
+        0.10989771038293839,
+        0.03408464789390564,
+        0.04840969666838646,
+        0.06359802186489105,
+        0.07897879183292389,
+        0.106902115046978,
+        0.03535202145576477,
+        0.04975462704896927,
+        0.0653599426150322,
+        0.08038544654846191,
+        0.10477849096059799,
+        0.036020826548337936,
+        0.04818665608763695,
+        0.06361261755228043,
+        0.07848799973726273,
+        0.10433194041252136,
+        0.03552801534533501,
+        0.05012214183807373,
+        0.06740247458219528,
+        0.08185460418462753,
+        0.10558630526065826,
+        0.035253725945949554,
+        0.04967812821269035,
+        0.0666390135884285,
+        0.08252622187137604,
+        0.106744185090065,
+        0.03737260028719902,
+        0.05004142224788666,
+        0.0667993426322937,
+        0.08220646530389786,
+        0.10196565836668015,
+        0.03411412984132767,
+        0.043642763048410416
+      ],
+      "stream_vs_teacher_macro_mse": 0.06744343787431717,
+      "full_vs_teacher_per_frame_mse": [
+        0.04011178016662598,
+        0.047605227679014206,
+        0.060843996703624725,
+        0.07513697445392609,
+        0.09169798344373703,
+        0.03873162344098091,
+        0.05154392495751381,
+        0.09104283154010773,
+        0.09176632761955261,
+        0.1019984632730484,
+        0.038800593465566635,
+        0.05226975306868553,
+        0.06831789016723633,
+        0.07997220754623413,
+        0.11056466400623322,
+        0.0368853360414505,
+        0.050541914999485016,
+        0.06551041454076767,
+        0.07994869351387024,
+        0.10526351630687714,
+        0.03614867106080055,
+        0.05093579366803169,
+        0.06624341011047363,
+        0.08109952509403229,
+        0.10521573573350906,
+        0.03515668213367462,
+        0.05167528614401817,
+        0.06772357225418091,
+        0.08466451615095139,
+        0.1124856024980545,
+        0.035468410700559616,
+        0.05329305678606033,
+        0.06996599584817886,
+        0.08445662260055542,
+        0.10989724099636078,
+        0.03408452495932579,
+        0.04840961471199989,
+        0.06359793245792389,
+        0.07897868007421494,
+        0.10690177977085114,
+        0.03535185754299164,
+        0.04975466802716255,
+        0.06536004692316055,
+        0.08038538694381714,
+        0.10477863252162933,
+        0.03602097928524017,
+        0.04818680137395859,
+        0.06361260265111923,
+        0.07848809659481049,
+        0.10433240234851837,
+        0.03552825003862381,
+        0.05012252926826477,
+        0.06740302592515945,
+        0.08185509592294693,
+        0.10558681190013885,
+        0.03525405377149582,
+        0.0496785044670105,
+        0.0666394829750061,
+        0.08252646028995514,
+        0.10674439370632172,
+        0.037372879683971405,
+        0.05004177615046501,
+        0.06679937243461609,
+        0.08220604807138443,
+        0.10196521133184433,
+        0.034114256501197815,
+        0.043642714619636536
+      ],
+      "full_vs_teacher_macro_mse": 0.06744341552257538,
+      "noised_vs_teacher_per_frame_mse": [
+        0.04011178016662598,
+        0.047605227679014206,
+        0.060843996703624725,
+        0.07513697445392609,
+        0.09169798344373703,
+        0.03873162344098091,
+        0.05154392495751381,
+        0.09104283154010773,
+        0.09176632761955261,
+        0.1019984632730484,
+        0.038800593465566635,
+        0.05226975306868553,
+        0.06831789016723633,
+        0.07997220754623413,
+        0.11056466400623322,
+        0.0368853360414505,
+        0.050541914999485016,
+        0.06551041454076767,
+        0.07994869351387024,
+        0.10526351630687714,
+        0.03614867106080055,
+        0.05093579366803169,
+        0.06624341011047363,
+        0.08109952509403229,
+        0.10521573573350906,
+        0.03515668213367462,
+        0.05167528614401817,
+        0.06772357225418091,
+        0.08466451615095139,
+        0.1124856024980545,
+        0.035468410700559616,
+        0.05329305678606033,
+        0.06996599584817886,
+        0.08445662260055542,
+        1.1695468425750732,
+        1.1919341087341309,
+        1.4754142761230469,
+        1.6998127698898315,
+        1.8187344074249268,
+        1.936112403869629,
+        1.3854390382766724,
+        1.5450916290283203,
+        1.746551752090454,
+        1.8370000123977661,
+        1.9555491209030151,
+        1.3848234415054321,
+        1.5374647378921509,
+        1.7297195196151733,
+        1.8408994674682617,
+        1.958103895187378,
+        1.3664356470108032,
+        1.5311784744262695,
+        1.724687933921814,
+        1.8064533472061157,
+        1.9026312828063965,
+        1.3542084693908691,
+        1.4805153608322144,
+        1.7051752805709839,
+        1.8070114850997925,
+        1.9304574728012085,
+        1.3691929578781128,
+        1.5218396186828613,
+        1.709348201751709,
+        1.8372180461883545,
+        1.9387140274047852,
+        1.3752639293670654,
+        1.5224331617355347
+      ],
+      "noised_vs_teacher_macro_mse": 0.8419111371040344,
+      "stream_vs_full_max_abs": 0.0006000250577926636,
+      "stream_vs_full_mean_abs": 2.7877129468834028e-05,
+      "noised_past_prefix_max_abs": 0.0,
+      "full_vs_reference_macro_mse": 0.08758459240198135,
+      "teacher_vs_reference_macro_mse": 0.09774463623762131,
+      "primary_metric": {
+        "name": "full 67-latent (226-frame) v4g-vs-original-teacher macro MSE",
+        "value": 0.06744341552257538,
+        "note": "teacher is the restored original bidirectional upscaler, NOT ground truth; no PSNR/SSIM is reported"
+      }
+    },
+    "teacher_restored_verified": true,
+    "teacher_sd_sha256": "68210b78441a86f445525e622b601e08c5c6545815fc5dfa2b6639ed9ca96ae7",
+    "caveats": [
+      "latent-level causality only; whole-VAE decode is a separate offline batch stage",
+      "no true HR ground truth; reference is a VAE-encoded lanczos-upscaled HR",
+      "not an online VAE chain and not a real-time throughput measurement"
+    ]
+  },
+  "whole_vae_decode": {
+    "decoded_frames": 226,
+    "time_crop": "none (all 226 frames kept)",
+    "decoder": "released FP32 tiled AutoencoderKLMiniMaxH3",
+    "signals": {
+      "stream": {
+        "shape": [
+          226,
+          1088,
+          1920,
+          3
+        ],
+        "dtype": "uint8",
+        "sha256": "204a9c5e90ebfe9dfafd02ec94db51944b74517169de4c9f3ec72ce9f1516309",
+        "seconds": 172.062
+      },
+      "full": {
+        "shape": [
+          226,
+          1088,
+          1920,
+          3
+        ],
+        "dtype": "uint8",
+        "sha256": "21b68973eed2cf11f383029d3deedb5b2f3bac81a80d3d8e704cfe368ec01ddc",
+        "seconds": 172.266
+      },
+      "teacher": {
+        "shape": [
+          226,
+          1088,
+          1920,
+          3
+        ],
+        "dtype": "uint8",
+        "sha256": "7f6d09530d76e77cd040cd3e6ac3b7974206a1022b0f9faf90f8d990d54b6421",
+        "seconds": 172.061
+      },
+      "noised": {
+        "shape": [
+          226,
+          1088,
+          1920,
+          3
+        ],
+        "dtype": "uint8",
+        "sha256": "b1168854dd9f7880021b2e9231a69f18174bb33e6cfb3e67759668da675e7e98",
+        "seconds": 172.068
+      },
+      "reference": {
+        "shape": [
+          226,
+          1088,
+          1920,
+          3
+        ],
+        "dtype": "uint8",
+        "sha256": "3e11d28716e297b37912bea35ae8e4e815e2c51b6a3a61399d36ab17b550dcb3",
+        "seconds": 172.273
+      }
+    }
+  },
+  "pixel_diagnostics": {
+    "schema": "full226-pixel-diagnostics-v1",
+    "frames": 226,
+    "unit": "0-255 RGB MAE",
+    "reference": "VAE decode of VAE-encoded lanczos-upscaled HR latent; NOT ground truth",
+    "no_psnr_ssim": true,
+    "note": "diagnostic only; LR is a synthetic area downscale, no true LR/HR pair exists",
+    "stream_vs_reference_mean_mae": 5.350527158904099,
+    "full_vs_reference_mean_mae": 5.350473621374365,
+    "teacher_vs_reference_mean_mae": 4.514606004845476,
+    "noised_vs_reference_mean_mae": 38.13907113720361,
+    "stream_vs_full_mean_mae": 0.0036848712625260284,
+    "decoded_frame_checks": {
+      "frames_per_signal": 226,
+      "all_signals_same_length": true
+    }
+  },
+  "video": {
+    "remote_original": "full226_comparison_226f.mp4",
+    "h264_copy": "v4g_full226_comparison_h264.mp4",
+    "audit": {
+      "schema": "full226-video-audit-v1",
+      "passed": true,
+      "ffprobe_nb_frames": "226",
+      "decoded_frames": 226,
+      "expected_frames": 226,
+      "fps": 24,
+      "exact_duration_seconds": 9.416666666666666,
+      "ffprobe_duration": "9.416667",
+      "width": 2888,
+      "height": 1160,
+      "codec_name": "mpeg4",
+      "encoder": "mpeg4 q=2 (no libx264 on host)",
+      "full_decode_exit_code": 0,
+      "full_decode_stderr": "",
+      "sha256": "eeca414351c1986e80beea59a582f3be618250fb4b3616fa0be5facf96056ba5",
+      "bytes": 44486319,
+      "assemble_seconds": 83.848,
+      "panels": [
+        "stream",
+        "full",
+        "teacher",
+        "noised",
+        "error",
+        "reference"
+      ],
+      "caveats": [
+        "no pixel cut line: pointwise VAE temporal mapping unverified",
+        "error panel time axis is display-only approximate resampling 67->226",
+        "no human visual inspection is claimed"
+      ]
+    },
+    "local_acceptance": {
+      "checked_at_utc": "2026-11-08T12:12:37.254057+00:00",
+      "schema": "v4g-full226-local-media-acceptance-v1",
+      "expected_frames": 226,
+      "transcode_is_lossy": true,
+      "codecs": {
+        "original": "mpeg4 q=2 (host ffmpeg 4.2)",
+        "browser": "libx264 crf18"
+      },
+      "checks": {
+        "full226_comparison_226f.mp4": {
+          "bytes": 44486319,
+          "sha256": "eeca414351c1986e80beea59a582f3be618250fb4b3616fa0be5facf96056ba5",
+          "full_decode": {
+            "exit_code": 0,
+            "decoded_frames": 226,
+            "stderr": ""
+          }
+        },
+        "v4g_full226_comparison_h264.mp4": {
+          "bytes": 17713744,
+          "sha256": "c2df9466232cfc201a95340272df6a439f0971fc21bb1dd00cf63748c2a8a811",
+          "full_decode": {
+            "exit_code": 0,
+            "decoded_frames": 226,
+            "stderr": ""
+          }
+        }
+      },
+      "transcode_exit_code": 0,
+      "sampled_video_frame_indices": [
+        0,
+        113,
+        225
+      ],
+      "no_human_visual_inspection_claimed": true
+    }
+  },
+  "timings_seconds": {
+    "stage_sum": 1654.205,
+    "wall": 1660.479,
+    "by_stage": [
+      {
+        "stage": "strict_reader",
+        "seconds": 26.991
+      },
+      {
+        "stage": "vae_encode",
+        "seconds": 266.775
+      },
+      {
+        "stage": "latent_eval_67_real",
+        "seconds": 345.546
+      },
+      {
+        "stage": "whole_vae_decode_226",
+        "seconds": 880.006
+      },
+      {
+        "stage": "pixel_diagnostics",
+        "seconds": 49.034
+      },
+      {
+        "stage": "video_226f",
+        "seconds": 85.853
+      }
+    ],
+    "scope": "offline batch whole-VAE encode/decode; NOT real-time throughput"
+  },
+  "boundaries": [
+    "real 226 consecutive frames, NOT the 37+reversed-30 synthetic extension",
+    "whole-VAE offline batch encode/decode, NOT an online streaming VAE chain",
+    "no true HR ground truth; no PSNR/SSIM; pixel MAE is diagnostic only",
+    "no real-time throughput or latency claim",
+    "no human visual inspection of the video is claimed",
+    "frozen it1 reviewed package untouched; no training, no A/B arms",
+    "recorded before GitHub publication; the 120-frame v2 release 1f513c6 is not regenerated or republished"
+  ],
+  "local_delivery_notes": {
+    "remote_SHA256SUMS_txt_covers": "all 28 files in the remote attempt dir",
+    "locally_verified_files": 20,
+    "intentionally_not_downloaded": [
+      "decoded/*.npy (5 x 1.4 GB uint8 RGB caches)",
+      "latents226.pt (262 MB)",
+      "pair226.pt (75 MB)",
+      "launch.json"
+    ],
+    "reason": "large intermediate arrays kept on the shared host; not part of the playable delivery",
+    "local_SHA256SUMS": "covers the files actually delivered locally and verifies 17/17 OK"
+  }
+}
