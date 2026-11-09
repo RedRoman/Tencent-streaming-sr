@@ -1,10 +1,10 @@
 {
-  "as_of_utc": "2026-11-09T09:10:54.919459+00:00",
-  "stage": "TF200_complete_evaluation_admission_requested",
+  "as_of_utc": "2026-11-09T10:48:35.923325+00:00",
+  "stage": "TF200_first_full226_fidelity_failed_remaining_evaluation_pending",
   "verified_optimizer_updates_at_evidence_snapshot": 200,
   "target_updates": 200,
   "full_model_NPU_two_latent_gates": "passed",
-  "full67_inference_validated": false,
+  "full67_inference_validated": true,
   "full226_evaluation_complete": false,
   "visual_quality_passed": false,
   "decoder_strict_streaming_validated": false,
@@ -18,6 +18,33 @@
     200
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "v4 staged; admission requested; inspect actual gate results before claims",
-  "training_audit_passed": true
+  "evaluation_workers": "unchanged v4; step200 firstWingIt full67/full226 complete; continuation prioritizes dense reference and reuses completed results",
+  "training_audit_passed": true,
+  "full67_inference_scope": {
+    "checkpoint": 200,
+    "sample_id": "WingIt_dev_3586_3811",
+    "full_model": true,
+    "latent_shape": [
+      1,
+      24,
+      67,
+      68,
+      120
+    ],
+    "chunk_invariance_scope": "first4 latents, maxabs0",
+    "longer_than67_tested": false
+  },
+  "full226_completed_clip_count": 1,
+  "step200_first_clip_metric_ratios": {
+    "pixel_l1": 4.620512088645055,
+    "lpips": 5.604025592910683
+  },
+  "step200_visual_screening_rejected": true,
+  "continuous_visual_reviewed": false,
+  "full226_geometry_verified": [
+    226,
+    1080,
+    1920,
+    3
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "status": "rejected_by_sampled_frame_structure_fidelity",
+  "as_of_utc": "2026-11-09T10:47:13.260862+00:00",
+  "checkpoint_step": 200,
+  "checkpoint_sha256": "b1bd7d862dc98e12bebdd6ea58257fbfd069d8d5173f39bebef7290c2a382ab1",
+  "sample_id": "WingIt_dev_3586_3811",
+  "frames_zero_based": [
+    0,
+    75,
+    150,
+    225
+  ],
+  "comparison_columns": [
+    "TFstep200 streaming",
+    "frozen accepted upsampler, no refiner",
+    "actual nativeHR GT"
+  ],
+  "observation": "Severe character-shape and scene-detail drift plus ghosting/blur in step200 output relative to both no-refiner and true GT; e.g. head/face geometry already changes at frame0. Failure is visible in sampled frames, independent of pending aggregate metrics.",
+  "frozen_rule": "No new person/object/large structural drift",
+  "visual_quality_passed": false,
+  "continuous_visual_reviewed": false,
+  "review_scope": "human-visible sampled-frame image inspection by assistant, not continuous motion review",
+  "contactsheet_sha256": "a538f7728ef4992701437fccb4c8ab3b4276cf686df76b3d855cde043b09457d",
+  "full226_metrics_pending": false,
+  "promotion_to_self_generated_history_or_DMD": false,
+  "full226_ratios_vs_no_refiner": {
+    "pixel_l1": 4.620512088645055,
+    "lpips": 5.604025592910683
+  }
+}

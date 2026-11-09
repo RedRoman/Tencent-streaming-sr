@@ -1,0 +1,9 @@
+# First trained full67 streaming inference completed
+
+TF step200 completed all67 latents for `WingIt_dev_3586_3811`, retaining the exact frozen accepted upsampler, noise seed, geometry, no-text conditioning, known silence and released three-step sigma schedule. The saved float32 array is `[24,67,68,120]` (pipeline `[1,24,67,68,120]`), all finite, 52,485,248 bytes, SHA256 `871041cc3dbb216580e606a9a9d2674e997bafb49026fe6abf8a726eaa17b2c3`. A separate CPU full-payload check passed. The array is a private evaluation cache and is not uploaded.
+
+The full run used 268 model forwards plus one static initialization. Incremental caches retain static rows plus bounded sink/recent video K/V; no video history is recomputed. Cache payload grew from 4,005,478,400 to 6,930,022,400 bytes after the second latent and remained constant for the rest of the67-latent clip. The trained two-latent cache/future/reload gates passed, and a real first4-latent rerun using a different API chunk boundary matched exactly. This four-latent replay does not establish a full67 rerun equivalence claim. Longer-than67 streams remain untested.
+
+Steady per-latent latency averaged 59.59 seconds (latents2–66); first-latent latency excluding model load and gates was 20.27 seconds. Peak allocated NPU memory was 35,664,339,968 bytes. These timings include host paging and do not establish real-time throughput. Evaluation performed zero optimizer updates; training remains at200.
+
+At this snapshot, the official overlap VAE was decoding the full226-frame sequence for quantitative evaluation. Native-HR metrics, continuous visual review, original dense comparison, strict-streaming VAE acceptance and model selection are pending. No inference checkpoint is accepted or promoted to self-generated-history/DMD from this result alone.

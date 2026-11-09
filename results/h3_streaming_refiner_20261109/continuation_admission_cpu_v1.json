@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "CPU completed-result reuse admission, actual step200 two-latent report; no model inference",
+  "accepted_actual_step200_preflight": true,
+  "rejected_mutations": [
+    "wrong_checkpoint",
+    "wrong_clip",
+    "future_leak",
+    "future_condition_leak",
+    "short_diagnostic_claims_full67",
+    "missing_gate",
+    "nan_parity",
+    "changed_receipt_payload"
+  ],
+  "optimizer_updates": 0,
+  "new_accelerator_forwards": 0,
+  "source_sha256": "8fa1f964f5574757f170287be61eb02b44845c4fbc7488f79d76e7ef430091c3"
+}

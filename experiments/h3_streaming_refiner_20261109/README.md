@@ -1,10 +1,10 @@
 # Open H3 strict streaming refiner
 
-2026-11-09: full-model NPU cache/future/backward/reload gates passed and the 200-update Teacher Forcing pilot completed and passed the checkpoint audit. See the timestamped [status](../../results/h3_streaming_refiner_20261109/STATUS.json) and [v3 evidence](../../results/h3_streaming_refiner_20261109/NPU_GATE_PASS_V3.md). Full67/full226 and visual acceptance remain pending.
+2026-11-09: full-model NPU cache/future/backward/reload gates passed and the 200-update Teacher Forcing pilot completed and passed the checkpoint audit. See the timestamped [status](../../results/h3_streaming_refiner_20261109/STATUS.json) and [v3 evidence](../../results/h3_streaming_refiner_20261109/NPU_GATE_PASS_V3.md). The first step200 dev clip completed full67/full226 and failed fidelity: L1 4.621× and LPIPS 5.604× versus no-refiner, with severe sampled-frame structural drift. See the [negative result](../../results/h3_streaming_refiner_20261109/STEP200_NEGATIVE_RESULT.md).
 
 Frozen accepted upsampler: `h3_limiteddev_teacher_step2000_fp32.pt`, SHA256 `7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5`. Historical native-HR quality-guard failure remains recorded. This task does not substitute a newer training checkpoint.
 
-The production interface remains LR `[1,24,67,44,80]` to refiner input/output `[1,24,67,68,120]`, 226 frames / 24 fps, decoded 1920×1088 cropped y=4:1084 to 1080p. This milestone has **not** validated all 67 latent frames or the decoder.
+The production interface remains LR `[1,24,67,44,80]` to refiner input/output `[1,24,67,68,120]`, 226 frames / 24 fps, decoded 1920×1088 cropped y=4:1084 to 1080p. The first step200 dev clip has completed all 67 latent frames. Decoder and quality acceptance remain pending.
 
 ## Implementation
 
@@ -22,7 +22,7 @@ These public proxies have synthetic LR degradation. Caption embeddings for these
 - Actual released full-width block + Sharp: 645,973,248 parameters, six token rows on CPU; ordinary vs recomputed backward input/adapter gradients identical, future and cache error 0.
 - Tiny random H3: full 68×120 spatial input, two latents; runtime cache error 0, nonzero condition gradient, reload exact, stale-cache rejection, nonuniform positions.
 
-See [evidence](../../results/h3_streaming_refiner_20261109). These CPU tests have separate scopes. The v3 NPU evidence adds actual full-model two-latent checks; 67-latent, 226-frame and visual-quality passes remain pending. The large-block random-activation gradient norm is an operator diagnostic, not a training metric.
+See [evidence](../../results/h3_streaming_refiner_20261109). These CPU tests have separate scopes. The v3 NPU evidence adds actual full-model two-latent checks; the first full67 step200 clip is separately recorded in the current status. Full226 and visual-quality passes remain pending. The large-block random-activation gradient norm is an operator diagnostic, not a training metric.
 
 ## Run prerequisites
 
@@ -36,8 +36,14 @@ Next: recheck trained cache/chunking behavior and run held-out full226 native-HR
 
 `src/run_evaluation_batch.py` refuses incomplete training, verifies staged sources and five checkpoint hashes, then serially runs every fixed checkpoint on the three dev clips. `src/evaluate_streaming.py` rechecks the trained adapter cache/future/reload gates before full67 generation and verifies a four-latent chunk rerun plus cache bounds. `src/evaluate_dense_reference.py` uses all-video noisy timesteps and unmasked attention, with new adapters disabled; it checks against the upstream model forward before the full reference run. A tiny full-spatial CPU comparison is exact0; full33B NPU reference equivalence is still pending.
 
-`src/evaluate_pixels.py` decodes the exact226 frames with the frozen official overlap decoder and computes native-HR metrics, including fixed regions and temporal/ROI measures. This decoder is provisional for comparing refiner quality and does not establish a strict streaming pipeline. The batch records metric-passing candidates but never automatically marks visual acceptance or selects release weights. The worker manifest is `config/evaluation_workers_v4.json`; no full67 or pixel evaluation has yet completed.
+`src/evaluate_pixels.py` decodes the exact226 frames with the frozen official overlap decoder and computes native-HR metrics, including fixed regions and temporal/ROI measures. This decoder is provisional for comparing refiner quality and does not establish a strict streaming pipeline. The batch records metric-passing candidates but never automatically marks visual acceptance or selects release weights. The worker manifest is `config/evaluation_workers_v4.json`; the first step200 full67 inference has completed; the first full226 evaluation is complete and failed fidelity.
 
 Evaluation v4 first checks all five saved adapters (latest first) on two full-spatial latent frames, including separate future-video and future-draft perturbations. These gates-only runs are labeled explicitly and are not full67/full226 results. The full metric evaluation order remains 0/50/100/150/200. Disk array shapes and batch-inclusive pipeline shapes are recorded separately; initialization latency is included in the first-latent timing.
 
 The [completed TF pilot audit](../../results/h3_streaming_refiner_20261109/TF_PILOT_COMPLETE.md) verifies all 200 real updates and five checkpoints. Training completion is separate from inference correctness and quality acceptance.
+
+## Prioritized preview and continuation
+
+The first dev clip at TF step200 completed all67 latents with 268 forwards, stable cache after the second latent, and an exact four-latent chunk replay. See [full67 evidence](../../results/h3_streaming_refiner_20261109/STEP200_FULL67.md). The requested interim preview uses step200 / no-refiner / actual native-HR columns; the final selected-streaming / released-dense / actual-GT comparison is still required.
+
+`src/run_priority_preview.py` uses the unchanged v4 workers and explicit checkpoint SHA. `src/encode_preview_cpu.py` verifies source RGB, encodes all226 frames, checks every PTS and performs a complete decode audit; this is distinct from continuous visual review. The bounded CPU postprocessor starts no accelerator job. `src/run_evaluation_continuation.py` requires exited/reaped predecessors, verifies completed receipts and payloads, reuses five short preflights plus the completed preview, and preserves the interrupted partial step0. It prioritizes the dense reference clip before the remaining frozen cohort. Quality thresholds, held-out samples and selection remain unchanged; continuation is prepared for the remaining cohort after the preview launcher exits and resource admission succeeds.
