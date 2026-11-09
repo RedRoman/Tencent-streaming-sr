@@ -1,0 +1,8 @@
+Modular Diffusers is currently an experimental feature under active development. The API is subject to breaking changes in future releases.
+Traceback (most recent call last):
+  File "<EXPERIMENT>/stages/long_cpu_v1/check_long_stream_cpu.py", line 112, in <module>
+    main()
+  File "<EXPERIMENT>/stages/long_cpu_v1/check_long_stream_cpu.py", line 83, in main
+    err=float((got-selected).abs().max());assert err==0
+                                          ^^^^^^^^^^^^^
+AssertionError

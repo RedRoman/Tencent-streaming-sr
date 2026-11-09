@@ -14,7 +14,7 @@ The production interface remains LR `[1,24,67,44,80]` to refiner input/output `[
 
 `src/train_pilot.py` contains the gated 200-step Teacher Forcing pilot. It uses two existing paired native-HR clips (Charge/Caminandes), 67 absolute latent positions, full 68×120 spatial latents, and bounded clean-history windows. These windows are recomputed after optimizer updates and are explicitly **truncated training context**, not incremental inference. Native-HR flow matching is combined with draft x0 preservation. Original sigma schedule, quality gates, dev splits and negative results are retained. All 200 optimizer updates completed; no test-set access or DMD run has occurred.
 
-These public proxies have synthetic LR degradation. Caption embeddings for these pairs are unavailable, so the initial engineering pilot explicitly omits text and uses known full-duration encoded silence. It does not reuse another clip's caption or pretend a zero tensor is an encoded empty prompt. Production text conditioning remains unvalidated. The native dense reference has now completed the first full67 latent clip after an exact full-model two-latent upstream gate; see the current status for pixel completion.
+These public proxies have synthetic LR degradation. Caption embeddings for these pairs are unavailable, so the initial engineering pilot explicitly omits text and uses known full-duration encoded silence. It does not reuse another clip's caption or pretend a zero tensor is an encoded empty prompt. Production text conditioning remains unvalidated. The native dense reference completed its first full67/full226 clip after an exact full-model two-latent upstream gate. It also failed the first-clip fidelity metrics; see the current status.
 
 ## Validation scope
 
@@ -22,7 +22,7 @@ These public proxies have synthetic LR degradation. Caption embeddings for these
 - Actual released full-width block + Sharp: 645,973,248 parameters, six token rows on CPU; ordinary vs recomputed backward input/adapter gradients identical, future and cache error 0.
 - Tiny random H3: full 68×120 spatial input, two latents; runtime cache error 0, nonzero condition gradient, reload exact, stale-cache rejection, nonuniform positions.
 
-See [evidence](../../results/h3_streaming_refiner_20261109). These CPU tests have separate scopes. The v3 NPU evidence adds actual full-model two-latent checks; the first full67 step200 clip is separately recorded in the current status. Full226 and visual-quality passes remain pending. The large-block random-activation gradient norm is an operator diagnostic, not a training metric.
+See [evidence](../../results/h3_streaming_refiner_20261109). These CPU tests have separate scopes. The v3 NPU evidence adds actual full-model two-latent checks; the first full67 step200 clip is separately recorded in the current status. The frozen full226 cohort and visual-quality acceptance remain pending. The large-block random-activation gradient norm is an operator diagnostic, not a training metric.
 
 ## Run prerequisites
 
@@ -53,3 +53,7 @@ The first dev clip at TF step200 completed all67 latents with 268 forwards, stab
 `src/run_evaluation_continuation_v2.py` verifies both immutable worker manifests and permits only the pinned dense worker change. It requires all predecessor children to be reaped, revalidates completed latent/RGB payload hashes, and reuses the five preflights plus the first streaming and native-dense previews. `--admission-only` checks reuse on CPU without starting any model worker. The remaining cohort and quality gates are unchanged. Optional resident-layer count changes paging only; every streaming job still repeats the real cache, future-video, future-condition, reload and chunk gates. Failure stops the finite batch. No device waiter or automatic training promotion is added.
 
 `src/encode_dense_comparison_cpu.py` creates the interim step200 (rejected) / released bidirectional / actual-GT video only from verified completed results. It audits all226 frames and timestamps at24fps. The prior no-refiner video remains the ablation. Neither video is a selected-model or strict-decoder acceptance claim.
+
+## CPU long-index diagnostic
+
+[137-latent CPU evidence](../../results/h3_streaming_refiner_20261109/LONG_STREAM_CPU_V2.md) exercises the actual cache kernel on small synthetic rows and verifies full-spatial positions/noise across the67-latent boundary. Observed parity and future errors are0 and the synthetic cache stays bounded. The first test-reference rounding failure and its correction are preserved. This does not validate the full33B model beyond67 latents or the strict streaming decoder.

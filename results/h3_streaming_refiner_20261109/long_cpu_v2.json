@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "scope": "137-frame synthetic attention with5 spatial rows; full68x120 released position-layout and noise boundary checks; CPU only",
+  "frames": 137,
+  "kernel_offline_incremental_max_abs": 0.0,
+  "kernel_future_max_abs": 0.0,
+  "cache_bytes_after_two_frames": 2176,
+  "cache_bytes_final": 2176,
+  "current_only_K_projection_rows": 692,
+  "full_prefix_reprojection_observed": false,
+  "duplicate_final_frame_rejected": true,
+  "position_errors_by_text_rows": {
+    "0": 0.0,
+    "9": 0.0
+  },
+  "position_oracle": "released build_packed_sequence, direct zero-text and9text layouts; exact comparison, no tolerance relaxation",
+  "absolute_temporal_positions": {
+    "0": {
+      "0": 0.0,
+      "1": 1.6666666666666667,
+      "4": 21.666666666666668,
+      "5": 28.333333333333336,
+      "6": 30.000000000000004,
+      "65": 368.33333333333354,
+      "66": 370.0000000000002,
+      "67": 376.6666666666669,
+      "68": 383.3333333333336,
+      "133": 751.6666666666658,
+      "134": 758.3333333333325,
+      "135": 764.9999999999991,
+      "136": 766.6666666666657
+    },
+    "9": {
+      "0": 9.0,
+      "1": 10.666666666666666,
+      "4": 30.666666666666668,
+      "5": 37.333333333333336,
+      "6": 39.0,
+      "65": 377.33333333333354,
+      "66": 379.0000000000002,
+      "67": 385.6666666666669,
+      "68": 392.3333333333336,
+      "133": 760.6666666666658,
+      "134": 767.3333333333325,
+      "135": 773.9999999999991,
+      "136": 775.6666666666657
+    }
+  },
+  "noise_sha256_by_absolute_frame": {
+    "0": "74e20a248d89fca03b532f85329c5e7af3830f86432170f6e7646035e8244cc1",
+    "66": "cb448afa25fefa8947b7ef24d4dc16cc744b7eba6c7a2a7a56e61e864ca38c44",
+    "67": "3eb4267b64f16bbecc9ee5b5c77095df11293dfe795f813ae34f22a17e495ce8",
+    "68": "a6501d5f2ec7b80e5b2ae174aa0b9606e972121ca8bfbe7739f07bee1897715f",
+    "133": "deb9d92955d58ab77ee390cecb035d3714fb4022058fb9fc218fc21afda0cd85",
+    "134": "6d48a8718dd0d6a9152764cc96a6ad1bac0486b14c5ea74ddd83f426578dae12",
+    "136": "4e6e3d14da980a7ab6d2d27119a7628e5043ad18ab058f5b3a489d452949e277"
+  },
+  "noise_arrival_order_exact": true,
+  "full33B_longstream_validated": false,
+  "full_spatial_attention_longstream_validated": false,
+  "strict_decoder_validated": false,
+  "optimizer_updates": 0,
+  "new_accelerator_forwards": 0,
+  "source_sha256": "fe1ad92529469eed13bb3e338f2cd10bf25736a5a8c2f38cf9c57ac6c7f9b063",
+  "runtime_source_sha256": {
+    "causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f"
+  },
+  "seconds": 0.494143009185791
+}
