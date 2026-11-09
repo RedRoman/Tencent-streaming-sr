@@ -61,3 +61,7 @@ results/   实验元数据（config / metrics / summary，196 个 run）
 代码跑在 ModelArts 30778（昇腾 910B3），**每个 shell 必须先 `source solh3_env.sh`**，
 否则所有算子报 CANN 561103。脚本末尾的 `free(): invalid pointer` / SIGABRT
 是 CPython 退出噪声，不是失败。详见 HANDOFF 第 3 节。
+
+## 2026-11-09: strict streaming Open H3 refiner implementation
+
+[Independent experiment](experiments/h3_streaming_refiner_20261109/README.md): incremental K/V, per-latent causal attention, frozen accepted upsampler, and a gated 200-step native-HR Teacher Forcing pilot. CPU kernel, real-block backward, and full-spatial tiny-model tests are recorded. **0 optimizer updates; full-model NPU checks and video quality evaluation remain pending because device admission was blocked.**

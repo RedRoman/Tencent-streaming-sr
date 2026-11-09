@@ -1,0 +1,22 @@
+# Open H3 streaming refiner — 2026-11-09
+
+Independent task. Do not mutate upstream delivery state, frozen experiment files, or old training/automation. No subagents. The accepted upsampler is frozen at the released teacher step2000 model SHA 7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5; the ongoing LPIPS0.1 run is outside scope. Historical native-HR guard failure remains true.
+
+## Contract and first pilot
+LR [1,24,67,44,80] → frozen upsampler → refiner [1,24,67,68,120]. 226 frames at 24 fps; decode 1920×1088 and crop y=4:1084. Public native-HR clips with synthetic LR degradation are engineering proxies, not identical to private production distribution. Train on existing Charge and Caminandes pairs, dev on existing two WingIt windows and ElephantsDream; never unlock test. Exact payload lineage must be checked before use.
+
+Keep released refiner base + merged 312-target LoRA (refiner EMA + LightX2V Turbo + LMS Sharp), all 50 Sharp curves, released three-step sigmas [0.909375, 0.8571428571428571, 0.6666666666666666, 0]. BF16 base with original FP32 islands. Add rank-8 attention LoRA and zero-initialized clean-draft projection. No ControlNet branch in initial pilot.
+
+Strictly causal per latent: static text/silence cannot attend video; video attends static, sink, recent history, current latent spatial tokens only. Absolute temporal positions persist across calls. Static cache keyed by conditioning and timestep; clean-history cache is separate from noisy queries and updated only after each latent is finalized. No previous video hidden states are recomputed during inference. Bounded sink/recent retention. Training may recompute a bounded clean-history context after each optimizer update because parameters changed; label this honestly, not incremental inference.
+
+First implement offline same-mask reference and incremental cache with explicit immutable call context (checkpoint backward must not read mutated cache). Verify future perturbation, chunking invariance, RoPE positions, static isolation, finite/nonzero gradients, strict checkpoint reload and adapter invariance. A single current latent has full 68×120 spatial shape; short diagnostic sequences are not 67-latent/226-frame validation.
+
+Teacher Forcing pilot: 200 optimizer updates, paired native-HR clean histories and noisy current HR targets, direct clean frozen-upsampled condition. Use flow matching plus explicit draft preservation; teacher outputs never become GT. Cycle actual release sigma points and positions. New noise fixed by sample ID/absolute latent index/seed. Full 67-latent inference retains 3 steps. Save step0 and every50; predeclare evaluation, keep negative results. Proceed to self-generated history only after pilot diagnostics and held-out review.
+
+## Frozen quality gates before pilot
+Full evaluation compares selected streaming refiner, released bidirectional refiner with same frozen upsampler/noise/prompt/geometry, and real native-HR GT; no-refiner ablation retained. Relative to no-refiner native-HR baseline, equal-clip L1 and LPIPS must not regress >2%; per-clip regressions and temporal delta reported separately. No new person/object/large structural drift in actual continuous visual review. Technical video audit is separate. Step0 is eligible. Pilot cannot claim generalization or real-time throughput. A decoder remains unverified until strict stream/long-stream, boundaries, output geometry, future perturbation and cache bounds are tested.
+
+## Resource and publication
+Fresh npu-smi and process identity plus simultaneous nonblocking flock on all three per-card paths required throughout new NPU jobs. Never kill others. CPU-offload is permissible if frozen 33B base cannot fit; measure transfer cost and activation peak. Only one owned launcher, no duplicate waiter. New code/evidence/config in this directory; separate codex branch for GitHub publication. Strip private paths/secrets including encoded URLs; retain source/public SHA mapping. No optimizer/RNG/cache uploads. Release assets for selected inference weights and complete video.
+
+Pilot conditioning decision: the two native-HR pairs do not include caption embeddings, and available cached captions belong to other clips (even first embeddings differ). Use an explicit zero-length/no-text stream for the first engineering pilot, known preencoded silence, and clean draft. This is NOT a verified production text-prompt configuration. Conditioned evaluation must declare this; do not splice unrelated captions or call zero tensors an encoded empty prompt.

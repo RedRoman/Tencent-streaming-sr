@@ -1,0 +1,54 @@
+{
+  "schema": "streaming-refiner-pilot-v2",
+  "steps": 200,
+  "lr": 0.0001,
+  "rank": 8,
+  "resident_layers": 24,
+  "strict_per_latent": true,
+  "history": {
+    "sink": 1,
+    "recent": 1,
+    "train": "truncated clean teacher forcing at absolute positions; reset context per optimizer step",
+    "inference": "incremental finalized-clean per-layer KV"
+  },
+  "sigmas": [
+    0.909375,
+    0.8571428571428571,
+    0.6666666666666666,
+    0.0
+  ],
+  "condition": "explicit_no_text_and_full226_known_silence",
+  "loss": "nativeHR flow matching MSE + 0.05 draft x0 L1",
+  "nativeHR_target": true,
+  "quality": {
+    "L1_max_relative": 1.02,
+    "LPIPS_max_relative": 1.02,
+    "structural_drift_visual_allowed": false
+  },
+  "gates": {
+    "cache_relative_rms": 0.005,
+    "cache_max_abs": 0.03,
+    "future_max_abs": 0,
+    "reload_max_abs": 0
+  },
+  "precision": "BF16 frozen base; original FP32 islands; FP32 trainables/Euler; HF32 off",
+  "test_unlocked": false,
+  "source_revisions": {
+    "SolarWM": "0193da07e44def7abd661c5f623ea352cec2722b",
+    "Sana_sol_engine": "1e3c9c27ce56ca03b203cff9f63bed225a1599cd",
+    "OpenH3_used_source": "781e8341fb3b29d3aea5d50265772e9619340b66",
+    "OpenH3_weights": "50c09cf1df5f9262b9279868c1c666bd5fe3476b"
+  },
+  "new_sources": {
+    "src/causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "src/check_real_block_cpu.py": "e84757154851a40387ea9521d10575400065cf0dc35fb6ab6ab5799dc9899b69",
+    "src/paged_runtime.py": "65557d91e7d021520d2c001c7f7d7dbb37dfb7353d135e09ef0fc0b73354074a",
+    "src/pin_assets_cpu.py": "891c3ce04ca0837b12a2b46061c4c41a70b24f138cd972e29b1b25de15c73657",
+    "src/prepare_pairs.py": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
+    "src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "src/streaming_refiner.py": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",
+    "src/test_causal_attention.py": "f77d103e955e8365ea1f3b21b9f5f5ae1acba06703ebe7f48c3b2a5536e99883",
+    "src/test_runtime_cpu.py": "1d0d32759aa71d01bd56efe5c4f4d4bfb7714b1cd29df9917f6938735222406b",
+    "src/train_pilot.py": "0f9fd6202ae13e53ccc4e8ec6c6f7468adfaa7c1574fadec9ca064f3c83c1cbf"
+  }
+}
