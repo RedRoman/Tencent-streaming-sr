@@ -61,3 +61,7 @@ The first dev clip at TF step200 completed all67 latents with 268 forwards, stab
 ## Strict streaming decoder candidate
 
 `src/strict_streaming_decoder.py` and the independent `stages/strict_decoder_v1` implement a candidate using CPU-backed per-layer KV with bounded shared-slot refresh. The frozen FP32 convention and1080p crop are retained; no fitted pixel compensation or compiled kernels are enabled. The candidate passed the [random small-model CPU checks](../../results/h3_streaming_refiner_20261109/STRICT_DECODER_CPU_V1.md), including137 latent positions and one full-spatial1080p output. Full pretrained NPU execution, fidelity and visual acceptance remain pending. This candidate is not used by the running fixed evaluation cohort.
+
+## First-clip checkpoint comparison
+
+The untrained causal step0 now completed all67 latents and226 frames, with exact first4 chunk replay, and failed fidelity: L1 is6.209x and LPIPS5.938x the no-refiner baseline. TF200 improves both metrics relative to step0 on this one clip but remains well outside the frozen quality gate. Four sampled rows show severe semantic substitutions at step0 and persistent distortion at step200. The [partial comparison](../../results/h3_streaming_refiner_20261109/WINGIT_CHECKPOINT_COMPARISON_V1.md) preserves the full metrics and auxiliary five-column video. The fixed dev cohort is still running; no checkpoint has been accepted or promoted to SF/DMD.

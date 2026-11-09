@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-11-09T12:22:15.049255+00:00",
+  "as_of_utc": "2026-11-09T13:22:49.841009+00:00",
   "stage": "native_dense_full226_complete_metric_failure_remaining_frozen_cohort_running",
   "verified_optimizer_updates_at_evidence_snapshot": 200,
   "target_updates": 200,
@@ -34,7 +34,7 @@
     "chunk_invariance_scope": "first4 latents, maxabs0",
     "longer_than67_tested": false
   },
-  "full226_completed_clip_count": 2,
+  "full226_completed_clip_count": 3,
   "step200_first_clip_metric_ratios": {
     "pixel_l1": 4.620512088645055,
     "lpips": 5.604025592910683
@@ -48,7 +48,7 @@
     3
   ],
   "step200_video_technical_audit": "full226 passed",
-  "full226_completed_clip_count_definition": "arm/clip results: step200 WingIt plus native dense same WingIt; one unique clip",
+  "full226_completed_clip_count_definition": "arm/clip results: step0, step200 and native dense on the same firstWingIt; one unique clip",
   "dense_reference_preflight_historical": {
     "status": "failed",
     "max_abs": 0.2541511058807373,
@@ -72,11 +72,12 @@
   },
   "continuation_v2": {
     "full_reuse_CPU_admission": "passed10 verified receipts",
-    "remaining_arm_clip_jobs": 16,
+    "remaining_arm_clip_jobs": 15,
     "streaming_resident_layers": 40,
     "paging_only_change_each_job_repeats_gates": true,
     "no_accepted_refiner": true,
-    "new_optimizer_updates": 0
+    "new_optimizer_updates": 0,
+    "active_arm_clip": "step0 ElephantsDream_dev_13070_13295"
   },
   "three_column_interim_video": {
     "complete226": true,
@@ -115,5 +116,26 @@
     "report": "STRICT_DECODER_CPU_V1.md",
     "original_public_source_and_license_retained": true,
     "full_model_refiner_long_stream": "still_pending"
+  },
+  "step0_first_clip_metric_ratios": {
+    "pixel_l1": 6.208725297765126,
+    "lpips": 5.938128860517555
+  },
+  "step0_first_clip_visual_sampled_rejected": true,
+  "partial_checkpoint_comparison": "WINGIT_CHECKPOINT_COMPARISON_V1.md",
+  "auxiliary_checkpoint_video": {
+    "columns": [
+      "stream_step0_failed",
+      "stream_step200_failed",
+      "released_bidirectional",
+      "no_refiner",
+      "actual_GT"
+    ],
+    "full226": true,
+    "fps": 24,
+    "technical_audit": "passed; all PTS and full decode",
+    "sha256": "fe8692360060e03aa026b4df89d7ef7c0b4b06740bd1c8842c960ec59e088f7d",
+    "continuous_visual_reviewed": false,
+    "selected_refiner": null
   }
 }

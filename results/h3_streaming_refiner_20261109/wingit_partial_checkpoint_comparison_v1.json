@@ -1,0 +1,70 @@
+{
+  "status": "one_dev_clip_partial_checkpoint_comparison_negative",
+  "sample_id": "WingIt_dev_3586_3811",
+  "rows": {
+    "stream_step0": {
+      "pixel_l1": 0.13361371321752008,
+      "lpips": 0.6327393273864172,
+      "psnr_db": 14.594711530059993,
+      "delta_l1": 0.06491508206557726,
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 6.208725297765126,
+        "lpips": 5.938128860517555
+      },
+      "receipt_sha256": "0617fcf439868141f16e883c1b71fbae68a1b438387b57cff814af99d5a2a98b"
+    },
+    "stream_step200": {
+      "pixel_l1": 0.09943486746829168,
+      "lpips": 0.5971388408040579,
+      "psnr_db": 16.86543183823607,
+      "delta_l1": 0.039285262937174534,
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 4.620512088645055,
+        "lpips": 5.604025592910683
+      },
+      "receipt_sha256": "1af2befb4ec8b2fbd1f5dad20f5c949a3838334d8405c6caf19f718211e5b176"
+    },
+    "released_bidirectional": {
+      "pixel_l1": 0.06098728206635049,
+      "lpips": 0.34293601483897823,
+      "psnr_db": 19.49639507313512,
+      "delta_l1": 0.0339056585896184,
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 2.833940258743118,
+        "lpips": 3.2183841890114944
+      },
+      "receipt_sha256": "858139e59fe61b83e01ede1208d6852e370fd9e933d801219d12be41ac6e4dd0"
+    },
+    "no_refiner": {
+      "pixel_l1": 0.02152031323814814,
+      "lpips": 0.10655533792698278,
+      "psnr_db": 27.72829259995797,
+      "delta_l1": 0.01659603923696358
+    }
+  },
+  "TF200_relative_reduction_from_step0": {
+    "pixel_l1": 0.2558034271047166,
+    "lpips": 0.05626406490238267
+  },
+  "all_measured_refiner_arms_above_1p02_ratio": true,
+  "fixed_full_cohort_complete": false,
+  "selected_refiner": null,
+  "SF_DMD_promotion": false,
+  "training_updates_completed": 200,
+  "new_training_updates": 0,
+  "continuous_visual_reviewed": false,
+  "interpretation": "On this one clip, TF200 improves L1/LPIPS over causal step0, but both fail versus no-refiner. No full-dev generalization or causal failure-source inference.",
+  "step0_runtime": {
+    "model_forwards_full67": 268,
+    "extra_static_forward": 1,
+    "steady_latency_mean_seconds_latents2_to66": 53.80922435980577,
+    "cache_bytes": 6930022400,
+    "peak_allocated_bytes": 56719139840,
+    "residency_layers": 40,
+    "chunk_parity_first4": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "latency_comparison_to_TF200": "not controlled: prior TF200 used24 resident layers; no checkpoint speedup claim"
+  }
+}

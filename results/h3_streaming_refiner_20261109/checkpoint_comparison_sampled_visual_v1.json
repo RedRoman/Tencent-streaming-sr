@@ -1,0 +1,20 @@
+{
+  "status": "sampled_frame_fidelity_rejected",
+  "sample_id": "WingIt_dev_3586_3811",
+  "frame_indices_zero_based": [
+    0,
+    75,
+    150,
+    225
+  ],
+  "contactsheet_sha256": "d2ac22fed6cbfccdac7038dbfe94c38ccc568ce7d1b93f26abf755d49f52ffba",
+  "scope": "assistant inspection of four sampled frame rows; not continuous motion review",
+  "step0_observation": "Large semantic and structural substitutions: the animated scene becomes a garage-like interior with vehicles and human figures in sampled frames. It does not preserve the native-HR characters/scene.",
+  "step200_observation": "Some coarse orange/character-like shapes return, but severe shape drift, smearing and ghosting remain.",
+  "dense_observation": "Broad character/scene structure remains closer to true GT than either streamed checkpoint, while measurable texture/detail changes remain.",
+  "no_refiner_observation": "Closest of these measured outputs to true nativeHR on the fixed metrics; this does not erase the frozen upsampler historical quality-guard failure.",
+  "step0_visual_quality_passed": false,
+  "step200_visual_quality_passed": false,
+  "continuous_visual_reviewed": false,
+  "accepted_refiner": null
+}

@@ -1,0 +1,106 @@
+{
+  "status": "full226_auxiliary_video_technical_audit_passed",
+  "source_sha256": "5dab47507a5aa053dfa45365847493c77fcf256e205b3bbff584043021c46a9f",
+  "encoder_helper_sha256": "64515a05d162cbc68c99ffaa1ca95821417ff14d8db37451f37267390f25672f",
+  "columns": [
+    "Streaming TF0 | failed",
+    "Streaming TF200 | failed",
+    "Released bidirectional",
+    "Frozen upsampler | no refiner",
+    "Actual native-HR GT"
+  ],
+  "sample_id": "WingIt_dev_3586_3811",
+  "frames": 226,
+  "fps": 24,
+  "input_RGB": [
+    {
+      "path": "visible_RGB.npy",
+      "sha256": "166c8ebdef216048a539df961b0e279d455fe727cdebe1fd0ba9c9f3139a090d",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "visible_RGB.npy",
+      "sha256": "f7b7573264256c28b1b215d199b118782f5c7261b6dfc142180d14314fc766fa",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "visible_RGB.npy",
+      "sha256": "cd7cd19165ce6010e9b593650401646e821f252c7a1ef5750fecdeee64d3fc2c",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "teacher_student_RGB.npy",
+      "bytes": 1405900928,
+      "sha256": "6dca486d86df699161eca8413749194a16a095db2ceb2762e1e26813726a77fc"
+    },
+    {
+      "path": "native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+    }
+  ],
+  "pixel_receipts": [
+    {
+      "path": "result.json",
+      "sha256": "0617fcf439868141f16e883c1b71fbae68a1b438387b57cff814af99d5a2a98b"
+    },
+    {
+      "path": "result.json",
+      "sha256": "1af2befb4ec8b2fbd1f5dad20f5c949a3838334d8405c6caf19f718211e5b176"
+    },
+    {
+      "path": "result.json",
+      "sha256": "858139e59fe61b83e01ede1208d6852e370fd9e933d801219d12be41ac6e4dd0"
+    }
+  ],
+  "data_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "files": {
+    "video": {
+      "path": "checkpoint0_200_dense_ablation_gt.mp4",
+      "sha256": "fe8692360060e03aa026b4df89d7ef7c0b4b06740bd1c8842c960ec59e088f7d",
+      "bytes": 6664619,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 272,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "contactsheet": {
+      "path": "contactsheet.jpg",
+      "sha256": "d2ac22fed6cbfccdac7038dbfe94c38ccc568ce7d1b93f26abf755d49f52ffba"
+    }
+  },
+  "contactsheet_frame_indices": [
+    0,
+    75,
+    150,
+    225
+  ],
+  "continuous_visual_reviewed": false,
+  "metrics_use_lossless_RGB": true,
+  "accepted_refiner": null,
+  "strict_decoder_validated": false,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0,
+  "seconds": 67.5296266078949
+}
