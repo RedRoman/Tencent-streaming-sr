@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-09T14:54:24.987467+00:00",
+  "as_of_utc": "2026-11-09T15:31:51.427795+00:00",
   "stage": "TF3000_continuation_running_real_optimizer_updates",
-  "verified_optimizer_updates_at_evidence_snapshot": 206,
+  "verified_optimizer_updates_at_evidence_snapshot": 328,
   "target_updates": 3000,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
@@ -15,7 +15,8 @@
     50,
     100,
     150,
-    200
+    200,
+    300
   ],
   "dev_payloads_CPU_verified": 3,
   "evaluation_workers": "short-pilot continuation intentionally stopped/reaped after thirdWingIt full67; remaining grid deferred; prioritized TF3000 now running",
@@ -187,7 +188,7 @@
   "TF_extension_3000": {
     "resume_from_step": 200,
     "target_total_real_optimizer_updates": 3000,
-    "new_training_updates_so_far": 6,
+    "new_training_updates_so_far": 128,
     "optimizer_restored": true,
     "CPU_resume_integrity_passed": true,
     "NPU_training_launched": true,
@@ -203,15 +204,20 @@
       2000,
       3000
     ],
-    "total_training_updates_at_snapshot": 206,
+    "total_training_updates_at_snapshot": 328,
     "real_full_model_resume_gates": "passed; cache/future/condition_future/reload exact0; real backward finite/nonzero",
     "new_update_gradients_finite_nonzero": true,
-    "running": true
+    "running": true,
+    "latest_verified_saved_step": 300,
+    "first_new_checkpoint_CPU_audit": "TF3000_step0300_CPU_audit_v1.json"
   },
   "step0_third_WingIt": {
     "full67_complete": true,
     "first4_chunk_parity_max_abs": 0,
     "full226_deferred": true,
     "latent_receipt": "step0000_thirdwingit_full67.json"
-  }
+  },
+  "step0_identity_guaranteed": false,
+  "strict_zero_regression_guaranteed": false,
+  "identity_scope_report": "TF3000_STEP300_AND_IDENTITY_SCOPE_V1.md"
 }

@@ -1,0 +1,49 @@
+{
+  "step": 300,
+  "parameter_tensors": 401,
+  "parameter_elements": 20586496,
+  "all_optimizer_steps_match": true,
+  "all_moments_finite": true,
+  "optimizer_configuration_preserved": true,
+  "parameter_order_sha256": "45671f8d6b98b2e65b88c9eab796bf6da3f5d263caa319f6e9c0ce5982ee1a7a",
+  "observed_at_utc": "2026-11-09T15:32:37.856146+00:00",
+  "status": "passed",
+  "scope": "Read-only CPU audit of the first complete TF3000 continuation checkpoint; not an NPU restore or quality evaluation",
+  "checkpoint_receipt": {
+    "step": 300,
+    "adapter_sha256": "74aa991fa8838393b2767636f449cc4ab02f1cee60bbc2024aa38caadff885e0",
+    "private_optimizer_sha256": "4cda247861251dcbe43348190604741dcfe4fe22fdb95d6d8fe92c808a5f4638",
+    "adapter_bytes": 82478252,
+    "private_optimizer_bytes": 165061202,
+    "private_state_CPU_tensors": true,
+    "inference_weights_accepted": false
+  },
+  "checkpoint_receipt_sha256": "b3a9200c8c35cc607dbd84a2597977e7723590d62a4f76156ad4a3c40add4942",
+  "new_real_updates_recorded": 100,
+  "new_optimizer_updates_by_this_audit": 0,
+  "checkpoint_next_schedule": {
+    "sample_index": 0,
+    "latent_index": 4,
+    "history": [
+      0,
+      3
+    ],
+    "frames": [
+      0,
+      3,
+      4
+    ],
+    "sigma": 0.909375,
+    "noise_seed": 20261111
+  },
+  "saved_CPU_and_NPU_RNG_as_CPU_uint8": true,
+  "parameter_names_match": true,
+  "all_401_trainable_tensors_changed_since_step200": true,
+  "max_parameter_delta_since_step200": 0.005981107708066702,
+  "all100_event_schedules_match": true,
+  "all100_losses_finite": true,
+  "all100_gradients_finite_nonzero": true,
+  "torch_npu_imported": false,
+  "new_NPU_jobs": 0,
+  "inference_model_accepted": false
+}

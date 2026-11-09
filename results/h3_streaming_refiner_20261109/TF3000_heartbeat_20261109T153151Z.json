@@ -1,0 +1,88 @@
+{
+  "observed_at_utc": "2026-11-09T15:31:51.427795+00:00",
+  "optimizer_updates": 328,
+  "new_optimizer_updates": 128,
+  "contiguous_real_updates_since200": true,
+  "all_new_gradients_finite_nonzero": true,
+  "all_new_losses_finite": true,
+  "latest_optimizer_event": {
+    "event": "optimizer_update",
+    "elapsed_seconds": 2482.386089324951,
+    "optimizer_updates": 328,
+    "new_optimizer_updates": 128,
+    "step": 328,
+    "sample": "Caminandes3_train_168_393",
+    "latent_index": 24,
+    "history": [
+      0,
+      23
+    ],
+    "sigma": 0.8571428571428571,
+    "noise_seed": 20261111,
+    "fm": 0.11139407753944397,
+    "draft_l1": 0.21107536554336548,
+    "loss": 0.12194784730672836,
+    "grad_norm": 0.25156259536743164,
+    "peak_allocated_bytes": 38889340416
+  },
+  "status": {
+    "status": "TF_training",
+    "optimizer_updates": 328,
+    "new_optimizer_updates": 128,
+    "target": 3000,
+    "last_loss": 0.12194784730672836,
+    "updated_unix": 1794238306.7992089,
+    "selected_refiner": null
+  },
+  "saved_checkpoint_files": [
+    {
+      "name": "adapter_step0300.pt",
+      "bytes": 82478252
+    },
+    {
+      "name": "checkpoint_step0300.json",
+      "bytes": 349
+    },
+    {
+      "name": "private_resume_step0300.pt",
+      "bytes": 165061202
+    }
+  ],
+  "checkpoint_events": [
+    {
+      "event": "checkpoint_saved",
+      "elapsed_seconds": 1959.7863502502441,
+      "optimizer_updates": 300,
+      "new_optimizer_updates": 100,
+      "step": 300,
+      "adapter_sha256": "74aa991fa8838393b2767636f449cc4ab02f1cee60bbc2024aa38caadff885e0",
+      "private_optimizer_sha256": "4cda247861251dcbe43348190604741dcfe4fe22fdb95d6d8fe92c808a5f4638",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    }
+  ],
+  "latest_log_age_seconds": 4.63335657119751,
+  "new_jobs_started": 0,
+  "processes": {
+    "339297": {
+      "present": true,
+      "stat_fields_state_parent_pgrp": [
+        "S",
+        "1",
+        "339297"
+      ]
+    },
+    "339430": {
+      "present": true,
+      "stat_fields_state_parent_pgrp": [
+        "R",
+        "339297",
+        "339430"
+      ]
+    }
+  },
+  "launch_status": "running",
+  "all_three_kernel_FLOCK_owners_verified": true
+}

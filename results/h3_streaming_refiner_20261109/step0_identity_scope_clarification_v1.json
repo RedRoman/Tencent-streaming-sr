@@ -1,0 +1,15 @@
+{
+  "discussion": "User asked whether step0 should exactly reproduce v5 step1800 and training should not degrade the baseline.",
+  "current_step0_identity_guaranteed": false,
+  "reason": "Zero-initialized new LoRA and draft projection do not bypass the frozen refiner; the stream still mixes draft with noise, uses causal attention and executes three denoising steps.",
+  "frozen_current_upsampler_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "v5_step1800_sha256": "c7aaaa396d877a84c3fed2a5536189b7ed5e61226a82ef1a9e6be1e831f7f914",
+  "these_are_distinct_checkpoints": true,
+  "zero_regression_guaranteed": false,
+  "historical_metric_tolerance": 0.02,
+  "historical_tolerance_is_not_zero_regression": true,
+  "current_run_modified": false,
+  "baseline_switched": false,
+  "identity_preserving_design_implemented": false,
+  "new_optimizer_updates": 0
+}

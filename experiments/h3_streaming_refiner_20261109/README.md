@@ -8,6 +8,8 @@ Frozen accepted upsampler: `h3_limiteddev_teacher_step2000_fp32.pt`, SHA256 `7b9
 
 The production interface remains LR `[1,24,67,44,80]` to refiner input/output `[1,24,67,68,120]`, 226 frames / 24 fps, decoded 1920×1088 cropped y=4:1084 to 1080p. The first step200 dev clip has completed all 67 latent frames. Decoder and quality acceptance remain pending.
 
+Initialization limitation: the current step0 refiner is **not an identity mapping** of the upsampler output. Zero new adapters do not disable noisy three-step denoising. The frozen teacher step2000 and v5 step1800 are distinct checkpoints, and the historical 2% metric allowance is not strict zero regression. See the [first continuation checkpoint audit and identity scope](../../results/h3_streaming_refiner_20261109/TF3000_STEP300_AND_IDENTITY_SCOPE_V1.md).
+
 ## Implementation
 
 `src/causal_attention.py` implements strict per-latent attention and bounded detached K/V. Static text/audio cannot read video; video sees static, first-frame sink, previous frame, and current spatial rows. Global positions use H3's nonuniform temporal RoPE. `src/streaming_refiner.py` accepts arbitrary user chunk boundaries and fixes noise by absolute latent position. Each latent uses the original three denoising steps **plus one clean cache-write forward**. Old video activations are not recomputed during streamed inference. Host paging is not a real-time performance claim.
