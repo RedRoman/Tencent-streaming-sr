@@ -69,3 +69,5 @@ results/   实验元数据（config / metrics / summary，196 个 run）
 Latest refiner status: [full-model NPU parity failure, before optimizer updates](results/h3_streaming_refiner_20261109/NPU_GATE_FAILURE_V2.md). Actual two-pair full67 inputs are prepared; cause diagnosis and the200-step pilot remain pending. Earlier CPU tests do not override this failure.
 
 Open H3 refiner update (2026-11-09): [full-model NPU gates passed and real TF updates started](results/h3_streaming_refiner_20261109/NPU_GATE_PASS_V3.md). Full67/full226 and quality acceptance remain pending.
+
+Open H3 refiner milestone: [200 real TF updates completed and all five adapters audited](results/h3_streaming_refiner_20261109/TF_PILOT_COMPLETE.md). Full67/full226 and strict-decoder quality acceptance remain pending.

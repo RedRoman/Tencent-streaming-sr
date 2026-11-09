@@ -40,6 +40,13 @@ def main():
                   '--data-manifest',a.data_manifest,'--data-manifest-sha',source['dev_manifest_sha256']]
     pixel_results=[]
     try:
+        # Fail early on learned-cache regressions before spending hours on
+        # full-sequence untrained baselines. The metric/selection order stays
+        # unchanged. These short diagnostics are never counted as full67 runs.
+        for step in reversed(policy['checkpoints']):
+            run('evaluate_streaming.py',common+['--checkpoint',str(train/f'adapter_step{step:04d}.pt'),
+                '--checkpoint-sha',checkpoint_hashes[step],'--sample-id',policy['dev'][0],'--gates-only'],
+                out/f'preflight_step{step:04d}')
         for step in policy['checkpoints']:
             for sid in policy['dev']:
                 stem=f'step{step:04d}_{sid}'

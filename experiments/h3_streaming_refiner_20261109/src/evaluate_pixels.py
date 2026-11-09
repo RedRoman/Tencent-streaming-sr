@@ -40,6 +40,7 @@ def main():
         torch.npu.conv.allow_hf32=False;torch.npu.matmul.allow_hf32=False;torch.set_float32_matmul_precision('highest')
         z=np.load(checked(pred['output']),allow_pickle=False)
         assert z.shape==(24,67,68,120) and z.dtype==np.float32 and np.isfinite(z).all()
+        assert list(z.shape)==pred['output']['shape'] and pred['pipeline_shape']==[1,24,67,68,120]
         native=torch.from_numpy(np.load(checked(rec['rgb']['native_hr']),allow_pickle=False))
         decoded_hr=torch.from_numpy(np.load(checked(rec['rgb']['decoded_hr']),allow_pickle=False))
         vae=load_video_vae(plan['base_model'],device)

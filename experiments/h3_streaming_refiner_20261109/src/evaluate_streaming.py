@@ -22,6 +22,7 @@ def main():
     for n in ('root','data-manifest','data-manifest-sha','checkpoint','checkpoint-sha','protocol','output','sample-id','assets-manifest','assets-manifest-sha'):
         p.add_argument('--'+n,required=True)
     p.add_argument('--resident',type=int,default=24)
+    p.add_argument('--gates-only',action='store_true')
     a=p.parse_args();out=Path(a.output);out.mkdir(parents=True,exist_ok=False);started=time.time()
     def log(event,**v):
         row={'event':event,'elapsed_seconds':time.time()-started,**v}
@@ -64,13 +65,24 @@ def main():
             changed=x.clone();changed[:,1:]*=-3
             future=compare(rt.offline(changed,draft[:,:2],condition,[0,1],sigma,return_full=True)[:,:1],past)
             assert future['max_abs']==0,future
+            changed_draft=draft[:,:2].clone();changed_draft[:,1:]*=-5
+            condition_future=compare(rt.offline(x,changed_draft,condition,[0,1],sigma,return_full=True)[:,:1],past)
+            assert condition_future['max_abs']==0,condition_future
             rt.load_adapter(checkpoint['adapter'])
             reload=compare(rt.offline(x,draft[:,:2],condition,[0,1],sigma),offline)
             assert reload['max_abs']==0,reload
-        write('trained_gates.json',{'cache_parity':parity,'future':future,'reload':reload,'checkpoint_sha256':a.checkpoint_sha})
-        log('trained_gates_passed',cache_parity=parity,future=future,reload=reload)
-        del offline,streamed,past,x,changed,checkpoint
+        write('trained_gates.json',{'cache_parity':parity,'future':future,'condition_future':condition_future,'reload':reload,'checkpoint_sha256':a.checkpoint_sha})
+        log('trained_gates_passed',cache_parity=parity,future=future,condition_future=condition_future,reload=reload)
+        if a.gates_only:
+            write('result.json',{'status':'two_latent_gates_only_passed','sample_id':a.sample_id,
+                  'checkpoint_sha256':a.checkpoint_sha,'training_step':training_step,
+                  'gates':{'cache_parity':parity,'future':future,'condition_future':condition_future,'reload':reload},
+                  'full67_inference_complete':False,'full226_pixels_complete':False,'optimizer_updates':0})
+            return
+        del offline,streamed,past,x,changed,changed_draft,checkpoint
+        initialization_start=time.time()
         runner=StreamingRefiner(rt,condition,sample_id=a.sample_id)
+        torch.npu.synchronize();initialization_seconds=time.time()-initialization_start
         values=[];audits=[];latencies=[]
         for i in range(67):
             start=time.time();z=runner.push(draft[None,:,i:i+1]);torch.npu.synchronize()
@@ -89,9 +101,10 @@ def main():
         assert chunk['max_abs']==0,chunk
         write('result.json',{'status':'full67_latent_inference_complete_pixels_pending','sample_id':a.sample_id,
               'checkpoint_sha256':a.checkpoint_sha,'training_step':training_step,
-              'output':{'path':str(path),'sha256':sha(path),'shape':list(result.shape)},
+              'output':{'path':str(path),'sha256':sha(path),'shape':list(result[0].shape)},'pipeline_shape':list(result.shape),
               'trained_gates_passed':True,'chunk_invariance_first4':chunk,'cache_bytes_trace':[v['cache_bytes'] for v in audits],
               'per_latent_seconds':latencies,'model_forwards_full67':268,'static_initialization_forwards_extra':1,
+              'static_initialization_seconds':initialization_seconds,'time_to_first_latent_seconds_excluding_model_load_and_gates':initialization_seconds+latencies[0],
               'peak_allocated_bytes':torch.npu.max_memory_allocated(),'actual_test_optimizer_updates':0,
               'full226_pixels_complete':False,'visual_quality_passed':False,'decoder_streaming_validated':False,
               'longer_than67_tested':False,'data_manifest_sha256':a.data_manifest_sha,'protocol_sha256':sha(a.protocol)})

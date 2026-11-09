@@ -1,0 +1,101 @@
+{
+  "status": "real200_update_TF_pilot_complete_evaluation_pending",
+  "optimizer_updates": 200,
+  "audit_source_sha256": "4aff52e1332e9526339436be15ada91627ee3349644c4d2f14fe16e450a773e9",
+  "training_event_sha256": "9988b0ba4997b45f115eb6a1a29a0faefedfa3166b4dec184f32922c06dc7a58",
+  "config_sha256": "96a50dfecbe062a7c4be943a6438eb2c8030ab70b7955fa401ae1a087341780d",
+  "source_hashes_verified": true,
+  "parent_exit_code": 0,
+  "child_reaped": true,
+  "all200_gradients_finite_nonzero": true,
+  "samples": {
+    "Caminandes3_train_168_393": {
+      "updates": 100,
+      "absolute_latents_covered": 67,
+      "sigma_counts": {
+        "0.909375": 34,
+        "0.8571428571428571": 33,
+        "0.6666666666666666": 33
+      }
+    },
+    "Charge_train_3856_4081": {
+      "updates": 100,
+      "absolute_latents_covered": 67,
+      "sigma_counts": {
+        "0.909375": 34,
+        "0.8571428571428571": 33,
+        "0.6666666666666666": 33
+      }
+    }
+  },
+  "checkpoints": [
+    {
+      "step": 0,
+      "filename": "adapter_step0000.pt",
+      "sha256": "a6b28df41737f71af1cec734291fb2a21cc3032d181d4ad4997440bfce8a267c",
+      "bytes": 82478252,
+      "tensor_count": 401,
+      "parameters": 20586496,
+      "all_FP32_finite": true,
+      "changed_tensors_from_step0": 0,
+      "parameter_delta_l2_from_step0": 0.0,
+      "condition_weight_l2": 0.0
+    },
+    {
+      "step": 50,
+      "filename": "adapter_step0050.pt",
+      "sha256": "e2272acd89c5b492bab492a75f44d69f043069136d7adeed0e12486acabf7a45",
+      "bytes": 82478252,
+      "tensor_count": 401,
+      "parameters": 20586496,
+      "all_FP32_finite": true,
+      "changed_tensors_from_step0": 401,
+      "parameter_delta_l2_from_step0": 8.961204184810532,
+      "condition_weight_l2": 0.617032527923584
+    },
+    {
+      "step": 100,
+      "filename": "adapter_step0100.pt",
+      "sha256": "0440d1a4ad848dbd6b60d9925bf7aef8e68a6dcf73790c59ea53a7a180708ab8",
+      "bytes": 82478252,
+      "tensor_count": 401,
+      "parameters": 20586496,
+      "all_FP32_finite": true,
+      "changed_tensors_from_step0": 401,
+      "parameter_delta_l2_from_step0": 11.39150743544884,
+      "condition_weight_l2": 0.7302393317222595
+    },
+    {
+      "step": 150,
+      "filename": "adapter_step0150.pt",
+      "sha256": "58d10ca2031f95d6ab584506493a074c9382147f72a02e54fc2e2997d482a486",
+      "bytes": 82478252,
+      "tensor_count": 401,
+      "parameters": 20586496,
+      "all_FP32_finite": true,
+      "changed_tensors_from_step0": 401,
+      "parameter_delta_l2_from_step0": 12.663085260638605,
+      "condition_weight_l2": 0.8244773745536804
+    },
+    {
+      "step": 200,
+      "filename": "adapter_step0200.pt",
+      "sha256": "b1bd7d862dc98e12bebdd6ea58257fbfd069d8d5173f39bebef7290c2a382ab1",
+      "bytes": 82478252,
+      "tensor_count": 401,
+      "parameters": 20586496,
+      "all_FP32_finite": true,
+      "changed_tensors_from_step0": 401,
+      "parameter_delta_l2_from_step0": 13.58545318765319,
+      "condition_weight_l2": 0.9187735319137573
+    }
+  ],
+  "elapsed_training_seconds": 4106.324504375458,
+  "max_allocated_NPU_bytes": 38889340416,
+  "full67_inference_validated": false,
+  "full226_evaluation_complete": false,
+  "visual_quality_passed": false,
+  "strict_decoder_validated": false,
+  "optimizer_or_RNG_loaded": false,
+  "nativeHR_guard": "not_yet_evaluated"
+}

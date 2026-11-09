@@ -107,7 +107,7 @@ def main():
         with path.open('xb') as f:np.save(f,x.cpu().numpy(),allow_pickle=False)
         (out/'result.json').write_text(json.dumps({'status':'full67_latent_inference_complete_pixels_pending','arm':'released_dense_refiner',
             'sample_id':a.sample_id,'training_step':None,'checkpoint_sha256':None,'trained_streaming_adapter_loaded':False,
-            'output':{'path':str(path),'sha256':sha(path),'shape':[1,24,67,68,120]},'data_manifest_sha256':a.data_manifest_sha,
+            'output':{'path':str(path),'sha256':sha(path),'shape':[24,67,68,120]},'pipeline_shape':[1,24,67,68,120],'data_manifest_sha256':a.data_manifest_sha,
             'protocol_sha256':sha(a.protocol),'optimizer_updates':0,'model_forwards':3,'peak_allocated_bytes':torch.npu.max_memory_allocated(),
             'same_draft_noise_condition_sigmas':True,'full226_pixels_complete':False,'visual_quality_passed':False},indent=2)+'\n')
     except BaseException as e:
