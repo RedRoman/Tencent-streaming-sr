@@ -1,72 +1,46 @@
 {
-  "prepare_pairs.py": {
+  "src/prepare_pairs.py": {
     "source_sha256": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
-    "public_sha256": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
-    "transformation": "none; private runtime paths are CLI arguments"
+    "public_sha256": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9"
   },
-  "check_real_block_cpu.py": {
+  "src/check_real_block_cpu.py": {
     "source_sha256": "e84757154851a40387ea9521d10575400065cf0dc35fb6ab6ab5799dc9899b69",
-    "public_sha256": "e84757154851a40387ea9521d10575400065cf0dc35fb6ab6ab5799dc9899b69",
-    "transformation": "none; private runtime paths are CLI arguments"
+    "public_sha256": "e84757154851a40387ea9521d10575400065cf0dc35fb6ab6ab5799dc9899b69"
   },
-  "causal_attention.py": {
+  "src/causal_attention.py": {
     "source_sha256": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
-    "public_sha256": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
-    "transformation": "none; private runtime paths are CLI arguments"
+    "public_sha256": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f"
   },
-  "test_causal_attention.py": {
-    "source_sha256": "f77d103e955e8365ea1f3b21b9f5f5ae1acba06703ebe7f48c3b2a5536e99883",
-    "public_sha256": "f77d103e955e8365ea1f3b21b9f5f5ae1acba06703ebe7f48c3b2a5536e99883",
-    "transformation": "none; private runtime paths are CLI arguments"
-  },
-  "test_runtime_cpu.py": {
-    "source_sha256": "1d0d32759aa71d01bd56efe5c4f4d4bfb7714b1cd29df9917f6938735222406b",
-    "public_sha256": "1d0d32759aa71d01bd56efe5c4f4d4bfb7714b1cd29df9917f6938735222406b",
-    "transformation": "none; private runtime paths are CLI arguments"
-  },
-  "train_pilot.py": {
-    "source_sha256": "0f9fd6202ae13e53ccc4e8ec6c6f7468adfaa7c1574fadec9ca064f3c83c1cbf",
-    "public_sha256": "0f9fd6202ae13e53ccc4e8ec6c6f7468adfaa7c1574fadec9ca064f3c83c1cbf",
-    "transformation": "none; private runtime paths are CLI arguments"
-  },
-  "paged_runtime.py": {
-    "source_sha256": "65557d91e7d021520d2c001c7f7d7dbb37dfb7353d135e09ef0fc0b73354074a",
-    "public_sha256": "65557d91e7d021520d2c001c7f7d7dbb37dfb7353d135e09ef0fc0b73354074a",
-    "transformation": "none; private runtime paths are CLI arguments"
-  },
-  "pin_assets_cpu.py": {
-    "source_sha256": "891c3ce04ca0837b12a2b46061c4c41a70b24f138cd972e29b1b25de15c73657",
-    "public_sha256": "891c3ce04ca0837b12a2b46061c4c41a70b24f138cd972e29b1b25de15c73657",
-    "transformation": "none; private runtime paths are CLI arguments"
-  },
-  "streaming_refiner.py": {
-    "source_sha256": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",
-    "public_sha256": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",
-    "transformation": "none; private runtime paths are CLI arguments"
-  },
-  "run_locked.py": {
-    "source_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
-    "public_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
-    "transformation": "none; private runtime paths are CLI arguments"
-  },
-  "asset_sha256.json": {
-    "source_sha256": "952809cf39214edc76e4a3b1f6c35576e2d86254a9add753cbe24ddc35f6264d",
-    "public_sha256": "b0bfb6ba2eafa8e0acb2deaa3c6831e069bb53aa79a76d1cd64052dfaa617954",
-    "transformation": "remove local filesystem inode and mtime metadata; retain exact bytes/SHA"
-  },
-  "diagnose_parity.py": {
+  "src/diagnose_parity.py": {
     "source_sha256": "3a525b8344241d7adb098c72a97a502773fa99d8450b9b57288b49eaa2db30ea",
-    "public_sha256": "3a525b8344241d7adb098c72a97a502773fa99d8450b9b57288b49eaa2db30ea",
-    "transformation": "none"
+    "public_sha256": "3a525b8344241d7adb098c72a97a502773fa99d8450b9b57288b49eaa2db30ea"
   },
-  "evaluation_v1.json": {
-    "source_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
-    "public_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
-    "transformation": "none"
+  "src/test_causal_attention.py": {
+    "source_sha256": "f77d103e955e8365ea1f3b21b9f5f5ae1acba06703ebe7f48c3b2a5536e99883",
+    "public_sha256": "f77d103e955e8365ea1f3b21b9f5f5ae1acba06703ebe7f48c3b2a5536e99883"
   },
-  "pilot_v2_failure.json": {
-    "source_sha256": "3caefdbe50fe21df1904417e8c7515b8e705b8229585621d98f8cbf2cfb4f685",
-    "public_sha256": "2dbfa000a0d87d01d8b0a252b6b05e3a7501159c5be09ad107377f29d07da94d",
-    "transformation": "remove private stack paths; add actual parity values/gates and diagnosis status"
+  "src/test_runtime_cpu.py": {
+    "source_sha256": "d29f3ba5f37dc3a712c194652afce007d5cb543e9c70df1c50448e8896aac376",
+    "public_sha256": "d29f3ba5f37dc3a712c194652afce007d5cb543e9c70df1c50448e8896aac376"
+  },
+  "src/train_pilot.py": {
+    "source_sha256": "e01f636f45f756742109e3b1da53d91beb7721075300dfa5fb6be4285375fa79",
+    "public_sha256": "e01f636f45f756742109e3b1da53d91beb7721075300dfa5fb6be4285375fa79"
+  },
+  "src/paged_runtime.py": {
+    "source_sha256": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "public_sha256": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f"
+  },
+  "src/pin_assets_cpu.py": {
+    "source_sha256": "891c3ce04ca0837b12a2b46061c4c41a70b24f138cd972e29b1b25de15c73657",
+    "public_sha256": "891c3ce04ca0837b12a2b46061c4c41a70b24f138cd972e29b1b25de15c73657"
+  },
+  "src/streaming_refiner.py": {
+    "source_sha256": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",
+    "public_sha256": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141"
+  },
+  "src/run_locked.py": {
+    "source_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "public_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6"
   }
 }

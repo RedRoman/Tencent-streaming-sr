@@ -5,7 +5,7 @@ from types import SimpleNamespace
 import json,torch
 from torch import nn
 from diffusers import MiniMaxH3Transformer3DModel
-from paged_runtime import Runtime,AdapterLinear
+from paged_runtime import Runtime,AdapterLinear,canonicalize
 from causal_attention import CausalAttention
 
 torch.set_num_threads(4);torch.manual_seed(9)
@@ -18,7 +18,7 @@ r.host={};r.processors=[];r.layer_params=[]
 for i,block in enumerate(r.model.transformer_blocks):
     for path in ('attn.to_q','attn.to_k','attn.to_v','attn.to_out.0'):
         parent,key=path.rsplit('.',1);setattr(block.get_submodule(parent),key,AdapterLinear(block.get_submodule(path),2))
-    proc=CausalAttention(chunk_size=256);block.attn.set_processor(proc);r.processors.append(proc)
+    proc=CausalAttention(chunk_size=256);block.attn.set_processor(proc);r.processors.append(proc);canonicalize(block,proc)
     r.layer_params.append(tuple(p for p in block.parameters() if p.requires_grad))
     r.host[i]=[(m,k,p.detach()) for m in block.modules() for k,p in m._parameters.items() if p is not None and not p.requires_grad]
     r.host[i]+=[(m,k,b.detach()) for m in block.modules() for k,b in m._buffers.items() if b is not None]

@@ -47,7 +47,7 @@ try:
     assert sha(data/'conditioning.pt')==manifest['condition_sha256']
     samples=[torch.load(row['path'],map_location='cpu',weights_only=True) for row in manifest['samples']]
     condition=torch.load(str(data/'conditioning.pt'),map_location='cpu',weights_only=True)
-    rt=Runtime(args.root,resident=args.resident,log=log)
+    rt=Runtime(args.root,resident=args.resident,canonical_rows=config.get("canonical_rows",False),log=log)
     sigma=.909375;s=samples[0];draft=s['upscaled'];hr=s['reference']
     noise=position_noise((24,1,68,120),s['sample_id'],1,999)
     noisy=(1-sigma)*hr[:,1:2]+sigma*noise

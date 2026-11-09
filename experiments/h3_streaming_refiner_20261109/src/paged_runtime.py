@@ -29,6 +29,41 @@ class AdapterLinear(nn.Module):
         return self.base(x.to(self.base.weight.dtype)) + ((x.float()@self.a.T)@self.b.T).to(x.dtype)
 
 
+class CanonicalRows(nn.Module):
+    """Keep NPU projection/norm matrix shapes independent of arrival batching.
+
+    The offline reference still attends over independent full K/V tensors with
+    the same causal mask. Only token-local operations use per-latent groups.
+    No zero future slots and no history recomputation are added to streaming.
+    """
+    def __init__(self, module, processor):
+        super().__init__();self.module=module;self.processor=processor
+    @property
+    def weight(self):return self.module.weight
+    def forward(self,x):
+        call=self.processor.call
+        if x.ndim>=3 and call is not None and x.shape[1]==len(call.frame_ids):
+            sizes=[];prior=None
+            for f in call.frame_ids:
+                if sizes and f==prior:sizes[-1]+=1
+                else:sizes.append(1);prior=f
+            return torch.cat([self.module(v.contiguous()) for v in x.split(sizes,dim=1)],dim=1)
+        if x.ndim==2 and x.shape[0]>1:
+            return torch.cat([self.module(v.contiguous()) for v in x.split(1,dim=0)],dim=0)
+        return self.module(x.contiguous())
+
+
+def canonicalize(block,processor):
+    def visit(parent):
+        for key,child in list(parent.named_children()):
+            # Adapter is wrapped as one operation so its FP32 low-rank branch
+            # and frozen projection receive identical matrix shapes too.
+            if isinstance(child,(AdapterLinear,nn.Linear,nn.RMSNorm)):
+                setattr(parent,key,CanonicalRows(child,processor))
+            else:visit(child)
+    visit(block)
+
+
 @dataclass(frozen=True)
 class LayerCall:
     temb: torch.Tensor
@@ -60,7 +95,7 @@ class Recompute(torch.autograd.Function):
 
 
 class Runtime:
-    def __init__(self,root,device='npu:0',rank=8,resident=0,log=lambda *a,**k:None):
+    def __init__(self,root,device='npu:0',rank=8,resident=0,canonical_rows=False,log=lambda *a,**k:None):
         self.root=Path(root);self.device=torch.device(device);self.log=log
         self.model=MiniMaxH3Transformer3DModel.from_pretrained(str(self.root/'merged_transformer'),torch_dtype=torch.bfloat16,local_files_only=True).eval().requires_grad_(False)
         log('base_loaded_cpu',parameter_bytes=sum(p.numel()*p.element_size() for p in self.model.parameters()))
@@ -83,6 +118,7 @@ class Runtime:
             for module in block.modules():
                 if isinstance(module,AdapterLinear):
                     module.a=nn.Parameter(module.a.to(self.device));module.b=nn.Parameter(module.b.to(self.device))
+            if canonical_rows:canonicalize(block,processor)
             self.layer_params.append(tuple(p for p in block.parameters() if p.requires_grad))
             self.host[i]=[(module,key,p.detach()) for module in block.modules() for key,p in module._parameters.items() if p is not None and not p.requires_grad]
             self.host[i]+=[(module,key,b.detach()) for module in block.modules() for key,b in module._buffers.items() if b is not None]
@@ -93,7 +129,7 @@ class Runtime:
         nn.init.zeros_(self.condition.weight)
         self.params=[p for group in self.layer_params for p in group]+list(self.condition.parameters())
         self.cache=None;self.next_frame=0;self.cache_version=None
-        log('runtime_ready',trainable=sum(p.numel() for p in self.params),resident_layers=resident)
+        log('runtime_ready',trainable=sum(p.numel() for p in self.params),resident_layers=resident,canonical_rows=canonical_rows)
 
     def load_layer(self,i):
         for module,key,host in self.host[i]:

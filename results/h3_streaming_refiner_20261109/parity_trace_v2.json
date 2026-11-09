@@ -1,0 +1,1629 @@
+{
+  "optimizer_updates": 0,
+  "scope": "full real model two latent spatial68x120 selected-row trace; sampled rows cannot prove full tensor parity",
+  "full_output": {
+    "maxabs": 0.24395525455474854,
+    "rms": 0.023097384721040726,
+    "relative_rms": 0.017428286373615265
+  },
+  "modules": {
+    "proj_in": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4080,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "time_proj": {
+      "input": {
+        "shape_mismatch": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          2,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ]
+    },
+    "time_embedder": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          2,
+          2688
+        ],
+        [
+          1,
+          2688
+        ]
+      ]
+    },
+    "condition": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4080,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "norm_out": {
+      "input": {
+        "maxabs": 2048.0,
+        "rms": 247.48097229003906,
+        "relative_rms": 0.025738120079040527
+      },
+      "output": {
+        "maxabs": 0.0361328125,
+        "rms": 0.0017603819724172354,
+        "relative_rms": 0.0434076227247715
+      },
+      "shapes": [
+        [
+          1,
+          2040,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "proj_out": {
+      "input": {
+        "maxabs": 0.0361328125,
+        "rms": 0.0017603819724172354,
+        "relative_rms": 0.0434076227247715
+      },
+      "output": {
+        "maxabs": 0.022153794765472412,
+        "rms": 0.007533577736467123,
+        "relative_rms": 0.005505874752998352
+      },
+      "shapes": [
+        [
+          1,
+          2040,
+          96
+        ],
+        [
+          1,
+          2040,
+          96
+        ]
+      ]
+    },
+    "transformer_blocks.0.adaln_proj": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "shape_mismatch": [
+          [
+            6,
+            5376
+          ],
+          [
+            3,
+            5376
+          ]
+        ]
+      },
+      "shapes": [
+        [
+          6,
+          5376
+        ],
+        [
+          3,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.0.norm1": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.0.attn.to_q": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          7168
+        ],
+        [
+          1,
+          2040,
+          7168
+        ]
+      ]
+    },
+    "transformer_blocks.0.attn.to_k": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          7168
+        ],
+        [
+          1,
+          2040,
+          7168
+        ]
+      ]
+    },
+    "transformer_blocks.0.attn.to_v": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          7168
+        ],
+        [
+          1,
+          2040,
+          7168
+        ]
+      ]
+    },
+    "transformer_blocks.0.attn.norm_q": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          56,
+          128
+        ],
+        [
+          1,
+          2040,
+          56,
+          128
+        ]
+      ]
+    },
+    "transformer_blocks.0.attn.norm_k": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          56,
+          128
+        ],
+        [
+          1,
+          2040,
+          56,
+          128
+        ]
+      ]
+    },
+    "transformer_blocks.0.attn.to_out.0": {
+      "input": {
+        "maxabs": 1.1920928955078125e-07,
+        "rms": 7.040136806857333e-10,
+        "relative_rms": 6.984716693914095e-10
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.0.attn": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.0.norm2": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.0.ff": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.0": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.1": {
+      "input": {
+        "maxabs": 0.0,
+        "rms": 0.0,
+        "relative_rms": 0.0
+      },
+      "output": {
+        "maxabs": 16.0,
+        "rms": 0.2832385003566742,
+        "relative_rms": 0.0011442317627370358
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.2": {
+      "input": {
+        "maxabs": 16.0,
+        "rms": 0.2832385003566742,
+        "relative_rms": 0.0011442317627370358
+      },
+      "output": {
+        "maxabs": 16.0,
+        "rms": 0.32054004073143005,
+        "relative_rms": 0.0012505808845162392
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.3": {
+      "input": {
+        "maxabs": 16.0,
+        "rms": 0.32054004073143005,
+        "relative_rms": 0.0012505808845162392
+      },
+      "output": {
+        "maxabs": 16.0,
+        "rms": 0.3838252127170563,
+        "relative_rms": 0.0014732395065948367
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.4": {
+      "input": {
+        "maxabs": 16.0,
+        "rms": 0.3838252127170563,
+        "relative_rms": 0.0014732395065948367
+      },
+      "output": {
+        "maxabs": 16.0,
+        "rms": 0.391876757144928,
+        "relative_rms": 0.0014734617434442043
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.5": {
+      "input": {
+        "maxabs": 16.0,
+        "rms": 0.391876757144928,
+        "relative_rms": 0.0014734617434442043
+      },
+      "output": {
+        "maxabs": 32.0,
+        "rms": 0.4744962155818939,
+        "relative_rms": 0.0017179151764139533
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.6": {
+      "input": {
+        "maxabs": 32.0,
+        "rms": 0.4744962155818939,
+        "relative_rms": 0.0017179151764139533
+      },
+      "output": {
+        "maxabs": 32.0,
+        "rms": 0.5914322137832642,
+        "relative_rms": 0.002075235126540065
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.7": {
+      "input": {
+        "maxabs": 32.0,
+        "rms": 0.5914322137832642,
+        "relative_rms": 0.002075235126540065
+      },
+      "output": {
+        "maxabs": 32.0,
+        "rms": 0.6104388236999512,
+        "relative_rms": 0.002093844348564744
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.8": {
+      "input": {
+        "maxabs": 32.0,
+        "rms": 0.6104388236999512,
+        "relative_rms": 0.002093844348564744
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 0.740357518196106,
+        "relative_rms": 0.0024654364679008722
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.9": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 0.740357518196106,
+        "relative_rms": 0.0024654364679008722
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 0.9606806635856628,
+        "relative_rms": 0.003106869990006089
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.10": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 0.9606806635856628,
+        "relative_rms": 0.003106869990006089
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.0688472986221313,
+        "relative_rms": 0.003411490237340331
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.11": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.0688472986221313,
+        "relative_rms": 0.003411490237340331
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.0917052030563354,
+        "relative_rms": 0.003458290593698621
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.12": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.0917052030563354,
+        "relative_rms": 0.003458290593698621
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.1564022302627563,
+        "relative_rms": 0.0036514599341899157
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.13": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.1564022302627563,
+        "relative_rms": 0.0036514599341899157
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.178343653678894,
+        "relative_rms": 0.0036772098392248154
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.14": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.178343653678894,
+        "relative_rms": 0.0036772098392248154
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.1472125053405762,
+        "relative_rms": 0.003560315351933241
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.15": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.1472125053405762,
+        "relative_rms": 0.003560315351933241
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.1773877143859863,
+        "relative_rms": 0.0036121096927672625
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.16": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.1773877143859863,
+        "relative_rms": 0.0036121096927672625
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.2189611196517944,
+        "relative_rms": 0.003648497397080064
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.17": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.2189611196517944,
+        "relative_rms": 0.003648497397080064
+      },
+      "output": {
+        "maxabs": 128.0,
+        "rms": 1.5502194166183472,
+        "relative_rms": 0.0045814248733222485
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.18": {
+      "input": {
+        "maxabs": 128.0,
+        "rms": 1.5502194166183472,
+        "relative_rms": 0.0045814248733222485
+      },
+      "output": {
+        "maxabs": 128.0,
+        "rms": 1.673134207725525,
+        "relative_rms": 0.005157994106411934
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.19": {
+      "input": {
+        "maxabs": 128.0,
+        "rms": 1.673134207725525,
+        "relative_rms": 0.005157994106411934
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.5499160289764404,
+        "relative_rms": 0.0038880000356584787
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.20": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.5499160289764404,
+        "relative_rms": 0.0038880000356584787
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 1.6173583269119263,
+        "relative_rms": 0.0041092075407505035
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.21": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 1.6173583269119263,
+        "relative_rms": 0.0041092075407505035
+      },
+      "output": {
+        "maxabs": 128.0,
+        "rms": 2.086383819580078,
+        "relative_rms": 0.005034354981034994
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.22": {
+      "input": {
+        "maxabs": 128.0,
+        "rms": 2.086383819580078,
+        "relative_rms": 0.005034354981034994
+      },
+      "output": {
+        "maxabs": 128.0,
+        "rms": 2.218446731567383,
+        "relative_rms": 0.005717910826206207
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.23": {
+      "input": {
+        "maxabs": 128.0,
+        "rms": 2.218446731567383,
+        "relative_rms": 0.005717910826206207
+      },
+      "output": {
+        "maxabs": 128.0,
+        "rms": 2.4070677757263184,
+        "relative_rms": 0.005940627306699753
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.24": {
+      "input": {
+        "maxabs": 128.0,
+        "rms": 2.4070677757263184,
+        "relative_rms": 0.005940627306699753
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 2.4346261024475098,
+        "relative_rms": 0.005819045938551426
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.25": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 2.4346261024475098,
+        "relative_rms": 0.005819045938551426
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 2.715285301208496,
+        "relative_rms": 0.006447607185691595
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.26": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 2.715285301208496,
+        "relative_rms": 0.006447607185691595
+      },
+      "output": {
+        "maxabs": 72.0,
+        "rms": 3.3110759258270264,
+        "relative_rms": 0.00815637782216072
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.27": {
+      "input": {
+        "maxabs": 72.0,
+        "rms": 3.3110759258270264,
+        "relative_rms": 0.00815637782216072
+      },
+      "output": {
+        "maxabs": 64.0,
+        "rms": 4.2981343269348145,
+        "relative_rms": 0.009693460538983345
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.28": {
+      "input": {
+        "maxabs": 64.0,
+        "rms": 4.2981343269348145,
+        "relative_rms": 0.009693460538983345
+      },
+      "output": {
+        "maxabs": 128.0,
+        "rms": 5.9854278564453125,
+        "relative_rms": 0.010868668556213379
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.29": {
+      "input": {
+        "maxabs": 128.0,
+        "rms": 5.9854278564453125,
+        "relative_rms": 0.010868668556213379
+      },
+      "output": {
+        "maxabs": 256.0,
+        "rms": 8.735208511352539,
+        "relative_rms": 0.014346621930599213
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.30": {
+      "input": {
+        "maxabs": 256.0,
+        "rms": 8.735208511352539,
+        "relative_rms": 0.014346621930599213
+      },
+      "output": {
+        "maxabs": 256.0,
+        "rms": 16.288440704345703,
+        "relative_rms": 0.021091336384415627
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.31": {
+      "input": {
+        "maxabs": 256.0,
+        "rms": 16.288440704345703,
+        "relative_rms": 0.021091336384415627
+      },
+      "output": {
+        "maxabs": 512.0,
+        "rms": 21.860105514526367,
+        "relative_rms": 0.02461731992661953
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.32": {
+      "input": {
+        "maxabs": 512.0,
+        "rms": 21.860105514526367,
+        "relative_rms": 0.02461731992661953
+      },
+      "output": {
+        "maxabs": 768.0,
+        "rms": 26.102149963378906,
+        "relative_rms": 0.025535348802804947
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.33": {
+      "input": {
+        "maxabs": 768.0,
+        "rms": 26.102149963378906,
+        "relative_rms": 0.025535348802804947
+      },
+      "output": {
+        "maxabs": 1024.0,
+        "rms": 31.676843643188477,
+        "relative_rms": 0.02964646928012371
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.34": {
+      "input": {
+        "maxabs": 1024.0,
+        "rms": 31.676843643188477,
+        "relative_rms": 0.02964646928012371
+      },
+      "output": {
+        "maxabs": 1536.0,
+        "rms": 36.65142059326172,
+        "relative_rms": 0.03217198699712753
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.35": {
+      "input": {
+        "maxabs": 1536.0,
+        "rms": 36.65142059326172,
+        "relative_rms": 0.03217198699712753
+      },
+      "output": {
+        "maxabs": 768.0,
+        "rms": 36.14141845703125,
+        "relative_rms": 0.031215213239192963
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.36": {
+      "input": {
+        "maxabs": 768.0,
+        "rms": 36.14141845703125,
+        "relative_rms": 0.031215213239192963
+      },
+      "output": {
+        "maxabs": 1024.0,
+        "rms": 42.4503173828125,
+        "relative_rms": 0.03662499040365219
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.37": {
+      "input": {
+        "maxabs": 1024.0,
+        "rms": 42.4503173828125,
+        "relative_rms": 0.03662499040365219
+      },
+      "output": {
+        "maxabs": 768.0,
+        "rms": 54.161617279052734,
+        "relative_rms": 0.048392437398433685
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.38": {
+      "input": {
+        "maxabs": 768.0,
+        "rms": 54.161617279052734,
+        "relative_rms": 0.048392437398433685
+      },
+      "output": {
+        "maxabs": 1280.0,
+        "rms": 66.06507873535156,
+        "relative_rms": 0.05773313343524933
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.39": {
+      "input": {
+        "maxabs": 1280.0,
+        "rms": 66.06507873535156,
+        "relative_rms": 0.05773313343524933
+      },
+      "output": {
+        "maxabs": 2304.0,
+        "rms": 83.38546752929688,
+        "relative_rms": 0.06356904655694962
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.40": {
+      "input": {
+        "maxabs": 2304.0,
+        "rms": 83.38546752929688,
+        "relative_rms": 0.06356904655694962
+      },
+      "output": {
+        "maxabs": 3072.0,
+        "rms": 92.35626983642578,
+        "relative_rms": 0.05797918885946274
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.41": {
+      "input": {
+        "maxabs": 3072.0,
+        "rms": 92.35626983642578,
+        "relative_rms": 0.05797918885946274
+      },
+      "output": {
+        "maxabs": 4608.0,
+        "rms": 100.78780364990234,
+        "relative_rms": 0.0625050738453865
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.42": {
+      "input": {
+        "maxabs": 4608.0,
+        "rms": 100.78780364990234,
+        "relative_rms": 0.0625050738453865
+      },
+      "output": {
+        "maxabs": 3584.0,
+        "rms": 101.31183624267578,
+        "relative_rms": 0.07013939321041107
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.43": {
+      "input": {
+        "maxabs": 3584.0,
+        "rms": 101.31183624267578,
+        "relative_rms": 0.07013939321041107
+      },
+      "output": {
+        "maxabs": 2048.0,
+        "rms": 110.14545440673828,
+        "relative_rms": 0.06348033249378204
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.44": {
+      "input": {
+        "maxabs": 2048.0,
+        "rms": 110.14545440673828,
+        "relative_rms": 0.06348033249378204
+      },
+      "output": {
+        "maxabs": 988.0,
+        "rms": 113.506103515625,
+        "relative_rms": 0.05297732353210449
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.45": {
+      "input": {
+        "maxabs": 988.0,
+        "rms": 113.506103515625,
+        "relative_rms": 0.05297732353210449
+      },
+      "output": {
+        "maxabs": 1536.0,
+        "rms": 154.70425415039062,
+        "relative_rms": 0.06145603582262993
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.46": {
+      "input": {
+        "maxabs": 1536.0,
+        "rms": 154.70425415039062,
+        "relative_rms": 0.06145603582262993
+      },
+      "output": {
+        "maxabs": 1536.0,
+        "rms": 170.56039428710938,
+        "relative_rms": 0.05537772551178932
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.47": {
+      "input": {
+        "maxabs": 1536.0,
+        "rms": 170.56039428710938,
+        "relative_rms": 0.05537772551178932
+      },
+      "output": {
+        "maxabs": 3072.0,
+        "rms": 195.93128967285156,
+        "relative_rms": 0.05386514216661453
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.48": {
+      "input": {
+        "maxabs": 3072.0,
+        "rms": 195.93128967285156,
+        "relative_rms": 0.05386514216661453
+      },
+      "output": {
+        "maxabs": 2048.0,
+        "rms": 229.36074829101562,
+        "relative_rms": 0.03636367246508598
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    },
+    "transformer_blocks.49": {
+      "input": {
+        "maxabs": 2048.0,
+        "rms": 229.36074829101562,
+        "relative_rms": 0.03636367246508598
+      },
+      "output": {
+        "maxabs": 2048.0,
+        "rms": 247.48097229003906,
+        "relative_rms": 0.025738120079040527
+      },
+      "shapes": [
+        [
+          1,
+          4834,
+          5376
+        ],
+        [
+          1,
+          2040,
+          5376
+        ]
+      ]
+    }
+  }
+}
