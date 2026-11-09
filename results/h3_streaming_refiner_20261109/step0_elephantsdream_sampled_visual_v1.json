@@ -1,0 +1,44 @@
+{
+  "status": "rejected_by_sampled_frame_structure_fidelity",
+  "as_of_utc": "2026-11-09T14:04:59.748653+00:00",
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "training_step": 0,
+  "checkpoint_sha256": "a6b28df41737f71af1cec734291fb2a21cc3032d181d4ad4997440bfce8a267c",
+  "frames_zero_based": [
+    0,
+    75,
+    150,
+    225
+  ],
+  "columns": [
+    "streaming_step0",
+    "frozen_upsampler_no_refiner",
+    "actual_native_HR_GT"
+  ],
+  "contactsheet_sha256": "189a144d97afb67512d76e25c05275f1cc43296b8593f543137beecc365db38a",
+  "observations": [
+    {
+      "frame": 0,
+      "observation": "Refiner replaces the animated hand, torso and cables with a different human hand/clothing and shelving; no-refiner retains the GT scene structure."
+    },
+    {
+      "frame": 75,
+      "observation": "Refiner introduces large plant leaves and shelving while GT/no-refiner retain the animated hand and cables."
+    },
+    {
+      "frame": 150,
+      "observation": "Refiner shows a human figure, staircase and furniture absent from GT/no-refiner cable closeup."
+    },
+    {
+      "frame": 225,
+      "observation": "Refiner shows a human figure and drum set absent from GT/no-refiner cable closeup."
+    }
+  ],
+  "visual_quality_passed": false,
+  "frozen_rule": "no new person/object/large structural drift",
+  "continuous_visual_reviewed": false,
+  "review_scope": "assistant inspection of four sampled frames only; not continuous motion review",
+  "cause_established": false,
+  "accepted_refiner": null,
+  "new_optimizer_updates": 0
+}

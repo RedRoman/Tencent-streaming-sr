@@ -1,0 +1,83 @@
+{
+  "status": "full226_auxiliary_video_technical_audit_passed",
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "training_step": 0,
+  "checkpoint_sha256": "a6b28df41737f71af1cec734291fb2a21cc3032d181d4ad4997440bfce8a267c",
+  "columns": [
+    "Streaming TF0 | metric FAIL",
+    "Frozen upsampler | no refiner",
+    "Actual native-HR GT"
+  ],
+  "source_sha256": "d39b7dde2d846df93e649fed871d58013bbffbc1815e5c83f8092909c9725369",
+  "encoder_helper_sha256": "64515a05d162cbc68c99ffaa1ca95821417ff14d8db37451f37267390f25672f",
+  "config_sha256": "1f97cb51d6301435b3f8c37f96bf69835ee6fe94b837fde45929c0e547a0ce82",
+  "pixel_receipt": {
+    "path": "result.json",
+    "sha256": "e236902f43a1f2e4ba321919a95063ae0eede119c2b4bc2b58a4ece0fbe2e107"
+  },
+  "input_RGB": [
+    {
+      "path": "visible_RGB.npy",
+      "sha256": "a2d43e4b8ce821b889adbc92fe9c12f8275cfd4ef2a480905942c0f083d9e2e4",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "teacher_student_RGB.npy",
+      "bytes": 1405900928,
+      "sha256": "ce6d55d20eae8dd5e55a0836cf3e736f184b68c51ff02c78293c9c6e6eb4f507"
+    },
+    {
+      "path": "native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "a893b2ce581b9af207bced0bb4ae4e97b3fa6a2da7cd824a7c5d60c39ad4289a"
+    }
+  ],
+  "data_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "frames": 226,
+  "fps": 24,
+  "full226_ratios_vs_no_refiner": {
+    "pixel_l1": 5.183506290932094,
+    "lpips": 4.811259316715271
+  },
+  "first_clip_metric_gate_failed": true,
+  "files": {
+    "video": {
+      "path": "stream_no_refiner_gt.mp4",
+      "sha256": "06510c33b6a1ae81ab7dc79f07a6dfd16e5745bd75801f989603b783f2709e3c",
+      "bytes": 3976115,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 320,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "contactsheet": {
+      "path": "contactsheet.jpg",
+      "sha256": "189a144d97afb67512d76e25c05275f1cc43296b8593f543137beecc365db38a"
+    }
+  },
+  "contactsheet_frame_indices": [
+    0,
+    75,
+    150,
+    225
+  ],
+  "continuous_visual_reviewed": false,
+  "main_selected_streaming_dense_GT_comparison": false,
+  "accepted_refiner": null,
+  "strict_streaming_decoder_validated": false,
+  "metrics_use_lossless_RGB": true,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0,
+  "seconds": 42.16236758232117
+}

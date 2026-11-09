@@ -1,0 +1,65 @@
+{
+  "status": "partial_two_clip_step0_metrics_with_conclusive_L1_rejection",
+  "as_of_utc": "2026-11-09T14:02:27.170493+00:00",
+  "frozen_protocol_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+  "dev_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "training_step": 0,
+  "checkpoint_sha256": "a6b28df41737f71af1cec734291fb2a21cc3032d181d4ad4997440bfce8a267c",
+  "completed_full226": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "pixel_receipt_sha256": "0617fcf439868141f16e883c1b71fbae68a1b438387b57cff814af99d5a2a98b",
+      "latent_receipt_sha256": "1010a355e885ad3f624035c8c298439d199e6226ec164292bdc67d20eb620804",
+      "nativeHR": {
+        "pixel_l1": 0.13361371321752008,
+        "lpips": 0.6327393273864172,
+        "psnr_db": 14.594711530059993,
+        "delta_l1": 0.06491508206557726
+      },
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 6.208725297765126,
+        "lpips": 5.938128860517555
+      },
+      "first4_chunk_max_abs": 0.0
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "pixel_receipt_sha256": "e236902f43a1f2e4ba321919a95063ae0eede119c2b4bc2b58a4ece0fbe2e107",
+      "latent_receipt_sha256": "309c1e6700a9151f3ad9859339a395aee935a911986f9a2c962a933e44d4d9e9",
+      "nativeHR": {
+        "pixel_l1": 0.08990914575689662,
+        "lpips": 0.5486341155735792,
+        "psnr_db": 17.020800365123552,
+        "delta_l1": 0.04954323059621865
+      },
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 5.183506290932094,
+        "lpips": 4.811259316715271
+      },
+      "first4_chunk_max_abs": 0.0
+    }
+  ],
+  "missing": [
+    "WingIt_dev_300_525"
+  ],
+  "L1_bound": {
+    "known_clip_error_sum": 0.2235228589744167,
+    "all3_no_refiner_error_sum": 0.0575248149091757,
+    "all3_no_refiner_equal_clip_mean": 0.019174938303058567,
+    "optimistic_missing_clip_L1": 0.0,
+    "best_possible_all3_equal_clip_L1": 0.0745076196581389,
+    "minimum_possible_equal_clip_ratio": 3.8856771521530424,
+    "frozen_max_ratio": 1.02,
+    "proof": "pixel L1 is nonnegative; assign zero L1 to every unfinished clip, divide known error sum by all three frozen baseline L1 values summed. The factors 1/3 cancel.",
+    "checkpoint0_metric_gate_cannot_pass": true
+  },
+  "complete_cohort": false,
+  "continue_all_frozen_evaluations": true,
+  "accepted_refiner": null,
+  "other_checkpoints_rejected_by_this_bound": false,
+  "cause_established": false,
+  "training_updates_completed": 200,
+  "new_optimizer_updates": 0,
+  "continuous_visual_reviewed": false,
+  "strict_streaming_decoder_validated": false
+}
