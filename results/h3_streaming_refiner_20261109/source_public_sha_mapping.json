@@ -3,6 +3,14 @@
     "source_sha256": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
     "public_sha256": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9"
   },
+  "src/check_dense_cpu.py": {
+    "source_sha256": "f79bd60b1d1e3b9ab4fef32fb589ba42fb6e139bd3a18430ce006a9c019cd67d",
+    "public_sha256": "f79bd60b1d1e3b9ab4fef32fb589ba42fb6e139bd3a18430ce006a9c019cd67d"
+  },
+  "src/prepare_dev_cpu.py": {
+    "source_sha256": "5cea599baa4a32f8e41067ff145e36cd42afbc1e1dd57879bd4fb563a50671bd",
+    "public_sha256": "5cea599baa4a32f8e41067ff145e36cd42afbc1e1dd57879bd4fb563a50671bd"
+  },
   "src/check_real_block_cpu.py": {
     "source_sha256": "e84757154851a40387ea9521d10575400065cf0dc35fb6ab6ab5799dc9899b69",
     "public_sha256": "e84757154851a40387ea9521d10575400065cf0dc35fb6ab6ab5799dc9899b69"
@@ -11,9 +19,17 @@
     "source_sha256": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
     "public_sha256": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f"
   },
+  "src/evaluate_streaming.py": {
+    "source_sha256": "202ec2e6783e69bdbacb6c8df951646f9b48164bde69df0d5877a05834271bb3",
+    "public_sha256": "202ec2e6783e69bdbacb6c8df951646f9b48164bde69df0d5877a05834271bb3"
+  },
   "src/diagnose_parity.py": {
     "source_sha256": "3a525b8344241d7adb098c72a97a502773fa99d8450b9b57288b49eaa2db30ea",
     "public_sha256": "3a525b8344241d7adb098c72a97a502773fa99d8450b9b57288b49eaa2db30ea"
+  },
+  "src/evaluate_dense_reference.py": {
+    "source_sha256": "3de818a6e756d13253fad332d8ddab1f518e0b470d1ef837860abe5792ea84c1",
+    "public_sha256": "3de818a6e756d13253fad332d8ddab1f518e0b470d1ef837860abe5792ea84c1"
   },
   "src/test_causal_attention.py": {
     "source_sha256": "f77d103e955e8365ea1f3b21b9f5f5ae1acba06703ebe7f48c3b2a5536e99883",
@@ -31,9 +47,17 @@
     "source_sha256": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
     "public_sha256": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f"
   },
+  "src/evaluate_pixels.py": {
+    "source_sha256": "2ebafd38958be36c48bc42874600bed1c4bc080c4e0954baa5ee01871b06613e",
+    "public_sha256": "2ebafd38958be36c48bc42874600bed1c4bc080c4e0954baa5ee01871b06613e"
+  },
   "src/pin_assets_cpu.py": {
     "source_sha256": "891c3ce04ca0837b12a2b46061c4c41a70b24f138cd972e29b1b25de15c73657",
     "public_sha256": "891c3ce04ca0837b12a2b46061c4c41a70b24f138cd972e29b1b25de15c73657"
+  },
+  "src/run_evaluation_batch.py": {
+    "source_sha256": "ea4165fd5528648a5f1dd9153279132be3371c0454c39fc94eaea3e8f7fb41f5",
+    "public_sha256": "ea4165fd5528648a5f1dd9153279132be3371c0454c39fc94eaea3e8f7fb41f5"
   },
   "src/streaming_refiner.py": {
     "source_sha256": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",

@@ -1,0 +1,27 @@
+{
+  "stage": "evaluation-workers-v2",
+  "runtime": "unchanged_v3_canonical_rows",
+  "status": "syntax_checked_CPU_upstream_gate_recheck_pending_fullNPU_evaluation_pending",
+  "new_sources": {
+    "src/causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "src/paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "src/streaming_refiner.py": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",
+    "src/prepare_pairs.py": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
+    "src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "src/evaluate_streaming.py": "202ec2e6783e69bdbacb6c8df951646f9b48164bde69df0d5877a05834271bb3",
+    "src/evaluate_pixels.py": "2ebafd38958be36c48bc42874600bed1c4bc080c4e0954baa5ee01871b06613e",
+    "src/evaluate_dense_reference.py": "3de818a6e756d13253fad332d8ddab1f518e0b470d1ef837860abe5792ea84c1",
+    "src/check_dense_cpu.py": "f79bd60b1d1e3b9ab4fef32fb589ba42fb6e139bd3a18430ce006a9c019cd67d",
+    "src/test_runtime_cpu.py": "d29f3ba5f37dc3a712c194652afce007d5cb543e9c70df1c50448e8896aac376",
+    "src/run_evaluation_batch.py": "ea4165fd5528648a5f1dd9153279132be3371c0454c39fc94eaea3e8f7fb41f5"
+  },
+  "frozen_protocol_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+  "dev_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "prior_decoder_plan_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+  "limits": [
+    "official_overlap_decoder_provisional",
+    "full33B_dense_parity_and_chunk4_still_need_execution",
+    "no_visual_quality_claim"
+  ],
+  "change": "Add gated original upstream dense comparison; finite serialized batch refuses incomplete training and stops on execution failure"
+}

@@ -1,0 +1,4 @@
+Modular Diffusers is currently an experimental feature under active development. The API is subject to breaking changes in future releases.
+{"status": "passed", "scope": "tiny random H3, real full spatial 68x120, 2 latents only", "cache_max_abs": 0.0, "nonzero_condition_gradient": true, "save_reload_exact": true, "stale_cache_rejected": true, "nonuniform_absolute_RoPE": true, "optimizer_updates": 0}
+{"status": "passed", "scope": "tiny H3 dense orchestration vs upstream model.forward; full68x120 two latents CPU", "max_abs": 0.0, "relative_rms": 0.0, "optimizer_updates": 0, "full33B_NPU_dense_parity": false}
+{"status": "passed", "scope": "CPU check of paged upstream comparison hooks", "max_abs": 0.0}

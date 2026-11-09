@@ -1,0 +1,40 @@
+{
+  "status": "complete_CPU_verified_reuse",
+  "new_accelerator_forwards": 0,
+  "manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "accepted_upsampler_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "protocol_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+  "test_unlocked": false,
+  "samples": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "tensor_pair_sha256": "352b87fe376daa3c6d58d65747bc3f6b61ab8bd3aa64b3ceeebaafbf333423f1",
+      "pair_record_sha256": "e9a0e9e4dd5c7422e930c5c3f7eed92f23c405231ca9b5fa4e6656a5a3679153",
+      "rgb_sha256": {
+        "native_hr": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733",
+        "decoded_hr": "c7896977063cdaa4a294f2120f29f539e47fe3946356d779b043d516e42a204c",
+        "teacher_student": "6dca486d86df699161eca8413749194a16a095db2ceb2762e1e26813726a77fc"
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "tensor_pair_sha256": "2e833ea942c9142d0a5307d404763c80ec35cf4a0ab0c30d22d99d60422dde75",
+      "pair_record_sha256": "0ed5b8aee3856565ae5e87053b1c6c3a635734f7e42dfb36e2794472c0cb618c",
+      "rgb_sha256": {
+        "native_hr": "a893b2ce581b9af207bced0bb4ae4e97b3fa6a2da7cd824a7c5d60c39ad4289a",
+        "decoded_hr": "032c10f53d4b2df793c1ea7c8a14c9e0f6b094bed3a6b6998cc2d5e25ce0deff",
+        "teacher_student": "ce6d55d20eae8dd5e55a0836cf3e736f184b68c51ff02c78293c9c6e6eb4f507"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "tensor_pair_sha256": "4fe2039aecb9fe90e488bfa16669b931ed9528eb828888e6a00323d7934c742a",
+      "pair_record_sha256": "641b40dd22d92366465c5d3b943b61580f86d63199372584b5ba1f51df7d3a3a",
+      "rgb_sha256": {
+        "native_hr": "cd6852a3dc094bbab5231d9e1bc46192b0ee45d11a834f55e6a0747c9f50c7e8",
+        "decoded_hr": "0730f2fc4d4a697998c1a6c631b4ed0e3c62f178396e415bb9793bd360ccfb79",
+        "teacher_student": "e00d962a8baa3e8bdd1bd4fa193e486e10013af888f43f3f040a800fc5c7de67"
+      }
+    }
+  ]
+}

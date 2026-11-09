@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-09T08:07:11.222843+00:00",
+  "as_of_utc": "2026-11-09T08:25:18.503788+00:00",
   "stage": "TF_pilot_running",
-  "verified_optimizer_updates_at_evidence_snapshot": 3,
+  "verified_optimizer_updates_at_evidence_snapshot": 62,
   "target_updates": 200,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": false,
@@ -9,5 +9,11 @@
   "visual_quality_passed": false,
   "decoder_strict_streaming_validated": false,
   "selected_refiner_weights": null,
-  "prior_v2_parity_failure_preserved": true
+  "prior_v2_parity_failure_preserved": true,
+  "saved_adapter_steps": [
+    0,
+    50
+  ],
+  "dev_payloads_CPU_verified": 3,
+  "evaluation_workers": "prepared; CPU dense vs upstream maxabs0; NPU/full226 execution pending"
 }
