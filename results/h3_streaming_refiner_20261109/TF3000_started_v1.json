@@ -1,0 +1,175 @@
+{
+  "status": "real_TF_continuation_optimizer_updates_observed",
+  "as_of_utc": "2026-11-09T14:54:24.987467+00:00",
+  "resume_step": 200,
+  "optimizer_updates": 206,
+  "new_optimizer_updates": 6,
+  "target_total_updates": 3000,
+  "parent_pid": 339297,
+  "child_pid": 339430,
+  "all_three_locks_inode_verified": true,
+  "fresh_idle_admission_before_launch": true,
+  "source_config_sha256": "931ce0fa86d1e911c47a6db20b4df97aca993b286bd2b0d299506b3390249200",
+  "restored_optimizer": {
+    "event": "adapter_and_optimizer_restored",
+    "elapsed_seconds": 50.574923276901245,
+    "optimizer_updates": 200,
+    "new_optimizer_updates": 0,
+    "step": 200,
+    "parameter_tensors": 401,
+    "parameter_elements": 20586496,
+    "all_optimizer_steps_match": true,
+    "all_moments_finite": true,
+    "optimizer_configuration_preserved": true,
+    "parameter_order_sha256": "45671f8d6b98b2e65b88c9eab796bf6da3f5d263caa319f6e9c0ce5982ee1a7a"
+  },
+  "gates": {
+    "status": "passed",
+    "cache_parity": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "future": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "condition_future": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "gradient_norm": 0.07104037702083588,
+    "reload": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "optimizer_state_step": 200,
+    "new_optimizer_updates": 0,
+    "scope": "real50block full-spatial two-latent continuation gates"
+  },
+  "initial_real_update_events": [
+    {
+      "event": "optimizer_update",
+      "elapsed_seconds": 137.97331261634827,
+      "optimizer_updates": 201,
+      "new_optimizer_updates": 1,
+      "step": 201,
+      "sample": "Charge_train_3856_4081",
+      "latent_index": 25,
+      "history": [
+        0,
+        24
+      ],
+      "sigma": 0.8571428571428571,
+      "noise_seed": 20261110,
+      "fm": 0.12601421773433685,
+      "draft_l1": 0.2324179708957672,
+      "loss": 0.13763511180877686,
+      "grad_norm": 0.3762700855731964,
+      "peak_allocated_bytes": 38889340416
+    },
+    {
+      "event": "optimizer_update",
+      "elapsed_seconds": 157.28745079040527,
+      "optimizer_updates": 202,
+      "new_optimizer_updates": 2,
+      "step": 202,
+      "sample": "Caminandes3_train_168_393",
+      "latent_index": 25,
+      "history": [
+        0,
+        24
+      ],
+      "sigma": 0.8571428571428571,
+      "noise_seed": 20261110,
+      "fm": 0.0795210599899292,
+      "draft_l1": 0.19098034501075745,
+      "loss": 0.08907007426023483,
+      "grad_norm": 0.10044064372777939,
+      "peak_allocated_bytes": 38889340416
+    },
+    {
+      "event": "optimizer_update",
+      "elapsed_seconds": 176.3880898952484,
+      "optimizer_updates": 203,
+      "new_optimizer_updates": 3,
+      "step": 203,
+      "sample": "Charge_train_3856_4081",
+      "latent_index": 42,
+      "history": [
+        0,
+        41
+      ],
+      "sigma": 0.6666666666666666,
+      "noise_seed": 20261110,
+      "fm": 0.10599784553050995,
+      "draft_l1": 0.22759930789470673,
+      "loss": 0.11737781018018723,
+      "grad_norm": 0.03123382478952408,
+      "peak_allocated_bytes": 38889340416
+    },
+    {
+      "event": "optimizer_update",
+      "elapsed_seconds": 195.14000535011292,
+      "optimizer_updates": 204,
+      "new_optimizer_updates": 4,
+      "step": 204,
+      "sample": "Caminandes3_train_168_393",
+      "latent_index": 42,
+      "history": [
+        0,
+        41
+      ],
+      "sigma": 0.6666666666666666,
+      "noise_seed": 20261110,
+      "fm": 0.0566018670797348,
+      "draft_l1": 0.14594195783138275,
+      "loss": 0.063898965716362,
+      "grad_norm": 0.07123042643070221,
+      "peak_allocated_bytes": 38889340416
+    },
+    {
+      "event": "optimizer_update",
+      "elapsed_seconds": 213.3814618587494,
+      "optimizer_updates": 205,
+      "new_optimizer_updates": 5,
+      "step": 205,
+      "sample": "Charge_train_3856_4081",
+      "latent_index": 59,
+      "history": [
+        0,
+        58
+      ],
+      "sigma": 0.909375,
+      "noise_seed": 20261110,
+      "fm": 0.060216210782527924,
+      "draft_l1": 0.22039549052715302,
+      "loss": 0.07123598456382751,
+      "grad_norm": 0.06275822967290878,
+      "peak_allocated_bytes": 38889340416
+    },
+    {
+      "event": "optimizer_update",
+      "elapsed_seconds": 231.88152050971985,
+      "optimizer_updates": 206,
+      "new_optimizer_updates": 6,
+      "step": 206,
+      "sample": "Caminandes3_train_168_393",
+      "latent_index": 59,
+      "history": [
+        0,
+        58
+      ],
+      "sigma": 0.909375,
+      "noise_seed": 20261110,
+      "fm": 0.11737839877605438,
+      "draft_l1": 0.23971936106681824,
+      "loss": 0.12936437129974365,
+      "grad_norm": 0.0926123782992363,
+      "peak_allocated_bytes": 38889340416
+    }
+  ],
+  "optimizer_state_counter_checked_every_update": true,
+  "selected_refiner": null,
+  "early_pilot_quality_does_not_stop_TF": true,
+  "quality_acceptance_thresholds_unchanged": true
+}

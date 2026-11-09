@@ -1,0 +1,56 @@
+{
+  "schema": "user-directed-TF-extension-3000-v1",
+  "resume_step": 200,
+  "target_total_updates": 3000,
+  "additional_planned_optimizer_updates": 2800,
+  "resume_adapter_sha256": "b1bd7d862dc98e12bebdd6ea58257fbfd069d8d5173f39bebef7290c2a382ab1",
+  "resume_optimizer_sha256": "3b770ffc6e5fcabb7e78cf3481105531fe6b0372ea898706d8f8af1a16dc1ef5",
+  "data_manifest_sha256": "e8d62687403df071f62df1ccf8b5653d05659771e323a724a15df21b62b16aed",
+  "condition_sha256": "e6b94ce5312346d81ff3dce81a7cd3f382441141c1fe2fc2ad7efd8cdfd4e84c",
+  "assets_manifest_sha256": "952809cf39214edc76e4a3b1f6c35576e2d86254a9add753cbe24ddc35f6264d",
+  "upsampler_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "resident_layers": 24,
+  "lr": 0.0001,
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0,
+  "draft_loss_weight": 0.05,
+  "rank": 8,
+  "canonical_rows": true,
+  "loss": "nativeHR flow matching MSE +0.05 clean-draft x0 L1; unchanged",
+  "conditioning": "same explicit no-text and full226 known encoded silence",
+  "schedule": "continue global index200..2999; same2-sample cycle, absolute position/sigma/noise seeds; no optimizer reset",
+  "save_every_updates": 100,
+  "full_eval_steps_after_training": [
+    1000,
+    2000,
+    3000
+  ],
+  "old_short_pilot_evaluation": "retain completed/partial artifacts; unfinished grid deferred by later user instruction",
+  "step0_role": "untrained baseline only; early artifacts failing acceptance do not reject TF",
+  "early_quality_failure_stops_TF": false,
+  "quality_gates_unchanged": {
+    "nativeHR_L1_ratio_max": 1.02,
+    "nativeHR_LPIPS_ratio_max": 1.02,
+    "structural_drift_allowed": false,
+    "continuous_visual_required": true
+  },
+  "no_SF_DMD_without_sufficient_training_review": true,
+  "test_unlocked": false,
+  "private_optimizer_RNG_never_publish": true,
+  "old_resume_RNG_absent": true,
+  "noise_reconstruction": "stateless explicit sample/index/seed; prior200 schedule audited; no random augmentation or train-time dropout",
+  "CPU_resume_audit_sha256": "fe9146e41c12957e6cefdac81513edffb10202fd19872137fcff8621d397036e",
+  "sources": {
+    "src/causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "src/paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "src/prepare_pairs.py": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
+    "src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "src/decoder_validation_admission.py": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127",
+    "src/tf_resume_utils.py": "726d07dc27446ef85ef6613d52baea58f9b9e16d2c63340d8b282ab701a17ae8",
+    "src/train_tf_extended.py": "5ace8f1ff480fc2222dbad80c11eb0046b599dc103ff9ee95aac84c579bf24ef"
+  }
+}

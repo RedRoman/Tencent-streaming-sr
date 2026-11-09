@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-11-09T14:49:40.562676+00:00",
+  "status": "complete_latent_worker_exited_before_owned_batch_stop",
+  "active_worker_pid": 251565,
+  "worker_state": "zombie_exit_complete",
+  "latent_receipt_sha256": "b43fa44bad7443f2c7eb904bab656fe255ad0541c89bb64666f9e10e95718ea7",
+  "latent_payload_sha256": "7f163ffeee8b0172f3082a78a0fb1869b5c4951444066b6908433194108397bd",
+  "full_payload_SHA_verified": true,
+  "first4_chunk_max_abs": 0,
+  "reason": "later user directs several-thousand-step TF; unfinished low-step evaluation explicitly deferred",
+  "owned_parent_pid": 47732,
+  "owned_orchestrator_pid": 48084,
+  "action": "SIGTERM to own lock parent, then SIGCONT own held orchestrator so pending termination is delivered and child is reaped",
+  "new_training_optimizer_updates": 0
+}

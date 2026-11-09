@@ -1,0 +1,8 @@
+{
+  "status": "expected_default_weights_only_load_incompatible",
+  "scope": "CPU resume preparation, no accelerator work",
+  "error": "torch.load(weights_only=True) did not allow torch_npu.utils.storage._rebuild_npu_tensor",
+  "checkpoint": "own pilot_v3 private_resume_step0200.pt",
+  "resolution": "restricted weights-only mapping of two known legacy NPU globals to CPU-only rebuild functions; full payload SHA pinned; no NPU import",
+  "new_training_optimizer_updates": 0
+}

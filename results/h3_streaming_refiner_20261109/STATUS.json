@@ -1,8 +1,8 @@
 {
-  "as_of_utc": "2026-11-09T14:05:46.123700+00:00",
-  "stage": "native_dense_full226_complete_metric_failure_remaining_frozen_cohort_running",
-  "verified_optimizer_updates_at_evidence_snapshot": 200,
-  "target_updates": 200,
+  "as_of_utc": "2026-11-09T14:54:24.987467+00:00",
+  "stage": "TF3000_continuation_running_real_optimizer_updates",
+  "verified_optimizer_updates_at_evidence_snapshot": 206,
+  "target_updates": 3000,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
   "full226_evaluation_complete": false,
@@ -18,7 +18,7 @@
     200
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "continuation_v2 running; step0 ElephantsDream full67/full226 complete and rejected; step0 thirdWingIt latent evaluation running; no second NPU job",
+  "evaluation_workers": "short-pilot continuation intentionally stopped/reaped after thirdWingIt full67; remaining grid deferred; prioritized TF3000 now running",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -77,7 +77,8 @@
     "paging_only_change_each_job_repeats_gates": true,
     "no_accepted_refiner": true,
     "new_optimizer_updates": 0,
-    "active_arm_clip": "step0 WingIt_dev_300_525"
+    "active_arm_clip": "step0 WingIt_dev_300_525",
+    "status": "deferred_intentionally_stopped_after_thirdWingIt_full67"
   },
   "three_column_interim_video": {
     "complete226": true,
@@ -180,6 +181,37 @@
     "third_clip_complete": false,
     "checkpoint0_metric_gate_cannot_pass": true,
     "other_checkpoints_pending": true,
-    "report": "STEP0_TWO_CLIP_RESULTS_V1.md"
+    "report": "STEP0_TWO_CLIP_RESULTS_V1.md",
+    "interpretation": "only the untrained checkpoint artifact fails acceptance; does not reject TF or stop training"
+  },
+  "TF_extension_3000": {
+    "resume_from_step": 200,
+    "target_total_real_optimizer_updates": 3000,
+    "new_training_updates_so_far": 6,
+    "optimizer_restored": true,
+    "CPU_resume_integrity_passed": true,
+    "NPU_training_launched": true,
+    "resume_adapter_sha256": "b1bd7d862dc98e12bebdd6ea58257fbfd069d8d5173f39bebef7290c2a382ab1",
+    "resume_optimizer_sha256": "3b770ffc6e5fcabb7e78cf3481105531fe6b0372ea898706d8f8af1a16dc1ef5",
+    "CPU_optimizer_roundtrip_next_diagnostic_step_max_abs": 0,
+    "report": "TF_EXTENSION_3000_V1.md",
+    "early_pilot_quality_does_not_stop_TF": true,
+    "model_acceptance_thresholds_unchanged": true,
+    "old_short_pilot_cohort_deferred": true,
+    "later_eval_steps": [
+      1000,
+      2000,
+      3000
+    ],
+    "total_training_updates_at_snapshot": 206,
+    "real_full_model_resume_gates": "passed; cache/future/condition_future/reload exact0; real backward finite/nonzero",
+    "new_update_gradients_finite_nonzero": true,
+    "running": true
+  },
+  "step0_third_WingIt": {
+    "full67_complete": true,
+    "first4_chunk_parity_max_abs": 0,
+    "full226_deferred": true,
+    "latent_receipt": "step0000_thirdwingit_full67.json"
   }
 }

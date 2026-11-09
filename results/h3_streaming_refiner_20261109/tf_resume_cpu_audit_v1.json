@@ -1,0 +1,40 @@
+{
+  "step": 200,
+  "parameter_tensors": 401,
+  "parameter_elements": 20586496,
+  "all_optimizer_steps_match": true,
+  "all_moments_finite": true,
+  "optimizer_configuration_preserved": true,
+  "parameter_order_sha256": "45671f8d6b98b2e65b88c9eab796bf6da3f5d263caa319f6e9c0ce5982ee1a7a",
+  "status": "passed_CPU_resume_audit_only",
+  "adapter_sha256": "b1bd7d862dc98e12bebdd6ea58257fbfd069d8d5173f39bebef7290c2a382ab1",
+  "private_optimizer_sha256": "3b770ffc6e5fcabb7e78cf3481105531fe6b0372ea898706d8f8af1a16dc1ef5",
+  "source_sha256": "726d07dc27446ef85ef6613d52baea58f9b9e16d2c63340d8b282ab701a17ae8",
+  "private_optimizer_saved_NPU_format": "ND only, CPU restricted rebuild",
+  "optimizer_moments_roundtrip_and_next_fixed_gradient_step_max_abs": 0,
+  "diagnostic_synthetic_CPU_updates_per_copy": 1,
+  "training_optimizer_updates": 0,
+  "new_accelerator_forwards": 0,
+  "torch_npu_imported": false,
+  "all200_logged_schedule_positions_match": true,
+  "next_real_training_update": 201,
+  "next_schedule": {
+    "sample_index": 0,
+    "latent_index": 25,
+    "history": [
+      0,
+      24
+    ],
+    "frames": [
+      0,
+      24,
+      25
+    ],
+    "sigma": 0.8571428571428571,
+    "noise_seed": 20261110
+  },
+  "data_manifest_sha256": "e8d62687403df071f62df1ccf8b5653d05659771e323a724a15df21b62b16aed",
+  "condition_sha256": "e6b94ce5312346d81ff3dce81a7cd3f382441141c1fe2fc2ad7efd8cdfd4e84c",
+  "prior_RNG_saved": false,
+  "RNG_note": "Prior pilot stores no RNG; per-step training noise is derived from explicit sample/index/seed and restored schedule; no random augmentation or dropout in training path"
+}
