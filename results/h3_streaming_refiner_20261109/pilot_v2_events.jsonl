@@ -1,0 +1,9 @@
+{"event": "preparation_start", "elapsed_seconds": 5.451570987701416, "optimizer_updates": 0, "physical_npu": "7", "torch": "2.7.1+cpu", "torch_npu": "2.7.1.post2"}
+{"event": "validating_native_pair", "elapsed_seconds": 34.65407848358154, "optimizer_updates": 0, "sample": "Charge_train_3856_4081"}
+{"event": "frozen_upsampler_cached", "elapsed_seconds": 47.76487874984741, "optimizer_updates": 0, "sample": "Charge_train_3856_4081", "sha256": "5dc1df60fa60fc67c9712a181e283e3147ac6b2d209d1f876174dcb1bfefa778"}
+{"event": "validating_native_pair", "elapsed_seconds": 47.77635979652405, "optimizer_updates": 0, "sample": "Caminandes3_train_168_393"}
+{"event": "frozen_upsampler_cached", "elapsed_seconds": 59.417869091033936, "optimizer_updates": 0, "sample": "Caminandes3_train_168_393", "sha256": "cc30ea9e72e0db7617a30535f3bca473ff63780d2df9d9a41bd7a00272cd8076"}
+{"event": "base_loaded_cpu", "elapsed_seconds": 85.33793473243713, "optimizer_updates": 0, "parameter_bytes": 66280430080}
+{"event": "runtime_ready", "elapsed_seconds": 98.1977596282959, "optimizer_updates": 0, "trainable": 20586496, "resident_layers": 24}
+{"event": "real_model_cache_parity", "elapsed_seconds": 131.3982949256897, "optimizer_updates": 0, "max_abs": 0.24395525455474854, "relative_rms": 0.017436429858207703}
+{"event": "failed", "elapsed_seconds": 131.39998316764832, "optimizer_updates": 0, "error": "Real-model cache parity failed frozen tolerance"}

@@ -53,5 +53,20 @@
     "source_sha256": "952809cf39214edc76e4a3b1f6c35576e2d86254a9add753cbe24ddc35f6264d",
     "public_sha256": "b0bfb6ba2eafa8e0acb2deaa3c6831e069bb53aa79a76d1cd64052dfaa617954",
     "transformation": "remove local filesystem inode and mtime metadata; retain exact bytes/SHA"
+  },
+  "diagnose_parity.py": {
+    "source_sha256": "3a525b8344241d7adb098c72a97a502773fa99d8450b9b57288b49eaa2db30ea",
+    "public_sha256": "3a525b8344241d7adb098c72a97a502773fa99d8450b9b57288b49eaa2db30ea",
+    "transformation": "none"
+  },
+  "evaluation_v1.json": {
+    "source_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+    "public_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+    "transformation": "none"
+  },
+  "pilot_v2_failure.json": {
+    "source_sha256": "3caefdbe50fe21df1904417e8c7515b8e705b8229585621d98f8cbf2cfb4f685",
+    "public_sha256": "2dbfa000a0d87d01d8b0a252b6b05e3a7501159c5be09ad107377f29d07da94d",
+    "transformation": "remove private stack paths; add actual parity values/gates and diagnosis status"
   }
 }

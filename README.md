@@ -65,3 +65,5 @@ results/   实验元数据（config / metrics / summary，196 个 run）
 ## 2026-11-09: strict streaming Open H3 refiner implementation
 
 [Independent experiment](experiments/h3_streaming_refiner_20261109/README.md): incremental K/V, per-latent causal attention, frozen accepted upsampler, and a gated 200-step native-HR Teacher Forcing pilot. CPU kernel, real-block backward, and full-spatial tiny-model tests are recorded. **0 optimizer updates; full-model NPU checks and video quality evaluation remain pending because device admission was blocked.**
+
+Latest refiner status: [full-model NPU parity failure, before optimizer updates](results/h3_streaming_refiner_20261109/NPU_GATE_FAILURE_V2.md). Actual two-pair full67 inputs are prepared; cause diagnosis and the200-step pilot remain pending. Earlier CPU tests do not override this failure.
