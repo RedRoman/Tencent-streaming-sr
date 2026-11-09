@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-11-09T13:22:49.841009+00:00",
+  "as_of_utc": "2026-11-09T13:43:39.726699+00:00",
   "stage": "native_dense_full226_complete_metric_failure_remaining_frozen_cohort_running",
   "verified_optimizer_updates_at_evidence_snapshot": 200,
   "target_updates": 200,
@@ -18,7 +18,7 @@
     200
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "continuation_v2 reuses completed two results and five preflights; remaining16 arm/clip jobs running; every streaming job repeats unchanged real gates",
+  "evaluation_workers": "continuation_v2 running; step0 ElephantsDream full67 complete and pixels running; unchanged per-worker gates; no second NPU job",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -115,7 +115,16 @@
     "compensation": false,
     "report": "STRICT_DECODER_CPU_V1.md",
     "original_public_source_and_license_retained": true,
-    "full_model_refiner_long_stream": "still_pending"
+    "full_model_refiner_long_stream": "still_pending",
+    "full_pretrained_validation_worker": {
+      "stage": "strict_decoder_validation_v1",
+      "original_manifest_sha256": "61cc5f162ffd5b4ad967beb51ff39f4fef9f99ea431ad6734a4fb6bbd5d86cea",
+      "CPU_integrity_admission": "passed",
+      "active_predecessor_refusal": "passed before torch import",
+      "negative_tests": "passed on Linux; earlier macOS failure retained and guard corrected",
+      "NPU_launched": false,
+      "report": "STRICT_DECODER_VALIDATOR_CPU_V1.md"
+    }
   },
   "step0_first_clip_metric_ratios": {
     "pixel_l1": 6.208725297765126,
@@ -137,5 +146,12 @@
     "sha256": "fe8692360060e03aa026b4df89d7ef7c0b4b06740bd1c8842c960ec59e088f7d",
     "continuous_visual_reviewed": false,
     "selected_refiner": null
+  },
+  "step0_ElephantsDream": {
+    "full67_complete": true,
+    "payload_SHA_verified": true,
+    "chunk_parity_first4_max_abs": 0.0,
+    "full226_pending": true,
+    "selected": false
   }
 }

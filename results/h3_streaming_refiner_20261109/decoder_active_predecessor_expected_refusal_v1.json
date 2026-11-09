@@ -1,0 +1,8 @@
+{
+  "type": "RuntimeError",
+  "error": "Predecessor is active or not reaped; no accelerator import performed",
+  "traceback": "Traceback (most recent call last):\n  File \"PROJECT_ROOT/stages/strict_decoder_validation_v1/src/validate_strict_decoder.py\", line 170, in main\n    try:run(a,out,write,log)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"PROJECT_ROOT/stages/strict_decoder_validation_v1/src/validate_strict_decoder.py\", line 30, in run\n    raise RuntimeError('Predecessor is active or not reaped; no accelerator import performed')\nRuntimeError: Predecessor is active or not reaped; no accelerator import performed\n",
+  "torch_imported": false,
+  "torch_npu_imported": false,
+  "optimizer_updates": 0
+}

@@ -234,5 +234,41 @@
   "src/encode_checkpoint_comparison_cpu.py": {
     "source_sha256": "5dab47507a5aa053dfa45365847493c77fcf256e205b3bbff584043021c46a9f",
     "public_sha256": "5dab47507a5aa053dfa45365847493c77fcf256e205b3bbff584043021c46a9f"
+  },
+  "src/decoder_validation_admission.py": {
+    "source_sha256": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127",
+    "public_sha256": "326f777044d3a093366a8d25b2bf23f47f300beb9cc6000fe0de864108436b80"
+  },
+  "src/validate_strict_decoder.py": {
+    "source_sha256": "c5e5fa3cc1d2861b79484eb9a13715e691957fd1bf037de42e64b9d19eeaabc7",
+    "public_sha256": "c5e5fa3cc1d2861b79484eb9a13715e691957fd1bf037de42e64b9d19eeaabc7"
+  },
+  "src/test_decoder_validation_admission.py": {
+    "source_sha256": "694725064787c633fe60600f2fe78ecad9800c49c61b3eb4303f68ac3a4a57a2",
+    "public_sha256": "694725064787c633fe60600f2fe78ecad9800c49c61b3eb4303f68ac3a4a57a2"
+  },
+  "stages/strict_decoder_validation_v1/manifest.json": {
+    "source_sha256": "61cc5f162ffd5b4ad967beb51ff39f4fef9f99ea431ad6734a4fb6bbd5d86cea",
+    "public_sha256": "61cc5f162ffd5b4ad967beb51ff39f4fef9f99ea431ad6734a4fb6bbd5d86cea"
+  },
+  "stages/strict_decoder_validation_v1/config/strict_decoder_validation_v1.json": {
+    "source_sha256": "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e",
+    "public_sha256": "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e"
+  },
+  "stages/strict_decoder_validation_v1/src/test_decoder_validation_admission.py": {
+    "source_sha256": "694725064787c633fe60600f2fe78ecad9800c49c61b3eb4303f68ac3a4a57a2",
+    "public_sha256": "694725064787c633fe60600f2fe78ecad9800c49c61b3eb4303f68ac3a4a57a2"
+  },
+  "stages/strict_decoder_validation_v1/src/validate_strict_decoder.py": {
+    "source_sha256": "c5e5fa3cc1d2861b79484eb9a13715e691957fd1bf037de42e64b9d19eeaabc7",
+    "public_sha256": "c5e5fa3cc1d2861b79484eb9a13715e691957fd1bf037de42e64b9d19eeaabc7"
+  },
+  "stages/strict_decoder_validation_v1/src/decoder_validation_admission.py": {
+    "source_sha256": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127",
+    "public_sha256": "326f777044d3a093366a8d25b2bf23f47f300beb9cc6000fe0de864108436b80"
+  },
+  "stages/strict_decoder_validation_v1/src/run_locked.py": {
+    "source_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "public_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6"
   }
 }

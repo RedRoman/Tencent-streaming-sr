@@ -1,0 +1,27 @@
+{
+  "files": {
+    "src/decoder_validation_admission.py": {
+      "sha256": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127",
+      "bytes": 5592
+    },
+    "src/validate_strict_decoder.py": {
+      "sha256": "c5e5fa3cc1d2861b79484eb9a13715e691957fd1bf037de42e64b9d19eeaabc7",
+      "bytes": 10948
+    },
+    "src/test_decoder_validation_admission.py": {
+      "sha256": "694725064787c633fe60600f2fe78ecad9800c49c61b3eb4303f68ac3a4a57a2",
+      "bytes": 2872
+    },
+    "src/run_locked.py": {
+      "sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+      "bytes": 2345
+    },
+    "config/strict_decoder_validation_v1.json": {
+      "sha256": "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e",
+      "bytes": 3471
+    }
+  },
+  "purpose": "independent full-pretrained decoder validation worker; CPU admission checks first, NPU launch deferred until active evaluation is reaped",
+  "candidate_stage": "strict_decoder_v1",
+  "changes_to_frozen_candidate": false
+}

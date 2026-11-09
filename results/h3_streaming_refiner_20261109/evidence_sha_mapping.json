@@ -198,5 +198,50 @@
     "original_sha256": "fe8692360060e03aa026b4df89d7ef7c0b4b06740bd1c8842c960ec59e088f7d",
     "public_sha256": "fe8692360060e03aa026b4df89d7ef7c0b4b06740bd1c8842c960ec59e088f7d",
     "redaction": null
+  },
+  "decoder_admission_negative_cpu_v1.json": {
+    "original_sha256": "a3d8735b220818b36dda88b049d2e17b2b86d430531b329352f6abcb8349376a",
+    "public_sha256": "a3d8735b220818b36dda88b049d2e17b2b86d430531b329352f6abcb8349376a",
+    "redaction": null
+  },
+  "strict_decoder_integrity_admission_cpu_v1.json": {
+    "original_sha256": "7ec36fb5953bf0af5bb4804503315d430821c2818d8b4bc641bd1fa07fdbc735",
+    "public_sha256": "7ec36fb5953bf0af5bb4804503315d430821c2818d8b4bc641bd1fa07fdbc735",
+    "redaction": null
+  },
+  "decoder_active_predecessor_refusal_cpu_v1.json": {
+    "original_sha256": "4f674b7d5e0546eb5c29b4931686feccc8e4d8e3441f22c84fd23bde81a3391a",
+    "public_sha256": "4f674b7d5e0546eb5c29b4931686feccc8e4d8e3441f22c84fd23bde81a3391a",
+    "redaction": null
+  },
+  "decoder_active_predecessor_expected_refusal_v1.json": {
+    "original_sha256": "19b00c13425c1b99aae5681346168d35e384c8face4a7a1c23c9b307ef7e2717",
+    "public_sha256": "2ab491a5d40e84a506324bb0b1c491ee80b5cf72e7d9dfb8f7300a3b2d4614d3",
+    "redaction": "private deployment and lock owner paths redacted; original SHA retained"
+  },
+  "decoder_admission_local_platform_failure_v1.json": {
+    "original_sha256": "0e35562055a8f5a6248b32141b399072355236e0acc2351889ea9d133d6a86ad",
+    "public_sha256": "0e35562055a8f5a6248b32141b399072355236e0acc2351889ea9d133d6a86ad",
+    "redaction": null
+  },
+  "decoder_validation_admission_before_platform_guard.py": {
+    "original_sha256": "2e8e5b994c3e728933056cbdf640394cf1eea9784bb3e6365928755d8ba994e2",
+    "public_sha256": "f00bd4df0b153e08583c975e4a0b5b9a8f6be65346660e57b63140c22644481e",
+    "redaction": "private deployment and lock owner paths redacted; original SHA retained"
+  },
+  "STRICT_DECODER_VALIDATOR_CPU_V1.md": {
+    "original_sha256": "1cba1bbda2867d12d4efc62d5605e6498644fe0dfeb6c3f327833bb700651da4",
+    "public_sha256": "1cba1bbda2867d12d4efc62d5605e6498644fe0dfeb6c3f327833bb700651da4",
+    "redaction": null
+  },
+  "step0000_elephantsdream_full67.json": {
+    "original_sha256": "309c1e6700a9151f3ad9859339a395aee935a911986f9a2c962a933e44d4d9e9",
+    "public_sha256": "53dbe8249f2cebcf20f197c37801b1a930cb9e34971d756950849628606d0537",
+    "redaction": "private deployment and lock owner paths redacted; original SHA retained"
+  },
+  "step0000_elephantsdream_payload_audit.json": {
+    "original_sha256": "856357715ae539a39639984f002e0779f0544640b269496fc61efa2b561ad684",
+    "public_sha256": "856357715ae539a39639984f002e0779f0544640b269496fc61efa2b561ad684",
+    "redaction": null
   }
 }

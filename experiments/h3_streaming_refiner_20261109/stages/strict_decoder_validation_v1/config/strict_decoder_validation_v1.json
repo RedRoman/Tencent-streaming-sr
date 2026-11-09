@@ -1,0 +1,92 @@
+{
+  "schema": "strict-decoder-NPU-validation-v1",
+  "status": "predeclared_not_launched",
+  "prerequisites": [
+    "current evaluation_continuation_v2 exits and child is reaped",
+    "fresh npu-smi and process identity",
+    "entire job holds all three authorized device locks; one launcher, no waiter",
+    "exact CPU-tested candidate sources and upstream blob",
+    "frozen prior VAE implementation/assets/FP32 and data manifest verified"
+  ],
+  "source_stage": "strict_decoder_v1",
+  "cpu_evidence_sha256": "e042b0fb54538aa0329a9583f910ebac0c52b70a2ff629fd3ed5e6aaf4f65504",
+  "runtime_source_sha256": {
+    "strict_decoder_core.py": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f",
+    "strict_streaming_decoder.py": "4788d5bac68fd4e3b1d22ccd3f513ec694c917f2978d5b68e6cf80b8baa32049",
+    "check_strict_decoder_cpu.py": "5fc6957c7540ae21c0f77572ae6bd44fd54c97f5be7035dee7f7cda0bf58c192"
+  },
+  "sample_id": "WingIt_dev_3586_3811",
+  "input": "exact accepted-upsampled cached dev latent, not a different upsampler/checkpoint",
+  "new_training_updates": 0,
+  "compensation": false,
+  "compile": false,
+  "precision": "FP32",
+  "host_KV_bytes_expected": 63594823680,
+  "max_input_latents_retained": 7,
+  "gates": [
+    {
+      "name": "full_pretrained_VAE_CPU_KV_vs_pinned_upstream_incremental_NPU_KV",
+      "scope": "nine actual dev latent crops16x16, covers first refresh and first window shift",
+      "max_abs_required": 0.0,
+      "same_mask_reference": true,
+      "comparison_to_official_bidirectional_VAE": false
+    },
+    {
+      "name": "full_spatial_first8_replay",
+      "scope": "same67-latent input arriving in different chunks, compare first8 emitted outputs after reset",
+      "RGB_max_abs_required": 0
+    },
+    {
+      "name": "future_perturbation",
+      "scope": "replace latent7, compare emitted latent0..6 pixels against the earlier unperturbed run",
+      "RGB_max_abs_required": 0
+    },
+    {
+      "name": "long_stream",
+      "latent_count": 137,
+      "source_index": "absolute_index modulo67; explicitly looped engineering stress input, not137 unique video latents",
+      "expected_decoded_frames": 464,
+      "first67_frames": 226,
+      "full_shape": [
+        1,
+        24,
+        137,
+        68,
+        120
+      ],
+      "no_output_revision": true,
+      "record_every_latent_time_and_cache": true
+    },
+    {
+      "name": "geometry",
+      "raw_height_width": [
+        1088,
+        1920
+      ],
+      "crop_y": [
+        4,
+        1084
+      ],
+      "RGB_height_width": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "name": "first67_fidelity",
+      "nativeHR": "existing true226 frames",
+      "decoder_ablation": "frozen official overlap decode of same accepted-upsampled latent",
+      "report": [
+        "nativeHR L1/LPIPS/PSNR",
+        "same-input official-decoder L1",
+        "temporal boundary metrics",
+        "full226 technical audit",
+        "separate actual continuous visual review"
+      ],
+      "existing_quality_thresholds_unchanged": true
+    }
+  ],
+  "failure_policy": "stop and preserve failed gate and source SHA; no silent tolerance, precision, compensation or checkpoint changes",
+  "full_model_long_refiner_test": "separate pending task; VAE long-stream pass does not validate refiner beyond67",
+  "acceptance": "technical checks alone never select weights or establish visual quality; main final pipeline still requires full fixed dev cohort and visual gate"
+}

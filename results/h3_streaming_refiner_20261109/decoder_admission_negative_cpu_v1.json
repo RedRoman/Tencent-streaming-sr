@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "CPU admission negative tests only",
+  "payload_corruption_rejected": true,
+  "running_predecessor_rejected": true,
+  "live_PID_even_with_reaped_flag_rejected": true,
+  "missing_process_identities_rejected": true,
+  "nonreaped_failure_rejected": true,
+  "changed_predeclared_plan_rejected": true,
+  "invalid_physical_device_rejected": true,
+  "torch_imported": false,
+  "torch_npu_imported": false,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0,
+  "source_sha256": "694725064787c633fe60600f2fe78ecad9800c49c61b3eb4303f68ac3a4a57a2",
+  "admission_source_sha256": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "local_negative_test_failed",
+  "scope": "pre-stage development CPU test on macOS; no model execution",
+  "failure": "assertion that a live current PID is rejected failed because /proc does not exist on macOS",
+  "admission_source_sha256_before_fix": "2e8e5b994c3e728933056cbdf640394cf1eea9784bb3e6365928755d8ba994e2",
+  "test_source_sha256": "694725064787c633fe60600f2fe78ecad9800c49c61b3eb4303f68ac3a4a57a2",
+  "correction": "fail closed when Linux /proc/self/stat is unavailable; execute full PID admission tests on the authorized Linux host",
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0
+}
