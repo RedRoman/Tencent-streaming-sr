@@ -1,0 +1,73 @@
+{
+  "status": "full226_video_technical_audit_passed",
+  "kind": "step200_engineering_preview",
+  "sample_id": "WingIt_dev_3586_3811",
+  "columns": [
+    "Streaming refiner | TF step200",
+    "Frozen upsampler | no refiner",
+    "Actual native-HR GT"
+  ],
+  "input_RGB": [
+    {
+      "path": "visible_RGB.npy",
+      "sha256": "f7b7573264256c28b1b215d199b118782f5c7261b6dfc142180d14314fc766fa",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "teacher_student_RGB.npy",
+      "bytes": 1405900928,
+      "sha256": "6dca486d86df699161eca8413749194a16a095db2ceb2762e1e26813726a77fc"
+    },
+    {
+      "path": "native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+    }
+  ],
+  "data_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "files": {
+    "step200_1080p": {
+      "path": "step200_1080p.mp4",
+      "sha256": "b0f6994c4933292c81f7103d48e104fbf8b492cb5afcb7105eb5cf0bfa449368",
+      "bytes": 34793432,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "comparison": {
+      "path": "step200_engineering_preview_comparison.mp4",
+      "sha256": "368ee7f0146c406e2ea1d94197004d0a8c03f055762b490dd0db09e0166319ee",
+      "bytes": 17337174,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    }
+  },
+  "fps": 24,
+  "frames": 226,
+  "seconds": 99.01799154281616,
+  "metrics_use_lossless_RGB_not_H264": true,
+  "continuous_visual_reviewed": false,
+  "accepted_refiner": null,
+  "strict_streaming_decoder_validated": false,
+  "optimizer_updates": 0
+}

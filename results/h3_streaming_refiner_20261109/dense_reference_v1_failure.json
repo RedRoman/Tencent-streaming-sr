@@ -1,0 +1,5 @@
+{
+  "type": "AssertionError",
+  "error": "{'max_abs': 0.2541511058807373, 'relative_rms': 0.017852548509836197, 'scope': 'full_model_two_latent_dense_vs_upstream_forward', 'no_text': True}",
+  "traceback": "Traceback (most recent call last):\n  File \"<evaluation_v4>/src/evaluate_dense_reference.py\", line 100, in main\n    parity=check_upstream(rt,(1-sigmas[0])*draft[:,:2]+sigmas[0]*noise[:,:2],draft[:,:2],condition,sigmas[0])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<site-packages>/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"<evaluation_v4>/src/evaluate_dense_reference.py\", line 48, in check_upstream\n    assert report['max_abs']<=.03 and report['relative_rms']<=.005,report\nAssertionError: {'max_abs': 0.2541511058807373, 'relative_rms': 0.017852548509836197, 'scope': 'full_model_two_latent_dense_vs_upstream_forward', 'no_text': True}\n"
+}

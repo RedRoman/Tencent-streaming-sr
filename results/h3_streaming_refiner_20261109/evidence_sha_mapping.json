@@ -33,5 +33,20 @@
     "original_sha256": "110547164ef345e18aa72cf800bfa6ef105cf0a28082883c1a96af7c8a866c76",
     "public_sha256": "110547164ef345e18aa72cf800bfa6ef105cf0a28082883c1a96af7c8a866c76",
     "redaction": null
+  },
+  "dense_reference_v1_failure.json": {
+    "original_sha256": "621b2c14eca55a7f4ba24e9940d0261f525344242f6d780e7ea1072e4b682fcf",
+    "public_sha256": "ab10ae23d5419bc4a1d91b156f1a9edfd0b431961e171ea265953b5e38f1be98",
+    "redaction": "private source/runtime prefixes replaced in traceback"
+  },
+  "step200_video_audit.json": {
+    "original_sha256": "2cf0e2df8a387de7a40aed1937e66f43c6aa4a4c0242c59eaf513becae861e0d",
+    "public_sha256": "c46d389e5847cff4d87009b2d9f754f05b317886e1f0fefd22972aea0ecae81b",
+    "redaction": "private input/output prefixes replaced by filenames"
+  },
+  "step200_quickview_audit.json": {
+    "original_sha256": "1317c97d0301cc3f755a7e7e0f65f48f30c107b2aa1461f1b98b8bec6cc3e9bf",
+    "public_sha256": "1317c97d0301cc3f755a7e7e0f65f48f30c107b2aa1461f1b98b8bec6cc3e9bf",
+    "redaction": null
   }
 }

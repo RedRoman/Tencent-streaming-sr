@@ -1,0 +1,22 @@
+{
+  "status": "full226_quickview_technical_audit_passed",
+  "source_sha256": "368ee7f0146c406e2ea1d94197004d0a8c03f055762b490dd0db09e0166319ee",
+  "sha256": "6f70831d7b1a1edf3a463702f60eaa33da49c093135c4d3a5850569423dd9153",
+  "bytes": 1509293,
+  "stream": {
+    "width": 1440,
+    "height": 310,
+    "avg_frame_rate": "24/1",
+    "duration": "9.416667",
+    "nb_read_frames": "226"
+  },
+  "all226_pts_checked": true,
+  "full_decode_checked": true,
+  "columns": [
+    "Streaming refiner | TF step200",
+    "Frozen upsampler | no refiner",
+    "Actual native-HR GT"
+  ],
+  "visual_quality": "rejected by full226 metrics and sampled-frame structure inspection",
+  "continuous_visual_reviewed": false
+}
