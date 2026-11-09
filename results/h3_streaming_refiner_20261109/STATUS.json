@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-09T10:53:14.399759+00:00",
-  "stage": "step200_video_negative_result_complete_dense_reference_preflight_failed",
+  "as_of_utc": "2026-11-09T11:35:03.263538+00:00",
+  "stage": "native_dense_full226_complete_metric_failure_remaining_frozen_cohort_running",
   "verified_optimizer_updates_at_evidence_snapshot": 200,
   "target_updates": 200,
   "full_model_NPU_two_latent_gates": "passed",
@@ -18,7 +18,7 @@
     200
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "continuation stopped at dense equivalence preflight; other checkpoints/dev results still pending",
+  "evaluation_workers": "continuation_v2 reuses completed two results and five preflights; remaining16 arm/clip jobs running; every streaming job repeats unchanged real gates",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -34,7 +34,7 @@
     "chunk_invariance_scope": "first4 latents, maxabs0",
     "longer_than67_tested": false
   },
-  "full226_completed_clip_count": 1,
+  "full226_completed_clip_count": 2,
   "step200_first_clip_metric_ratios": {
     "pixel_l1": 4.620512088645055,
     "lpips": 5.604025592910683
@@ -48,10 +48,47 @@
     3
   ],
   "step200_video_technical_audit": "full226 passed",
-  "dense_reference_preflight": {
+  "full226_completed_clip_count_definition": "arm/clip results: step200 WingIt plus native dense same WingIt; one unique clip",
+  "dense_reference_preflight_historical": {
     "status": "failed",
     "max_abs": 0.2541511058807373,
     "relative_rms": 0.017852548509836197,
     "full67_inference_started": false
+  },
+  "native_dense_reference": {
+    "two_latent_upstream_gate": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "full67_complete": true,
+    "full226_complete": true,
+    "sample_id": "WingIt_dev_3586_3811",
+    "full226_ratios_vs_no_refiner": {
+      "pixel_l1": 2.833940258743118,
+      "lpips": 3.2183841890114944
+    },
+    "metric_gate_passed_for_this_clip": false,
+    "continuous_visual_reviewed": false
+  },
+  "continuation_v2": {
+    "full_reuse_CPU_admission": "passed10 verified receipts",
+    "remaining_arm_clip_jobs": 16,
+    "streaming_resident_layers": 40,
+    "paging_only_change_each_job_repeats_gates": true,
+    "no_accepted_refiner": true,
+    "new_optimizer_updates": 0
+  },
+  "three_column_interim_video": {
+    "complete226": true,
+    "fps": 24,
+    "columns": [
+      "TFstep200 streaming REJECTED",
+      "released bidirectional refiner",
+      "actual nativeHR GT"
+    ],
+    "sha256": "3b601cc4f87392db5855ce0738006f73566a229ce26e3986bab24c496ab5026f",
+    "technical_audit_passed": true,
+    "continuous_visual_reviewed": false,
+    "accepted_refiner": null
   }
 }

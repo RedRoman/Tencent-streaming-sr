@@ -1,0 +1,66 @@
+{
+  "status": "training_objective_summary_not_quality_acceptance",
+  "events_sha256": "9988b0ba4997b45f115eb6a1a29a0faefedfa3166b4dec184f32922c06dc7a58",
+  "actual_optimizer_updates": 200,
+  "loss": "nativeHR flow MSE +0.05*draft latent L1",
+  "bands": [
+    {
+      "steps": [
+        1,
+        50
+      ],
+      "count": 50,
+      "means": {
+        "fm": 0.29018000945448874,
+        "draft_l1": 0.3447443377971649,
+        "loss": 0.3074172267317772,
+        "grad_norm": 0.321126961261034
+      }
+    },
+    {
+      "steps": [
+        51,
+        100
+      ],
+      "count": 50,
+      "means": {
+        "fm": 0.12060894668102265,
+        "draft_l1": 0.23631275504827498,
+        "loss": 0.1324245848506689,
+        "grad_norm": 0.14819286160171033
+      }
+    },
+    {
+      "steps": [
+        101,
+        150
+      ],
+      "count": 50,
+      "means": {
+        "fm": 0.09183383960276842,
+        "draft_l1": 0.21136609643697737,
+        "loss": 0.10240214422345162,
+        "grad_norm": 0.14822425924241542
+      }
+    },
+    {
+      "steps": [
+        151,
+        200
+      ],
+      "count": 50,
+      "means": {
+        "fm": 0.08095550194382667,
+        "draft_l1": 0.20392791032791138,
+        "loss": 0.09115189857780934,
+        "grad_norm": 0.14745137505233288
+      }
+    }
+  ],
+  "interpretation": [
+    "The teacher-forced objective decreases on the two training clips. This does not establish rollout fidelity or generalization.",
+    "The step200 full226 WingIt result fails nativeHR preservation and sampled-frame structural fidelity despite this loss decrease.",
+    "The remaining frozen checkpoint/dev cohort and native dense control are needed before attributing the failure to learning, causal conversion, missing text, or rollout exposure.",
+    "No self-generated-history or DMD promotion; no quality threshold or frozen inputs changed."
+  ]
+}

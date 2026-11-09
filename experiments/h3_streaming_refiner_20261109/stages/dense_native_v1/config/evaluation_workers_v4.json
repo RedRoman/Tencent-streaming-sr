@@ -1,0 +1,27 @@
+{
+  "stage": "dense-native-attention-candidate-v1",
+  "runtime": "unchanged_v3_canonical_rows",
+  "status": "candidate_CPU_and_NPU_validation_pending",
+  "new_sources": {
+    "src/causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "src/paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "src/streaming_refiner.py": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",
+    "src/prepare_pairs.py": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
+    "src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "src/evaluate_streaming.py": "5f155d80c20152f5f6689bb0f409137511a4267ba63efa215cb735acf50243ca",
+    "src/evaluate_pixels.py": "3de141f387219fa6c27a8cf885660a830b872f7f7b56e065c17640269f66a55c",
+    "src/evaluate_dense_reference.py": "8cef445f84c33c5f5e03e3d80deb576a5609c87c0ed06ced30b153a6f0b7a3b4",
+    "src/check_dense_cpu.py": "f79bd60b1d1e3b9ab4fef32fb589ba42fb6e139bd3a18430ce006a9c019cd67d",
+    "src/test_runtime_cpu.py": "d29f3ba5f37dc3a712c194652afce007d5cb543e9c70df1c50448e8896aac376",
+    "src/run_evaluation_batch.py": "688d01c085423458a624a37c3e026b9a9418abc6f781b68464f27cc76f24cca0"
+  },
+  "frozen_protocol_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+  "dev_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "prior_decoder_plan_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+  "limits": [
+    "official_overlap_decoder_provisional",
+    "full33B_dense_parity_and_chunk4_still_need_execution",
+    "no_visual_quality_claim"
+  ],
+  "change": "dense reference only uses original attention processor without query slicing; original gates unchanged, full67 memory must be tested"
+}

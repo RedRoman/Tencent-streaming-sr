@@ -1,0 +1,81 @@
+{
+  "status": "full226_video_technical_audit_passed",
+  "columns": [
+    "Streaming refiner | TF200 REJECTED",
+    "Released bidirectional refiner",
+    "Actual native-HR GT"
+  ],
+  "sample_id": "WingIt_dev_3586_3811",
+  "fps": 24,
+  "frames": 226,
+  "input_RGB": [
+    {
+      "path": "visible_RGB.npy",
+      "sha256": "f7b7573264256c28b1b215d199b118782f5c7261b6dfc142180d14314fc766fa",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "visible_RGB.npy",
+      "sha256": "cd7cd19165ce6010e9b593650401646e821f252c7a1ef5750fecdeee64d3fc2c",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+    }
+  ],
+  "data_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "protocol_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+  "streaming_preview_sha256": "14b48fe8b8de6d5dc39501344fea761a3d13cd33dc2058b20219114d859189e3",
+  "dense_preview_sha256": "2b4cb04d7312d7d62021565e0e6925d89123e78dadc2d13a31f0fd20479b7a16",
+  "dense_upstream_gate_sha256": "3d3e179299b221e69d9815e834e1ce53e00860c6dddaecaf5e8c7a60422b9c3f",
+  "files": {
+    "comparison": {
+      "path": "step200_dense_gt_comparison.mp4",
+      "sha256": "5e21288212d6ae870ba13aad60420b8a30ae0a06ad4d1e3a5797054ef3d95461",
+      "bytes": 19467536,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "quickview": {
+      "path": "step200_dense_gt_quickview.mp4",
+      "sha256": "33ce278e240d99ee06fb3d1b5abe9d2de612e9b558b4d04b36e87095f1404b0e",
+      "bytes": 5310966,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 320,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    }
+  },
+  "step200_fidelity_passed": false,
+  "accepted_refiner": null,
+  "continuous_visual_reviewed": false,
+  "strict_streaming_decoder_validated": false,
+  "optimizer_updates": 0,
+  "seconds": 99.65481400489807
+}

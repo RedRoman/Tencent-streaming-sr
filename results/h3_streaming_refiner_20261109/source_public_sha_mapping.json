@@ -86,5 +86,77 @@
   "src/run_evaluation_continuation.py": {
     "source_sha256": "8fa1f964f5574757f170287be61eb02b44845c4fbc7488f79d76e7ef430091c3",
     "public_sha256": "8fa1f964f5574757f170287be61eb02b44845c4fbc7488f79d76e7ef430091c3"
+  },
+  "src/diagnose_dense_parity.py": {
+    "source_sha256": "1e55a346f9906f0a9f300399b2f54e684791602c7f9e986eb0a3ba804e447635",
+    "public_sha256": "1e55a346f9906f0a9f300399b2f54e684791602c7f9e986eb0a3ba804e447635"
+  },
+  "src/run_dense_native_preview.py": {
+    "source_sha256": "93ce956faa22b98142229b29cd3f4593ea2b27a9328d5d58894d985b76b44298",
+    "public_sha256": "93ce956faa22b98142229b29cd3f4593ea2b27a9328d5d58894d985b76b44298"
+  },
+  "src/run_evaluation_continuation_v2.py": {
+    "source_sha256": "68c12e54f4e874ecc6444bd189221b5341f650a6b9827159f0bc61e85cecc028",
+    "public_sha256": "68c12e54f4e874ecc6444bd189221b5341f650a6b9827159f0bc61e85cecc028"
+  },
+  "src/encode_dense_comparison_cpu.py": {
+    "source_sha256": "e25a781246045e09ab85bc828a1d46f502d28fa368a2d4f55e1bdcfeecffb99d",
+    "public_sha256": "e25a781246045e09ab85bc828a1d46f502d28fa368a2d4f55e1bdcfeecffb99d"
+  },
+  "stages/dense_native_v1/config/evaluation_v1.json": {
+    "source_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+    "public_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc"
+  },
+  "stages/dense_native_v1/config/evaluation_workers_v4.json": {
+    "source_sha256": "45f5e190e0e43af7ab85e130282e884e4bc89b0eda1a94e94d293a7f539ae1c1",
+    "public_sha256": "45f5e190e0e43af7ab85e130282e884e4bc89b0eda1a94e94d293a7f539ae1c1"
+  },
+  "stages/dense_native_v1/src/causal_attention.py": {
+    "source_sha256": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "public_sha256": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f"
+  },
+  "stages/dense_native_v1/src/check_dense_cpu.py": {
+    "source_sha256": "f79bd60b1d1e3b9ab4fef32fb589ba42fb6e139bd3a18430ce006a9c019cd67d",
+    "public_sha256": "f79bd60b1d1e3b9ab4fef32fb589ba42fb6e139bd3a18430ce006a9c019cd67d"
+  },
+  "stages/dense_native_v1/src/evaluate_dense_reference.py": {
+    "source_sha256": "8cef445f84c33c5f5e03e3d80deb576a5609c87c0ed06ced30b153a6f0b7a3b4",
+    "public_sha256": "8cef445f84c33c5f5e03e3d80deb576a5609c87c0ed06ced30b153a6f0b7a3b4"
+  },
+  "stages/dense_native_v1/src/evaluate_pixels.py": {
+    "source_sha256": "3de141f387219fa6c27a8cf885660a830b872f7f7b56e065c17640269f66a55c",
+    "public_sha256": "3de141f387219fa6c27a8cf885660a830b872f7f7b56e065c17640269f66a55c"
+  },
+  "stages/dense_native_v1/src/evaluate_streaming.py": {
+    "source_sha256": "5f155d80c20152f5f6689bb0f409137511a4267ba63efa215cb735acf50243ca",
+    "public_sha256": "5f155d80c20152f5f6689bb0f409137511a4267ba63efa215cb735acf50243ca"
+  },
+  "stages/dense_native_v1/src/paged_runtime.py": {
+    "source_sha256": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "public_sha256": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f"
+  },
+  "stages/dense_native_v1/src/prepare_pairs.py": {
+    "source_sha256": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
+    "public_sha256": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9"
+  },
+  "stages/dense_native_v1/src/run_evaluation_batch.py": {
+    "source_sha256": "688d01c085423458a624a37c3e026b9a9418abc6f781b68464f27cc76f24cca0",
+    "public_sha256": "688d01c085423458a624a37c3e026b9a9418abc6f781b68464f27cc76f24cca0"
+  },
+  "stages/dense_native_v1/src/run_locked.py": {
+    "source_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "public_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6"
+  },
+  "stages/dense_native_v1/src/streaming_refiner.py": {
+    "source_sha256": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141",
+    "public_sha256": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141"
+  },
+  "stages/dense_native_v1/src/test_runtime_cpu.py": {
+    "source_sha256": "d29f3ba5f37dc3a712c194652afce007d5cb543e9c70df1c50448e8896aac376",
+    "public_sha256": "d29f3ba5f37dc3a712c194652afce007d5cb543e9c70df1c50448e8896aac376"
+  },
+  "src/make_compact_video_cpu.py": {
+    "source_sha256": "e6094a55d29f5cf1882e053769b56cd093e5e8837b21e268c160aa2dfe17a7e5",
+    "public_sha256": "e6094a55d29f5cf1882e053769b56cd093e5e8837b21e268c160aa2dfe17a7e5"
   }
 }

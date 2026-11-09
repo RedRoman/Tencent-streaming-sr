@@ -1,0 +1,33 @@
+{
+  "status": "full67_latent_inference_complete_pixels_pending",
+  "arm": "released_dense_refiner",
+  "sample_id": "WingIt_dev_3586_3811",
+  "training_step": null,
+  "checkpoint_sha256": null,
+  "trained_streaming_adapter_loaded": false,
+  "output": {
+    "path": "dense_latents.npy",
+    "sha256": "d410b1101a596dde834834c906e02e8c88655c2dc38763027f7f86f90057343b",
+    "shape": [
+      24,
+      67,
+      68,
+      120
+    ]
+  },
+  "pipeline_shape": [
+    1,
+    24,
+    67,
+    68,
+    120
+  ],
+  "data_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "protocol_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+  "optimizer_updates": 0,
+  "model_forwards": 3,
+  "peak_allocated_bytes": 35641504768,
+  "same_draft_noise_condition_sigmas": true,
+  "full226_pixels_complete": false,
+  "visual_quality_passed": false
+}

@@ -48,5 +48,80 @@
     "original_sha256": "1317c97d0301cc3f755a7e7e0f65f48f30c107b2aa1461f1b98b8bec6cc3e9bf",
     "public_sha256": "1317c97d0301cc3f755a7e7e0f65f48f30c107b2aa1461f1b98b8bec6cc3e9bf",
     "redaction": null
+  },
+  "dense_trace_v1.json": {
+    "original_sha256": "0e2f4e7e61b829a2616e0ac541e08c14c23f21b83f8a66c9b3c304073fb948f0",
+    "public_sha256": "0e2f4e7e61b829a2616e0ac541e08c14c23f21b83f8a66c9b3c304073fb948f0",
+    "redaction": null
+  },
+  "dense_native_cpu_v1.log": {
+    "original_sha256": "b2fe3423c4503731c5a5f31069422d5b4cc5f7aed719f0f214272f3afd2a58bb",
+    "public_sha256": "b2fe3423c4503731c5a5f31069422d5b4cc5f7aed719f0f214272f3afd2a58bb",
+    "redaction": null
+  },
+  "continuation_v2_stage_transition_cpu.json": {
+    "original_sha256": "7448de256321a99c0afcf56e20944b0a3268772a9d548948651ce25ccdc03299",
+    "public_sha256": "7448de256321a99c0afcf56e20944b0a3268772a9d548948651ce25ccdc03299",
+    "redaction": null
+  },
+  "dense_native_upstream_gate_v1.json": {
+    "original_sha256": "3d3e179299b221e69d9815e834e1ce53e00860c6dddaecaf5e8c7a60422b9c3f",
+    "public_sha256": "3d3e179299b221e69d9815e834e1ce53e00860c6dddaecaf5e8c7a60422b9c3f",
+    "redaction": null
+  },
+  "pilot_objective_vs_rollout_v1.json": {
+    "original_sha256": "0e9effe32c19280c46d2b0cf92d0cfdcc1cac7291162156331326cc2f2ede7db",
+    "public_sha256": "0e9effe32c19280c46d2b0cf92d0cfdcc1cac7291162156331326cc2f2ede7db",
+    "redaction": null
+  },
+  "dense_refine_source_audit.json": {
+    "original_sha256": "b37ba6f5ac272ec6eea4e62b61f13f559220c6f2235247166c9b02dc7725852b",
+    "public_sha256": "b37ba6f5ac272ec6eea4e62b61f13f559220c6f2235247166c9b02dc7725852b",
+    "redaction": null
+  },
+  "dense_native_wingit_full67.json": {
+    "original_sha256": "15f05b77a7e1ba4050db90d0764e8c1714241d748c9f9d351d83bf9d68ac49b0",
+    "public_sha256": "58ec03a034eed291b442aafcf67f214ae48acf88438650a57d91a70d77204d9c",
+    "redaction": "private latent output path replaced by filename; payload not published"
+  },
+  "continuation_v2_dense_admission_cpu.json": {
+    "original_sha256": "8aceb22e3e7832cfba0596aea6192b7a597ca428a449dc6f20fb67bbc6beb42a",
+    "public_sha256": "8aceb22e3e7832cfba0596aea6192b7a597ca428a449dc6f20fb67bbc6beb42a",
+    "redaction": null
+  },
+  "dense_native_wingit_full226.json": {
+    "original_sha256": "858139e59fe61b83e01ede1208d6852e370fd9e933d801219d12be41ac6e4dd0",
+    "public_sha256": "b94b83adb4225b628e41acabb2cceb2d97c53b300241cf48c32eb80fb7de8e80",
+    "redaction": "private RGB path replaced by filename; lossless payload not published"
+  },
+  "continuation_v2_full_reuse_admission_cpu.json": {
+    "original_sha256": "8524e1b33d31e04f349561c94664fa2a70ed48c18bf76a5d04cf55393fcbda89",
+    "public_sha256": "8524e1b33d31e04f349561c94664fa2a70ed48c18bf76a5d04cf55393fcbda89",
+    "redaction": null
+  },
+  "step200_dense_gt_video_audit.json": {
+    "original_sha256": "03e70bfc80fad410b756ec983751e7a6ee0050237c7d079d384deca7a4acc0cd",
+    "public_sha256": "6083cbecded434abc1e775a20f69efa0a871bf5d305ea075304740cb722787bb",
+    "redaction": "private input/output paths replaced by filenames"
+  },
+  "step200_dense_gt_compact_audit.json": {
+    "original_sha256": "94dea7b043d4d6fc65f0cbeb281f58c14369fbe1d0e2c5e483fd04d6fb4bb72b",
+    "public_sha256": "94dea7b043d4d6fc65f0cbeb281f58c14369fbe1d0e2c5e483fd04d6fb4bb72b",
+    "redaction": null
+  },
+  "step200_dense_gt_visual_screening.json": {
+    "original_sha256": "3e83725506bc2958527484512dc865ce69be3d31848805402f348167f9211994",
+    "public_sha256": "3e83725506bc2958527484512dc865ce69be3d31848805402f348167f9211994",
+    "redaction": null
+  },
+  "step200_dense_gt_compact.mp4": {
+    "original_sha256": "3b601cc4f87392db5855ce0738006f73566a229ce26e3986bab24c496ab5026f",
+    "public_sha256": "3b601cc4f87392db5855ce0738006f73566a229ce26e3986bab24c496ab5026f",
+    "redaction": null
+  },
+  "step200_dense_gt_contactsheet.jpg": {
+    "original_sha256": "1ef2135a8d2b6e5ab85320eb1cea8142897a48c405c54bbcc39813f9a38f6e7c",
+    "public_sha256": "1ef2135a8d2b6e5ab85320eb1cea8142897a48c405c54bbcc39813f9a38f6e7c",
+    "redaction": null
   }
 }

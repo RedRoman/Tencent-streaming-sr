@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "CPU stage transition validation only; full reused payload admission still pending dense completion",
+  "rejected_mutations": [
+    "protocol_changed",
+    "data_changed",
+    "decoder_changed",
+    "stream_worker_changed",
+    "runtime_changed",
+    "unknown_dense_worker"
+  ],
+  "optimizer_updates": 0,
+  "source_sha256": "68c12e54f4e874ecc6444bd189221b5341f650a6b9827159f0bc61e85cecc028"
+}

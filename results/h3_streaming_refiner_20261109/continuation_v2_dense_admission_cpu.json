@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "CPU actual completed full67 dense latent and gate admission; not pixel or visual acceptance",
+  "source_sha256": "68c12e54f4e874ecc6444bd189221b5341f650a6b9827159f0bc61e85cecc028",
+  "accepted_full67_receipt_sha256": "15f05b77a7e1ba4050db90d0764e8c1714241d748c9f9d351d83bf9d68ac49b0",
+  "rejected_mutations": [
+    "trained_streaming_adapter_loaded",
+    "same_draft_noise_condition_sigmas",
+    "model_forwards",
+    "optimizer_updates",
+    "training_step",
+    "gate_max_abs_0.04",
+    "gate_relative_rms_0.006",
+    "gate_max_abs_nan",
+    "gate_no_text_False"
+  ],
+  "optimizer_updates": 0,
+  "new_accelerator_forwards": 0
+}

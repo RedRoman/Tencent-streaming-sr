@@ -1,0 +1,20 @@
+{
+  "scope": "source audit of the pinned original refiner, not a pipeline parity test",
+  "upstream_revision": "781e8341fb3b29d3aea5d50265772e9619340b66",
+  "files": {
+    "open_h3/pipeline.py": "947cc62f4de1e940575647bbf97a8a9e56acecce8777a516158d408e06a5928d",
+    "open_h3/sigmas.py": "6c614edff70aa7f53699badc24fa2d6af0604fb6115ccd7825b3547affdd8c51"
+  },
+  "refine_method_lines": [
+    235,
+    266
+  ],
+  "findings": [
+    "Original refine() uses an initial convex draft/noise mixture, three Euler steps, model time1-sigma, CFG1; no separate ControlNet invocation in this method.",
+    "Evaluation uses these equations and the measured release three-step sigmas, with all50 Sharp branches and312 merged LoRA targets.",
+    "Position-indexed CPU global noise is intentionally shared across all experiment arms; it is not claimed bitwise identical to the upstream whole-tensor GPU RNG.",
+    "This engineering evaluation uses explicit no-text and known encoded silence. Production caption-conditioned behavior remains unvalidated.",
+    "Decoder is the project frozen full226 official-overlap implementation, not strict streaming or the upstream121frame output wrapper."
+  ],
+  "optimizer_updates": 0
+}

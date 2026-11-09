@@ -1,0 +1,23 @@
+{
+  "status": "sampled_frame_screening_complete_not_continuous_motion_review",
+  "sample_id": "WingIt_dev_3586_3811",
+  "frames_zero_based": [
+    0,
+    75,
+    150,
+    225
+  ],
+  "columns": [
+    "TFstep200 streaming REJECTED",
+    "released bidirectional refiner",
+    "actual nativeHR GT"
+  ],
+  "step200_observation": "Severe head/face and body-shape drift, strong smearing and ghosting.",
+  "dense_observation": "Broad character and scene layout are much closer to GT than step200 in these sampled frames; edge/texture appearance and some background details differ from GT.",
+  "step200_fidelity_passed": false,
+  "dense_full226_metric_gate_passed_for_this_clip": false,
+  "continuous_visual_reviewed": false,
+  "strict_streaming_decoder_validated": false,
+  "accepted_refiner": null,
+  "contactsheet_sha256": "1ef2135a8d2b6e5ab85320eb1cea8142897a48c405c54bbcc39813f9a38f6e7c"
+}
