@@ -1,0 +1,15 @@
+{
+  "upstream_repository": "Junchao-cs/SolarWM",
+  "upstream_commit": "0193da07e44def7abd661c5f623ea352cec2722b",
+  "upstream_path": "deploy/solar_wm/shared/vae/streaming.py",
+  "upstream_git_blob": "fc3b402f21c84439b523b3c081a9c4783e9f3003",
+  "upstream_sha256": "2aa52d9126b83c5fd772e505007fdaf824ef6c478295d3ec7bb50635855e35b6",
+  "adapter_sha256": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f",
+  "compensation": false,
+  "compile": false,
+  "cache_device": "cpu",
+  "precision": "preserve existing FP32 VAE",
+  "status": "prepared_unexecuted",
+  "full_pretrained_VAE_validated": false,
+  "strict_decoder_accepted": false
+}

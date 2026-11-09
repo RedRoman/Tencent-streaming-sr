@@ -57,3 +57,7 @@ The first dev clip at TF step200 completed all67 latents with 268 forwards, stab
 ## CPU long-index diagnostic
 
 [137-latent CPU evidence](../../results/h3_streaming_refiner_20261109/LONG_STREAM_CPU_V2.md) exercises the actual cache kernel on small synthetic rows and verifies full-spatial positions/noise across the67-latent boundary. Observed parity and future errors are0 and the synthetic cache stays bounded. The first test-reference rounding failure and its correction are preserved. This does not validate the full33B model beyond67 latents or the strict streaming decoder.
+
+## Strict streaming decoder candidate
+
+`src/strict_streaming_decoder.py` and the independent `stages/strict_decoder_v1` implement a candidate using CPU-backed per-layer KV with bounded shared-slot refresh. The frozen FP32 convention and1080p crop are retained; no fitted pixel compensation or compiled kernels are enabled. The candidate passed the [random small-model CPU checks](../../results/h3_streaming_refiner_20261109/STRICT_DECODER_CPU_V1.md), including137 latent positions and one full-spatial1080p output. Full pretrained NPU execution, fidelity and visual acceptance remain pending. This candidate is not used by the running fixed evaluation cohort.

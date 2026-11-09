@@ -1,0 +1,33 @@
+{
+  "files": {
+    "src/strict_decoder_core.py": {
+      "sha256": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f",
+      "bytes": 22985
+    },
+    "src/strict_streaming_decoder.py": {
+      "sha256": "4788d5bac68fd4e3b1d22ccd3f513ec694c917f2978d5b68e6cf80b8baa32049",
+      "bytes": 4153
+    },
+    "src/check_strict_decoder_cpu.py": {
+      "sha256": "5fc6957c7540ae21c0f77572ae6bd44fd54c97f5be7035dee7f7cda0bf58c192",
+      "bytes": 7280
+    },
+    "vendor/solarwm_streaming_original.py": {
+      "sha256": "2aa52d9126b83c5fd772e505007fdaf824ef6c478295d3ec7bb50635855e35b6",
+      "bytes": 21702
+    },
+    "vendor/LICENSE.SolarWM": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "vendor/NOTICE.SolarWM": {
+      "sha256": "f7cc326d2883ed503b4c7e6a7c04e055b3ae28e8891109f79e4932b95420d945",
+      "bytes": 3780
+    },
+    "config/strict_decoder_candidate_v1.json": {
+      "sha256": "72f97c850d346dbb818e0858fa1d1378624861fa41c12dfced8f430eadc5e6ca",
+      "bytes": 649
+    }
+  },
+  "purpose": "independent CPU validation candidate only; no active worker replacement"
+}

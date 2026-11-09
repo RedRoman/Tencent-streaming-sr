@@ -166,5 +166,69 @@
   "stages/long_cpu_v1/check_long_stream_cpu.py": {
     "source_sha256": "8167355a82cbfa2fe4b8be501ba3e682a10077f6dec16692844eee8c4b77cea1",
     "public_sha256": "8167355a82cbfa2fe4b8be501ba3e682a10077f6dec16692844eee8c4b77cea1"
+  },
+  "src/strict_decoder_core.py": {
+    "source_sha256": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f",
+    "public_sha256": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f"
+  },
+  "src/strict_streaming_decoder.py": {
+    "source_sha256": "4788d5bac68fd4e3b1d22ccd3f513ec694c917f2978d5b68e6cf80b8baa32049",
+    "public_sha256": "4788d5bac68fd4e3b1d22ccd3f513ec694c917f2978d5b68e6cf80b8baa32049"
+  },
+  "src/check_strict_decoder_cpu.py": {
+    "source_sha256": "5fc6957c7540ae21c0f77572ae6bd44fd54c97f5be7035dee7f7cda0bf58c192",
+    "public_sha256": "5fc6957c7540ae21c0f77572ae6bd44fd54c97f5be7035dee7f7cda0bf58c192"
+  },
+  "vendor/solarwm_streaming_original.py": {
+    "source_sha256": "2aa52d9126b83c5fd772e505007fdaf824ef6c478295d3ec7bb50635855e35b6",
+    "public_sha256": "2aa52d9126b83c5fd772e505007fdaf824ef6c478295d3ec7bb50635855e35b6"
+  },
+  "vendor/LICENSE.SolarWM": {
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "public_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "vendor/NOTICE.SolarWM": {
+    "source_sha256": "f7cc326d2883ed503b4c7e6a7c04e055b3ae28e8891109f79e4932b95420d945",
+    "public_sha256": "f7cc326d2883ed503b4c7e6a7c04e055b3ae28e8891109f79e4932b95420d945"
+  },
+  "config/strict_decoder_candidate_v1.json": {
+    "source_sha256": "72f97c850d346dbb818e0858fa1d1378624861fa41c12dfced8f430eadc5e6ca",
+    "public_sha256": "72f97c850d346dbb818e0858fa1d1378624861fa41c12dfced8f430eadc5e6ca"
+  },
+  "config/strict_decoder_validation_v1.json": {
+    "source_sha256": "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e",
+    "public_sha256": "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e"
+  },
+  "stages/strict_decoder_v1/manifest.json": {
+    "source_sha256": "7e373940d85620cb95dbd0be3fdedd11514cbecfec3809e906e4a1e6573553ec",
+    "public_sha256": "7e373940d85620cb95dbd0be3fdedd11514cbecfec3809e906e4a1e6573553ec"
+  },
+  "stages/strict_decoder_v1/config/strict_decoder_candidate_v1.json": {
+    "source_sha256": "72f97c850d346dbb818e0858fa1d1378624861fa41c12dfced8f430eadc5e6ca",
+    "public_sha256": "72f97c850d346dbb818e0858fa1d1378624861fa41c12dfced8f430eadc5e6ca"
+  },
+  "stages/strict_decoder_v1/vendor/solarwm_streaming_original.py": {
+    "source_sha256": "2aa52d9126b83c5fd772e505007fdaf824ef6c478295d3ec7bb50635855e35b6",
+    "public_sha256": "2aa52d9126b83c5fd772e505007fdaf824ef6c478295d3ec7bb50635855e35b6"
+  },
+  "stages/strict_decoder_v1/vendor/LICENSE.SolarWM": {
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "public_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "stages/strict_decoder_v1/vendor/NOTICE.SolarWM": {
+    "source_sha256": "f7cc326d2883ed503b4c7e6a7c04e055b3ae28e8891109f79e4932b95420d945",
+    "public_sha256": "f7cc326d2883ed503b4c7e6a7c04e055b3ae28e8891109f79e4932b95420d945"
+  },
+  "stages/strict_decoder_v1/src/check_strict_decoder_cpu.py": {
+    "source_sha256": "5fc6957c7540ae21c0f77572ae6bd44fd54c97f5be7035dee7f7cda0bf58c192",
+    "public_sha256": "5fc6957c7540ae21c0f77572ae6bd44fd54c97f5be7035dee7f7cda0bf58c192"
+  },
+  "stages/strict_decoder_v1/src/strict_streaming_decoder.py": {
+    "source_sha256": "4788d5bac68fd4e3b1d22ccd3f513ec694c917f2978d5b68e6cf80b8baa32049",
+    "public_sha256": "4788d5bac68fd4e3b1d22ccd3f513ec694c917f2978d5b68e6cf80b8baa32049"
+  },
+  "stages/strict_decoder_v1/src/strict_decoder_core.py": {
+    "source_sha256": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f",
+    "public_sha256": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f"
   }
 }

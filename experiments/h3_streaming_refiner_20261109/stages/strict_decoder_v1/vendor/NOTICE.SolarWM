@@ -1,0 +1,69 @@
+SolarWM
+Copyright 2026 SolarWM Contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+--------------------------------------------------------------------------------
+Third-party source included in this repository
+--------------------------------------------------------------------------------
+
+  SolarRenderer (https://github.com/Enderfga/SolarRenderer), Apache-2.0
+    Copyright 2026 SolarRenderer authors.
+    Adapted from revision 5a5da36c2cc0b91c00bac85b906cbf7cad469e84 under
+    solar/renderer/, with shared observation-packing, attention, LoRA,
+    and selective-checkpointing support in the MiniMax-H3 backend.
+    The renderer examples, training configurations, and solarrenderer-caption
+    skill and helper scripts come from the same release.
+    ComfyUI, Reactor, evaluation tools, and expanded documentation are adapted
+    from revision e018b0f673de865711fe99844d3976865722b8d0 under
+    deploy/solar_renderer/comfyui/, deploy/solar_renderer/reactor/, eval/solar_renderer/,
+    and docs/solar_renderer/. Runtime imports, asset paths, deployment inputs,
+    and documentation commands are modified for the integrated SolarWM layout.
+    Long-video rendering, combined LoRA merging, causal condition positioning,
+    long-input encoding, and encoded-silence extension are updated through
+    revision 41e136e64b30d4aa0095070ce055ff00ae90fe3b (main, 2026-10-23).
+    These updates are adapted under solar/renderer/ in render.py,
+    causal.py, preencode.py, and silence.py, with docs/solar_renderer/ updates.
+    Renderer-specific causal and silence changes are isolated from the shared
+    MiniMax-H3 backend.
+    Reactor optimization helpers also accept the merged native model as well
+    as the earlier PEFT-wrapped model in this SolarWM adaptation.
+    MiniMax-H3 and SolarRenderer model weights are obtained separately and
+    remain subject to the MiniMax H3 Community License and Acceptable Use Policy.
+
+  Wan 2.2 (Alibaba Wan Team), Apache-2.0
+    Copyright 2024-2025 The Alibaba Wan Team Authors. All rights reserved.
+    Vendored under solar/backends/wan22/runtime/modeling/:
+      model.py, vae.py, t5.py, attention.py, tokenizers.py
+    causal_model.py is a MODIFIED derivative of the above, extending the Wan
+    architecture with causal attention and camera conditioning.
+    The Chinese negative prompts in the Wan example configs are Wan defaults.
+
+  PRoPE: Projective Positional Encoding for Multiview Transformers, MIT
+    Copyright (c) the PRoPE authors.
+    Vendored as solar/backends/wan22/runtime/modeling/camera_prope.py
+    (dual-licensed Apache-2.0 AND MIT) and adapted in the LTX and H3 backends
+    as torch_prope.py.
+
+Each vendored file keeps its upstream copyright header. Files modified by this
+project state so in their header.
+
+--------------------------------------------------------------------------------
+Backbones and weights
+--------------------------------------------------------------------------------
+
+Model weights and backbone packages are NOT distributed here and carry their own
+terms, several of which are not Apache-2.0. Obtain each from its publisher and
+check its licence before redistributing anything you produce:
+
+  Wan 2.2 TI2V-5B / I2V-A14B          LTX-2.5 (incl. the ltx-core packages)
+  MiniMax-H3                          the text encoders each backbone requires
+
+--------------------------------------------------------------------------------
+Data
+--------------------------------------------------------------------------------
+
+The corpus is produced by the SolarWM Data Engine and annotates public source
+datasets that are not redistributed here; each keeps its own terms, several of
+which are non-commercial. See the licence and citation registry distributed
+with SolarWM-Data.

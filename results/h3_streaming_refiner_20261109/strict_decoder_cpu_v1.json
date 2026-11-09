@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "scope": "random tiny actual H3 VAE decoder on CPU, not pretrained full VAE",
+  "decoder_layers": 2,
+  "decoder_heads": 2,
+  "head_dim": 16,
+  "latent_positions": 137,
+  "long_spatial_shape": [
+    2,
+    3
+  ],
+  "pinned_upstream_incremental_max_abs": 0.0,
+  "future_prefix_max_abs": 0.0,
+  "chunk_reset_max_abs": 0.0,
+  "frames_for67": 226,
+  "frames_for137": 464,
+  "bounded_small_KV_bytes": 24064,
+  "max_retained_input_latents": 7,
+  "max_slots_per_push": 3,
+  "actual_slot_forwards": 190,
+  "bounded_past_slot_refreshes": 53,
+  "full_prefix_reprojection": false,
+  "small_decoder_full_geometry_first_latent": {
+    "latent_count": 1,
+    "pixel_frames": 1,
+    "kv_bytes": 55203840,
+    "kv_device": "cpu",
+    "retained_input_latents": 1,
+    "slot_forward_count": 1,
+    "refreshed_past_slots": 0,
+    "rope_pattern_count": 1,
+    "compensation": false,
+    "full_prefix_recompute": false
+  },
+  "full_geometry_RGB_shape": [
+    1,
+    1080,
+    1920,
+    3
+  ],
+  "full_geometry_crop_RGB_exact": true,
+  "invalid_inputs_rejected": true,
+  "reset_replay_exact": true,
+  "full36layer_FP32_KV_bytes_estimated": 63594823680,
+  "cache_backing": "CPU; accelerator transfers not tested",
+  "full_pretrained_VAE_validated": false,
+  "accelerator_validated": false,
+  "strict_decoder_accepted": false,
+  "continuous_visual_reviewed": false,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0,
+  "implementation_sha256": {
+    "strict_decoder_core.py": "b31a16641d249ac5d46e06c59e147f879cf646f2c465612e849f997d7ccb703f",
+    "strict_streaming_decoder.py": "4788d5bac68fd4e3b1d22ccd3f513ec694c917f2978d5b68e6cf80b8baa32049",
+    "check_strict_decoder_cpu.py": "5fc6957c7540ae21c0f77572ae6bd44fd54c97f5be7035dee7f7cda0bf58c192"
+  },
+  "diffusers_VAE_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+  "upstream_sha256": "2aa52d9126b83c5fd772e505007fdaf824ef6c478295d3ec7bb50635855e35b6",
+  "seconds": 31.31079649925232
+}
