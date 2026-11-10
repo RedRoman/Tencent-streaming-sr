@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "CPU admission/label controls on synthetic metadata, not real33B quality",
+  "exact2000_only": true,
+  "old_TF_stage1000_latest_and_tamper_rejected": true,
+  "active_training_device_rejected": true,
+  "wrong_reference_clip_step_checkpoint_rejected": true,
+  "wrong_candidate_step_geometry_checkpoint_rejected": true,
+  "production_pin_constants_restored": true,
+  "tested_sources": {
+    "src/anchored_evaluation_admission2000.py": "0c00baa0c74a647c79d3265137cdb23409e45b880071a4673f67c5f70324680c",
+    "src/run_anchored_step2000_evaluation_v1.py": "7d48f997219b2be5b20e297f9fb8351cefeff733aa1d80441b416c207eb1d52f",
+    "src/evaluate_anchored_stage2000_v1.py": "5e5a9791a0d58fc9cc48b320d33ded81a96834938387466e6fb3c09e21827371",
+    "src/encode_anchored_stage2000_cpu_v1.py": "7d40374c035ad058477e0b0e784d2a5df614a0afb21a31b341292af6f910f72b",
+    "src/test_anchored_eval2000_admission_v1.py": "01858e9195f87163633b49242aff78f2b6c9babc6ad1039024ef464871645df6",
+    "src/encode_preview_cpu.py": "64515a05d162cbc68c99ffaa1ca95821417ff14d8db37451f37267390f25672f"
+  },
+  "torch_imported": false,
+  "accelerator_imported": false,
+  "optimizer_updates": 0,
+  "raw_log_sha256": "4188ae92717d54dc6b37fc78fa07858ea6d05b179674445d79a304c2b5dfe2dd"
+}

@@ -1,0 +1,28 @@
+{
+  "stage": "anchored_step1000_evaluation_v1",
+  "status": "frozen_CPU_controls_passed_exact1000_pending",
+  "training_stage_sha256": "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+  "files": {
+    "evidence/anchored_eval_CPU_control_v1.json": "432d3d0c4cdb8fd973a232be9db2a73c50d5d8395cdab95ba36f683658c86ed0",
+    "config/anchored_step1000_video_review_v1.json": "94c06500f11d51748a66462e2079b82f979dbd1b0a3b6f294f5a8bd5ac0a7b03",
+    "config/evaluation_parent_v1.json": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+    "config/anchored_step1000_evaluation_v1.json": "ba6b04549a1595b2378f2d9dee5c2caa71e8b0bd9f0ddc77b83331cb83722bc0",
+    "src/encode_preview_cpu.py": "64515a05d162cbc68c99ffaa1ca95821417ff14d8db37451f37267390f25672f",
+    "src/prepare_pairs.py": "0ab9fc658f8663d219d854d6bd04c465595578d30011bfb64f26d97ee3dcdbb9",
+    "src/anchored_evaluation_admission.py": "15ca2314fa0ec54fa20739acbad93978f6baf1fc8f138b5598ffa542c00a1f0c",
+    "src/encode_anchored_comparison_cpu_v1.py": "10183488fba302423e3b6483020b11bd1c398e9a5c8d46e5c1d8b724f5313cce",
+    "src/run_anchored_step1000_evaluation_v1.py": "6794db4675fea00309386396f7a3b26b67e70931658ec3bf40ee3dd8215e97d4",
+    "src/evaluate_anchored_streaming_v1.py": "00b1020e0f1fe318793733a3f075e52204d296065cc9370976981898659867fe",
+    "src/causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "src/run_evaluation_continuation_v2.py": "68c12e54f4e874ecc6444bd189221b5341f650a6b9827159f0bc61e85cecc028",
+    "src/evaluate_dense_reference.py": "8cef445f84c33c5f5e03e3d80deb576a5609c87c0ed06ced30b153a6f0b7a3b4",
+    "src/anchored_refiner_v1.py": "655a3470d219fcf9673187381c6961c185f517c4134de0e9c26902495fa9edfe",
+    "src/paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "src/test_anchored_eval_admission_v1.py": "6538475b05898d1b7f93e7fd710103f6313be071171738b2ef87b5ca95d13257",
+    "src/evaluate_pixels.py": "3de141f387219fa6c27a8cf885660a830b872f7f7b56e065c17640269f66a55c",
+    "src/decoder_validation_admission.py": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127",
+    "src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6"
+  },
+  "NPU_evaluation_launched": false,
+  "optimizer_updates": 0
+}

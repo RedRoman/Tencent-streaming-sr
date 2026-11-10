@@ -1,0 +1,55 @@
+{
+  "requested_at_utc": "2026-11-10T16:02:51.260160+00:00",
+  "user_request": "进行完整评估，交付视频产物",
+  "status": "stage1000_remaining_two_active_stage2000_prepared_admitted_not_launched",
+  "checkpoints": [
+    {
+      "stage_step": 1000,
+      "cumulative_updates": 3500,
+      "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6"
+    },
+    {
+      "stage_step": 2000,
+      "cumulative_updates": 4500,
+      "adapter_sha256": "5e95b0826db51003968597b8ffbc6159f42d0c784ad8c0a10843734fae3dc485"
+    }
+  ],
+  "sample_ids": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "per_candidate": [
+    "67 latent full geometry",
+    "226 native1080 frames at24fps",
+    "candidate single video",
+    "candidate / original bidirectional / realGT",
+    "candidate / no-refiner / realGT",
+    "full226 nativeHR pixel/perceptual/temporal metrics",
+    "causal/cache/reload/chunk checks with explicit scope",
+    "independent full226 technical audit",
+    "separate continuous visual review; pending until actually performed"
+  ],
+  "stage2000_manifest_sha256": "4f870f017c2a3301539fa2eecac4ba6635123287ac446f607298d42081123de3",
+  "stage2000_first_admission_ready": true,
+  "stage2000_NPU_launched": false,
+  "stage2000_waiter_started": false,
+  "stage2000_template": "config/anchored_step2000_launch_template_wingit3586_v1.json",
+  "stage2000_launcher": "config/launch_anchored_eval2000_wingit3586_npu4_v1.py",
+  "reuse": "Sameclip completed stage1000 originaldense references only after SHA/input/geometry and exit/reap validation. No generation math change. Never replace stage1000 with2000.",
+  "remaining_engineering_acceptance": [
+    "full pretrained strict streaming decoder validation",
+    "real33B longer-than67 stress",
+    "runtime/cache/latency audit"
+  ],
+  "training": "completed2000 new updates, no extra training",
+  "model_accepted": false,
+  "native_video_transfer": {
+    "session": "h3-full-video-wingit3586-native-v1",
+    "status": "in_progress_unverified",
+    "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_WingIt3586_full_native_v1.tar",
+    "expected_sha256": "facbbfec968fa04c170c8ddceed92043d3838864178bc77f0b9d56721deedc37",
+    "expected_bytes": 56330240
+  },
+  "failure_retained": "evidence/anchored_eval2000_preparation_missing_template_v1.json"
+}

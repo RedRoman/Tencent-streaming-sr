@@ -1,0 +1,9 @@
+{
+  "status": "preparation_failed_before_launch",
+  "error_type": "FileNotFoundError",
+  "missing_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/config/anchored_step1000_launch_template_v1.json",
+  "cause": "generic template local only; remote perclip template is available",
+  "optimizer_updates": 0,
+  "NPU_job_launched": false,
+  "remedy": "derive new stage2000 template from existing remote perclip template, pin first WingIt completed reference"
+}

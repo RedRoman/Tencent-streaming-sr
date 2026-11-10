@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T15:37:53.704265+00:00",
-  "stage": "anchored_stage2000_training_complete_fixed1000_evaluation_continues",
+  "as_of_utc": "2026-11-10T16:04:19.926746+00:00",
+  "stage": "full_video_evaluation_fixed1000_active_fixed2000_prepared",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -571,7 +571,7 @@
     "completed_samples": 5,
     "planned_samples": 5,
     "partial_analysis": "TF2500_two_dev_history_analysis_v1.json",
-    "next": "completed and reaped; independent anchored training now active",
+    "next": "completed and reaped; original TF2500 sealed; separate anchored training also complete",
     "samples_complete": 5,
     "analysis": "TF2500_full_history_analysis_v2.json"
   },
@@ -639,7 +639,7 @@
     "first_sample": "WingIt_dev_3586_3811",
     "NPU_evaluation_launched": true,
     "waiter_started": false,
-    "training_continues": true,
+    "training_continues": false,
     "full226_video_complete": true,
     "continuous_visual_reviewed": false,
     "model_accepted": false,
@@ -661,7 +661,7 @@
       "lpips": 1.0769763469555864
     },
     "report": "ANCHORED_STAGE1000_FIRST_FULL226_V1.md",
-    "second_clip_completed_latents_at_snapshot": 9,
+    "second_clip_completed_latents_at_snapshot": 67,
     "static_review_frames": [
       0,
       72,
@@ -669,6 +669,25 @@
       192
     ],
     "user_visual_feedback": "anchored_stage1000_user_visual_feedback_v1.json",
-    "third_clip_launch": "anchored_eval1000_WingIt300_launch_v2.json"
+    "third_clip_launch": "anchored_eval1000_WingIt300_launch_v2.json",
+    "second_clip_status": "candidate226_metrics_complete_original_dense_running",
+    "third_clip_completed_latents_at_snapshot": 26
+  },
+  "complete_video_evaluation": {
+    "plan": "FULL_VIDEO_EVALUATION_PLAN_V1.md",
+    "checkpoints": [
+      1000,
+      2000
+    ],
+    "samples": 3,
+    "planned_candidate_videos": 6,
+    "stage2000_manifest_sha256": "4f870f017c2a3301539fa2eecac4ba6635123287ac446f607298d42081123de3",
+    "stage2000_admission_ready": true,
+    "stage2000_NPU_launched": false,
+    "waiter_started": false,
+    "model_accepted": false,
+    "continuous_visual_reviewed": false,
+    "strict_streaming_decoder_validated": false,
+    "real33B_longer_than67_validated": false
   }
 }
