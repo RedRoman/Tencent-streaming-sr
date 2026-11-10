@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T20:02:58.549507+00:00",
-  "stage": "six_video_sets_delivered_strict_decoder_quality_failed_real33B_long_running",
+  "as_of_utc": "2026-11-10T21:28:06.121930+00:00",
+  "stage": "six_video_sets_delivered_long137_engineering_passed_strict_decoder_fidelity_failed",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -690,7 +690,7 @@
     "model_accepted": false,
     "continuous_visual_reviewed": false,
     "strict_streaming_decoder_validated": false,
-    "real33B_longer_than67_validated": false,
+    "real33B_longer_than67_validated": true,
     "stage1000_completed_video_sets": 3,
     "stage2000_completed_video_sets": 3,
     "stage2000_first": "complete exit0/reaped, original videos local SHA verified",
@@ -702,7 +702,8 @@
     "report": "ANCHORED_SIX_VIDEO_SETS_FULL226_V1.md",
     "video_index": "VIDEO_DELIVERY_PUBLIC_INDEX_V1.md",
     "strict_decoder_technical_scope_passed": true,
-    "strict_decoder_quality_gate_passed": false
+    "strict_decoder_quality_gate_passed": false,
+    "real33B_long_scope": "exactstage1000 fullspatial137 positions with looped67 authorizeddraft; engineering only"
   },
   "strict_decoder_next_execution": {
     "status": "complete_exit0_reaped_technical_pass_quality_fail",
@@ -730,7 +731,7 @@
     "do_not_relaunch": true
   },
   "real33B_long137_next_execution": {
-    "status": "original_job_still_running",
+    "status": "complete_exit0_reaped_engineering_passed",
     "manifest_original_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
     "exact_checkpoint_stage_step": 1000,
     "scope": "137 fullspatial positions, looping67 authorizeddraft; not137unique content",
@@ -751,10 +752,32 @@
     "child_pid": 2298677,
     "all_three_kernel_locks_verified": true,
     "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json",
-    "latest_observed_at": "2026-11-10T19:55:08.706026Z",
-    "completed_latents": 54,
+    "latest_observed_at": "2026-11-10T21:25:04.577956+00:00",
+    "completed_latents": 137,
     "total_latents": 137,
-    "report": "heartbeat_validators_20261110T1954_v1.json",
-    "do_not_relaunch": true
+    "report": "REFINER_LONG137_COMPLETE_V1.md",
+    "do_not_relaunch": true,
+    "running": false,
+    "first67_reference_max_abs": 0,
+    "restore66_max_abs": 0,
+    "restore134_max_abs": 0,
+    "cache_bound_bytes": 6930022400,
+    "current_only_K_rows": 2040,
+    "main_model_forwards": 548,
+    "additional_replay_forwards": 24,
+    "exit_code": 0,
+    "child_reaped": true,
+    "parent_and_child_absent": true,
+    "locks_released": true,
+    "result": "refiner_long137_full_result_v1.json",
+    "full137_offline_parity_tested": false,
+    "cold_start_new_process_tested": false,
+    "real_distinct_long_video_quality_tested": false
+  },
+  "active_NPU_jobs": 0,
+  "remaining_acceptance": {
+    "strict_decoder_full226_fidelity": "failed; unchanged threshold, preserve original sources; no automatic rerun/compensation/training",
+    "continuous_visual_review": "incomplete; static samples and technical audits are not continuous review",
+    "model_accepted": false
   }
 }

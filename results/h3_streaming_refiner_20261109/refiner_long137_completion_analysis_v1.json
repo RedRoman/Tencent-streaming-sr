@@ -1,0 +1,53 @@
+{
+  "status": "fixed_stage1000_real33B_long137_engineering_complete_exit0_reaped",
+  "observed_at": "2026-11-10T21:25:04.577956+00:00",
+  "result_sha256": "68c817a88697700449b2975e6577a242f11a052fe9b5473c2a49f41aee5971f2",
+  "manifest_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+  "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+  "stage_step": 1000,
+  "cumulative_optimizer_step": 3500,
+  "input_scope": "137 absolute positions, looping67 authorized WingIt3586 draft latents; not137 unique video latents",
+  "actual_latents": 137,
+  "first67_reference_max_abs": 0,
+  "incremental_K": {
+    "layers": 50,
+    "rows_per_projection": 2040,
+    "calls_per_layer": 548,
+    "full_prefix_recomputation": false
+  },
+  "cache_bound_bytes": 6930022400,
+  "first_latent_cache_bytes": 4005478400,
+  "serialized_KV_replay": [
+    {
+      "next_latent_at_restore": 66,
+      "changed_push_chunk": 3,
+      "max_abs": 0.0,
+      "weight_reload": true,
+      "serialized_real50layer_cache": true
+    },
+    {
+      "next_latent_at_restore": 134,
+      "changed_push_chunk": 3,
+      "max_abs": 0.0,
+      "weight_reload": true,
+      "serialized_real50layer_cache": true
+    }
+  ],
+  "resume_scope": "Same worker reloads adapter/head parameters, reads serialized CPU KV from disk, restores absolute counters, and submits a three-latent chunk. Does not test cold-start base-model restoration in a new process.",
+  "median_seconds_per_latent": 57.41817173361778,
+  "main_latent_generation_seconds": 7910.282895309851,
+  "main_model_forwards": 548,
+  "additional_replay_forwards": 24,
+  "exit_code": 0,
+  "child_reaped": true,
+  "parent_child_absent": true,
+  "locks_released": true,
+  "optimizer_updates_added": 0,
+  "private_KV_payload_downloaded_or_published": false,
+  "full137_offline_parity_tested": false,
+  "stage2000_longstream_tested": false,
+  "real_distinct_long_video_quality_tested": false,
+  "strict_decoder_quality_gate_passed": false,
+  "continuous_visual_reviewed": false,
+  "model_accepted": false
+}

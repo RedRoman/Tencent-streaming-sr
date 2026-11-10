@@ -1,0 +1,22 @@
+{
+  "parent_pid": 2297413,
+  "physical_npu": 4,
+  "all_three_locks_held": true,
+  "started_unix": 1794337289.804647,
+  "command": [
+    "python",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/refiner_long_stream_stage1000_v1/src/validate_refiner_long_stream_v1.py",
+    "--validation-stage",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/refiner_long_stream_stage1000_v1",
+    "--manifest-sha",
+    "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+    "--output",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/validation/refiner_long_stream_stage1000_v1"
+  ],
+  "status": "complete",
+  "child_pid": 2298677,
+  "child_pgid": 2298677,
+  "exit_code": 0,
+  "ended_unix": 1794345756.034309,
+  "child_reaped": true
+}

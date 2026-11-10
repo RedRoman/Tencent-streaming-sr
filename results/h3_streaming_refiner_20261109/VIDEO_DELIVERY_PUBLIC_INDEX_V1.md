@@ -12,3 +12,7 @@ All six sets contain226frames at24fps. Main columns: candidate / original bidire
 | WingIt300 | 2000 | [Main](anchored_stage2000_WingIt300_dense_gt_preview.mp4) | [Ablation](anchored_stage2000_WingIt300_no_refiner_gt_preview.mp4) | [Candidate](anchored_stage2000_WingIt300_native540_preview.mp4) |
 
 [Full226 metrics and limitations](ANCHORED_SIX_VIDEO_SETS_FULL226_V1.md)
+
+## Engineering update
+
+[Fixedstage1000 real33B long137 engineering checks passed](REFINER_LONG137_COMPLETE_V1.md). [Strict decoder fidelity failed](STRICT_DECODER_PRETRAINED_RESULT_V1.md). All planned compute jobs have ended; continuous visual review remains incomplete and no complete strictly streaming pipeline is accepted.
