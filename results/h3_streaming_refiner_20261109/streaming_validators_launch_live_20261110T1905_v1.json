@@ -1,0 +1,131 @@
+{
+  "observed_at": "2026-11-10T19:02:42.880048+00:00",
+  "jobs": {
+    "strict_decoder_pretrained_v1": {
+      "launch": {
+        "parent_pid": 2289510,
+        "physical_npu": 7,
+        "all_three_locks_held": true,
+        "started_unix": 1794337134.5014274,
+        "command": [
+          "python",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_validation_v1/src/validate_strict_decoder.py",
+          "--candidate-stage",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_v1",
+          "--validation-plan",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_validation_v1/config/strict_decoder_validation_v1.json",
+          "--validation-plan-sha",
+          "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e",
+          "--cpu-report",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/strict_decoder_cpu_v1.json",
+          "--prior-stage",
+          "/tmp/h3_production67_limiteddev_eval_20261107_v1",
+          "--data-manifest",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+          "--predecessor-launch",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_step2000_ElephantsDream_dev_13070_13295_v1/launch.json",
+          "--physical-device",
+          "7",
+          "--output",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/validation/strict_decoder_pretrained_v1"
+        ],
+        "status": "running",
+        "child_pid": 2290440,
+        "child_pgid": 2290440
+      },
+      "processes": {
+        "2289510": {
+          "state": "S",
+          "ppid": 1,
+          "startticks": 763741729,
+          "cmd_sha256": "9e7b6a35c8e7c18766bf2449c9e3a80604a7de5396b8a44ba39cdb3c580eb39b"
+        },
+        "2290440": {
+          "state": "R",
+          "ppid": 2289510,
+          "startticks": 763742177,
+          "cmd_sha256": "343a5d7d2af32f6517c3dab9af599c6fb71144f1408bd655859db1b9093e2557"
+        }
+      },
+      "locks": [
+        {
+          "path": "<AUTHORIZED_CACHE>/device_locks/npu7.lock",
+          "kernel_matches": [
+            "11: FLOCK  ADVISORY  WRITE 2289510 fd:01:232456910 0 EOF"
+          ]
+        },
+        {
+          "path": "/tmp/yunfeng_npu_7.lock",
+          "kernel_matches": [
+            "10: FLOCK  ADVISORY  WRITE 2289510 00:c2:59011557 0 EOF"
+          ]
+        },
+        {
+          "path": "/tmp/codex-h3-vae-npu-7.lock",
+          "kernel_matches": [
+            "9: FLOCK  ADVISORY  WRITE 2289510 00:c2:59010309 0 EOF"
+          ]
+        }
+      ],
+      "all_three_kernel_locks_verified": true
+    },
+    "refiner_long_stream_stage1000_v1": {
+      "launch": {
+        "parent_pid": 2297413,
+        "physical_npu": 4,
+        "all_three_locks_held": true,
+        "started_unix": 1794337289.804647,
+        "command": [
+          "python",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/refiner_long_stream_stage1000_v1/src/validate_refiner_long_stream_v1.py",
+          "--validation-stage",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/refiner_long_stream_stage1000_v1",
+          "--manifest-sha",
+          "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+          "--output",
+          "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/validation/refiner_long_stream_stage1000_v1"
+        ],
+        "status": "running",
+        "child_pid": 2298677,
+        "child_pgid": 2298677
+      },
+      "processes": {
+        "2297413": {
+          "state": "S",
+          "ppid": 1,
+          "startticks": 763757198,
+          "cmd_sha256": "b8a393db9535b1eac32fb01171842e7701cbbe3fe48c33753ab71c4be86e28ee"
+        },
+        "2298677": {
+          "state": "R",
+          "ppid": 2297413,
+          "startticks": 763757707,
+          "cmd_sha256": "d5581481936486570338c2aa7be0b7c9441b832177237213677cc7ec499c9446"
+        }
+      },
+      "locks": [
+        {
+          "path": "<AUTHORIZED_CACHE>/device_locks/npu4.lock",
+          "kernel_matches": [
+            "7: FLOCK  ADVISORY  WRITE 2297413 fd:01:232456912 0 EOF"
+          ]
+        },
+        {
+          "path": "/tmp/yunfeng_npu_4.lock",
+          "kernel_matches": [
+            "6: FLOCK  ADVISORY  WRITE 2297413 00:c2:59011470 0 EOF"
+          ]
+        },
+        {
+          "path": "/tmp/codex-h3-vae-npu-4.lock",
+          "kernel_matches": [
+            "5: FLOCK  ADVISORY  WRITE 2297413 00:c2:59010306 0 EOF"
+          ]
+        }
+      ],
+      "all_three_kernel_locks_verified": true
+    }
+  },
+  "smi": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.1                   Version: 25.5.1                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 0     910B3               | OK            | 399.1       56                0    / 0             |\n| 0                         | 0000:C1:00.0  | 100         0    / 0          45535/ 65536         |\n+===========================+===============+====================================================+\n| 1     910B3               | OK            | 331.8       57                0    / 0             |\n| 0                         | 0000:01:00.0  | 100         0    / 0          45534/ 65536         |\n+===========================+===============+====================================================+\n| 2     910B3               | OK            | 395.4       56                0    / 0             |\n| 0                         | 0000:C2:00.0  | 100         0    / 0          45534/ 65536         |\n+===========================+===============+====================================================+\n| 3     910B3               | OK            | 333.9       60                0    / 0             |\n| 0                         | 0000:02:00.0  | 100         0    / 0          45534/ 65536         |\n+===========================+===============+====================================================+\n| 4     910B3               | OK            | 143.3       49                0    / 0             |\n| 0                         | 0000:81:00.0  | 0           0    / 0          37178/ 65536         |\n+===========================+===============+====================================================+\n| 5     910B3               | OK            | 113.8       52                0    / 0             |\n| 0                         | 0000:41:00.0  | 0           0    / 0          36499/ 65536         |\n+===========================+===============+====================================================+\n| 6     910B3               | OK            | 397.0       55                0    / 0             |\n| 0                         | 0000:82:00.0  | 100         0    / 0          36691/ 65536         |\n+===========================+===============+====================================================+\n| 7     910B3               | OK            | 181.4       51                0    / 0             |\n| 0                         | 0000:42:00.0  | 33          0    / 0          14531/ 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| 0       0                 | 959262        | python                   | 42174                   |\n+===========================+===============+====================================================+\n| 1       0                 | 959264        | python                   | 42176                   |\n+===========================+===============+====================================================+\n| 2       0                 | 959266        | python                   | 42176                   |\n+===========================+===============+====================================================+\n| 3       0                 | 959268        | python                   | 42176                   |\n+===========================+===============+====================================================+\n| 4       0                 | 2298677       | python                   | 33811                   |\n+===========================+===============+====================================================+\n| 5       0                 | 220146        | python                   | 33141                   |\n+===========================+===============+====================================================+\n| 6       0                 | 220149        | python                   | 33333                   |\n+===========================+===============+====================================================+\n| 7       0                 | 2290440       | python                   | 11166                   |\n+===========================+===============+====================================================+\n",
+  "mem_available_kB": 1438931380
+}

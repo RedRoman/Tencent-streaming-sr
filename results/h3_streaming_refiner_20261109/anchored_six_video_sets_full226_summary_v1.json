@@ -1,0 +1,204 @@
+{
+  "status": "six_full226_video_sets_complete_technical_audit_local_playback_verified",
+  "frames_per_video": 226,
+  "fps": 24,
+  "video_sets": 6,
+  "videos": 18,
+  "rows": [
+    {
+      "stage_step": 1000,
+      "total_training_updates_across_recipes": 3500,
+      "sample_id": "WingIt_dev_3586_3811",
+      "short": "WingIt3586",
+      "source_metric_sha256": "db432a28cf900d1f5c4917fc10e45f9200edbb0babc19e8ff51efb2213af96b5",
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 0.9461478464541321,
+        "mse": 0.9537314444263397,
+        "lpips": 1.0769763469555864,
+        "delta_l1": 1.0016098903870545,
+        "temporal_difference_mse": 0.9999000757165314
+      },
+      "per_frame_counts": {
+        "pixel_l1": {
+          "improved": 226,
+          "worse": 0
+        },
+        "mse": {
+          "improved": 198,
+          "worse": 28
+        },
+        "lpips": {
+          "improved": 0,
+          "worse": 226
+        }
+      },
+      "playback_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_WingIt3586_preview",
+      "playback_receipt_sha256": "9970f6487ae720013ef76e03e00cae36040f67397f2a77314a542780ad77f2be",
+      "original_video_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_WingIt3586_full_native_v1/media"
+    },
+    {
+      "stage_step": 1000,
+      "total_training_updates_across_recipes": 3500,
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "short": "ElephantsDream13070",
+      "source_metric_sha256": "4c9c62f62fd9177b8aa333d281dadfaf2cde9fd9a425db45c73ef69ecaf3b720",
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 0.9087079642958162,
+        "mse": 0.8982027943813723,
+        "lpips": 0.996802589273954,
+        "delta_l1": 0.978679522595096,
+        "temporal_difference_mse": 0.9351476856648897
+      },
+      "per_frame_counts": {
+        "pixel_l1": {
+          "improved": 226,
+          "worse": 0
+        },
+        "mse": {
+          "improved": 226,
+          "worse": 0
+        },
+        "lpips": {
+          "improved": 142,
+          "worse": 84
+        }
+      },
+      "playback_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_ElephantsDream13070_preview",
+      "playback_receipt_sha256": "efaed7a7da85c4e321b417d49600949aaed2581b2b503f6b731e5b19a17b6965",
+      "original_video_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/ElephantsDream_dev_13070_13295"
+    },
+    {
+      "stage_step": 1000,
+      "total_training_updates_across_recipes": 3500,
+      "sample_id": "WingIt_dev_300_525",
+      "short": "WingIt300",
+      "source_metric_sha256": "b6d48d9dbaee4bfcbf2be9d0b130209dae1083d48cff32674966b4e472d00c0a",
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 0.9244258791085365,
+        "mse": 0.9175122499393819,
+        "lpips": 1.079811455494119,
+        "delta_l1": 1.0345301725198608,
+        "temporal_difference_mse": 1.0707732749291545
+      },
+      "per_frame_counts": {
+        "pixel_l1": {
+          "improved": 220,
+          "worse": 6
+        },
+        "mse": {
+          "improved": 217,
+          "worse": 9
+        },
+        "lpips": {
+          "improved": 0,
+          "worse": 226
+        }
+      },
+      "playback_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_WingIt300_preview",
+      "playback_receipt_sha256": "103d00d592f9aff0d93689bcc4224555b3d75cfd3a06ff09c89c5b1b441d2c79",
+      "original_video_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/WingIt_dev_300_525"
+    },
+    {
+      "stage_step": 2000,
+      "total_training_updates_across_recipes": 4500,
+      "sample_id": "WingIt_dev_3586_3811",
+      "short": "WingIt3586",
+      "source_metric_sha256": "542e84e766226051a5e8189f5b3e4d454259476194b8ea5c64fc39dae55eaf06",
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 0.9719261255336112,
+        "mse": 0.9601182344436188,
+        "lpips": 1.070930532906891,
+        "delta_l1": 1.000820754154228,
+        "temporal_difference_mse": 1.0045343657758286
+      },
+      "per_frame_counts": {
+        "pixel_l1": {
+          "improved": 215,
+          "worse": 11
+        },
+        "mse": {
+          "improved": 192,
+          "worse": 34
+        },
+        "lpips": {
+          "improved": 0,
+          "worse": 226
+        }
+      },
+      "playback_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_WingIt3586_preview",
+      "playback_receipt_sha256": "2f12c300f5a72741c6c10de6859907f440f34e36445479a9fefe27789b02bbc2",
+      "original_video_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_WingIt3586_full_native_v1/media"
+    },
+    {
+      "stage_step": 2000,
+      "total_training_updates_across_recipes": 4500,
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "short": "ElephantsDream13070",
+      "source_metric_sha256": "7f319f67bfb65a2497a1ad8d8bf386a68e3df2cecfe189a670af1e931f76f8b3",
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 0.9412670887635923,
+        "mse": 0.9075401460661718,
+        "lpips": 0.9910916098674644,
+        "delta_l1": 0.978191040667087,
+        "temporal_difference_mse": 0.9278359476918772
+      },
+      "per_frame_counts": {
+        "pixel_l1": {
+          "improved": 221,
+          "worse": 5
+        },
+        "mse": {
+          "improved": 216,
+          "worse": 10
+        },
+        "lpips": {
+          "improved": 186,
+          "worse": 40
+        }
+      },
+      "playback_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_ElephantsDream13070_preview",
+      "playback_receipt_sha256": "3e7e011ffad46325299d1b97a93736d664cdddb054db71a91405f996611c035d",
+      "original_video_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/ElephantsDream_dev_13070_13295"
+    },
+    {
+      "stage_step": 2000,
+      "total_training_updates_across_recipes": 4500,
+      "sample_id": "WingIt_dev_300_525",
+      "short": "WingIt300",
+      "source_metric_sha256": "588f77fad6e75a74144afced4e25faf694185611b26b4844fb57328047dc09bb",
+      "ratios_vs_no_refiner": {
+        "pixel_l1": 0.9513236072331243,
+        "mse": 0.9113914378564532,
+        "lpips": 1.0679482017197621,
+        "delta_l1": 1.0363837875247761,
+        "temporal_difference_mse": 1.0831875367079338
+      },
+      "per_frame_counts": {
+        "pixel_l1": {
+          "improved": 217,
+          "worse": 9
+        },
+        "mse": {
+          "improved": 215,
+          "worse": 11
+        },
+        "lpips": {
+          "improved": 0,
+          "worse": 226
+        }
+      },
+      "playback_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_WingIt300_preview",
+      "playback_receipt_sha256": "2b76d5f26744079bb22a68b7654868f6dee15e01892a875f1e82eb2d9461ea88",
+      "original_video_directory": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/WingIt_dev_300_525"
+    }
+  ],
+  "continuous_visual_reviewed": false,
+  "strict_decoder_validation": "running; pretrained small-spatial nine-latent parity passed exactly0, full-spatial137 pending",
+  "real33B_long137": "running exactstage1000 only; looped authorized67draft, not137unique video",
+  "model_accepted": false,
+  "automatic_stage2000_promotion": false,
+  "optimizer_updates_since_stage2000_training_endpoint": 0,
+  "original_resolution_local_video_sets": 6,
+  "original_resolution_local_videos": 18,
+  "all_original_video_payload_SHA_verified": true
+}

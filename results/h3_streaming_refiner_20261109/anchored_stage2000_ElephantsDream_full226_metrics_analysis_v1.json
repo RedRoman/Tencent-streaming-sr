@@ -1,0 +1,75 @@
+{
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "stage_step": 2000,
+  "metrics_source_sha256": "7f319f67bfb65a2497a1ad8d8bf386a68e3df2cecfe189a670af1e931f76f8b3",
+  "stage1000_metrics_source_sha256": "4c9c62f62fd9177b8aa333d281dadfaf2cde9fd9a425db45c73ef69ecaf3b720",
+  "ratios_vs_no_refiner": {
+    "pixel_l1": 0.9412670887635923,
+    "mse": 0.9075401460661718,
+    "lpips": 0.9910916098674644,
+    "delta_l1": 0.978191040667087,
+    "temporal_difference_mse": 0.9278359476918772
+  },
+  "stage2000_over_stage1000_error_ratios": {
+    "pixel_l1": 1.0358301299725121,
+    "mse": 1.0103955941166165,
+    "lpips": 0.9942707016735888,
+    "delta_l1": 0.9995008765211375,
+    "temporal_difference_mse": 0.9921811943876929
+  },
+  "tail18_ratios_vs_no_refiner": {
+    "pixel_l1": 0.9258435984263932,
+    "mse": 0.8562954861372405,
+    "lpips": 0.9905812090162617,
+    "delta_l1": 0.9741852162702069,
+    "temporal_difference_mse": 0.9180519136511507
+  },
+  "per_frame_comparison_vs_no_refiner": {
+    "pixel_l1": {
+      "improved": 221,
+      "worse": 5,
+      "equal": 0
+    },
+    "mse": {
+      "improved": 216,
+      "worse": 10,
+      "equal": 0
+    },
+    "lpips": {
+      "improved": 186,
+      "worse": 40,
+      "equal": 0
+    }
+  },
+  "nativeHR_full226": {
+    "frame_count": 226,
+    "pixel_l1": 0.016326500852880753,
+    "mse": 0.0008467757220347041,
+    "psnr_db": 30.72231602161257,
+    "lpips": 0.11301545666909851,
+    "global_score": 0.03892959218670046,
+    "adjacent_pairs": 225,
+    "motion_roi_fraction": 0.11646006301440329,
+    "motion_l1": 0.04511200558144303,
+    "delta_l1": 0.015958257965353752,
+    "temporal_difference_mse": 0.0012911203804937532,
+    "motion_mask_sha256": "e7a988867c2095a30d175b16efc26ca3088232feb39f4db145c30d7ace61a364"
+  },
+  "no_refiner_nativeHR_full226": {
+    "frame_count": 226,
+    "pixel_l1": 0.017345237125337653,
+    "mse": 0.0009330449189549823,
+    "psnr_db": 30.300974478025967,
+    "lpips": 0.11403129190470265,
+    "global_score": 0.04015149550627818,
+    "adjacent_pairs": 225,
+    "motion_roi_fraction": 0.11646006301440329,
+    "motion_l1": 0.04680030182757141,
+    "delta_l1": 0.016314050427686255,
+    "temporal_difference_mse": 0.0013915395105197179,
+    "motion_mask_sha256": "e7a988867c2095a30d175b16efc26ca3088232feb39f4db145c30d7ace61a364"
+  },
+  "continuous_visual_reviewed": false,
+  "accepted_refiner": null,
+  "metrics_from_lossless_native1080_RGB": true
+}

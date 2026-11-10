@@ -1,0 +1,61 @@
+{
+  "status": "three_full226_playback_derivatives_verified",
+  "sample_id": "WingIt_dev_300_525",
+  "stage_step": 2000,
+  "source_receipt_sha256": "fc45644ea6e19fe3cafa70461120edcc469b9128c060db34f4dae4afa0401422",
+  "files": {
+    "anchored_stage2000_native1080_preview.mp4": {
+      "kind": "candidate_native1080",
+      "source_sha256": "6f07b18d5e8a8d2ddb6014854e8b94252a6eb106aa90c8066924b662eb10c71b",
+      "sha256": "76e381e9d6d7653d85c6ca7940b0d5f3aa71f5e092afbc1024848db5d8317af3",
+      "bytes": 301212,
+      "stream": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_passed": true
+    },
+    "anchored_stage2000_dense_gt_preview.mp4": {
+      "kind": "main_comparison",
+      "source_sha256": "fdce7b71dca4d3abb3be635b1754cae074cf59c44a9b22d32719f3d915843420",
+      "sha256": "4cc8810c5d4a43aa15a54bd2c565fdc2686959eb7716dece593d40f6e54962e0",
+      "bytes": 317349,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 310,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_passed": true
+    },
+    "anchored_stage2000_no_refiner_gt_preview.mp4": {
+      "kind": "no_refiner_ablation",
+      "source_sha256": "8284f561e9ea60ca61de8e882f8f0708f86b4be71d542f3400caa7370bd59254",
+      "sha256": "d12d5f9193b332379ee52cfcaa95ea4534162e6a4384d8afd5fcb800f1f4738e",
+      "bytes": 314305,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 310,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_passed": true
+    }
+  },
+  "display_only_downscaled": true,
+  "metrics_from_full_resolution_lossless_RGB": true,
+  "continuous_visual_reviewed": false,
+  "accelerator_forwards": 0,
+  "optimizer_updates": 0
+}

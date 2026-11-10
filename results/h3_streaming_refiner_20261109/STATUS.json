@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T18:07:34.466100+00:00",
-  "stage": "four_of_six_video_sets_complete_two_stage2000_running",
+  "as_of_utc": "2026-11-10T19:10:14.145371+00:00",
+  "stage": "six_full226_video_sets_complete_originals_delivered_validators_running",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -692,21 +692,30 @@
     "strict_streaming_decoder_validated": false,
     "real33B_longer_than67_validated": false,
     "stage1000_completed_video_sets": 3,
-    "stage2000_completed_video_sets": 1,
-    "stage2000_first": "WingIt3586 complete exit0/reaped; local full226 previews verified",
-    "stage2000_second": "ElephantsDream running;41/67 generation events at2026-11-10T18:06:41Z",
-    "stage2000_third": "WingIt300 running;25/67 generation events at2026-11-10T18:06:41Z",
-    "stage1000_native_resolution_local_delivery": "All three sample sets now SHA verified against complete226-frame technical receipts"
+    "stage2000_completed_video_sets": 3,
+    "stage2000_first": "complete exit0/reaped, original videos local SHA verified",
+    "stage2000_second": "complete exit0/reaped, original videos local SHA verified",
+    "stage2000_third": "complete exit0/reaped, original videos local SHA verified",
+    "stage1000_native_resolution_local_delivery": "All three sample sets now SHA verified against complete226-frame technical receipts",
+    "all_original_resolution_videos_local": 18,
+    "all_playback_videos_local": 18,
+    "report": "ANCHORED_SIX_VIDEO_SETS_FULL226_V1.md",
+    "video_index": "VIDEO_DELIVERY_PUBLIC_INDEX_V1.md"
   },
   "strict_decoder_next_execution": {
-    "status": "CPU_actual_integrity_passed_predecessor_not_ready",
+    "status": "unique_NPU_validator_running_smallspatial9_exact0_fullspatial137_pending",
     "current_predecessor": "stage2000 ElephantsDream full video completion/exit/reap",
     "original_predecessor_still_required": "evaluation_continuation_v2 terminal/reaped",
-    "NPU_launched": false,
-    "frozen_plan_and_sources_unchanged": true
+    "NPU_launched": true,
+    "frozen_plan_and_sources_unchanged": true,
+    "parent_pid": 2289510,
+    "child_pid": 2290440,
+    "all_three_kernel_locks_verified": true,
+    "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json",
+    "small_spatial_report": "strict_decoder_pretrained_small_spatial9_v1.json"
   },
   "real33B_long137_next_execution": {
-    "status": "prepared_actual_CPU_admission_passed_predecessor_active",
+    "status": "unique_exactstage1000_NPU_validator_running",
     "manifest_original_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
     "exact_checkpoint_stage_step": 1000,
     "scope": "137 fullspatial positions, looping67 authorizeddraft; not137unique content",
@@ -718,10 +727,14 @@
       134
     ],
     "restore_chunk_limit": 0,
-    "NPU_launched": false,
+    "NPU_launched": true,
     "waiter_started": false,
     "stage2000_longstream_tested": false,
     "private_KV_caches_published": false,
-    "model_accepted": false
+    "model_accepted": false,
+    "parent_pid": 2297413,
+    "child_pid": 2298677,
+    "all_three_kernel_locks_verified": true,
+    "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json"
   }
 }

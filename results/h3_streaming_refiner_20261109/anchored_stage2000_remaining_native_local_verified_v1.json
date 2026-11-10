@@ -1,0 +1,100 @@
+{
+  "observed_at": "2026-11-10T19:08:38.667297+00:00",
+  "archive_bytes": 54988800,
+  "archive_sha256": "34765e40ee2559bcef263a0164a420c5b6ab5e476d02ba10c4a9a9faad778c27",
+  "files": [
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "kind": "candidate_native1080",
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/ElephantsDream_dev_13070_13295/anchored_stage2000_native1080.mp4",
+      "bytes": 14444172,
+      "sha256": "3ca4d0e4bc4efc878f496678d64242eb1e7076a8e50440208d1b226e224929fb",
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "kind": "main_comparison",
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/ElephantsDream_dev_13070_13295/anchored_stage2000_dense_gt.mp4",
+      "bytes": 10500376,
+      "sha256": "716205839a767a430f8f4901b4a9d70bf890803b4a9ec953f4f03faceaba73dd",
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "kind": "no_refiner_ablation",
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/ElephantsDream_dev_13070_13295/anchored_stage2000_no_refiner_gt.mp4",
+      "bytes": 8678866,
+      "sha256": "03ad4b0b0e04c3b9f3b91ca310472bf79010e16568e0780c859039436b5536f6",
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "kind": "candidate_native1080",
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/WingIt_dev_300_525/anchored_stage2000_native1080.mp4",
+      "bytes": 8931682,
+      "sha256": "6f07b18d5e8a8d2ddb6014854e8b94252a6eb106aa90c8066924b662eb10c71b",
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "kind": "main_comparison",
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/WingIt_dev_300_525/anchored_stage2000_dense_gt.mp4",
+      "bytes": 6434339,
+      "sha256": "fdce7b71dca4d3abb3be635b1754cae074cf59c44a9b22d32719f3d915843420",
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "kind": "no_refiner_ablation",
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_remaining_native_v1/WingIt_dev_300_525/anchored_stage2000_no_refiner_gt.mp4",
+      "bytes": 5973528,
+      "sha256": "8284f561e9ea60ca61de8e882f8f0708f86b4be71d542f3400caa7370bd59254",
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      }
+    }
+  ],
+  "all_payload_SHA_match": true,
+  "continuous_visual_reviewed": false,
+  "model_accepted": false
+}

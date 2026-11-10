@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-11-10T18:58:50.346833+00:00",
+  "archive_sha256": "9bfa1dd8c9f9965c3e26dc50e98d9d2ca2321b4f3b1c8ea70bc403a2a2ea0f8e",
+  "archive_bytes": 46796800,
+  "files": [
+    {
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_WingIt3586_full_native_v1/media/anchored_stage2000_native1080.mp4",
+      "bytes": 17095930,
+      "sha256": "0b09d2d2aa51a96c946dffe7de7d005153bfedc7e431e43c266de652fc998ce3"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_WingIt3586_full_native_v1/media/anchored_stage2000_dense_gt.mp4",
+      "bytes": 15892529,
+      "sha256": "94067593bf7664eb49878f6855a73347dfb454388dfa02b484f71feca1774283"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage2000_WingIt3586_full_native_v1/media/anchored_stage2000_no_refiner_gt.mp4",
+      "bytes": 13793060,
+      "sha256": "965c662f37507242ec5ba14881369d0f6ccb3a72448f1c4cfd7cf2fff6a5761c"
+    }
+  ],
+  "all_payload_SHA_match": true,
+  "technical_source_audit": "226frames/24fps/full_decode_passed",
+  "continuous_visual_reviewed": false,
+  "model_accepted": false
+}

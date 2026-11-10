@@ -1,0 +1,108 @@
+{
+  "status": "full226_three_videos_technical_audit_passed",
+  "sample_id": "WingIt_dev_300_525",
+  "stage_step": 2000,
+  "total_training_step": 4500,
+  "checkpoint_sha256": "5e95b0826db51003968597b8ffbc6159f42d0c784ad8c0a10843734fae3dc485",
+  "input_RGB": [
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step2000_v1/WingIt_dev_300_525/candidate_pixels/visible_RGB.npy",
+      "sha256": "b5a7b8d5e9b827ec4bb6c40cc5b67a971c450da920b0a7e481bb6fcb0decb749",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525/dense_pixels/visible_RGB.npy",
+      "sha256": "2833a55053a65b0bb2c8c5d6a316cd0be2e51692ec124dc43c45ef8b34c00830",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104/upscaler_production67_wing300_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "cd6852a3dc094bbab5231d9e1bc46192b0ee45d11a834f55e6a0747c9f50c7e8"
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104/upscaler_production67_limiteddev_evaluation_20261107_v1/pixels/WingIt_dev_300_525/teacher_student_RGB.npy",
+      "bytes": 1405900928,
+      "sha256": "e00d962a8baa3e8bdd1bd4fa193e486e10013af888f43f3f040a800fc5c7de67"
+    }
+  ],
+  "files": {
+    "candidate_native1080": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step2000_v1/WingIt_dev_300_525/videos/anchored_stage2000_native1080.mp4",
+      "sha256": "6f07b18d5e8a8d2ddb6014854e8b94252a6eb106aa90c8066924b662eb10c71b",
+      "bytes": 8931682,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "main_comparison": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step2000_v1/WingIt_dev_300_525/videos/anchored_stage2000_dense_gt.mp4",
+      "sha256": "fdce7b71dca4d3abb3be635b1754cae074cf59c44a9b22d32719f3d915843420",
+      "bytes": 6434339,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "no_refiner_ablation": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step2000_v1/WingIt_dev_300_525/videos/anchored_stage2000_no_refiner_gt.mp4",
+      "sha256": "8284f561e9ea60ca61de8e882f8f0708f86b4be71d542f3400caa7370bd59254",
+      "bytes": 5973528,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    }
+  },
+  "main_columns": [
+    "Anchored stage2000 | candidate",
+    "Original bidirectional refiner",
+    "Actual native-HR GT"
+  ],
+  "ablation_columns": [
+    "Anchored stage2000 | candidate",
+    "Frozen upsampler | no refiner",
+    "Actual native-HR GT"
+  ],
+  "frames": 226,
+  "fps": 24,
+  "full226_ratios_vs_no_refiner": {
+    "pixel_l1": 0.9513236072331243,
+    "lpips": 1.0679482017197621
+  },
+  "metrics_use_lossless_RGB": true,
+  "continuous_visual_reviewed": false,
+  "strict_streaming_decoder_validated": false,
+  "accepted_refiner": null,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0
+}

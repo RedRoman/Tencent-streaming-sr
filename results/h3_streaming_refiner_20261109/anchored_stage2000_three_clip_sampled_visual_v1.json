@@ -1,0 +1,13 @@
+{
+  "scope": "stage2000 three samples, main and no-refiner comparisons at frames0/144 only",
+  "sources": "evidence/stage2000_sampled_visual_v1/sources.json",
+  "observations": {
+    "WingIt_dev_3586_3811": "Dense adds/changes cords and background surface details; candidate and no-refiner retain GT broad geometry. Candidate remains softer in fine detail.",
+    "ElephantsDream_dev_13070_13295": "Dense changes pipe texture/grid and wall spots. Candidate/no-refiner keep more similar pipe layout and wall markings to GT; fine texture is softer.",
+    "WingIt_dev_300_525": "Dense changes console dial/button appearance and vehicle trim. Candidate/no-refiner keep GT layout more closely; candidate benefit over no-refiner is not established by these stills."
+  },
+  "content_hallucination_claim": "Observed selected content deviations only; no universal hallucination-free claim.",
+  "flicker_and_drift": "Cannot assess continuous temporal behavior from these stills. Full226 temporal errors are reported separately.",
+  "continuous_visual_reviewed": false,
+  "model_accepted": false
+}

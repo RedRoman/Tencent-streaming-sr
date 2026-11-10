@@ -1,0 +1,75 @@
+{
+  "sample_id": "WingIt_dev_300_525",
+  "stage_step": 2000,
+  "metrics_source_sha256": "588f77fad6e75a74144afced4e25faf694185611b26b4844fb57328047dc09bb",
+  "stage1000_metrics_source_sha256": "b6d48d9dbaee4bfcbf2be9d0b130209dae1083d48cff32674966b4e472d00c0a",
+  "ratios_vs_no_refiner": {
+    "pixel_l1": 0.9513236072331243,
+    "mse": 0.9113914378564532,
+    "lpips": 1.0679482017197621,
+    "delta_l1": 1.0363837875247761,
+    "temporal_difference_mse": 1.0831875367079338
+  },
+  "stage2000_over_stage1000_error_ratios": {
+    "pixel_l1": 1.029096684474613,
+    "mse": 0.9933289042371554,
+    "lpips": 0.9890135877759064,
+    "delta_l1": 1.0017917457162224,
+    "temporal_difference_mse": 1.011593735171996
+  },
+  "tail18_ratios_vs_no_refiner": {
+    "pixel_l1": 0.9328244001125782,
+    "mse": 0.8845321167712135,
+    "lpips": 1.072543598934539,
+    "delta_l1": 1.0464096466726822,
+    "temporal_difference_mse": 1.032789850692872
+  },
+  "per_frame_comparison_vs_no_refiner": {
+    "pixel_l1": {
+      "improved": 217,
+      "worse": 9,
+      "equal": 0
+    },
+    "mse": {
+      "improved": 215,
+      "worse": 11,
+      "equal": 0
+    },
+    "lpips": {
+      "improved": 0,
+      "worse": 226,
+      "equal": 0
+    }
+  },
+  "nativeHR_full226": {
+    "frame_count": 226,
+    "pixel_l1": 0.017750998855922864,
+    "mse": 0.0010534259699289152,
+    "psnr_db": 29.773959792595353,
+    "lpips": 0.10235839241505724,
+    "global_score": 0.038222677338934315,
+    "adjacent_pairs": 225,
+    "motion_roi_fraction": 0.04493576603223594,
+    "motion_l1": 0.04732549150915046,
+    "delta_l1": 0.007388415117154637,
+    "temporal_difference_mse": 0.0005502017879280754,
+    "motion_mask_sha256": "54cb11eba125b66d21a0c42c0abc58a3f461e029b9c9edd12635d6600aa59322"
+  },
+  "no_refiner_nativeHR_full226": {
+    "frame_count": 226,
+    "pixel_l1": 0.018659264545689905,
+    "mse": 0.0011558436103004436,
+    "psnr_db": 29.371009235090785,
+    "lpips": 0.0958458399482533,
+    "global_score": 0.037828432535340566,
+    "adjacent_pairs": 225,
+    "motion_roi_fraction": 0.04493576603223594,
+    "motion_l1": 0.0445729102194863,
+    "delta_l1": 0.007129033863797302,
+    "temporal_difference_mse": 0.000507946933732519,
+    "motion_mask_sha256": "54cb11eba125b66d21a0c42c0abc58a3f461e029b9c9edd12635d6600aa59322"
+  },
+  "continuous_visual_reviewed": false,
+  "accepted_refiner": null,
+  "metrics_from_lossless_native1080_RGB": true
+}
