@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T05:14:44.455724+00:00",
-  "stage": "TF2500_first_clip_complete_metric_gate_failed_remaining_cohort_running",
+  "as_of_utc": "2026-11-10T05:36:41.687732+00:00",
+  "stage": "TF2500_two_clips_complete_metric_gates_failed_third_clip_running",
   "verified_optimizer_updates_at_evidence_snapshot": 2500,
   "target_updates": 2500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -284,7 +284,7 @@
     "report": "TF2500_FIRST_WINGIT_RESULT_V1.md",
     "active_worker": "step2500_WingIt_dev_300_525_latent",
     "trained_full_model_two_latent_gates": "exact0_cache_future_condition_future_reload",
-    "completed_latent_count": 7,
+    "completed_latent_count": 31,
     "cache_bytes": 6930022400,
     "full67_complete": false,
     "full226_complete": false,
@@ -407,12 +407,15 @@
     "other_cohort_jobs_continue": true,
     "new_optimizer_updates": 0,
     "video_technical_audit_passed": true,
-    "video_local_transfer": "main compact and ablation recovered, complete and original SHA verified; native1080 remaining bytes pending",
+    "video_local_transfer": "compact main, ablation and native1080 complete, original file SHA verified; full-width2880 comparison remains remote",
     "video_audit": "TF2500_video_audit.json",
     "sampled_visual_screening": "failed",
     "sampled_visual_report": "TF2500_WingIt_sampled_visual_v1.json",
     "main_preview": "tf2500_dense_gt_quickview.mp4",
-    "no_refiner_ablation": "tf2500_no_refiner_gt.mp4"
+    "no_refiner_ablation": "tf2500_no_refiner_gt.mp4",
+    "native1080_transfer_receipt": "TF2500_native1080_transfer_recovery_v1.json",
+    "native1080_sha256": "84cd4b5d0a19710b0675b02d46302b83c99bdb9b236490c98e5a4b1d4b4a08e0",
+    "native1080_bytes": 29966506
   },
   "TF2500_failure_diagnosis": {
     "report": "TF2500_failure_diagnostic_cpu_v1.json",

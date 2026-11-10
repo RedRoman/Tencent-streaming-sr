@@ -513,5 +513,17 @@
     "original_sha256": "d448c765eb95ff8c8dd87882884280f5f75b405669d921b4d3bd5a7fc9e6e823",
     "public_sha256": "d448c765eb95ff8c8dd87882884280f5f75b405669d921b4d3bd5a7fc9e6e823",
     "redaction": null
+  },
+  "TF2500_native1080_transfer_recovery_v1.json": {
+    "original_sha256": "030fec0321a6274972736a8b4da22339a8240879d169da896caeb6574443167a",
+    "public_sha256": "e4f59a18abb4e408798a04d2a4b3709e9ebb7d008eaa5557302a6bf17595d9d6",
+    "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
+  },
+  "STATUS.json": {
+    "original_sha256": "9da20cab2e3bb22b4c0ba4b0fb3dc9453030491f490eb54e61758a1255997f4d",
+    "public_sha256": "9da20cab2e3bb22b4c0ba4b0fb3dc9453030491f490eb54e61758a1255997f4d",
+    "prior_public_sha256": "59151dee572b7f3631488dbbd068fd58aa9789ec61db89f77c26329e3115482d",
+    "redaction": null,
+    "source_note": "generated public status snapshot preserved privately as STATUS_native1080_snapshot.json"
   }
 }
