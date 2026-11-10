@@ -1,0 +1,23 @@
+{
+  "status": "ablation_complete_original_SHA_verified",
+  "prefix_bytes": 4177920,
+  "prefix_sha256": "db5bac5bb02963fc314cfb50673829c0dd393582ad19c0e309db991d9f895bcc",
+  "tail_bytes": 456652,
+  "tail_sha256": "da0a468831c5c35a60839038a5bbdbc0672a4a35f59cea5dff67337ce1723d23",
+  "full_bytes": 4634572,
+  "full_sha256": "f02346a687ba4e0ef4794e9e8711666059ebf4a4dad6c9fc61ce3535192794f3",
+  "original_encoder_technical_audit": "TF2500_video_audit.json",
+  "no_reencoding": true,
+  "continuous_visual_reviewed": false,
+  "native1080_recovery": {
+    "prefix_bytes": 20889600,
+    "prefix_sha256": "18815e6eb647216b030ec31fc4dd8ea080919d8433903fad985f270467330895",
+    "full_bytes": 29966506,
+    "full_sha256": "84cd4b5d0a19710b0675b02d46302b83c99bdb9b236490c98e5a4b1d4b4a08e0",
+    "remaining_bytes": 9076906,
+    "status": "verified_prefix_preserved_remaining_transfer_pending",
+    "suggested_max_part_bytes": 524288
+  },
+  "new_NPU_jobs": 0,
+  "new_optimizer_updates": 0
+}

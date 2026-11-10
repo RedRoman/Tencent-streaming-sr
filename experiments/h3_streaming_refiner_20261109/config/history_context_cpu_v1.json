@@ -1,0 +1,15 @@
+{
+  "schema": "history-context-cpu-diagnostic-v1",
+  "source_sha256": "743bca1af05293bf9b2729a32c3e5b422cadc56cc013f3a8cbc6a6e822ecec08",
+  "runtime_source_sha256": {
+    "causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f"
+  },
+  "seed": 20261110,
+  "scope": "actual frozen runtime; tiny random three-layer H3; four full68x120 latents; CPU only",
+  "comparison": "full sequential GT history [0,1,2] versus truncated GT history [0,2] for current frame3; same params/current input/noise/positions; separate offline/incremental controls",
+  "result_sha256": "3350df7e8fadd621af2fbd42bf69f5e71f75841d42fedfbd0afe0d10488b857c",
+  "optimizer_updates": 0,
+  "new_accelerator_forwards": 0,
+  "full33B_measured": false
+}

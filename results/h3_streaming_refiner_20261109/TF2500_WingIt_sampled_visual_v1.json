@@ -1,0 +1,38 @@
+{
+  "status": "sampled_visual_screening_failed",
+  "sample_id": "WingIt_dev_3586_3811",
+  "training_step": 2500,
+  "sampled_frame_indices_zero_based": [
+    0,
+    150,
+    225
+  ],
+  "images": {
+    "0": {
+      "file": "TF2500_WingIt_frame000.jpg",
+      "sha256": "23301a0a0292ff41fbf43bd75252e8cdd3f99eb0e679b5020382f086f0bc8223"
+    },
+    "150": {
+      "file": "TF2500_WingIt_frame150.jpg",
+      "sha256": "2875d39cbb23a6c031f0c414c2e9f4bcf068fc19759b52bf3203166075d2fc9c"
+    },
+    "225": {
+      "file": "TF2500_WingIt_frame225.jpg",
+      "sha256": "348e83f51cd289f0defc3c6a5d47bcb13946ca859536949d125e6fccaa6c0742"
+    }
+  },
+  "observations": [
+    "At all three inspected frames, the streaming candidate severely changes the main cartoon character face/head geometry and loses identifiable facial features relative to GT.",
+    "Large smeared and ghost-like edges affect the main character, secondary character and room details; these are structural fidelity failures, beyond ordinary sharpening differences.",
+    "The bidirectional arm retains more of the original character identity and scene layout than the streaming arm, but changes outlines, textures and details relative to GT."
+  ],
+  "scope_limits": [
+    "Three sampled frames only; no continuous temporal/flicker review has been performed.",
+    "This review does not identify the cause of the model failure.",
+    "The official overlap decoder remains provisional for strict streaming."
+  ],
+  "sampled_visual_gate_passed": false,
+  "continuous_visual_reviewed": false,
+  "accepted_refiner": null,
+  "new_optimizer_updates": 0
+}

@@ -288,10 +288,10 @@
     "public_sha256": "931ce0fa86d1e911c47a6db20b4df97aca993b286bd2b0d299506b3390249200"
   },
   "README.md": {
-    "source_sha256": "3ac46915dba9b23370acc6d3275914e72c15b3f1f19452291d49df65c400ccfd",
-    "public_sha256": "3ac46915dba9b23370acc6d3275914e72c15b3f1f19452291d49df65c400ccfd",
-    "prior_public_sha256": "730b4d7b32f5e0ffa9feffe073a44d240b8cdea202824375f8ba8ee1f92304e6",
-    "source_note": "current original snapshot retained as README_TF2500_first_clip_snapshot.md"
+    "source_sha256": "4af8fafbf516cf73b83d9ff3e3339bd7ed904584928fa359468d37f44cbd6bb3",
+    "public_sha256": "4af8fafbf516cf73b83d9ff3e3339bd7ed904584928fa359468d37f44cbd6bb3",
+    "prior_public_sha256": "3ac46915dba9b23370acc6d3275914e72c15b3f1f19452291d49df65c400ccfd",
+    "source_note": "original current snapshot retained as README_history_context_snapshot.md"
   },
   "src/run_tf3000_evaluation.py": {
     "source_sha256": "8f9d41889117f312cdcd1f3206d6ed8c437e67ca05b81730b143897101eec278",
@@ -353,5 +353,13 @@
   "stages/stop_tf2500_v2/src/stop_tf_at_checkpoint.py": {
     "source_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9",
     "public_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9"
+  },
+  "src/check_history_context_cpu.py": {
+    "source_sha256": "743bca1af05293bf9b2729a32c3e5b422cadc56cc013f3a8cbc6a6e822ecec08",
+    "public_sha256": "743bca1af05293bf9b2729a32c3e5b422cadc56cc013f3a8cbc6a6e822ecec08"
+  },
+  "config/history_context_cpu_v1.json": {
+    "source_sha256": "4c807a14ee8db73642c431f0b1b01d7409e7bcf3e46afb6a23ecc47d01a82909",
+    "public_sha256": "4c807a14ee8db73642c431f0b1b01d7409e7bcf3e46afb6a23ecc47d01a82909"
   }
 }

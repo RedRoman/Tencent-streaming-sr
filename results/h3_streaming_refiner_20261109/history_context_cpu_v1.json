@@ -1,0 +1,41 @@
+{
+  "status": "passed_context_gap_reproduced_on_tiny_random_H3",
+  "scope": "actual frozen runtime; tiny random three-layer H3; four full68x120 latents; CPU only",
+  "same_inputs_checkpoint_condition_positions_and_noise": true,
+  "full_history_frames": [
+    0,
+    1,
+    2
+  ],
+  "truncated_history_frames": [
+    0,
+    2
+  ],
+  "current_frame": 3,
+  "full_prefix_reference_vs_incremental_GT_KV": {
+    "max_abs": 0.0,
+    "relative_rms": 0.0
+  },
+  "truncated_offline_vs_truncated_KV_oracle": {
+    "max_abs": 0.0,
+    "relative_rms": 0.0
+  },
+  "truncated_vs_full_history_context_gap": {
+    "max_abs": 0.010038197040557861,
+    "relative_rms": 0.0010704646119847894
+  },
+  "stream_cache_max_video_frames": 2,
+  "tiny_stream_cache_bytes": 6273024,
+  "full_prefix_computation_used_only_as_diagnostic_reference": true,
+  "production_inference_changed": false,
+  "optimizer_updates": 0,
+  "new_accelerator_forwards": 0,
+  "full33B_context_gap_measured": false,
+  "TF2500_quality_root_cause_proven": false,
+  "source_sha256": "743bca1af05293bf9b2729a32c3e5b422cadc56cc013f3a8cbc6a6e822ecec08",
+  "runtime_source_sha256": {
+    "causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f"
+  },
+  "seconds": 81.95564703829587
+}

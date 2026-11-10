@@ -1,0 +1,179 @@
+{
+  "status": "CPU_readonly_diagnostic_no_new_training_or_NPU_forward",
+  "training_events_sha256": {
+    "runs/pilot_v3/events.jsonl": "9988b0ba4997b45f115eb6a1a29a0faefedfa3166b4dec184f32922c06dc7a58",
+    "runs/tf_extension_3000_v1/events.jsonl": "eb202eaad56ad544d1ba469f41d393f534fe916e8c75138f6289dbed54b8ab9a"
+  },
+  "actual_optimizer_updates": 2500,
+  "training_windows": {
+    "1-200": {
+      "count": 200,
+      "fm": 0.1458945744205266,
+      "draft_l1": 0.24908777490258216,
+      "loss": 0.15834896359592676,
+      "grad_norm": 0.19124886428937315
+    },
+    "201-600": {
+      "count": 400,
+      "fm": 0.07103270032443106,
+      "draft_l1": 0.19274948235601186,
+      "loss": 0.08067017452325671,
+      "grad_norm": 0.11082462389022112
+    },
+    "601-1000": {
+      "count": 400,
+      "fm": 0.06530878534074873,
+      "draft_l1": 0.1879673920944333,
+      "loss": 0.07470715486444533,
+      "grad_norm": 0.09773338668048381
+    },
+    "1001-1400": {
+      "count": 400,
+      "fm": 0.061609059129841624,
+      "draft_l1": 0.1847750161960721,
+      "loss": 0.07084781010169536,
+      "grad_norm": 0.0698228375776671
+    },
+    "1401-1800": {
+      "count": 400,
+      "fm": 0.0591418159706518,
+      "draft_l1": 0.1824212345480919,
+      "loss": 0.06826287772040814,
+      "grad_norm": 0.07202676641056314
+    },
+    "1801-2200": {
+      "count": 400,
+      "fm": 0.05870079999323934,
+      "draft_l1": 0.18216742265969516,
+      "loss": 0.06780917117837816,
+      "grad_norm": 0.09384114793734626
+    },
+    "2201-2500": {
+      "count": 300,
+      "fm": 0.05789029834792018,
+      "draft_l1": 0.18167530645926794,
+      "loss": 0.06697406390681863,
+      "grad_norm": 0.07892239335303505
+    }
+  },
+  "coverage": {
+    "training_clips": 2,
+    "sample_position_sigma_combinations": 402,
+    "min_repetitions": 6,
+    "max_repetitions": 7,
+    "one_current_latent_per_update": true
+  },
+  "latent_windows": {
+    "0:1": {
+      "refiner_vs_HR": {
+        "l1": 0.4780287742614746,
+        "mse": 0.38582485914230347
+      },
+      "draft_vs_HR": {
+        "l1": 0.16510210931301117,
+        "mse": 0.054989948868751526
+      },
+      "ratios": {
+        "l1": 2.895352314095497,
+        "mse": 7.01627964890783
+      }
+    },
+    "0:17": {
+      "refiner_vs_HR": {
+        "l1": 0.4522925615310669,
+        "mse": 0.34349924325942993
+      },
+      "draft_vs_HR": {
+        "l1": 0.22427846491336823,
+        "mse": 0.10472699999809265
+      },
+      "ratios": {
+        "l1": 2.016656221121245,
+        "mse": 3.2799492324394466
+      }
+    },
+    "17:34": {
+      "refiner_vs_HR": {
+        "l1": 0.4507238566875458,
+        "mse": 0.34084025025367737
+      },
+      "draft_vs_HR": {
+        "l1": 0.22968462109565735,
+        "mse": 0.10730135440826416
+      },
+      "ratios": {
+        "l1": 1.9623597545951135,
+        "mse": 3.176476682268481
+      }
+    },
+    "34:51": {
+      "refiner_vs_HR": {
+        "l1": 0.45122987031936646,
+        "mse": 0.3422120213508606
+      },
+      "draft_vs_HR": {
+        "l1": 0.2257583886384964,
+        "mse": 0.1039208471775055
+      },
+      "ratios": {
+        "l1": 1.9987291415421742,
+        "mse": 3.293006462566013
+      }
+    },
+    "51:67": {
+      "refiner_vs_HR": {
+        "l1": 0.457313597202301,
+        "mse": 0.3503286838531494
+      },
+      "draft_vs_HR": {
+        "l1": 0.22918005287647247,
+        "mse": 0.1081184446811676
+      },
+      "ratios": {
+        "l1": 1.9954336839637261,
+        "mse": 3.2402305165065948
+      }
+    },
+    "0:67": {
+      "refiner_vs_HR": {
+        "l1": 0.452824205160141,
+        "mse": 0.344129353761673
+      },
+      "draft_vs_HR": {
+        "l1": 0.22719618678092957,
+        "mse": 0.10598554462194443
+      },
+      "ratios": {
+        "l1": 1.9930977345001384,
+        "mse": 3.2469461282592738
+      }
+    }
+  },
+  "new_optimizer_updates": 0,
+  "new_NPU_jobs": 0,
+  "frozen_recipe_changed": false,
+  "interpretation": {
+    "status": "evidence_based_hypotheses_not_causal_attribution",
+    "observations": [
+      "First latent MSE/HR is7.01628x the no-refiner latent MSE, before autoregressive video history exists and before decoding.",
+      "TF200 to2500 on firstWingIt changes pixel L1+2.52848percent and LPIPS-5.09930percent; full held-out checkpoint cohort pending.",
+      "Native bidirectional same-setup baseline also fails fidelity; this shared failure is not explained solely by streaming conversion or insufficient new-adapter training.",
+      "Training loss is still decreasing but improvement slowed in late windows. Two training clips, one current latent per update,402 sample-position-sigma combinations each seen6-7times."
+    ],
+    "hypotheses_in_priority_order": [
+      "High-noise three-step generation without step0 identity and insufficient effective draft/conditioning preservation; missing text/shared native setup also needs controlled checks.",
+      "Single-noise-point ground-truth-history objective differs from three-step self-generated rollout.",
+      "Truncated offline history [0,t-1,t] also omits predecessor context embedded in t-1 incremental KVs; two-latent parity does not measure this long-history training distribution gap.",
+      "Limited training data and remaining underfitting may contribute; neither overfitting nor sufficient convergence is established."
+    ],
+    "next_discriminating_checks": [
+      "Continue unchanged fixed1000/2000/2500 held-out cohort.",
+      "After current owned batch safely finishes, compare matched train/dev TF denoising and three-step rollout.",
+      "Separately compare GT history built by true sequential KV, truncated GT history, and self-generated history with same checkpoint/noise/conditioning.",
+      "Validate same-baseline identity candidate and conditional fidelity before merely extending steps; use separate versioned candidate, preserve existing recipe/results."
+    ],
+    "reference": "https://arxiv.org/abs/2506.08009",
+    "NPU_diagnostic_launched": false,
+    "no_extra_training_authorized_by_this_analysis": true
+  }
+}
