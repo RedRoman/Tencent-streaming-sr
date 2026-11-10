@@ -747,5 +747,40 @@
     "source_sha256": "b1d1d06efb88e3992890dae27f42e53d4f41c0ba30f9279f6af772b0794c6391",
     "public_sha256": "71e93991c00cb0ce10b1070dd9461fb3100769b87c9f840377f08fc3f506702a",
     "redaction": "private path prefixes only"
+  },
+  "src/validate_refiner_long_stream_v1.py": {
+    "source_sha256": "b8ad602d050b6800ca811459baaa15bbf930f00da5ae3bc763c0fc1583717c53",
+    "public_sha256": "acda3b0134ecd16cfa34db81fc7b312b68f827c500f93e9dc15a25102ea467c4",
+    "redaction": "private path prefixes only; original SHA retained"
+  },
+  "config/refiner_long137_launch_after_eval2000_v1.json": {
+    "source_sha256": "100441626a0fed66bbb07b4de6226c109ad1281dc75dab68140b03ef7f8be5c7",
+    "public_sha256": "56f774eadedcce3e325fbf47d7b5bf0711cf98a6149344fdfc89ab8fb6512c32",
+    "redaction": "private path prefixes only; original SHA retained"
+  },
+  "config/launch_refiner_long137_after_eval2000_v1.py": {
+    "source_sha256": "3196b6af7661ab47232d0874d8f24731253e1b5847867cfd312536d930de02d2",
+    "public_sha256": "d6d454f2e670a5de14581e62d5df286b52c77c3f4822cb8593f23b1b5d68072b",
+    "redaction": "private path prefixes only; original SHA retained"
+  },
+  "stages/refiner_long_stream_stage1000_v1/config/refiner_long_stream_v1.json": {
+    "source_sha256": "97530db5a1ef9656a8c1d7b0095dabb215bd049f820f181006a41966c757a7fd",
+    "public_sha256": "56d735a06685e8cc4d814f434dcae3ab963646439458c04d39b8828e0f06c768",
+    "redaction": "private path prefixes only; original SHA retained"
+  },
+  "stages/refiner_long_stream_stage1000_v1/src/run_locked.py": {
+    "source_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "public_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "redaction": "private path prefixes only; original SHA retained"
+  },
+  "stages/refiner_long_stream_stage1000_v1/src/validate_refiner_long_stream_v1.py": {
+    "source_sha256": "b8ad602d050b6800ca811459baaa15bbf930f00da5ae3bc763c0fc1583717c53",
+    "public_sha256": "acda3b0134ecd16cfa34db81fc7b312b68f827c500f93e9dc15a25102ea467c4",
+    "redaction": "private path prefixes only; original SHA retained"
+  },
+  "stages/refiner_long_stream_stage1000_v1/manifest.json": {
+    "source_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+    "public_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+    "redaction": "private path prefixes only; original SHA retained"
   }
 }

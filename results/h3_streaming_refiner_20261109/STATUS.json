@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-11-10T17:42:00Z",
+  "as_of_utc": "2026-11-10T18:07:34.466100+00:00",
   "stage": "four_of_six_video_sets_complete_two_stage2000_running",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
@@ -694,8 +694,9 @@
     "stage1000_completed_video_sets": 3,
     "stage2000_completed_video_sets": 1,
     "stage2000_first": "WingIt3586 complete exit0/reaped; local full226 previews verified",
-    "stage2000_second": "ElephantsDream running NPU7",
-    "stage2000_third": "WingIt300 running NPU4 after first2000 exit/reap"
+    "stage2000_second": "ElephantsDream running;41/67 generation events at2026-11-10T18:06:41Z",
+    "stage2000_third": "WingIt300 running;25/67 generation events at2026-11-10T18:06:41Z",
+    "stage1000_native_resolution_local_delivery": "All three sample sets now SHA verified against complete226-frame technical receipts"
   },
   "strict_decoder_next_execution": {
     "status": "CPU_actual_integrity_passed_predecessor_not_ready",
@@ -703,5 +704,24 @@
     "original_predecessor_still_required": "evaluation_continuation_v2 terminal/reaped",
     "NPU_launched": false,
     "frozen_plan_and_sources_unchanged": true
+  },
+  "real33B_long137_next_execution": {
+    "status": "prepared_actual_CPU_admission_passed_predecessor_active",
+    "manifest_original_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+    "exact_checkpoint_stage_step": 1000,
+    "scope": "137 fullspatial positions, looping67 authorizeddraft; not137unique content",
+    "predecessor": "Stage2000 WingIt300 fullvideo complete exit0/reaped; fresh idleNPU4/200GiB/allthree locks",
+    "first67_reproduction_limit": 0,
+    "cache_bytes_limit": 6930022400,
+    "serialized_KV_restore_changed_chunk_boundaries": [
+      66,
+      134
+    ],
+    "restore_chunk_limit": 0,
+    "NPU_launched": false,
+    "waiter_started": false,
+    "stage2000_longstream_tested": false,
+    "private_KV_caches_published": false,
+    "model_accepted": false
   }
 }

@@ -1,0 +1,106 @@
+{
+  "observed_at": "2026-11-10T17:59:01.888287+00:00",
+  "transfer_session": "h3-full-video-stage1000-remaining-native-v1",
+  "transfer_status": "OK",
+  "archive_bytes": 54681600,
+  "archive_sha256": "cbd7a91752efb2e3c444d15111205df5a2339bce88055765ab4b3ba0c12d5800",
+  "safe_extraction": true,
+  "samples": {
+    "ElephantsDream_dev_13070_13295": {
+      "receipt_sha256": "28f6c726f3fa2e078562b8714ac2425560b4c11780eec061e719ff262f0f72b4",
+      "files": {
+        "candidate_native1080": {
+          "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/ElephantsDream_dev_13070_13295/anchored_stage1000_native1080.mp4",
+          "sha256": "60b0f488ea4a7dab4f549ea8a56701eb4ba65c2939fd56bf0d0bf32a7d5be8f2",
+          "bytes": 14243514,
+          "source_technical_audit": {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "SHA_identical_to_technically_audited_remote": true
+        },
+        "main_comparison": {
+          "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/ElephantsDream_dev_13070_13295/anchored_stage1000_dense_gt.mp4",
+          "sha256": "f97e7d5976b05c9c263b4eecb532161e2aa01c36e22b49a3c6ccc800363086c1",
+          "bytes": 10443630,
+          "source_technical_audit": {
+            "codec_name": "h264",
+            "width": 2880,
+            "height": 620,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "SHA_identical_to_technically_audited_remote": true
+        },
+        "no_refiner_ablation": {
+          "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/ElephantsDream_dev_13070_13295/anchored_stage1000_no_refiner_gt.mp4",
+          "sha256": "e0e39c4b2d8c02e3faafdba2b364648ebda0e01ac730449308b74b7c50015438",
+          "bytes": 8623002,
+          "source_technical_audit": {
+            "codec_name": "h264",
+            "width": 2880,
+            "height": 620,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "SHA_identical_to_technically_audited_remote": true
+        }
+      }
+    },
+    "WingIt_dev_300_525": {
+      "receipt_sha256": "03f38cff1486b0d144eaae8f48555f9058415c45923d984f8071ed7055346b6f",
+      "files": {
+        "candidate_native1080": {
+          "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/WingIt_dev_300_525/anchored_stage1000_native1080.mp4",
+          "sha256": "7011c6cebdd486c71a262daf9683d9cd46bd0ce38e157ce44072e4dc049b170f",
+          "bytes": 8932029,
+          "source_technical_audit": {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "SHA_identical_to_technically_audited_remote": true
+        },
+        "main_comparison": {
+          "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/WingIt_dev_300_525/anchored_stage1000_dense_gt.mp4",
+          "sha256": "33b6242b9606c833fb887a797138da560eba552bc0b8ce2bd885ffa294cc257d",
+          "bytes": 6437598,
+          "source_technical_audit": {
+            "codec_name": "h264",
+            "width": 2880,
+            "height": 620,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "SHA_identical_to_technically_audited_remote": true
+        },
+        "no_refiner_ablation": {
+          "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_remaining_native_v1/WingIt_dev_300_525/anchored_stage1000_no_refiner_gt.mp4",
+          "sha256": "51d92e231114a7a4085aa787a4ba2e6983081d46dd565847a73ce887de657e74",
+          "bytes": 5978541,
+          "source_technical_audit": {
+            "codec_name": "h264",
+            "width": 2880,
+            "height": 620,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "SHA_identical_to_technically_audited_remote": true
+        }
+      }
+    }
+  },
+  "continuous_visual_reviewed": false,
+  "model_accepted": false
+}

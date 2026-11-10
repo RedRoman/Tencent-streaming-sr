@@ -1,0 +1,48 @@
+{
+  "schema": "real33B-long137-stage1000-v1",
+  "scope": "Engineering stress on137 absolute latent positions using looped authorized67draft; not137unique content and not model acceptance",
+  "stage_step": 1000,
+  "sample_id": "WingIt_dev_3586_3811",
+  "latent_count": 137,
+  "source_index": "absolute_latent modulo67",
+  "seed": 20261109,
+  "save_before_latents": [
+    66,
+    134
+  ],
+  "replay_count": 3,
+  "physical_device": 4,
+  "no_new_training": true,
+  "reference_latent_receipt": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_3586_3811/candidate_latent/result.json",
+  "reference_latent_receipt_sha256": "45aec931ca86c072eabb3606cc8d620a456fe07030c76a4c7a9c013a42d417d1",
+  "reference_launch": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_step1000_WingIt_dev_3586_3811_v1/launch.json",
+  "predecessor_launch": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_step2000_WingIt_dev_300_525_v1/launch.json",
+  "predecessor_result": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step2000_v1/WingIt_dev_300_525/result.json",
+  "checkpoint_receipt_sha256": "d7fd4a3fb14b6a43edc318769ad5414fd01a6dc3bbb1163559f346ae80e6db28",
+  "checkpoint_pins": {
+    "stage_step": 1000,
+    "total_optimizer_updates": 3500,
+    "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+    "private_optimizer_sha256": "90120faacc2f7cc2da9e03ef1d94fd7ceaaa01f8860529cb9d1963dd208f00cd"
+  },
+  "evaluation_admission_args": {
+    "stage": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step1000_evaluation_v1",
+    "manifest_sha": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
+    "training_stage": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1",
+    "training": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1",
+    "training_launch": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_training_v1/launch.json",
+    "data_manifest": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+    "assets_manifest": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json",
+    "prior_stage": "/tmp/h3_production67_limiteddev_eval_20261107_v1",
+    "root": "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104",
+    "sample_id": "WingIt_dev_3586_3811",
+    "physical_device": 4
+  },
+  "acceptance_limits": {
+    "first67_existing_latent_max_abs": 0,
+    "late_resume_chunk_max_abs": 0,
+    "max_cache_bytes": 6930022400,
+    "video_frames_in_KV": 2
+  },
+  "failure_policy": "Stop and preserve first failure; no tolerance relaxation or retry with changed model."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "prepared_not_launched",
+  "device": 4,
+  "validation_stage": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/refiner_long_stream_stage1000_v1",
+  "manifest_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+  "attempt": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/refiner_long_stream_stage1000_v1",
+  "output": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/validation/refiner_long_stream_stage1000_v1",
+  "log": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/logs/refiner_long_stream_stage1000_v1.log",
+  "minimum_available_GiB": 200,
+  "predecessor": "fixed2000_WingIt300_full_video_exit0_reaped",
+  "scope": "real33B stage1000 fullspatial137 looped authorizeddraft; cache/save/restore/chunk, not model acceptance",
+  "new_waiter_started": false
+}
