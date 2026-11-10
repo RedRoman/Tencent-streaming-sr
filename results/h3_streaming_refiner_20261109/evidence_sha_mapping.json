@@ -520,42 +520,48 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "1970dc83ec298d962cb1cce83ade64408f17f8d487d8857030c4acf46ee66920",
-    "public_sha256": "1970dc83ec298d962cb1cce83ade64408f17f8d487d8857030c4acf46ee66920",
-    "prior_public_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
+    "original_sha256": "b04f35f10df04ebf81352280d5fe66191fe0a470a90fed9a47379179ad2bfaa5",
+    "public_sha256": "b04f35f10df04ebf81352280d5fe66191fe0a470a90fed9a47379179ad2bfaa5",
+    "prior_public_sha256": "1970dc83ec298d962cb1cce83ade64408f17f8d487d8857030c4acf46ee66920",
     "prior_mapping": {
-      "original_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
-      "public_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
-      "prior_public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
+      "original_sha256": "1970dc83ec298d962cb1cce83ade64408f17f8d487d8857030c4acf46ee66920",
+      "public_sha256": "1970dc83ec298d962cb1cce83ade64408f17f8d487d8857030c4acf46ee66920",
+      "prior_public_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
       "prior_mapping": {
-        "original_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
-        "public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
-        "prior_public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+        "original_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
+        "public_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
+        "prior_public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
         "prior_mapping": {
-          "original_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
-          "public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
-          "prior_public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+          "original_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
+          "public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
+          "prior_public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
           "prior_mapping": {
-            "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-            "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-            "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+            "original_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+            "public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+            "prior_public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
             "prior_mapping": {
-              "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-              "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-              "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+              "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+              "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+              "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+              "prior_mapping": {
+                "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+                "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+                "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+                "redaction": null,
+                "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+              },
               "redaction": null,
-              "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+              "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
             },
-            "redaction": null,
-            "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
+            "source_note": "current snapshot retained as STATUS_anchored_eval_preparation_snapshot.json"
           },
-          "source_note": "current snapshot retained as STATUS_anchored_eval_preparation_snapshot.json"
+          "source_note": "current snapshot retained as STATUS_anchored_stage0500_snapshot.json"
         },
-        "source_note": "current snapshot retained as STATUS_anchored_stage0500_snapshot.json"
+        "source_note": "current snapshot retained as STATUS_anchored_stage1000_snapshot.json"
       },
-      "source_note": "current snapshot retained as STATUS_anchored_stage1000_snapshot.json"
+      "source_note": "STATUS_anchored_stage1000_full226_snapshot.json"
     },
-    "source_note": "STATUS_anchored_stage1000_full226_snapshot.json"
+    "source_note": "STATUS_anchored_completion2000_snapshot.json"
   },
   "history_diagnostic_cpu_control_v1.json": {
     "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
@@ -944,5 +950,35 @@
     "public_sha256": "505d1d85236b6a591a198db15acc01b975cb8bb999b037a7dfea304aec70d726",
     "original_full_resolution_video_sha256": "595955278901e8fff582ab0d66917454723d33c6a460cd68a1ad45a592e79cce",
     "downscaled_full226_viewing_copy": true
+  },
+  "anchored_training_complete2000_v1.json": {
+    "original_sha256": "d7f8295d17e2b04191324be77a100c39c1577af0fbaeec639fb0434cee03c302",
+    "public_sha256": "7fcde491a7962c8df8bd6dfd56c42100fecb281fdda2e33393b185b529043296",
+    "redaction": "private path prefixes only"
+  },
+  "anchored_checkpoint_stage2000_CPU_audit_v1.json": {
+    "original_sha256": "abc256d0240a3aa8b7542932e370c3a212a995cadb9368442d98b48fb8b3d56e",
+    "public_sha256": "abc256d0240a3aa8b7542932e370c3a212a995cadb9368442d98b48fb8b3d56e",
+    "redaction": null
+  },
+  "anchored_dev_first4_stage2000.json": {
+    "original_sha256": "017c07b74efbcca5c5dad905cbba8a56e6d1b5d367691bb60c458669510a4a95",
+    "public_sha256": "017c07b74efbcca5c5dad905cbba8a56e6d1b5d367691bb60c458669510a4a95",
+    "redaction": null
+  },
+  "anchored_stage1000_user_visual_feedback_v1.json": {
+    "original_sha256": "b62c97e6446bc5e991907f64c9e7d30907443cfc74da84bba6d697a7b7088b4b",
+    "public_sha256": "b62c97e6446bc5e991907f64c9e7d30907443cfc74da84bba6d697a7b7088b4b",
+    "redaction": null
+  },
+  "ANCHORED_STAGE2000_COMPLETION_V1.md": {
+    "original_sha256": "0d21cf26f9478447f3b6327dfc3e7d8f629e244f62dc04b34cba9ed9b06c16ff",
+    "public_sha256": "0d21cf26f9478447f3b6327dfc3e7d8f629e244f62dc04b34cba9ed9b06c16ff",
+    "redaction": null
+  },
+  "anchored_eval1000_WingIt300_launch_v2.json": {
+    "original_sha256": "56f81a60b32b4f5a810ef2c8381c239265047e9caf424c389d08ae7dea5d4805",
+    "public_sha256": "0c5a206052ee28bc1bcc7c4ab5329307da56e768b7b3c414466c60a82733340a",
+    "redaction": "private path prefixes only"
   }
 }

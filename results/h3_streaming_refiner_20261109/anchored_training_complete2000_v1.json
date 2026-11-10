@@ -1,0 +1,118 @@
+{
+  "observed_at_utc": "2026-11-10T15:37:53.704265+00:00",
+  "launch": {
+    "parent_pid": 1541181,
+    "physical_npu": 7,
+    "all_three_locks_held": true,
+    "started_unix": 1794298660.1131485,
+    "command": [
+      "python",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1/src/train_anchored_refiner_v1.py",
+      "--stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1",
+      "--manifest-sha",
+      "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+      "--root",
+      "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104",
+      "--resume-dir",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/tf_extension_3000_v1",
+      "--train-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/data_v1/manifest.json",
+      "--dev-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+      "--assets-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json",
+      "--training-stop-receipt",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/control/stop_tf2500_v2/complete.json",
+      "--diagnostic-launch",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/history_diagnostic_33b_v4/launch.json",
+      "--diagnostic-output",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/diagnostics/tf2500_history_v4",
+      "--output",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1"
+    ],
+    "status": "complete",
+    "child_pid": 1541193,
+    "child_pgid": 1541193,
+    "exit_code": 0,
+    "ended_unix": 1794325052.9746964,
+    "child_reaped": true
+  },
+  "parent_and_child_absent": true,
+  "complete": {
+    "status": "anchored2000_complete_full_evaluation_pending",
+    "stage_optimizer_updates": 2000,
+    "total_optimizer_updates": 4500,
+    "selected_refiner": null,
+    "full226_validated": false
+  },
+  "shortdev": {
+    "stage_step": 2000,
+    "results": [
+      {
+        "sample_id": "WingIt_dev_3586_3811",
+        "latent_MSE": 0.10081001371145248,
+        "no_refiner_MSE": 0.09143127501010895,
+        "MSE_ratio": 1.1025769213029852,
+        "audit": {
+          "next_latent": 4,
+          "model_forwards": 16,
+          "denoise_steps_per_latent": 3,
+          "clean_cache_write_forwards_per_latent": 1,
+          "lookahead_latents": 0,
+          "recomputed_history_latents": 0,
+          "cache_bytes": 6930022400,
+          "max_cached_video_frames": 2,
+          "residual_elementwise_bound": 0.25,
+          "decoder_validated": false,
+          "strict_zero_regression_guaranteed_after_training": false
+        }
+      },
+      {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "latent_MSE": 0.16717995703220367,
+        "no_refiner_MSE": 0.17637430131435394,
+        "MSE_ratio": 0.9478702724057113,
+        "audit": {
+          "next_latent": 4,
+          "model_forwards": 16,
+          "denoise_steps_per_latent": 3,
+          "clean_cache_write_forwards_per_latent": 1,
+          "lookahead_latents": 0,
+          "recomputed_history_latents": 0,
+          "cache_bytes": 6930022400,
+          "max_cached_video_frames": 2,
+          "residual_elementwise_bound": 0.25,
+          "decoder_validated": false,
+          "strict_zero_regression_guaranteed_after_training": false
+        }
+      },
+      {
+        "sample_id": "WingIt_dev_300_525",
+        "latent_MSE": 0.08723285049200058,
+        "no_refiner_MSE": 0.07478813081979752,
+        "MSE_ratio": 1.1663996617616865,
+        "audit": {
+          "next_latent": 4,
+          "model_forwards": 16,
+          "denoise_steps_per_latent": 3,
+          "clean_cache_write_forwards_per_latent": 1,
+          "lookahead_latents": 0,
+          "recomputed_history_latents": 0,
+          "cache_bytes": 6930022400,
+          "max_cached_video_frames": 2,
+          "residual_elementwise_bound": 0.25,
+          "decoder_validated": false,
+          "strict_zero_regression_guaranteed_after_training": false
+        }
+      }
+    ],
+    "scope": "first4 latent only; not full226 pixels/visual acceptance",
+    "optimizer_updates_during_eval": 0
+  },
+  "failure": null,
+  "actual_optimizer_updates": 2000,
+  "npu_smi": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.1                   Version: 25.5.1                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 0     910B3               | OK            | 276.9       56                0    / 0             |\n| 0                         | 0000:C1:00.0  | 100         0    / 0          45535/ 65536         |\n+===========================+===============+====================================================+\n| 1     910B3               | OK            | 399.9       59                0    / 0             |\n| 0                         | 0000:01:00.0  | 100         0    / 0          45534/ 65536         |\n+===========================+===============+====================================================+\n| 2     910B3               | OK            | 309.8       54                0    / 0             |\n| 0                         | 0000:C2:00.0  | 100         0    / 0          45534/ 65536         |\n+===========================+===============+====================================================+\n| 3     910B3               | OK            | 398.9       57                0    / 0             |\n| 0                         | 0000:02:00.0  | 100         0    / 0          45534/ 65536         |\n+===========================+===============+====================================================+\n| 4     910B3               | OK            | 126.8       50                0    / 0             |\n| 0                         | 0000:81:00.0  | 0           0    / 0          39041/ 65536         |\n+===========================+===============+====================================================+\n| 5     910B3               | OK            | 401.4       57                0    / 0             |\n| 0                         | 0000:41:00.0  | 100         0    / 0          24549/ 65536         |\n+===========================+===============+====================================================+\n| 6     910B3               | OK            | 402.0       57                0    / 0             |\n| 0                         | 0000:82:00.0  | 100         0    / 0          24550/ 65536         |\n+===========================+===============+====================================================+\n| 7     910B3               | OK            | 103.1       51                0    / 0             |\n| 0                         | 0000:42:00.0  | 0           0    / 0          3417 / 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| 0       0                 | 959262        | python                   | 42174                   |\n+===========================+===============+====================================================+\n| 1       0                 | 959264        | python                   | 42176                   |\n+===========================+===============+====================================================+\n| 2       0                 | 959266        | python                   | 42176                   |\n+===========================+===============+====================================================+\n| 3       0                 | 959268        | python                   | 42176                   |\n+===========================+===============+====================================================+\n| 4       0                 | 1962627       | python                   | 35673                   |\n+===========================+===============+====================================================+\n| 5       0                 | 220146        | python                   | 21191                   |\n+===========================+===============+====================================================+\n| 6       0                 | 220149        | python                   | 21191                   |\n+===========================+===============+====================================================+\n| No running processes found in NPU 7                                                            |\n+===========================+===============+====================================================+\n",
+  "CPU_audit_sha256": "abc256d0240a3aa8b7542932e370c3a212a995cadb9368442d98b48fb8b3d56e",
+  "shortdev_sha256": "017c07b74efbcca5c5dad905cbba8a56e6d1b5d367691bb60c458669510a4a95"
+}

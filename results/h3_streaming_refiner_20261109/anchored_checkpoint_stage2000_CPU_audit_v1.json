@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "observed_at_utc": "2026-11-10T15:32:45.321003+00:00",
+  "stage_step": 2000,
+  "total_optimizer_updates": 4500,
+  "checkpoint_receipt_sha256": "b6f398f549de1a4dbb0c606dccf9236a41441d4ad37cc7aa873309ca6e7c042e",
+  "adapter_sha256": "5e95b0826db51003968597b8ffbc6159f42d0c784ad8c0a10843734fae3dc485",
+  "private_optimizer_sha256": "5541609e21faa4ad4cd97b09a1455fd9a81ba08236465b0359f8cc8077b93549",
+  "adapter_bytes": 82508131,
+  "private_state_bytes": 165122637,
+  "selected": false,
+  "all405_optimizer_steps_verified": true,
+  "original401_slots_step": 4500,
+  "new4_head_slots_step": 2000,
+  "all_moments_finite": true,
+  "parameter_names_and_shapes_match": true,
+  "optimizer_groups": [
+    {
+      "parameter_count": 401,
+      "lr": 0.0001
+    },
+    {
+      "parameter_count": 4,
+      "lr": 0.001
+    }
+  ],
+  "rng": {
+    "torch_rng_state": {
+      "bytes": 5056,
+      "sha256": "a2c26b3e6f46709b7b1fdb33d9450ad431e42207fc1c29bb5fc9127c8db40f4b"
+    },
+    "npu_rng_state": {
+      "bytes": 16,
+      "sha256": "c5fd8ad8aa3a4820925077e8cd2e2af4b0018574a7f71c9e5bb6c147aec591d1"
+    }
+  },
+  "CPU_RNG_restore_exact": true,
+  "NPU_RNG_scope": "Saved byte tensor present and hashed; no NPU context or live NPU restore in this CPU-only audit. Initial real-model restore gate remains separate.",
+  "next_schedule": {
+    "sample_index": 0,
+    "latent_index": 0,
+    "frames": [
+      0
+    ],
+    "sigma": 0.8571428571428571,
+    "noise_seed": 20261124,
+    "history": "none",
+    "history_jitter_std": 0.0
+  },
+  "next_schedule_exact": true,
+  "optimizer_updates_during_audit": 0,
+  "NPU_used": false,
+  "training_mutated": false,
+  "selected_refiner": null
+}

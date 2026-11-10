@@ -1,0 +1,54 @@
+{
+  "recorded_at_utc": "2026-11-10T15:09:59.942189+00:00",
+  "sample_id": "WingIt_dev_3586_3811",
+  "stage_step": 1000,
+  "total_optimizer_updates": 3500,
+  "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+  "user_feedback_verbatim": "候选／原版双向 refiner／真实 GT：我注意到一个细节，原版双向refiner好像引入了幻觉，我们候选的好像没有。然后候选／无 refiner／真实 GT：这个没有出现幻觉。",
+  "user_review_scope": "User reports viewing the comparison videos; exact timestamps, full226 coverage and original1080 viewing were not specified. Do not convert to exhaustive continuous visual pass.",
+  "assistant_static_reinspection": {
+    "frames": [
+      0,
+      144
+    ],
+    "dense_frame0": "The original bidirectional output adds conspicuous fine strands/textures in the background and changes local character/clothing detail relative to same-frame GT. Candidate stays much closer to draft and GT scene structure.",
+    "candidate_vs_no_refiner": "At inspected frames, both preserve the visible scene and character layout without the conspicuous content changes seen in the dense reference; candidate and no-refiner are close.",
+    "limitation": "Static comparisons do not establish absence of all hallucinations or temporal artifacts."
+  },
+  "interpretation": {
+    "candidate_benefit_supported": "Less conspicuous content deviation than this bidirectional reference in the inspected clip/frames.",
+    "candidate_incremental_gain_not_yet_proven": "No-refiner also lacks the conspicuous content deviation; absence of hallucination alone does not show the trained refiner adds value over the frozen upsampler.",
+    "mechanism_hypothesis": "Draft anchoring and bounded residual are consistent with limited content changes, but no controlled ablation establishes them as the unique cause. Bidirectional attention itself is not proven to cause hallucinations.",
+    "metric_reading": "Full226 L1 improves5.39% while LPIPS regresses7.70% versus no-refiner. LPIPS regression alone is not a hallucination diagnosis; small-detail/edge differences still require inspection."
+  },
+  "next_review_focus": [
+    "Compare candidate/no-refiner/GT local detail and edge restoration on the same frames.",
+    "Record invented content separately from blur/detail loss and temporal flicker/drift.",
+    "Keep evaluating other dev clips with the pinned stage1000 checkpoint."
+  ],
+  "model_accepted": false,
+  "assistant_continuous_review_passed": false,
+  "training_changed": false,
+  "sources": [
+    {
+      "path": "media/anchored_stage1000_WingIt3586_preview/anchored_stage1000_dense_gt_preview.mp4",
+      "sha256": "98f2de4fc877194683d1c48603512e1f076673033c3b858addb93670c853c411"
+    },
+    {
+      "path": "media/anchored_stage1000_WingIt3586_preview/anchored_stage1000_no_refiner_gt_preview.mp4",
+      "sha256": "505d1d85236b6a591a198db15acc01b975cb8bb999b037a7dfea304aec70d726"
+    },
+    {
+      "path": "media/anchored_stage1000_WingIt3586/main_frame000.jpg",
+      "sha256": "81e823be765a18ec8ad9672f3891e12f5da751e655998f1c4020e1b479bd10a5"
+    },
+    {
+      "path": "media/anchored_stage1000_WingIt3586/ablation_frame000.jpg",
+      "sha256": "d1c1c72ada18fdc7efd882092684b10f9e1caf6da9446d5fa0882ce6bccb4be0"
+    },
+    {
+      "path": "media/anchored_stage1000_WingIt3586/ablation_frame144.jpg",
+      "sha256": "9b8885dfd5f9c5243db0209464e8d72032ad8563c7447d3e56d4874334f02dc8"
+    }
+  ]
+}
