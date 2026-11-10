@@ -1,0 +1,21 @@
+{
+  "status": "user_requested_checkpoint_stop_complete",
+  "target_optimizer_updates": 2500,
+  "actual_logged_optimizer_updates": 2500,
+  "overshoot_updates": 0,
+  "checkpoint_step": 2500,
+  "checkpoint_audit_sha256": "2582eb1932b7993e14794e72d6b6230b37b15aa35297ea970fca467844bacfa8",
+  "checkpoint_receipt_sha256": "c43df695f88ea5c934629265c645c472eadc89c26959c61aa629e37d790c6f54",
+  "request_sha256": "66cd017fda1583e98e7ccc4fd28dcba2a184a8a2e276b26b90dd8e92ceffde3a",
+  "controller_source_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9",
+  "training_launch_sha256": "22e0a2ea2c9a4014084c8739ee71d0fa8096029509396ad7bec149dd00f71ab4",
+  "training_status_sha256": "2bc64688050200fe89a96dfb2eb61bcdc2c41d6a75985a825eb6210517a47a98",
+  "raw_launcher_status": "failed",
+  "raw_launcher_exit_code": -15,
+  "child_reaped": true,
+  "parent_and_child_absent": true,
+  "original_raw_receipts_unchanged": true,
+  "next_action": "evaluate2500_1000_2000_no_training_resume",
+  "new_optimizer_updates_by_controller": 0,
+  "finished_unix": 1794278444.168031
+}

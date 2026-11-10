@@ -1,0 +1,50 @@
+{
+  "step": 2500,
+  "parameter_tensors": 401,
+  "parameter_elements": 20586496,
+  "all_optimizer_steps_match": true,
+  "all_moments_finite": true,
+  "optimizer_configuration_preserved": true,
+  "parameter_order_sha256": "45671f8d6b98b2e65b88c9eab796bf6da3f5d263caa319f6e9c0ce5982ee1a7a",
+  "status": "passed",
+  "checkpoint_receipt": {
+    "step": 2500,
+    "adapter_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+    "private_optimizer_sha256": "a06abcbe3e6c2e356d87f170ec17e6f38c2727f7bbfbe977dfc02c1cd2f92d8e",
+    "adapter_bytes": 82478252,
+    "private_optimizer_bytes": 165061202,
+    "private_state_CPU_tensors": true,
+    "inference_weights_accepted": false
+  },
+  "checkpoint_receipt_sha256": "c43df695f88ea5c934629265c645c472eadc89c26959c61aa629e37d790c6f54",
+  "next_schedule": {
+    "sample_index": 0,
+    "latent_index": 11,
+    "history": [
+      0,
+      10
+    ],
+    "frames": [
+      0,
+      10,
+      11
+    ],
+    "sigma": 0.6666666666666666,
+    "noise_seed": 20261127
+  },
+  "RNG": {
+    "torch_rng_state": {
+      "bytes": 5056,
+      "sha256": "a2c26b3e6f46709b7b1fdb33d9450ad431e42207fc1c29bb5fc9127c8db40f4b"
+    },
+    "npu_rng_state": {
+      "bytes": 16,
+      "sha256": "c5fd8ad8aa3a4820925077e8cd2e2af4b0018574a7f71c9e5bb6c147aec591d1"
+    }
+  },
+  "CPU_rng_restore_exact": true,
+  "NPU_rng_saved_CPU_only": true,
+  "NPU_rng_runtime_restore_tested": false,
+  "new_optimizer_updates": 0,
+  "new_accelerator_forwards": 0
+}

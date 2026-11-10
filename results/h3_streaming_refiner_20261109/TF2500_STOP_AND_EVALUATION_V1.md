@@ -1,5 +1,11 @@
 # TF2500 endpoint and evaluation
 
+**Completed endpoint:** the run stopped at exactly2500 real optimizer updates, including2300 updates resumed from the original200, with no overshoot. The2500 adapter SHA is `4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd`. All401 AdamW steps/moments, CPU RNG restoration, saved NPU RNG bytes and next schedule passed CPU audit. The original parent and child were reaped; raw signal exit−15 remains unchanged and is classified by the separate user-requested stop receipt. This is not a training failure or authorization to restart.
+
+A new evaluation was admitted on idle NPU7 under all three lifetime device locks. The first2500 WingIt worker passed actual full-model two-latent cache/future/condition-future/reload gates with exact0 error. The02:53:38UTC snapshot has11/67 latents completed; cache after the first latent is6,930,022,400bytes. The complete latent payload, full226 evaluation, new trained video and quality acceptance remain pending. Subsequent fixed checkpoints are1000/2000. See `TF2500_stop_complete_v2.json`, `TF2500_checkpoint_CPU_audit_v2.json`, `TF2500_evaluation_admission_poststop_v1.json` and `TF2500_inference_started_snapshot_v1.json`.
+
+## Preparation record (historical)
+
 The user's latest authorized endpoint is2500 total real optimizer updates, including the original200. This supersedes3000; immutable historical names and raw training status are preserved. No recipe, optimizer, data schedule or frozen weight is changed.
 
 At the preparation snapshot,2464 logged optimizer updates were contiguous from201 and passed finite-gradient and schedule checks. One bounded CPU controller observes the existing trainer. It waits for the committed2500 receipt, verifies the owned process and all three lifetime device locks, pauses only that child, validates all401 AdamW states plus adapter/RNG/next schedule, and asks the pinned parent launcher to terminate/reap its child. Audit failure resumes the paused child. A separate intentional-stop receipt retains any actual overshoot and the original launcher exit; it does not rewrite a signal exit as normal success.
