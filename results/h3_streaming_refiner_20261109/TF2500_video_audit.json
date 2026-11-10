@@ -1,0 +1,123 @@
+{
+  "status": "full226_video_technical_audit_passed",
+  "training_step": 2500,
+  "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+  "sample_id": "WingIt_dev_3586_3811",
+  "frames": 226,
+  "fps": 24,
+  "main_columns": [
+    "Streaming refiner | TF2500",
+    "Released bidirectional refiner",
+    "Actual native-HR GT"
+  ],
+  "ablation_columns": [
+    "Streaming refiner | TF2500",
+    "Frozen upsampler | no refiner",
+    "Actual native-HR GT"
+  ],
+  "files": {
+    "native1080": {
+      "path": "PROJECT_ROOT/previews/tf2500_wingit_video_v1/tf2500_native1080.mp4",
+      "sha256": "84cd4b5d0a19710b0675b02d46302b83c99bdb9b236490c98e5a4b1d4b4a08e0",
+      "bytes": 29966506,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "main": {
+      "path": "PROJECT_ROOT/previews/tf2500_wingit_video_v1/tf2500_dense_gt.mp4",
+      "sha256": "723dc9d6acf868bf4e7cd129c2f3a84211058eb3f8edf574b6f51d8e8a4332e6",
+      "bytes": 18522058,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "quickview": {
+      "path": "PROJECT_ROOT/previews/tf2500_wingit_video_v1/tf2500_dense_gt_quickview.mp4",
+      "sha256": "d9a8516363ea7dc5a9054bddce1095e4a529c1f362753722339880a59cad695c",
+      "bytes": 5056362,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 326,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "ablation": {
+      "path": "PROJECT_ROOT/previews/tf2500_wingit_video_v1/tf2500_no_refiner_gt.mp4",
+      "sha256": "f02346a687ba4e0ef4794e9e8711666059ebf4a4dad6c9fc61ce3535192794f3",
+      "bytes": 4634572,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 326,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    }
+  },
+  "input_RGB": {
+    "stream": {
+      "path": "PROJECT_ROOT/evaluations/tf2500_v1/step2500_WingIt_dev_3586_3811_pixels/visible_RGB.npy",
+      "sha256": "1c2e4cce02d094edbc4122e64c27924698556951ebc3c0f46f92a1f74875ca1c",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    "dense": {
+      "path": "PROJECT_ROOT/previews/dense_wingit_native_v1/pixels/visible_RGB.npy",
+      "sha256": "cd7cd19165ce6010e9b593650401646e821f252c7a1ef5750fecdeee64d3fc2c",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    "no_refiner": {
+      "path": "AUTHORIZED_H3_ASSETS/upscaler_production67_limiteddev_evaluation_20261107_v1/pixels/WingIt_dev_3586_3811/teacher_student_RGB.npy",
+      "bytes": 1405900928,
+      "sha256": "6dca486d86df699161eca8413749194a16a095db2ceb2762e1e26813726a77fc"
+    },
+    "GT": {
+      "path": "AUTHORIZED_H3_ASSETS/upscaler_production67_wing_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+    }
+  },
+  "evaluation_inputs_sha256": "c21361ee108c0e818ed5818e290578dcb57af604839cdb5582c55046e8551b7f",
+  "stream_latent_receipt_sha256": "7a43205730dd9099639e03f72e8d24dcdc6837f58e55dbfc87529b3151e61ef4",
+  "stream_pixel_receipt_sha256": "a2d5d240acbdf9b561a741af77b492b84858cfd3a8c1c178e504ee0c7e3b6cdd",
+  "original_dense_receipts_preserved": true,
+  "derived_manifest_only_protocol_change": true,
+  "accepted_refiner": null,
+  "continuous_visual_reviewed": false,
+  "strict_streaming_decoder_validated": false,
+  "new_optimizer_updates": 0,
+  "new_accelerator_forwards": 0,
+  "seconds": 181.13117623329163
+}

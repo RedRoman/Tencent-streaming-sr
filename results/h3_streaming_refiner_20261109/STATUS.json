@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T02:53:38.596352+00:00",
-  "stage": "TF2500_saved_verified_stopped_evaluation_running",
+  "as_of_utc": "2026-11-10T04:00:10.564723+00:00",
+  "stage": "TF2500_first_clip_complete_metric_gate_failed_remaining_cohort_running",
   "verified_optimizer_updates_at_evidence_snapshot": 2500,
   "target_updates": 2500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -41,7 +41,7 @@
     2500
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "trained2500 firstWingIt running; fixed1000/2000 subsequent cohort; no training resume",
+  "evaluation_workers": "trained2500 second clip ElephantsDream running; fixed1000/2000 subsequent cohort; no training resume",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -57,7 +57,7 @@
     "chunk_invariance_scope": "first4 latents, maxabs0",
     "longer_than67_tested": false
   },
-  "full226_completed_clip_count": 4,
+  "full226_completed_clip_count": 5,
   "step200_first_clip_metric_ratios": {
     "pixel_l1": 4.620512088645055,
     "lpips": 5.604025592910683
@@ -71,7 +71,7 @@
     3
   ],
   "step200_video_technical_audit": "full226 passed",
-  "full226_completed_clip_count_definition": "arm/clip results: step0, step200 and native dense firstWingIt plus step0 ElephantsDream; two unique clips",
+  "full226_completed_clip_count_definition": "arm/clip results: step0, step200, step2500 and native dense firstWingIt plus step0 ElephantsDream; two unique clips",
   "dense_reference_preflight_historical": {
     "status": "failed",
     "max_abs": 0.2541511058807373,
@@ -281,14 +281,15 @@
     "new_streaming_jobs_planned": 9,
     "new_dense_jobs_planned": 2,
     "dense_first_clip_reuse_planned": true,
-    "report": "TF2500_STOP_AND_EVALUATION_V1.md",
-    "active_worker": "step2500_WingIt_dev_3586_3811_latent",
+    "report": "TF2500_FIRST_WINGIT_RESULT_V1.md",
+    "active_worker": "step2500_ElephantsDream_dev_13070_13295_latent",
     "trained_full_model_two_latent_gates": "exact0_cache_future_condition_future_reload",
-    "completed_latent_count": 11,
+    "completed_latent_count": 7,
     "cache_bytes": 6930022400,
     "full67_complete": false,
     "full226_complete": false,
-    "new_trained_video_ready": false
+    "new_trained_video_ready": true,
+    "complete_flags_scope": "active second clip; first2500 WingIt complete and separately reported"
   },
   "trained_checkpoint_evaluation_3000_superseded": {
     "prepared": true,
@@ -322,5 +323,91 @@
     "complete": true,
     "actual_logged_optimizer_updates": 2500,
     "overshoot_updates": 0
+  },
+  "TF2500_first_WingIt": {
+    "status": "first_trained2500_clip_full67_full226_complete_metric_gate_failed",
+    "sample_id": "WingIt_dev_3586_3811",
+    "training_step": 2500,
+    "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+    "latents": 67,
+    "frames": 226,
+    "fps": 24,
+    "visible_shape": [
+      226,
+      1080,
+      1920,
+      3
+    ],
+    "latent_receipt_sha256": "7a43205730dd9099639e03f72e8d24dcdc6837f58e55dbfc87529b3151e61ef4",
+    "pixel_receipt_sha256": "a2d5d240acbdf9b561a741af77b492b84858cfd3a8c1c178e504ee0c7e3b6cdd",
+    "latent_payload": {
+      "path": "PROJECT_ROOT/evaluations/tf2500_v1/step2500_WingIt_dev_3586_3811_latent/streaming_latents.npy",
+      "sha256": "6fddd19bdb863ee28d9cbc63acc177af547d73afad966e198788be698ce6fad9",
+      "shape": [
+        24,
+        67,
+        68,
+        120
+      ]
+    },
+    "RGB": {
+      "path": "PROJECT_ROOT/evaluations/tf2500_v1/step2500_WingIt_dev_3586_3811_pixels/visible_RGB.npy",
+      "sha256": "1c2e4cce02d094edbc4122e64c27924698556951ebc3c0f46f92a1f74875ca1c",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    "metrics": {
+      "frame_count": 226,
+      "pixel_l1": 0.10194905979179703,
+      "mse": 0.02146866582993385,
+      "psnr_db": 16.68194943952265,
+      "lpips": 0.5666889469180487,
+      "global_score": 0.21528684917540677,
+      "adjacent_pairs": 225,
+      "motion_roi_fraction": 0.08939780092592593,
+      "motion_l1": 0.1511583940521553,
+      "delta_l1": 0.03462661929228387,
+      "temporal_difference_mse": 0.006119719989746926,
+      "motion_mask_sha256": "332ce49dfc00046eddb1dbd246ce6f427047d689840279ff4f9f7bbbd5caf8bb"
+    },
+    "no_refiner_metrics": {
+      "frame_count": 226,
+      "pixel_l1": 0.02152031323814814,
+      "mse": 0.0016872162129153061,
+      "psnr_db": 27.72829259995797,
+      "lpips": 0.10655533792698278,
+      "global_score": 0.04283138082354469,
+      "adjacent_pairs": 225,
+      "motion_roi_fraction": 0.08939780092592593,
+      "motion_l1": 0.05734607517219047,
+      "delta_l1": 0.01659603923696358,
+      "temporal_difference_mse": 0.0016932724155372964,
+      "motion_mask_sha256": "332ce49dfc00046eddb1dbd246ce6f427047d689840279ff4f9f7bbbd5caf8bb"
+    },
+    "ratios_vs_no_refiner": {
+      "pixel_l1": 4.737340886427075,
+      "lpips": 5.318259581761857
+    },
+    "first4_chunk": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "cache_bytes_after_first": [
+      6930022400
+    ],
+    "metric_gate_passed_for_this_clip": false,
+    "cohort_complete": false,
+    "accepted_refiner": null,
+    "continuous_visual_reviewed": false,
+    "strict_decoder_validated": false,
+    "other_cohort_jobs_continue": true,
+    "new_optimizer_updates": 0,
+    "video_technical_audit_passed": true,
+    "video_local_transfer": "compact main SHA verified; full-resolution bundle transfer running",
+    "video_audit": "TF2500_video_audit.json"
   }
 }
