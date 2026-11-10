@@ -1,8 +1,8 @@
 {
-  "as_of_utc": "2026-11-10T02:02:42.278450+00:00",
-  "stage": "TF3000_continuation_running_real_optimizer_updates",
-  "verified_optimizer_updates_at_evidence_snapshot": 2377,
-  "target_updates": 3000,
+  "as_of_utc": "2026-11-10T02:31:03.437159+00:00",
+  "stage": "TF2500_controller_waiting_for_complete_checkpoint",
+  "verified_optimizer_updates_at_evidence_snapshot": 2464,
+  "target_updates": 2500,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
   "full226_evaluation_complete": false,
@@ -36,10 +36,11 @@
     2000,
     2100,
     2200,
-    2300
+    2300,
+    2400
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "short-pilot continuation intentionally stopped/reaped after thirdWingIt full67; remaining grid deferred; prioritized TF3000 now running",
+  "evaluation_workers": "prioritized TF2500 endpoint pending; old TF3000 evaluation stage superseded; trained evaluation unlaunched",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -207,8 +208,8 @@
   },
   "TF_extension_3000": {
     "resume_from_step": 200,
-    "target_total_real_optimizer_updates": 3000,
-    "new_training_updates_so_far": 2177,
+    "target_total_real_optimizer_updates": 2500,
+    "new_training_updates_so_far": 2264,
     "optimizer_restored": true,
     "CPU_resume_integrity_passed": true,
     "NPU_training_launched": true,
@@ -222,16 +223,16 @@
     "later_eval_steps": [
       1000,
       2000,
-      3000
+      2500
     ],
-    "total_training_updates_at_snapshot": 2377,
+    "total_training_updates_at_snapshot": 2464,
     "real_full_model_resume_gates": "passed; cache/future/condition_future/reload exact0; real backward finite/nonzero",
     "new_update_gradients_finite_nonzero": true,
     "running": true,
     "latest_verified_saved_step": 2000,
     "first_new_checkpoint_CPU_audit": "TF3000_step0300_CPU_audit_v1.json",
     "trained_checkpoint_CPU_audit": "TF3000_step1000_2000_CPU_audit_v1.json",
-    "all_new_events_and_schedule_verified_through": 2357
+    "all_new_events_and_schedule_verified_through": 2464
   },
   "step0_third_WingIt": {
     "full67_complete": true,
@@ -251,9 +252,33 @@
     200,
     300,
     1000,
-    2000
+    2000,
+    2400
   ],
   "trained_checkpoint_evaluation": {
+    "prepared": true,
+    "checkpoints": [
+      1000,
+      2000,
+      2500
+    ],
+    "execution_order": [
+      2500,
+      1000,
+      2000
+    ],
+    "stage_manifest_sha256": "36d73bb91b352eaa006626b98b8a3d61ae748d6a77c9e9b39c8b65971d101fb2",
+    "CPU_guard_tests": 9,
+    "active_training_entrypoint_refusal_passed": true,
+    "NPU_launched": false,
+    "waiter_started": false,
+    "model_workers_changed": false,
+    "new_streaming_jobs_planned": 9,
+    "new_dense_jobs_planned": 2,
+    "dense_first_clip_reuse_planned": true,
+    "report": "TF2500_STOP_AND_EVALUATION_V1.md"
+  },
+  "trained_checkpoint_evaluation_3000_superseded": {
     "prepared": true,
     "checkpoints": [
       1000,
@@ -275,5 +300,12 @@
     "new_dense_jobs_planned": 2,
     "dense_first_clip_reuse_planned": true,
     "report": "TF3000_TRAINED_EVALUATION_PREP_V1.md"
+  },
+  "stop_controller": {
+    "single_CPU_controller_running": true,
+    "target": 2500,
+    "prior_attempt_failed_before_signals": true,
+    "trained_checkpoint_ready": false,
+    "report": "TF2500_CPU_preparation_report_v1.json"
   }
 }

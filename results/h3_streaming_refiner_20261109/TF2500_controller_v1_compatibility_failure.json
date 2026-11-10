@@ -1,0 +1,6 @@
+{
+  "error": "module 'os' has no attribute 'pidfd_open'",
+  "traceback": "Traceback (most recent call last):\n  File \"PROJECT/stages/stop_tf2500_v1/src/stop_tf_at_checkpoint.py\", line 176, in main\n    parent_fd = os.pidfd_open(request['parent']['pid'])\n                ^^^^^^^^^^^^^\nAttributeError: module 'os' has no attribute 'pidfd_open'\n",
+  "request_sha256": "e20a6f0ad96bda5928a3409335917ccea51f59a81fde0baba386e04867d86aec",
+  "paused_child_will_be_resumed": false
+}

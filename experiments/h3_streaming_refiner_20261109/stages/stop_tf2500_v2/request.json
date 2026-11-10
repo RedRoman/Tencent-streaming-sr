@@ -1,0 +1,39 @@
+{
+  "schema": "owned-TF2500-stop-request-v2",
+  "authorization": "User-directed total2500 including original200; preserve recipe, optimizer and original receipts; evaluate after complete checkpoint and reaping.",
+  "target": 2500,
+  "resume_origin": 200,
+  "device": 7,
+  "max_wait_seconds": 7200,
+  "parent": {
+    "pid": 339297,
+    "ppid": 1,
+    "pgid": 339297,
+    "starttime": 753611014,
+    "cmdline_sha256": "188edf92d1074dda3cf21cfa22da96e740e5cdcfc3abbaad62984a08b2357416"
+  },
+  "child": {
+    "pid": 339430,
+    "ppid": 339297,
+    "pgid": 339430,
+    "starttime": 753611159,
+    "cmdline_sha256": "c32fee26831d7d1d48f8365816c04441dd5dd8cbd2566f9dbec832d43d387fe1"
+  },
+  "lock_paths": [
+    "DEVICE_LOCKS/npu7.lock",
+    "/tmp/PROJECT_npu_7.lock",
+    "/tmp/codex-h3-vae-npu-7.lock"
+  ],
+  "training_launch": "PROJECT/launches/tf_extension_3000_v1/launch.json",
+  "training_output": "PROJECT/runs/tf_extension_3000_v1",
+  "training_log": "PROJECT/logs/tf_extension_3000_v1.log",
+  "source_sha256": {
+    "PROJECT/stages/tf_extension_3000_v1/src/train_tf_extended.py": "5ace8f1ff480fc2222dbad80c11eb0046b599dc103ff9ee95aac84c579bf24ef",
+    "PROJECT/stages/tf_extension_3000_v1/src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "PROJECT/stages/tf_extension_3000_v1/config/tf_extension_3000_v1.json": "931ce0fa86d1e911c47a6db20b4df97aca993b286bd2b0d299506b3390249200",
+    "PROJECT/stages/stop_tf2500_v2/src/tf_resume_utils.py": "726d07dc27446ef85ef6613d52baea58f9b9e16d2c63340d8b282ab701a17ae8",
+    "PROJECT/stages/stop_tf2500_v2/src/stop_tf_at_checkpoint.py": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9"
+  },
+  "prior_attempt": "stop_tf2500_v1 failed before signals: deployed Linux4.19/Python lacks pidfd",
+  "signal_identity_method": "pidfd_if_available_else_immediate_full_proc_identity_revalidation"
+}

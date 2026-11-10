@@ -288,10 +288,10 @@
     "public_sha256": "931ce0fa86d1e911c47a6db20b4df97aca993b286bd2b0d299506b3390249200"
   },
   "README.md": {
-    "source_sha256": "975aaa1c8c59080e43cea7984040d29542361d9c72b62e847e6d41f37910997e",
-    "public_sha256": "975aaa1c8c59080e43cea7984040d29542361d9c72b62e847e6d41f37910997e",
-    "prior_public_sha256": "9da4542a679c415a7e694fa030981648c1a22ee50889cf9af0899f2929e82014",
-    "source_note": "current original snapshot retained as README_TF3000_trained_eval_snapshot.md"
+    "source_sha256": "9c0c0d12d83493276b62fc1b2d2dc7037895879a53d2e0d991992530aef0dfb8",
+    "public_sha256": "9c0c0d12d83493276b62fc1b2d2dc7037895879a53d2e0d991992530aef0dfb8",
+    "prior_public_sha256": "975aaa1c8c59080e43cea7984040d29542361d9c72b62e847e6d41f37910997e",
+    "source_note": "current original snapshot retained as README_TF2500_snapshot.md"
   },
   "src/run_tf3000_evaluation.py": {
     "source_sha256": "8f9d41889117f312cdcd1f3206d6ed8c437e67ca05b81730b143897101eec278",
@@ -309,5 +309,49 @@
     "source_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
     "public_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
     "note": "Exact private execution-stage manifest; original source hashes retained. Public source hash mapping records environment-path redactions separately."
+  },
+  "src/stop_tf_at_checkpoint.py": {
+    "source_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9",
+    "public_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9"
+  },
+  "src/run_tf2500_evaluation.py": {
+    "source_sha256": "506857bdfecbb3710f9ea75be86cf19883117bf343c690af3cdd2dffcee1ad1d",
+    "public_sha256": "506857bdfecbb3710f9ea75be86cf19883117bf343c690af3cdd2dffcee1ad1d"
+  },
+  "src/test_tf2500_evaluation_admission.py": {
+    "source_sha256": "c81104f48b6213d30cc159d60f87b998c7e2df025a3659c8a1cff29583c2233b",
+    "public_sha256": "c81104f48b6213d30cc159d60f87b998c7e2df025a3659c8a1cff29583c2233b"
+  },
+  "src/encode_trained_comparison_cpu.py": {
+    "source_sha256": "9d7a8201eab7ec0ff5ce283092b76aace7397176598db5da7e99d4dbc72d9499",
+    "public_sha256": "9d7a8201eab7ec0ff5ce283092b76aace7397176598db5da7e99d4dbc72d9499"
+  },
+  "config/evaluation_tf2500_v1.json": {
+    "source_sha256": "f26805085010c5b503e73c89782dbb65711c6cc5978515bc10e26b4d3c004bfb",
+    "public_sha256": "f26805085010c5b503e73c89782dbb65711c6cc5978515bc10e26b4d3c004bfb"
+  },
+  "stages/tf2500_evaluation_v1/manifest.json": {
+    "source_sha256": "36d73bb91b352eaa006626b98b8a3d61ae748d6a77c9e9b39c8b65971d101fb2",
+    "public_sha256": "36d73bb91b352eaa006626b98b8a3d61ae748d6a77c9e9b39c8b65971d101fb2"
+  },
+  "stages/trained_preview_v1/manifest.json": {
+    "source_sha256": "60b53ef33bcacc7fb3a1c16ebcfb36849da11569a11b144eda36fe96e1532d86",
+    "public_sha256": "60b53ef33bcacc7fb3a1c16ebcfb36849da11569a11b144eda36fe96e1532d86"
+  },
+  "stages/stop_tf2500_v1/request.json": {
+    "source_sha256": "e20a6f0ad96bda5928a3409335917ccea51f59a81fde0baba386e04867d86aec",
+    "public_sha256": "830669c7f6229473b541ef603067c50ec091e51a68af2512f828be31ddd2d597"
+  },
+  "stages/stop_tf2500_v1/src/stop_tf_at_checkpoint.py": {
+    "source_sha256": "87f1a431de68a06abe31833ed8a0865ed1638854be01faf85ae152820bbfe98e",
+    "public_sha256": "87f1a431de68a06abe31833ed8a0865ed1638854be01faf85ae152820bbfe98e"
+  },
+  "stages/stop_tf2500_v2/request.json": {
+    "source_sha256": "66cd017fda1583e98e7ccc4fd28dcba2a184a8a2e276b26b90dd8e92ceffde3a",
+    "public_sha256": "1fcc14d074c95fee635ec58543661c253b34e96229b469f0b36c58f3f9237cb9"
+  },
+  "stages/stop_tf2500_v2/src/stop_tf_at_checkpoint.py": {
+    "source_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9",
+    "public_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9"
   }
 }

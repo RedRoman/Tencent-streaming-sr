@@ -1,0 +1,27 @@
+{
+  "as_of_utc": "2026-11-10T02:30:10.160444+00:00",
+  "status": "CPU_preparation_passed_training_active",
+  "target_total_real_optimizer_updates": 2500,
+  "latest_contiguous_schedule_verified_update": 2464,
+  "controller_v1_failure_preserved": "TF2500_controller_v1_compatibility_failure.json",
+  "controller_v1_sent_signals": 0,
+  "controller_v2_request_sha256": "66cd017fda1583e98e7ccc4fd28dcba2a184a8a2e276b26b90dd8e92ceffde3a",
+  "controller_v2_source_sha256": "695c8763c644c975a763ed33d9ca94cc77c465f12d373cf5e9aef9fa574d5cf9",
+  "controller_CPU_disposable_process_test": [
+    "SIGSTOP/SIGCONT passed",
+    "stale starttime refuses SIGTERM",
+    "owned SIGTERM and reap passed"
+  ],
+  "actual_owned_trainer_preflight": "PID/starttime/PPID/PGID/cmdline/source plus three FLOCK inodes verified; no signals in preflight",
+  "checkpoint2400_CPU_audit": "TF2500_controller_checkpoint2400_dryaudit.json",
+  "evaluation_admission": "TF2500_evaluation_admission_pretraining_v1.json",
+  "evaluation_guard_tests": 9,
+  "actual_active_training_refusal_before_torch_import": true,
+  "stage_manifest_sha256": "36d73bb91b352eaa006626b98b8a3d61ae748d6a77c9e9b39c8b65971d101fb2",
+  "new_NPU_jobs": 0,
+  "new_optimizer_updates_by_preparation": 0,
+  "trained_preview_stage_sha256": "60b53ef33bcacc7fb3a1c16ebcfb36849da11569a11b144eda36fe96e1532d86",
+  "trained_preview_lineage_guards": "accept protocol-binding-only derived manifest; reject changed samples; no torch import",
+  "trained_video_ready": false,
+  "original_frozen_workers_changed": false
+}
