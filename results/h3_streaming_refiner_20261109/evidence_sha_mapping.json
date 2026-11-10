@@ -520,11 +520,18 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-    "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-    "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+    "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+    "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+    "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+    "prior_mapping": {
+      "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+      "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+      "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+      "redaction": null,
+      "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+    },
     "redaction": null,
-    "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+    "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
   },
   "history_diagnostic_cpu_control_v1.json": {
     "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
@@ -660,5 +667,105 @@
     "original_sha256": "0645c1a6b19c17ba3ed4c2bc6cbd4919dc04cd8c4c14f7faaf2003742d0627f0",
     "public_sha256": "0645c1a6b19c17ba3ed4c2bc6cbd4919dc04cd8c4c14f7faaf2003742d0627f0",
     "redaction": null
+  },
+  "anchored_cpu_v1_failure.json": {
+    "original_sha256": "22839267700fb32e8d892c19ba6ed618dffcbfb69ae09d71f0c9a4e77ac1df0f",
+    "public_sha256": "1f84f79f23e6cc4a21f26be7f009d5fa2b2e1f621d7a8232cdcc559a7849ce37",
+    "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "anchored_cpu_v1.json": {
+    "original_sha256": "7ece5b50bbda8a8916a069b2c4e93e10c37a4fa67175918a37c481bcdba64401",
+    "public_sha256": "7ece5b50bbda8a8916a069b2c4e93e10c37a4fa67175918a37c481bcdba64401",
+    "redaction": null
+  },
+  "anchored_cpu_v2.log": {
+    "original_sha256": "d402cfcc5e62b3813f91c967277f76aaf4566a089de5e89b77e50db0cfb6dddc",
+    "public_sha256": "d402cfcc5e62b3813f91c967277f76aaf4566a089de5e89b77e50db0cfb6dddc",
+    "redaction": null
+  },
+  "anchored_predecessor_admission_v1.json": {
+    "original_sha256": "f16fdf026aa6781180ee6cbea648062fa8fb622f8cda59d66338da79540406d4",
+    "public_sha256": "f16fdf026aa6781180ee6cbea648062fa8fb622f8cda59d66338da79540406d4",
+    "redaction": null
+  },
+  "anchored_stage_preparation_manifest.json": {
+    "original_sha256": "e2c3de197b9aa52f795285bf323cc16b65a0bf98858a6171e8a75797e37887b1",
+    "public_sha256": "e2c3de197b9aa52f795285bf323cc16b65a0bf98858a6171e8a75797e37887b1",
+    "redaction": null
+  },
+  "diagnostic_v4_WingIt_dev_300_525.json": {
+    "original_sha256": "9c1d8050b862df9a545f34a3bf62da2dd3c2abbb16ecd54eb010cc124430df5f",
+    "public_sha256": "487f888f5622d561ac1c60f5d497858ed7af3aa33bf6f4d7619da47cdd6de518",
+    "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "diagnostic_v4_Charge_train_3856_4081.json": {
+    "original_sha256": "9a8c4e69a482b96a5e46813373de4354a446ab90da5ea09e2dc707f9b700e9c6",
+    "public_sha256": "337ccc0b1d7ddbe455db5828e70cd8c524bd469f26d09dbae544401484989a9f",
+    "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "diagnostic_v4_terminal_snapshot.json": {
+    "original_sha256": "d046ee025d5ba2aa1f3b94326a0ed7cde1afb3ae4ac280f2d5854a51607fc073",
+    "public_sha256": "153d40961fc99393fb38cda77846150b0e32bebdac999a7ad96d7b706ed914fb",
+    "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "anchored_refiner_v1_stage.json": {
+    "original_sha256": "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+    "public_sha256": "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+    "redaction": null
+  },
+  "diagnostic_v4_Caminandes3_train_168_393.json": {
+    "original_sha256": "400032f2379522baee9614a833b4cef6419bd253431395bf44f82f62da2a388b",
+    "public_sha256": "dc7056ca1677b9a9891914337999f72000e6878e90ec99443c704ceaeb904b25",
+    "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "diagnostic_v4_result.json": {
+    "original_sha256": "7fdf337e63a155cd66e850c407a35abd7bd2c9ea2804eeeeb2ef857368c82aab",
+    "public_sha256": "7fdf337e63a155cd66e850c407a35abd7bd2c9ea2804eeeeb2ef857368c82aab",
+    "redaction": null
+  },
+  "TF2500_full_history_analysis_v2.json": {
+    "original_sha256": "8f291a26f0067af6ed8fab7cade3091f46e686a0a9d2317ea09ab78b4c766d28",
+    "public_sha256": "8f291a26f0067af6ed8fab7cade3091f46e686a0a9d2317ea09ab78b4c766d28",
+    "redaction": null
+  },
+  "anchored_training_launch_v1.json": {
+    "original_sha256": "0beb0eafb21c02748e9e952e0070e1d3572491c31a409c4c6619c70c7edb81b4",
+    "public_sha256": "17d776a4c2d0421ca4c8640216dda785f5aa89fc9916f065d8e4a4a5cce8261e",
+    "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "anchored_training_admission_v1.json": {
+    "original_sha256": "ba06e0528ef1506a9a3d9affd4c6d9790a8bb9d2532c53740afa6c6a8a22053e",
+    "public_sha256": "ba06e0528ef1506a9a3d9affd4c6d9790a8bb9d2532c53740afa6c6a8a22053e",
+    "redaction": null
+  },
+  "anchored_real_gates_v1.json": {
+    "original_sha256": "49c6587c182d09192e99565a3b74759f41f5b4a637c19070d5da7f903be3853a",
+    "public_sha256": "49c6587c182d09192e99565a3b74759f41f5b4a637c19070d5da7f903be3853a",
+    "redaction": null
+  },
+  "anchored_roundtrip_v1.json": {
+    "original_sha256": "1b5346003c40e3af45cd8bd7e030f0f6a5e5f650051649a6f639c134c0fcf1a3",
+    "public_sha256": "1b5346003c40e3af45cd8bd7e030f0f6a5e5f650051649a6f639c134c0fcf1a3",
+    "redaction": null
+  },
+  "anchored_training_snapshot_v1.json": {
+    "original_sha256": "a0ed6eed535478fb9599922773c73f70fcc0e771c81cf8685880206683634576",
+    "public_sha256": "a0ed6eed535478fb9599922773c73f70fcc0e771c81cf8685880206683634576",
+    "redaction": null
+  },
+  "anchored_training_initial_process_v1.json": {
+    "original_sha256": "4f0c4669af3e6465c5366804ab56d6c205659db85aa98a4c56479cfe6b165aaf",
+    "public_sha256": "e11c20a9922886ea17a0c87d82ad9e6da1937f002e9f7b3f6e1ef49e4ec559ca",
+    "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "anchored_stage0000_checkpoint_v1.json": {
+    "original_sha256": "9c8e7e92808474c2afef532bcc44e92c039c0eb05b736e272aac884cf77f70a8",
+    "public_sha256": "9c8e7e92808474c2afef532bcc44e92c039c0eb05b736e272aac884cf77f70a8",
+    "redaction": null
+  },
+  "diagnostic_v4_running_snapshot0812.json": {
+    "original_sha256": "4c1e4bfe126b94f409b95ed5bb9b42f3838b0c63a6cd8dae6fc7e10969171921",
+    "public_sha256": "7b3ae721af7a8f2668df02d7ed957034b5fdd4fb79bcd9cdd92a1e5d60cdedcc",
+    "redaction": "private filesystem prefixes replaced; no payloads"
   }
 }

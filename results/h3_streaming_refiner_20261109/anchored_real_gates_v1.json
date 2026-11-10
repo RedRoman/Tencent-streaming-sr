@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "initial_two_latent_identity_max_abs": 0,
+  "raw_cache_parity_max_abs": 0.0,
+  "nonzero_head_two_latent_chunk_max_abs": 0,
+  "raw_cache_parity_relative_rms": 0.0,
+  "future_max_abs": 0,
+  "condition_future_max_abs": 0,
+  "nonzero_upstream_gradient_norm": 6.831510592854888e-05,
+  "nonzero_head_gradient_norm": 0.08178008195362828,
+  "original401AdamW_states_preserved": true,
+  "CPU_and_NPU_RNG_restore_exact": true,
+  "new_optimizer_updates": 0,
+  "scope": "real50block full68x120 two-latent gates; not full226 quality"
+}

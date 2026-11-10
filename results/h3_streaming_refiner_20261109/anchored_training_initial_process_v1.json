@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-11-10T08:19:06.338656+00:00",
+  "launch_status": "running",
+  "processes": {
+    "parent_pid": {
+      "pid": 1541181,
+      "exists": true,
+      "start_ticks": "759894617",
+      "command_sha256": "d94ffef6b95d1333179ca44cce022b3a3b93c6efd98fe0caf1a4c891cdf1e463",
+      "command": "python <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1/src/run_locked.py --device 7 --attempt <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_training_v1 --lock-path <AUTHORIZED_CACHE>/device_locks/npu7.lock --lock-path /tmp/yunfeng_npu_7.lock --lock-path /tmp/codex-h3-vae-npu-7.lock python <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1/src/train_anchored_refiner_v1.py --stage <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1 --manifest-sha 1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a --root <AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104 --resume-dir <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/tf_extension_3000_v1 --train-manifest <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/data_v1/manifest.json --dev-manifest <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json --assets-manifest <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json --training-stop-receipt <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/control/stop_tf2500_v2/complete.json --diagnostic-launch <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/history_diagnostic_33b_v4/launch.json --diagnostic-output <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/diagnostics/tf2500_history_v4 --output <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1 "
+    },
+    "child_pid": {
+      "pid": 1541193,
+      "exists": true,
+      "start_ticks": "759894738",
+      "command_sha256": "d5bc7d9f8661400c5c59d1dcc2e618f311635cb68748c9cf997c0c15f5466695",
+      "command": "python <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1/src/train_anchored_refiner_v1.py --stage <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1 --manifest-sha 1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a --root <AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104 --resume-dir <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/tf_extension_3000_v1 --train-manifest <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/data_v1/manifest.json --dev-manifest <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json --assets-manifest <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json --training-stop-receipt <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/control/stop_tf2500_v2/complete.json --diagnostic-launch <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/history_diagnostic_33b_v4/launch.json --diagnostic-output <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/diagnostics/tf2500_history_v4 --output <AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1 "
+    }
+  },
+  "three_kernel_locks": {
+    "<AUTHORIZED_CACHE>/device_locks/npu7.lock": true,
+    "/tmp/yunfeng_npu_7.lock": true,
+    "/tmp/codex-h3-vae-npu-7.lock": true
+  },
+  "child_in_npu_smi": true,
+  "last_events": [
+    "",
+    "Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]",
+    "Loading checkpoint shards:  57%|█████▋    | 8/14 [00:00<00:00, 72.02it/s]",
+    "Loading checkpoint shards: 100%|██████████| 14/14 [00:00<00:00, 72.07it/s]",
+    "{\"event\": \"base_loaded_cpu\", \"seconds\": 33.15852880105376, \"stage_optimizer_updates\": 0, \"total_optimizer_updates\": 2500, \"parameter_bytes\": 66280430080}",
+    "{\"event\": \"runtime_ready\", \"seconds\": 39.07867095898837, \"stage_optimizer_updates\": 0, \"total_optimizer_updates\": 2500, \"trainable\": 20586496, \"resident_layers\": 24, \"canonical_rows\": true}"
+  ],
+  "failure": null
+}

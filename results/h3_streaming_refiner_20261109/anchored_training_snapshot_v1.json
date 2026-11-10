@@ -1,0 +1,188 @@
+{
+  "observed_at": "2026-11-10T08:23:23.148164+00:00",
+  "status": {
+    "status": "anchored_residual_training",
+    "stage_optimizer_updates": 6,
+    "total_optimizer_updates": 2506,
+    "planned_stage_updates": 2000,
+    "selected_refiner": null
+  },
+  "last_events": [
+    {
+      "event": "real_gates_passed",
+      "seconds": 250.87815201561898,
+      "stage_optimizer_updates": 0,
+      "total_optimizer_updates": 2500,
+      "status": "passed",
+      "initial_two_latent_identity_max_abs": 0,
+      "raw_cache_parity_max_abs": 0.0,
+      "nonzero_head_two_latent_chunk_max_abs": 0,
+      "raw_cache_parity_relative_rms": 0.0,
+      "future_max_abs": 0,
+      "condition_future_max_abs": 0,
+      "nonzero_upstream_gradient_norm": 6.831510592854888e-05,
+      "nonzero_head_gradient_norm": 0.08178008195362828,
+      "original401AdamW_states_preserved": true,
+      "CPU_and_NPU_RNG_restore_exact": true,
+      "new_optimizer_updates": 0,
+      "scope": "real50block full68x120 two-latent gates; not full226 quality"
+    },
+    {
+      "event": "new_stage_training_start",
+      "seconds": 268.62482944875956,
+      "stage_optimizer_updates": 0,
+      "total_optimizer_updates": 2500,
+      "planned_new_updates": 2000,
+      "base_updates": 2500
+    },
+    {
+      "event": "optimizer_update",
+      "seconds": 277.65017555095255,
+      "stage_optimizer_updates": 1,
+      "total_optimizer_updates": 2501,
+      "sample": "Charge_train_3856_4081",
+      "schedule": {
+        "sample_index": 0,
+        "latent_index": 0,
+        "frames": [
+          0
+        ],
+        "sigma": 0.909375,
+        "noise_seed": 20261110,
+        "history": "none",
+        "history_jitter_std": 0.0
+      },
+      "nativeHR_mse": 0.059918660670518875,
+      "preserve_mse": 0.0,
+      "loss": 0.059918660670518875,
+      "gradient_norm": 0.0789165273308754,
+      "max_residual": 0.0
+    },
+    {
+      "event": "optimizer_update",
+      "seconds": 286.00380893517286,
+      "stage_optimizer_updates": 2,
+      "total_optimizer_updates": 2502,
+      "sample": "Caminandes3_train_168_393",
+      "schedule": {
+        "sample_index": 1,
+        "latent_index": 0,
+        "frames": [
+          0
+        ],
+        "sigma": 0.909375,
+        "noise_seed": 20261110,
+        "history": "none",
+        "history_jitter_std": 0.0
+      },
+      "nativeHR_mse": 0.04684846103191376,
+      "preserve_mse": 2.9448525310726836e-05,
+      "loss": 0.04685140773653984,
+      "gradient_norm": 0.0723920613527298,
+      "max_residual": 0.02240467071533203
+    },
+    {
+      "event": "optimizer_update",
+      "seconds": 294.55797769501805,
+      "stage_optimizer_updates": 3,
+      "total_optimizer_updates": 2503,
+      "sample": "Charge_train_3856_4081",
+      "schedule": {
+        "sample_index": 0,
+        "latent_index": 1,
+        "frames": [
+          1
+        ],
+        "sigma": 0.8571428571428571,
+        "noise_seed": 20261110,
+        "history": "none",
+        "history_jitter_std": 0.0
+      },
+      "nativeHR_mse": 0.06201525777578354,
+      "preserve_mse": 0.0003394854720681906,
+      "loss": 0.06204920634627342,
+      "gradient_norm": 0.07129095494747162,
+      "max_residual": 0.03592038154602051
+    },
+    {
+      "event": "optimizer_update",
+      "seconds": 303.182922902517,
+      "stage_optimizer_updates": 4,
+      "total_optimizer_updates": 2504,
+      "sample": "Caminandes3_train_168_393",
+      "schedule": {
+        "sample_index": 1,
+        "latent_index": 1,
+        "frames": [
+          1
+        ],
+        "sigma": 0.8571428571428571,
+        "noise_seed": 20261110,
+        "history": "none",
+        "history_jitter_std": 0.0
+      },
+      "nativeHR_mse": 0.049535058438777924,
+      "preserve_mse": 0.00029823736986145377,
+      "loss": 0.04956488311290741,
+      "gradient_norm": 0.07410003244876862,
+      "max_residual": 0.04583197832107544
+    },
+    {
+      "event": "optimizer_update",
+      "seconds": 321.2257025036961,
+      "stage_optimizer_updates": 5,
+      "total_optimizer_updates": 2505,
+      "sample": "Charge_train_3856_4081",
+      "schedule": {
+        "sample_index": 0,
+        "latent_index": 18,
+        "frames": [
+          0,
+          17,
+          18
+        ],
+        "sigma": 0.6666666666666666,
+        "noise_seed": 20261110,
+        "history": "draft",
+        "history_jitter_std": 0.0
+      },
+      "nativeHR_mse": 0.1036529392004013,
+      "preserve_mse": 0.0012259265640750527,
+      "loss": 0.10377553105354309,
+      "gradient_norm": 0.14139661192893982,
+      "max_residual": 0.0771670937538147
+    },
+    {
+      "event": "optimizer_update",
+      "seconds": 339.470508730039,
+      "stage_optimizer_updates": 6,
+      "total_optimizer_updates": 2506,
+      "sample": "Caminandes3_train_168_393",
+      "schedule": {
+        "sample_index": 1,
+        "latent_index": 18,
+        "frames": [
+          0,
+          17,
+          18
+        ],
+        "sigma": 0.6666666666666666,
+        "noise_seed": 20261110,
+        "history": "draft",
+        "history_jitter_std": 0.0
+      },
+      "nativeHR_mse": 0.05370991677045822,
+      "preserve_mse": 0.0012363838031888008,
+      "loss": 0.053833555430173874,
+      "gradient_norm": 0.05833299085497856,
+      "max_residual": 0.07670360803604126
+    }
+  ],
+  "initial_process_pids": {
+    "parent": 1541181,
+    "child": 1541193
+  },
+  "failure_present": false,
+  "original_TF2500_sealed": true,
+  "selected": false
+}

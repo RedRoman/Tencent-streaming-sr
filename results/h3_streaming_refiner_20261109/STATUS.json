@@ -1,8 +1,8 @@
 {
-  "as_of_utc": "2026-11-10T07:16:50.122648+00:00",
-  "stage": "TF2500_training_stopped_read_only_diagnosis_running",
-  "verified_optimizer_updates_at_evidence_snapshot": 2500,
-  "target_updates": 2500,
+  "as_of_utc": "2026-11-10T08:23:23.148164+00:00",
+  "stage": "anchored_candidate_training_after_real_gates",
+  "verified_optimizer_updates_at_evidence_snapshot": 2506,
+  "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
   "full226_evaluation_complete": false,
@@ -508,7 +508,7 @@
     "real33B_result_available": false,
     "manifest_receipt": "history_diagnostic_33b_stage_v1.json"
   },
-  "training_restart_authorized": false,
+  "training_restart_authorized": true,
   "TF2500_all3_full226_complete": true,
   "TF2500_all3_per_clip_gates_passed": false,
   "diagnosis_snapshot": {
@@ -562,7 +562,7 @@
   "read_only_diagnostic_v4": {
     "stage": "history_diagnostic_33b_v4",
     "manifest_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
-    "status": "running_two_dev_complete",
+    "status": "completed_five_samples_exit0_reaped",
     "new_optimizer_updates": 0,
     "original_runtime_source_edited": false,
     "offline_projection_aligned_for_diagnosis": true,
@@ -570,6 +570,28 @@
     "completed_samples": 2,
     "planned_samples": 5,
     "partial_analysis": "TF2500_two_dev_history_analysis_v1.json",
-    "next": "thirddev then two train samples in same existing job; no training restart"
+    "next": "thirddev then two train samples in same existing job; no training restart",
+    "samples_complete": 5,
+    "analysis": "TF2500_full_history_analysis_v2.json"
+  },
+  "anchored_candidate_v1": {
+    "base_updates": 2500,
+    "new_verified_optimizer_updates": 6,
+    "planned_new_updates": 2000,
+    "planned_total_updates": 4500,
+    "status": "training",
+    "stage_manifest_sha256": "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+    "CPU_controls_passed": true,
+    "real_initial_two_latent_identity_max_abs": 0,
+    "original401AdamW_states_restored": true,
+    "all_real_gates_passed": true,
+    "full226_evaluation_complete": false,
+    "visual_quality_passed": false,
+    "strict_zero_regression_after_training_guaranteed": false,
+    "selected": false,
+    "checkpoint_stage0_reload_identity_max_abs": 0,
+    "gates": "anchored_real_gates_v1.json",
+    "roundtrip": "anchored_roundtrip_v1.json",
+    "snapshot": "anchored_training_snapshot_v1.json"
   }
 }

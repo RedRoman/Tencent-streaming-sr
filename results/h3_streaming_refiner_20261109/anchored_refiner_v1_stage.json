@@ -1,0 +1,19 @@
+{
+  "stage": "anchored_refiner_v1",
+  "files": {
+    "src/anchored_refiner_v1.py": "655a3470d219fcf9673187381c6961c185f517c4134de0e9c26902495fa9edfe",
+    "src/train_anchored_refiner_v1.py": "28af05ae01b8a50c6f5da70e266f264f99d7a7ea86b7d4f2b99fc749f2072a96",
+    "src/test_anchored_refiner_cpu_v1.py": "64a12fa12a4d9630d924699329f0c5e3c5abadc7f14f2c6117f8240749d5764b",
+    "src/test_anchored_refiner_cpu_v2.py": "6388022e361461b3f58742b6e00b589d5f8b5110106dd32cfeeb340cdab9073f",
+    "src/causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "src/paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "src/decoder_validation_admission.py": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127",
+    "src/tf_resume_utils.py": "726d07dc27446ef85ef6613d52baea58f9b9e16d2c63340d8b282ab701a17ae8",
+    "evidence/anchored_cpu_v1.json": "7ece5b50bbda8a8916a069b2c4e93e10c37a4fa67175918a37c481bcdba64401",
+    "config/anchored_refiner_v1.json": "a00d38535b1548b6a9368cb0954b7c50d0dda0a54b6f76bd4dd47f7b4c860e9a"
+  },
+  "status": "frozen_CPU_controls_passed_real_gates_required_before_updates",
+  "target_new_updates": 2000,
+  "base_updates": 2500
+}
