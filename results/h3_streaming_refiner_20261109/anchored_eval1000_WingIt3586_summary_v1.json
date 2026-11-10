@@ -1,0 +1,62 @@
+{
+  "sample_id": "WingIt_dev_3586_3811",
+  "stage_step": 1000,
+  "cumulative_step": 3500,
+  "checkpoint_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+  "full226_ratios_vs_no_refiner": {
+    "pixel_l1": 0.9461478464541321,
+    "lpips": 1.0769763469555864
+  },
+  "other_metric_ratios": {
+    "mse": 0.9537314444263397,
+    "delta_l1": 1.0016098903870545,
+    "temporal_difference_mse": 0.9999000757165314,
+    "motion_l1": 0.9883244456890667
+  },
+  "per_frame_comparison_counts": {
+    "l1": {
+      "improved": 226,
+      "worse": 0
+    },
+    "lpips": {
+      "improved": 0,
+      "worse": 226
+    }
+  },
+  "frame0_static_review": {
+    "sources": [
+      "main_frame000.jpg",
+      "ablation_frame000.jpg"
+    ],
+    "observations": [
+      "Candidate preserves recognizable subject and scene geometry in inspected frame; the dense reference adds conspicuous texture and shape changes relative to nativeHR.",
+      "Candidate is visually close to no-refiner at this sampled frame, with slightly softer edges."
+    ],
+    "continuous_visual_reviewed": false,
+    "flicker_or_long_term_drift_not_resolved_by_static_frame": true
+  },
+  "full226_technical_audit_passed": true,
+  "full226_quality_accepted": false,
+  "frozen_thresholds_changed": false,
+  "strict_streaming_decoder_validated": false,
+  "longer_than67_validated": false,
+  "remaining_dev_clips": 2,
+  "training_changed_by_evaluation": false,
+  "note": "Full-resolution lossless RGB metrics. Downscaled H264 previews are for playback only. One clip with mixed metrics does not establish generalization or final model acceptance.",
+  "sampled_visual_review": {
+    "zero_based_frames": [
+      0,
+      72,
+      144,
+      192
+    ],
+    "main_frame0_inspected": true,
+    "ablation_all_four_inspected": true,
+    "static_observations": [
+      "Subject poses and scene layout remain recognizable at all four inspected times; no gross structural failure seen in these samples.",
+      "Candidate remains close to no-refiner, with softened contours and small details compared with nativeHR; no clear detail-restoration benefit established."
+    ],
+    "continuous_visual_reviewed": false,
+    "flicker_not_concluded_from_static_frames": true
+  }
+}

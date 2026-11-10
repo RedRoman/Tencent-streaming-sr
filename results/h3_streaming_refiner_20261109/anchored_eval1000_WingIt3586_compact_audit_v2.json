@@ -1,0 +1,46 @@
+{
+  "files": {
+    "anchored_stage1000_native1080_preview.mp4": {
+      "source_sha256": "7f653c8fa5e8280cd41c33369e48251fc87489363a6f617d15c9d501ba3453ee",
+      "sha256": "b5eab5a8cbb1d98eb951b1fe5b524a2c71b03e09a6f49d8721241312cd3ad112",
+      "bytes": 780646,
+      "stream": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "226"
+      },
+      "full_decode_passed": true
+    },
+    "anchored_stage1000_dense_gt_preview.mp4": {
+      "source_sha256": "3a5db6f45c13e3b86cb5715fab8b6abf76f527d6d8d89d94d1c6c4925833b5e0",
+      "sha256": "98f2de4fc877194683d1c48603512e1f076673033c3b858addb93670c853c411",
+      "bytes": 854777,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 310,
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "226"
+      },
+      "full_decode_passed": true
+    },
+    "anchored_stage1000_no_refiner_gt_preview.mp4": {
+      "source_sha256": "595955278901e8fff582ab0d66917454723d33c6a460cd68a1ad45a592e79cce",
+      "sha256": "505d1d85236b6a591a198db15acc01b975cb8bb999b037a7dfea304aec70d726",
+      "bytes": 818788,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 310,
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "226"
+      },
+      "full_decode_passed": true
+    }
+  },
+  "display_only_downscaled": true,
+  "metrics_from_full_resolution_lossless_RGB": true,
+  "continuous_visual_reviewed": false
+}

@@ -1,0 +1,145 @@
+{
+  "observed_at": "2026-11-10T14:44:28.351933+00:00",
+  "training": {
+    "status": "anchored_residual_training",
+    "stage_optimizer_updates": 1782,
+    "total_optimizer_updates": 4282,
+    "planned_stage_updates": 2000,
+    "selected_refiner": null
+  },
+  "checkpoint_receipts": [
+    "checkpoint_stage0000.json",
+    "checkpoint_stage0100.json",
+    "checkpoint_stage0200.json",
+    "checkpoint_stage0300.json",
+    "checkpoint_stage0400.json",
+    "checkpoint_stage0500.json",
+    "checkpoint_stage0600.json",
+    "checkpoint_stage0700.json",
+    "checkpoint_stage0800.json",
+    "checkpoint_stage0900.json",
+    "checkpoint_stage1000.json",
+    "checkpoint_stage1100.json",
+    "checkpoint_stage1200.json",
+    "checkpoint_stage1300.json",
+    "checkpoint_stage1400.json",
+    "checkpoint_stage1500.json",
+    "checkpoint_stage1600.json",
+    "checkpoint_stage1700.json"
+  ],
+  "second_launch": {
+    "parent_pid": 1961124,
+    "physical_npu": 4,
+    "all_three_locks_held": true,
+    "started_unix": 1794321219.4838839,
+    "command": [
+      "python",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step1000_evaluation_v1/src/run_anchored_step1000_evaluation_v1.py",
+      "--stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step1000_evaluation_v1",
+      "--manifest-sha",
+      "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
+      "--training-stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1",
+      "--training",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1",
+      "--training-launch",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_training_v1/launch.json",
+      "--data-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+      "--assets-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json",
+      "--prior-stage",
+      "/tmp/h3_production67_limiteddev_eval_20261107_v1",
+      "--dense-preview",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/previews/dense_wingit_native_v1",
+      "--root",
+      "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104",
+      "--sample-id",
+      "ElephantsDream_dev_13070_13295",
+      "--physical-device",
+      "4",
+      "--output",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295"
+    ],
+    "status": "running",
+    "child_pid": 1962430,
+    "child_pgid": 1962430
+  },
+  "candidate_latent/trained_gates.json": {
+    "status": "passed",
+    "scope": "real33B four-latent raw same-history and future controls",
+    "cache_max_abs": 0,
+    "cache_relative_rms": 0,
+    "future_max_abs": 0,
+    "condition_future_max_abs": 0,
+    "optimizer_updates": 0
+  },
+  "completed_latent_count": 9,
+  "last_events": [
+    {
+      "event": "latent_complete",
+      "seconds": 60.54028117097914,
+      "latent_zero_based": 7,
+      "cache_bytes": 6930022400
+    },
+    {
+      "event": "latent_complete",
+      "seconds": 61.68341846391559,
+      "latent_zero_based": 8,
+      "cache_bytes": 6930022400
+    }
+  ],
+  "processes": {
+    "1541181": {
+      "startticks": 759894617,
+      "ppid": 1541065,
+      "pgid": 1541064,
+      "cmd_sha256": "d94ffef6b95d1333179ca44cce022b3a3b93c6efd98fe0caf1a4c891cdf1e463"
+    },
+    "1541193": {
+      "startticks": 759894738,
+      "ppid": 1541181,
+      "pgid": 1541193,
+      "cmd_sha256": "d5bc7d9f8661400c5c59d1dcc2e618f311635cb68748c9cf997c0c15f5466695"
+    },
+    "1961124": {
+      "startticks": 762150351,
+      "ppid": 1,
+      "pgid": 1961124,
+      "cmd_sha256": "343eec6dc30829fbfad6a789fa7f4846fff900b5b5778265164ddc1331100082"
+    },
+    "1962430": {
+      "startticks": 762150675,
+      "ppid": 1961124,
+      "pgid": 1962430,
+      "cmd_sha256": "f6ff59cf54e50bb6ba2c89a106c3ae938c5b053c3132ab569460f970192b3028"
+    },
+    "1962627": {
+      "startticks": 762150860,
+      "ppid": 1962430,
+      "pgid": 1962430,
+      "cmd_sha256": "3ed097d7187cf08bc62ea6f246eaf11d79b2b0b25ebf1dc4437c99142c8d8230"
+    }
+  },
+  "locks": {
+    "<AUTHORIZED_CACHE>/device_locks/npu4.lock": [
+      "12: FLOCK  ADVISORY  WRITE 1961124 fd:01:232456912 0 EOF"
+    ],
+    "/tmp/yunfeng_npu_4.lock": [
+      "11: FLOCK  ADVISORY  WRITE 1961124 00:c2:59011470 0 EOF"
+    ],
+    "/tmp/codex-h3-vae-npu-4.lock": [
+      "10: FLOCK  ADVISORY  WRITE 1961124 00:c2:59010306 0 EOF"
+    ],
+    "<AUTHORIZED_CACHE>/device_locks/npu7.lock": [
+      "8: FLOCK  ADVISORY  WRITE 1541181 fd:01:232456910 0 EOF"
+    ],
+    "/tmp/yunfeng_npu_7.lock": [
+      "7: FLOCK  ADVISORY  WRITE 1541181 00:c2:59011557 0 EOF"
+    ],
+    "/tmp/codex-h3-vae-npu-7.lock": [
+      "6: FLOCK  ADVISORY  WRITE 1541181 00:c2:59010309 0 EOF"
+    ]
+  }
+}

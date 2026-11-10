@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-10T13:04:28.524665+00:00",
-  "stage": "anchored_candidate_training_after_real_gates",
-  "verified_optimizer_updates_at_evidence_snapshot": 3792,
+  "as_of_utc": "2026-11-10T14:44:28.351933+00:00",
+  "stage": "anchored_training_first_fixed1000_full226_complete_second_dev_running",
+  "verified_optimizer_updates_at_evidence_snapshot": 4282,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
@@ -41,7 +41,7 @@
     2500
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "exact anchored stage1000 full67/full226 evaluator active on independent NPU4; original trainer continues on NPU7",
+  "evaluation_workers": "first WingIt3586 complete and reaped; fixed1000 ElephantsDream running under three locks; original training unchanged",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -577,7 +577,7 @@
   },
   "anchored_candidate_v1": {
     "base_updates": 2500,
-    "new_verified_optimizer_updates": 1292,
+    "new_verified_optimizer_updates": 1782,
     "planned_new_updates": 2000,
     "planned_total_updates": 4500,
     "status": "training",
@@ -593,9 +593,9 @@
     "checkpoint_stage0_reload_identity_max_abs": 0,
     "gates": "anchored_real_gates_v1.json",
     "roundtrip": "anchored_roundtrip_v1.json",
-    "snapshot": "anchored_stage1000_eval_started_summary_v1.json",
+    "snapshot": "anchored_heartbeat_20261110T1409_final_live.json",
     "checkpoint_stage100_CPU_audit": "anchored_checkpoint_stage0100_audit_v1.json",
-    "checkpoint_receipts_through_stage": 1200,
+    "checkpoint_receipts_through_stage": 1700,
     "short_dev_stage500": {
       "scope": "first4 latent only",
       "ratios": [
@@ -621,10 +621,11 @@
       "two_clips_regress_vs_no_refiner": true,
       "report": "anchored_dev_first4_stage1000.json",
       "full226_complete": false
-    }
+    },
+    "first_full226_complete": true
   },
   "anchored_stage1000_video_review": {
-    "status": "running_unique_evaluator_after_exact_checkpoint_CPU_audit_and_real33B_gates",
+    "status": "first_clip_full226_and_local_previews_complete_second_clip_running",
     "stage_optimizer_updates": 1000,
     "total_optimizer_updates": 3500,
     "evaluation_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
@@ -635,7 +636,7 @@
     "NPU_evaluation_launched": true,
     "waiter_started": false,
     "training_continues": true,
-    "full226_video_complete": false,
+    "full226_video_complete": true,
     "continuous_visual_reviewed": false,
     "model_accepted": false,
     "independent_device_required": true,
@@ -649,6 +650,19 @@
       "private_state_bytes": 165122637,
       "selected": false
     },
-    "full67_complete": false
+    "full67_complete": true,
+    "completion_scope": "WingIt_dev_3586_3811 only; remaining two dev clips required",
+    "full226_ratios_vs_no_refiner": {
+      "pixel_l1": 0.9461478464541321,
+      "lpips": 1.0769763469555864
+    },
+    "report": "ANCHORED_STAGE1000_FIRST_FULL226_V1.md",
+    "second_clip_completed_latents_at_snapshot": 9,
+    "static_review_frames": [
+      0,
+      72,
+      144,
+      192
+    ]
   }
 }
