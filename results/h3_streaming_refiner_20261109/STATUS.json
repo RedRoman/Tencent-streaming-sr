@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T17:32:00Z",
-  "stage": "fixed1000_all_three_video_sets_ready_fixed2000_two_running",
+  "as_of_utc": "2026-11-10T17:42:00Z",
+  "stage": "four_of_six_video_sets_complete_two_stage2000_running",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -692,9 +692,16 @@
     "strict_streaming_decoder_validated": false,
     "real33B_longer_than67_validated": false,
     "stage1000_completed_video_sets": 3,
-    "stage2000_completed_video_sets": 0,
-    "stage2000_first": "WingIt3586 completed67 generation events; complete video pipeline still running",
-    "stage2000_second": "ElephantsDream running after real four-latent gates passed exactly0",
-    "stage2000_third": "WingIt300 readonly admission ready; awaits first2000 full exit/reap on NPU4"
+    "stage2000_completed_video_sets": 1,
+    "stage2000_first": "WingIt3586 complete exit0/reaped; local full226 previews verified",
+    "stage2000_second": "ElephantsDream running NPU7",
+    "stage2000_third": "WingIt300 running NPU4 after first2000 exit/reap"
+  },
+  "strict_decoder_next_execution": {
+    "status": "CPU_actual_integrity_passed_predecessor_not_ready",
+    "current_predecessor": "stage2000 ElephantsDream full video completion/exit/reap",
+    "original_predecessor_still_required": "evaluation_continuation_v2 terminal/reaped",
+    "NPU_launched": false,
+    "frozen_plan_and_sources_unchanged": true
   }
 }

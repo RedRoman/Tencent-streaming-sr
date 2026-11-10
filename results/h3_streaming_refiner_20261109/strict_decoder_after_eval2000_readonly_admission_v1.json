@@ -1,0 +1,19 @@
+{
+  "status": "CPU_integrity_admission_complete",
+  "candidate_manifest_sha256": "7e373940d85620cb95dbd0be3fdedd11514cbecfec3809e906e4a1e6573553ec",
+  "CPU_report_sha256": "e042b0fb54538aa0329a9583f910ebac0c52b70a2ff629fd3ed5e6aaf4f65504",
+  "validation_plan_sha256": "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e",
+  "prior_plan_sha256": "d031e4383c689bc03615a954bdb9b37fe7970b8425b24775a93b7f7262edb737",
+  "data_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "sample_id": "WingIt_dev_3586_3811",
+  "predecessor": {
+    "terminal": false,
+    "processes_absent": false,
+    "ready": false
+  },
+  "runtime_started": false,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0,
+  "torch_imported": false,
+  "torch_npu_imported": false
+}

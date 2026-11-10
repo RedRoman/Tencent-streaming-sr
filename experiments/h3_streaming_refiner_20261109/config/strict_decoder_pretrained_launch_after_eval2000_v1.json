@@ -1,0 +1,40 @@
+{
+  "status": "prepared_only_not_launched",
+  "purpose": "Full pretrained strict decoder gates and137-latent looped engineering stress; separate from real33B refiner long-stream validation",
+  "device": 7,
+  "validation_stage": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_validation_v1",
+  "validation_stage_manifest_sha256": "61cc5f162ffd5b4ad967beb51ff39f4fef9f99ea431ad6734a4fb6bbd5d86cea",
+  "launcher": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_validation_v1/src/run_locked.py",
+  "attempt": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/strict_decoder_pretrained_v1",
+  "output": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/validation/strict_decoder_pretrained_v1",
+  "prerequisites": [
+    "Original evaluation_continuation_v2 terminal/reaped remains required",
+    "New stage2000 ElephantsDream full226 video result plus exit0/reap and absent parent/child",
+    "Fresh idleNPU7, >200GiB RAM, allthree locks for full runtime",
+    "No duplicate exact validator job/output/attempt"
+  ],
+  "frozen_validation_plan_unchanged": true,
+  "new_waiter_started": false,
+  "worker_arguments": [
+    "python",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_validation_v1/src/validate_strict_decoder.py",
+    "--candidate-stage",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_v1",
+    "--validation-plan",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/strict_decoder_validation_v1/config/strict_decoder_validation_v1.json",
+    "--validation-plan-sha",
+    "d96555e80fac797782e60feafbdb7e6894f1614e9b5f3e9a18b0418bdd63636e",
+    "--cpu-report",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/strict_decoder_cpu_v1.json",
+    "--prior-stage",
+    "/tmp/h3_production67_limiteddev_eval_20261107_v1",
+    "--data-manifest",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+    "--predecessor-launch",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_step2000_ElephantsDream_dev_13070_13295_v1/launch.json",
+    "--physical-device",
+    "7",
+    "--output",
+    "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/validation/strict_decoder_pretrained_v1"
+  ]
+}
