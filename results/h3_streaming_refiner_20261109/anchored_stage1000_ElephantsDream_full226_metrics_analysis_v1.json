@@ -1,0 +1,65 @@
+{
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "stage_step": 1000,
+  "full226": {
+    "pixel_l1": 0.9087079642958162,
+    "lpips": 0.996802589273954
+  },
+  "region_ratios": {
+    "full226": {
+      "pixel_l1": 0.9087079642958162,
+      "lpips": 0.996802589273954,
+      "mse": 0.8982027943813723,
+      "delta_l1": 0.978679522595096,
+      "temporal_difference_mse": 0.9351476856648897
+    },
+    "prefix208": {
+      "pixel_l1": 0.9080940055319187,
+      "lpips": 0.9960417274726941,
+      "mse": 0.902579503047653,
+      "delta_l1": 0.9790772313738098,
+      "temporal_difference_mse": 0.9364849579911512
+    },
+    "tail18": {
+      "pixel_l1": 0.9156421727680837,
+      "lpips": 1.0042059142400872,
+      "mse": 0.8601664612690306,
+      "delta_l1": 0.9749462494858374,
+      "temporal_difference_mse": 0.924336536170099
+    },
+    "blend": {
+      "pixel_l1": 0.9083716325786476,
+      "lpips": 0.9914744007706361,
+      "mse": 0.9120667607227285,
+      "delta_l1": 0.9834751071260767,
+      "temporal_difference_mse": 0.944762022807568
+    },
+    "nonblend": {
+      "pixel_l1": 0.9088312899286047,
+      "lpips": 0.9986906394899854,
+      "mse": 0.893370605109529,
+      "delta_l1": 0.9786652542376426,
+      "temporal_difference_mse": 0.9343691943475603
+    }
+  },
+  "per_frame": {
+    "l1": {
+      "improved": 226,
+      "worse": 0,
+      "unchanged": 0
+    },
+    "mse": {
+      "improved": 226,
+      "worse": 0,
+      "unchanged": 0
+    },
+    "lpips": {
+      "improved": 142,
+      "worse": 84,
+      "unchanged": 0
+    }
+  },
+  "continuous_visual_reviewed": false,
+  "video_pipeline_complete_at_snapshot": false,
+  "model_accepted": false
+}

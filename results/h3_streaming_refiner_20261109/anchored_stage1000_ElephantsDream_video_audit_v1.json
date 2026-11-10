@@ -1,0 +1,108 @@
+{
+  "status": "full226_three_videos_technical_audit_passed",
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "stage_step": 1000,
+  "total_training_step": 3500,
+  "checkpoint_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+  "input_RGB": [
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/candidate_pixels/visible_RGB.npy",
+      "sha256": "38cacdd3246614cf37b1fe6c637bb3ae9367d3213e0e1bd679483b81de1fdfb7",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/dense_pixels/visible_RGB.npy",
+      "sha256": "03bdf0a5be927f6d5012bcc8685ee17f95c94fbfffd93d2649af288806455c8b",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104/upscaler_production67_ed13070_dev_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "a893b2ce581b9af207bced0bb4ae4e97b3fa6a2da7cd824a7c5d60c39ad4289a"
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104/upscaler_production67_limiteddev_evaluation_20261107_v1/pixels/ElephantsDream_dev_13070_13295/teacher_student_RGB.npy",
+      "bytes": 1405900928,
+      "sha256": "ce6d55d20eae8dd5e55a0836cf3e736f184b68c51ff02c78293c9c6e6eb4f507"
+    }
+  ],
+  "files": {
+    "candidate_native1080": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/videos/anchored_stage1000_native1080.mp4",
+      "sha256": "60b0f488ea4a7dab4f549ea8a56701eb4ba65c2939fd56bf0d0bf32a7d5be8f2",
+      "bytes": 14243514,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "main_comparison": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/videos/anchored_stage1000_dense_gt.mp4",
+      "sha256": "f97e7d5976b05c9c263b4eecb532161e2aa01c36e22b49a3c6ccc800363086c1",
+      "bytes": 10443630,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    },
+    "no_refiner_ablation": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/videos/anchored_stage1000_no_refiner_gt.mp4",
+      "sha256": "e0e39c4b2d8c02e3faafdba2b364648ebda0e01ac730449308b74b7c50015438",
+      "bytes": 8623002,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_error_check_passed": true
+    }
+  },
+  "main_columns": [
+    "Anchored stage1000 | candidate",
+    "Original bidirectional refiner",
+    "Actual native-HR GT"
+  ],
+  "ablation_columns": [
+    "Anchored stage1000 | candidate",
+    "Frozen upsampler | no refiner",
+    "Actual native-HR GT"
+  ],
+  "frames": 226,
+  "fps": 24,
+  "full226_ratios_vs_no_refiner": {
+    "pixel_l1": 0.9087079642958162,
+    "lpips": 0.996802589273954
+  },
+  "metrics_use_lossless_RGB": true,
+  "continuous_visual_reviewed": false,
+  "strict_streaming_decoder_validated": false,
+  "accepted_refiner": null,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0
+}

@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T16:04:19.926746+00:00",
-  "stage": "full_video_evaluation_fixed1000_active_fixed2000_prepared",
+  "as_of_utc": "2026-11-10T16:19:00Z",
+  "stage": "fixed1000_two_video_sets_ready_fixed2000_first_running",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -629,7 +629,7 @@
     "stage2000_short_dev": "anchored_dev_first4_stage2000.json"
   },
   "anchored_stage1000_video_review": {
-    "status": "first_clip_complete_second_and_third_running",
+    "status": "two_clips_complete_third_running",
     "stage_optimizer_updates": 1000,
     "total_optimizer_updates": 3500,
     "evaluation_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
@@ -655,7 +655,7 @@
       "selected": false
     },
     "full67_complete": true,
-    "completion_scope": "WingIt_dev_3586_3811 only; remaining two dev clips required",
+    "completion_scope": "WingIt3586 and ElephantsDream13070 full226; third WingIt300 running",
     "full226_ratios_vs_no_refiner": {
       "pixel_l1": 0.9461478464541321,
       "lpips": 1.0769763469555864
@@ -670,8 +670,9 @@
     ],
     "user_visual_feedback": "anchored_stage1000_user_visual_feedback_v1.json",
     "third_clip_launch": "anchored_eval1000_WingIt300_launch_v2.json",
-    "second_clip_status": "candidate226_metrics_complete_original_dense_running",
-    "third_clip_completed_latents_at_snapshot": 26
+    "second_clip_status": "complete_exit0_reaped_local_playback_verified",
+    "third_clip_completed_latents_at_snapshot": 26,
+    "second_clip_report": "ANCHORED_STAGE1000_ELEPHANTSDREAM_FULL226_V1.md"
   },
   "complete_video_evaluation": {
     "plan": "FULL_VIDEO_EVALUATION_PLAN_V1.md",
@@ -683,11 +684,15 @@
     "planned_candidate_videos": 6,
     "stage2000_manifest_sha256": "4f870f017c2a3301539fa2eecac4ba6635123287ac446f607298d42081123de3",
     "stage2000_admission_ready": true,
-    "stage2000_NPU_launched": false,
+    "stage2000_NPU_launched": true,
     "waiter_started": false,
     "model_accepted": false,
     "continuous_visual_reviewed": false,
     "strict_streaming_decoder_validated": false,
-    "real33B_longer_than67_validated": false
+    "real33B_longer_than67_validated": false,
+    "stage1000_completed_video_sets": 2,
+    "stage2000_completed_video_sets": 0,
+    "stage2000_first": "WingIt3586 running after real four-latent gates maxabs0",
+    "stage2000_second": "ElephantsDream exact reference/checkpoint admission ready, no NPU job; awaits third stage1000 WingIt300 release"
   }
 }

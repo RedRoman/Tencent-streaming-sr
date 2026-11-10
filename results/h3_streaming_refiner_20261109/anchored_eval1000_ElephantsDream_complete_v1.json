@@ -1,0 +1,101 @@
+{
+  "observed_at_utc": "2026-11-10T16:15:56.729756+00:00",
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "launch": {
+    "parent_pid": 1961124,
+    "physical_npu": 4,
+    "all_three_locks_held": true,
+    "started_unix": 1794321219.4838839,
+    "command": [
+      "python",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step1000_evaluation_v1/src/run_anchored_step1000_evaluation_v1.py",
+      "--stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step1000_evaluation_v1",
+      "--manifest-sha",
+      "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
+      "--training-stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1",
+      "--training",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1",
+      "--training-launch",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_training_v1/launch.json",
+      "--data-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+      "--assets-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json",
+      "--prior-stage",
+      "/tmp/h3_production67_limiteddev_eval_20261107_v1",
+      "--dense-preview",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/previews/dense_wingit_native_v1",
+      "--root",
+      "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104",
+      "--sample-id",
+      "ElephantsDream_dev_13070_13295",
+      "--physical-device",
+      "4",
+      "--output",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295"
+    ],
+    "status": "complete",
+    "child_pid": 1962430,
+    "child_pgid": 1962430,
+    "exit_code": 0,
+    "ended_unix": 1794327306.9973571,
+    "child_reaped": true
+  },
+  "launch_sha256": "995498b0cde7c12ed8ef8c84838bee619a83d640d0aacc026554c7d0896aeef2",
+  "parent_and_child_absent": true,
+  "root_result_sha256": "fe52c5c6c02d6575ecd16e84a34c568648b7801103bd9f3629e3d34cc67f434d",
+  "video_receipt_sha256": "28f6c726f3fa2e078562b8714ac2425560b4c11780eec061e719ff262f0f72b4",
+  "result": {
+    "status": "anchored_stage1000_full226_video_ready_visual_review_pending",
+    "sample_id": "ElephantsDream_dev_13070_13295",
+    "stage_step": 1000,
+    "total_training_step": 3500,
+    "checkpoint": {
+      "receipt_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1/checkpoint_stage1000.json",
+      "receipt_sha256": "d7fd4a3fb14b6a43edc318769ad5414fd01a6dc3bbb1163559f346ae80e6db28",
+      "record": {
+        "stage_step": 1000,
+        "total_optimizer_updates": 3500,
+        "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+        "private_optimizer_sha256": "90120faacc2f7cc2da9e03ef1d94fd7ceaaa01f8860529cb9d1963dd208f00cd",
+        "adapter_bytes": 82508131,
+        "private_state_bytes": 165122637,
+        "selected": false
+      },
+      "adapter_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1/adapter_stage1000.pt",
+      "private_resume_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1/private_resume_stage1000.pt"
+    },
+    "latent": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/candidate_latent/result.json",
+      "sha256": "d3a9aa33f51b3a68d93401b2adb052f7b406956fd72f0b5ccd1033f7386ee68b"
+    },
+    "pixels": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/candidate_pixels/result.json",
+      "sha256": "4c9c62f62fd9177b8aa333d281dadfaf2cde9fd9a425db45c73ef69ecaf3b720"
+    },
+    "dense_latent": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/dense_latent/result.json",
+      "sha256": "fe465e41befd32fda508d112693c0cfd008b456866cccf5526a063fb05fe75e9"
+    },
+    "dense_pixels": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/dense_pixels/result.json",
+      "sha256": "1cc150db97357e6affda49b01efb208b7157fb4fa959ddb14fd09d0ba8b6e919"
+    },
+    "video": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/videos/result.json",
+      "sha256": "28f6c726f3fa2e078562b8714ac2425560b4c11780eec061e719ff262f0f72b4"
+    },
+    "full226_ratios_vs_no_refiner": {
+      "pixel_l1": 0.9087079642958162,
+      "lpips": 0.996802589273954
+    },
+    "continuous_visual_reviewed": false,
+    "strict_streaming_decoder_validated": false,
+    "accepted_refiner": null,
+    "optimizer_updates": 0,
+    "training_mutated": false
+  },
+  "new_stage2000_dispatch_pid": 2090675
+}

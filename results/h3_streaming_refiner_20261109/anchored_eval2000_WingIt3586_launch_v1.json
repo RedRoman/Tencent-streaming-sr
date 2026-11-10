@@ -1,0 +1,86 @@
+{
+  "at_utc": "2026-11-10T16:16:55.507589+00:00",
+  "launch": {
+    "parent_pid": 2090675,
+    "physical_npu": 4,
+    "all_three_locks_held": true,
+    "started_unix": 1794327361.0645614,
+    "command": [
+      "python",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step2000_evaluation_v1/src/run_anchored_step2000_evaluation_v1.py",
+      "--stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step2000_evaluation_v1",
+      "--manifest-sha",
+      "4f870f017c2a3301539fa2eecac4ba6635123287ac446f607298d42081123de3",
+      "--training-stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1",
+      "--training",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1",
+      "--training-launch",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_training_v1/launch.json",
+      "--data-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+      "--assets-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json",
+      "--prior-stage",
+      "/tmp/h3_production67_limiteddev_eval_20261107_v1",
+      "--root",
+      "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104",
+      "--sample-id",
+      "WingIt_dev_3586_3811",
+      "--physical-device",
+      "4",
+      "--output",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step2000_v1/WingIt_dev_3586_3811",
+      "--reference-evaluation",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_3586_3811",
+      "--reference-launch",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_step1000_WingIt_dev_3586_3811_v1/launch.json",
+      "--reference-result-sha",
+      "554bf2d398a300e94b16e7d43f636a7ee172135d5d18b79b7fdf10c5226e32f6",
+      "--reference-gate-sha",
+      "3d3e179299b221e69d9815e834e1ce53e00860c6dddaecaf5e8c7a60422b9c3f"
+    ],
+    "status": "running",
+    "child_pid": 2091574,
+    "child_pgid": 2091574
+  },
+  "processes": {
+    "2090675": {
+      "startticks": 762764399,
+      "ppid": 1,
+      "pgid": 2090675,
+      "cmd_sha256": "2ec4c8531fd8be9a2130c90247f3b17930e382ba028838ca5a90962fca244c02"
+    },
+    "2091574": {
+      "startticks": 762764833,
+      "ppid": 2090675,
+      "pgid": 2091574,
+      "cmd_sha256": "125241a8e1e764ee907664799ef75574bcc8c0674b8dda482bceee0d174f2400"
+    }
+  },
+  "locks": [
+    {
+      "path": "<AUTHORIZED_CACHE>/device_locks/npu4.lock",
+      "kernel_id": "fd:01:232456912",
+      "held": true
+    },
+    {
+      "path": "/tmp/yunfeng_npu_4.lock",
+      "kernel_id": "00:c2:59011470",
+      "held": true
+    },
+    {
+      "path": "/tmp/codex-h3-vae-npu-4.lock",
+      "kernel_id": "00:c2:59010306",
+      "held": true
+    }
+  ],
+  "last_event": {
+    "event": "runtime_ready",
+    "seconds": 39.81622017361224,
+    "trainable": 20586496,
+    "resident_layers": 24,
+    "canonical_rows": true
+  }
+}

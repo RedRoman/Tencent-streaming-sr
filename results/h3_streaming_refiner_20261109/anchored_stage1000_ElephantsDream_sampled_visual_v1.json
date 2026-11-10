@@ -1,0 +1,23 @@
+{
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "stage_step": 1000,
+  "review_type": "static_sampled_frames_only",
+  "zero_based_frames": [
+    0,
+    144
+  ],
+  "source_frame_sha256": {
+    "ablation_frame000.jpg": "0e458a52ddff794342e61596f4bca64436b5186d55d465f3c106095a98f53c5b",
+    "ablation_frame144.jpg": "366e37137c0e43bf19ebb131f34d228e8e78165f03707b9583263e812d200a2d",
+    "main_frame000.jpg": "c6b9c6bf2535ffe9c4fc37696b7bf9124b0671e32fb4a3fd3acca448f8866238",
+    "main_frame144.jpg": "3e2320097da8d8587c5e4fc58c6142567b2a947d8b78b0ba1edc33180158f5c2"
+  },
+  "observations": [
+    "At frame0 the original bidirectional output adds denser segmented texture to tubes and alters visible wall marks relative to GT. Candidate and no-refiner preserve the main hand/tube/wall structure more closely.",
+    "At frame144 the original bidirectional tubes show stronger fine grids and surface texture than GT. Candidate and no-refiner retain a similar large-scale arrangement to GT; some candidate texture looks softer.",
+    "These observations concern sampled spatial content. They do not establish absence of hallucinations on allframes, temporal flicker stability or longstream drift."
+  ],
+  "continuous_visual_reviewed": false,
+  "model_accepted": false,
+  "reviewed_at_utc": "2026-11-10T16:21:00.733580+00:00"
+}

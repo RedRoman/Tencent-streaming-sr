@@ -1,0 +1,33 @@
+{
+  "status": "full67_latent_inference_complete_pixels_pending",
+  "arm": "released_dense_refiner",
+  "sample_id": "ElephantsDream_dev_13070_13295",
+  "training_step": null,
+  "checkpoint_sha256": null,
+  "trained_streaming_adapter_loaded": false,
+  "output": {
+    "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/ElephantsDream_dev_13070_13295/dense_latent/dense_latents.npy",
+    "sha256": "6f7468926b9b6064171bc62fef5e87f209f52a0001b255b8d77303c939800bea",
+    "shape": [
+      24,
+      67,
+      68,
+      120
+    ]
+  },
+  "pipeline_shape": [
+    1,
+    24,
+    67,
+    68,
+    120
+  ],
+  "data_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "protocol_sha256": "8b43255abccf5155d0de0ece1635e264ec779d7f4544f4e154a88ba0f4e365fc",
+  "optimizer_updates": 0,
+  "model_forwards": 3,
+  "peak_allocated_bytes": 35641504768,
+  "same_draft_noise_condition_sigmas": true,
+  "full226_pixels_complete": false,
+  "visual_quality_passed": false
+}
