@@ -520,10 +520,30 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "9da20cab2e3bb22b4c0ba4b0fb3dc9453030491f490eb54e61758a1255997f4d",
-    "public_sha256": "9da20cab2e3bb22b4c0ba4b0fb3dc9453030491f490eb54e61758a1255997f4d",
-    "prior_public_sha256": "59151dee572b7f3631488dbbd068fd58aa9789ec61db89f77c26329e3115482d",
+    "original_sha256": "42141e3ab12859d4522083c966832d7d3bd9fb68afa325fad222727ea5e77663",
+    "public_sha256": "42141e3ab12859d4522083c966832d7d3bd9fb68afa325fad222727ea5e77663",
+    "prior_public_sha256": "9da20cab2e3bb22b4c0ba4b0fb3dc9453030491f490eb54e61758a1255997f4d",
     "redaction": null,
-    "source_note": "generated public status snapshot preserved privately as STATUS_native1080_snapshot.json"
+    "source_note": "generated public status snapshot retained as STATUS_33B_diagnostic_snapshot.json"
+  },
+  "history_diagnostic_cpu_control_v1.json": {
+    "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
+    "public_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
+    "redaction": null
+  },
+  "history_diagnostic_33b_admission_v1.json": {
+    "original_sha256": "c364da1a2c5768dc72c7a1f153f34159684083c51912153065a6c53e7c0bb7bd",
+    "public_sha256": "c364da1a2c5768dc72c7a1f153f34159684083c51912153065a6c53e7c0bb7bd",
+    "redaction": null
+  },
+  "history_diagnostic_33b_active_refusal_v1.json": {
+    "original_sha256": "2ef709ca13a17bbde77a79d4beac0bfa2936b8dd6c5d68a9d669c9ed1502bec0",
+    "public_sha256": "249f70f1e43bc212ab2b954d7a5336dcf12f753142005d79dbdf67a4107d0adf",
+    "redaction": "private task path replaced with PROJECT_ROOT"
+  },
+  "history_diagnostic_33b_stage_v1.json": {
+    "original_sha256": "9c9798e6e33ea334564b0e85bdcaa154991807f20884892362a62876038bae3e",
+    "public_sha256": "9c9798e6e33ea334564b0e85bdcaa154991807f20884892362a62876038bae3e",
+    "redaction": null
   }
 }

@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-11-10T05:36:41.687732+00:00",
+  "as_of_utc": "2026-11-10T06:04:50.457039+00:00",
   "stage": "TF2500_two_clips_complete_metric_gates_failed_third_clip_running",
   "verified_optimizer_updates_at_evidence_snapshot": 2500,
   "target_updates": 2500,
@@ -284,7 +284,7 @@
     "report": "TF2500_FIRST_WINGIT_RESULT_V1.md",
     "active_worker": "step2500_WingIt_dev_300_525_latent",
     "trained_full_model_two_latent_gates": "exact0_cache_future_condition_future_reload",
-    "completed_latent_count": 31,
+    "completed_latent_count": 63,
     "cache_bytes": 6930022400,
     "full67_complete": false,
     "full226_complete": false,
@@ -481,5 +481,31 @@
     "latent_receipt_sha256": "a584b3ade761004194453994f76d22a45d3848a84bafa3e1b75d31d93ad3e865",
     "pixel_receipt_sha256": "884b3c476edab2f811f32b1ff2b0cda56869350a6facf1f89f6008e7c2225ae6",
     "summary": "TF2500_second_ElephantsDream_summary_v1.json"
+  },
+  "history_diagnostic_33B_preparation": {
+    "status": "prepared_CPU_controls_passed_NPU_unlaunched",
+    "stage": "history_diagnostic_33b_v1",
+    "manifest_sha256": "9c9798e6e33ea334564b0e85bdcaa154991807f20884892362a62876038bae3e",
+    "plan_sha256": "98710b953c019862ecbf8819fc2162399d098ae3d74816c67f446c3ca55f2997",
+    "plan": "config/history_diagnostic_33b_v1.json",
+    "CPU_control_report": "history_diagnostic_cpu_control_v1.json",
+    "admission_report": "history_diagnostic_33b_admission_v1.json",
+    "actual_entrypoint_active_refusal": "history_diagnostic_33b_active_refusal_v1.json",
+    "condition": "after existing fixed evaluation completes and is reaped; fresh card identity and all three locks required",
+    "entrypoint": "src/diagnose_tf2500_history.py",
+    "new_NPU_jobs": 0,
+    "new_optimizer_updates": 0,
+    "positions": [
+      0,
+      3,
+      11
+    ],
+    "samples": 5,
+    "train_prefix_new_latents_per_clip": 12,
+    "dev_histories": "reuse complete verified step2500 outputs",
+    "estimated_model_forwards": 503,
+    "no_waiter_started": true,
+    "real33B_result_available": false,
+    "manifest_receipt": "history_diagnostic_33b_stage_v1.json"
   }
 }

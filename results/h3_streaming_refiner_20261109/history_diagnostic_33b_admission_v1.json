@@ -1,0 +1,28 @@
+{
+  "status": "CPU_admission_complete",
+  "ready_for_NPU": false,
+  "predecessor": {
+    "terminal": false,
+    "processes_absent": false,
+    "ready": false
+  },
+  "fixed_evaluation_complete": false,
+  "fixed_evaluation_receipt_sha256": null,
+  "manifest_sha256": "9c9798e6e33ea334564b0e85bdcaa154991807f20884892362a62876038bae3e",
+  "plan_sha256": "98710b953c019862ecbf8819fc2162399d098ae3d74816c67f446c3ca55f2997",
+  "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+  "reused_dev_histories": {},
+  "train_samples": [
+    "Charge_train_3856_4081",
+    "Caminandes3_train_168_393"
+  ],
+  "dev_samples": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "torch_imported": false,
+  "torch_npu_imported": false,
+  "new_optimizer_updates": 0,
+  "new_accelerator_forwards": 0
+}

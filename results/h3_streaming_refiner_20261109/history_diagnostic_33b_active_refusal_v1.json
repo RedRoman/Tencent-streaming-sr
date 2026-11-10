@@ -1,0 +1,8 @@
+{
+  "type": "RuntimeError",
+  "error": "Fixed evaluation incomplete or predecessor active; no accelerator import",
+  "traceback": "Traceback (most recent call last):\n  File \"PROJECT_ROOT/stages/history_diagnostic_33b_v1/src/diagnose_tf2500_history.py\", line 269, in main\n    require_ready(admission)\n  File \"PROJECT_ROOT/stages/history_diagnostic_33b_v1/src/diagnose_tf2500_history.py\", line 44, in require_ready\n    raise RuntimeError('Fixed evaluation incomplete or predecessor active; no accelerator import')\nRuntimeError: Fixed evaluation incomplete or predecessor active; no accelerator import\n",
+  "torch_imported": false,
+  "torch_npu_imported": false,
+  "new_optimizer_updates": 0
+}
