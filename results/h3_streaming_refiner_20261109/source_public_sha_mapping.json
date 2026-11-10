@@ -288,10 +288,10 @@
     "public_sha256": "931ce0fa86d1e911c47a6db20b4df97aca993b286bd2b0d299506b3390249200"
   },
   "README.md": {
-    "source_sha256": "6a9af8ee57fb96b7661973d814d3ab437e0dea9bb92fbdb8345d9c32abdd05e1",
-    "public_sha256": "6a9af8ee57fb96b7661973d814d3ab437e0dea9bb92fbdb8345d9c32abdd05e1",
-    "prior_public_sha256": "4af8fafbf516cf73b83d9ff3e3339bd7ed904584928fa359468d37f44cbd6bb3",
-    "source_note": "current original snapshot retained as README_33B_diagnostic_snapshot.md"
+    "source_sha256": "cd6409935faeb33e8dbda8d6574fa68b94c8b8e2d35fe857a01a5a0b7bacf36a",
+    "public_sha256": "cd6409935faeb33e8dbda8d6574fa68b94c8b8e2d35fe857a01a5a0b7bacf36a",
+    "prior_public_sha256": "6a9af8ee57fb96b7661973d814d3ab437e0dea9bb92fbdb8345d9c32abdd05e1",
+    "source_note": "original current snapshot retained as README_diagnostic_priority_snapshot.md"
   },
   "src/run_tf3000_evaluation.py": {
     "source_sha256": "8f9d41889117f312cdcd1f3206d6ed8c437e67ca05b81730b143897101eec278",
@@ -373,5 +373,41 @@
   "config/history_diagnostic_33b_v1.json": {
     "source_sha256": "98710b953c019862ecbf8819fc2162399d098ae3d74816c67f446c3ca55f2997",
     "public_sha256": "98710b953c019862ecbf8819fc2162399d098ae3d74816c67f446c3ca55f2997"
+  },
+  "src/finish_evaluation_for_diagnosis.py": {
+    "source_sha256": "9c3e2984e2876d035229a3c0cf3e5f845341a38ee037611a988d582f8824f8c6",
+    "public_sha256": "9c3e2984e2876d035229a3c0cf3e5f845341a38ee037611a988d582f8824f8c6"
+  },
+  "src/stop_evaluation_for_diagnosis_v2.py": {
+    "source_sha256": "71c94b61ab44269871b7d14230f359a88b880bc1e0b528b20810a91550b8dfc0",
+    "public_sha256": "71c94b61ab44269871b7d14230f359a88b880bc1e0b528b20810a91550b8dfc0"
+  },
+  "src/diagnose_tf2500_history_v3.py": {
+    "source_sha256": "76fb04c0e4e4185428a1e2688124f833a45c7016ee840c25ae0153de2b3d3b65",
+    "public_sha256": "76fb04c0e4e4185428a1e2688124f833a45c7016ee840c25ae0153de2b3d3b65"
+  },
+  "src/test_history_diagnostic_cpu_v3.py": {
+    "source_sha256": "5b8a81a645032ca69d8778e8a2438c98cb8bbad67e13e29ea773059d7fca824a",
+    "public_sha256": "5b8a81a645032ca69d8778e8a2438c98cb8bbad67e13e29ea773059d7fca824a"
+  },
+  "src/trace_tf2500_parity_v1.py": {
+    "source_sha256": "f103bf3de6e495fd67a8413b3fa0e035b82aa8bc9f7dc498e22a4b04a4a8327d",
+    "public_sha256": "f103bf3de6e495fd67a8413b3fa0e035b82aa8bc9f7dc498e22a4b04a4a8327d"
+  },
+  "config/history_diagnostic_33b_v3.json": {
+    "source_sha256": "71d2825f4e227a3d8625cfb6ab2a226ede162f713ff4880e980f1c0baf2723be",
+    "public_sha256": "71d2825f4e227a3d8625cfb6ab2a226ede162f713ff4880e980f1c0baf2723be"
+  },
+  "config/history_diagnostic_33b_v4.json": {
+    "source_sha256": "f71a95e4ba23ee7b0fc2b557c6f1d8b09fa93d1d1e91a6af87f286ca6d38a2db",
+    "public_sha256": "f71a95e4ba23ee7b0fc2b557c6f1d8b09fa93d1d1e91a6af87f286ca6d38a2db"
+  },
+  "src/diagnose_tf2500_history_v4.py": {
+    "source_sha256": "6f5bd75da8a4c7f7dd4b8f6807fcfc354dc4f5be905daa9eec5f002cdaf4a53b",
+    "public_sha256": "6f5bd75da8a4c7f7dd4b8f6807fcfc354dc4f5be905daa9eec5f002cdaf4a53b"
+  },
+  "src/test_history_diagnostic_cpu_v4.py": {
+    "source_sha256": "28b03e6bcb4b07fb47df43d5851468aae2a3fa08aa83d5f84264e097bf24af6c",
+    "public_sha256": "28b03e6bcb4b07fb47df43d5851468aae2a3fa08aa83d5f84264e097bf24af6c"
   }
 }

@@ -1,0 +1,113 @@
+{
+  "status": "CPU_admission_complete",
+  "ready_for_NPU": true,
+  "predecessor": {
+    "terminal": true,
+    "processes_absent": true,
+    "ready": true
+  },
+  "fixed_evaluation_complete": false,
+  "intentional_evaluation_deferral": {
+    "status": "evaluation_deferred_for_user_requested_diagnosis",
+    "request_sha256": "fe2a6862939dcc034396efc94a3738bc4055dc1d574c8fa2d97873261da78788",
+    "controller_source_sha256": "71c94b61ab44269871b7d14230f359a88b880bc1e0b528b20810a91550b8dfc0",
+    "evaluation_launch_sha256": "d0e6d555394a9718840f50e045796c1e88554ecde308736771e8c83c76083921",
+    "raw_exit_code": -15,
+    "child_reaped": true,
+    "all_owned_processes_absent": true,
+    "completed_step2500": [
+      {
+        "sample_id": "WingIt_dev_3586_3811",
+        "latent_receipt_sha256": "7a43205730dd9099639e03f72e8d24dcdc6837f58e55dbfc87529b3151e61ef4",
+        "pixel_receipt_sha256": "a2d5d240acbdf9b561a741af77b492b84858cfd3a8c1c178e504ee0c7e3b6cdd",
+        "RGB_sha256": "1c2e4cce02d094edbc4122e64c27924698556951ebc3c0f46f92a1f74875ca1c"
+      },
+      {
+        "sample_id": "ElephantsDream_dev_13070_13295",
+        "latent_receipt_sha256": "a584b3ade761004194453994f76d22a45d3848a84bafa3e1b75d31d93ad3e865",
+        "pixel_receipt_sha256": "884b3c476edab2f811f32b1ff2b0cda56869350a6facf1f89f6008e7c2225ae6",
+        "RGB_sha256": "a7ec0d389f2f4cec0c6de66e3305087a8b5cf9ee15952b35025b6a2d8977b217"
+      },
+      {
+        "sample_id": "WingIt_dev_300_525",
+        "latent_receipt_sha256": "e8a5a3814ffe606310474567c686ee06ac607460c93ea10072a5560dfc523908",
+        "pixel_receipt_sha256": "3a28c716ea2a12b68ee45860e0592b3ab0bcf3aebf0e3f5182d33f6eb4121e6f",
+        "RGB_sha256": "f6e077a055bab35971cd34c3f32457baf9718121645b58864e9b829bd22d8528"
+      }
+    ],
+    "deferred": [
+      "step1000 three dev clips",
+      "step2000 three dev clips",
+      "remaining dense two clips"
+    ],
+    "actual_training_updates": 2500,
+    "new_optimizer_updates": 0,
+    "partial_step1000_preserved": true,
+    "prior_controller_failure_sha256": "42437474c585e9ad6a7262f0b0e539eda51db2ab62572928e0f4e0cbabfd3d2f",
+    "original_sources_and_receipts_unchanged": true,
+    "finished_unix": 1794291792.8784418
+  },
+  "fixed_evaluation_receipt_sha256": null,
+  "manifest_sha256": "757e186b023e491566a222599b7a1fa9ddbe72b50f2930d87035d9f814682c2f",
+  "plan_sha256": "71d2825f4e227a3d8625cfb6ab2a226ede162f713ff4880e980f1c0baf2723be",
+  "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+  "reused_dev_histories": {
+    "WingIt_dev_3586_3811": {
+      "receipt_sha256": "7a43205730dd9099639e03f72e8d24dcdc6837f58e55dbfc87529b3151e61ef4",
+      "output": {
+        "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/tf2500_v1/step2500_WingIt_dev_3586_3811_latent/streaming_latents.npy",
+        "sha256": "6fddd19bdb863ee28d9cbc63acc177af547d73afad966e198788be698ce6fad9",
+        "shape": [
+          24,
+          67,
+          68,
+          120
+        ]
+      }
+    },
+    "ElephantsDream_dev_13070_13295": {
+      "receipt_sha256": "a584b3ade761004194453994f76d22a45d3848a84bafa3e1b75d31d93ad3e865",
+      "output": {
+        "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/tf2500_v1/step2500_ElephantsDream_dev_13070_13295_latent/streaming_latents.npy",
+        "sha256": "61e2288b94653a48f07a3cfbb2c68c0c0631bd7ff1463d45c13c40db32354006",
+        "shape": [
+          24,
+          67,
+          68,
+          120
+        ]
+      }
+    },
+    "WingIt_dev_300_525": {
+      "receipt_sha256": "e8a5a3814ffe606310474567c686ee06ac607460c93ea10072a5560dfc523908",
+      "output": {
+        "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/tf2500_v1/step2500_WingIt_dev_300_525_latent/streaming_latents.npy",
+        "sha256": "87f403a46df0ac5a6123c0edd9f348e713120512f9828faabecb7f6115fe4ab5",
+        "shape": [
+          24,
+          67,
+          68,
+          120
+        ]
+      }
+    }
+  },
+  "train_samples": [
+    "Charge_train_3856_4081",
+    "Caminandes3_train_168_393"
+  ],
+  "dev_samples": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "torch_imported": false,
+  "torch_npu_imported": false,
+  "new_optimizer_updates": 0,
+  "new_accelerator_forwards": 0,
+  "failed_diagnostic_predecessor": {
+    "terminal": true,
+    "processes_absent": true,
+    "ready": true
+  }
+}

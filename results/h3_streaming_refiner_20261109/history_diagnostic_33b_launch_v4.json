@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-11-10T06:42:23.760164+00:00",
+  "launch": {
+    "parent_pid": 1432378,
+    "physical_npu": 7,
+    "all_three_locks_held": true,
+    "started_unix": 1794292895.2453365,
+    "status": "running",
+    "child_pid": 1432390,
+    "child_pgid": 1432390
+  },
+  "kernel_locks": [
+    "5: FLOCK  ADVISORY  WRITE 1432378 00:c2:59010309 0 EOF",
+    "6: FLOCK  ADVISORY  WRITE 1432378 00:c2:59011557 0 EOF",
+    "7: FLOCK  ADVISORY  WRITE 1432378 fd:01:232456910 0 EOF"
+  ]
+}

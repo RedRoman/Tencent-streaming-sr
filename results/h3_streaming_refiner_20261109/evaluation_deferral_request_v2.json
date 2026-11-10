@@ -1,0 +1,36 @@
+{
+  "authorization": "User stopped training and prioritized diagnosis; preserve all completed2500 results and defer remaining evaluation.",
+  "identities": {
+    "1118689": {
+      "pid": 1118689,
+      "ppid": 1118571,
+      "pgid": 1118570,
+      "starttime": 757884804,
+      "cmdline_sha256": "d8146a397d685bee51037e870ac85634cdd9c2445645abd3c7d97e1b979f43fa"
+    },
+    "1118705": {
+      "pid": 1118705,
+      "ppid": 1118689,
+      "pgid": 1118705,
+      "starttime": 757884925,
+      "cmdline_sha256": "56ae13a41b4f7b69ba0f3b11aa0159d46efc9672cfa737d35630ad54de37b7dd"
+    },
+    "1391764": {
+      "pid": 1391764,
+      "ppid": 1118705,
+      "pgid": 1118705,
+      "starttime": 759170590,
+      "cmdline_sha256": "ba63db15f6fbf1159553bbf2f9978c56ed21dd2b8b35e4381389c1cad1bf196c"
+    }
+  },
+  "evaluation_launch": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/tf2500_evaluation_v1/launch.json",
+  "prior_controller_failure_sha256": "42437474c585e9ad6a7262f0b0e539eda51db2ab62572928e0f4e0cbabfd3d2f",
+  "training_updates": 2500,
+  "deferred": [
+    "step1000 three dev clips",
+    "step2000 three dev clips",
+    "remaining dense two clips"
+  ],
+  "partial_step1000_preserved": true,
+  "created_unix": 1794291775.351935
+}

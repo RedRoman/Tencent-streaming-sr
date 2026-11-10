@@ -1,0 +1,48 @@
+{
+  "as_of_utc": "2026-11-10T06:43:15.682893+00:00",
+  "training": "stopped_at2500; noTF/SF/DMDrestart_without_new_user_authorization",
+  "new_optimizer_updates": 0,
+  "complete_step2500_dev_clips": 3,
+  "per_clip_ratios_vs_no_refiner": [
+    {
+      "sample": "WingIt3586",
+      "L1": 4.737340886427075,
+      "LPIPS": 5.318259581761857
+    },
+    {
+      "sample": "ElephantsDream13070",
+      "L1": 3.985686943008305,
+      "LPIPS": 3.643381211557803
+    },
+    {
+      "sample": "WingIt300",
+      "L1": 4.7349928012358165,
+      "LPIPS": 5.619704666695214
+    }
+  ],
+  "confirmed_parity_issue": {
+    "sample": "WingIt3586",
+    "position": 3,
+    "checkpoint": 2500,
+    "original_max_abs": 0.3562047481536865,
+    "original_relative_RMS": 0.0109103387221694,
+    "per_latent_projection_reference_max_abs": 0,
+    "trace": "parity_trace_tf2500_result_v1.json",
+    "inference": "The numerical projection shape difference suffices to explain this four-latent parity failure. This is not proof of the full visual failure cause."
+  },
+  "other_confirmed_design_limits": [
+    "No identity-preserving residual/bypass path atstep0. Zero adapter initialization still executes noisy frozen denoising.",
+    "Original TF objective uses truncated GT histories; deployed clean KV carries earlier history influence.",
+    "FM training current input is HR/noise; inference starts from draft/noise and later sees its own denoised trajectory."
+  ],
+  "current_diagnostic": "v4 running actual33B; same weights/inputs/noise; projection-aligned offline control; three histories,FM/three-step,current-only condition ablations,train/dev",
+  "not_proven": [
+    "Training steps alone are the dominant limitation",
+    "Which gap dominates visual failure",
+    "Strict zero regression",
+    "Full226 continuous visual acceptance",
+    "Strict streamingVAE"
+  ],
+  "original_training_and_runtime_edited": false,
+  "model_accepted": false
+}

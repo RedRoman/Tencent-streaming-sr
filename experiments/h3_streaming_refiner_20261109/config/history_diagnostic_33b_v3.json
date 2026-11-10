@@ -1,0 +1,70 @@
+{
+  "schema": "tf2500-matched-history-diagnostic-v3",
+  "status": "prepared_not_launched",
+  "checkpoint_step": 2500,
+  "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+  "upsampler_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "train_manifest_sha256": "e8d62687403df071f62df1ccf8b5653d05659771e323a724a15df21b62b16aed",
+  "dev_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+  "train": [
+    "Charge_train_3856_4081",
+    "Caminandes3_train_168_393"
+  ],
+  "dev": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "assets_manifest_sha256": "952809cf39214edc76e4a3b1f6c35576e2d86254a9add753cbe24ddc35f6264d",
+  "stop_receipt_sha256": "2e1fc383f2ab2f6428adee1d492b6630841202f1727b4cf6c1ff6448dc2fc1aa",
+  "evaluation_manifest_sha256": "36d73bb91b352eaa006626b98b8a3d61ae748d6a77c9e9b39c8b65971d101fb2",
+  "evaluation_source_sha256": "506857bdfecbb3710f9ea75be86cf19883117bf343c690af3cdd2dffcee1ad1d",
+  "evaluation_protocol_sha256": "f26805085010c5b503e73c89782dbb65711c6cc5978515bc10e26b4d3c004bfb",
+  "runtime_source_sha256": {
+    "causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+    "paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "streaming_refiner.py": "91889a2cd7db0d6167841322b612ec3bbef675eb27aa0c1135ab4d068774a141"
+  },
+  "positions": [
+    0,
+    3,
+    11
+  ],
+  "sigmas": [
+    0.909375,
+    0.8571428571428571,
+    0.6666666666666666,
+    0
+  ],
+  "seed": 20261109,
+  "resident_layers": 24,
+  "contexts": [
+    "gt_incremental",
+    "self_incremental",
+    "gt_truncated_offline"
+  ],
+  "fixed_inputs": "Same sample, adapter, draft, conditioning, absolute latent position and position-hashed noise across history arms.",
+  "point_probe": "HR/noise mixture at each released sigma; compare FM velocity target and one-step x0.",
+  "rollout_probe": "Three Euler steps from draft/noise mixture under fixed designated history; queries do not commit their outputs.",
+  "history_commit": "Only known designated clean history is committed; no future indices and no history recomputation in incremental arms.",
+  "self_history": "Reuse verified complete step2500 dev latents; generate exactly12 prefix latents for each of two authorized training clips.",
+  "reference_scope": "Full-prefix offline oracle only at four latents; truncated offline is a training-context reference, never incremental inference.",
+  "preconditions": "Existing evaluation completed OR verified user-directed deferral with all3 complete2500 full226 artifacts; parent/child/workers reaped; fresh NPU identity and all three parent locks before import.",
+  "interpretation": "Controlled latent diagnostics, not root-cause proof, full226 visual quality, new training, SF or DMD promotion.",
+  "estimated_model_forwards": 568,
+  "test_unlocked": false,
+  "new_optimizer_updates": 0,
+  "automatic_launch": false,
+  "evaluation_deferral_request_sha256": "fe2a6862939dcc034396efc94a3738bc4055dc1d574c8fa2d97873261da78788",
+  "evaluation_deferral_controller_sha256": "71c94b61ab44269871b7d14230f359a88b880bc1e0b528b20810a91550b8dfc0",
+  "user_direction": "Stop training and prioritize diagnosis; do not restart TF/SF/DMD without renewed explicit authorization.",
+  "execution_sample_order": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525",
+    "Charge_train_3856_4081",
+    "Caminandes3_train_168_393"
+  ],
+  "first_latent_condition_ablation": "Keep original draft/noise start, checkpoint and static condition; compare actual draft baseline against zero draft condition and explicitly labeled current-HR condition oracle. No future HR supplied.",
+  "prior_controller_failure_preserved": true
+}

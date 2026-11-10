@@ -520,11 +520,11 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "42141e3ab12859d4522083c966832d7d3bd9fb68afa325fad222727ea5e77663",
-    "public_sha256": "42141e3ab12859d4522083c966832d7d3bd9fb68afa325fad222727ea5e77663",
-    "prior_public_sha256": "9da20cab2e3bb22b4c0ba4b0fb3dc9453030491f490eb54e61758a1255997f4d",
+    "original_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+    "public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+    "prior_public_sha256": "42141e3ab12859d4522083c966832d7d3bd9fb68afa325fad222727ea5e77663",
     "redaction": null,
-    "source_note": "generated public status snapshot retained as STATUS_33B_diagnostic_snapshot.json"
+    "source_note": "current public status snapshot retained as STATUS_diagnostic_priority_snapshot.json"
   },
   "history_diagnostic_cpu_control_v1.json": {
     "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
@@ -544,6 +544,106 @@
   "history_diagnostic_33b_stage_v1.json": {
     "original_sha256": "9c9798e6e33ea334564b0e85bdcaa154991807f20884892362a62876038bae3e",
     "public_sha256": "9c9798e6e33ea334564b0e85bdcaa154991807f20884892362a62876038bae3e",
+    "redaction": null
+  },
+  "evaluation_deferral_complete_v2.json": {
+    "original_sha256": "79f5a4aee46ec60e2fdc2ad1d2371c46465986822ddbcbb2cae2f1221228d80e",
+    "public_sha256": "79f5a4aee46ec60e2fdc2ad1d2371c46465986822ddbcbb2cae2f1221228d80e",
+    "redaction": null
+  },
+  "evaluation_deferral_request_v2.json": {
+    "original_sha256": "fe2a6862939dcc034396efc94a3738bc4055dc1d574c8fa2d97873261da78788",
+    "public_sha256": "5c015e8a0d2d37d05530c8912bd5b12dab2754037432b3f4f22855eadccdf5cd",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "evaluation_deferral_failure_v1.json": {
+    "original_sha256": "42437474c585e9ad6a7262f0b0e539eda51db2ab62572928e0f4e0cbabfd3d2f",
+    "public_sha256": "b3ab678cb1ed79d892393c131e12391e41567705a20d5ca9cd3b3f28a62d24b5",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "TF2500_third_WingIt_latent_result.json": {
+    "original_sha256": "e8a5a3814ffe606310474567c686ee06ac607460c93ea10072a5560dfc523908",
+    "public_sha256": "71cd221df8dc62ccc4e376975153a8b21530df84094787181e1d13777ab4ea36",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "TF2500_third_WingIt_summary_v1.json": {
+    "original_sha256": "b2c2f18d813b28e0e7fb6d0da404e1d4935f6fd6daec1816225eb446c27fd85c",
+    "public_sha256": "8c1e18885d6f70dc80a59f37c7eb5966fc60008df16583ae114f60d4b1cc9f7a",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "history_diagnostic_cpu_control_v3.json": {
+    "original_sha256": "26af9d21859fff647a3cdc77ff99f1d36a68c069d8b8c0ece488dae9a70a5cae",
+    "public_sha256": "26af9d21859fff647a3cdc77ff99f1d36a68c069d8b8c0ece488dae9a70a5cae",
+    "redaction": null
+  },
+  "history_diagnostic_33b_admission_v3.json": {
+    "original_sha256": "5613431ad0ace54232c9990dfd070d3202bced9d3c39af03dda02e45245664a9",
+    "public_sha256": "1345bca6c853095e97e8a197e10b0c8b245a0e3c01459e4579f4c89cac2bed7d",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "history_diagnostic_33b_failure_v3.json": {
+    "original_sha256": "e7a2cac731d162419ab9ca6f16055a23ac7dd4adb4763c1d3c80ec73bfca6e35",
+    "public_sha256": "e371d5cf5b52f6a79c30fd2bfc0504f9b214b3626860115e98218fb34ebc4402",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "history_diagnostic_33b_terminal_v3.json": {
+    "original_sha256": "23f9114b100e3871129311d4c0511648a1a8e44a6daef9d62bd08ffee547390a",
+    "public_sha256": "c01207de329b45d0962e34807421c1060f0de0fbd68088a02d39a2e30e6a4ba1",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "history_diagnostic_33b_events_v3.jsonl": {
+    "original_sha256": "374bef0ac10322b04bf34d162660e94385de441a6cd29f8b639a1cffa929b954",
+    "public_sha256": "374bef0ac10322b04bf34d162660e94385de441a6cd29f8b639a1cffa929b954",
+    "redaction": null
+  },
+  "parity_trace_admission_v1.json": {
+    "original_sha256": "86dde1dea08595afa3c207728c8a1872b01c573ce37bd259d3475b9cd19c5c6b",
+    "public_sha256": "9fb019de7f6c00f7a0459cb32bb714a5d8df716881b48888ef2a9af559d03bae",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "history_diagnostic_33b_v3_stage.json": {
+    "original_sha256": "2137012ba414022710b0271f63014e6971f8aae09bb7b023599be46ed0f54d01",
+    "public_sha256": "2137012ba414022710b0271f63014e6971f8aae09bb7b023599be46ed0f54d01",
+    "redaction": null
+  },
+  "parity_trace_tf2500_v1_stage.json": {
+    "original_sha256": "757e186b023e491566a222599b7a1fa9ddbe72b50f2930d87035d9f814682c2f",
+    "public_sha256": "757e186b023e491566a222599b7a1fa9ddbe72b50f2930d87035d9f814682c2f",
+    "redaction": null
+  },
+  "history_diagnostic_cpu_control_v4.json": {
+    "original_sha256": "26af9d21859fff647a3cdc77ff99f1d36a68c069d8b8c0ece488dae9a70a5cae",
+    "public_sha256": "26af9d21859fff647a3cdc77ff99f1d36a68c069d8b8c0ece488dae9a70a5cae",
+    "redaction": null
+  },
+  "history_diagnostic_admission_v4.json": {
+    "original_sha256": "0c08fddedf3f94f2b7ccd9c62c40c607f21ce97ae12ecdea3ddf5a12ffde70a3",
+    "public_sha256": "4e8a5f7912858691dd5bccdf1ff33d9398ce9927fc6f9c51a84856bc7ace3fe1",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "history_diagnostic_33b_launch_v4.json": {
+    "original_sha256": "3a509b6b9b10c8a92e5b37ae807ef253f0ac590c26d4c3f6ffeab524128dc10e",
+    "public_sha256": "3a509b6b9b10c8a92e5b37ae807ef253f0ac590c26d4c3f6ffeab524128dc10e",
+    "redaction": null
+  },
+  "TF2500_DIAGNOSIS_20261110.json": {
+    "original_sha256": "5ae0a7629325cd7504edd153fd6d58b315966804200ea1f2bd6f6840550bc1e5",
+    "public_sha256": "5ae0a7629325cd7504edd153fd6d58b315966804200ea1f2bd6f6840550bc1e5",
+    "redaction": null
+  },
+  "parity_trace_tf2500_result_v1.json": {
+    "original_sha256": "2ccf5be3672756d751dd04586984eaa480567c4be5e595b890998da7b537acdc",
+    "public_sha256": "2ccf5be3672756d751dd04586984eaa480567c4be5e595b890998da7b537acdc",
+    "redaction": null
+  },
+  "parity_trace_tf2500_terminal_v1.json": {
+    "original_sha256": "40797bdbe7c95012a41f836a0cfaf112d04c34a2ee109ae7cd5a362e9e2a8656",
+    "public_sha256": "626ca56302a1309c091564a7c3341df04be38adb561d504d6e52d35056c1057c",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "history_diagnostic_33b_v4_stage.json": {
+    "original_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
+    "public_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
     "redaction": null
   }
 }

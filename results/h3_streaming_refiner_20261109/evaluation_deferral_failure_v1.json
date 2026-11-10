@@ -1,0 +1,6 @@
+{
+  "error": "Owned process identity changed: cmdline_sha256",
+  "traceback": "Traceback (most recent call last):\n  File \"<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/control/diagnostic_priority_v1/finish_evaluation_for_diagnosis.py\", line 79, in main\n    state = validate('worker', True)['state']\n            ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/control/diagnostic_priority_v1/finish_evaluation_for_diagnosis.py\", line 55, in validate\n    helper.validate_identity(current_for_check, expected)\n  File \"<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/stop_tf2500_v2/src/stop_tf_at_checkpoint.py\", line 48, in validate_identity\n    raise ValueError('Owned process identity changed: ' + key)\nValueError: Owned process identity changed: cmdline_sha256\n",
+  "termination_sent": false,
+  "new_optimizer_updates": 0
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "parity_trace_tf2500_v1",
+  "files": {
+    "src/trace_tf2500_parity_v1.py": "f103bf3de6e495fd67a8413b3fa0e035b82aa8bc9f7dc498e22a4b04a4a8327d",
+    "src/diagnose_tf2500_history_v3.py": "76fb04c0e4e4185428a1e2688124f833a45c7016ee840c25ae0153de2b3d3b65",
+    "src/decoder_validation_admission.py": "9581f613da889a10ea80936b3064ae4c14166e6bb4aa5f568a026a332dfba127",
+    "src/run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "config/history_diagnostic_33b_v3.json": "71d2825f4e227a3d8625cfb6ab2a226ede162f713ff4880e980f1c0baf2723be"
+  },
+  "scope": "read-only real33B four-latent parity localization; no training; no production source changes"
+}

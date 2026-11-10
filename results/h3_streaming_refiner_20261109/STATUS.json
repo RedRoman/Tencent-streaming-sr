@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T06:04:50.457039+00:00",
-  "stage": "TF2500_two_clips_complete_metric_gates_failed_third_clip_running",
+  "as_of_utc": "2026-11-10T06:44:02.415047+00:00",
+  "stage": "TF2500_training_stopped_read_only_diagnosis_running",
   "verified_optimizer_updates_at_evidence_snapshot": 2500,
   "target_updates": 2500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -41,7 +41,7 @@
     2500
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "trained2500 third dev clip WingIt300 running; fixed1000/2000 follow; no training resume",
+  "evaluation_workers": "v4 read-only diagnostic; fixed1000/2000/dense deferred; no training",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -57,7 +57,7 @@
     "chunk_invariance_scope": "first4 latents, maxabs0",
     "longer_than67_tested": false
   },
-  "full226_completed_clip_count": 6,
+  "full226_completed_clip_count": 7,
   "step200_first_clip_metric_ratios": {
     "pixel_l1": 4.620512088645055,
     "lpips": 5.604025592910683
@@ -71,7 +71,7 @@
     3
   ],
   "step200_video_technical_audit": "full226 passed",
-  "full226_completed_clip_count_definition": "arm/clip results: step0,step200,step2500,native dense firstWingIt; step0 andstep2500 ElephantsDream; two unique clips",
+  "full226_completed_clip_count_definition": "7 arm/clip results: step0/200/2500/dense firstWingIt; step0/2500 ElephantsDream; step2500 thirdWingIt. Three unique clips.",
   "dense_reference_preflight_historical": {
     "status": "failed",
     "max_abs": 0.2541511058807373,
@@ -507,5 +507,65 @@
     "no_waiter_started": true,
     "real33B_result_available": false,
     "manifest_receipt": "history_diagnostic_33b_stage_v1.json"
+  },
+  "training_restart_authorized": false,
+  "TF2500_all3_full226_complete": true,
+  "TF2500_all3_per_clip_gates_passed": false,
+  "diagnosis_snapshot": {
+    "as_of_utc": "2026-11-10T06:43:15.682893+00:00",
+    "training": "stopped_at2500; noTF/SF/DMDrestart_without_new_user_authorization",
+    "new_optimizer_updates": 0,
+    "complete_step2500_dev_clips": 3,
+    "per_clip_ratios_vs_no_refiner": [
+      {
+        "sample": "WingIt3586",
+        "L1": 4.737340886427075,
+        "LPIPS": 5.318259581761857
+      },
+      {
+        "sample": "ElephantsDream13070",
+        "L1": 3.985686943008305,
+        "LPIPS": 3.643381211557803
+      },
+      {
+        "sample": "WingIt300",
+        "L1": 4.7349928012358165,
+        "LPIPS": 5.619704666695214
+      }
+    ],
+    "confirmed_parity_issue": {
+      "sample": "WingIt3586",
+      "position": 3,
+      "checkpoint": 2500,
+      "original_max_abs": 0.3562047481536865,
+      "original_relative_RMS": 0.0109103387221694,
+      "per_latent_projection_reference_max_abs": 0,
+      "trace": "parity_trace_tf2500_result_v1.json",
+      "inference": "The numerical projection shape difference suffices to explain this four-latent parity failure. This is not proof of the full visual failure cause."
+    },
+    "other_confirmed_design_limits": [
+      "No identity-preserving residual/bypass path atstep0. Zero adapter initialization still executes noisy frozen denoising.",
+      "Original TF objective uses truncated GT histories; deployed clean KV carries earlier history influence.",
+      "FM training current input is HR/noise; inference starts from draft/noise and later sees its own denoised trajectory."
+    ],
+    "current_diagnostic": "v4 running actual33B; same weights/inputs/noise; projection-aligned offline control; three histories,FM/three-step,current-only condition ablations,train/dev",
+    "not_proven": [
+      "Training steps alone are the dominant limitation",
+      "Which gap dominates visual failure",
+      "Strict zero regression",
+      "Full226 continuous visual acceptance",
+      "Strict streamingVAE"
+    ],
+    "original_training_and_runtime_edited": false,
+    "model_accepted": false
+  },
+  "read_only_diagnostic_v4": {
+    "stage": "history_diagnostic_33b_v4",
+    "manifest_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
+    "status": "running",
+    "new_optimizer_updates": 0,
+    "original_runtime_source_edited": false,
+    "offline_projection_aligned_for_diagnosis": true,
+    "full_cohort_diagnostic_complete": false
   }
 }

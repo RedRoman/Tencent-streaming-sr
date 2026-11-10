@@ -1,0 +1,8 @@
+{
+  "type": "ValueError",
+  "error": "Four-latent same-history parity failed: {'max_abs': 0.3562047481536865, 'mse': 0.00027504743775352836, 'l1': 0.01038703229278326, 'relative_rms': 0.0109103387221694}",
+  "traceback": "Traceback (most recent call last):\n  File \"<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/history_diagnostic_33b_v3/src/diagnose_tf2500_history_v3.py\", line 378, in main\n    result = diagnose_sample(rt, sample, condition, self_history, plan, position_noise, log)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/history_diagnostic_33b_v3/src/diagnose_tf2500_history_v3.py\", line 219, in diagnose_sample\n    raise ValueError('Four-latent same-history parity failed: ' + str(gap))\nValueError: Four-latent same-history parity failed: {'max_abs': 0.3562047481536865, 'mse': 0.00027504743775352836, 'l1': 0.01038703229278326, 'relative_rms': 0.0109103387221694}\n",
+  "torch_imported": true,
+  "torch_npu_imported": true,
+  "new_optimizer_updates": 0
+}
