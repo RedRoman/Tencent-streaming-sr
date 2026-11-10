@@ -1,0 +1,38 @@
+{
+  "status": "local_original_and_comparison_video_SHA_verified",
+  "archive_sha256": "7d0eaabdb21e4c9cbcb3a6ec0412259ca827c8e1d25dd5d7e837e1a596ee85ee",
+  "archive_bytes": 19415040,
+  "files": {
+    "strict_decoder_native1080.mp4": {
+      "sha256": "f98f6fee1ef71fdf3627758d8a64b421e28b87dcdaa6ab1920e942b1da313c63",
+      "bytes": 15071700,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_passed": true
+    },
+    "strict_official_gt_full226.mp4": {
+      "sha256": "280160af6fe318af800b82ab8ca3e6cb5827b52ef6f63a08dc3f1ebe3cbd56a9",
+      "bytes": 3700384,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 310,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_passed": true
+    }
+  },
+  "continuous_visual_reviewed": false,
+  "strict_decoder_accepted": false,
+  "input_arm": "frozen_upsampler_no_refiner_decoder_ablation"
+}

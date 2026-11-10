@@ -1,0 +1,69 @@
+{
+  "status": "CPU_encoding_full226_technical_audit_complete",
+  "sample_id": "WingIt_dev_3586_3811",
+  "input_arm": "frozen_upsampler_no_refiner_decoder_ablation",
+  "source_result_sha256": "079d0052455865ce5375295188c93221c3fa333c576491e4c9e80610af4fc592",
+  "sources": [
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/validation/strict_decoder_pretrained_v1/first67_visible_RGB.npy",
+      "sha256": "fcdf672e7e0140a489626f41f732f435aad1767838b31de05b1807e7c4ed24da",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104/upscaler_production67_limiteddev_evaluation_20261107_v1/pixels/WingIt_dev_3586_3811/teacher_student_RGB.npy",
+      "bytes": 1405900928,
+      "sha256": "6dca486d86df699161eca8413749194a16a095db2ceb2762e1e26813726a77fc"
+    },
+    {
+      "path": "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104/upscaler_production67_wing_engineering_20261107/data_v1/pair/arrays/native_hr_rgb.npy",
+      "bytes": 1405900928,
+      "sha256": "9835dbf231e5a8ebf2302abf9ef05b924f2855a9406a73eaffe33a9a0eaad733"
+    }
+  ],
+  "files": {
+    "strict_decoder_native1080.mp4": {
+      "sha256": "f98f6fee1ef71fdf3627758d8a64b421e28b87dcdaa6ab1920e942b1da313c63",
+      "bytes": 15071700,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_passed": true
+    },
+    "strict_official_gt_full226.mp4": {
+      "sha256": "280160af6fe318af800b82ab8ca3e6cb5827b52ef6f63a08dc3f1ebe3cbd56a9",
+      "bytes": 3700384,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 310,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "all226_pts_checked": true,
+      "full_decode_passed": true
+    }
+  },
+  "comparison_columns": [
+    "strict_streaming_decoder",
+    "official_overlap_decoder",
+    "nativeHR"
+  ],
+  "refiner_applied": false,
+  "strict_decoder_accepted": false,
+  "continuous_visual_reviewed": false,
+  "optimizer_updates": 0,
+  "accelerator_forwards": 0,
+  "note": "Full226 video; metrics remain from 1080p lossless RGB. Contact sheet is static sampling only."
+}

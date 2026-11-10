@@ -1,0 +1,112 @@
+{
+  "status": "pretrained_decoder_technical_checks_complete_quality_gate_failed",
+  "observed_at": "2026-11-10T19:55:08.706026+00:00",
+  "result_sha256": "079d0052455865ce5375295188c93221c3fa333c576491e4c9e80610af4fc592",
+  "sample_id": "WingIt_dev_3586_3811",
+  "input_arm": "frozen_upsampler_no_refiner_decoder_ablation",
+  "frames": 226,
+  "full226_per_frame_comparison": {
+    "l1": {
+      "improved": 3,
+      "worsened": 223
+    },
+    "mse": {
+      "improved": 8,
+      "worsened": 218
+    },
+    "lpips": {
+      "improved": 8,
+      "worsened": 218
+    }
+  },
+  "region_ratios_strict_vs_same_input_official": {
+    "full226": {
+      "pixel_l1": 1.056388589605701,
+      "mse": 1.104118795893254,
+      "lpips": 1.0868512222447528,
+      "delta_l1": 1.0885152526481305,
+      "temporal_difference_mse": 1.119399327172502
+    },
+    "prefix208": {
+      "pixel_l1": 1.0556349571109933,
+      "mse": 1.1024516381831198,
+      "lpips": 1.0863892535594635,
+      "delta_l1": 1.0889698598043278,
+      "temporal_difference_mse": 1.1194117097895653
+    },
+    "tail18": {
+      "pixel_l1": 1.0647254072253998,
+      "mse": 1.1208293186290281,
+      "lpips": 1.0921739975676445,
+      "delta_l1": 1.0872825980568377,
+      "temporal_difference_mse": 1.1215570351819841
+    },
+    "blend": {
+      "pixel_l1": 1.049397507502713,
+      "mse": 1.1024809383399188,
+      "lpips": 1.0776613813099434,
+      "delta_l1": 1.0513988599879633,
+      "temporal_difference_mse": 1.094924573383822
+    },
+    "nonblend": {
+      "pixel_l1": 1.0588762139836856,
+      "mse": 1.1046793580568046,
+      "lpips": 1.0899041794602256,
+      "delta_l1": 1.073035434985801,
+      "temporal_difference_mse": 1.1124679039114198
+    }
+  },
+  "predeclared_quality_limit": 1.02,
+  "first_clip_metric_gate_passed": false,
+  "strict_decoder_accepted": false,
+  "technical_gates": {
+    "small_spatial9": {
+      "scope": "full pretrained36layer VAE,16x16 latent crop,nine latents",
+      "max_abs": 0.0,
+      "by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference": "pinned upstream incremental, not official bidirectional overlap"
+    },
+    "full_spatial": {
+      "first8_reset_replay_RGB_max_abs": 0,
+      "future_prefix_first7_RGB_max_abs": 0,
+      "perturbed_eighth_output_changed": true,
+      "scope": "full68x120 latent /1080p pixels; no continuous visual acceptance"
+    },
+    "long137": {
+      "status": "full_pretrained_decoder137_stress_complete",
+      "latent_count": 137,
+      "decoded_frames": 464,
+      "input": "authorized firstWingIt frozen-upsampled67-latent clip, looped by modulo67",
+      "unique_source_latents": 67,
+      "host_KV_bytes": 63594823680,
+      "max_retained_latents": 7,
+      "slot_forward_count": 190,
+      "bounded_past_slot_refreshes": 53,
+      "all464_RGB_sha256": "5a932d407874e44aed04a52af410149f614506175652fe6ded389f11776a2722",
+      "peak_allocated_NPU_bytes": 11672020992,
+      "full_model_refiner_longstream_validated": false,
+      "optimizer_updates": 0
+    },
+    "median_seconds_per_latent": 13.541736125946045
+  },
+  "limits": [
+    "No refiner in this decoder ablation.",
+    "Parity reference is pinned upstream incremental decoder, not official overlap decoder.",
+    "Reset/chunk replay is not serialized decoder KV save/restore.",
+    "137 looped inputs use only67 unique source latents, not a real long video.",
+    "Continuous visual review and strict decoder on refiner outputs remain unverified.",
+    "This does not invalidate existing refiner quality comparisons using unchanged official decoder."
+  ],
+  "next": "Preserve failed quality gate and frozen implementation. No rerun or threshold change. Continue existing real33B long validator; package current decoder RGB as CPU-only video.",
+  "optimizer_updates": 0
+}

@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T19:10:14.145371+00:00",
-  "stage": "six_full226_video_sets_complete_originals_delivered_validators_running",
+  "as_of_utc": "2026-11-10T20:02:58.549507+00:00",
+  "stage": "six_video_sets_delivered_strict_decoder_quality_failed_real33B_long_running",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -700,10 +700,12 @@
     "all_original_resolution_videos_local": 18,
     "all_playback_videos_local": 18,
     "report": "ANCHORED_SIX_VIDEO_SETS_FULL226_V1.md",
-    "video_index": "VIDEO_DELIVERY_PUBLIC_INDEX_V1.md"
+    "video_index": "VIDEO_DELIVERY_PUBLIC_INDEX_V1.md",
+    "strict_decoder_technical_scope_passed": true,
+    "strict_decoder_quality_gate_passed": false
   },
   "strict_decoder_next_execution": {
-    "status": "unique_NPU_validator_running_smallspatial9_exact0_fullspatial137_pending",
+    "status": "complete_exit0_reaped_technical_pass_quality_fail",
     "current_predecessor": "stage2000 ElephantsDream full video completion/exit/reap",
     "original_predecessor_still_required": "evaluation_continuation_v2 terminal/reaped",
     "NPU_launched": true,
@@ -712,10 +714,23 @@
     "child_pid": 2290440,
     "all_three_kernel_locks_verified": true,
     "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json",
-    "small_spatial_report": "strict_decoder_pretrained_small_spatial9_v1.json"
+    "small_spatial_report": "strict_decoder_pretrained_small_spatial9_v1.json",
+    "parent_and_child_absent": true,
+    "child_reaped": true,
+    "exit_code": 0,
+    "running": false,
+    "strict_decoder_accepted": false,
+    "full_spatial137_technical_passed": true,
+    "full226_L1_ratio": 1.056388589605701,
+    "full226_LPIPS_ratio": 1.0868512222447528,
+    "input_arm": "frozen_upsampler_no_refiner_decoder_ablation",
+    "report": "STRICT_DECODER_PRETRAINED_RESULT_V1.md",
+    "video": "strict_official_gt_full226.mp4",
+    "continuous_visual_reviewed": false,
+    "do_not_relaunch": true
   },
   "real33B_long137_next_execution": {
-    "status": "unique_exactstage1000_NPU_validator_running",
+    "status": "original_job_still_running",
     "manifest_original_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
     "exact_checkpoint_stage_step": 1000,
     "scope": "137 fullspatial positions, looping67 authorizeddraft; not137unique content",
@@ -735,6 +750,11 @@
     "parent_pid": 2297413,
     "child_pid": 2298677,
     "all_three_kernel_locks_verified": true,
-    "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json"
+    "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json",
+    "latest_observed_at": "2026-11-10T19:55:08.706026Z",
+    "completed_latents": 54,
+    "total_latents": 137,
+    "report": "heartbeat_validators_20261110T1954_v1.json",
+    "do_not_relaunch": true
   }
 }
