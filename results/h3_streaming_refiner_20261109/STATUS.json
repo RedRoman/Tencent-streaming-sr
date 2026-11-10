@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-09T15:31:51.427795+00:00",
+  "as_of_utc": "2026-11-10T02:02:42.278450+00:00",
   "stage": "TF3000_continuation_running_real_optimizer_updates",
-  "verified_optimizer_updates_at_evidence_snapshot": 328,
+  "verified_optimizer_updates_at_evidence_snapshot": 2377,
   "target_updates": 3000,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
@@ -16,7 +16,27 @@
     100,
     150,
     200,
-    300
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1800,
+    1900,
+    2000,
+    2100,
+    2200,
+    2300
   ],
   "dev_payloads_CPU_verified": 3,
   "evaluation_workers": "short-pilot continuation intentionally stopped/reaped after thirdWingIt full67; remaining grid deferred; prioritized TF3000 now running",
@@ -188,7 +208,7 @@
   "TF_extension_3000": {
     "resume_from_step": 200,
     "target_total_real_optimizer_updates": 3000,
-    "new_training_updates_so_far": 128,
+    "new_training_updates_so_far": 2177,
     "optimizer_restored": true,
     "CPU_resume_integrity_passed": true,
     "NPU_training_launched": true,
@@ -204,12 +224,14 @@
       2000,
       3000
     ],
-    "total_training_updates_at_snapshot": 328,
+    "total_training_updates_at_snapshot": 2377,
     "real_full_model_resume_gates": "passed; cache/future/condition_future/reload exact0; real backward finite/nonzero",
     "new_update_gradients_finite_nonzero": true,
     "running": true,
-    "latest_verified_saved_step": 300,
-    "first_new_checkpoint_CPU_audit": "TF3000_step0300_CPU_audit_v1.json"
+    "latest_verified_saved_step": 2000,
+    "first_new_checkpoint_CPU_audit": "TF3000_step0300_CPU_audit_v1.json",
+    "trained_checkpoint_CPU_audit": "TF3000_step1000_2000_CPU_audit_v1.json",
+    "all_new_events_and_schedule_verified_through": 2357
   },
   "step0_third_WingIt": {
     "full67_complete": true,
@@ -219,5 +241,39 @@
   },
   "step0_identity_guaranteed": false,
   "strict_zero_regression_guaranteed": false,
-  "identity_scope_report": "TF3000_STEP300_AND_IDENTITY_SCOPE_V1.md"
+  "identity_scope_report": "TF3000_STEP300_AND_IDENTITY_SCOPE_V1.md",
+  "saved_steps_list_scope": "training receipts observed; independent full CPU audits explicitly listed",
+  "independently_audited_saved_steps": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    300,
+    1000,
+    2000
+  ],
+  "trained_checkpoint_evaluation": {
+    "prepared": true,
+    "checkpoints": [
+      1000,
+      2000,
+      3000
+    ],
+    "execution_order": [
+      3000,
+      1000,
+      2000
+    ],
+    "stage_manifest_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
+    "CPU_guard_tests": 7,
+    "active_training_entrypoint_refusal_passed": true,
+    "NPU_launched": false,
+    "waiter_started": false,
+    "model_workers_changed": false,
+    "new_streaming_jobs_planned": 9,
+    "new_dense_jobs_planned": 2,
+    "dense_first_clip_reuse_planned": true,
+    "report": "TF3000_TRAINED_EVALUATION_PREP_V1.md"
+  }
 }

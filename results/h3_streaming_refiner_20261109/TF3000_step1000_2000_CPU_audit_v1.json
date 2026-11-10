@@ -1,0 +1,60 @@
+{
+  "observed_at_utc": "2026-11-10T01:56:25.675053+00:00",
+  "status": "passed",
+  "checkpoints": [
+    {
+      "step": 1000,
+      "parameter_tensors": 401,
+      "parameter_elements": 20586496,
+      "all_optimizer_steps_match": true,
+      "all_moments_finite": true,
+      "optimizer_configuration_preserved": true,
+      "parameter_order_sha256": "45671f8d6b98b2e65b88c9eab796bf6da3f5d263caa319f6e9c0ce5982ee1a7a",
+      "receipt": {
+        "step": 1000,
+        "adapter_sha256": "9054d1c096df224c7450cfa6207e303cd98a1316e8cfc1b5a6609bfe528ad42a",
+        "private_optimizer_sha256": "27f68163d24bb1f8ef0e2fa81ef8a0222af05424ece7539367a9fc3a6aaee57c",
+        "adapter_bytes": 82478252,
+        "private_optimizer_bytes": 165061202,
+        "private_state_CPU_tensors": true,
+        "inference_weights_accepted": false
+      },
+      "full_payload_SHA_verified": true,
+      "CPU_RNG_states_present": true,
+      "next_schedule_verified": true,
+      "parameter_names_match": true
+    },
+    {
+      "step": 2000,
+      "parameter_tensors": 401,
+      "parameter_elements": 20586496,
+      "all_optimizer_steps_match": true,
+      "all_moments_finite": true,
+      "optimizer_configuration_preserved": true,
+      "parameter_order_sha256": "45671f8d6b98b2e65b88c9eab796bf6da3f5d263caa319f6e9c0ce5982ee1a7a",
+      "receipt": {
+        "step": 2000,
+        "adapter_sha256": "68f013025282c53cc468cc3107b298c316ea1b97bebf6cbf5dde212f1e3b5c2e",
+        "private_optimizer_sha256": "e36a8d20a4fb427ab3c97989a7472ddfc2ec00388efcee04c77c6902d278fa6a",
+        "adapter_bytes": 82478252,
+        "private_optimizer_bytes": 165061202,
+        "private_state_CPU_tensors": true,
+        "inference_weights_accepted": false
+      },
+      "full_payload_SHA_verified": true,
+      "CPU_RNG_states_present": true,
+      "next_schedule_verified": true,
+      "parameter_names_match": true
+    }
+  ],
+  "latest_logged_actual_optimizer_updates": 2357,
+  "new_actual_optimizer_updates": 2157,
+  "contiguous_steps_and_entire_schedule_verified": true,
+  "all_new_losses_finite": true,
+  "all_new_gradients_finite_nonzero": true,
+  "new_optimizer_updates_by_audit": 0,
+  "new_NPU_jobs": 0,
+  "torch_npu_imported": false,
+  "full_NPU_resume_tested_at_1000_or_2000": false,
+  "quality_evaluated": false
+}

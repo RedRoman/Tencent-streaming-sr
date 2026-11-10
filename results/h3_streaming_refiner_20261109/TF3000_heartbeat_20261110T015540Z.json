@@ -1,0 +1,226 @@
+{
+  "observed_at_utc": "2026-11-10T01:55:40.607384+00:00",
+  "status": {
+    "status": "TF_training",
+    "optimizer_updates": 2355,
+    "new_optimizer_updates": 2155,
+    "target": 3000,
+    "last_loss": 0.08838806301355362,
+    "updated_unix": 1794275732.765493,
+    "selected_refiner": null
+  },
+  "launch_status": "running",
+  "processes": {
+    "339297": {
+      "present": true,
+      "state_parent_pgrp": [
+        "S",
+        "1",
+        "339297"
+      ]
+    },
+    "339430": {
+      "present": true,
+      "state_parent_pgrp": [
+        "S",
+        "339297",
+        "339430"
+      ]
+    }
+  },
+  "checkpoint_receipts": [
+    {
+      "step": 300,
+      "adapter_sha256": "74aa991fa8838393b2767636f449cc4ab02f1cee60bbc2024aa38caadff885e0",
+      "private_optimizer_sha256": "4cda247861251dcbe43348190604741dcfe4fe22fdb95d6d8fe92c808a5f4638",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 400,
+      "adapter_sha256": "6bc714d8c52a963f31777cce29fa5721f4e65d9416b27d6438d357b9f35d224f",
+      "private_optimizer_sha256": "01727830ddc37de5859438cd0b5a3fecf36a4e3da46181dc391b752ed78fd9c5",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 500,
+      "adapter_sha256": "fa30ca93f3579d41c2404b4c7bb89b202eb21bab7c5a5a92e06a596847b8751e",
+      "private_optimizer_sha256": "1f30345f029619a66fbd60174db965873bf3fab19327015e421a0185e1372de7",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 600,
+      "adapter_sha256": "b57bbc561d92a0c9adb44d35144441e91a8047d05842268158afcc161326b084",
+      "private_optimizer_sha256": "f92502a8476245393853233f9f14df187e45a6ff30ea9d5df70f0fa9adfbc6ff",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 700,
+      "adapter_sha256": "16b7984acc019a601e773b15d3ca6e8af857467192eeb3849ab024efd5cad5b8",
+      "private_optimizer_sha256": "aaacf55c33ceaa7e44bbc43b5dedf8d6bea2b9dc3d51b56df4c10e9e7aa6e537",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 800,
+      "adapter_sha256": "a789f87adeff549d77d424c977205e32f6c4a5d57cf20792b817c747dc8c6511",
+      "private_optimizer_sha256": "2b21f3554fb3fc1469c06ff7042bfbbdaeecdfbd64da3ce90fb9078b6d52a498",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 900,
+      "adapter_sha256": "cd2362c548a6876cd13890d24d6c3748b3d54b62009f203622e6b158e2817d11",
+      "private_optimizer_sha256": "aceb3309c9e84644230d358e599aebd8e07fbdc82ef938167f1108d62a020db5",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1000,
+      "adapter_sha256": "9054d1c096df224c7450cfa6207e303cd98a1316e8cfc1b5a6609bfe528ad42a",
+      "private_optimizer_sha256": "27f68163d24bb1f8ef0e2fa81ef8a0222af05424ece7539367a9fc3a6aaee57c",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1100,
+      "adapter_sha256": "bddb252a31c7e8c2a7f4b63053975d6399c7c5f693a19212e21367e33d1ceda4",
+      "private_optimizer_sha256": "69dd23403ac6f3ff84bc4b08bb4f1c73e1ac4ba94013e7949d58525dbe3909da",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1200,
+      "adapter_sha256": "1dea98b5e8d47166ab13bbf396c4e34ac219deb25a86a536f88cec8cfcbe211d",
+      "private_optimizer_sha256": "4ace1f60e7f2399abd7e9ff4280f5350049960d8befa622c2f871877673842b8",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1300,
+      "adapter_sha256": "8e91a55a18767178cecd1391ed0a926defcdd8f3de3b869928eb2976d8031ecf",
+      "private_optimizer_sha256": "81e1066895b240a8d84dd00ff6a660bb523a4bd1ec6e6318624cc0026cc14f73",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1400,
+      "adapter_sha256": "36c3f84db8fd3ca0eda546bd93ca320acbb43f18751ff6198e084c3621b8c9ff",
+      "private_optimizer_sha256": "8d5c7d63a5eddc855b69c0834e3cbf67a8915c75f9e0d506f66c276518aedcd2",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1500,
+      "adapter_sha256": "b4b7f5ca869a8d6d2ea5d9e6967681276b6173f9cf6ef22b7f78a1fbd4286c96",
+      "private_optimizer_sha256": "22e8bac075112b54f86858f8166fb6183b757bd81a08b233ee98fd335c607afc",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1600,
+      "adapter_sha256": "63e6755eeba5512fdf40d79eb7496d0925485e9954054d3d8d4c5eccde5c56f2",
+      "private_optimizer_sha256": "4c6e599ab8ebc949104a01efbb24db23c16b2106d9e532c4da8baeadfcb6d3b1",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1700,
+      "adapter_sha256": "49680974b4bf3f152bbe0021a5cc1195e24fec2767507ca8ef520cfcb83de88a",
+      "private_optimizer_sha256": "7665ed33e89b92e2d654d8853102764e17d30a178cabdf721460b64a29dfb2ff",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1800,
+      "adapter_sha256": "50cc166835998a07213ea5007e83519e1a1ff3d538cc3af09d79ea171f91f9c5",
+      "private_optimizer_sha256": "fab783a098eda29584967e0be9f24feabcf079503aa461069c6ad40057c65cd5",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 1900,
+      "adapter_sha256": "14249091f93b55d35211dc1f96b1f1d80d85cec03a22c80e5c0a303bc13702be",
+      "private_optimizer_sha256": "d18281e3f16d67f7ba47d613c53c7e4a564b2a33fe8ade439bb560ae9174cc21",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 2000,
+      "adapter_sha256": "68f013025282c53cc468cc3107b298c316ea1b97bebf6cbf5dde212f1e3b5c2e",
+      "private_optimizer_sha256": "e36a8d20a4fb427ab3c97989a7472ddfc2ec00388efcee04c77c6902d278fa6a",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 2100,
+      "adapter_sha256": "90b6187bef9a4226225453113f3d945ccdd75564734a07e9affbe6201a8295db",
+      "private_optimizer_sha256": "f484490b022a412aad7eff5775f2926a4105bec1640e0db284aede8682545fd8",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 2200,
+      "adapter_sha256": "a294bd21f2f3634539948cd71abfaf82d7ce8a556a3ad09ab58cab7b2093ae97",
+      "private_optimizer_sha256": "f35f03b67d70534e602192fd986ed44fc65593597331972c8145007bcd55feac",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    },
+    {
+      "step": 2300,
+      "adapter_sha256": "d19402bda2d54796cef7215f212b069de1ad0f115a30255e82d1e515aa94356d",
+      "private_optimizer_sha256": "1e86ca0de2cb10c65ec34c2b5360fd3ac7a9b5e5b07de671cfd87d5e2b2099d0",
+      "adapter_bytes": 82478252,
+      "private_optimizer_bytes": 165061202,
+      "private_state_CPU_tensors": true,
+      "inference_weights_accepted": false
+    }
+  ],
+  "log_age_seconds": 7.849047899246216,
+  "failure_json_exists": false,
+  "new_jobs_started": 0,
+  "all_three_kernel_FLOCK_owner_checks_passed": true
+}

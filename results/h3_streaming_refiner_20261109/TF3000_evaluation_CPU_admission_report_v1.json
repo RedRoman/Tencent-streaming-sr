@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "observed_at_utc": "2026-11-10T02:02:42.278450+00:00",
+  "stage_manifest_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
+  "CPU_guard_tests": 7,
+  "actual_entrypoint_refuses_active_training": true,
+  "refusal_before_torch_import": true,
+  "runtime_started": false,
+  "new_optimizer_updates": 0,
+  "new_NPU_jobs": 0,
+  "admission": {
+    "status": "CPU_admission_complete",
+    "ready_for_NPU": false,
+    "manifest_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
+    "protocol_sha256": "1ca2fe29a7b7fcc41949e964195cd190c075676890cacd9890ee113b655a3c9d",
+    "parent_dev_manifest_sha256": "9ce8eebb66ad62e243dfa0eafef2961bdf72539d44ed514f03b8dc99d4f31f23",
+    "training_status": {
+      "status": "TF_training",
+      "optimizer_updates": 2377,
+      "new_optimizer_updates": 2177,
+      "target": 3000,
+      "last_loss": 0.07002865523099899,
+      "updated_unix": 1794276147.0067346,
+      "selected_refiner": null
+    },
+    "training_predecessor": {
+      "terminal": false,
+      "processes_absent": false,
+      "ready": false
+    },
+    "checkpoint_receipts": {
+      "1000": {
+        "step": 1000,
+        "adapter_sha256": "9054d1c096df224c7450cfa6207e303cd98a1316e8cfc1b5a6609bfe528ad42a",
+        "private_optimizer_sha256": "27f68163d24bb1f8ef0e2fa81ef8a0222af05424ece7539367a9fc3a6aaee57c",
+        "adapter_bytes": 82478252,
+        "private_optimizer_bytes": 165061202,
+        "private_state_CPU_tensors": true,
+        "inference_weights_accepted": false
+      },
+      "2000": {
+        "step": 2000,
+        "adapter_sha256": "68f013025282c53cc468cc3107b298c316ea1b97bebf6cbf5dde212f1e3b5c2e",
+        "private_optimizer_sha256": "e36a8d20a4fb427ab3c97989a7472ddfc2ec00388efcee04c77c6902d278fa6a",
+        "adapter_bytes": 82478252,
+        "private_optimizer_bytes": 165061202,
+        "private_state_CPU_tensors": true,
+        "inference_weights_accepted": false
+      }
+    },
+    "missing_checkpoints": [
+      3000
+    ],
+    "runtime_started": false,
+    "new_optimizer_updates": 0,
+    "new_accelerator_forwards": 0,
+    "dense_reuse_payload_check_pending": true
+  },
+  "full_dense_payload_reuse_check_pending_until_admission": true,
+  "sources_frozen_model_workers_unchanged": true,
+  "failure_receipt_sha256": "391f11b208264f2b3626e407b4ee22ca31a05b6be0a985e01390853d7762e81c"
+}

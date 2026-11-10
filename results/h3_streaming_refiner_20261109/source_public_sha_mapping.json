@@ -288,9 +288,26 @@
     "public_sha256": "931ce0fa86d1e911c47a6db20b4df97aca993b286bd2b0d299506b3390249200"
   },
   "README.md": {
-    "source_sha256": "9da4542a679c415a7e694fa030981648c1a22ee50889cf9af0899f2929e82014",
-    "public_sha256": "9da4542a679c415a7e694fa030981648c1a22ee50889cf9af0899f2929e82014",
-    "prior_public_sha256": "c632d7eb2d7ae84e2f171112c166c304c957253b440550456d6af3f4f800336e",
-    "source_note": "current original documentation snapshot retained as README_TF3000_step300_snapshot.md"
+    "source_sha256": "975aaa1c8c59080e43cea7984040d29542361d9c72b62e847e6d41f37910997e",
+    "public_sha256": "975aaa1c8c59080e43cea7984040d29542361d9c72b62e847e6d41f37910997e",
+    "prior_public_sha256": "9da4542a679c415a7e694fa030981648c1a22ee50889cf9af0899f2929e82014",
+    "source_note": "current original snapshot retained as README_TF3000_trained_eval_snapshot.md"
+  },
+  "src/run_tf3000_evaluation.py": {
+    "source_sha256": "8f9d41889117f312cdcd1f3206d6ed8c437e67ca05b81730b143897101eec278",
+    "public_sha256": "8f9d41889117f312cdcd1f3206d6ed8c437e67ca05b81730b143897101eec278"
+  },
+  "src/test_tf3000_evaluation_admission.py": {
+    "source_sha256": "64a32fa8dde0ebd92ccc80acf5b016620d4aa96ceb9c3210ad84319147785dd1",
+    "public_sha256": "64a32fa8dde0ebd92ccc80acf5b016620d4aa96ceb9c3210ad84319147785dd1"
+  },
+  "config/evaluation_tf3000_v1.json": {
+    "source_sha256": "1ca2fe29a7b7fcc41949e964195cd190c075676890cacd9890ee113b655a3c9d",
+    "public_sha256": "1ca2fe29a7b7fcc41949e964195cd190c075676890cacd9890ee113b655a3c9d"
+  },
+  "config/tf3000_evaluation_stage_v1.json": {
+    "source_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
+    "public_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
+    "note": "Exact private execution-stage manifest; original source hashes retained. Public source hash mapping records environment-path redactions separately."
   }
 }

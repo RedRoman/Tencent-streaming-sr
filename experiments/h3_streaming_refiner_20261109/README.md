@@ -73,3 +73,7 @@ The untrained causal step0 now completed all67 latents and226 frames, with exact
 ## TF3000 continuation
 
 `src/train_tf_extended.py` restores the exact step200 adapter and401 AdamW states, validates their parameter ordering and moments, and repeats real backward/causality/cache/reload gates before update201. `src/tf_resume_utils.py` preserves the absolute training schedule and reads the known legacy NPU optimizer format on CPU with a restricted weights-only loader. `config/tf_extension_3000_v1.json` pins the continuation sources and inputs. New checkpoints are saved every100 updates with private CPU optimizer/RNG state; only source and sanitized evidence are published here. The acceptance thresholds remain unchanged, while short-pilot failures do not halt this user-directed longer training run.
+
+## Trained1000/2000/3000 evaluation preparation
+
+The1000 and2000 TF checkpoints passed complete CPU payload/AdamW/RNG integrity audits; the timestamped training snapshot is2377 real updates. `src/run_tf3000_evaluation.py` and `config/evaluation_tf3000_v1.json` prepare the fixed trained cohort using unchanged model workers. The actual entrypoint refuses active or incomplete training before accelerator imports. No evaluation has started; the full226 decoder remains provisional and step0 identity remains unimplemented. See the [audit, launch constraints and preparation evidence](../../results/h3_streaming_refiner_20261109/TF3000_TRAINED_EVALUATION_PREP_V1.md).
