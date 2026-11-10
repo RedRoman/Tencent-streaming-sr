@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-10T10:55:16.638542+00:00",
+  "as_of_utc": "2026-11-10T13:04:28.524665+00:00",
   "stage": "anchored_candidate_training_after_real_gates",
-  "verified_optimizer_updates_at_evidence_snapshot": 3201,
+  "verified_optimizer_updates_at_evidence_snapshot": 3792,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
@@ -41,7 +41,7 @@
     2500
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "anchored_stage1000 evaluator prepared; awaiting exact new-stage1000; original TF1000/2000 evaluation deferred",
+  "evaluation_workers": "exact anchored stage1000 full67/full226 evaluator active on independent NPU4; original trainer continues on NPU7",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -577,7 +577,7 @@
   },
   "anchored_candidate_v1": {
     "base_updates": 2500,
-    "new_verified_optimizer_updates": 701,
+    "new_verified_optimizer_updates": 1292,
     "planned_new_updates": 2000,
     "planned_total_updates": 4500,
     "status": "training",
@@ -593,9 +593,9 @@
     "checkpoint_stage0_reload_identity_max_abs": 0,
     "gates": "anchored_real_gates_v1.json",
     "roundtrip": "anchored_roundtrip_v1.json",
-    "snapshot": "anchored_stage0500_short_dev_summary_v1.json",
+    "snapshot": "anchored_stage1000_eval_started_summary_v1.json",
     "checkpoint_stage100_CPU_audit": "anchored_checkpoint_stage0100_audit_v1.json",
-    "checkpoint_receipts_through_stage": 700,
+    "checkpoint_receipts_through_stage": 1200,
     "short_dev_stage500": {
       "scope": "first4 latent only",
       "ratios": [
@@ -607,23 +607,48 @@
       "result": "mixed_two_regressions_one_improvement",
       "report": "anchored_dev_first4_stage0500.json",
       "full226_complete": false
+    },
+    "checkpoint_stage1000_CPU_audit": "anchored_checkpoint_stage1000_CPU_audit_v1.json",
+    "short_dev_stage1000": {
+      "scope": "first4 latent only",
+      "ratios": [
+        1.0963747641116983,
+        0.9229131047012326,
+        1.1612903225806452
+      ],
+      "equal_clip_mean_ratio": 1.0601927304645253,
+      "all3_improve_vs500": true,
+      "two_clips_regress_vs_no_refiner": true,
+      "report": "anchored_dev_first4_stage1000.json",
+      "full226_complete": false
     }
   },
   "anchored_stage1000_video_review": {
-    "status": "prepared_waiting_exact_stage1000",
+    "status": "running_unique_evaluator_after_exact_checkpoint_CPU_audit_and_real33B_gates",
     "stage_optimizer_updates": 1000,
     "total_optimizer_updates": 3500,
     "evaluation_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
     "CPU_control": "anchored_eval_CPU_control_v1.json",
-    "admission": "anchored_step1000_eval_admission_v1.json",
+    "admission": "anchored_eval1000_admission_ready_v1.json",
     "reuse": "anchored_stage1000_dense_reuse_CPU_v1.json",
     "first_sample": "WingIt_dev_3586_3811",
-    "NPU_evaluation_launched": false,
+    "NPU_evaluation_launched": true,
     "waiter_started": false,
     "training_continues": true,
     "full226_video_complete": false,
     "continuous_visual_reviewed": false,
     "model_accepted": false,
-    "independent_device_required": true
+    "independent_device_required": true,
+    "real_gates": "anchored_eval1000_real_gates_v1.json",
+    "checkpoint": {
+      "stage_step": 1000,
+      "total_optimizer_updates": 3500,
+      "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+      "private_optimizer_sha256": "90120faacc2f7cc2da9e03ef1d94fd7ceaaa01f8860529cb9d1963dd208f00cd",
+      "adapter_bytes": 82508131,
+      "private_state_bytes": 165122637,
+      "selected": false
+    },
+    "full67_complete": false
   }
 }

@@ -1,0 +1,64 @@
+{
+  "stage_step": 1000,
+  "results": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "latent_MSE": 0.10024294257164001,
+      "no_refiner_MSE": 0.09143127501010895,
+      "MSE_ratio": 1.0963747641116983,
+      "audit": {
+        "next_latent": 4,
+        "model_forwards": 16,
+        "denoise_steps_per_latent": 3,
+        "clean_cache_write_forwards_per_latent": 1,
+        "lookahead_latents": 0,
+        "recomputed_history_latents": 0,
+        "cache_bytes": 6930022400,
+        "max_cached_video_frames": 2,
+        "residual_elementwise_bound": 0.25,
+        "decoder_validated": false,
+        "strict_zero_regression_guaranteed_after_training": false
+      }
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "latent_MSE": 0.16277815401554108,
+      "no_refiner_MSE": 0.17637430131435394,
+      "MSE_ratio": 0.9229131047012326,
+      "audit": {
+        "next_latent": 4,
+        "model_forwards": 16,
+        "denoise_steps_per_latent": 3,
+        "clean_cache_write_forwards_per_latent": 1,
+        "lookahead_latents": 0,
+        "recomputed_history_latents": 0,
+        "cache_bytes": 6930022400,
+        "max_cached_video_frames": 2,
+        "residual_elementwise_bound": 0.25,
+        "decoder_validated": false,
+        "strict_zero_regression_guaranteed_after_training": false
+      }
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "latent_MSE": 0.08685073256492615,
+      "no_refiner_MSE": 0.07478813081979752,
+      "MSE_ratio": 1.1612903225806452,
+      "audit": {
+        "next_latent": 4,
+        "model_forwards": 16,
+        "denoise_steps_per_latent": 3,
+        "clean_cache_write_forwards_per_latent": 1,
+        "lookahead_latents": 0,
+        "recomputed_history_latents": 0,
+        "cache_bytes": 6930022400,
+        "max_cached_video_frames": 2,
+        "residual_elementwise_bound": 0.25,
+        "decoder_validated": false,
+        "strict_zero_regression_guaranteed_after_training": false
+      }
+    }
+  ],
+  "scope": "first4 latent only; not full226 pixels/visual acceptance",
+  "optimizer_updates_during_eval": 0
+}

@@ -520,30 +520,36 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
-    "public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
-    "prior_public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+    "original_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
+    "public_sha256": "7c65355177e4c55c3353b2518bcf9817eb128406e4f525e8e23abb2c2a72b681",
+    "prior_public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
     "prior_mapping": {
-      "original_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
-      "public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
-      "prior_public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+      "original_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
+      "public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
+      "prior_public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
       "prior_mapping": {
-        "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-        "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-        "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+        "original_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+        "public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+        "prior_public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
         "prior_mapping": {
-          "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-          "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-          "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+          "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+          "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+          "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+          "prior_mapping": {
+            "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+            "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+            "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+            "redaction": null,
+            "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+          },
           "redaction": null,
-          "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+          "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
         },
-        "redaction": null,
-        "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
+        "source_note": "current snapshot retained as STATUS_anchored_eval_preparation_snapshot.json"
       },
-      "source_note": "current snapshot retained as STATUS_anchored_eval_preparation_snapshot.json"
+      "source_note": "current snapshot retained as STATUS_anchored_stage0500_snapshot.json"
     },
-    "source_note": "current snapshot retained as STATUS_anchored_stage0500_snapshot.json"
+    "source_note": "current snapshot retained as STATUS_anchored_stage1000_snapshot.json"
   },
   "history_diagnostic_cpu_control_v1.json": {
     "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
@@ -838,6 +844,36 @@
   "anchored_stage0500_short_dev_summary_v1.json": {
     "original_sha256": "3f861142800b742a5e5e4fbfed9d58cff2a574667b37250697e1e2e9e067a27e",
     "public_sha256": "3f861142800b742a5e5e4fbfed9d58cff2a574667b37250697e1e2e9e067a27e",
+    "redaction": null
+  },
+  "anchored_checkpoint_stage1000.json": {
+    "original_sha256": "d7fd4a3fb14b6a43edc318769ad5414fd01a6dc3bbb1163559f346ae80e6db28",
+    "public_sha256": "d7fd4a3fb14b6a43edc318769ad5414fd01a6dc3bbb1163559f346ae80e6db28",
+    "redaction": null
+  },
+  "anchored_dev_first4_stage1000.json": {
+    "original_sha256": "2352296e703301ca21bf7016689904aef4c5a824d0b5627f792b67557380b211",
+    "public_sha256": "2352296e703301ca21bf7016689904aef4c5a824d0b5627f792b67557380b211",
+    "redaction": null
+  },
+  "anchored_eval1000_admission_ready_v1.json": {
+    "original_sha256": "3c8e2b1cf6d742602fd20a33bf13eba886fb117581da87fac71aee4f99ef9735",
+    "public_sha256": "f54848198154253a37687c894fe3ea759fb489ff72da165ee07b56be63ff6107",
+    "redaction": "private filesystem prefixes only"
+  },
+  "anchored_checkpoint_stage1000_CPU_audit_v1.json": {
+    "original_sha256": "e88c49a9600391296b45ac525ec44ca0d518fd24f80b069993ee02459f84c737",
+    "public_sha256": "e88c49a9600391296b45ac525ec44ca0d518fd24f80b069993ee02459f84c737",
+    "redaction": null
+  },
+  "anchored_eval1000_real_gates_v1.json": {
+    "original_sha256": "2517a7eec710fa07fe28c8ddf01fd43414975515bb691da0c560bc21132c67b0",
+    "public_sha256": "2517a7eec710fa07fe28c8ddf01fd43414975515bb691da0c560bc21132c67b0",
+    "redaction": null
+  },
+  "anchored_stage1000_eval_started_summary_v1.json": {
+    "original_sha256": "af680ded15fd01bcbc4e988387104d9be0a15bdbd2e5b012a1a0fc4c89dc31f1",
+    "public_sha256": "af680ded15fd01bcbc4e988387104d9be0a15bdbd2e5b012a1a0fc4c89dc31f1",
     "redaction": null
   }
 }

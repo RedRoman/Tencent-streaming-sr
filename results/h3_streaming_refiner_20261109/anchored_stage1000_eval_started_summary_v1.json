@@ -1,0 +1,61 @@
+{
+  "observed_at": "2026-11-10T13:04:28.524665+00:00",
+  "training_snapshot": {
+    "status": "anchored_residual_training",
+    "stage_optimizer_updates": 1292,
+    "total_optimizer_updates": 3792,
+    "planned_stage_updates": 2000,
+    "selected_refiner": null
+  },
+  "checkpoint": {
+    "stage_step": 1000,
+    "total_optimizer_updates": 3500,
+    "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+    "private_optimizer_sha256": "90120faacc2f7cc2da9e03ef1d94fd7ceaaa01f8860529cb9d1963dd208f00cd",
+    "adapter_bytes": 82508131,
+    "private_state_bytes": 165122637,
+    "selected": false
+  },
+  "stage1000_receipt_sha256": "d7fd4a3fb14b6a43edc318769ad5414fd01a6dc3bbb1163559f346ae80e6db28",
+  "short_dev_comparison": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "stage500_MSE_ratio": 1.201447183592686,
+      "stage1000_MSE_ratio": 1.0963747641116983,
+      "latent_MSE_change_vs500": -0.08745488017774528
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "stage500_MSE_ratio": 0.9482028938317524,
+      "stage1000_MSE_ratio": 0.9229131047012326,
+      "latent_MSE_change_vs500": -0.026671284484612867
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "stage500_MSE_ratio": 1.282471630251488,
+      "stage1000_MSE_ratio": 1.1612903225806452,
+      "latent_MSE_change_vs500": -0.09449043925211797
+    }
+  ],
+  "equal_clip_mean_ratio1000": 1.0601927304645253,
+  "scope": "first4 latent only, not decoded226-frame quality; all3 improve vs500 but two WingIt regress vs no-refiner",
+  "evaluation": {
+    "sample_id": "WingIt_dev_3586_3811",
+    "status": "unique_job_running_after_real33B_four_latent_gates_passed",
+    "physical_npu": 4,
+    "three_locks_verified": true,
+    "training_keeps_running_on_separate_device": true,
+    "CPU_checkpoint_integrity_passed": true,
+    "cache_parity_max_abs": 0,
+    "future_input_max_abs": 0,
+    "future_condition_max_abs": 0,
+    "full67_complete": false,
+    "full226_complete": false,
+    "continuous_visual_reviewed": false,
+    "strict_decoder_validated": false,
+    "stage_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b"
+  },
+  "accepted_model": null,
+  "evaluation_optimizer_updates": 0,
+  "no_new_waiter": true
+}
