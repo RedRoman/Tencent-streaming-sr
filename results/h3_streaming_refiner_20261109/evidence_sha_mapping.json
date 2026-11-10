@@ -520,18 +520,24 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-    "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-    "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+    "original_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+    "public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+    "prior_public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
     "prior_mapping": {
-      "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-      "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-      "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+      "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+      "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+      "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+      "prior_mapping": {
+        "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+        "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+        "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+        "redaction": null,
+        "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+      },
       "redaction": null,
-      "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+      "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
     },
-    "redaction": null,
-    "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
+    "source_note": "current snapshot retained as STATUS_anchored_eval_preparation_snapshot.json"
   },
   "history_diagnostic_cpu_control_v1.json": {
     "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
@@ -767,5 +773,45 @@
     "original_sha256": "4c1e4bfe126b94f409b95ed5bb9b42f3838b0c63a6cd8dae6fc7e10969171921",
     "public_sha256": "7b3ae721af7a8f2668df02d7ed957034b5fdd4fb79bcd9cdd92a1e5d60cdedcc",
     "redaction": "private filesystem prefixes replaced; no payloads"
+  },
+  "anchored_checkpoint_stage0100_audit_v1.json": {
+    "original_sha256": "65d780a886660363cb1aa6821509989658fbd1a9ba23b77c73fb51eabe3d09e4",
+    "public_sha256": "65d780a886660363cb1aa6821509989658fbd1a9ba23b77c73fb51eabe3d09e4",
+    "redaction": null
+  },
+  "anchored_eval_CPU_control_v1.json": {
+    "original_sha256": "432d3d0c4cdb8fd973a232be9db2a73c50d5d8395cdab95ba36f683658c86ed0",
+    "public_sha256": "432d3d0c4cdb8fd973a232be9db2a73c50d5d8395cdab95ba36f683658c86ed0",
+    "redaction": null
+  },
+  "anchored_eval_CPU_control_v1.log": {
+    "original_sha256": "88a8a327f7fedb1f84836697abedcde7e4c16c472ccacfba5ff6bb022b0987d5",
+    "public_sha256": "88a8a327f7fedb1f84836697abedcde7e4c16c472ccacfba5ff6bb022b0987d5",
+    "redaction": null
+  },
+  "anchored_eval_preparation_source_mismatch_v1.json": {
+    "original_sha256": "588df50696c113bf519e8b6550e73ffaa9ed7960d0fedcbe0b0c99156cf85831",
+    "public_sha256": "588df50696c113bf519e8b6550e73ffaa9ed7960d0fedcbe0b0c99156cf85831",
+    "redaction": null
+  },
+  "anchored_eval_preparation_manifest_v1.json": {
+    "original_sha256": "15f1da7e7d53292e9ebcdaad7928a9ac39b22595e70cec7c3b91ef1b12055257",
+    "public_sha256": "15f1da7e7d53292e9ebcdaad7928a9ac39b22595e70cec7c3b91ef1b12055257",
+    "redaction": null
+  },
+  "anchored_step1000_eval_admission_v1.json": {
+    "original_sha256": "1520c13a6fa49910711d590bc987b21b838d7df06fc9c992d374a440bc005aa9",
+    "public_sha256": "1520c13a6fa49910711d590bc987b21b838d7df06fc9c992d374a440bc005aa9",
+    "redaction": null
+  },
+  "anchored_stage1000_dense_reuse_CPU_v1.json": {
+    "original_sha256": "0f46166d4890eba4c40d736ef5d7c0499e094500f7d59bc5232bc684db7f785b",
+    "public_sha256": "600e8ce84fe2ab9a703f1e68a5fbf552ab8bce370ed198dbf7b9ad5be9385986",
+    "redaction": "private prefixes only"
+  },
+  "anchored_heartbeat_20261110T0927.json": {
+    "original_sha256": "0d5225c9448c9c5b8271246bbc65c0ba1e3ab03029079cc8422613267e507541",
+    "public_sha256": "301d38a07d7cfcc91d86309e0fea60062b788097ef6a0355445d4125cef2a388",
+    "redaction": "private prefixes only"
   }
 }

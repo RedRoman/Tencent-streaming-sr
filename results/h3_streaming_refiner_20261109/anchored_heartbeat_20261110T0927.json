@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-11-10T09:29:16.260644+00:00",
+  "new_updates": 325,
+  "identity": {
+    "parent_pid": true,
+    "child_pid": true
+  },
+  "locks": {
+    "<AUTHORIZED_CACHE>/device_locks/npu7.lock": true,
+    "/tmp/yunfeng_npu_7.lock": true,
+    "/tmp/codex-h3-vae-npu-7.lock": true
+  },
+  "child_in_npu_smi": true,
+  "checkpoint_steps": [
+    0,
+    100,
+    200,
+    300
+  ],
+  "failure": false,
+  "dev_results": [],
+  "existing_anchor_eval_dirs": [],
+  "host_memory_available": "MemAvailable:   1507147784 kB"
+}

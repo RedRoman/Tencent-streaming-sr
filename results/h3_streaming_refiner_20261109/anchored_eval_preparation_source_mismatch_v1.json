@@ -1,0 +1,12 @@
+{
+  "status": "preparation_assertion_failed_preserved",
+  "differences": {
+    "src/evaluate_dense_reference.py": {
+      "local_sha256": "e09f63c54716b29fe8aab4e1ba62077d1df94f03c630e518f09ebec91a2b404f",
+      "frozen_sha256": "8cef445f84c33c5f5e03e3d80deb576a5609c87c0ed06ced30b153a6f0b7a3b4"
+    }
+  },
+  "resolution": "Copy exact tested frozen predecessor worker into new unlaunched staging only; originalsource unchanged",
+  "NPU_jobs_started": 0,
+  "optimizer_updates": 0
+}

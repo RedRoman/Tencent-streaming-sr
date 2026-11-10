@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-10T08:23:23.148164+00:00",
+  "as_of_utc": "2026-11-10T09:29:16.260644+00:00",
   "stage": "anchored_candidate_training_after_real_gates",
-  "verified_optimizer_updates_at_evidence_snapshot": 2506,
+  "verified_optimizer_updates_at_evidence_snapshot": 2825,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
@@ -41,7 +41,7 @@
     2500
   ],
   "dev_payloads_CPU_verified": 3,
-  "evaluation_workers": "v4 read-only diagnostic; fixed1000/2000/dense deferred; no training",
+  "evaluation_workers": "anchored_stage1000 evaluator prepared; awaiting exact new-stage1000; original TF1000/2000 evaluation deferred",
   "training_audit_passed": true,
   "full67_inference_scope": {
     "checkpoint": 200,
@@ -282,14 +282,15 @@
     "new_dense_jobs_planned": 2,
     "dense_first_clip_reuse_planned": true,
     "report": "TF2500_FIRST_WINGIT_RESULT_V1.md",
-    "active_worker": "step2500_WingIt_dev_300_525_latent",
+    "active_worker": null,
     "trained_full_model_two_latent_gates": "exact0_cache_future_condition_future_reload",
-    "completed_latent_count": 63,
+    "completed_latent_count": 67,
     "cache_bytes": 6930022400,
-    "full67_complete": false,
-    "full226_complete": false,
+    "full67_complete": true,
+    "full226_complete": true,
     "new_trained_video_ready": true,
-    "complete_flags_scope": "active third clip; first two2500 dev clips complete and separately reported"
+    "complete_flags_scope": "all three original TF2500 dev clips; not the new anchored candidate",
+    "status": "deferred_after_all_three_TF2500_clips_completed"
   },
   "trained_checkpoint_evaluation_3000_superseded": {
     "prepared": true,
@@ -548,7 +549,7 @@
       "Original TF objective uses truncated GT histories; deployed clean KV carries earlier history influence.",
       "FM training current input is HR/noise; inference starts from draft/noise and later sees its own denoised trajectory."
     ],
-    "current_diagnostic": "v4 running actual33B; same weights/inputs/noise; projection-aligned offline control; three histories,FM/three-step,current-only condition ablations,train/dev",
+    "current_diagnostic": "v4 complete five real33B samples, exit0 and reaped; archived original TF2500 diagnostic",
     "not_proven": [
       "Training steps alone are the dominant limitation",
       "Which gap dominates visual failure",
@@ -566,17 +567,17 @@
     "new_optimizer_updates": 0,
     "original_runtime_source_edited": false,
     "offline_projection_aligned_for_diagnosis": true,
-    "full_cohort_diagnostic_complete": false,
-    "completed_samples": 2,
+    "full_cohort_diagnostic_complete": true,
+    "completed_samples": 5,
     "planned_samples": 5,
     "partial_analysis": "TF2500_two_dev_history_analysis_v1.json",
-    "next": "thirddev then two train samples in same existing job; no training restart",
+    "next": "completed and reaped; independent anchored training now active",
     "samples_complete": 5,
     "analysis": "TF2500_full_history_analysis_v2.json"
   },
   "anchored_candidate_v1": {
     "base_updates": 2500,
-    "new_verified_optimizer_updates": 6,
+    "new_verified_optimizer_updates": 325,
     "planned_new_updates": 2000,
     "planned_total_updates": 4500,
     "status": "training",
@@ -592,6 +593,24 @@
     "checkpoint_stage0_reload_identity_max_abs": 0,
     "gates": "anchored_real_gates_v1.json",
     "roundtrip": "anchored_roundtrip_v1.json",
-    "snapshot": "anchored_training_snapshot_v1.json"
+    "snapshot": "anchored_heartbeat_20261110T0927.json",
+    "checkpoint_stage100_CPU_audit": "anchored_checkpoint_stage0100_audit_v1.json"
+  },
+  "anchored_stage1000_video_review": {
+    "status": "prepared_waiting_exact_stage1000",
+    "stage_optimizer_updates": 1000,
+    "total_optimizer_updates": 3500,
+    "evaluation_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
+    "CPU_control": "anchored_eval_CPU_control_v1.json",
+    "admission": "anchored_step1000_eval_admission_v1.json",
+    "reuse": "anchored_stage1000_dense_reuse_CPU_v1.json",
+    "first_sample": "WingIt_dev_3586_3811",
+    "NPU_evaluation_launched": false,
+    "waiter_started": false,
+    "training_continues": true,
+    "full226_video_complete": false,
+    "continuous_visual_reviewed": false,
+    "model_accepted": false,
+    "independent_device_required": true
   }
 }

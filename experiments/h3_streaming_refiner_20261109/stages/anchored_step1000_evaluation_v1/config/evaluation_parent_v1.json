@@ -1,0 +1,91 @@
+{
+  "schema": "streaming-refiner-evaluation-v1",
+  "frozen_utc": "2026-11-09T07:41:33.780347+00:00",
+  "optimizer_updates_observed_before_freeze": 0,
+  "checkpoints": [
+    0,
+    50,
+    100,
+    150,
+    200
+  ],
+  "dev": [
+    "WingIt_dev_3586_3811",
+    "ElephantsDream_dev_13070_13295",
+    "WingIt_dev_300_525"
+  ],
+  "test_unlocked": false,
+  "geometry": {
+    "latent": [
+      1,
+      24,
+      67,
+      68,
+      120
+    ],
+    "raw_pixels": [
+      226,
+      1088,
+      1920,
+      3
+    ],
+    "visible_crop": [
+      4,
+      1084,
+      0,
+      1920
+    ],
+    "fps": 24
+  },
+  "shared_input": {
+    "upsampler_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+    "noise": "sample ID + absolute latent index + seed20261109; exact across checkpoints/bidirectional baseline",
+    "conditioning": "identical explicit no-text and full226 encoded silence for engineering evaluation",
+    "sigmas": [
+      0.909375,
+      0.8571428571428571,
+      0.6666666666666666,
+      0.0
+    ]
+  },
+  "primary_reference": "actual native HR RGB; never teacher or decodedHR",
+  "arms": [
+    "frozen_upsampler_no_refiner",
+    "released_dense_refiner",
+    "strict_streaming_step0",
+    "strict_streaming_step50",
+    "strict_streaming_step100",
+    "strict_streaming_step150",
+    "strict_streaming_step200"
+  ],
+  "gate": {
+    "equal_clip_nativeHR_L1_ratio_vs_no_refiner_max": 1.02,
+    "equal_clip_nativeHR_LPIPS_ratio_vs_no_refiner_max": 1.02,
+    "new_person_object_structure_drift_allowed": false,
+    "continuous_visual_review_required": true
+  },
+  "selection": "among gate-passing checkpoint arms choose lowest equal-clip nativeHR LPIPS; absolute tie<=1e-8 choose earliest step; no gate-passing arm means no accepted refiner and no promotion to DMD",
+  "metrics": [
+    "nativeHR L1,PSNR,LPIPS",
+    "perclip regressions",
+    "temporal RGB delta error",
+    "ROI",
+    "blend60/nonblend166",
+    "prefix208/tail18",
+    "firstframe and latent chunk boundaries",
+    "latency/throughput and cachebytes"
+  ],
+  "main_video_columns": [
+    "selected strict streaming refiner pipeline",
+    "released dense refiner same input",
+    "actual nativeHR GT"
+  ],
+  "negative_result": "preserve all failures and all checkpoint metrics; no threshold edits or posthoc test unlock",
+  "decoder": "Do not claim full streaming pipeline until separate decoder future/boundary/full226/long-stream tests pass; label frozen decoder provisional otherwise",
+  "limits": [
+    "two source films in dev; two correlated WingIt windows",
+    "two train clips, synthetic public degradation",
+    "no production text embeddings validated",
+    "technical fullvideo audit != subjective motion quality pass"
+  ]
+}
