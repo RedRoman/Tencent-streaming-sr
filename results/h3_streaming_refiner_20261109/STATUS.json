@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-10T09:29:16.260644+00:00",
+  "as_of_utc": "2026-11-10T10:55:16.638542+00:00",
   "stage": "anchored_candidate_training_after_real_gates",
-  "verified_optimizer_updates_at_evidence_snapshot": 2825,
+  "verified_optimizer_updates_at_evidence_snapshot": 3201,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
   "full67_inference_validated": true,
@@ -577,7 +577,7 @@
   },
   "anchored_candidate_v1": {
     "base_updates": 2500,
-    "new_verified_optimizer_updates": 325,
+    "new_verified_optimizer_updates": 701,
     "planned_new_updates": 2000,
     "planned_total_updates": 4500,
     "status": "training",
@@ -593,8 +593,21 @@
     "checkpoint_stage0_reload_identity_max_abs": 0,
     "gates": "anchored_real_gates_v1.json",
     "roundtrip": "anchored_roundtrip_v1.json",
-    "snapshot": "anchored_heartbeat_20261110T0927.json",
-    "checkpoint_stage100_CPU_audit": "anchored_checkpoint_stage0100_audit_v1.json"
+    "snapshot": "anchored_stage0500_short_dev_summary_v1.json",
+    "checkpoint_stage100_CPU_audit": "anchored_checkpoint_stage0100_audit_v1.json",
+    "checkpoint_receipts_through_stage": 700,
+    "short_dev_stage500": {
+      "scope": "first4 latent only",
+      "ratios": [
+        1.201447183592686,
+        0.9482028938317524,
+        1.282471630251488
+      ],
+      "equal_clip_mean_ratio": 1.1440405692253088,
+      "result": "mixed_two_regressions_one_improvement",
+      "report": "anchored_dev_first4_stage0500.json",
+      "full226_complete": false
+    }
   },
   "anchored_stage1000_video_review": {
     "status": "prepared_waiting_exact_stage1000",

@@ -520,24 +520,30 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
-    "public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
-    "prior_public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+    "original_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
+    "public_sha256": "9ae945cb93113fcc62f0775ce962d1ad1df9eeedf3f122557acb43cf35ccc73a",
+    "prior_public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
     "prior_mapping": {
-      "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-      "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
-      "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+      "original_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+      "public_sha256": "93600316c70dc0743f6218e114d930da3b0a453401e27b238d843ecf1f4e4bb8",
+      "prior_public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
       "prior_mapping": {
-        "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-        "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
-        "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+        "original_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+        "public_sha256": "7e5027671946c16a391336c239e08cd8490777e80621c0f424865945f612293b",
+        "prior_public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+        "prior_mapping": {
+          "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+          "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+          "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
+          "redaction": null,
+          "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+        },
         "redaction": null,
-        "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
+        "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
       },
-      "redaction": null,
-      "source_note": "snapshot retained as STATUS_anchored_training_snapshot.json"
+      "source_note": "current snapshot retained as STATUS_anchored_eval_preparation_snapshot.json"
     },
-    "source_note": "current snapshot retained as STATUS_anchored_eval_preparation_snapshot.json"
+    "source_note": "current snapshot retained as STATUS_anchored_stage0500_snapshot.json"
   },
   "history_diagnostic_cpu_control_v1.json": {
     "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
@@ -813,5 +819,25 @@
     "original_sha256": "0d5225c9448c9c5b8271246bbc65c0ba1e3ab03029079cc8422613267e507541",
     "public_sha256": "301d38a07d7cfcc91d86309e0fea60062b788097ef6a0355445d4125cef2a388",
     "redaction": "private prefixes only"
+  },
+  "anchored_dev_first4_stage0500.json": {
+    "original_sha256": "8dc33440e4d66a9bbfd547d819b1f7e5c725b156bf5452d48c87e81e08d5e760",
+    "public_sha256": "8dc33440e4d66a9bbfd547d819b1f7e5c725b156bf5452d48c87e81e08d5e760",
+    "redaction": null
+  },
+  "anchored_checkpoint_stage0500.json": {
+    "original_sha256": "8cc5866ea2df908391ab18c8c630fb41e082b00bd0a484625fff5f3cda3e5648",
+    "public_sha256": "8cc5866ea2df908391ab18c8c630fb41e082b00bd0a484625fff5f3cda3e5648",
+    "redaction": null
+  },
+  "anchored_stage0500_payload_integrity_v1.json": {
+    "original_sha256": "335f1fc4e1f182bd224bc9a6623ab15f818352a9d41e5023f3c83fded8cb21ca",
+    "public_sha256": "335f1fc4e1f182bd224bc9a6623ab15f818352a9d41e5023f3c83fded8cb21ca",
+    "redaction": null
+  },
+  "anchored_stage0500_short_dev_summary_v1.json": {
+    "original_sha256": "3f861142800b742a5e5e4fbfed9d58cff2a574667b37250697e1e2e9e067a27e",
+    "public_sha256": "3f861142800b742a5e5e4fbfed9d58cff2a574667b37250697e1e2e9e067a27e",
+    "redaction": null
   }
 }

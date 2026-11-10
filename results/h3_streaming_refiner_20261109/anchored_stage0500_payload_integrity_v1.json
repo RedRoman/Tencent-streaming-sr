@@ -1,0 +1,17 @@
+{
+  "stage_step": 500,
+  "total_optimizer_updates": 3000,
+  "receipt_sha256": "8cc5866ea2df908391ab18c8c630fb41e082b00bd0a484625fff5f3cda3e5648",
+  "adapter": {
+    "bytes": 82508131,
+    "sha256": "86e25948d094f20bb1098ab93f8ac8f607497a5465436fc3c6d73981b0fa2eda"
+  },
+  "private_resume": {
+    "bytes": 165122637,
+    "sha256": "f689fcc101dd4d7deaed9f27e696340a49b89072b89e0dc230cac2ba78ce339f"
+  },
+  "hashes_and_sizes_match_receipt": true,
+  "scope": "CPU file SHA/size check only; no tensor/AdamW/RNG load in this check",
+  "new_optimizer_updates": 0,
+  "new_NPU_jobs": 0
+}
