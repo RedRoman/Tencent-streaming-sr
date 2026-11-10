@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-11-10T21:28:06.121930+00:00",
+  "as_of_utc": "2026-11-10T21:58:21.681104+00:00",
   "stage": "six_video_sets_delivered_long137_engineering_passed_strict_decoder_fidelity_failed",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
@@ -779,5 +779,18 @@
     "strict_decoder_full226_fidelity": "failed; unchanged threshold, preserve original sources; no automatic rerun/compensation/training",
     "continuous_visual_review": "incomplete; static samples and technical audits are not continuous review",
     "model_accepted": false
+  },
+  "decoder_existing_metrics_diagnostic": {
+    "status": "posthoc_existing_receipts_only",
+    "report": "STRICT_DECODER_EXISTING_METRICS_DIAGNOSTIC_V2.md",
+    "exclude_frame0_L1_ratio": 1.0486071417602394,
+    "exclude_frame0_LPIPS_ratio": 1.0866411986256097,
+    "exclude_first7_latents_L1_ratio": 1.0460631049984035,
+    "exclude_first7_latents_LPIPS_ratio": 1.084327294362032,
+    "root_cause_proven": false,
+    "continuous_visual_reviewed": false,
+    "new_NPU_forwards": 0,
+    "new_optimizer_updates": 0,
+    "original_quality_threshold_unchanged": true
   }
 }

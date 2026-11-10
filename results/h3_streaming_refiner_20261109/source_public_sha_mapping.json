@@ -802,5 +802,17 @@
     "source_sha256": "63ceab0788d4e74c4b84650f2e3910faeeba5ec23710f1254d8a721668f14d1b",
     "public_sha256": "405618285bc56436632559ed29e117f8624703d4a599d1d9f1535b1386680717",
     "redaction": "private path prefixes only"
+  },
+  "preparation/analyze_strict_decoder_existing_metrics_v1.py": {
+    "source_sha256": "4fe20f20946b9a86709bd027abca213ad79f2c8e50765df832e6f0059c116fbb",
+    "public_sha256": "4fe20f20946b9a86709bd027abca213ad79f2c8e50765df832e6f0059c116fbb",
+    "redaction": null,
+    "scope": "Stdlib-only analysis of existing decoder metric receipts; no inference"
+  },
+  "preparation/analyze_strict_decoder_existing_metrics_v2.py": {
+    "source_sha256": "0dfbe902ddb26ddb3cc5e3f28fa4eecb0c84ca73edf671c93c9baeec38f043a6",
+    "public_sha256": "0dfbe902ddb26ddb3cc5e3f28fa4eecb0c84ca73edf671c93c9baeec38f043a6",
+    "redaction": null,
+    "scope": "Stdlib-only analysis of existing decoder metric receipts; no inference"
   }
 }

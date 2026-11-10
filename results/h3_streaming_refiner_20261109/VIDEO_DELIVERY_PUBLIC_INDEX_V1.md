@@ -16,3 +16,5 @@ All six sets contain226frames at24fps. Main columns: candidate / original bidire
 ## Engineering update
 
 [Fixedstage1000 real33B long137 engineering checks passed](REFINER_LONG137_COMPLETE_V1.md). [Strict decoder fidelity failed](STRICT_DECODER_PRETRAINED_RESULT_V1.md). All planned compute jobs have ended; continuous visual review remains incomplete and no complete strictly streaming pipeline is accepted.
+
+The [existing decoder metric analysis](STRICT_DECODER_EXISTING_METRICS_DIAGNOSTIC_V2.md) shows the fidelity regression persists after excluding frame0 or the first7latents. These post-hoc groups do not establish a cause; no videos, model weights or acceptance thresholds changed.
