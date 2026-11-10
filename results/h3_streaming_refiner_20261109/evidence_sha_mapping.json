@@ -520,11 +520,11 @@
     "redaction": "private local/remote paths replaced by file names or PROJECT_ROOT; add explicit payload publication scope"
   },
   "STATUS.json": {
-    "original_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
-    "public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
-    "prior_public_sha256": "42141e3ab12859d4522083c966832d7d3bd9fb68afa325fad222727ea5e77663",
+    "original_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+    "public_sha256": "2c47b5d53c7507be1de1be76827fe86b43e07deefa5dce7271aadd6b68b99bf3",
+    "prior_public_sha256": "df40b737a3953f852c98713636c1cd09e1781a28725b37fd729d29e24b773fe7",
     "redaction": null,
-    "source_note": "current public status snapshot retained as STATUS_diagnostic_priority_snapshot.json"
+    "source_note": "snapshot retained as STATUS_two_dev_diagnosis_snapshot.json"
   },
   "history_diagnostic_cpu_control_v1.json": {
     "original_sha256": "afa874dd7b2e781359007b4d321cce583c9f8fcbca4a588ca3a7dd4b83013193",
@@ -644,6 +644,21 @@
   "history_diagnostic_33b_v4_stage.json": {
     "original_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
     "public_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
+    "redaction": null
+  },
+  "diagnostic_v4_WingIt_dev_3586_3811.json": {
+    "original_sha256": "71f62aa3e5a8cd16941c8f01e7ac6fff9c428dbdc75f9e5dc2c2e1801a0298c0",
+    "public_sha256": "5e3f133a1073eb598d7349d41bdab7c112be1c78369e79736d18bdca56f3b4e3",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "diagnostic_v4_ElephantsDream_dev_13070_13295.json": {
+    "original_sha256": "42749899730e20154b64b610a88047c1e4daaed92949fe88b49c487ce7c88f1c",
+    "public_sha256": "6a0b0d794ab31f8485e60494c361334edc1029c9fd51c323e41c68f40147fee8",
+    "redaction": "private filesystem prefixes replaced; no model/optimizer/RNG/cache payloads"
+  },
+  "TF2500_two_dev_history_analysis_v1.json": {
+    "original_sha256": "0645c1a6b19c17ba3ed4c2bc6cbd4919dc04cd8c4c14f7faaf2003742d0627f0",
+    "public_sha256": "0645c1a6b19c17ba3ed4c2bc6cbd4919dc04cd8c4c14f7faaf2003742d0627f0",
     "redaction": null
   }
 }

@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-11-10T06:44:02.415047+00:00",
+  "as_of_utc": "2026-11-10T07:16:50.122648+00:00",
   "stage": "TF2500_training_stopped_read_only_diagnosis_running",
   "verified_optimizer_updates_at_evidence_snapshot": 2500,
   "target_updates": 2500,
@@ -562,10 +562,14 @@
   "read_only_diagnostic_v4": {
     "stage": "history_diagnostic_33b_v4",
     "manifest_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
-    "status": "running",
+    "status": "running_two_dev_complete",
     "new_optimizer_updates": 0,
     "original_runtime_source_edited": false,
     "offline_projection_aligned_for_diagnosis": true,
-    "full_cohort_diagnostic_complete": false
+    "full_cohort_diagnostic_complete": false,
+    "completed_samples": 2,
+    "planned_samples": 5,
+    "partial_analysis": "TF2500_two_dev_history_analysis_v1.json",
+    "next": "thirddev then two train samples in same existing job; no training restart"
   }
 }

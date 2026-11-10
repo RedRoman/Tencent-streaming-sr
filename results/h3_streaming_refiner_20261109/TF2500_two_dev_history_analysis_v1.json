@@ -1,0 +1,203 @@
+{
+  "schema": "matched-history-analysis-v1",
+  "status": "partial_cohort_interpretation",
+  "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+  "completed_samples": 2,
+  "planned_samples": 5,
+  "new_optimizer_updates": 0,
+  "metric": "latent MSE against current nativeHR latent",
+  "samples": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "split": "dev",
+      "receipt_sha256": "71f62aa3e5a8cd16941c8f01e7ac6fff9c428dbdc75f9e5dc2c2e1801a0298c0",
+      "positions": [
+        {
+          "position_zero_based": 0,
+          "no_refiner_MSE": 0.05498995631933212,
+          "GT_history_MSE": 0.38582485914230347,
+          "self_history_MSE": 0.38582485914230347,
+          "truncated_GT_MSE": 0.38582485914230347,
+          "self_over_GT": 1.0,
+          "self_over_no_refiner": 7.0162786982731955,
+          "truncated_over_GT": 1.0,
+          "GT_over_no_refiner": 7.0162786982731955
+        },
+        {
+          "position_zero_based": 3,
+          "no_refiner_MSE": 0.14196473360061646,
+          "GT_history_MSE": 0.09996317327022552,
+          "self_history_MSE": 0.3804898262023926,
+          "truncated_GT_MSE": 0.10792255401611328,
+          "self_over_GT": 3.8062999978385355,
+          "self_over_no_refiner": 2.6801714521073166,
+          "truncated_over_GT": 1.0796231300538204,
+          "GT_over_no_refiner": 0.7041408858022994
+        },
+        {
+          "position_zero_based": 11,
+          "no_refiner_MSE": 0.08723312616348267,
+          "GT_history_MSE": 0.10900549590587616,
+          "self_history_MSE": 0.30061501264572144,
+          "truncated_GT_MSE": 0.12727317214012146,
+          "self_over_GT": 2.7577968445306267,
+          "self_over_no_refiner": 3.446110736445947,
+          "truncated_over_GT": 1.1675849101225046,
+          "GT_over_no_refiner": 1.2495883238391587
+        }
+      ],
+      "first_latent_condition": [
+        {
+          "condition": "zero_draft_condition",
+          "MSE": 0.40016454458236694,
+          "ratio_to_actual_draft_condition": 1.0371663077178097
+        },
+        {
+          "condition": "current_HR_condition_oracle",
+          "MSE": 0.38522741198539734,
+          "ratio_to_actual_draft_condition": 0.9984515068359404
+        }
+      ],
+      "point_FM_ratios": [
+        {
+          "position": 3,
+          "sigma": 0.909375,
+          "self_over_GT": 3.9994982916306525
+        },
+        {
+          "position": 3,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 4.167816907846442
+        },
+        {
+          "position": 3,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 3.285524352621119
+        },
+        {
+          "position": 11,
+          "sigma": 0.909375,
+          "self_over_GT": 3.1783768850925314
+        },
+        {
+          "position": 11,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 3.2708344340114404
+        },
+        {
+          "position": 11,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 3.097516699884599
+        }
+      ],
+      "four_latent_parity_max_abs": 0,
+      "saved_self_replay_max_abs": 0,
+      "max_cache_bytes": 6930022400
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "split": "dev",
+      "receipt_sha256": "42749899730e20154b64b610a88047c1e4daaed92949fe88b49c487ce7c88f1c",
+      "positions": [
+        {
+          "position_zero_based": 0,
+          "no_refiner_MSE": 0.11912605911493301,
+          "GT_history_MSE": 0.3930002450942993,
+          "self_history_MSE": 0.3930002450942993,
+          "truncated_GT_MSE": 0.3930002450942993,
+          "self_over_GT": 1.0,
+          "self_over_no_refiner": 3.299028340349378,
+          "truncated_over_GT": 1.0,
+          "GT_over_no_refiner": 3.299028340349378
+        },
+        {
+          "position_zero_based": 3,
+          "no_refiner_MSE": 0.23630568385124207,
+          "GT_history_MSE": 0.03539848327636719,
+          "self_history_MSE": 0.5857758522033691,
+          "truncated_GT_MSE": 0.03215320035815239,
+          "self_over_GT": 16.548049463871976,
+          "self_over_no_refiner": 2.4788902351249567,
+          "truncated_over_GT": 0.9083214132967833,
+          "GT_over_no_refiner": 0.14979954226852646
+        },
+        {
+          "position_zero_based": 11,
+          "no_refiner_MSE": 0.17769940197467804,
+          "GT_history_MSE": 0.051978446543216705,
+          "self_history_MSE": 0.5073655247688293,
+          "truncated_GT_MSE": 0.03476060926914215,
+          "self_over_GT": 9.761075186173327,
+          "self_over_no_refiner": 2.855189826925407,
+          "truncated_over_GT": 0.6687504452492815,
+          "GT_over_no_refiner": 0.29250771789667346
+        }
+      ],
+      "first_latent_condition": [
+        {
+          "condition": "zero_draft_condition",
+          "MSE": 0.4177438020706177,
+          "ratio_to_actual_draft_condition": 1.062960665508952
+        },
+        {
+          "condition": "current_HR_condition_oracle",
+          "MSE": 0.3883984088897705,
+          "ratio_to_actual_draft_condition": 0.9882905004208722
+        }
+      ],
+      "point_FM_ratios": [
+        {
+          "position": 3,
+          "sigma": 0.909375,
+          "self_over_GT": 21.594745156646145
+        },
+        {
+          "position": 3,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 15.679202960681005
+        },
+        {
+          "position": 3,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 7.600971750246061
+        },
+        {
+          "position": 11,
+          "sigma": 0.909375,
+          "self_over_GT": 17.235303031423015
+        },
+        {
+          "position": 11,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 12.014378483727421
+        },
+        {
+          "position": 11,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 5.457011687797398
+        }
+      ],
+      "four_latent_parity_max_abs": 0,
+      "saved_self_replay_max_abs": 0,
+      "max_cache_bytes": 6930022400
+    }
+  ],
+  "controlled_intervention": "Same checkpoint/current noisy input/draft/noise/static conditioning; replace only history content or current condition. GT history and currentHR condition are diagnostic oracles, unavailable in deployment.",
+  "confirmed_scope": [
+    "Full current spatial68x120, three sampled positions,12-latent history.",
+    "Projection-aligned full-prefix oracle and saved self-history replay exact0 for the completed samples.",
+    "Condition ablation keeps original draft/noise start fixed; it changes only the current conditioning input."
+  ],
+  "interpretation": [
+    "Self-generated history worsens the sampled later-position outputs substantially; exposure to deployment histories warrants priority investigation.",
+    "First-latent degradation precedes any video history; history error alone cannot explain the failure.",
+    "Replacing current draft condition with HR does not rescue first-latent reconstruction on these completed dev samples; this supports investigating fidelity conditioning and denoising design.",
+    "Truncated-versus-incremental GT context changes outputs, but the direction differs across these two samples and its effect is smaller than the self-versus-GT history intervention."
+  ],
+  "limits": [
+    "Only completed samples included; train/dev comparison pending until both training clips finish.",
+    "Counterfactual GT histories are not a deployable solution and may supply strongly informative past content.",
+    "These latent probes do not establish full226 pixel improvement, visual acceptance, convergence, or an exclusive root cause.",
+    "No training restart or production-runtime change is implied."
+  ]
+}
