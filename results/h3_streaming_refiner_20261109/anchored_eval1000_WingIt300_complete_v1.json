@@ -1,0 +1,156 @@
+{
+  "observed_at": "2026-11-10T17:25:13.268558+00:00",
+  "sample_id": "WingIt_dev_300_525",
+  "stage_step": 1000,
+  "launch": {
+    "parent_pid": 2036879,
+    "physical_npu": 7,
+    "all_three_locks_held": true,
+    "started_unix": 1794325113.5775847,
+    "command": [
+      "python",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step1000_evaluation_v1/src/run_anchored_step1000_evaluation_v1.py",
+      "--stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_step1000_evaluation_v1",
+      "--manifest-sha",
+      "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
+      "--training-stage",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/stages/anchored_refiner_v1",
+      "--training",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1",
+      "--training-launch",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/launches/anchored_training_v1/launch.json",
+      "--data-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/dev_v1/manifest.json",
+      "--assets-manifest",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evidence/asset_hash_v1/complete.json",
+      "--prior-stage",
+      "/tmp/h3_production67_limiteddev_eval_20261107_v1",
+      "--dense-preview",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/previews/dense_wingit_native_v1",
+      "--root",
+      "<AUTHORIZED_CACHE>/h3-regenerator-self-forcing-dmd-20261104",
+      "--sample-id",
+      "WingIt_dev_300_525",
+      "--physical-device",
+      "7",
+      "--output",
+      "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525"
+    ],
+    "status": "complete",
+    "child_pid": 2037949,
+    "child_pgid": 2037949,
+    "exit_code": 0,
+    "ended_unix": 1794330879.855269,
+    "child_reaped": true
+  },
+  "parent_and_child_absent": true,
+  "receipts": {
+    "result.json": {
+      "sha256": "0e296b2c9a0fa6987e1c2084fdc5a4beb0f697f90d7704aeb2a894a1fe544963",
+      "status": "anchored_stage1000_full226_video_ready_visual_review_pending",
+      "ratios": {
+        "pixel_l1": 0.9244258791085365,
+        "lpips": 1.079811455494119
+      },
+      "files": null
+    },
+    "candidate_latent/result.json": {
+      "sha256": "36163f9e8202f08b3bd61e0be0e889c88a6e4652db35c3f58b60a285fa761056",
+      "status": "full67_latent_inference_complete_pixels_pending",
+      "ratios": null,
+      "files": null
+    },
+    "candidate_pixels/result.json": {
+      "sha256": "b6d48d9dbaee4bfcbf2be9d0b130209dae1083d48cff32674966b4e472d00c0a",
+      "status": "full226_nativeHR_metrics_complete_visual_review_pending",
+      "ratios": {
+        "pixel_l1": 0.9244258791085365,
+        "lpips": 1.079811455494119
+      },
+      "files": null
+    },
+    "dense_latent/result.json": {
+      "sha256": "9271165cbcbefed7398992a1a1d73b6682b425d0170242023d2b65c4097c5f1f",
+      "status": "full67_latent_inference_complete_pixels_pending",
+      "ratios": null,
+      "files": null
+    },
+    "dense_pixels/result.json": {
+      "sha256": "69f088d81d8018aaf5e2ff8427ce2d2f9ee72aab3c36d5bc6d6ef34320e9dbaa",
+      "status": "full226_nativeHR_metrics_complete_visual_review_pending",
+      "ratios": {
+        "pixel_l1": 2.9582447260146885,
+        "lpips": 3.5430476260278523
+      },
+      "files": null
+    },
+    "videos/result.json": {
+      "sha256": "03f38cff1486b0d144eaae8f48555f9058415c45923d984f8071ed7055346b6f",
+      "status": "full226_three_videos_technical_audit_passed",
+      "ratios": {
+        "pixel_l1": 0.9244258791085365,
+        "lpips": 1.079811455494119
+      },
+      "files": {
+        "candidate_native1080": {
+          "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525/videos/anchored_stage1000_native1080.mp4",
+          "sha256": "7011c6cebdd486c71a262daf9683d9cd46bd0ce38e157ce44072e4dc049b170f",
+          "bytes": 8932029,
+          "stream": {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "all226_pts_checked": true,
+          "full_decode_error_check_passed": true
+        },
+        "main_comparison": {
+          "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525/videos/anchored_stage1000_dense_gt.mp4",
+          "sha256": "33b6242b9606c833fb887a797138da560eba552bc0b8ce2bd885ffa294cc257d",
+          "bytes": 6437598,
+          "stream": {
+            "codec_name": "h264",
+            "width": 2880,
+            "height": 620,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "all226_pts_checked": true,
+          "full_decode_error_check_passed": true
+        },
+        "no_refiner_ablation": {
+          "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525/videos/anchored_stage1000_no_refiner_gt.mp4",
+          "sha256": "51d92e231114a7a4085aa787a4ba2e6983081d46dd565847a73ce887de657e74",
+          "bytes": 5978541,
+          "stream": {
+            "codec_name": "h264",
+            "width": 2880,
+            "height": 620,
+            "avg_frame_rate": "24/1",
+            "duration": "9.416667",
+            "nb_read_frames": "226"
+          },
+          "all226_pts_checked": true,
+          "full_decode_error_check_passed": true
+        }
+      }
+    },
+    "dense_latent/upstream_gate.json": {
+      "sha256": "3d3e179299b221e69d9815e834e1ce53e00860c6dddaecaf5e8c7a60422b9c3f",
+      "status": null,
+      "ratios": null,
+      "files": null
+    }
+  },
+  "full226_metrics_complete": true,
+  "three_videos_technical_audit_passed": true,
+  "local_preview_sha_verified": true,
+  "native_original_download_pending": true,
+  "continuous_visual_reviewed": false,
+  "accepted_refiner": null
+}

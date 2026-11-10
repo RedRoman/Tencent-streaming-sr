@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-11-10T16:19:00Z",
-  "stage": "fixed1000_two_video_sets_ready_fixed2000_first_running",
+  "as_of_utc": "2026-11-10T17:32:00Z",
+  "stage": "fixed1000_all_three_video_sets_ready_fixed2000_two_running",
   "verified_optimizer_updates_at_evidence_snapshot": 4500,
   "target_updates": 4500,
   "full_model_NPU_two_latent_gates": "passed",
@@ -629,7 +629,7 @@
     "stage2000_short_dev": "anchored_dev_first4_stage2000.json"
   },
   "anchored_stage1000_video_review": {
-    "status": "two_clips_complete_third_running",
+    "status": "all_three_clips_complete_technical_audit_local_playback_verified",
     "stage_optimizer_updates": 1000,
     "total_optimizer_updates": 3500,
     "evaluation_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
@@ -655,7 +655,7 @@
       "selected": false
     },
     "full67_complete": true,
-    "completion_scope": "WingIt3586 and ElephantsDream13070 full226; third WingIt300 running",
+    "completion_scope": "All three clips:67latents,226frames and three videos; continuous visual review pending",
     "full226_ratios_vs_no_refiner": {
       "pixel_l1": 0.9461478464541321,
       "lpips": 1.0769763469555864
@@ -672,7 +672,8 @@
     "third_clip_launch": "anchored_eval1000_WingIt300_launch_v2.json",
     "second_clip_status": "complete_exit0_reaped_local_playback_verified",
     "third_clip_completed_latents_at_snapshot": 26,
-    "second_clip_report": "ANCHORED_STAGE1000_ELEPHANTSDREAM_FULL226_V1.md"
+    "second_clip_report": "ANCHORED_STAGE1000_ELEPHANTSDREAM_FULL226_V1.md",
+    "third_clip_report": "ANCHORED_STAGE1000_THREE_CLIP_FULL226_V1.md"
   },
   "complete_video_evaluation": {
     "plan": "FULL_VIDEO_EVALUATION_PLAN_V1.md",
@@ -690,9 +691,10 @@
     "continuous_visual_reviewed": false,
     "strict_streaming_decoder_validated": false,
     "real33B_longer_than67_validated": false,
-    "stage1000_completed_video_sets": 2,
+    "stage1000_completed_video_sets": 3,
     "stage2000_completed_video_sets": 0,
-    "stage2000_first": "WingIt3586 running after real four-latent gates maxabs0",
-    "stage2000_second": "ElephantsDream exact reference/checkpoint admission ready, no NPU job; awaits third stage1000 WingIt300 release"
+    "stage2000_first": "WingIt3586 completed67 generation events; complete video pipeline still running",
+    "stage2000_second": "ElephantsDream running after real four-latent gates passed exactly0",
+    "stage2000_third": "WingIt300 readonly admission ready; awaits first2000 full exit/reap on NPU4"
   }
 }

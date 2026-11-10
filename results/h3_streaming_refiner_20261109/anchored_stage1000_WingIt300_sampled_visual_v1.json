@@ -1,0 +1,24 @@
+{
+  "sample_id": "WingIt_dev_300_525",
+  "stage_step": 1000,
+  "review_type": "sampled_still_frames_only",
+  "frame_indices_zero_based": [
+    0,
+    144
+  ],
+  "images": {
+    "main_frame144.jpg": "cc0104f16d8e09dff625a7394ced06d85ea03409939fb19879d13bf84fcfd86a",
+    "ablation_frame144.jpg": "b29cace6942b831da9c90afe2134d65c7896920a3052ec4a43b723ba95f7b587",
+    "ablation_frame000.jpg": "4a27a1368cc2f3f5e96f445061fe663b646e74d610b04285f0c59c1bb4da03e9",
+    "main_frame000.jpg": "cb6196684e2033a3c056fe84d851eebde429c2a74fb1d6ad30ea987888fb49b4"
+  },
+  "observations": [
+    "Frame0: original bidirectional output changes the control-panel dial markings, red controls, right sliders and background object shape; candidate and no-refiner retain the broad shapes and locations visible in GT.",
+    "Frame144: original bidirectional output adds red indicator marks and changes roof/wheel/vehicle details relative to GT. Candidate and no-refiner retain the broad vehicle outline and scene layout; fine grille/panel details remain softer than GT.",
+    "Candidate and no-refiner are visually close in these stills. Content preservation alone does not demonstrate an incremental candidate gain."
+  ],
+  "continuous_visual_reviewed": false,
+  "flicker_or_drift_judgement": "not established by still images",
+  "universal_hallucination_absence_claimed": false,
+  "accepted_refiner": null
+}

@@ -1,0 +1,66 @@
+{
+  "observed_at_utc": "2026-11-10T17:00:11.427821+00:00",
+  "status": "native_resolution_videos_downloaded_sha_verified_and_safely_extracted",
+  "sample_id": "WingIt_dev_3586_3811",
+  "stage_step": 1000,
+  "total_training_step": 3500,
+  "checkpoint_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+  "transfer_session": "h3-full-video-wingit3586-native-v1",
+  "transfer_status": "OK",
+  "archive_bytes": 56330240,
+  "archive_sha256": "facbbfec968fa04c170c8ddceed92043d3838864178bc77f0b9d56721deedc37",
+  "source_video_receipt_sha256": "283a58628f7bf7536300b5230a963160d510da53ba97bd1c47c6c09cec68f11f",
+  "files": {
+    "candidate_native1080": {
+      "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_WingIt3586_full_native_v1/media/anchored_stage1000_native1080.mp4",
+      "sha256": "7f653c8fa5e8280cd41c33369e48251fc87489363a6f617d15c9d501ba3453ee",
+      "bytes": 17143175,
+      "stream": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "source_technical_audit_verified_by_exact_payload_hash": true
+    },
+    "main_comparison": {
+      "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_WingIt3586_full_native_v1/media/anchored_stage1000_dense_gt.mp4",
+      "sha256": "3a5db6f45c13e3b86cb5715fab8b6abf76f527d6d8d89d94d1c6c4925833b5e0",
+      "bytes": 15906796,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "source_technical_audit_verified_by_exact_payload_hash": true
+    },
+    "no_refiner_ablation": {
+      "local_path": "<LOCAL_WORKSPACE>/h3-streaming-refiner-20261109/media/anchored_stage1000_WingIt3586_full_native_v1/media/anchored_stage1000_no_refiner_gt.mp4",
+      "sha256": "595955278901e8fff582ab0d66917454723d33c6a460cd68a1ad45a592e79cce",
+      "bytes": 13810499,
+      "stream": {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 620,
+        "avg_frame_rate": "24/1",
+        "duration": "9.416667",
+        "nb_read_frames": "226"
+      },
+      "source_technical_audit_verified_by_exact_payload_hash": true
+    }
+  },
+  "continuous_visual_reviewed": false,
+  "strict_streaming_decoder_validated": false,
+  "accepted_refiner": null,
+  "duplicate_transfer_started": false,
+  "metrics_use_lossless_RGB": true,
+  "full226_ratios_vs_no_refiner": {
+    "pixel_l1": 0.9461478464541321,
+    "lpips": 1.0769763469555864
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "stdlib_admission",
+  "ready": true,
+  "checkpoint": {
+    "receipt_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1/checkpoint_stage2000.json",
+    "receipt_sha256": "b6f398f549de1a4dbb0c606dccf9236a41441d4ad37cc7aa873309ca6e7c042e",
+    "record": {
+      "stage_step": 2000,
+      "total_optimizer_updates": 4500,
+      "adapter_sha256": "5e95b0826db51003968597b8ffbc6159f42d0c784ad8c0a10843734fae3dc485",
+      "private_optimizer_sha256": "5541609e21faa4ad4cd97b09a1455fd9a81ba08236465b0359f8cc8077b93549",
+      "adapter_bytes": 82508131,
+      "private_state_bytes": 165122637,
+      "selected": false
+    },
+    "adapter_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1/adapter_stage2000.pt",
+    "private_resume_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/runs/anchored_refiner_v1/private_resume_stage2000.pt"
+  },
+  "stage_manifest_sha256": "4f870f017c2a3301539fa2eecac4ba6635123287ac446f607298d42081123de3",
+  "training_stage_manifest_sha256": "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+  "sample_id": "WingIt_dev_300_525",
+  "device_check": {
+    "training_process_present": false,
+    "same_device": false
+  },
+  "optimizer_updates": 0,
+  "training_mutated": false,
+  "reference": {
+    "source_result_path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525/result.json",
+    "source_result_sha256": "0e296b2c9a0fa6987e1c2084fdc5a4beb0f697f90d7704aeb2a894a1fe544963",
+    "source_launch_sha256": "e8679ad596a28f4cdcdfa5c6d08e347d0d54f83bed87adf3367a38f623ab764a",
+    "original_source_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
+    "dense_latent": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525/dense_latent/result.json",
+      "sha256": "9271165cbcbefed7398992a1a1d73b6682b425d0170242023d2b65c4097c5f1f"
+    },
+    "dense_pixels": {
+      "path": "<AUTHORIZED_CACHE>/h3-streaming-refiner-20261109/evaluations/anchored_step1000_v1/WingIt_dev_300_525/dense_pixels/result.json",
+      "sha256": "69f088d81d8018aaf5e2ff8427ce2d2f9ee72aab3c36d5bc6d6ef34320e9dbaa"
+    },
+    "dense_gate_sha256": "3d3e179299b221e69d9815e834e1ce53e00860c6dddaecaf5e8c7a60422b9c3f",
+    "same_upsampler_noise_condition_geometry_verified": true,
+    "original_receipts_unchanged": true,
+    "reference_optimizer_updates": 0
+  }
+}
