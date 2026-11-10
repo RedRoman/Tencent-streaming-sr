@@ -1,0 +1,81 @@
+{
+  "version": "solar-task-lora-v2",
+  "target_updates": 2500,
+  "save_every": 100,
+  "rank": 16,
+  "alpha": 16,
+  "lr": 1e-05,
+  "warmup_steps": 50,
+  "seed": 20261110,
+  "causal": {
+    "mode": "teacher",
+    "chunk": 5,
+    "window": 6,
+    "corrupt": 0.0
+  },
+  "loss": "upstream H3OmniCausalCore.forward_loss: unweighted velocity MSE; shifted uniform sigma per chunk",
+  "evaluate_steps": [
+    100,
+    500,
+    1000,
+    1500,
+    2000,
+    2500
+  ],
+  "sources": {
+    "ascend_port.py": "bb30c59bfee909550f49228a0f69eaf8e0467b900c923be94f58a7a51f9b1ddc",
+    "run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "with_runtime.sh": "e2d2a63c43ac758c997af828ed8dc687d0e773296be265928420b1b75fc812ba",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/omni_causal.py": "5c3b79b44dfe9d952a42ab1c5fc8be033c4c384b4673b8662d6214d9a5746f61",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/model.py": "fdb2a77eb5563babafcca04a7c5477396d0c9de73385b724dfbc8b108b147ba0",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/stage0p5.py": "9e7ad99bbb6a9610707d326952875214fd95d6d6564c74f91e2c7f08caa0180c",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/layout.py": "6c022b019850db0a57a9c72d7ea7a91f29db2b394cd73f63a7f9561d5bb13a5d",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/flow.py": "f1733cc6952a1ebd22e3e21882e0cafcc8de6f1edd7b3ef1760346e114ba3f89",
+    "stages/task_tf2500_v2/runtime.py": "fd73782e42ad29b2efc5aca91152f778a619d2af3c7ccb8dc17cf1da76b7bcf2",
+    "stages/task_tf2500_v2/common.py": "bbb601534cfe27442633b249cffd84322289371375f9970f21e8de948293ccc1",
+    "stages/task_tf2500_v2/gates.py": "765dad6f85bcb61309f0b3d6ebbeaa317df2e23ea7400d2742df06867b86fe6a",
+    "stages/task_tf2500_v2/patch_core.py": "7fc58b8c3acd4ee5349d338a054c7ed10b2a0d86e77e64cd59e36359c0af5022",
+    "stages/task_tf2500_v2/train.py": "1a16bc289ed32ba8b9025dbcdf8d76180f332b118dd238a0c722e4169b8bad76",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/geometry.py": "3d17d2077e44a5ceaddeafb5a86b5027ca65330d45c627fbc4460fc80b353fa4"
+  },
+  "evidence": {
+    "public_assets.json": "97273e8241708166a02835d4111360681eaa138437985bd9d3078b8b83351b5b",
+    "base_conversion.json": "0731047981fd85e523416034971c9a95d554ab7d4b53ede64d2f76787c9c0d29",
+    "causal_model.json": "f21ed5843b424b606eb816bf3332710ab0f6f724e4c88c87bb2a7f9ce852ba72",
+    "prompt.json": "d5f5281552448b9a5e71be5180342dc17d11c9333d5316a0bd571449fed62c4a",
+    "npu_attention_check.json": "7b43b9a7cd46dc5d7d733802a48e54b73350e948e1af4f106e625b1dbecdd5c8"
+  },
+  "samples": [
+    {
+      "sample_id": "Charge_train_3856_4081",
+      "filename": "Charge_train_3856_4081.pt",
+      "sha256": "5dc1df60fa60fc67c9712a181e283e3147ac6b2d209d1f876174dcb1bfefa778"
+    },
+    {
+      "sample_id": "Caminandes3_train_168_393",
+      "filename": "Caminandes3_train_168_393.pt",
+      "sha256": "cc30ea9e72e0db7617a30535f3bca473ff63780d2df9d9a41bd7a00272cd8076"
+    }
+  ],
+  "scope": "Prepared candidate: native-scale 32x64 spatial patches, seven latents, global draft-first reference; every100th update uses full 12x68x120; target2500 includes12 completed updates. Awaiting patch-training preference.",
+  "patch_grid": [
+    32,
+    64
+  ],
+  "patch_resident_blocks": 24,
+  "full_frame_every": 100,
+  "resume": {
+    "step": 12,
+    "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/runs/task_tf2500_v1/checkpoint_0012.pt",
+    "sha256": "edbe56a2cbe25c3e09a6b198404c2e0e2d7742c0a5ba1295ce42e1fa9be82dd5",
+    "source_config_sha256": "2c4831078adcb802ba1333d096499a718ec99cb2bdeaf65668af14e338f15cc3",
+    "previous_next_schedule": {
+      "sample_index": 0,
+      "latent_start": 30,
+      "latent_count": 12,
+      "noise_seed": 2026111012
+    }
+  },
+  "benchmark_result": "runs/patch_benchmark_v2/result.json",
+  "estimated_hours": 20
+}

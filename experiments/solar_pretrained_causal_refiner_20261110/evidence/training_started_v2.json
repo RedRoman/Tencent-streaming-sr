@@ -1,0 +1,203 @@
+{
+  "status": "real_updates_and_resume_verified",
+  "snapshot_at_unix": 1794291417.7286017,
+  "host": "TRAINING_HOST_B",
+  "physical_npu": 6,
+  "verified_optimizer_updates": 16,
+  "target_updates": 2500,
+  "save_every": 100,
+  "full_frame_every": 100,
+  "patch_grid": [
+    32,
+    64
+  ],
+  "patch_latents": 7,
+  "estimated_remaining_hours": [
+    21,
+    23
+  ],
+  "estimate_scope": "Startup patch throughput, previous full-frame timing, checkpoint/evaluation allowance; full-frame placement switch in v2 not yet reached.",
+  "steady_patch_seconds_mean": 28.330785512924194,
+  "config_sha256": "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+  "launch": {
+    "parent_pid": 2330991,
+    "physical_npu": 6,
+    "all_three_locks_held": true,
+    "started_unix": 1794291195.9530468,
+    "command": [
+      "/bin/bash",
+      "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/with_runtime.sh",
+      "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/stages/task_tf2500_v2/train.py",
+      "--config",
+      "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/stages/task_tf2500_v2/config.json",
+      "--config-sha",
+      "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+      "--run",
+      "task_tf2500_v2",
+      "--resume",
+      "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/runs/task_tf2500_v1/checkpoint_0012.pt"
+    ],
+    "status": "running",
+    "child_pid": 2331003,
+    "child_pgid": 2331003
+  },
+  "live_status": {
+    "status": "training",
+    "optimizer_updates": 16,
+    "target": 2500,
+    "updated_unix": 1794291401.8822258,
+    "next_schedule": {
+      "sample_index": 0,
+      "latent_start": 40,
+      "latent_count": 7,
+      "crop": [
+        12,
+        20,
+        32,
+        64
+      ],
+      "full_frame": false,
+      "noise_seed": 2026111016
+    }
+  },
+  "restored_checkpoint": {
+    "event": "restored_complete_checkpoint",
+    "time": 1794291262.2656355,
+    "elapsed_seconds": 40.77775835990906,
+    "optimizer_updates": 12,
+    "step": 12,
+    "source": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/runs/task_tf2500_v1/checkpoint_0012.pt",
+    "recipe_changed": true
+  },
+  "reload_verified": {
+    "event": "live_adapter_optimizer_reload_verified",
+    "time": 1794291316.8492088,
+    "elapsed_seconds": 95.36133170127869,
+    "optimizer_updates": 13,
+    "step": 13
+  },
+  "recent_updates": [
+    {
+      "event": "optimizer_update",
+      "time": 1794291312.2560005,
+      "elapsed_seconds": 90.76812243461609,
+      "optimizer_updates": 13,
+      "step": 13,
+      "loss": 0.09199850261211395,
+      "grad_norm": 0.008058707229793072,
+      "lr": 0.0000026,
+      "seconds": 46.16857552528381,
+      "peak_allocated_bytes": 42404046336,
+      "sample": "Charge_train_3856_4081",
+      "wall_seconds_including_placement": 46.17332172393799,
+      "sample_index": 0,
+      "latent_start": 30,
+      "latent_count": 7,
+      "crop": [
+        12,
+        12,
+        32,
+        64
+      ],
+      "full_frame": false,
+      "noise_seed": 2026111012
+    },
+    {
+      "event": "optimizer_update",
+      "time": 1794291345.102478,
+      "elapsed_seconds": 123.61459994316101,
+      "optimizer_updates": 14,
+      "step": 14,
+      "loss": 0.06273585557937622,
+      "grad_norm": 0.0030621096957474947,
+      "lr": 0.0000028000000000000003,
+      "seconds": 28.244906663894653,
+      "peak_allocated_bytes": 42403603456,
+      "sample": "Caminandes3_train_168_393",
+      "wall_seconds_including_placement": 28.248198986053467,
+      "sample_index": 1,
+      "latent_start": 30,
+      "latent_count": 7,
+      "crop": [
+        12,
+        12,
+        32,
+        64
+      ],
+      "full_frame": false,
+      "noise_seed": 2026111013
+    },
+    {
+      "event": "optimizer_update",
+      "time": 1794291373.2756104,
+      "elapsed_seconds": 151.7877321243286,
+      "optimizer_updates": 15,
+      "step": 15,
+      "loss": 0.08370892703533173,
+      "grad_norm": 0.006217277143150568,
+      "lr": 0.000003,
+      "seconds": 28.161574363708496,
+      "peak_allocated_bytes": 42403603456,
+      "sample": "Charge_train_3856_4081",
+      "wall_seconds_including_placement": 28.168113708496094,
+      "sample_index": 0,
+      "latent_start": 35,
+      "latent_count": 7,
+      "crop": [
+        8,
+        0,
+        32,
+        64
+      ],
+      "full_frame": false,
+      "noise_seed": 2026111014
+    },
+    {
+      "event": "optimizer_update",
+      "time": 1794291401.867397,
+      "elapsed_seconds": 180.3795189857483,
+      "optimizer_updates": 16,
+      "step": 16,
+      "loss": 0.053604044020175934,
+      "grad_norm": 0.0036313580349087715,
+      "lr": 0.0000032000000000000003,
+      "seconds": 28.585875511169434,
+      "peak_allocated_bytes": 42403603456,
+      "sample": "Caminandes3_train_168_393",
+      "wall_seconds_including_placement": 28.58827829360962,
+      "sample_index": 1,
+      "latent_start": 35,
+      "latent_count": 7,
+      "crop": [
+        8,
+        0,
+        32,
+        64
+      ],
+      "full_frame": false,
+      "noise_seed": 2026111015
+    }
+  ],
+  "parameter_update_proof": {
+    "verified_at_unix": 1794291370.9136734,
+    "resumed_step": 12,
+    "verified_step": 13,
+    "changed_adapter_tensors": 400,
+    "total_adapter_tensors": 400,
+    "adapter_max_abs_delta": 0.0000027182923076907173,
+    "optimizer_parameter_states": 400,
+    "all_optimizer_steps": 13,
+    "checkpoint_receipt": {
+      "step": 13,
+      "sha256": "46babaf976be5053dfa4cd0d802cf4b633a144135115949c14ec3e418ed323ed",
+      "bytes": 482164949,
+      "config_sha256": "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+      "resume_state_readback_verified": true,
+      "inference_quality_accepted": false
+    },
+    "scope": "CPU checkpoint value comparison only; no RGB quality conclusion"
+  },
+  "preflight_passed": true,
+  "acceptance_evidence": "evidence/patch_recipe_accepted_v2.json",
+  "scope": "Training startup verified; no RGB/generalization quality conclusion."
+}

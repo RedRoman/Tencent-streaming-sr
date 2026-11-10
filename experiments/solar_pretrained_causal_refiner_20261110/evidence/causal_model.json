@@ -1,0 +1,25 @@
+{
+  "base_conversion": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/evidence/base_conversion.json",
+  "adapters_in_order": [
+    {
+      "name": "solarrenderer_causal_control_lora.safetensors",
+      "sha256": "49704c2948a111f958f3a0fc2cb9802081f9b5c129d91f30da6c8758787a8888",
+      "rank": 384,
+      "alpha": 384,
+      "scale": 1.0
+    },
+    {
+      "name": "solarrenderer_causal_4step_lora.safetensors",
+      "sha256": "10d275abf164f2115e682fd62bd1676e9b7db3c2fddaf8a66275651304d19d83",
+      "rank": 384,
+      "alpha": 384,
+      "scale": 1.0
+    }
+  ],
+  "model": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/models/causal_4step/transformer",
+  "index_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+  "target_count": 312,
+  "merge_implementation": "upstream merge_lora_delta; FP32 delta, sequential BF16 rounding",
+  "new_optimizer_updates": 0,
+  "completed_unix": 1794237480.2786975
+}

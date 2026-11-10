@@ -1,0 +1,30 @@
+{
+  "test_result": {
+    "status": "passed",
+    "scope": "tiny random one-layer realH3, full68x120; CPU only",
+    "initial_identity_max_abs": 0,
+    "three_latent_chunk_max_abs": 0,
+    "nonzero_head_causal_prefix_max_abs": 0,
+    "nonzero_upstream_gradient_norm": 0.00012259827962279995,
+    "nonzero_head_gradient_norm": 0.06161681036514193,
+    "reload_max_abs": 0,
+    "target_does_not_enter_forward_inputs": true,
+    "all67_positions_each_train_clip": true,
+    "first_latent_samples_in2000": 500,
+    "new_real_optimizer_updates": 0,
+    "accelerator_imported": true,
+    "accelerator_initialized": false,
+    "all_model_tensors_CPU": true
+  },
+  "tested_sources": {
+    "src/anchored_refiner_v1.py": "655a3470d219fcf9673187381c6961c185f517c4134de0e9c26902495fa9edfe",
+    "src/test_anchored_refiner_cpu_v2.py": "6388022e361461b3f58742b6e00b589d5f8b5110106dd32cfeeb340cdab9073f",
+    "src/paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f",
+    "src/causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f"
+  },
+  "log_sha256": "d402cfcc5e62b3813f91c967277f76aaf4566a089de5e89b77e50db0cfb6dddc",
+  "session": "h3-anchored-cpu-v2",
+  "exit_code": 0,
+  "previous_failure_preserved": "anchored_cpu_v1_failure.json",
+  "limitation": "tiny random one-layer realH3 CPU controls; not real33B quality or accelerator proof"
+}

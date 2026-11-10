@@ -1,0 +1,497 @@
+{
+  "schema": "matched-history-analysis-v2",
+  "status": "complete_five_sample_diagnostic",
+  "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+  "completed_samples": 5,
+  "planned_samples": 5,
+  "new_optimizer_updates": 0,
+  "metric": "latent MSE against current nativeHR latent",
+  "samples": [
+    {
+      "sample_id": "WingIt_dev_3586_3811",
+      "split": "dev",
+      "receipt_sha256": "71f62aa3e5a8cd16941c8f01e7ac6fff9c428dbdc75f9e5dc2c2e1801a0298c0",
+      "positions": [
+        {
+          "position_zero_based": 0,
+          "no_refiner_MSE": 0.05498995631933212,
+          "GT_history_MSE": 0.38582485914230347,
+          "self_history_MSE": 0.38582485914230347,
+          "truncated_GT_MSE": 0.38582485914230347,
+          "self_over_GT": 1.0,
+          "self_over_no_refiner": 7.0162786982731955,
+          "truncated_over_GT": 1.0,
+          "GT_over_no_refiner": 7.0162786982731955
+        },
+        {
+          "position_zero_based": 3,
+          "no_refiner_MSE": 0.14196473360061646,
+          "GT_history_MSE": 0.09996317327022552,
+          "self_history_MSE": 0.3804898262023926,
+          "truncated_GT_MSE": 0.10792255401611328,
+          "self_over_GT": 3.8062999978385355,
+          "self_over_no_refiner": 2.6801714521073166,
+          "truncated_over_GT": 1.0796231300538204,
+          "GT_over_no_refiner": 0.7041408858022994
+        },
+        {
+          "position_zero_based": 11,
+          "no_refiner_MSE": 0.08723312616348267,
+          "GT_history_MSE": 0.10900549590587616,
+          "self_history_MSE": 0.30061501264572144,
+          "truncated_GT_MSE": 0.12727317214012146,
+          "self_over_GT": 2.7577968445306267,
+          "self_over_no_refiner": 3.446110736445947,
+          "truncated_over_GT": 1.1675849101225046,
+          "GT_over_no_refiner": 1.2495883238391587
+        }
+      ],
+      "first_latent_condition": [
+        {
+          "condition": "zero_draft_condition",
+          "MSE": 0.40016454458236694,
+          "ratio_to_actual_draft_condition": 1.0371663077178097
+        },
+        {
+          "condition": "current_HR_condition_oracle",
+          "MSE": 0.38522741198539734,
+          "ratio_to_actual_draft_condition": 0.9984515068359404
+        }
+      ],
+      "point_FM_ratios": [
+        {
+          "position": 3,
+          "sigma": 0.909375,
+          "self_over_GT": 3.9994982916306525
+        },
+        {
+          "position": 3,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 4.167816907846442
+        },
+        {
+          "position": 3,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 3.285524352621119
+        },
+        {
+          "position": 11,
+          "sigma": 0.909375,
+          "self_over_GT": 3.1783768850925314
+        },
+        {
+          "position": 11,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 3.2708344340114404
+        },
+        {
+          "position": 11,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 3.097516699884599
+        }
+      ],
+      "four_latent_parity_max_abs": 0,
+      "saved_self_replay_max_abs": 0,
+      "max_cache_bytes": 6930022400
+    },
+    {
+      "sample_id": "ElephantsDream_dev_13070_13295",
+      "split": "dev",
+      "receipt_sha256": "42749899730e20154b64b610a88047c1e4daaed92949fe88b49c487ce7c88f1c",
+      "positions": [
+        {
+          "position_zero_based": 0,
+          "no_refiner_MSE": 0.11912605911493301,
+          "GT_history_MSE": 0.3930002450942993,
+          "self_history_MSE": 0.3930002450942993,
+          "truncated_GT_MSE": 0.3930002450942993,
+          "self_over_GT": 1.0,
+          "self_over_no_refiner": 3.299028340349378,
+          "truncated_over_GT": 1.0,
+          "GT_over_no_refiner": 3.299028340349378
+        },
+        {
+          "position_zero_based": 3,
+          "no_refiner_MSE": 0.23630568385124207,
+          "GT_history_MSE": 0.03539848327636719,
+          "self_history_MSE": 0.5857758522033691,
+          "truncated_GT_MSE": 0.03215320035815239,
+          "self_over_GT": 16.548049463871976,
+          "self_over_no_refiner": 2.4788902351249567,
+          "truncated_over_GT": 0.9083214132967833,
+          "GT_over_no_refiner": 0.14979954226852646
+        },
+        {
+          "position_zero_based": 11,
+          "no_refiner_MSE": 0.17769940197467804,
+          "GT_history_MSE": 0.051978446543216705,
+          "self_history_MSE": 0.5073655247688293,
+          "truncated_GT_MSE": 0.03476060926914215,
+          "self_over_GT": 9.761075186173327,
+          "self_over_no_refiner": 2.855189826925407,
+          "truncated_over_GT": 0.6687504452492815,
+          "GT_over_no_refiner": 0.29250771789667346
+        }
+      ],
+      "first_latent_condition": [
+        {
+          "condition": "zero_draft_condition",
+          "MSE": 0.4177438020706177,
+          "ratio_to_actual_draft_condition": 1.062960665508952
+        },
+        {
+          "condition": "current_HR_condition_oracle",
+          "MSE": 0.3883984088897705,
+          "ratio_to_actual_draft_condition": 0.9882905004208722
+        }
+      ],
+      "point_FM_ratios": [
+        {
+          "position": 3,
+          "sigma": 0.909375,
+          "self_over_GT": 21.594745156646145
+        },
+        {
+          "position": 3,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 15.679202960681005
+        },
+        {
+          "position": 3,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 7.600971750246061
+        },
+        {
+          "position": 11,
+          "sigma": 0.909375,
+          "self_over_GT": 17.235303031423015
+        },
+        {
+          "position": 11,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 12.014378483727421
+        },
+        {
+          "position": 11,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 5.457011687797398
+        }
+      ],
+      "four_latent_parity_max_abs": 0,
+      "saved_self_replay_max_abs": 0,
+      "max_cache_bytes": 6930022400
+    },
+    {
+      "sample_id": "WingIt_dev_300_525",
+      "split": "dev",
+      "receipt_sha256": "9c1d8050b862df9a545f34a3bf62da2dd3c2abbb16ecd54eb010cc124430df5f",
+      "positions": [
+        {
+          "position_zero_based": 0,
+          "no_refiner_MSE": 0.045796580612659454,
+          "GT_history_MSE": 0.3471927344799042,
+          "self_history_MSE": 0.3471927344799042,
+          "truncated_GT_MSE": 0.3471927344799042,
+          "self_over_GT": 1.0,
+          "self_over_no_refiner": 7.581193395559545,
+          "truncated_over_GT": 1.0,
+          "GT_over_no_refiner": 7.581193395559545
+        },
+        {
+          "position_zero_based": 3,
+          "no_refiner_MSE": 0.1140184998512268,
+          "GT_history_MSE": 0.03428294509649277,
+          "self_history_MSE": 0.3102473020553589,
+          "truncated_GT_MSE": 0.032394543290138245,
+          "self_over_GT": 9.049610562398794,
+          "self_over_no_refiner": 2.7210259954320977,
+          "truncated_over_GT": 0.9449171650498688,
+          "GT_over_no_refiner": 0.30067879459233116
+        },
+        {
+          "position_zero_based": 11,
+          "no_refiner_MSE": 0.07975630462169647,
+          "GT_history_MSE": 0.027263551950454712,
+          "self_history_MSE": 0.29439622163772583,
+          "truncated_GT_MSE": 0.02270989865064621,
+          "self_over_GT": 10.798160935622908,
+          "self_over_no_refiner": 3.691196865678753,
+          "truncated_over_GT": 0.8329765208845961,
+          "GT_over_no_refiner": 0.3418356966232621
+        }
+      ],
+      "first_latent_condition": [
+        {
+          "condition": "zero_draft_condition",
+          "MSE": 0.3509361147880554,
+          "ratio_to_actual_draft_condition": 1.0107818509329085
+        },
+        {
+          "condition": "current_HR_condition_oracle",
+          "MSE": 0.34708818793296814,
+          "ratio_to_actual_draft_condition": 0.9996988803723308
+        }
+      ],
+      "point_FM_ratios": [
+        {
+          "position": 3,
+          "sigma": 0.909375,
+          "self_over_GT": 9.559916671398613
+        },
+        {
+          "position": 3,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 9.025327273712785
+        },
+        {
+          "position": 3,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 5.873236617789263
+        },
+        {
+          "position": 11,
+          "sigma": 0.909375,
+          "self_over_GT": 12.167805187816763
+        },
+        {
+          "position": 11,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 11.100203386437222
+        },
+        {
+          "position": 11,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 7.201200041965882
+        }
+      ],
+      "four_latent_parity_max_abs": 0,
+      "saved_self_replay_max_abs": 0,
+      "max_cache_bytes": 6930022400
+    },
+    {
+      "sample_id": "Charge_train_3856_4081",
+      "split": "train",
+      "receipt_sha256": "9a8c4e69a482b96a5e46813373de4354a446ab90da5ea09e2dc707f9b700e9c6",
+      "positions": [
+        {
+          "position_zero_based": 0,
+          "no_refiner_MSE": 0.059918660670518875,
+          "GT_history_MSE": 0.2281535416841507,
+          "self_history_MSE": 0.2281535416841507,
+          "truncated_GT_MSE": 0.2281535416841507,
+          "self_over_GT": 1.0,
+          "self_over_no_refiner": 3.807720985933295,
+          "truncated_over_GT": 1.0,
+          "GT_over_no_refiner": 3.807720985933295
+        },
+        {
+          "position_zero_based": 3,
+          "no_refiner_MSE": 0.09608261287212372,
+          "GT_history_MSE": 0.05704415589570999,
+          "self_history_MSE": 0.3177051246166229,
+          "truncated_GT_MSE": 0.054943472146987915,
+          "self_over_GT": 5.569459651527878,
+          "self_over_no_refiner": 3.3065828990252006,
+          "truncated_over_GT": 0.9631744266220257,
+          "GT_over_no_refiner": 0.5936990490842502
+        },
+        {
+          "position_zero_based": 11,
+          "no_refiner_MSE": 0.0719214603304863,
+          "GT_history_MSE": 0.0658368468284607,
+          "self_history_MSE": 0.2751058042049408,
+          "truncated_GT_MSE": 0.058073222637176514,
+          "self_over_GT": 4.178599332403249,
+          "self_over_no_refiner": 3.8250864615485023,
+          "truncated_over_GT": 0.8820778247246186,
+          "GT_over_no_refiner": 0.9153991941478079
+        }
+      ],
+      "first_latent_condition": [
+        {
+          "condition": "zero_draft_condition",
+          "MSE": 0.24198824167251587,
+          "ratio_to_actual_draft_condition": 1.060637673587016
+        },
+        {
+          "condition": "current_HR_condition_oracle",
+          "MSE": 0.22810965776443481,
+          "ratio_to_actual_draft_condition": 0.9998076561976994
+        }
+      ],
+      "point_FM_ratios": [
+        {
+          "position": 3,
+          "sigma": 0.909375,
+          "self_over_GT": 6.214252776727347
+        },
+        {
+          "position": 3,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 5.169569887383445
+        },
+        {
+          "position": 3,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 3.220362789170063
+        },
+        {
+          "position": 11,
+          "sigma": 0.909375,
+          "self_over_GT": 4.518159944078482
+        },
+        {
+          "position": 11,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 4.5349111976873235
+        },
+        {
+          "position": 11,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 2.953707876111333
+        }
+      ],
+      "four_latent_parity_max_abs": 0,
+      "saved_self_replay_max_abs": 0,
+      "max_cache_bytes": 6930022400
+    },
+    {
+      "sample_id": "Caminandes3_train_168_393",
+      "split": "train",
+      "receipt_sha256": "400032f2379522baee9614a833b4cef6419bd253431395bf44f82f62da2a388b",
+      "positions": [
+        {
+          "position_zero_based": 0,
+          "no_refiner_MSE": 0.04737446829676628,
+          "GT_history_MSE": 0.22888407111167908,
+          "self_history_MSE": 0.22888407111167908,
+          "truncated_GT_MSE": 0.22888407111167908,
+          "self_over_GT": 1.0,
+          "self_over_no_refiner": 4.83138026326519,
+          "truncated_over_GT": 1.0,
+          "GT_over_no_refiner": 4.83138026326519
+        },
+        {
+          "position_zero_based": 3,
+          "no_refiner_MSE": 0.07126018404960632,
+          "GT_history_MSE": 0.05585440620779991,
+          "self_history_MSE": 0.28005242347717285,
+          "truncated_GT_MSE": 0.053458135575056076,
+          "self_over_GT": 5.0139719046563656,
+          "self_over_no_refiner": 3.9299985989682553,
+          "truncated_over_GT": 0.9570979123145847,
+          "GT_over_no_refiner": 0.7838094575916055
+        },
+        {
+          "position_zero_based": 11,
+          "no_refiner_MSE": 0.044385235756635666,
+          "GT_history_MSE": 0.04585981369018555,
+          "self_history_MSE": 0.21125558018684387,
+          "truncated_GT_MSE": 0.044481921941041946,
+          "self_over_GT": 4.6065512087340785,
+          "self_over_no_refiner": 4.759591260146924,
+          "truncated_over_GT": 0.9699542663114115,
+          "GT_over_no_refiner": 1.0332222620520706
+        }
+      ],
+      "first_latent_condition": [
+        {
+          "condition": "zero_draft_condition",
+          "MSE": 0.23791873455047607,
+          "ratio_to_actual_draft_condition": 1.039472661399791
+        },
+        {
+          "condition": "current_HR_condition_oracle",
+          "MSE": 0.22742266952991486,
+          "ratio_to_actual_draft_condition": 0.9936151014150253
+        }
+      ],
+      "point_FM_ratios": [
+        {
+          "position": 3,
+          "sigma": 0.909375,
+          "self_over_GT": 5.917812478139549
+        },
+        {
+          "position": 3,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 5.341500990232524
+        },
+        {
+          "position": 3,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 3.943523691285513
+        },
+        {
+          "position": 11,
+          "sigma": 0.909375,
+          "self_over_GT": 5.1338490404193005
+        },
+        {
+          "position": 11,
+          "sigma": 0.8571428571428571,
+          "self_over_GT": 5.524517473559563
+        },
+        {
+          "position": 11,
+          "sigma": 0.6666666666666666,
+          "self_over_GT": 4.2722240757561485
+        }
+      ],
+      "four_latent_parity_max_abs": 0,
+      "saved_self_replay_max_abs": 0,
+      "max_cache_bytes": 6930022400
+    }
+  ],
+  "controlled_intervention": "Same checkpoint/current noisy input/draft/noise/static conditioning; replace only history content or current condition. GT history and currentHR condition are diagnostic oracles, unavailable in deployment.",
+  "confirmed_scope": [
+    "Full current spatial68x120, three sampled positions,12-latent history.",
+    "Projection-aligned full-prefix oracle and saved self-history replay exact0 for the completed samples.",
+    "Condition ablation keeps original draft/noise start fixed; it changes only the current conditioning input."
+  ],
+  "interpretation": [
+    "Self-history degradation and first-latent fidelity failure occur in both training and development samples; held-out generalization alone cannot explain them.",
+    "GT-to-self history intervention changes later outputs under fixed current input. GT histories are informative oracles, not a deployment fix or proof of a unique cause.",
+    "First-latent failure precedes video history. CurrentHR conditioning alone does not rescue it while draft/noise initialization stays fixed.",
+    "Projection alignment removes the measured numerical parity gap, but does not establish that it fixes image quality.",
+    "A separately authorized candidate anchors its output to the draft and trains on draft-derived histories. Its effect requires new training and full-video validation."
+  ],
+  "limits": [
+    "Only two training and three development engineering proxy clips; test remains locked.",
+    "Three sampled positions and12-latent histories are not full67-latent/226-frame acceptance.",
+    "Pointwise FM loss and three-step rollout use different input distributions and cannot be interpreted as interchangeable quality scores.",
+    "This read-only diagnostic performs zero optimizer updates and does not prove convergence, visual quality, or an exclusive root cause."
+  ],
+  "split_summary": {
+    "train": {
+      "sample_count": 2,
+      "later_self_over_GT_range": [
+        4.178599332403249,
+        5.569459651527878
+      ],
+      "first_self_over_no_refiner_range": [
+        3.807720985933295,
+        4.83138026326519
+      ],
+      "first_HR_condition_fractional_reduction_range": [
+        0.00019234380230059855,
+        0.0063848985849747075
+      ]
+    },
+    "dev": {
+      "sample_count": 3,
+      "later_self_over_GT_range": [
+        2.7577968445306267,
+        16.548049463871976
+      ],
+      "first_self_over_no_refiner_range": [
+        3.299028340349378,
+        7.581193395559545
+      ],
+      "first_HR_condition_fractional_reduction_range": [
+        0.00030111962766921074,
+        0.011709499579127813
+      ]
+    }
+  }
+}

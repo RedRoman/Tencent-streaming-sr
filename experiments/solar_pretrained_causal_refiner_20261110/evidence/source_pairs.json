@@ -1,0 +1,80 @@
+{
+  "upsampler_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "samples": [
+    {
+      "sample_id": "Charge_train_3856_4081",
+      "split": "train",
+      "path": "/opt/refiner-cache/h3-streaming-refiner-20261109/runs/data_v1/Charge_train_3856_4081.pt",
+      "sha256": "5dc1df60fa60fc67c9712a181e283e3147ac6b2d209d1f876174dcb1bfefa778",
+      "pair_record_sha256": "ee407c01fdb6dfb621943c91c401dab7e2746e1831022230af099656dfb45c68",
+      "native_hr_identity": {
+        "kind": "original_source_native_crop_or_identity",
+        "is_upscaled": false,
+        "is_model_output": false,
+        "visible_hw": [
+          1080,
+          1920
+        ],
+        "source_raster_hw": [
+          1608,
+          3840
+        ],
+        "source_crop_y0_y1_x0_x1": [
+          264,
+          1344,
+          960,
+          2880
+        ],
+        "source_video_sha256": "4288be5a6737379b1c16b95b56708bd288c72097665797b2beff1c40ec5ba3e2",
+        "native_hr_rgb_sha256": "d241d44566fe573423cbbecc7d0c9f65e8ca95dcfa7b88306aa75da1a627c02f",
+        "source_window_receipt_sha256": "161d9efc3f0cb1482b20af6cdba2af88f65aa2144267f858f3c732edf6c403fc"
+      },
+      "normalization_binding_sha256": "7295286b2fc1cdd4f57f62034b42aaf57ec79078181141b81d25a300faa22fe1",
+      "cohort": "original_generation_mode_unbound"
+    },
+    {
+      "sample_id": "Caminandes3_train_168_393",
+      "split": "train",
+      "path": "/opt/refiner-cache/h3-streaming-refiner-20261109/runs/data_v1/Caminandes3_train_168_393.pt",
+      "sha256": "cc30ea9e72e0db7617a30535f3bca473ff63780d2df9d9a41bd7a00272cd8076",
+      "pair_record_sha256": "7f6e2c37e8cf7f69967515a5df5187b7d411bc83a386fbc0af2d699d66b3da43",
+      "native_hr_identity": {
+        "kind": "original_source_native_crop_or_identity",
+        "is_upscaled": false,
+        "is_model_output": false,
+        "visible_hw": [
+          1080,
+          1920
+        ],
+        "source_raster_hw": [
+          1080,
+          1920
+        ],
+        "source_crop_y0_y1_x0_x1": [
+          0,
+          1080,
+          0,
+          1920
+        ],
+        "source_video_sha256": "5d57bf180186a1e2923d34824aae00f19d3ea658564e6e5ff36636f535375e66",
+        "native_hr_rgb_sha256": "e73cb4d554118e53493bb08fedb68793a7c070591039bc9311b39b986b694453",
+        "source_window_receipt_sha256": "7230660ec0616d91d053fe58b5944be3b8893c8d8b7329dddd88d2134c1e0856"
+      },
+      "normalization_binding_sha256": "7295286b2fc1cdd4f57f62034b42aaf57ec79078181141b81d25a300faa22fe1",
+      "cohort": "strictdet_generation"
+    }
+  ],
+  "condition_sha256": "e6b94ce5312346d81ff3dce81a7cd3f382441141c1fe2fc2ad7efd8cdfd4e84c",
+  "condition_mode": "no_text_known_silence_full226",
+  "upstream_full_payload_verification": true,
+  "formal_training_gate_claimed": false,
+  "scope": "user-authorized train2 pilot; strict original router/payload validation retained",
+  "geometry": [
+    24,
+    67,
+    68,
+    120
+  ],
+  "source_manifest_local": "/opt/local-workspace/h3-streaming-refiner-20261109/evidence/prepared_data_v1.json",
+  "new_experiment_scope": "Pretrained SolarRenderer causal inference first; no optimizer updates yet"
+}

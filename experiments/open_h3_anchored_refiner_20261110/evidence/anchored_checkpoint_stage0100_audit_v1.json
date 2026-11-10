@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "observed_at": "2026-11-10T09:00:12.243553+00:00",
+  "stage_step": 100,
+  "total_optimizer_updates": 2600,
+  "receipt_sha256": "4b0e7e498fe3c9837282ffe27a357af7ab957118f3fa2d865a9d9f2b4b6f1c34",
+  "adapter_sha256": "3031f2f868b73d7284b4ba556b96bbe3ac968b02bec5628c15cc55972812390f",
+  "private_optimizer_sha256": "5767ccf290e7036c9d797f5523157dae9861375b3e0954a45c1005608f56b6a7",
+  "stage_manifest_sha256": "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+  "CPU_load_only": true,
+  "accelerator_imported": false,
+  "accelerator_initialized": false,
+  "all_parameter_and_moment_tensors_CPU_finite": true,
+  "old_parameter_slots": 401,
+  "old_parameter_elements": 20586496,
+  "old_optimizer_step": 2600,
+  "new_head_slots": 4,
+  "new_head_optimizer_step": 100,
+  "head_output_weights_nonzero": true,
+  "all_optimizer_hyperparameters_match": true,
+  "next_schedule": {
+    "sample_index": 0,
+    "latent_index": 36,
+    "frames": [
+      0,
+      35,
+      36
+    ],
+    "sigma": 0.6666666666666666,
+    "noise_seed": 20261110,
+    "history": "draft",
+    "history_jitter_std": 0.0
+  },
+  "CPU_and_NPU_RNG_present": true,
+  "audit_optimizer_updates": 0,
+  "limits": "CPU schema/integrity audit of saved training state; no extra optimizer updates, NPU restore run or quality inference"
+}

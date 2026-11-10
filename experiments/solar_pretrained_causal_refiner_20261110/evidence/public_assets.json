@@ -1,0 +1,20 @@
+{
+  "status": "verified",
+  "code_revision": "0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d",
+  "model_revision": "c5512be825f297ed8db390cbeda0289fb0c24779",
+  "source": "Enderfga/SolarRenderer",
+  "download_transport": "hf-mirror.com",
+  "weights": [
+    {
+      "file": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/weights/solarrenderer_causal_4step_lora.safetensors",
+      "bytes": 4150865728,
+      "sha256": "10d275abf164f2115e682fd62bd1676e9b7db3c2fddaf8a66275651304d19d83"
+    },
+    {
+      "file": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/weights/solarrenderer_causal_control_lora.safetensors",
+      "bytes": 4150865680,
+      "sha256": "49704c2948a111f958f3a0fc2cb9802081f9b5c129d91f30da6c8758787a8888"
+    }
+  ],
+  "new_optimizer_updates": 0
+}
