@@ -9,11 +9,7 @@
 /opt/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2/aarch64-linux/ascend_toolkit_install.info owner does not match the current owner.
   warnings.warn(f"Warning: The {path} owner does not match the current owner.")
 {"event": "strict_load_start", "time": 1794237037.4871752}
-
-Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]
-Loading checkpoint shards:  38%|███▊      | 5/13 [00:00<00:00, 40.91it/s]
-Loading checkpoint shards:  77%|███████▋  | 10/13 [00:00<00:00, 41.67it/s]
-Loading checkpoint shards: 100%|██████████| 13/13 [00:00<00:00, 41.72it/s]
+Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]Loading checkpoint shards:  38%|███▊      | 5/13 [00:00<00:00, 40.91it/s]Loading checkpoint shards:  77%|███████▋  | 10/13 [00:00<00:00, 41.67it/s]Loading checkpoint shards: 100%|██████████| 13/13 [00:00<00:00, 41.72it/s]
 {"event": "strict_load_complete", "time": 1794237037.9536512, "targets": 312, "parameters": 33122992896}
 {"event": "merge_progress", "time": 1794237056.1762488, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 26, "total": 312}
 {"event": "merge_progress", "time": 1794237067.8218212, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 52, "total": 312}
