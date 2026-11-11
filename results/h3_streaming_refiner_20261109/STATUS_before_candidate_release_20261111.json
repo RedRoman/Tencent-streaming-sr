@@ -1,0 +1,796 @@
+{
+  "as_of_utc": "2026-11-10T21:58:21.681104+00:00",
+  "stage": "six_video_sets_delivered_long137_engineering_passed_strict_decoder_fidelity_failed",
+  "verified_optimizer_updates_at_evidence_snapshot": 4500,
+  "target_updates": 4500,
+  "full_model_NPU_two_latent_gates": "passed",
+  "full67_inference_validated": true,
+  "full226_evaluation_complete": false,
+  "visual_quality_passed": false,
+  "decoder_strict_streaming_validated": false,
+  "selected_refiner_weights": null,
+  "prior_v2_parity_failure_preserved": true,
+  "saved_adapter_steps": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1800,
+    1900,
+    2000,
+    2100,
+    2200,
+    2300,
+    2400,
+    2500
+  ],
+  "dev_payloads_CPU_verified": 3,
+  "evaluation_workers": "Original anchored trainer completed2000 updates and exited/reaped. Exactstage1000 remaining development evaluations continue independently.",
+  "training_audit_passed": true,
+  "full67_inference_scope": {
+    "checkpoint": 200,
+    "sample_id": "WingIt_dev_3586_3811",
+    "full_model": true,
+    "latent_shape": [
+      1,
+      24,
+      67,
+      68,
+      120
+    ],
+    "chunk_invariance_scope": "first4 latents, maxabs0",
+    "longer_than67_tested": false
+  },
+  "full226_completed_clip_count": 7,
+  "step200_first_clip_metric_ratios": {
+    "pixel_l1": 4.620512088645055,
+    "lpips": 5.604025592910683
+  },
+  "step200_visual_screening_rejected": true,
+  "continuous_visual_reviewed": false,
+  "full226_geometry_verified": [
+    226,
+    1080,
+    1920,
+    3
+  ],
+  "step200_video_technical_audit": "full226 passed",
+  "full226_completed_clip_count_definition": "7 arm/clip results: step0/200/2500/dense firstWingIt; step0/2500 ElephantsDream; step2500 thirdWingIt. Three unique clips.",
+  "dense_reference_preflight_historical": {
+    "status": "failed",
+    "max_abs": 0.2541511058807373,
+    "relative_rms": 0.017852548509836197,
+    "full67_inference_started": false
+  },
+  "native_dense_reference": {
+    "two_latent_upstream_gate": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "full67_complete": true,
+    "full226_complete": true,
+    "sample_id": "WingIt_dev_3586_3811",
+    "full226_ratios_vs_no_refiner": {
+      "pixel_l1": 2.833940258743118,
+      "lpips": 3.2183841890114944
+    },
+    "metric_gate_passed_for_this_clip": false,
+    "continuous_visual_reviewed": false
+  },
+  "continuation_v2": {
+    "full_reuse_CPU_admission": "passed10 verified receipts",
+    "remaining_arm_clip_jobs": 14,
+    "streaming_resident_layers": 40,
+    "paging_only_change_each_job_repeats_gates": true,
+    "no_accepted_refiner": true,
+    "new_optimizer_updates": 0,
+    "active_arm_clip": "step0 WingIt_dev_300_525",
+    "status": "deferred_intentionally_stopped_after_thirdWingIt_full67"
+  },
+  "three_column_interim_video": {
+    "complete226": true,
+    "fps": 24,
+    "columns": [
+      "TFstep200 streaming REJECTED",
+      "released bidirectional refiner",
+      "actual nativeHR GT"
+    ],
+    "sha256": "3b601cc4f87392db5855ce0738006f73566a229ce26e3986bab24c496ab5026f",
+    "technical_audit_passed": true,
+    "continuous_visual_reviewed": false,
+    "accepted_refiner": null
+  },
+  "long_index_CPU_diagnostic": {
+    "report": "LONG_STREAM_CPU_V2.md",
+    "latent_positions": 137,
+    "attention_scope": "synthetic5 spatial rows,7static rows",
+    "position_noise_scope": "released full68x120 position packing; full24x1x68x120 noise",
+    "kernel_parity_max_abs": 0.0,
+    "future_max_abs": 0.0,
+    "positions_max_abs": 0.0,
+    "synthetic_cache_bytes": 2176,
+    "full33B_longstream_validated": false,
+    "strict_decoder_validated": false,
+    "new_optimizer_updates": 0,
+    "new_accelerator_forwards": 0,
+    "v1_oracle_failure_preserved": true
+  },
+  "strict_decoder_candidate": {
+    "stage": "strict_decoder_v1",
+    "CPU_random_tiny_actual_architecture": "passed137latent and full68x120 first-latent crop",
+    "NPU_full_pretrained_VAE": "not_launched",
+    "kv_backing": "CPU, preserveFP32",
+    "compensation": false,
+    "report": "STRICT_DECODER_CPU_V1.md",
+    "original_public_source_and_license_retained": true,
+    "full_model_refiner_long_stream": "still_pending",
+    "full_pretrained_validation_worker": {
+      "stage": "strict_decoder_validation_v1",
+      "original_manifest_sha256": "61cc5f162ffd5b4ad967beb51ff39f4fef9f99ea431ad6734a4fb6bbd5d86cea",
+      "CPU_integrity_admission": "passed",
+      "active_predecessor_refusal": "passed before torch import",
+      "negative_tests": "passed on Linux; earlier macOS failure retained and guard corrected",
+      "NPU_launched": false,
+      "report": "STRICT_DECODER_VALIDATOR_CPU_V1.md"
+    }
+  },
+  "step0_first_clip_metric_ratios": {
+    "pixel_l1": 6.208725297765126,
+    "lpips": 5.938128860517555
+  },
+  "step0_first_clip_visual_sampled_rejected": true,
+  "partial_checkpoint_comparison": "WINGIT_CHECKPOINT_COMPARISON_V1.md",
+  "auxiliary_checkpoint_video": {
+    "columns": [
+      "stream_step0_failed",
+      "stream_step200_failed",
+      "released_bidirectional",
+      "no_refiner",
+      "actual_GT"
+    ],
+    "full226": true,
+    "fps": 24,
+    "technical_audit": "passed; all PTS and full decode",
+    "sha256": "fe8692360060e03aa026b4df89d7ef7c0b4b06740bd1c8842c960ec59e088f7d",
+    "continuous_visual_reviewed": false,
+    "selected_refiner": null
+  },
+  "step0_ElephantsDream": {
+    "full67_complete": true,
+    "payload_SHA_verified": true,
+    "chunk_parity_first4_max_abs": 0.0,
+    "full226_pending": false,
+    "selected": false,
+    "full226_complete": true,
+    "full226_RGB_SHA_verified": true,
+    "full226_ratios_vs_no_refiner": {
+      "pixel_l1": 5.183506290932094,
+      "lpips": 4.811259316715271
+    },
+    "sampled_visual_rejected": true,
+    "continuous_visual_reviewed": false,
+    "auxiliary_video": {
+      "filename": "step0_elephantsdream_no_refiner_gt.mp4",
+      "sha256": "06510c33b6a1ae81ab7dc79f07a6dfd16e5745bd75801f989603b783f2709e3c",
+      "full226_24fps_technical_audit_passed": true,
+      "continuous_visual_reviewed": false,
+      "columns": [
+        "step0_streaming_failed",
+        "frozen_upsampler_no_refiner",
+        "actual_GT"
+      ]
+    }
+  },
+  "step0_conclusive_metric_rejection": {
+    "all3_equal_clip_L1_ratio_lower_bound": 3.8856771521530424,
+    "frozen_max_ratio": 1.02,
+    "known_clips": 2,
+    "third_clip_complete": false,
+    "checkpoint0_metric_gate_cannot_pass": true,
+    "other_checkpoints_pending": true,
+    "report": "STEP0_TWO_CLIP_RESULTS_V1.md",
+    "interpretation": "only the untrained checkpoint artifact fails acceptance; does not reject TF or stop training"
+  },
+  "TF_extension_3000": {
+    "resume_from_step": 200,
+    "target_total_real_optimizer_updates": 2500,
+    "new_training_updates_so_far": 2300,
+    "optimizer_restored": true,
+    "CPU_resume_integrity_passed": true,
+    "NPU_training_launched": true,
+    "resume_adapter_sha256": "b1bd7d862dc98e12bebdd6ea58257fbfd069d8d5173f39bebef7290c2a382ab1",
+    "resume_optimizer_sha256": "3b770ffc6e5fcabb7e78cf3481105531fe6b0372ea898706d8f8af1a16dc1ef5",
+    "CPU_optimizer_roundtrip_next_diagnostic_step_max_abs": 0,
+    "report": "TF_EXTENSION_3000_V1.md",
+    "early_pilot_quality_does_not_stop_TF": true,
+    "model_acceptance_thresholds_unchanged": true,
+    "old_short_pilot_cohort_deferred": true,
+    "later_eval_steps": [
+      1000,
+      2000,
+      2500
+    ],
+    "total_training_updates_at_snapshot": 2500,
+    "real_full_model_resume_gates": "passed; cache/future/condition_future/reload exact0; real backward finite/nonzero",
+    "new_update_gradients_finite_nonzero": true,
+    "running": false,
+    "latest_verified_saved_step": 2500,
+    "first_new_checkpoint_CPU_audit": "TF3000_step0300_CPU_audit_v1.json",
+    "trained_checkpoint_CPU_audit": "TF2500_checkpoint_CPU_audit_v2.json",
+    "all_new_events_and_schedule_verified_through": 2500,
+    "stop_complete_receipt": "TF2500_stop_complete_v2.json",
+    "overshoot_updates": 0,
+    "raw_launcher_exit_code": -15
+  },
+  "step0_third_WingIt": {
+    "full67_complete": true,
+    "first4_chunk_parity_max_abs": 0,
+    "full226_deferred": true,
+    "latent_receipt": "step0000_thirdwingit_full67.json"
+  },
+  "step0_identity_guaranteed": false,
+  "strict_zero_regression_guaranteed": false,
+  "identity_scope_report": "TF3000_STEP300_AND_IDENTITY_SCOPE_V1.md",
+  "saved_steps_list_scope": "training receipts observed; independent full CPU audits explicitly listed",
+  "independently_audited_saved_steps": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    300,
+    1000,
+    2000,
+    2400,
+    2500
+  ],
+  "trained_checkpoint_evaluation": {
+    "prepared": true,
+    "checkpoints": [
+      1000,
+      2000,
+      2500
+    ],
+    "execution_order": [
+      2500,
+      1000,
+      2000
+    ],
+    "stage_manifest_sha256": "36d73bb91b352eaa006626b98b8a3d61ae748d6a77c9e9b39c8b65971d101fb2",
+    "CPU_guard_tests": 9,
+    "active_training_entrypoint_refusal_passed": true,
+    "NPU_launched": true,
+    "waiter_started": false,
+    "model_workers_changed": false,
+    "new_streaming_jobs_planned": 9,
+    "new_dense_jobs_planned": 2,
+    "dense_first_clip_reuse_planned": true,
+    "report": "TF2500_FIRST_WINGIT_RESULT_V1.md",
+    "active_worker": null,
+    "trained_full_model_two_latent_gates": "exact0_cache_future_condition_future_reload",
+    "completed_latent_count": 67,
+    "cache_bytes": 6930022400,
+    "full67_complete": true,
+    "full226_complete": true,
+    "new_trained_video_ready": true,
+    "complete_flags_scope": "all three original TF2500 dev clips; not the new anchored candidate",
+    "status": "deferred_after_all_three_TF2500_clips_completed"
+  },
+  "trained_checkpoint_evaluation_3000_superseded": {
+    "prepared": true,
+    "checkpoints": [
+      1000,
+      2000,
+      3000
+    ],
+    "execution_order": [
+      3000,
+      1000,
+      2000
+    ],
+    "stage_manifest_sha256": "304c30f8b209d705813fc0c1e302e95585c3680f9a3bce42984a27968a7a5cde",
+    "CPU_guard_tests": 7,
+    "active_training_entrypoint_refusal_passed": true,
+    "NPU_launched": false,
+    "waiter_started": false,
+    "model_workers_changed": false,
+    "new_streaming_jobs_planned": 9,
+    "new_dense_jobs_planned": 2,
+    "dense_first_clip_reuse_planned": true,
+    "report": "TF3000_TRAINED_EVALUATION_PREP_V1.md"
+  },
+  "stop_controller": {
+    "single_CPU_controller_running": false,
+    "target": 2500,
+    "prior_attempt_failed_before_signals": true,
+    "trained_checkpoint_ready": true,
+    "report": "TF2500_CPU_preparation_report_v1.json",
+    "complete": true,
+    "actual_logged_optimizer_updates": 2500,
+    "overshoot_updates": 0
+  },
+  "TF2500_first_WingIt": {
+    "status": "first_trained2500_clip_full67_full226_complete_metric_gate_failed",
+    "sample_id": "WingIt_dev_3586_3811",
+    "training_step": 2500,
+    "checkpoint_sha256": "4c065da2c6d511eb4c4d551e15bdf014773ac2f000ef577a7963bd1f0a1ce3bd",
+    "latents": 67,
+    "frames": 226,
+    "fps": 24,
+    "visible_shape": [
+      226,
+      1080,
+      1920,
+      3
+    ],
+    "latent_receipt_sha256": "7a43205730dd9099639e03f72e8d24dcdc6837f58e55dbfc87529b3151e61ef4",
+    "pixel_receipt_sha256": "a2d5d240acbdf9b561a741af77b492b84858cfd3a8c1c178e504ee0c7e3b6cdd",
+    "latent_payload": {
+      "path": "PROJECT_ROOT/evaluations/tf2500_v1/step2500_WingIt_dev_3586_3811_latent/streaming_latents.npy",
+      "sha256": "6fddd19bdb863ee28d9cbc63acc177af547d73afad966e198788be698ce6fad9",
+      "shape": [
+        24,
+        67,
+        68,
+        120
+      ]
+    },
+    "RGB": {
+      "path": "PROJECT_ROOT/evaluations/tf2500_v1/step2500_WingIt_dev_3586_3811_pixels/visible_RGB.npy",
+      "sha256": "1c2e4cce02d094edbc4122e64c27924698556951ebc3c0f46f92a1f74875ca1c",
+      "shape": [
+        226,
+        1080,
+        1920,
+        3
+      ]
+    },
+    "metrics": {
+      "frame_count": 226,
+      "pixel_l1": 0.10194905979179703,
+      "mse": 0.02146866582993385,
+      "psnr_db": 16.68194943952265,
+      "lpips": 0.5666889469180487,
+      "global_score": 0.21528684917540677,
+      "adjacent_pairs": 225,
+      "motion_roi_fraction": 0.08939780092592593,
+      "motion_l1": 0.1511583940521553,
+      "delta_l1": 0.03462661929228387,
+      "temporal_difference_mse": 0.006119719989746926,
+      "motion_mask_sha256": "332ce49dfc00046eddb1dbd246ce6f427047d689840279ff4f9f7bbbd5caf8bb"
+    },
+    "no_refiner_metrics": {
+      "frame_count": 226,
+      "pixel_l1": 0.02152031323814814,
+      "mse": 0.0016872162129153061,
+      "psnr_db": 27.72829259995797,
+      "lpips": 0.10655533792698278,
+      "global_score": 0.04283138082354469,
+      "adjacent_pairs": 225,
+      "motion_roi_fraction": 0.08939780092592593,
+      "motion_l1": 0.05734607517219047,
+      "delta_l1": 0.01659603923696358,
+      "temporal_difference_mse": 0.0016932724155372964,
+      "motion_mask_sha256": "332ce49dfc00046eddb1dbd246ce6f427047d689840279ff4f9f7bbbd5caf8bb"
+    },
+    "ratios_vs_no_refiner": {
+      "pixel_l1": 4.737340886427075,
+      "lpips": 5.318259581761857
+    },
+    "first4_chunk": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "cache_bytes_after_first": [
+      6930022400
+    ],
+    "metric_gate_passed_for_this_clip": false,
+    "cohort_complete": false,
+    "accepted_refiner": null,
+    "continuous_visual_reviewed": false,
+    "strict_decoder_validated": false,
+    "other_cohort_jobs_continue": true,
+    "new_optimizer_updates": 0,
+    "video_technical_audit_passed": true,
+    "video_local_transfer": "compact main, ablation and native1080 complete, original file SHA verified; full-width2880 comparison remains remote",
+    "video_audit": "TF2500_video_audit.json",
+    "sampled_visual_screening": "failed",
+    "sampled_visual_report": "TF2500_WingIt_sampled_visual_v1.json",
+    "main_preview": "tf2500_dense_gt_quickview.mp4",
+    "no_refiner_ablation": "tf2500_no_refiner_gt.mp4",
+    "native1080_transfer_receipt": "TF2500_native1080_transfer_recovery_v1.json",
+    "native1080_sha256": "84cd4b5d0a19710b0675b02d46302b83c99bdb9b236490c98e5a4b1d4b4a08e0",
+    "native1080_bytes": 29966506
+  },
+  "TF2500_failure_diagnosis": {
+    "report": "TF2500_failure_diagnostic_cpu_v1.json",
+    "first_latent_MSE_ratio_vs_no_refiner": 7.01627964890783,
+    "root_cause_proven": false,
+    "current_recipe_changed": false,
+    "new_NPU_jobs": 0,
+    "training_clips": 2,
+    "one_current_latent_per_optimizer_step": true,
+    "next": "matched train/dev and full/truncated/self-generated history diagnostics after running fixed cohort completes"
+  },
+  "history_context_CPU_diagnostic": {
+    "status": "passed_context_gap_reproduced_on_tiny_random_H3",
+    "scope": "actual frozen runtime; tiny random three-layer H3; four full68x120 latents; CPU only",
+    "same_inputs_checkpoint_condition_positions_and_noise": true,
+    "full_history_frames": [
+      0,
+      1,
+      2
+    ],
+    "truncated_history_frames": [
+      0,
+      2
+    ],
+    "current_frame": 3,
+    "full_prefix_reference_vs_incremental_GT_KV": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "truncated_offline_vs_truncated_KV_oracle": {
+      "max_abs": 0.0,
+      "relative_rms": 0.0
+    },
+    "truncated_vs_full_history_context_gap": {
+      "max_abs": 0.010038197040557861,
+      "relative_rms": 0.0010704646119847894
+    },
+    "stream_cache_max_video_frames": 2,
+    "tiny_stream_cache_bytes": 6273024,
+    "full_prefix_computation_used_only_as_diagnostic_reference": true,
+    "production_inference_changed": false,
+    "optimizer_updates": 0,
+    "new_accelerator_forwards": 0,
+    "full33B_context_gap_measured": false,
+    "TF2500_quality_root_cause_proven": false,
+    "source_sha256": "743bca1af05293bf9b2729a32c3e5b422cadc56cc013f3a8cbc6a6e822ecec08",
+    "runtime_source_sha256": {
+      "causal_attention.py": "f21ba96716d5cf91603e67e6d4d4d603aade47c054f81bd479ab99b341b6751f",
+      "paged_runtime.py": "96c18f6d5bbecd7cd1341c0beef34c80c94f474b1bb86638a1e7af2125a7357f"
+    },
+    "seconds": 81.95564703829587,
+    "report": "history_context_cpu_v1.json"
+  },
+  "TF2500_second_ElephantsDream": {
+    "full67_complete": true,
+    "full226_complete": true,
+    "metric_ratios_vs_no_refiner": {
+      "pixel_l1": 3.985686943008305,
+      "lpips": 3.643381211557803
+    },
+    "metric_gate_passed_for_this_clip": false,
+    "chunk_first4_max_abs": 0,
+    "latent_receipt_sha256": "a584b3ade761004194453994f76d22a45d3848a84bafa3e1b75d31d93ad3e865",
+    "pixel_receipt_sha256": "884b3c476edab2f811f32b1ff2b0cda56869350a6facf1f89f6008e7c2225ae6",
+    "summary": "TF2500_second_ElephantsDream_summary_v1.json"
+  },
+  "history_diagnostic_33B_preparation": {
+    "status": "prepared_CPU_controls_passed_NPU_unlaunched",
+    "stage": "history_diagnostic_33b_v1",
+    "manifest_sha256": "9c9798e6e33ea334564b0e85bdcaa154991807f20884892362a62876038bae3e",
+    "plan_sha256": "98710b953c019862ecbf8819fc2162399d098ae3d74816c67f446c3ca55f2997",
+    "plan": "config/history_diagnostic_33b_v1.json",
+    "CPU_control_report": "history_diagnostic_cpu_control_v1.json",
+    "admission_report": "history_diagnostic_33b_admission_v1.json",
+    "actual_entrypoint_active_refusal": "history_diagnostic_33b_active_refusal_v1.json",
+    "condition": "after existing fixed evaluation completes and is reaped; fresh card identity and all three locks required",
+    "entrypoint": "src/diagnose_tf2500_history.py",
+    "new_NPU_jobs": 0,
+    "new_optimizer_updates": 0,
+    "positions": [
+      0,
+      3,
+      11
+    ],
+    "samples": 5,
+    "train_prefix_new_latents_per_clip": 12,
+    "dev_histories": "reuse complete verified step2500 outputs",
+    "estimated_model_forwards": 503,
+    "no_waiter_started": true,
+    "real33B_result_available": false,
+    "manifest_receipt": "history_diagnostic_33b_stage_v1.json"
+  },
+  "training_restart_authorized": true,
+  "TF2500_all3_full226_complete": true,
+  "TF2500_all3_per_clip_gates_passed": false,
+  "diagnosis_snapshot": {
+    "as_of_utc": "2026-11-10T06:43:15.682893+00:00",
+    "training": "stopped_at2500; noTF/SF/DMDrestart_without_new_user_authorization",
+    "new_optimizer_updates": 0,
+    "complete_step2500_dev_clips": 3,
+    "per_clip_ratios_vs_no_refiner": [
+      {
+        "sample": "WingIt3586",
+        "L1": 4.737340886427075,
+        "LPIPS": 5.318259581761857
+      },
+      {
+        "sample": "ElephantsDream13070",
+        "L1": 3.985686943008305,
+        "LPIPS": 3.643381211557803
+      },
+      {
+        "sample": "WingIt300",
+        "L1": 4.7349928012358165,
+        "LPIPS": 5.619704666695214
+      }
+    ],
+    "confirmed_parity_issue": {
+      "sample": "WingIt3586",
+      "position": 3,
+      "checkpoint": 2500,
+      "original_max_abs": 0.3562047481536865,
+      "original_relative_RMS": 0.0109103387221694,
+      "per_latent_projection_reference_max_abs": 0,
+      "trace": "parity_trace_tf2500_result_v1.json",
+      "inference": "The numerical projection shape difference suffices to explain this four-latent parity failure. This is not proof of the full visual failure cause."
+    },
+    "other_confirmed_design_limits": [
+      "No identity-preserving residual/bypass path atstep0. Zero adapter initialization still executes noisy frozen denoising.",
+      "Original TF objective uses truncated GT histories; deployed clean KV carries earlier history influence.",
+      "FM training current input is HR/noise; inference starts from draft/noise and later sees its own denoised trajectory."
+    ],
+    "current_diagnostic": "v4 complete five real33B samples, exit0 and reaped; archived original TF2500 diagnostic",
+    "not_proven": [
+      "Training steps alone are the dominant limitation",
+      "Which gap dominates visual failure",
+      "Strict zero regression",
+      "Full226 continuous visual acceptance",
+      "Strict streamingVAE"
+    ],
+    "original_training_and_runtime_edited": false,
+    "model_accepted": false
+  },
+  "read_only_diagnostic_v4": {
+    "stage": "history_diagnostic_33b_v4",
+    "manifest_sha256": "5963a528c00b1b2edb35a5c931d6b14ff6bd618f365ffe837df2edef5091f0ea",
+    "status": "completed_five_samples_exit0_reaped",
+    "new_optimizer_updates": 0,
+    "original_runtime_source_edited": false,
+    "offline_projection_aligned_for_diagnosis": true,
+    "full_cohort_diagnostic_complete": true,
+    "completed_samples": 5,
+    "planned_samples": 5,
+    "partial_analysis": "TF2500_two_dev_history_analysis_v1.json",
+    "next": "completed and reaped; original TF2500 sealed; separate anchored training also complete",
+    "samples_complete": 5,
+    "analysis": "TF2500_full_history_analysis_v2.json"
+  },
+  "anchored_candidate_v1": {
+    "base_updates": 2500,
+    "new_verified_optimizer_updates": 2000,
+    "planned_new_updates": 2000,
+    "planned_total_updates": 4500,
+    "status": "training_complete_unaccepted",
+    "stage_manifest_sha256": "1ac8ae9c82a052386cfff984fa1adbad07c4740383770e7ec31afd2144c08a0a",
+    "CPU_controls_passed": true,
+    "real_initial_two_latent_identity_max_abs": 0,
+    "original401AdamW_states_restored": true,
+    "all_real_gates_passed": true,
+    "full226_evaluation_complete": false,
+    "visual_quality_passed": false,
+    "strict_zero_regression_after_training_guaranteed": false,
+    "selected": false,
+    "checkpoint_stage0_reload_identity_max_abs": 0,
+    "gates": "anchored_real_gates_v1.json",
+    "roundtrip": "anchored_roundtrip_v1.json",
+    "snapshot": "anchored_training_complete2000_v1.json",
+    "checkpoint_stage100_CPU_audit": "anchored_checkpoint_stage0100_audit_v1.json",
+    "checkpoint_receipts_through_stage": 2000,
+    "short_dev_stage500": {
+      "scope": "first4 latent only",
+      "ratios": [
+        1.201447183592686,
+        0.9482028938317524,
+        1.282471630251488
+      ],
+      "equal_clip_mean_ratio": 1.1440405692253088,
+      "result": "mixed_two_regressions_one_improvement",
+      "report": "anchored_dev_first4_stage0500.json",
+      "full226_complete": false
+    },
+    "checkpoint_stage1000_CPU_audit": "anchored_checkpoint_stage1000_CPU_audit_v1.json",
+    "short_dev_stage1000": {
+      "scope": "first4 latent only",
+      "ratios": [
+        1.0963747641116983,
+        0.9229131047012326,
+        1.1612903225806452
+      ],
+      "equal_clip_mean_ratio": 1.0601927304645253,
+      "all3_improve_vs500": true,
+      "two_clips_regress_vs_no_refiner": true,
+      "report": "anchored_dev_first4_stage1000.json",
+      "full226_complete": false
+    },
+    "first_full226_complete": true,
+    "training_processes_reaped": true,
+    "endpoint_CPU_audit": "anchored_checkpoint_stage2000_CPU_audit_v1.json",
+    "completion": "anchored_training_complete2000_v1.json",
+    "stage2000_short_dev": "anchored_dev_first4_stage2000.json"
+  },
+  "anchored_stage1000_video_review": {
+    "status": "all_three_clips_complete_technical_audit_local_playback_verified",
+    "stage_optimizer_updates": 1000,
+    "total_optimizer_updates": 3500,
+    "evaluation_manifest_sha256": "1a75fb5347bffca8ec269e207494b9c00b78939d122347c23d1db03b49bb987b",
+    "CPU_control": "anchored_eval_CPU_control_v1.json",
+    "admission": "anchored_eval1000_admission_ready_v1.json",
+    "reuse": "anchored_stage1000_dense_reuse_CPU_v1.json",
+    "first_sample": "WingIt_dev_3586_3811",
+    "NPU_evaluation_launched": true,
+    "waiter_started": false,
+    "training_continues": false,
+    "full226_video_complete": true,
+    "continuous_visual_reviewed": false,
+    "model_accepted": false,
+    "independent_device_required": true,
+    "real_gates": "anchored_eval1000_real_gates_v1.json",
+    "checkpoint": {
+      "stage_step": 1000,
+      "total_optimizer_updates": 3500,
+      "adapter_sha256": "f16119620e6bcbce0c6da7ce00560dc1733e9d0b3c0d6d4107c38974d43c50a6",
+      "private_optimizer_sha256": "90120faacc2f7cc2da9e03ef1d94fd7ceaaa01f8860529cb9d1963dd208f00cd",
+      "adapter_bytes": 82508131,
+      "private_state_bytes": 165122637,
+      "selected": false
+    },
+    "full67_complete": true,
+    "completion_scope": "All three clips:67latents,226frames and three videos; continuous visual review pending",
+    "full226_ratios_vs_no_refiner": {
+      "pixel_l1": 0.9461478464541321,
+      "lpips": 1.0769763469555864
+    },
+    "report": "ANCHORED_STAGE1000_FIRST_FULL226_V1.md",
+    "second_clip_completed_latents_at_snapshot": 67,
+    "static_review_frames": [
+      0,
+      72,
+      144,
+      192
+    ],
+    "user_visual_feedback": "anchored_stage1000_user_visual_feedback_v1.json",
+    "third_clip_launch": "anchored_eval1000_WingIt300_launch_v2.json",
+    "second_clip_status": "complete_exit0_reaped_local_playback_verified",
+    "third_clip_completed_latents_at_snapshot": 26,
+    "second_clip_report": "ANCHORED_STAGE1000_ELEPHANTSDREAM_FULL226_V1.md",
+    "third_clip_report": "ANCHORED_STAGE1000_THREE_CLIP_FULL226_V1.md"
+  },
+  "complete_video_evaluation": {
+    "plan": "FULL_VIDEO_EVALUATION_PLAN_V1.md",
+    "checkpoints": [
+      1000,
+      2000
+    ],
+    "samples": 3,
+    "planned_candidate_videos": 6,
+    "stage2000_manifest_sha256": "4f870f017c2a3301539fa2eecac4ba6635123287ac446f607298d42081123de3",
+    "stage2000_admission_ready": true,
+    "stage2000_NPU_launched": true,
+    "waiter_started": false,
+    "model_accepted": false,
+    "continuous_visual_reviewed": false,
+    "strict_streaming_decoder_validated": false,
+    "real33B_longer_than67_validated": true,
+    "stage1000_completed_video_sets": 3,
+    "stage2000_completed_video_sets": 3,
+    "stage2000_first": "complete exit0/reaped, original videos local SHA verified",
+    "stage2000_second": "complete exit0/reaped, original videos local SHA verified",
+    "stage2000_third": "complete exit0/reaped, original videos local SHA verified",
+    "stage1000_native_resolution_local_delivery": "All three sample sets now SHA verified against complete226-frame technical receipts",
+    "all_original_resolution_videos_local": 18,
+    "all_playback_videos_local": 18,
+    "report": "ANCHORED_SIX_VIDEO_SETS_FULL226_V1.md",
+    "video_index": "VIDEO_DELIVERY_PUBLIC_INDEX_V1.md",
+    "strict_decoder_technical_scope_passed": true,
+    "strict_decoder_quality_gate_passed": false,
+    "real33B_long_scope": "exactstage1000 fullspatial137 positions with looped67 authorizeddraft; engineering only"
+  },
+  "strict_decoder_next_execution": {
+    "status": "complete_exit0_reaped_technical_pass_quality_fail",
+    "current_predecessor": "stage2000 ElephantsDream full video completion/exit/reap",
+    "original_predecessor_still_required": "evaluation_continuation_v2 terminal/reaped",
+    "NPU_launched": true,
+    "frozen_plan_and_sources_unchanged": true,
+    "parent_pid": 2289510,
+    "child_pid": 2290440,
+    "all_three_kernel_locks_verified": true,
+    "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json",
+    "small_spatial_report": "strict_decoder_pretrained_small_spatial9_v1.json",
+    "parent_and_child_absent": true,
+    "child_reaped": true,
+    "exit_code": 0,
+    "running": false,
+    "strict_decoder_accepted": false,
+    "full_spatial137_technical_passed": true,
+    "full226_L1_ratio": 1.056388589605701,
+    "full226_LPIPS_ratio": 1.0868512222447528,
+    "input_arm": "frozen_upsampler_no_refiner_decoder_ablation",
+    "report": "STRICT_DECODER_PRETRAINED_RESULT_V1.md",
+    "video": "strict_official_gt_full226.mp4",
+    "continuous_visual_reviewed": false,
+    "do_not_relaunch": true
+  },
+  "real33B_long137_next_execution": {
+    "status": "complete_exit0_reaped_engineering_passed",
+    "manifest_original_sha256": "6fecf4484198b65d4a95a83de0ddd58f2de8f9b47e62ad84dbae5877bbd95a7d",
+    "exact_checkpoint_stage_step": 1000,
+    "scope": "137 fullspatial positions, looping67 authorizeddraft; not137unique content",
+    "predecessor": "Stage2000 WingIt300 fullvideo complete exit0/reaped; fresh idleNPU4/200GiB/allthree locks",
+    "first67_reproduction_limit": 0,
+    "cache_bytes_limit": 6930022400,
+    "serialized_KV_restore_changed_chunk_boundaries": [
+      66,
+      134
+    ],
+    "restore_chunk_limit": 0,
+    "NPU_launched": true,
+    "waiter_started": false,
+    "stage2000_longstream_tested": false,
+    "private_KV_caches_published": false,
+    "model_accepted": false,
+    "parent_pid": 2297413,
+    "child_pid": 2298677,
+    "all_three_kernel_locks_verified": true,
+    "launch_evidence": "streaming_validators_launch_live_20261110T1905_v1.json",
+    "latest_observed_at": "2026-11-10T21:25:04.577956+00:00",
+    "completed_latents": 137,
+    "total_latents": 137,
+    "report": "REFINER_LONG137_COMPLETE_V1.md",
+    "do_not_relaunch": true,
+    "running": false,
+    "first67_reference_max_abs": 0,
+    "restore66_max_abs": 0,
+    "restore134_max_abs": 0,
+    "cache_bound_bytes": 6930022400,
+    "current_only_K_rows": 2040,
+    "main_model_forwards": 548,
+    "additional_replay_forwards": 24,
+    "exit_code": 0,
+    "child_reaped": true,
+    "parent_and_child_absent": true,
+    "locks_released": true,
+    "result": "refiner_long137_full_result_v1.json",
+    "full137_offline_parity_tested": false,
+    "cold_start_new_process_tested": false,
+    "real_distinct_long_video_quality_tested": false
+  },
+  "active_NPU_jobs": 0,
+  "remaining_acceptance": {
+    "strict_decoder_full226_fidelity": "failed; unchanged threshold, preserve original sources; no automatic rerun/compensation/training",
+    "continuous_visual_review": "incomplete; static samples and technical audits are not continuous review",
+    "model_accepted": false
+  },
+  "decoder_existing_metrics_diagnostic": {
+    "status": "posthoc_existing_receipts_only",
+    "report": "STRICT_DECODER_EXISTING_METRICS_DIAGNOSTIC_V2.md",
+    "exclude_frame0_L1_ratio": 1.0486071417602394,
+    "exclude_frame0_LPIPS_ratio": 1.0866411986256097,
+    "exclude_first7_latents_L1_ratio": 1.0460631049984035,
+    "exclude_first7_latents_LPIPS_ratio": 1.084327294362032,
+    "root_cause_proven": false,
+    "continuous_visual_reviewed": false,
+    "new_NPU_forwards": 0,
+    "new_optimizer_updates": 0,
+    "original_quality_threshold_unchanged": true
+  }
+}

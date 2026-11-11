@@ -1,0 +1,21 @@
+# 原分辨率视频交付目录（2026-11-11）
+
+全部文件位于 [h3-streaming-refiner-candidates-20261111](https://github.com/RedRoman/Tencent-streaming-sr/releases/tag/h3-streaming-refiner-candidates-20261111)。18 份 refiner 视频与原始技术收据字节相同；另附 2 份独立 decoder 诊断视频。均 226 帧、24 fps。
+
+候选单路为 1920×1080，原始三列对比为 2880×620（含标题条）。画质指标用无损1080p RGB。
+原片技术审核及 SHA 通过，连续视觉审片未完成；候选未验收。主六组使用 official overlap decoder。
+
+| 样例 | stage | 候选单路 | 候选 / 原版双向 / GT | 候选 / 无refiner / GT |
+| --- | ---: | --- | --- | --- |
+| WingIt_dev_3586_3811 | 1000 | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_3586_3811__stage1000__candidate_native1080.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_3586_3811__stage1000__main_comparison.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_3586_3811__stage1000__no_refiner_ablation.mp4) |
+| ElephantsDream_dev_13070_13295 | 1000 | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/ElephantsDream_dev_13070_13295__stage1000__candidate_native1080.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/ElephantsDream_dev_13070_13295__stage1000__main_comparison.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/ElephantsDream_dev_13070_13295__stage1000__no_refiner_ablation.mp4) |
+| WingIt_dev_300_525 | 1000 | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_300_525__stage1000__candidate_native1080.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_300_525__stage1000__main_comparison.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_300_525__stage1000__no_refiner_ablation.mp4) |
+| WingIt_dev_3586_3811 | 2000 | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_3586_3811__stage2000__candidate_native1080.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_3586_3811__stage2000__main_comparison.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_3586_3811__stage2000__no_refiner_ablation.mp4) |
+| ElephantsDream_dev_13070_13295 | 2000 | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/ElephantsDream_dev_13070_13295__stage2000__candidate_native1080.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/ElephantsDream_dev_13070_13295__stage2000__main_comparison.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/ElephantsDream_dev_13070_13295__stage2000__no_refiner_ablation.mp4) |
+| WingIt_dev_300_525 | 2000 | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_300_525__stage2000__candidate_native1080.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_300_525__stage2000__main_comparison.mp4) | [下载](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/WingIt_dev_300_525__stage2000__no_refiner_ablation.mp4) |
+
+独立 decoder 消融两路均无 refiner；其保真失败不可归为候选 refiner 的结果。
+- [严格decoder单路1080p](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/strict_decoder_native1080.mp4)
+- [严格decoder / official overlap / GT，1440×310](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/h3-streaming-refiner-candidates-20261111/strict_official_gt_full226.mp4)
+
+[既有18份轻量播放版本](VIDEO_DELIVERY_PUBLIC_INDEX_V1.md) · [逐视频SHA/原收据映射](original_video_release_manifest_v1.json) · [完整报告](FULL_ROUTE_REPORT_20261111.md)

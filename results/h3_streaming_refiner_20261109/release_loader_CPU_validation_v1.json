@@ -1,0 +1,21 @@
+{
+  "status": "passed_CPU_only",
+  "loader_sha256": "f65a303632496698b445d24025e0f801dd92434a7e90330cbc0f56041ec3845b",
+  "checks": [
+    {
+      "stage": 1000,
+      "head_tensor_load_exact": true,
+      "wrong_stage_rejected_before_deserialization": true,
+      "parameter_count": 20593528
+    },
+    {
+      "stage": 2000,
+      "head_tensor_load_exact": true,
+      "wrong_stage_rejected_before_deserialization": true,
+      "parameter_count": 20593528
+    }
+  ],
+  "accelerator_forwards": 0,
+  "optimizer_updates": 0,
+  "full_model_wrapper_NPU_validated": false
+}
