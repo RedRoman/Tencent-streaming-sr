@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "mode": "original",
+  "checkpoint_step": 1000,
+  "frames": 226,
+  "fps": 24,
+  "duration_seconds": 9.416666666666666,
+  "latent_count": 67,
+  "prediction_sha256": "1918fdfe4c7bd947175cc093e6c4d5629eb47d218f5cfcd079a4c7cec01f8ae3",
+  "training_sample_only": true,
+  "GT_scope": "decoded target latent, not native RGB",
+  "source_sha256": "8e776048ca104e0cfb5e3a2e02c0b653ad1a96264c0049f204fed6266d696e30",
+  "optimizer_updates": 0,
+  "files": {
+    "refiner": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/original/refiner_original1080p.mp4",
+      "sha256": "f27963e261fe098aa376cb3dde511d25b98db16b0012d56b182c6ae9511de9c8",
+      "bytes": 10458720,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      },
+      "seconds": 196.655686378479
+    },
+    "draft": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/original/draft_original1080p.mp4",
+      "sha256": "227c054eb3406c56a985423008b5530f4014ceb47aa327f7564d5ab13fead7c3",
+      "bytes": 13030859,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      },
+      "seconds": 196.04717564582825
+    },
+    "decoded_gt": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/original/decoded_gt_original1080p.mp4",
+      "sha256": "9e24ae6572e8846e18d36ddd3c475fcf7cb89f08394959284c4017cc2eb8fa8e",
+      "bytes": 11724891,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      },
+      "seconds": 196.81146025657654
+    },
+    "comparison": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/original/draft_refiner_gt_original.mp4",
+      "sha256": "5ee795de0813efb75a27d049eaf4e3ffab628543362e6afce264824606e33387",
+      "bytes": 7890757,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 410,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "source": "/opt/refiner-cache/models/MiniMax-H3/Ref2VA",
+  "source_index_sha256": "fb457a26ffa6294660e249b0ddd03a337f2e5393f770b5c34c8b8f90a29a7efb",
+  "converter": "/opt/runtime-temp/h3_training_assets_20260921/runtime/diffusers-patched/scripts/convert_minimax_h3_to_diffusers.py",
+  "converter_sha256": "86f61f62934d1eccf2a76ec57b6d072e2c23767c6e49d96aa1cf24d40422b42c",
+  "files": {
+    "config.json": {
+      "bytes": 546,
+      "sha256": "4188bb3ccb06e429cb053c535d309ab71b32afeb2f5458fa74b9d453c04a2b64"
+    },
+    "diffusion_pytorch_model-00001-of-00013.safetensors": {
+      "bytes": 5071554768,
+      "sha256": "d4b4a80ee7372a4512b4f416e9fb63f849a7378c985518973aef2e0ba31fa1a8"
+    },
+    "diffusion_pytorch_model-00002-of-00013.safetensors": {
+      "bytes": 5166677200,
+      "sha256": "fcc0cfe8aa58e21defbb4e0003d0b76285be7579b7996dff136332e2003214a9"
+    },
+    "diffusion_pytorch_model-00003-of-00013.safetensors": {
+      "bytes": 5164580280,
+      "sha256": "8b1f162e6bde0f9053c220323f74f8b42cdd9af62d4ccf55e601d5b1ccc6e864"
+    },
+    "diffusion_pytorch_model-00004-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "efb217f8fcef68bd876eeadb7edb99ced0711a83a427e515a8e3a9f3a284b000"
+    },
+    "diffusion_pytorch_model-00005-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "4b56459832c5418d3b8891008373cd480924d5fba4dab9bb98b4f8ed3450822a"
+    },
+    "diffusion_pytorch_model-00006-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "36a9a86eecd2fb13fd9c5eab0c12ab8f9bd5848d7a2117bf4414ebd7c38416dc"
+    },
+    "diffusion_pytorch_model-00007-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "83b9e9f95bbcf9bd0c8921339c6664f80f90c420558c5fbc3f4987c663193f8d"
+    },
+    "diffusion_pytorch_model-00008-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "aa97fe19db1c35f458eb90c132ef77f1c20aeb80afd6d8d1bfe252cfc0a29a98"
+    },
+    "diffusion_pytorch_model-00009-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "8e4bde91c7bc975f58756182f422d662bb480ef3dacae9d61fabde10543fde21"
+    },
+    "diffusion_pytorch_model-00010-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "01915368aa2702f80ea8d13b74326f6e66d8b183217aacb42811cc8fd745b9f1"
+    },
+    "diffusion_pytorch_model-00011-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "db28604860e56fbdd208297f87f27bc3b836315905339c474b019c48889725d9"
+    },
+    "diffusion_pytorch_model-00012-of-00013.safetensors": {
+      "bytes": 5164580296,
+      "sha256": "6224d8b21bed70eea87cd64dbd99285ea5bd335616269d62d2a7a99619fb5fa7"
+    },
+    "diffusion_pytorch_model-00013-of-00013.safetensors": {
+      "bytes": 4396468944,
+      "sha256": "df699c5c65bc4bf3a1aac39a0d9f5401ba0fa8458461e9a1e927bb680f0c4bc4"
+    },
+    "diffusion_pytorch_model.safetensors.index.json": {
+      "bytes": 64488,
+      "sha256": "51de67f9e29b9479af4090659150909b907b3ee5a2838268eaa0ce51d0540af9"
+    }
+  },
+  "started_unix": 1794236548.9997997,
+  "finished_unix": 1794236793.0260363,
+  "new_optimizer_updates": 0
+}

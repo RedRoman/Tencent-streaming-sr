@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "weights_sha256": "a1455dd6fedb61b1b835c3e1d2e5bad4a132c02a45585f992372ca2d25e22889",
+  "strict_load": true,
+  "cpu_reference_exact": true,
+  "npu_fp32_vs_cpu": {
+    "max_abs": 3.534555435180664e-05,
+    "mean_abs": 1.4130234831100097e-06,
+    "reference_rms": 0.9381753206253052
+  },
+  "npu_bf16_vs_cpu_fp32": {
+    "max_abs": 0.1775941252708435,
+    "mean_abs": 0.005895588546991348,
+    "reference_rms": 0.9381753206253052
+  },
+  "cache_latents": 4,
+  "future_pair_isolation": true,
+  "test_grid": [
+    9,
+    11
+  ],
+  "test_latents": 8,
+  "optimizer_updates": 0
+}

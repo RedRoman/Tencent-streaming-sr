@@ -1,0 +1,94 @@
+{
+  "version": "solar-task-lora-v1",
+  "target_updates": 2500,
+  "save_every": 100,
+  "rank": 16,
+  "alpha": 16,
+  "lr": 1e-05,
+  "warmup_steps": 50,
+  "seed": 20261110,
+  "resident_blocks": 0,
+  "causal": {
+    "mode": "teacher",
+    "chunk": 5,
+    "window": 6,
+    "corrupt": 0.0
+  },
+  "latent_crop": 12,
+  "loss": "upstream H3OmniCausalCore.forward_loss: unweighted velocity MSE; shifted uniform sigma per chunk",
+  "evaluate_steps": [
+    100,
+    500,
+    1000,
+    1500,
+    2000,
+    2500
+  ],
+  "sources": {
+    "ascend_port.py": "bb30c59bfee909550f49228a0f69eaf8e0467b900c923be94f58a7a51f9b1ddc",
+    "run_locked.py": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+    "with_runtime.sh": "e2d2a63c43ac758c997af828ed8dc687d0e773296be265928420b1b75fc812ba",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/omni_causal.py": "5c3b79b44dfe9d952a42ab1c5fc8be033c4c384b4673b8662d6214d9a5746f61",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/model.py": "fdb2a77eb5563babafcca04a7c5477396d0c9de73385b724dfbc8b108b147ba0",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/stage0p5.py": "9e7ad99bbb6a9610707d326952875214fd95d6d6564c74f91e2c7f08caa0180c",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/layout.py": "6c022b019850db0a57a9c72d7ea7a91f29db2b394cd73f63a7f9561d5bb13a5d",
+    "vendor/SolarRenderer-0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d/src/solarwm/backends/minimax_h3/flow.py": "f1733cc6952a1ebd22e3e21882e0cafcc8de6f1edd7b3ef1760346e114ba3f89",
+    "stages/task_tf2500_v1/runtime.py": "36c2535d27bb9a45f466cd2739029fb117a3dd99072784c069df42a67f23782f",
+    "stages/task_tf2500_v1/common.py": "dd994a9c2c56b8c0843e51cddae79e29e4afadbd2fc891c4ebd028774bf6d67a",
+    "stages/task_tf2500_v1/gates.py": "765dad6f85bcb61309f0b3d6ebbeaa317df2e23ea7400d2742df06867b86fe6a",
+    "stages/task_tf2500_v1/train.py": "973bb6de31795cc92c2be92e08fb7c651723beec21243d9713c2e662656f7198"
+  },
+  "evidence": {
+    "public_assets.json": "97273e8241708166a02835d4111360681eaa138437985bd9d3078b8b83351b5b",
+    "base_conversion.json": "0731047981fd85e523416034971c9a95d554ab7d4b53ede64d2f76787c9c0d29",
+    "causal_model.json": "f21ed5843b424b606eb816bf3332710ab0f6f724e4c88c87bb2a7f9ce852ba72",
+    "prompt.json": "d5f5281552448b9a5e71be5180342dc17d11c9333d5316a0bd571449fed62c4a",
+    "npu_attention_check.json": "7b43b9a7cd46dc5d7d733802a48e54b73350e948e1af4f106e625b1dbecdd5c8"
+  },
+  "samples": [
+    {
+      "sample_id": "Charge_train_3856_4081",
+      "filename": "Charge_train_3856_4081.pt",
+      "sha256": "5dc1df60fa60fc67c9712a181e283e3147ac6b2d209d1f876174dcb1bfefa778"
+    },
+    {
+      "sample_id": "Caminandes3_train_168_393",
+      "filename": "Caminandes3_train_168_393.pt",
+      "sha256": "cc30ea9e72e0db7617a30535f3bca473ff63780d2df9d9a41bd7a00272cd8076"
+    }
+  ],
+  "scope": "task adaptation on train2, 12-latent crops at native 68x120; no DMD or long-window quality claim",
+  "preflight_receipt": {
+    "status": "passed",
+    "real_block_forward_max_abs": 0.0,
+    "real_block_gradient_max_abs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_adapter_identity_max_abs": 0.0,
+    "frozen_weight_unchanged": true,
+    "optimizer_updates": 0,
+    "plan": {
+      "chunks": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "training_rows": 44982,
+      "clean_copy_rows": 14280,
+      "future_or_current_GT_leak": false
+    }
+  }
+}

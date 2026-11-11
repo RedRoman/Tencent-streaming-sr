@@ -1,0 +1,911 @@
+{
+  "status": "complete",
+  "mode": "causal",
+  "checkpoint_step": 1000,
+  "frames": 226,
+  "fps": 24,
+  "duration_seconds": 9.416666666666666,
+  "latent_count": 67,
+  "prediction_sha256": "1918fdfe4c7bd947175cc093e6c4d5629eb47d218f5cfcd079a4c7cec01f8ae3",
+  "training_sample_only": true,
+  "GT_scope": "decoded target latent, not native RGB",
+  "source_sha256": "8e776048ca104e0cfb5e3a2e02c0b653ad1a96264c0049f204fed6266d696e30",
+  "optimizer_updates": 0,
+  "files": {
+    "refiner": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/causal/refiner_causal1080p.mp4",
+      "sha256": "b81bc3287dbafcc782fdf0639a7cdd43c437e869d90364175ac22aa28462d1b5",
+      "bytes": 9840871,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      },
+      "seconds": 51.7641487121582,
+      "decoder": "StreamRender pretrained causal ViT24",
+      "precision": "BF16 autocast with FP32 norms, residual scales, embedder and projection",
+      "pair_records": [
+        {
+          "latent_start": 0,
+          "latent_end": 2,
+          "frames": 5,
+          "total_frames": 5,
+          "cached_latents": 2,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 2,
+          "latent_end": 4,
+          "frames": 8,
+          "total_frames": 13,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 4,
+          "latent_end": 6,
+          "frames": 5,
+          "total_frames": 18,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 6,
+          "latent_end": 8,
+          "frames": 8,
+          "total_frames": 26,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 8,
+          "latent_end": 10,
+          "frames": 8,
+          "total_frames": 34,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 10,
+          "latent_end": 12,
+          "frames": 5,
+          "total_frames": 39,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 12,
+          "latent_end": 14,
+          "frames": 8,
+          "total_frames": 47,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 14,
+          "latent_end": 16,
+          "frames": 5,
+          "total_frames": 52,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 16,
+          "latent_end": 18,
+          "frames": 8,
+          "total_frames": 60,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 18,
+          "latent_end": 20,
+          "frames": 8,
+          "total_frames": 68,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 20,
+          "latent_end": 22,
+          "frames": 5,
+          "total_frames": 73,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 22,
+          "latent_end": 24,
+          "frames": 8,
+          "total_frames": 81,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 24,
+          "latent_end": 26,
+          "frames": 5,
+          "total_frames": 86,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 26,
+          "latent_end": 28,
+          "frames": 8,
+          "total_frames": 94,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 28,
+          "latent_end": 30,
+          "frames": 8,
+          "total_frames": 102,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 30,
+          "latent_end": 32,
+          "frames": 5,
+          "total_frames": 107,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 32,
+          "latent_end": 34,
+          "frames": 8,
+          "total_frames": 115,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 34,
+          "latent_end": 36,
+          "frames": 5,
+          "total_frames": 120,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 36,
+          "latent_end": 38,
+          "frames": 8,
+          "total_frames": 128,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 38,
+          "latent_end": 40,
+          "frames": 8,
+          "total_frames": 136,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 40,
+          "latent_end": 42,
+          "frames": 5,
+          "total_frames": 141,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 42,
+          "latent_end": 44,
+          "frames": 8,
+          "total_frames": 149,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 44,
+          "latent_end": 46,
+          "frames": 5,
+          "total_frames": 154,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 46,
+          "latent_end": 48,
+          "frames": 8,
+          "total_frames": 162,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 48,
+          "latent_end": 50,
+          "frames": 8,
+          "total_frames": 170,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 50,
+          "latent_end": 52,
+          "frames": 5,
+          "total_frames": 175,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 52,
+          "latent_end": 54,
+          "frames": 8,
+          "total_frames": 183,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 54,
+          "latent_end": 56,
+          "frames": 5,
+          "total_frames": 188,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 56,
+          "latent_end": 58,
+          "frames": 8,
+          "total_frames": 196,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 58,
+          "latent_end": 60,
+          "frames": 8,
+          "total_frames": 204,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 60,
+          "latent_end": 62,
+          "frames": 5,
+          "total_frames": 209,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 62,
+          "latent_end": 64,
+          "frames": 8,
+          "total_frames": 217,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 64,
+          "latent_end": 66,
+          "frames": 5,
+          "total_frames": 222,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 66,
+          "latent_end": 67,
+          "frames": 4,
+          "total_frames": 226,
+          "cached_latents": 4,
+          "tail_replicated": true
+        }
+      ]
+    },
+    "draft": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/causal/draft_causal1080p.mp4",
+      "sha256": "b1e58b62e042302fcf0583a163cfe1cc4f3d6f6574f9478f440f463c05020550",
+      "bytes": 12504120,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      },
+      "seconds": 51.5951189994812,
+      "decoder": "StreamRender pretrained causal ViT24",
+      "precision": "BF16 autocast with FP32 norms, residual scales, embedder and projection",
+      "pair_records": [
+        {
+          "latent_start": 0,
+          "latent_end": 2,
+          "frames": 5,
+          "total_frames": 5,
+          "cached_latents": 2,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 2,
+          "latent_end": 4,
+          "frames": 8,
+          "total_frames": 13,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 4,
+          "latent_end": 6,
+          "frames": 5,
+          "total_frames": 18,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 6,
+          "latent_end": 8,
+          "frames": 8,
+          "total_frames": 26,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 8,
+          "latent_end": 10,
+          "frames": 8,
+          "total_frames": 34,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 10,
+          "latent_end": 12,
+          "frames": 5,
+          "total_frames": 39,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 12,
+          "latent_end": 14,
+          "frames": 8,
+          "total_frames": 47,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 14,
+          "latent_end": 16,
+          "frames": 5,
+          "total_frames": 52,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 16,
+          "latent_end": 18,
+          "frames": 8,
+          "total_frames": 60,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 18,
+          "latent_end": 20,
+          "frames": 8,
+          "total_frames": 68,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 20,
+          "latent_end": 22,
+          "frames": 5,
+          "total_frames": 73,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 22,
+          "latent_end": 24,
+          "frames": 8,
+          "total_frames": 81,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 24,
+          "latent_end": 26,
+          "frames": 5,
+          "total_frames": 86,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 26,
+          "latent_end": 28,
+          "frames": 8,
+          "total_frames": 94,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 28,
+          "latent_end": 30,
+          "frames": 8,
+          "total_frames": 102,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 30,
+          "latent_end": 32,
+          "frames": 5,
+          "total_frames": 107,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 32,
+          "latent_end": 34,
+          "frames": 8,
+          "total_frames": 115,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 34,
+          "latent_end": 36,
+          "frames": 5,
+          "total_frames": 120,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 36,
+          "latent_end": 38,
+          "frames": 8,
+          "total_frames": 128,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 38,
+          "latent_end": 40,
+          "frames": 8,
+          "total_frames": 136,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 40,
+          "latent_end": 42,
+          "frames": 5,
+          "total_frames": 141,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 42,
+          "latent_end": 44,
+          "frames": 8,
+          "total_frames": 149,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 44,
+          "latent_end": 46,
+          "frames": 5,
+          "total_frames": 154,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 46,
+          "latent_end": 48,
+          "frames": 8,
+          "total_frames": 162,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 48,
+          "latent_end": 50,
+          "frames": 8,
+          "total_frames": 170,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 50,
+          "latent_end": 52,
+          "frames": 5,
+          "total_frames": 175,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 52,
+          "latent_end": 54,
+          "frames": 8,
+          "total_frames": 183,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 54,
+          "latent_end": 56,
+          "frames": 5,
+          "total_frames": 188,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 56,
+          "latent_end": 58,
+          "frames": 8,
+          "total_frames": 196,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 58,
+          "latent_end": 60,
+          "frames": 8,
+          "total_frames": 204,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 60,
+          "latent_end": 62,
+          "frames": 5,
+          "total_frames": 209,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 62,
+          "latent_end": 64,
+          "frames": 8,
+          "total_frames": 217,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 64,
+          "latent_end": 66,
+          "frames": 5,
+          "total_frames": 222,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 66,
+          "latent_end": 67,
+          "frames": 4,
+          "total_frames": 226,
+          "cached_latents": 4,
+          "tail_replicated": true
+        }
+      ]
+    },
+    "decoded_gt": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/causal/decoded_gt_causal1080p.mp4",
+      "sha256": "9d3511e8de783a7cc3684f9d302d9525b140465adde1d50247695367482e54b0",
+      "bytes": 12276278,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      },
+      "seconds": 51.974522829055786,
+      "decoder": "StreamRender pretrained causal ViT24",
+      "precision": "BF16 autocast with FP32 norms, residual scales, embedder and projection",
+      "pair_records": [
+        {
+          "latent_start": 0,
+          "latent_end": 2,
+          "frames": 5,
+          "total_frames": 5,
+          "cached_latents": 2,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 2,
+          "latent_end": 4,
+          "frames": 8,
+          "total_frames": 13,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 4,
+          "latent_end": 6,
+          "frames": 5,
+          "total_frames": 18,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 6,
+          "latent_end": 8,
+          "frames": 8,
+          "total_frames": 26,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 8,
+          "latent_end": 10,
+          "frames": 8,
+          "total_frames": 34,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 10,
+          "latent_end": 12,
+          "frames": 5,
+          "total_frames": 39,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 12,
+          "latent_end": 14,
+          "frames": 8,
+          "total_frames": 47,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 14,
+          "latent_end": 16,
+          "frames": 5,
+          "total_frames": 52,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 16,
+          "latent_end": 18,
+          "frames": 8,
+          "total_frames": 60,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 18,
+          "latent_end": 20,
+          "frames": 8,
+          "total_frames": 68,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 20,
+          "latent_end": 22,
+          "frames": 5,
+          "total_frames": 73,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 22,
+          "latent_end": 24,
+          "frames": 8,
+          "total_frames": 81,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 24,
+          "latent_end": 26,
+          "frames": 5,
+          "total_frames": 86,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 26,
+          "latent_end": 28,
+          "frames": 8,
+          "total_frames": 94,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 28,
+          "latent_end": 30,
+          "frames": 8,
+          "total_frames": 102,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 30,
+          "latent_end": 32,
+          "frames": 5,
+          "total_frames": 107,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 32,
+          "latent_end": 34,
+          "frames": 8,
+          "total_frames": 115,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 34,
+          "latent_end": 36,
+          "frames": 5,
+          "total_frames": 120,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 36,
+          "latent_end": 38,
+          "frames": 8,
+          "total_frames": 128,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 38,
+          "latent_end": 40,
+          "frames": 8,
+          "total_frames": 136,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 40,
+          "latent_end": 42,
+          "frames": 5,
+          "total_frames": 141,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 42,
+          "latent_end": 44,
+          "frames": 8,
+          "total_frames": 149,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 44,
+          "latent_end": 46,
+          "frames": 5,
+          "total_frames": 154,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 46,
+          "latent_end": 48,
+          "frames": 8,
+          "total_frames": 162,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 48,
+          "latent_end": 50,
+          "frames": 8,
+          "total_frames": 170,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 50,
+          "latent_end": 52,
+          "frames": 5,
+          "total_frames": 175,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 52,
+          "latent_end": 54,
+          "frames": 8,
+          "total_frames": 183,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 54,
+          "latent_end": 56,
+          "frames": 5,
+          "total_frames": 188,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 56,
+          "latent_end": 58,
+          "frames": 8,
+          "total_frames": 196,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 58,
+          "latent_end": 60,
+          "frames": 8,
+          "total_frames": 204,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 60,
+          "latent_end": 62,
+          "frames": 5,
+          "total_frames": 209,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 62,
+          "latent_end": 64,
+          "frames": 8,
+          "total_frames": 217,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 64,
+          "latent_end": 66,
+          "frames": 5,
+          "total_frames": 222,
+          "cached_latents": 4,
+          "tail_replicated": false
+        },
+        {
+          "latent_start": 66,
+          "latent_end": 67,
+          "frames": 4,
+          "total_frames": 226,
+          "cached_latents": 4,
+          "tail_replicated": true
+        }
+      ]
+    },
+    "comparison": {
+      "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/causal/draft_refiner_gt_causal.mp4",
+      "sha256": "6d00be517b061f12532536002912bc0d9b99578e6aa1dff796c6ee6803384244",
+      "bytes": 7895811,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 410,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "226"
+          }
+        ]
+      }
+    }
+  }
+}

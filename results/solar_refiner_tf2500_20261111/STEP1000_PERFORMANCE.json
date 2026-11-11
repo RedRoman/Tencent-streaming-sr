@@ -1,0 +1,367 @@
+{
+  "checkpoint_step": 1000,
+  "full_task_seconds": 3574.8744037151337,
+  "forward_seconds": 3561.364324569702,
+  "other_seconds": 13.510079145431519,
+  "forwards": 70,
+  "chunks": 14,
+  "denoise_forwards_per_chunk": 4,
+  "clean_commit_forwards_per_chunk": 1,
+  "resident_blocks": 0,
+  "cache_device": "cpu",
+  "cache_structure": false,
+  "per_forward": [
+    {
+      "forward": 1,
+      "seconds": 20.521973133087158,
+      "rows": 22994
+    },
+    {
+      "forward": 2,
+      "seconds": 17.935471534729004,
+      "rows": 22994
+    },
+    {
+      "forward": 3,
+      "seconds": 17.839064836502075,
+      "rows": 22994
+    },
+    {
+      "forward": 4,
+      "seconds": 18.017991304397583,
+      "rows": 22994
+    },
+    {
+      "forward": 5,
+      "seconds": 20.158689498901367,
+      "rows": 22994
+    },
+    {
+      "forward": 6,
+      "seconds": 26.398797035217285,
+      "rows": 33194
+    },
+    {
+      "forward": 7,
+      "seconds": 26.257132291793823,
+      "rows": 33194
+    },
+    {
+      "forward": 8,
+      "seconds": 26.31644320487976,
+      "rows": 33194
+    },
+    {
+      "forward": 9,
+      "seconds": 26.658457279205322,
+      "rows": 33194
+    },
+    {
+      "forward": 10,
+      "seconds": 28.495466947555542,
+      "rows": 33194
+    },
+    {
+      "forward": 11,
+      "seconds": 34.28085112571716,
+      "rows": 43394
+    },
+    {
+      "forward": 12,
+      "seconds": 34.6507523059845,
+      "rows": 43394
+    },
+    {
+      "forward": 13,
+      "seconds": 34.55707144737244,
+      "rows": 43394
+    },
+    {
+      "forward": 14,
+      "seconds": 34.43945074081421,
+      "rows": 43394
+    },
+    {
+      "forward": 15,
+      "seconds": 36.59054613113403,
+      "rows": 43394
+    },
+    {
+      "forward": 16,
+      "seconds": 42.75189018249512,
+      "rows": 53594
+    },
+    {
+      "forward": 17,
+      "seconds": 42.6084725856781,
+      "rows": 53594
+    },
+    {
+      "forward": 18,
+      "seconds": 42.42609429359436,
+      "rows": 53594
+    },
+    {
+      "forward": 19,
+      "seconds": 42.422478914260864,
+      "rows": 53594
+    },
+    {
+      "forward": 20,
+      "seconds": 45.65459895133972,
+      "rows": 53594
+    },
+    {
+      "forward": 21,
+      "seconds": 51.55677342414856,
+      "rows": 63794
+    },
+    {
+      "forward": 22,
+      "seconds": 56.435893297195435,
+      "rows": 63794
+    },
+    {
+      "forward": 23,
+      "seconds": 51.45199370384216,
+      "rows": 63794
+    },
+    {
+      "forward": 24,
+      "seconds": 51.793018102645874,
+      "rows": 63794
+    },
+    {
+      "forward": 25,
+      "seconds": 53.543283462524414,
+      "rows": 63794
+    },
+    {
+      "forward": 26,
+      "seconds": 60.19132614135742,
+      "rows": 73994
+    },
+    {
+      "forward": 27,
+      "seconds": 59.9517126083374,
+      "rows": 73994
+    },
+    {
+      "forward": 28,
+      "seconds": 59.96504831314087,
+      "rows": 73994
+    },
+    {
+      "forward": 29,
+      "seconds": 60.03135538101196,
+      "rows": 73994
+    },
+    {
+      "forward": 30,
+      "seconds": 62.26290702819824,
+      "rows": 73994
+    },
+    {
+      "forward": 31,
+      "seconds": 60.68785786628723,
+      "rows": 73994
+    },
+    {
+      "forward": 32,
+      "seconds": 59.790926456451416,
+      "rows": 73994
+    },
+    {
+      "forward": 33,
+      "seconds": 59.853779792785645,
+      "rows": 73994
+    },
+    {
+      "forward": 34,
+      "seconds": 59.72625470161438,
+      "rows": 73994
+    },
+    {
+      "forward": 35,
+      "seconds": 62.623230934143066,
+      "rows": 73994
+    },
+    {
+      "forward": 36,
+      "seconds": 60.32881689071655,
+      "rows": 73994
+    },
+    {
+      "forward": 37,
+      "seconds": 64.10242056846619,
+      "rows": 73994
+    },
+    {
+      "forward": 38,
+      "seconds": 59.81623959541321,
+      "rows": 73994
+    },
+    {
+      "forward": 39,
+      "seconds": 59.67102813720703,
+      "rows": 73994
+    },
+    {
+      "forward": 40,
+      "seconds": 62.493584632873535,
+      "rows": 73994
+    },
+    {
+      "forward": 41,
+      "seconds": 59.77925992012024,
+      "rows": 73994
+    },
+    {
+      "forward": 42,
+      "seconds": 59.93623328208923,
+      "rows": 73994
+    },
+    {
+      "forward": 43,
+      "seconds": 60.186118364334106,
+      "rows": 73994
+    },
+    {
+      "forward": 44,
+      "seconds": 60.066763401031494,
+      "rows": 73994
+    },
+    {
+      "forward": 45,
+      "seconds": 64.28932690620422,
+      "rows": 73994
+    },
+    {
+      "forward": 46,
+      "seconds": 71.26086568832397,
+      "rows": 73994
+    },
+    {
+      "forward": 47,
+      "seconds": 60.24129128456116,
+      "rows": 73994
+    },
+    {
+      "forward": 48,
+      "seconds": 60.0878586769104,
+      "rows": 73994
+    },
+    {
+      "forward": 49,
+      "seconds": 64.29957890510559,
+      "rows": 73994
+    },
+    {
+      "forward": 50,
+      "seconds": 63.46436071395874,
+      "rows": 73994
+    },
+    {
+      "forward": 51,
+      "seconds": 59.88714528083801,
+      "rows": 73994
+    },
+    {
+      "forward": 52,
+      "seconds": 62.56407070159912,
+      "rows": 73994
+    },
+    {
+      "forward": 53,
+      "seconds": 62.15751934051514,
+      "rows": 73994
+    },
+    {
+      "forward": 54,
+      "seconds": 60.34629964828491,
+      "rows": 73994
+    },
+    {
+      "forward": 55,
+      "seconds": 62.70084357261658,
+      "rows": 73994
+    },
+    {
+      "forward": 56,
+      "seconds": 63.19964385032654,
+      "rows": 73994
+    },
+    {
+      "forward": 57,
+      "seconds": 60.637784481048584,
+      "rows": 73994
+    },
+    {
+      "forward": 58,
+      "seconds": 60.21537518501282,
+      "rows": 73994
+    },
+    {
+      "forward": 59,
+      "seconds": 62.60839056968689,
+      "rows": 73994
+    },
+    {
+      "forward": 60,
+      "seconds": 62.75808906555176,
+      "rows": 73994
+    },
+    {
+      "forward": 61,
+      "seconds": 59.96810507774353,
+      "rows": 73994
+    },
+    {
+      "forward": 62,
+      "seconds": 60.95791172981262,
+      "rows": 73994
+    },
+    {
+      "forward": 63,
+      "seconds": 63.90534448623657,
+      "rows": 73994
+    },
+    {
+      "forward": 64,
+      "seconds": 60.128225803375244,
+      "rows": 73994
+    },
+    {
+      "forward": 65,
+      "seconds": 62.25585389137268,
+      "rows": 73994
+    },
+    {
+      "forward": 66,
+      "seconds": 43.91104221343994,
+      "rows": 61754
+    },
+    {
+      "forward": 67,
+      "seconds": 43.41146492958069,
+      "rows": 61754
+    },
+    {
+      "forward": 68,
+      "seconds": 43.455907583236694,
+      "rows": 61754
+    },
+    {
+      "forward": 69,
+      "seconds": 43.39078950881958,
+      "rows": 61754
+    },
+    {
+      "forward": 70,
+      "seconds": 44.03371572494507,
+      "rows": 61754
+    }
+  ],
+  "b200_benchmark": null,
+  "interpretation": "Measured Ascend host-paged implementation, not a B200 or real-time benchmark. No per-operator attribution."
+}

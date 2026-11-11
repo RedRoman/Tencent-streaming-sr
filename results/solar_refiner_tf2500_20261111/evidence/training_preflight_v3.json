@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "real_block_forward_max_abs": 0.0,
+  "real_block_gradient_max_abs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "zero_adapter_identity_max_abs": 0.0,
+  "frozen_weight_unchanged": true,
+  "optimizer_updates": 0,
+  "plan": {
+    "chunks": [
+      [
+        0,
+        5
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "training_rows": 44982,
+    "clean_copy_rows": 14280,
+    "future_or_current_GT_leak": false
+  }
+}

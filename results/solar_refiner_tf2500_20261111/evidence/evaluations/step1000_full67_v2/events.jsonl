@@ -1,0 +1,158 @@
+{"event": "full_audio_layout_verified", "time": 1794322314.4884315, "elapsed_seconds": 2.1698033809661865, "checkpoint_step": 1000, "optimizer_updates": 0, "document_rows": 754, "attended_rows": 526, "preserved_both_channels": true, "padded_rows_attended": 0, "chunks": [[0, 5], [5, 10], [10, 15], [15, 20], [20, 25], [25, 30], [30, 35], [35, 40], [40, 45], [45, 50], [50, 55], [55, 60], [60, 65], [65, 67]]}
+{"event": "strict_model_load_start", "time": 1794322320.523329, "elapsed_seconds": 8.204700708389282, "checkpoint_step": 1000, "optimizer_updates": 0}
+{"event": "training_runtime_ready", "time": 1794322321.8403842, "elapsed_seconds": 9.521756410598755, "checkpoint_step": 1000, "optimizer_updates": 0, "rank": 16, "alpha": 16, "adapter_modules": 200, "trainable_parameters": 40140800, "resident_blocks": 0}
+{"event": "forward_start", "time": 1794322322.3425689, "elapsed_seconds": 10.023940801620483, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 1, "rows": 22994, "commits": []}
+{"event": "forward_complete", "time": 1794322342.864542, "elapsed_seconds": 30.5459144115448, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 1, "commits": []}
+{"event": "forward_start", "time": 1794322342.87133, "elapsed_seconds": 30.552701473236084, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 2, "rows": 22994, "commits": []}
+{"event": "forward_complete", "time": 1794322360.8068016, "elapsed_seconds": 48.488173723220825, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 2, "commits": []}
+{"event": "forward_start", "time": 1794322360.8081708, "elapsed_seconds": 48.48954224586487, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 3, "rows": 22994, "commits": []}
+{"event": "forward_complete", "time": 1794322378.6472356, "elapsed_seconds": 66.3286075592041, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 3, "commits": []}
+{"event": "forward_start", "time": 1794322378.6488423, "elapsed_seconds": 66.33021378517151, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 4, "rows": 22994, "commits": []}
+{"event": "forward_complete", "time": 1794322396.6668336, "elapsed_seconds": 84.34820580482483, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 4, "commits": []}
+{"event": "chunk_predicted", "time": 1794322396.6918652, "elapsed_seconds": 84.37323713302612, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 0, "latent_start": 0, "latent_end": 5, "sha256": "d607b3ca9781b38a80c2592e2363a98b2d0fa360a2f89108a87da31815306a54", "final": false}
+{"event": "forward_start", "time": 1794322396.6933694, "elapsed_seconds": 84.37474083900452, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 5, "rows": 22994, "commits": [["clean", 0]]}
+{"event": "forward_complete", "time": 1794322416.852059, "elapsed_seconds": 104.53343081474304, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 5, "commits": [["clean", 0]]}
+{"event": "forward_start", "time": 1794322416.9184642, "elapsed_seconds": 104.5998363494873, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 6, "rows": 33194, "commits": []}
+{"event": "forward_complete", "time": 1794322443.3172612, "elapsed_seconds": 130.9986333847046, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 6, "commits": []}
+{"event": "forward_start", "time": 1794322443.318702, "elapsed_seconds": 131.00007343292236, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 7, "rows": 33194, "commits": []}
+{"event": "forward_complete", "time": 1794322469.5758343, "elapsed_seconds": 157.25720691680908, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 7, "commits": []}
+{"event": "forward_start", "time": 1794322469.577583, "elapsed_seconds": 157.2589545249939, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 8, "rows": 33194, "commits": []}
+{"event": "forward_complete", "time": 1794322495.8940263, "elapsed_seconds": 183.57539820671082, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 8, "commits": []}
+{"event": "forward_start", "time": 1794322495.8955255, "elapsed_seconds": 183.57689690589905, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 9, "rows": 33194, "commits": []}
+{"event": "forward_complete", "time": 1794322522.5539827, "elapsed_seconds": 210.2353549003601, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 9, "commits": []}
+{"event": "chunk_predicted", "time": 1794322522.5774379, "elapsed_seconds": 210.25881028175354, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 1, "latent_start": 5, "latent_end": 10, "sha256": "47c64c85a6634ab2684c27dda159b23999fa4bb74d89c9ca3a34a2b7f1742720", "final": false}
+{"event": "forward_start", "time": 1794322522.5787754, "elapsed_seconds": 210.26014685630798, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 10, "rows": 33194, "commits": [["clean", 1]]}
+{"event": "forward_complete", "time": 1794322551.0742424, "elapsed_seconds": 238.75561428070068, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 10, "commits": [["clean", 1]]}
+{"event": "forward_start", "time": 1794322551.1415198, "elapsed_seconds": 238.82289123535156, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 11, "rows": 43394, "commits": []}
+{"event": "forward_complete", "time": 1794322585.422371, "elapsed_seconds": 273.10374331474304, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 11, "commits": []}
+{"event": "forward_start", "time": 1794322585.4240985, "elapsed_seconds": 273.1054699420929, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 12, "rows": 43394, "commits": []}
+{"event": "forward_complete", "time": 1794322620.0748508, "elapsed_seconds": 307.75622272491455, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 12, "commits": []}
+{"event": "forward_start", "time": 1794322620.0760622, "elapsed_seconds": 307.7574336528778, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 13, "rows": 43394, "commits": []}
+{"event": "forward_complete", "time": 1794322654.6331336, "elapsed_seconds": 342.314505815506, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 13, "commits": []}
+{"event": "forward_start", "time": 1794322654.6346388, "elapsed_seconds": 342.3160102367401, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 14, "rows": 43394, "commits": []}
+{"event": "forward_complete", "time": 1794322689.0740895, "elapsed_seconds": 376.75546169281006, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 14, "commits": []}
+{"event": "chunk_predicted", "time": 1794322689.093237, "elapsed_seconds": 376.7746090888977, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 2, "latent_start": 10, "latent_end": 15, "sha256": "6faaec234e1f6d85530752f492db09ec4f7e810478071c7c5b248539ed93ae1a", "final": false}
+{"event": "forward_start", "time": 1794322689.0944386, "elapsed_seconds": 376.7758104801178, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 15, "rows": 43394, "commits": [["clean", 2]]}
+{"event": "forward_complete", "time": 1794322725.6849847, "elapsed_seconds": 413.36635661125183, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 15, "commits": [["clean", 2]]}
+{"event": "forward_start", "time": 1794322725.7563932, "elapsed_seconds": 413.43776512145996, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 16, "rows": 53594, "commits": []}
+{"event": "forward_complete", "time": 1794322768.5082834, "elapsed_seconds": 456.18965578079224, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 16, "commits": []}
+{"event": "forward_start", "time": 1794322768.5100167, "elapsed_seconds": 456.19138860702515, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 17, "rows": 53594, "commits": []}
+{"event": "forward_complete", "time": 1794322811.1184893, "elapsed_seconds": 498.7998614311218, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 17, "commits": []}
+{"event": "forward_start", "time": 1794322811.1205637, "elapsed_seconds": 498.8019349575043, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 18, "rows": 53594, "commits": []}
+{"event": "forward_complete", "time": 1794322853.546658, "elapsed_seconds": 541.228030204773, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 18, "commits": []}
+{"event": "forward_start", "time": 1794322853.548499, "elapsed_seconds": 541.229870557785, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 19, "rows": 53594, "commits": []}
+{"event": "forward_complete", "time": 1794322895.970978, "elapsed_seconds": 583.6523504257202, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 19, "commits": []}
+{"event": "chunk_predicted", "time": 1794322895.9917483, "elapsed_seconds": 583.6731202602386, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 3, "latent_start": 15, "latent_end": 20, "sha256": "6a91130f5b67baf61c4fa3d165f9428c3cae469953fb7cef4016f72d7236ff89", "final": false}
+{"event": "forward_start", "time": 1794322895.9931238, "elapsed_seconds": 583.6744952201843, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 20, "rows": 53594, "commits": [["clean", 3]]}
+{"event": "forward_complete", "time": 1794322941.6477227, "elapsed_seconds": 629.3290948867798, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 20, "commits": [["clean", 3]]}
+{"event": "forward_start", "time": 1794322941.7204533, "elapsed_seconds": 629.4018251895905, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 21, "rows": 63794, "commits": []}
+{"event": "forward_complete", "time": 1794322993.2772267, "elapsed_seconds": 680.958598613739, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 21, "commits": []}
+{"event": "forward_start", "time": 1794322993.2791455, "elapsed_seconds": 680.9605169296265, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 22, "rows": 63794, "commits": []}
+{"event": "forward_complete", "time": 1794323049.7150388, "elapsed_seconds": 737.3964109420776, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 22, "commits": []}
+{"event": "forward_start", "time": 1794323049.7165768, "elapsed_seconds": 737.3979482650757, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 23, "rows": 63794, "commits": []}
+{"event": "forward_complete", "time": 1794323101.1685705, "elapsed_seconds": 788.8499426841736, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 23, "commits": []}
+{"event": "forward_start", "time": 1794323101.1699412, "elapsed_seconds": 788.8513126373291, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 24, "rows": 63794, "commits": []}
+{"event": "forward_complete", "time": 1794323152.9629593, "elapsed_seconds": 840.6443316936493, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 24, "commits": []}
+{"event": "chunk_predicted", "time": 1794323152.983716, "elapsed_seconds": 840.6650881767273, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 4, "latent_start": 20, "latent_end": 25, "sha256": "66534a4aa592a27a0ae7ee9729de8324fda9c145d62f400840b00c06aa855408", "final": false}
+{"event": "forward_start", "time": 1794323152.9850512, "elapsed_seconds": 840.6664226055145, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 25, "rows": 63794, "commits": [["clean", 4]]}
+{"event": "forward_complete", "time": 1794323206.5283346, "elapsed_seconds": 894.2097070217133, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 25, "commits": [["clean", 4]]}
+{"event": "forward_start", "time": 1794323206.6007247, "elapsed_seconds": 894.2820963859558, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 26, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323266.7920508, "elapsed_seconds": 954.473423242569, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 26, "commits": []}
+{"event": "forward_start", "time": 1794323266.7938793, "elapsed_seconds": 954.4752507209778, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 27, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323326.7455919, "elapsed_seconds": 1014.4269640445709, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 27, "commits": []}
+{"event": "forward_start", "time": 1794323326.747168, "elapsed_seconds": 1014.428539276123, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 28, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323386.7122164, "elapsed_seconds": 1074.3935885429382, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 28, "commits": []}
+{"event": "forward_start", "time": 1794323386.7140403, "elapsed_seconds": 1074.3954117298126, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 29, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323446.7453957, "elapsed_seconds": 1134.426768064499, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 29, "commits": []}
+{"event": "chunk_predicted", "time": 1794323446.7643623, "elapsed_seconds": 1134.4457342624664, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 5, "latent_start": 25, "latent_end": 30, "sha256": "3ad4e47d2377ae2eae09645e0686c1d211a554e2a782f56fbf333a39401b7f83", "final": false}
+{"event": "forward_start", "time": 1794323446.7657015, "elapsed_seconds": 1134.447072982788, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 30, "rows": 73994, "commits": [["clean", 5]]}
+{"event": "forward_complete", "time": 1794323509.0286086, "elapsed_seconds": 1196.7099809646606, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 30, "commits": [["clean", 5]]}
+{"event": "forward_start", "time": 1794323509.1028996, "elapsed_seconds": 1196.7842717170715, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 31, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323569.7907574, "elapsed_seconds": 1257.4721293449402, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 31, "commits": []}
+{"event": "forward_start", "time": 1794323569.7924361, "elapsed_seconds": 1257.4738075733185, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 32, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323629.5833626, "elapsed_seconds": 1317.2647347450256, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 32, "commits": []}
+{"event": "forward_start", "time": 1794323629.5852568, "elapsed_seconds": 1317.2666282653809, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 33, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323689.4390366, "elapsed_seconds": 1377.1204085350037, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 33, "commits": []}
+{"event": "forward_start", "time": 1794323689.4404752, "elapsed_seconds": 1377.1218466758728, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 34, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323749.16673, "elapsed_seconds": 1436.84810256958, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 34, "commits": []}
+{"event": "chunk_predicted", "time": 1794323749.1853275, "elapsed_seconds": 1436.8666996955872, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 6, "latent_start": 30, "latent_end": 35, "sha256": "d190287ce62fc865fe09b4542e1486131855ef547430f761a4b97b5022120b39", "final": false}
+{"event": "forward_start", "time": 1794323749.1866422, "elapsed_seconds": 1436.8680136203766, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 35, "rows": 73994, "commits": [["clean", 6]]}
+{"event": "forward_complete", "time": 1794323811.809873, "elapsed_seconds": 1499.4912450313568, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 35, "commits": [["clean", 6]]}
+{"event": "forward_start", "time": 1794323811.8819695, "elapsed_seconds": 1499.5633413791656, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 36, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323872.2107863, "elapsed_seconds": 1559.8921587467194, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 36, "commits": []}
+{"event": "forward_start", "time": 1794323872.2124841, "elapsed_seconds": 1559.8938555717468, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 37, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323936.3149047, "elapsed_seconds": 1623.9962768554688, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 37, "commits": []}
+{"event": "forward_start", "time": 1794323936.3164148, "elapsed_seconds": 1623.997786283493, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 38, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794323996.1326544, "elapsed_seconds": 1683.8140261173248, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 38, "commits": []}
+{"event": "forward_start", "time": 1794323996.134329, "elapsed_seconds": 1683.8157005310059, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 39, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324055.8053572, "elapsed_seconds": 1743.4867298603058, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 39, "commits": []}
+{"event": "chunk_predicted", "time": 1794324055.824285, "elapsed_seconds": 1743.5056569576263, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 7, "latent_start": 35, "latent_end": 40, "sha256": "4e3177f4a2ae40b243fbd2230e271284bd1780c688686570df918c7ae02b436c", "final": false}
+{"event": "forward_start", "time": 1794324055.825651, "elapsed_seconds": 1743.5070226192474, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 40, "rows": 73994, "commits": [["clean", 7]]}
+{"event": "forward_complete", "time": 1794324118.3192356, "elapsed_seconds": 1806.0006084442139, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 40, "commits": [["clean", 7]]}
+{"event": "forward_start", "time": 1794324118.3907034, "elapsed_seconds": 1806.0720751285553, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 41, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324178.1699634, "elapsed_seconds": 1865.8513355255127, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 41, "commits": []}
+{"event": "forward_start", "time": 1794324178.1718082, "elapsed_seconds": 1865.853179693222, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 42, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324238.1080415, "elapsed_seconds": 1925.7894139289856, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 42, "commits": []}
+{"event": "forward_start", "time": 1794324238.109657, "elapsed_seconds": 1925.7910287380219, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 43, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324298.2957754, "elapsed_seconds": 1985.977147102356, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 43, "commits": []}
+{"event": "forward_start", "time": 1794324298.2973113, "elapsed_seconds": 1985.9786829948425, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 44, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324358.3640747, "elapsed_seconds": 2046.0454468727112, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 44, "commits": []}
+{"event": "chunk_predicted", "time": 1794324358.3877583, "elapsed_seconds": 2046.0691299438477, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 8, "latent_start": 40, "latent_end": 45, "sha256": "7c4e7031d1f38eb493f5cf71967552699c0c8cfe154b398d165192443d27beaa", "final": false}
+{"event": "forward_start", "time": 1794324358.3891187, "elapsed_seconds": 2046.0704901218414, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 45, "rows": 73994, "commits": [["clean", 8]]}
+{"event": "forward_complete", "time": 1794324422.6784456, "elapsed_seconds": 2110.359818458557, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 45, "commits": [["clean", 8]]}
+{"event": "forward_start", "time": 1794324422.790104, "elapsed_seconds": 2110.471475839615, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 46, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324494.0509696, "elapsed_seconds": 2181.732341527939, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 46, "commits": []}
+{"event": "forward_start", "time": 1794324494.0523975, "elapsed_seconds": 2181.733768939972, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 47, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324554.2936888, "elapsed_seconds": 2241.975062608719, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 47, "commits": []}
+{"event": "forward_start", "time": 1794324554.2960095, "elapsed_seconds": 2241.9773812294006, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 48, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324614.3838682, "elapsed_seconds": 2302.065240383148, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 48, "commits": []}
+{"event": "forward_start", "time": 1794324614.3864095, "elapsed_seconds": 2302.0677812099457, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 49, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324678.6859884, "elapsed_seconds": 2366.3673605918884, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 49, "commits": []}
+{"event": "chunk_predicted", "time": 1794324678.70849, "elapsed_seconds": 2366.389862537384, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 9, "latent_start": 45, "latent_end": 50, "sha256": "fac19a0b9526b0feda3b3953f93b852a212d443ccc323a8bdf2c8fcfd7780c4c", "final": false}
+{"event": "forward_start", "time": 1794324678.7098706, "elapsed_seconds": 2366.3912420272827, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 50, "rows": 73994, "commits": [["clean", 9]]}
+{"event": "forward_complete", "time": 1794324742.1742313, "elapsed_seconds": 2429.85560464859, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 50, "commits": [["clean", 9]]}
+{"event": "forward_start", "time": 1794324742.2466745, "elapsed_seconds": 2429.9280462265015, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 51, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324802.1338198, "elapsed_seconds": 2489.815192222595, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 51, "commits": []}
+{"event": "forward_start", "time": 1794324802.1358302, "elapsed_seconds": 2489.8172018527985, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 52, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324864.6999009, "elapsed_seconds": 2552.3812732696533, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 52, "commits": []}
+{"event": "forward_start", "time": 1794324864.7013683, "elapsed_seconds": 2552.382740020752, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 53, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324926.8588877, "elapsed_seconds": 2614.540260076523, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 53, "commits": []}
+{"event": "forward_start", "time": 1794324926.8610888, "elapsed_seconds": 2614.542459964752, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 54, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794324987.2073884, "elapsed_seconds": 2674.8887605667114, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 54, "commits": []}
+{"event": "chunk_predicted", "time": 1794324987.2273557, "elapsed_seconds": 2674.908727645874, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 10, "latent_start": 50, "latent_end": 55, "sha256": "fa74efa8adf2cc1392c0219f5194f1c1ce234f2c955ec2cd153f131990b0e5e9", "final": false}
+{"event": "forward_start", "time": 1794324987.2286627, "elapsed_seconds": 2674.9100341796875, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 55, "rows": 73994, "commits": [["clean", 10]]}
+{"event": "forward_complete", "time": 1794325049.9295063, "elapsed_seconds": 2737.6108787059784, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 55, "commits": [["clean", 10]]}
+{"event": "forward_start", "time": 1794325050.0049887, "elapsed_seconds": 2737.6863601207733, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 56, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325113.2046325, "elapsed_seconds": 2800.886004447937, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 56, "commits": []}
+{"event": "forward_start", "time": 1794325113.2062726, "elapsed_seconds": 2800.887643814087, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 57, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325173.844057, "elapsed_seconds": 2861.52542924881, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 57, "commits": []}
+{"event": "forward_start", "time": 1794325173.8457959, "elapsed_seconds": 2861.5271673202515, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 58, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325234.061171, "elapsed_seconds": 2921.7425429821014, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 58, "commits": []}
+{"event": "forward_start", "time": 1794325234.063324, "elapsed_seconds": 2921.7446954250336, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 59, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325296.6717145, "elapsed_seconds": 2984.353086709976, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 59, "commits": []}
+{"event": "chunk_predicted", "time": 1794325296.690668, "elapsed_seconds": 2984.3720400333405, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 11, "latent_start": 55, "latent_end": 60, "sha256": "97bca9a607ceb1bd9971b7789db93f0fd30627d3f227f3fb50f23d1ab24ca674", "final": false}
+{"event": "forward_start", "time": 1794325296.6919467, "elapsed_seconds": 2984.3733184337616, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 60, "rows": 73994, "commits": [["clean", 11]]}
+{"event": "forward_complete", "time": 1794325359.4500358, "elapsed_seconds": 3047.131408214569, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 60, "commits": [["clean", 11]]}
+{"event": "forward_start", "time": 1794325359.5218444, "elapsed_seconds": 3047.203216314316, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 61, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325419.4899495, "elapsed_seconds": 3107.1713213920593, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 61, "commits": []}
+{"event": "forward_start", "time": 1794325419.491796, "elapsed_seconds": 3107.173167705536, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 62, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325480.4497077, "elapsed_seconds": 3168.131079673767, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 62, "commits": []}
+{"event": "forward_start", "time": 1794325480.4513113, "elapsed_seconds": 3168.132682800293, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 63, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325544.3566558, "elapsed_seconds": 3232.0380277633667, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 63, "commits": []}
+{"event": "forward_start", "time": 1794325544.3587308, "elapsed_seconds": 3232.0401022434235, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 64, "rows": 73994, "commits": []}
+{"event": "forward_complete", "time": 1794325604.4869566, "elapsed_seconds": 3292.168328523636, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 64, "commits": []}
+{"event": "chunk_predicted", "time": 1794325604.5058124, "elapsed_seconds": 3292.18718457222, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 12, "latent_start": 60, "latent_end": 65, "sha256": "fe82b3119e6d84c08fadfe683de7d6c1ff1dd215a35ba537c6ede0a391dcaff8", "final": false}
+{"event": "forward_start", "time": 1794325604.5071592, "elapsed_seconds": 3292.1885306835175, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 65, "rows": 73994, "commits": [["clean", 12]]}
+{"event": "forward_complete", "time": 1794325666.7630131, "elapsed_seconds": 3354.4443850517273, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 65, "commits": [["clean", 12]]}
+{"event": "forward_start", "time": 1794325666.8337984, "elapsed_seconds": 3354.515170097351, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 66, "rows": 61754, "commits": []}
+{"event": "forward_complete", "time": 1794325710.7448406, "elapsed_seconds": 3398.4262132644653, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 66, "commits": []}
+{"event": "forward_start", "time": 1794325710.7468748, "elapsed_seconds": 3398.4282462596893, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 67, "rows": 61754, "commits": []}
+{"event": "forward_complete", "time": 1794325754.1583397, "elapsed_seconds": 3441.8397119045258, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 67, "commits": []}
+{"event": "forward_start", "time": 1794325754.1598434, "elapsed_seconds": 3441.841215133667, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 68, "rows": 61754, "commits": []}
+{"event": "forward_complete", "time": 1794325797.615751, "elapsed_seconds": 3485.2971229553223, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 68, "commits": []}
+{"event": "forward_start", "time": 1794325797.6172018, "elapsed_seconds": 3485.2985734939575, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 69, "rows": 61754, "commits": []}
+{"event": "forward_complete", "time": 1794325841.0079913, "elapsed_seconds": 3528.6893632411957, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 69, "commits": []}
+{"event": "chunk_predicted", "time": 1794325841.0191908, "elapsed_seconds": 3528.7005627155304, "checkpoint_step": 1000, "optimizer_updates": 0, "chunk": 13, "latent_start": 65, "latent_end": 67, "sha256": "2ffa99ace57052b1892408143c45b391151e68e74c7b1930de53f1e5997ee7c4", "final": true}
+{"event": "forward_start", "time": 1794325841.0205011, "elapsed_seconds": 3528.7018728256226, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 70, "rows": 61754, "commits": [["clean", 13]]}
+{"event": "forward_complete", "time": 1794325885.0542169, "elapsed_seconds": 3572.735589504242, "checkpoint_step": 1000, "optimizer_updates": 0, "forward": 70, "commits": [["clean", 13]]}
+{"event": "complete", "time": 1794325887.1943283, "elapsed_seconds": 3574.8756997585297, "checkpoint_step": 1000, "optimizer_updates": 0, "result": {"status": "complete", "checkpoint_step": 1000, "sample": "Charge_train_3856_4081", "latent_count": 67, "old_vae_frames": 226, "fps": 24, "model_forwards": 70, "refined_sha256": "1918fdfe4c7bd947175cc093e6c4d5629eb47d218f5cfcd079a4c7cec01f8ae3", "refined_latent_l1": 0.1733269989490509, "draft_latent_l1": 0.20998229086399078, "elapsed_seconds": 3574.8744037151337, "peak_allocated_bytes": 18947014144, "optimizer_updates": 0, "training_sample_only": true}}

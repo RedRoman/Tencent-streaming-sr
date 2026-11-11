@@ -1,0 +1,262 @@
+{
+  "schema": "solar2500-publication-v1",
+  "files": [
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/.gitignore",
+      "origin": "generated_from_verified_receipts",
+      "original_sha256": "c9f4b4deb3009608e98462fb7b762b146880e685318f86159d67331845461b67",
+      "redacted": false,
+      "public_sha256": "c9f4b4deb3009608e98462fb7b762b146880e685318f86159d67331845461b67",
+      "bytes": 58
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/LICENSE.upstream-code.txt",
+      "origin": "upstream_license/SolarRenderer-code-LICENSE.txt",
+      "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "public_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/LICENSE.weights.txt",
+      "origin": "upstream_license/MiniMax-H3-LICENSE.txt",
+      "original_sha256": "59b99642b95ea21630e311198ddbfffbfe05aadba0c2f5d884cbdf4efcc90f44",
+      "public_sha256": "59b99642b95ea21630e311198ddbfffbfe05aadba0c2f5d884cbdf4efcc90f44",
+      "bytes": 17604,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/NOTICE",
+      "origin": "generated_from_verified_receipts",
+      "original_sha256": "82407f3bfaf50e074abe27c3498108f62b45048b96660a29242f3e05ae0c1b23",
+      "redacted": false,
+      "public_sha256": "82407f3bfaf50e074abe27c3498108f62b45048b96660a29242f3e05ae0c1b23",
+      "bytes": 640
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/README.md",
+      "origin": "generated_from_verified_receipts",
+      "original_sha256": "965686c64a1d62dabaceadbaebedec7f5042db3a3d24bbe860c06182540eb69a",
+      "redacted": false,
+      "public_sha256": "965686c64a1d62dabaceadbaebedec7f5042db3a3d24bbe860c06182540eb69a",
+      "bytes": 7523
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/adapter_config.json",
+      "origin": "generated_from_verified_receipts",
+      "original_sha256": "9a308d602638bea8a71269b834297dfc689997307ed43991fc1b9a3dd3315168",
+      "redacted": false,
+      "public_sha256": "9a308d602638bea8a71269b834297dfc689997307ed43991fc1b9a3dd3315168",
+      "bytes": 2545
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/export_adapter.py",
+      "origin": "cpu_exporter",
+      "original_sha256": "127f3f358804d87e720372c6ca4c5e82a6f5c0a517f80bba63d07c4d436ee755",
+      "public_sha256": "127f3f358804d87e720372c6ca4c5e82a6f5c0a517f80bba63d07c4d436ee755",
+      "bytes": 4686,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/load_task_adapter.py",
+      "origin": "new_portable_inference_loader",
+      "original_sha256": "d5a255647307759ad0d550c999acc5ec0e09abd204db275be76cbd644e85a4f4",
+      "public_sha256": "d5a255647307759ad0d550c999acc5ec0e09abd204db275be76cbd644e85a4f4",
+      "bytes": 3838,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/ascend_port.py",
+      "origin": "original_route/ascend_port.py",
+      "original_sha256": "bb30c59bfee909550f49228a0f69eaf8e0467b900c923be94f58a7a51f9b1ddc",
+      "public_sha256": "bb30c59bfee909550f49228a0f69eaf8e0467b900c923be94f58a7a51f9b1ddc",
+      "bytes": 4194,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/check_ascend_attention.py",
+      "origin": "original_route/check_ascend_attention.py",
+      "original_sha256": "ff793c65391cc650445e4879e705baa5db3ebc71545e2e31781af4bb2fc790d2",
+      "public_sha256": "2a01ac3ada089515ad084c9d1db833daf710e757c8b6ff5379b9852ad02d7114",
+      "bytes": 2325,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/convert_base_cpu.py",
+      "origin": "original_route/convert_base_cpu.py",
+      "original_sha256": "523e02ac73e7f51ceb79770a204235fa31b18d2c5f49a244323be177862f7fbb",
+      "public_sha256": "e9457da1c61ccc39d94523d9316385f4793ce726c3d6cb737074b5a4ddb707ca",
+      "bytes": 2172,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/encode_prompt_cpu.py",
+      "origin": "original_route/encode_prompt_cpu.py",
+      "original_sha256": "e8e92034a8543e527ad347632a81fcf98033c92ccec3fd38ec76e38d08ffe6c0",
+      "public_sha256": "1687a3f2c5ba5cfd50ac69dc78a8e9b710112b3027413fcb99874d25919628ec",
+      "bytes": 2822,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/eval_step1000/causal_vit_decoder_ascend_v2.py",
+      "origin": "step1000_evaluation/causal_vit_decoder_ascend_v2.py",
+      "original_sha256": "4bb87209984a551d623f5eb7bfdcbea888ccdf25a59814e99a5bfe2b5531f4a2",
+      "public_sha256": "4bb87209984a551d623f5eb7bfdcbea888ccdf25a59814e99a5bfe2b5531f4a2",
+      "bytes": 14791,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/eval_step1000/check_decoder_cpu.py",
+      "origin": "step1000_evaluation/check_decoder_cpu.py",
+      "original_sha256": "135f9710f5cca0aad71f89304b23dd97b9b60e35dd47b63286ae8ebb1b346a19",
+      "public_sha256": "135f9710f5cca0aad71f89304b23dd97b9b60e35dd47b63286ae8ebb1b346a19",
+      "bytes": 1532,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/eval_step1000/infer_v2.py",
+      "origin": "step1000_evaluation/infer_v2.py",
+      "original_sha256": "4eb8d520dab09bfebbf7ad75cff2d970764143da0db02eac692b8ab2628e416e",
+      "public_sha256": "3ea4e76047f9da4f29bead2a2f915f5798355abb16c39c3f8b2bf4e438c0d6e9",
+      "bytes": 9521,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/eval_step1000/package_comparison_v2.py",
+      "origin": "step1000_evaluation/package_comparison_v2.py",
+      "original_sha256": "85eb329ede482f04b877567d9c389aa2a0229e201e22a68ed43e0981620a2112",
+      "public_sha256": "85eb329ede482f04b877567d9c389aa2a0229e201e22a68ed43e0981620a2112",
+      "bytes": 2566,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/eval_step1000/render_full_v2.py",
+      "origin": "step1000_evaluation/render_full_v2.py",
+      "original_sha256": "8e776048ca104e0cfb5e3a2e02c0b653ad1a96264c0049f204fed6266d696e30",
+      "public_sha256": "3fdd89bb3e131052839422ae1bb83307b8b22722d5b2ff89dbacf7f3711f4120",
+      "bytes": 11834,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/prepare_causal_model_cpu.py",
+      "origin": "original_route/prepare_causal_model_cpu.py",
+      "original_sha256": "4f8ba7715ae1387e9472ae8cdd03a01b4217f06d401a151cc7d31227033f598a",
+      "public_sha256": "4d99e0cbb425916fbb6453d36911f679cee45cabbd5677bff3d053a8e7aa2aa9",
+      "bytes": 3244,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/run_locked.py",
+      "origin": "original_route/run_locked.py",
+      "original_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+      "public_sha256": "0dd684ffaf2b172426566dcfdee74b204052c6ad3d53622b9dc6fb7aea7bb7c6",
+      "bytes": 2345,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v1/DESIGN.md",
+      "origin": "frozen_stage_v1/DESIGN.md",
+      "original_sha256": "fc3b72cfbcaceb55a14915ca8f574125d24c0b30f793deb58c9bb53504adbcde",
+      "public_sha256": "fc3b72cfbcaceb55a14915ca8f574125d24c0b30f793deb58c9bb53504adbcde",
+      "bytes": 3727,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v1/common.py",
+      "origin": "frozen_stage_v1/common.py",
+      "original_sha256": "dd994a9c2c56b8c0843e51cddae79e29e4afadbd2fc891c4ebd028774bf6d67a",
+      "public_sha256": "8a1982bb22c8ad295265082809b1009ffbcc2db9803a32b363d9b592c5e8f4fa",
+      "bytes": 2651,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v1/config.json",
+      "origin": "frozen_stage_v1/config.json",
+      "original_sha256": "2c4831078adcb802ba1333d096499a718ec99cb2bdeaf65668af14e338f15cc3",
+      "public_sha256": "2c4831078adcb802ba1333d096499a718ec99cb2bdeaf65668af14e338f15cc3",
+      "bytes": 3704,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v1/gates.py",
+      "origin": "frozen_stage_v1/gates.py",
+      "original_sha256": "765dad6f85bcb61309f0b3d6ebbeaa317df2e23ea7400d2742df06867b86fe6a",
+      "public_sha256": "765dad6f85bcb61309f0b3d6ebbeaa317df2e23ea7400d2742df06867b86fe6a",
+      "bytes": 4110,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v1/runtime.py",
+      "origin": "frozen_stage_v1/runtime.py",
+      "original_sha256": "36c2535d27bb9a45f466cd2739029fb117a3dd99072784c069df42a67f23782f",
+      "public_sha256": "36c2535d27bb9a45f466cd2739029fb117a3dd99072784c069df42a67f23782f",
+      "bytes": 5997,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v1/train.py",
+      "origin": "frozen_stage_v1/train.py",
+      "original_sha256": "973bb6de31795cc92c2be92e08fb7c651723beec21243d9713c2e662656f7198",
+      "public_sha256": "973bb6de31795cc92c2be92e08fb7c651723beec21243d9713c2e662656f7198",
+      "bytes": 11695,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v2/common.py",
+      "origin": "frozen_stage_v2/common.py",
+      "original_sha256": "bbb601534cfe27442633b249cffd84322289371375f9970f21e8de948293ccc1",
+      "public_sha256": "9fcf74d762dc593ae9953a4c9745f100617432ed04127914e56d184c88b9c1d8",
+      "bytes": 1517,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v2/config.json",
+      "origin": "frozen_stage_v2/config.json",
+      "original_sha256": "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+      "public_sha256": "86d7e3444f373bf62c0c90c6a71f1a0f76fc3567d6b9e22ad793454c659e33d9",
+      "bytes": 4140,
+      "redacted": true
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v2/gates.py",
+      "origin": "frozen_stage_v2/gates.py",
+      "original_sha256": "765dad6f85bcb61309f0b3d6ebbeaa317df2e23ea7400d2742df06867b86fe6a",
+      "public_sha256": "765dad6f85bcb61309f0b3d6ebbeaa317df2e23ea7400d2742df06867b86fe6a",
+      "bytes": 4110,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v2/patch_core.py",
+      "origin": "frozen_stage_v2/patch_core.py",
+      "original_sha256": "7fc58b8c3acd4ee5349d338a054c7ed10b2a0d86e77e64cd59e36359c0af5022",
+      "public_sha256": "7fc58b8c3acd4ee5349d338a054c7ed10b2a0d86e77e64cd59e36359c0af5022",
+      "bytes": 3706,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v2/runtime.py",
+      "origin": "frozen_stage_v2/runtime.py",
+      "original_sha256": "fd73782e42ad29b2efc5aca91152f778a619d2af3c7ccb8dc17cf1da76b7bcf2",
+      "public_sha256": "fd73782e42ad29b2efc5aca91152f778a619d2af3c7ccb8dc17cf1da76b7bcf2",
+      "bytes": 6400,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/stages/task_tf2500_v2/train.py",
+      "origin": "frozen_stage_v2/train.py",
+      "original_sha256": "1a16bc289ed32ba8b9025dbcdf8d76180f332b118dd238a0c722e4169b8bad76",
+      "public_sha256": "1a16bc289ed32ba8b9025dbcdf8d76180f332b118dd238a0c722e4169b8bad76",
+      "bytes": 13398,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/source_snapshot/with_runtime.sh",
+      "origin": "original_route/with_runtime.sh",
+      "original_sha256": "e2d2a63c43ac758c997af828ed8dc687d0e773296be265928420b1b75fc812ba",
+      "public_sha256": "7009a3b8092bee288aa962cac0db59d32d6c779d7e82df0d61aa7427e09e2097",
+      "bytes": 589,
+      "redacted": true
+    }
+  ],
+  "note": "Original and public hashes are distinct when environment paths are sanitized. This manifest excludes itself. Large inference adapter is distributed only through Release; optimizer/RNG/cache payloads excluded."
+}

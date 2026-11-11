@@ -1,0 +1,47 @@
+{
+  "status": "real_update_and_resume_verified",
+  "step": 1,
+  "changed_adapter_tensors": 200,
+  "adapter_max_abs_delta": 1.9998024924916535e-07,
+  "optimizer_parameter_states": 400,
+  "first_update": {
+    "event": "optimizer_update",
+    "time": 1794280696.9057086,
+    "elapsed_seconds": 257.2223310470581,
+    "optimizer_updates": 1,
+    "step": 1,
+    "loss": 0.09003862738609314,
+    "grad_norm": 0.003375886008143425,
+    "lr": 2.0000000000000002e-07,
+    "seconds": 247.43013525009155,
+    "peak_allocated_bytes": 48900633088,
+    "sample": "Charge_train_3856_4081",
+    "sample_index": 0,
+    "latent_start": 0,
+    "latent_count": 12,
+    "noise_seed": 2026111000
+  },
+  "launch": {
+    "parent_pid": 84439,
+    "physical_npu": 6,
+    "all_three_locks_held": true,
+    "started_unix": 1794280420.0634015,
+    "command": [
+      "/bin/bash",
+      "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/with_runtime.sh",
+      "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/stages/task_tf2500_v1/train.py",
+      "--config",
+      "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/stages/task_tf2500_v1/config.json",
+      "--config-sha",
+      "2c4831078adcb802ba1333d096499a718ec99cb2bdeaf65668af14e338f15cc3",
+      "--run",
+      "task_tf2500_v1"
+    ],
+    "status": "running",
+    "child_pid": 84542,
+    "child_pgid": 84542
+  },
+  "config_sha256": "2c4831078adcb802ba1333d096499a718ec99cb2bdeaf65668af14e338f15cc3",
+  "checkpoint_sha256": "b710db8e7a9b02c110b92416cbc24e44b8b13052e441c24447b85d7465661266",
+  "scope": "Startup correctness only; no RGB/generalization claim"
+}

@@ -1,0 +1,8 @@
+{
+  "reason": "Ascend SDPA rejects broadcast query dimension in [B,1,1,Skv] mask",
+  "change": "Expand existing boolean mask to [B,1,Sq,Skv] and make contiguous on NPU only",
+  "inference_reused": "evaluations/step1000_full67_v2/refined_67.pt",
+  "pretrained_weights_unchanged": true,
+  "prior_failed_outputs_preserved": true,
+  "validation_thresholds_unchanged": true
+}

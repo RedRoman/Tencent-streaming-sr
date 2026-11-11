@@ -1,0 +1,25 @@
+{
+  "parent_pid": 2330991,
+  "physical_npu": 6,
+  "all_three_locks_held": true,
+  "started_unix": 1794291195.9530468,
+  "command": [
+    "/bin/bash",
+    "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/with_runtime.sh",
+    "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/stages/task_tf2500_v2/train.py",
+    "--config",
+    "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/stages/task_tf2500_v2/config.json",
+    "--config-sha",
+    "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+    "--run",
+    "task_tf2500_v2",
+    "--resume",
+    "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/runs/task_tf2500_v1/checkpoint_0012.pt"
+  ],
+  "status": "complete",
+  "child_pid": 2331003,
+  "child_pgid": 2331003,
+  "exit_code": 0,
+  "ended_unix": 1794364290.7624087,
+  "child_reaped": true
+}

@@ -1,0 +1,1642 @@
+{
+  "status": "passed",
+  "step": 2500,
+  "checkpoint_sha256": "aec47799fbdf3425b8d11828653eaccc0349faa011919a8bd2fbe9fd9a9de422",
+  "checkpoint_bytes": 482164949,
+  "config_sha256": "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+  "pretrained_model_index_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+  "inference_file": "solar_refiner_tf2500_lora_rank16_fp32.safetensors",
+  "inference_sha256": "9c5cd061f3f339c5939e9568fb9d4179e27aaec7d584d9ce68be2073c9c76fc3",
+  "inference_bytes": 160606248,
+  "tensor_count": 400,
+  "parameter_count": 40140800,
+  "dtype": "float32",
+  "optimizer_states_checked": 400,
+  "optimizer_steps": [
+    2500
+  ],
+  "optimizer_moments_finite": true,
+  "cpu_rng_restore_exact": true,
+  "npu_rng_saved_bytes": 16,
+  "npu_rng_restore_tested_here": false,
+  "roundtrip_names_shapes_dtypes_values_exact": true,
+  "contains_optimizer_rng_cache": false,
+  "npu_forwards": 0,
+  "new_optimizer_updates": 0,
+  "inference_quality_accepted": false,
+  "next_schedule": {
+    "sample_index": 0,
+    "latent_start": 10,
+    "latent_count": 7,
+    "crop": [
+      34,
+      46,
+      32,
+      64
+    ],
+    "full_frame": false,
+    "noise_seed": 2026113500
+  },
+  "parameter_shapes": {
+    "transformer_blocks.0.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.0.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.0.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.0.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.0.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.0.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.0.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.0.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.1.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.1.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.1.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.1.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.1.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.1.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.1.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.1.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.2.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.2.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.2.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.2.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.2.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.2.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.2.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.2.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.3.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.3.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.3.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.3.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.3.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.3.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.3.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.3.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.4.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.4.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.4.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.4.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.4.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.4.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.4.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.4.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.5.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.5.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.5.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.5.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.5.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.5.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.5.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.5.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.6.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.6.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.6.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.6.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.6.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.6.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.6.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.6.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.7.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.7.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.7.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.7.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.7.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.7.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.7.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.7.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.8.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.8.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.8.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.8.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.8.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.8.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.8.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.8.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.9.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.9.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.9.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.9.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.9.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.9.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.9.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.9.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.10.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.10.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.10.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.10.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.10.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.10.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.10.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.10.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.11.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.11.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.11.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.11.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.11.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.11.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.11.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.11.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.12.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.12.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.12.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.12.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.12.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.12.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.12.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.12.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.13.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.13.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.13.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.13.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.13.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.13.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.13.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.13.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.14.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.14.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.14.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.14.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.14.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.14.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.14.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.14.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.15.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.15.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.15.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.15.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.15.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.15.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.15.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.15.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.16.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.16.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.16.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.16.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.16.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.16.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.16.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.16.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.17.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.17.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.17.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.17.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.17.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.17.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.17.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.17.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.18.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.18.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.18.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.18.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.18.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.18.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.18.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.18.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.19.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.19.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.19.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.19.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.19.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.19.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.19.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.19.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.20.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.20.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.20.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.20.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.20.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.20.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.20.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.20.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.21.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.21.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.21.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.21.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.21.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.21.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.21.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.21.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.22.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.22.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.22.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.22.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.22.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.22.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.22.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.22.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.23.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.23.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.23.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.23.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.23.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.23.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.23.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.23.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.24.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.24.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.24.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.24.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.24.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.24.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.24.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.24.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.25.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.25.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.25.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.25.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.25.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.25.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.25.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.25.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.26.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.26.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.26.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.26.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.26.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.26.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.26.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.26.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.27.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.27.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.27.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.27.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.27.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.27.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.27.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.27.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.28.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.28.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.28.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.28.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.28.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.28.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.28.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.28.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.29.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.29.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.29.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.29.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.29.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.29.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.29.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.29.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.30.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.30.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.30.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.30.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.30.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.30.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.30.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.30.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.31.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.31.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.31.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.31.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.31.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.31.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.31.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.31.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.32.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.32.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.32.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.32.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.32.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.32.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.32.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.32.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.33.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.33.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.33.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.33.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.33.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.33.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.33.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.33.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.34.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.34.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.34.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.34.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.34.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.34.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.34.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.34.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.35.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.35.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.35.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.35.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.35.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.35.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.35.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.35.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.36.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.36.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.36.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.36.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.36.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.36.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.36.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.36.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.37.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.37.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.37.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.37.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.37.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.37.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.37.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.37.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.38.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.38.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.38.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.38.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.38.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.38.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.38.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.38.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.39.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.39.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.39.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.39.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.39.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.39.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.39.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.39.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.40.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.40.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.40.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.40.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.40.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.40.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.40.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.40.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.41.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.41.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.41.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.41.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.41.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.41.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.41.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.41.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.42.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.42.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.42.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.42.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.42.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.42.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.42.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.42.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.43.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.43.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.43.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.43.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.43.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.43.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.43.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.43.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.44.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.44.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.44.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.44.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.44.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.44.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.44.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.44.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.45.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.45.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.45.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.45.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.45.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.45.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.45.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.45.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.46.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.46.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.46.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.46.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.46.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.46.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.46.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.46.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.47.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.47.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.47.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.47.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.47.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.47.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.47.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.47.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.48.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.48.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.48.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.48.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.48.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.48.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.48.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.48.attn.to_out.0.b": [
+      5376,
+      16
+    ],
+    "transformer_blocks.49.attn.to_q.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.49.attn.to_q.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.49.attn.to_k.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.49.attn.to_k.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.49.attn.to_v.a": [
+      16,
+      5376
+    ],
+    "transformer_blocks.49.attn.to_v.b": [
+      7168,
+      16
+    ],
+    "transformer_blocks.49.attn.to_out.0.a": [
+      16,
+      7168
+    ],
+    "transformer_blocks.49.attn.to_out.0.b": [
+      5376,
+      16
+    ]
+  }
+}

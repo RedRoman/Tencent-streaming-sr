@@ -1,0 +1,28 @@
+{
+  "checkpoint_sha256": "dd4b062dad6c0c9367909bbf577bc2ea98210211c3d32de400091e6f809f224c",
+  "config_sha256": "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+  "pretrained_index_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+  "sample_sha256": "5dc1df60fa60fc67c9712a181e283e3147ac6b2d209d1f876174dcb1bfefa778",
+  "source_sha256": "4eb8d520dab09bfebbf7ad75cff2d970764143da0db02eac692b8ab2628e416e",
+  "sample": "Charge_train_3856_4081",
+  "latent_slice": [
+    0,
+    67
+  ],
+  "latent_grid": [
+    68,
+    120
+  ],
+  "chunk": 5,
+  "window": 6,
+  "denoise_calls_per_chunk": 4,
+  "clean_commit_calls_per_chunk": 1,
+  "target_content": "all zeros; GT excluded from inference",
+  "history": "own generated chunks",
+  "structural_condition": "aligned draft, current and past chunks only",
+  "seed": 20261109,
+  "cache_structure": false,
+  "cache_device": "cpu",
+  "training_sample_only": true,
+  "optimizer_updates": 0
+}

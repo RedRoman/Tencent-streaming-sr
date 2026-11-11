@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "scope": "CPU real task tensors in three representative modules compared to original training runtime branch, FP32 and BF16 base; not full-model inference",
+  "weight_sha256": "9c5cd061f3f339c5939e9568fb9d4179e27aaec7d584d9ce68be2073c9c76fc3",
+  "loader_sha256": "d5a255647307759ad0d550c999acc5ec0e09abd204db275be76cbd644e85a4f4",
+  "comparisons": [
+    {
+      "path": "transformer_blocks.0.attn.to_q",
+      "base_dtype": "torch.float32",
+      "maxabs": 0.0
+    },
+    {
+      "path": "transformer_blocks.0.attn.to_q",
+      "base_dtype": "torch.bfloat16",
+      "maxabs": 0.0
+    },
+    {
+      "path": "transformer_blocks.0.attn.to_out.0",
+      "base_dtype": "torch.float32",
+      "maxabs": 0.0
+    },
+    {
+      "path": "transformer_blocks.0.attn.to_out.0",
+      "base_dtype": "torch.bfloat16",
+      "maxabs": 0.0
+    },
+    {
+      "path": "transformer_blocks.49.attn.to_v",
+      "base_dtype": "torch.float32",
+      "maxabs": 0.0
+    },
+    {
+      "path": "transformer_blocks.49.attn.to_v",
+      "base_dtype": "torch.bfloat16",
+      "maxabs": 0.0
+    }
+  ],
+  "rank_mismatch_rejected": true,
+  "npu_forwards": 0,
+  "optimizer_updates": 0
+}

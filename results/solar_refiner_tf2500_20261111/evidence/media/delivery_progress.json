@@ -1,0 +1,28 @@
+{
+  "updated_at": "2026-11-10T16:22:35.789399+00:00",
+  "step": 1000,
+  "all_latents": 67,
+  "frames": 226,
+  "fps": 24,
+  "duration_seconds": 9.416666666666666,
+  "causal_three_column": {
+    "path": "/opt/local-workspace/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2_view/draft_refiner_gt_causal.mp4",
+    "sha256": "0d19a374eff1badcee2814112106e1ff1a446f68642f910e5597b00eb34e07c4",
+    "full_decode_verified": true,
+    "contactsheet_frames_reviewed": [
+      0,
+      112,
+      225
+    ],
+    "continuous_visual_reviewed": false
+  },
+  "two_decoders_delivery_session": "step1000_two_decoders_h264_delivery_v2",
+  "two_decoders_expected_sha256": "5786875a37e0c6537aa84022c148f8d1c74957768725177e50da2653beea9e0d",
+  "two_decoders_expected_bytes": 3804080,
+  "native_causal_h264_expected_sha256": "e528a3eae98f435bcf02ce84ffe920d2b581e865e12e02f3524f059ea9cbb550",
+  "native_causal_h264_expected_bytes": 6817756,
+  "native_causal_transfer_pending": true,
+  "source_archive_incomplete": true,
+  "training_sample_only": true,
+  "GT_scope": "decoded target latent, not native RGB"
+}

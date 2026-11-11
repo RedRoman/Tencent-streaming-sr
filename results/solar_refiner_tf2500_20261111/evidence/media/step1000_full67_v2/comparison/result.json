@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "frames": 226,
+  "fps": 24,
+  "prediction_sha256": "1918fdfe4c7bd947175cc093e6c4d5629eb47d218f5cfcd079a4c7cec01f8ae3",
+  "comparison": {
+    "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/comparison/step1000_two_decoders.mp4",
+    "sha256": "0cd6da711e1d271a0cefb901ba958dd3a0842f770c246b3d8974e41c49b5a081",
+    "bytes": 7477547,
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 410,
+          "avg_frame_rate": "24/1",
+          "nb_read_frames": "226"
+        }
+      ]
+    }
+  },
+  "training_sample_only": true,
+  "GT_scope": "original VAE decoded target latent, not native RGB",
+  "original_refiner": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/original/refiner_original1080p.mp4",
+  "causal_refiner": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/media/step1000_full67_v2/causal/refiner_causal1080p.mp4",
+  "continuous_visual_reviewed": false
+}

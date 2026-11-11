@@ -1,0 +1,11 @@
+{
+  "accepted_at": "2026-11-10T06:12:58.489Z",
+  "user_reply": "接受",
+  "run": "task_tf2500_v2",
+  "accepted_recipe": "Native 32x64 spatial crop, 7 latents (5+2), full-frame draft-first reference, 24 resident frozen DiT blocks; every100th cumulative update full12x68x120; target2500 cumulative; checkpoint every100.",
+  "accepted_tradeoff": "Reduced per-update spatial/temporal context; periodic full-frame training does not guarantee unchanged global consistency or image quality. Estimated20-22hours, not a guaranteed24-hour deadline.",
+  "config_sha256": "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+  "resume_step": 12,
+  "resume_sha256": "edbe56a2cbe25c3e09a6b198404c2e0e2d7742c0a5ba1295ce42e1fa9be82dd5",
+  "scope": "Isolated side-conversation experiment on TRAINING_HOST physicalNPU6"
+}

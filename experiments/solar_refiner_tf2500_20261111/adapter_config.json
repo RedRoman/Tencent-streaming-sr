@@ -1,0 +1,63 @@
+{
+  "format": "solar-task-lora-inference-v1",
+  "step": 2500,
+  "rank": 16,
+  "alpha": 16,
+  "targets": [
+    "attn.to_q",
+    "attn.to_k",
+    "attn.to_v",
+    "attn.to_out.0"
+  ],
+  "blocks": 50,
+  "tensor_count": 400,
+  "parameter_count": 40140800,
+  "dtype": "float32",
+  "runtime_arithmetic": "base(x) + ((x.float() @ A.T) @ B.T).to(base_output.dtype); no autocast; scale=1",
+  "filename": "solar_refiner_tf2500_lora_rank16_fp32.safetensors",
+  "sha256": "9c5cd061f3f339c5939e9568fb9d4179e27aaec7d584d9ce68be2073c9c76fc3",
+  "bytes": 160606248,
+  "original_checkpoint_sha256": "aec47799fbdf3425b8d11828653eaccc0349faa011919a8bd2fbe9fd9a9de422",
+  "original_config_sha256": "a652cfef6cbf68b3377c287f4f5c65858706f63812829090a07342b039c6fd45",
+  "expected_merged_model_index_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+  "base": {
+    "repo": "MiniMaxAI/MiniMax-H3",
+    "component": "Ref2VA",
+    "original_index_sha256": "fb457a26ffa6294660e249b0ddd03a337f2e5393f770b5c34c8b8f90a29a7efb",
+    "revision_note": "Original cached base is pinned by file hashes; no unrecorded HF revision is invented."
+  },
+  "upstream_code": {
+    "repo": "Enderfga/SolarRenderer",
+    "revision": "0ca4f5e45b062cc9e9aee506de46aabdc22e4c3d"
+  },
+  "upstream_model_revision": "c5512be825f297ed8db390cbeda0289fb0c24779",
+  "merge_order": [
+    "Ref2VA",
+    "solarrenderer_causal_control_lora.safetensors",
+    "solarrenderer_causal_4step_lora.safetensors",
+    "this separate FP32 task branch"
+  ],
+  "upstream_adapters": [
+    {
+      "file": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/weights/solarrenderer_causal_4step_lora.safetensors",
+      "bytes": 4150865728,
+      "sha256": "10d275abf164f2115e682fd62bd1676e9b7db3c2fddaf8a66275651304d19d83"
+    },
+    {
+      "file": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/weights/solarrenderer_causal_control_lora.safetensors",
+      "bytes": 4150865680,
+      "sha256": "49704c2948a111f958f3a0fc2cb9802081f9b5c129d91f30da6c8758787a8888"
+    }
+  ],
+  "decoder": {
+    "repo": "Efficient-Large-Model/StreamRender-H3",
+    "revision": "9f81b42fb6bac3509ccc6ebf4cb6c8aec7469c62",
+    "sha256": "a1455dd6fedb61b1b835c3e1d2e5bad4a132c02a45585f992372ca2d25e22889",
+    "role": "step1000 optional pixel decoder, outside task training"
+  },
+  "quality_accepted": false,
+  "inference_only": true,
+  "includes_base": false,
+  "includes_optimizer_rng_or_cache": false,
+  "license": "MiniMax H3 Community License Agreement; see LICENSE.weights.txt and NOTICE"
+}
