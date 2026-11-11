@@ -11,11 +11,14 @@
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/CUDA_H200_GRAYCAT_HANDOFF.md",
-      "origin": "generated_handoff_from_verified_sources",
-      "original_sha256": "4daafd478b01a8940dd6393f41f07f941fa65a592ad806a5909608efb6fdecfe",
-      "public_sha256": "4daafd478b01a8940dd6393f41f07f941fa65a592ad806a5909608efb6fdecfe",
-      "bytes": 23092,
-      "redacted": false
+      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "4231a4e22e9a3bf15ad2da7264f0bf34ada464ae97ed94fb191931f36fae2335",
+      "public_sha256": "4231a4e22e9a3bf15ad2da7264f0bf34ada464ae97ed94fb191931f36fae2335",
+      "bytes": 23375,
+      "redacted": false,
+      "previous_public_sha256": "4daafd478b01a8940dd6393f41f07f941fa65a592ad806a5909608efb6fdecfe",
+      "previous_original_sha256": "4daafd478b01a8940dd6393f41f07f941fa65a592ad806a5909608efb6fdecfe",
+      "previous_commit": "b9470ca8dd859757493759b1d03007ef338d5552"
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/LICENSE.upstream-code.txt",
@@ -70,10 +73,21 @@
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/MANIFEST.json",
-      "origin": "generated_handoff_from_verified_sources",
-      "original_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
-      "public_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
-      "bytes": 3557,
+      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "d33ae08e41e330ae7cd4c6645efed7e39fe4577de378f044100d877b66920c2c",
+      "public_sha256": "d33ae08e41e330ae7cd4c6645efed7e39fe4577de378f044100d877b66920c2c",
+      "bytes": 5034,
+      "redacted": false,
+      "previous_public_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
+      "previous_original_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
+      "previous_commit": "b9470ca8dd859757493759b1d03007ef338d5552"
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/PROMPT_TENSOR_HASHES.md",
+      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
+      "public_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
+      "bytes": 4231,
       "redacted": false
     },
     {
@@ -123,6 +137,30 @@
       "redacted": false,
       "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/normalization.json",
       "origin": "derived_from_recorded_evidence"
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/prompt_fingerprint_cpu_checks.json",
+      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "5e96bd5e6a8f32edec986cd5848f54e0f41faa280c24c711cc027fec0de86e8a",
+      "public_sha256": "5e96bd5e6a8f32edec986cd5848f54e0f41faa280c24c711cc027fec0de86e8a",
+      "bytes": 534,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/prompt_tensor_fingerprint.py",
+      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "b01a040d2d4a082b39bc613d1b34c510bbd7e12e775bb41ff99581408d36dfb0",
+      "public_sha256": "b01a040d2d4a082b39bc613d1b34c510bbd7e12e775bb41ff99581408d36dfb0",
+      "bytes": 5991,
+      "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/restoration_prompt.tensor_sha256.json",
+      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "eefd5812af521969481f67f7357880ebf48a316fdaa5fd29521025bc6a4dd98c",
+      "public_sha256": "eefd5812af521969481f67f7357880ebf48a316fdaa5fd29521025bc6a4dd98c",
+      "bytes": 2184,
+      "redacted": false
     },
     {
       "original_sha256": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",

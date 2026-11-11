@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "in_memory_only": true,
+  "original_cache_unchanged": true,
+  "token_tags_all_one": true,
+  "reserialization_same_tensors_different_container_passes": true,
+  "single_embedding_value_change_rejected": true,
+  "single_token_tag_change_rejected": true,
+  "encoder_layer_change_rejected": true,
+  "lossless_float32_cast_distinguished_from_exact_dtype_match": true,
+  "model_forward_or_accelerator_execution": false,
+  "source_prompt_sha256": "253b1ebea968a41fee598952b162dac8a5900c3dc18c1a7cdc2fa51d60da440a"
+}

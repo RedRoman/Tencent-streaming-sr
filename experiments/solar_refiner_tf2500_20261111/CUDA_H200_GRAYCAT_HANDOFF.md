@@ -93,6 +93,8 @@ VAE config SHA为 `78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5
 
 Qwen3-VL第50层、28 token，prompt缓存SHA `253b1ebea968a41fee598952b162dac8a5900c3dc18c1a7cdc2fa51d60da440a`。保留embeddings和token tags；旧source_pairs中的“no_text”是上游数据准备字段，不代表Solar实际训练无文本。
 
+补充：[原prompt逐张量SHA与CPU比对方法](handoff_cuda_h200_v1/PROMPT_TENSOR_HASHES.md)。已从同一原缓存提取BF16 `[28,5120]` embeddings、int64 `[28]` tags的有效数据hash及shape/dtype/元数据绑定，可排除`.pt`重新序列化造成的文件SHA差异。
+
 ## 2 NPU 包装与 CUDA 迁移
 
 | 文件/行为 | 是否NPU专属 | CUDA/H200处理 |

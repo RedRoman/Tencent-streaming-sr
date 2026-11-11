@@ -1,0 +1,50 @@
+{
+  "schema": "solar-restoration-prompt-tensor-fingerprint-v1",
+  "hash_definition": {
+    "raw": "SHA256 of CPU contiguous logical C-order tensor payload bytes; little-endian; no .pt header, storage padding, stride or device",
+    "bound": "SHA256(canonical_json({name,dtype,shape,byte_order,order}) UTF-8 + one NUL byte + raw payload)",
+    "canonical_json": "json.dumps(sort_keys=True,separators=(',',':'),ensure_ascii=False)",
+    "bundle": "SHA256(canonical_json({metadata,tensors:[{name,bound_sha256},...]})); order prompt_embeds then text_token_tags",
+    "float32_value": "SHA256 of the floating tensor cast losslessly from BF16 to FP32, CPU contiguous C-order little-endian bytes; auxiliary only"
+  },
+  "source_file_sha256": "253b1ebea968a41fee598952b162dac8a5900c3dc18c1a7cdc2fa51d60da440a",
+  "source_file_bytes": 289149,
+  "metadata": {
+    "prompt": "Restore this video with sharp, natural details. Preserve the original subjects, identity, colors, lighting, composition, camera motion, and timing.",
+    "encoder_layer": 50,
+    "add_special_tokens": false,
+    "presentation": "verbatim_text_only"
+  },
+  "prompt_utf8_sha256": "669cb29e90b11d3a0a458407fd808cc7d2a32f60cfcb01cda63945a4fe533c02",
+  "tensors": [
+    {
+      "name": "prompt_embeds",
+      "dtype": "bfloat16",
+      "shape": [
+        28,
+        5120
+      ],
+      "byte_order": "little",
+      "order": "C",
+      "numel": 143360,
+      "bytes": 286720,
+      "raw_sha256": "2572dc002742eacd7e80bd271948bada5ef38e74edd284c2ac73416ec98fc5d0",
+      "bound_sha256": "6d7014be090562582d89858e1a5f14e30cd86f83a932e6b20d9f151e3d45f321",
+      "float32_value_sha256": "5141d974f37287701e301fa9478acd9384d6804fc53796612a592547bbfe21e4"
+    },
+    {
+      "name": "text_token_tags",
+      "dtype": "int64",
+      "shape": [
+        28
+      ],
+      "byte_order": "little",
+      "order": "C",
+      "numel": 28,
+      "bytes": 224,
+      "raw_sha256": "f08c1a12407ba17e3e4e8899e0617198bdbf4b319bb8ee8d722f17dd75c64c95",
+      "bound_sha256": "c7b8190c0239299da5d63f4e55b488adee4cd964969e6a1575789475f9ba948c"
+    }
+  ],
+  "bundle_sha256": "f3df2ab0f0e4b55a4e8752bed4a5d8ccceee21f767e7604b069f2ba13930a7f8"
+}

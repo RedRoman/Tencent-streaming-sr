@@ -80,6 +80,38 @@
       "public_sha256": "59219fecfd5ab9968a8257bed82b2e3b006d0ea97685b0a060971bf7502968fe",
       "bytes": 1028,
       "redacted": false
+    },
+    {
+      "path": "prompt_tensor_fingerprint.py",
+      "source": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "b01a040d2d4a082b39bc613d1b34c510bbd7e12e775bb41ff99581408d36dfb0",
+      "public_sha256": "b01a040d2d4a082b39bc613d1b34c510bbd7e12e775bb41ff99581408d36dfb0",
+      "bytes": 5991,
+      "redacted": false
+    },
+    {
+      "path": "restoration_prompt.tensor_sha256.json",
+      "source": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "eefd5812af521969481f67f7357880ebf48a316fdaa5fd29521025bc6a4dd98c",
+      "public_sha256": "eefd5812af521969481f67f7357880ebf48a316fdaa5fd29521025bc6a4dd98c",
+      "bytes": 2184,
+      "redacted": false
+    },
+    {
+      "path": "PROMPT_TENSOR_HASHES.md",
+      "source": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
+      "public_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
+      "bytes": 4231,
+      "redacted": false
+    },
+    {
+      "path": "prompt_fingerprint_cpu_checks.json",
+      "source": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
+      "original_sha256": "5e96bd5e6a8f32edec986cd5848f54e0f41faa280c24c711cc027fec0de86e8a",
+      "public_sha256": "5e96bd5e6a8f32edec986cd5848f54e0f41faa280c24c711cc027fec0de86e8a",
+      "bytes": 534,
+      "redacted": false
     }
   ]
 }
