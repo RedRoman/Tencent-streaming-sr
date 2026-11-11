@@ -1,0 +1,43 @@
+/opt/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/opt/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2/aarch64-linux/ascend_toolkit_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/opt/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/opt/runtime-home/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.2/aarch64-linux/ascend_toolkit_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+{"event": "strict_load_start", "time": 1794237037.4871752}
+
+Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]
+Loading checkpoint shards:  38%|███▊      | 5/13 [00:00<00:00, 40.91it/s]
+Loading checkpoint shards:  77%|███████▋  | 10/13 [00:00<00:00, 41.67it/s]
+Loading checkpoint shards: 100%|██████████| 13/13 [00:00<00:00, 41.72it/s]
+{"event": "strict_load_complete", "time": 1794237037.9536512, "targets": 312, "parameters": 33122992896}
+{"event": "merge_progress", "time": 1794237056.1762488, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 26, "total": 312}
+{"event": "merge_progress", "time": 1794237067.8218212, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 52, "total": 312}
+{"event": "merge_progress", "time": 1794237080.7162905, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 78, "total": 312}
+{"event": "merge_progress", "time": 1794237093.0402124, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 104, "total": 312}
+{"event": "merge_progress", "time": 1794237107.6366405, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 130, "total": 312}
+{"event": "merge_progress", "time": 1794237121.3305328, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 156, "total": 312}
+{"event": "merge_progress", "time": 1794237135.7336676, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 182, "total": 312}
+{"event": "merge_progress", "time": 1794237151.9845674, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 208, "total": 312}
+{"event": "merge_progress", "time": 1794237169.4554794, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 234, "total": 312}
+{"event": "merge_progress", "time": 1794237185.1373947, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 260, "total": 312}
+{"event": "merge_progress", "time": 1794237199.7815893, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 286, "total": 312}
+{"event": "merge_progress", "time": 1794237217.8035715, "adapter": "solarrenderer_causal_control_lora.safetensors", "modules": 312, "total": 312}
+{"event": "merge_progress", "time": 1794237240.9323354, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 26, "total": 312}
+{"event": "merge_progress", "time": 1794237256.4134214, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 52, "total": 312}
+{"event": "merge_progress", "time": 1794237273.4067051, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 78, "total": 312}
+{"event": "merge_progress", "time": 1794237290.6230137, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 104, "total": 312}
+{"event": "merge_progress", "time": 1794237305.7070978, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 130, "total": 312}
+{"event": "merge_progress", "time": 1794237320.1385458, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 156, "total": 312}
+{"event": "merge_progress", "time": 1794237332.9345129, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 182, "total": 312}
+{"event": "merge_progress", "time": 1794237347.655749, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 208, "total": 312}
+{"event": "merge_progress", "time": 1794237363.32888, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 234, "total": 312}
+{"event": "merge_progress", "time": 1794237377.259137, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 260, "total": 312}
+{"event": "merge_progress", "time": 1794237390.5795846, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 286, "total": 312}
+{"event": "merge_progress", "time": 1794237405.2390904, "adapter": "solarrenderer_causal_4step_lora.safetensors", "modules": 312, "total": 312}
+{"event": "save_start", "time": 1794237405.2409663}
+{"event": "causal_model_ready", "time": 1794237480.2789917, "path": "/opt/refiner-cache/h3-pretrained-causal-refiner-20261109/models/causal_4step/transformer"}

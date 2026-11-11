@@ -1,0 +1,85 @@
+{
+  "scope": "Additive CUDA/H200 gray-cat handoff sources and receipts; not executed CUDA training",
+  "files": [
+    {
+      "path": "data_utils.py",
+      "source": "original normalization helper",
+      "original_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "public_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "bytes": 9603,
+      "redacted": false
+    },
+    {
+      "path": "runtime_reference/autoencoder_kl_minimax_h3.py",
+      "source": "pinned Diffusers H3 VAE implementation",
+      "original_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "public_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "bytes": 41346,
+      "redacted": false
+    },
+    {
+      "path": "runtime_reference/convert_minimax_h3_to_diffusers.py",
+      "source": "pinned Ref2VA converter",
+      "original_sha256": "86f61f62934d1eccf2a76ec57b6d072e2c23767c6e49d96aa1cf24d40422b42c",
+      "public_sha256": "86f61f62934d1eccf2a76ec57b6d072e2c23767c6e49d96aa1cf24d40422b42c",
+      "bytes": 47157,
+      "redacted": false
+    },
+    {
+      "path": "runtime_reference/LICENSE.txt",
+      "source": "Diffusers runtime license",
+      "original_sha256": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",
+      "public_sha256": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",
+      "bytes": 11357,
+      "redacted": false
+    },
+    {
+      "path": "merge_causal.log",
+      "source": "original completed CPU merge log",
+      "original_sha256": "4614257a02861a7019fdd2c9ce7c290837c7436397bc669374e8f311faffdcff",
+      "public_sha256": "d44d952389e60a93fcffb14ef7f71bba25d0ba123aae26871a1bec62abbb74a7",
+      "bytes": 5762,
+      "redacted": true
+    },
+    {
+      "path": "diffusion_pytorch_model.safetensors.index.json",
+      "source": "original merged model index",
+      "original_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+      "public_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+      "bytes": 64489,
+      "redacted": false
+    },
+    {
+      "path": "upstream_source_comparison.json",
+      "source": "six fixed upstream source files checked against training pins",
+      "original_sha256": "ba04f8acd59ec215095ca314217cf8c6a31a7060ba5e367626c2f13b435be980",
+      "public_sha256": "ba04f8acd59ec215095ca314217cf8c6a31a7060ba5e367626c2f13b435be980",
+      "bytes": 2655,
+      "redacted": false
+    },
+    {
+      "path": "normalization.json",
+      "source": "derived_from_recorded_evidence",
+      "original_sha256": "98ff1f1cbd1bcbb8f04c5e2c817072d6f33e33606a992ba6de8f4f78303f88bc",
+      "public_sha256": "98ff1f1cbd1bcbb8f04c5e2c817072d6f33e33606a992ba6de8f4f78303f88bc",
+      "bytes": 1625,
+      "redacted": false
+    },
+    {
+      "path": "data_preparation_contract.json",
+      "source": "derived_from_recorded_evidence",
+      "original_sha256": "0cc70bb497c846c42dece687b5575d9565a8f3325e1a785240e8bf32998dd7a0",
+      "public_sha256": "0cc70bb497c846c42dece687b5575d9565a8f3325e1a785240e8bf32998dd7a0",
+      "bytes": 10297,
+      "redacted": false
+    },
+    {
+      "path": "merge_execution_receipt.json",
+      "source": "derived_from_recorded_evidence",
+      "original_sha256": "59219fecfd5ab9968a8257bed82b2e3b006d0ea97685b0a060971bf7502968fe",
+      "public_sha256": "59219fecfd5ab9968a8257bed82b2e3b006d0ea97685b0a060971bf7502968fe",
+      "bytes": 1028,
+      "redacted": false
+    }
+  ]
+}

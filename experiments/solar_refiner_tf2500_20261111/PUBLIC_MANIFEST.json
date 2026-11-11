@@ -10,6 +10,14 @@
       "bytes": 58
     },
     {
+      "path": "experiments/solar_refiner_tf2500_20261111/CUDA_H200_GRAYCAT_HANDOFF.md",
+      "origin": "generated_handoff_from_verified_sources",
+      "original_sha256": "4daafd478b01a8940dd6393f41f07f941fa65a592ad806a5909608efb6fdecfe",
+      "public_sha256": "4daafd478b01a8940dd6393f41f07f941fa65a592ad806a5909608efb6fdecfe",
+      "bytes": 23092,
+      "redacted": false
+    },
+    {
       "path": "experiments/solar_refiner_tf2500_20261111/LICENSE.upstream-code.txt",
       "origin": "upstream_license/SolarRenderer-code-LICENSE.txt",
       "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
@@ -35,11 +43,14 @@
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/README.md",
-      "origin": "generated_from_verified_receipts",
-      "original_sha256": "965686c64a1d62dabaceadbaebedec7f5042db3a3d24bbe860c06182540eb69a",
+      "origin": "generated_handoff_from_verified_sources",
+      "original_sha256": "103382238d915e5bb822bbbad65786c0148ca7592fd41fe58248572ef014fd30",
+      "public_sha256": "103382238d915e5bb822bbbad65786c0148ca7592fd41fe58248572ef014fd30",
+      "bytes": 7814,
       "redacted": false,
-      "public_sha256": "965686c64a1d62dabaceadbaebedec7f5042db3a3d24bbe860c06182540eb69a",
-      "bytes": 7523
+      "previous_public_sha256": "965686c64a1d62dabaceadbaebedec7f5042db3a3d24bbe860c06182540eb69a",
+      "previous_original_sha256": "965686c64a1d62dabaceadbaebedec7f5042db3a3d24bbe860c06182540eb69a",
+      "previous_commit": "a103fa16b25fcc34df25383d3759eb274ee41625"
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/adapter_config.json",
@@ -56,6 +67,94 @@
       "public_sha256": "127f3f358804d87e720372c6ca4c5e82a6f5c0a517f80bba63d07c4d436ee755",
       "bytes": 4686,
       "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/MANIFEST.json",
+      "origin": "generated_handoff_from_verified_sources",
+      "original_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
+      "public_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
+      "bytes": 3557,
+      "redacted": false
+    },
+    {
+      "original_sha256": "0cc70bb497c846c42dece687b5575d9565a8f3325e1a785240e8bf32998dd7a0",
+      "public_sha256": "0cc70bb497c846c42dece687b5575d9565a8f3325e1a785240e8bf32998dd7a0",
+      "bytes": 10297,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/data_preparation_contract.json",
+      "origin": "derived_from_recorded_evidence"
+    },
+    {
+      "original_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "public_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+      "bytes": 9603,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/data_utils.py",
+      "origin": "original normalization helper"
+    },
+    {
+      "original_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+      "public_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+      "bytes": 64489,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/diffusion_pytorch_model.safetensors.index.json",
+      "origin": "original merged model index"
+    },
+    {
+      "original_sha256": "4614257a02861a7019fdd2c9ce7c290837c7436397bc669374e8f311faffdcff",
+      "public_sha256": "d44d952389e60a93fcffb14ef7f71bba25d0ba123aae26871a1bec62abbb74a7",
+      "bytes": 5762,
+      "redacted": true,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/merge_causal.log",
+      "origin": "original completed CPU merge log"
+    },
+    {
+      "original_sha256": "59219fecfd5ab9968a8257bed82b2e3b006d0ea97685b0a060971bf7502968fe",
+      "public_sha256": "59219fecfd5ab9968a8257bed82b2e3b006d0ea97685b0a060971bf7502968fe",
+      "bytes": 1028,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/merge_execution_receipt.json",
+      "origin": "derived_from_recorded_evidence"
+    },
+    {
+      "original_sha256": "98ff1f1cbd1bcbb8f04c5e2c817072d6f33e33606a992ba6de8f4f78303f88bc",
+      "public_sha256": "98ff1f1cbd1bcbb8f04c5e2c817072d6f33e33606a992ba6de8f4f78303f88bc",
+      "bytes": 1625,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/normalization.json",
+      "origin": "derived_from_recorded_evidence"
+    },
+    {
+      "original_sha256": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",
+      "public_sha256": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",
+      "bytes": 11357,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/runtime_reference/LICENSE.txt",
+      "origin": "Diffusers runtime license"
+    },
+    {
+      "original_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "public_sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "bytes": 41346,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/runtime_reference/autoencoder_kl_minimax_h3.py",
+      "origin": "pinned Diffusers H3 VAE implementation"
+    },
+    {
+      "original_sha256": "86f61f62934d1eccf2a76ec57b6d072e2c23767c6e49d96aa1cf24d40422b42c",
+      "public_sha256": "86f61f62934d1eccf2a76ec57b6d072e2c23767c6e49d96aa1cf24d40422b42c",
+      "bytes": 47157,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/runtime_reference/convert_minimax_h3_to_diffusers.py",
+      "origin": "pinned Ref2VA converter"
+    },
+    {
+      "original_sha256": "ba04f8acd59ec215095ca314217cf8c6a31a7060ba5e367626c2f13b435be980",
+      "public_sha256": "ba04f8acd59ec215095ca314217cf8c6a31a7060ba5e367626c2f13b435be980",
+      "bytes": 2655,
+      "redacted": false,
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/upstream_source_comparison.json",
+      "origin": "six fixed upstream source files checked against training pins"
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/load_task_adapter.py",

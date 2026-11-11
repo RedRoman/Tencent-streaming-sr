@@ -4,6 +4,8 @@
 
 [完整中文报告](../../results/solar_refiner_tf2500_20261111/REPORT.md) · [Release权重](https://github.com/RedRoman/Tencent-streaming-sr/releases/tag/solar-refiner-tf2500-20261111) · [逐张量导出审计](../../results/solar_refiner_tf2500_20261111/evidence/publication_tf2500_v1/export/adapter_export_audit.json) · [step1000视频](../../results/solar_refiner_tf2500_20261111/REPORT.md#7-视频)
 
+[CUDA/H200 灰猫复现交接](CUDA_H200_GRAYCAT_HANDOFF.md)：补充数据准备源码与归一化定义、NPU/CUDA迁移边界、上游权重合并日志及逐SHA复核、初始化/训练配方和验收口径。此文档与依赖补交不表示已完成H200训练或灰猫质量验收。
+
 ## 下载和检查
 
 Release资产为 `solar_refiner_tf2500_lora_rank16_fp32.safetensors`：160,606,248字节、400个FP32张量、40,140,800个参数。SHA-256：

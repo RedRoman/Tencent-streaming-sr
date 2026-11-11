@@ -1,0 +1,628 @@
+{
+  "scope": "Original paired synthetic degradation semantics; not a gray-cat data receipt or a CUDA equivalence result",
+  "original_policy_sha256": "3141c281a426ffd6b5d25feaec7118a066ba8fe4ccff01b7a3ad48c4fe9d0f76",
+  "normalization_canonical_sha256": "7295286b2fc1cdd4f57f62034b42aaf57ec79078181141b81d25a300faa22fe1",
+  "hr_compute": {
+    "source": "original_source_native_crop_or_identity",
+    "visible_hw": [
+      1080,
+      1920
+    ],
+    "operation": "numpy.pad reflect (exclude edge repetition)",
+    "padding_t_h_w_c": [
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "compute_hw": [
+      1088,
+      1920
+    ],
+    "native_visible_is_upscaled": false
+  },
+  "lr_degradation": {
+    "source": "same HR compute RGB uint8",
+    "operation": "OpenCV.resize INTER_AREA per frame",
+    "destination_hw": [
+      704,
+      1280
+    ],
+    "input_hw": [
+      1088,
+      1920
+    ],
+    "scale_y_num_den": [
+      11,
+      17
+    ],
+    "scale_x_num_den": [
+      2,
+      3
+    ],
+    "output_dtype": "uint8 OpenCV integer rounding",
+    "anisotropic_synthetic": true,
+    "private_production_equivalent": false
+  },
+  "temporal": {
+    "source_frames": 226,
+    "rgb_frames": 226,
+    "fps": [
+      24,
+      1
+    ],
+    "latent_frames": 67,
+    "encoder_internal_pad_frames": 12,
+    "encoder_internal_frame_count": 238,
+    "external_time_padding": false,
+    "external_slowdown": false,
+    "decoder_raw_frame_count": 226,
+    "latent_anchor_frames": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      17,
+      21,
+      25,
+      29,
+      33,
+      34,
+      38,
+      42,
+      46,
+      50,
+      51,
+      55,
+      59,
+      63,
+      67,
+      68,
+      72,
+      76,
+      80,
+      84,
+      85,
+      89,
+      93,
+      97,
+      101,
+      102,
+      106,
+      110,
+      114,
+      118,
+      119,
+      123,
+      127,
+      131,
+      135,
+      136,
+      140,
+      144,
+      148,
+      152,
+      153,
+      157,
+      161,
+      165,
+      169,
+      170,
+      174,
+      178,
+      182,
+      186,
+      187,
+      191,
+      195,
+      199,
+      203,
+      204,
+      208,
+      212,
+      216,
+      220,
+      221,
+      225
+    ],
+    "latent_valid": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "flow_valid": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "anchor_pairs": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        21
+      ],
+      [
+        21,
+        25
+      ],
+      [
+        25,
+        29
+      ],
+      [
+        29,
+        33
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        34,
+        38
+      ],
+      [
+        38,
+        42
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        46,
+        50
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        51,
+        55
+      ],
+      [
+        55,
+        59
+      ],
+      [
+        59,
+        63
+      ],
+      [
+        63,
+        67
+      ],
+      [
+        67,
+        68
+      ],
+      [
+        68,
+        72
+      ],
+      [
+        72,
+        76
+      ],
+      [
+        76,
+        80
+      ],
+      [
+        80,
+        84
+      ],
+      [
+        84,
+        85
+      ],
+      [
+        85,
+        89
+      ],
+      [
+        89,
+        93
+      ],
+      [
+        93,
+        97
+      ],
+      [
+        97,
+        101
+      ],
+      [
+        101,
+        102
+      ],
+      [
+        102,
+        106
+      ],
+      [
+        106,
+        110
+      ],
+      [
+        110,
+        114
+      ],
+      [
+        114,
+        118
+      ],
+      [
+        118,
+        119
+      ],
+      [
+        119,
+        123
+      ],
+      [
+        123,
+        127
+      ],
+      [
+        127,
+        131
+      ],
+      [
+        131,
+        135
+      ],
+      [
+        135,
+        136
+      ],
+      [
+        136,
+        140
+      ],
+      [
+        140,
+        144
+      ],
+      [
+        144,
+        148
+      ],
+      [
+        148,
+        152
+      ],
+      [
+        152,
+        153
+      ],
+      [
+        153,
+        157
+      ],
+      [
+        157,
+        161
+      ],
+      [
+        161,
+        165
+      ],
+      [
+        165,
+        169
+      ],
+      [
+        169,
+        170
+      ],
+      [
+        170,
+        174
+      ],
+      [
+        174,
+        178
+      ],
+      [
+        178,
+        182
+      ],
+      [
+        182,
+        186
+      ],
+      [
+        186,
+        187
+      ],
+      [
+        187,
+        191
+      ],
+      [
+        191,
+        195
+      ],
+      [
+        195,
+        199
+      ],
+      [
+        199,
+        203
+      ],
+      [
+        203,
+        204
+      ],
+      [
+        204,
+        208
+      ],
+      [
+        208,
+        212
+      ],
+      [
+        212,
+        216
+      ],
+      [
+        216,
+        220
+      ],
+      [
+        220,
+        221
+      ],
+      [
+        221,
+        225
+      ]
+    ],
+    "anchor_meaning": "encoder_source_dependency_not_point_sampled_rgb"
+  },
+  "vae_files": {
+    "vae/config.json": {
+      "sha256": "78f67deec3d63aae807f2bfe7154bc1e26f6372cb20b63265fcbae1b62bb5745",
+      "bytes": 2011
+    },
+    "vae/diffusion_pytorch_model-00001-of-00003.safetensors": {
+      "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+      "bytes": 5061033024
+    },
+    "vae/diffusion_pytorch_model-00002-of-00003.safetensors": {
+      "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+      "bytes": 4955986528
+    },
+    "vae/diffusion_pytorch_model-00003-of-00003.safetensors": {
+      "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+      "bytes": 398539336
+    },
+    "vae/implementation": {
+      "sha256": "72cf83c0b8c055b67d7d26abd62769edea752c86adb4a94254a3ed7266feb5d2",
+      "bytes": 41346
+    }
+  },
+  "generation_modes": {
+    "original_generation_mode_unbound": {
+      "posterior": {
+        "mode": "sample",
+        "seed": 42,
+        "generator_device": "cpu",
+        "noise_dtype": "float32",
+        "operation": "posterior.mean.float()+posterior.std.float()*CPU_randn_moved_to_device",
+        "independent_generator_reset_per_encode": true,
+        "source_helper_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488"
+      },
+      "execution_precision": {
+        "device_type": "npu",
+        "tensor_dtype": "float32",
+        "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+        "torch_version": "2.7.1+cpu",
+        "torch_npu_version": "2.7.1.post2",
+        "conv_allow_hf32": false,
+        "matmul_allow_hf32": false,
+        "float32_matmul_precision": "highest"
+      }
+    },
+    "strictdet_generation": {
+      "posterior": {
+        "mode": "sample",
+        "seed": 42,
+        "generator_device": "cpu",
+        "noise_dtype": "float32",
+        "operation": "posterior.mean.float()+posterior.std.float()*CPU_randn_moved_to_device",
+        "independent_generator_reset_per_encode": true,
+        "source_helper_sha256": "25678af75463515f13a86b2a71aae8066cb661417e2056a3500180d370a2c488",
+        "required_runtime_mode": {
+          "deterministic_algorithms": true,
+          "warn_only": false,
+          "set_before_NPU_initialization": true,
+          "unsupported_operator": "raise_no_fallback"
+        }
+      },
+      "execution_precision": {
+        "device_type": "npu",
+        "tensor_dtype": "float32",
+        "tensor_dtype_scope": "Parameter/input storage; not a claim about internal kernel arithmetic",
+        "torch_version": "2.7.1+cpu",
+        "torch_npu_version": "2.7.1.post2",
+        "conv_allow_hf32": false,
+        "matmul_allow_hf32": false,
+        "float32_matmul_precision": "highest",
+        "deterministic_algorithms": true,
+        "deterministic_warn_only": false
+      }
+    }
+  },
+  "refiner_input": "upscaled=normalized LR latent passed through frozen causal upsampler step2000; reference=normalized true HR latent",
+  "upsampler_sha256": "7b9f43c17462fb2d0554645bc7889dc7abdebc052ee9f18f6780624de912e0b5",
+  "training_silence": {
+    "source": "SolarRenderer fixed upstream assets/h3_silence_153_158_170.safetensors",
+    "key": "silence_158f",
+    "sha256": "e3be621209aee7a7833bdc17316c15522cf3bbd222f9185c44fced9c756ae331"
+  },
+  "note": "The policy teacher field described the older bidirectional baseline. Solar task training cached the separately pinned causal step2000 upsampler instead. Do not substitute the policy baseline for task input."
+}

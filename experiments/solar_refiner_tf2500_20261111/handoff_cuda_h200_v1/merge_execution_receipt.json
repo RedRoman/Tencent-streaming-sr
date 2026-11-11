@@ -1,0 +1,15 @@
+{
+  "scope": "Read-only harvest of the original completed CPU merge, no new model execution",
+  "original_log_sha256": "4614257a02861a7019fdd2c9ce7c290837c7436397bc669374e8f311faffdcff",
+  "public_log_sha256": "d44d952389e60a93fcffb14ef7f71bba25d0ba123aae26871a1bec62abbb74a7",
+  "original_causal_model_receipt_sha256": "f21ed5843b424b606eb816bf3332710ab0f6f724e4c88c87bb2a7f9ce852ba72",
+  "public_causal_model_receipt_sha256": "c4676e37ee52aec0f79b02f7426297ad3084209f0505a454109bde7d700eb3dd",
+  "merged_model_index_sha256": "5ba637cf6e4cbab0fcfd223646cecddcaf831a46b16256109a5c92353d7e018e",
+  "merge_targets_per_adapter": 312,
+  "transformer_parameters": 33122992896,
+  "start_unix": 1794237037.4871752,
+  "ready_unix": 1794237480.2789917,
+  "shards": 14,
+  "post_merge_full_shard_sha256_manifest": "not_recorded_in_original_merge_receipt",
+  "limitation": "An index hashes names/mapping/metadata, not the bytes of the weight shards. This handoff does not claim full post-merge tensor equality from index equality alone."
+}
