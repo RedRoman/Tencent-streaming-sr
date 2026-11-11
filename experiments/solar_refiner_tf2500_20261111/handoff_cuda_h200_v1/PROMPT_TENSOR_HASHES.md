@@ -2,7 +2,9 @@
 
 以下指纹于2026-11-11从原训练绑定的 `restoration_prompt.pt` 直接CPU读取，没有重新运行文本编码器。源文件289,149字节，SHA256仍为 `253b1ebea968a41fee598952b162dac8a5900c3dc18c1a7cdc2fa51d60da440a`，与[原训练收据](../../../results/solar_refiner_tf2500_20261111/evidence/prompt.json)一致。
 
-本次提供张量级哈希，不上传 `.pt`。这样不依赖PyTorch ZIP容器的文件名、存储编号或重新序列化细节，也可确认对方的缓存是否保留相同数值。
+原文件现已补交为[Release附件 restoration_prompt.pt](https://github.com/RedRoman/Tencent-streaming-sr/releases/download/solar-refiner-tf2500-20261111/restoration_prompt.pt)，可以直接复用。该Release同时提供本目录的指纹JSON、CPU校验脚本和单独的 `RESTORATION_PROMPT_SHA256SUMS`；历史权重附件及其清单保持原样。上传与下载核验见[附件收据](restoration_prompt.release_receipt.json)。
+
+下面的张量级哈希不依赖PyTorch ZIP容器的文件名、存储编号或重新序列化细节，也可确认对方自己生成的缓存是否保留相同数值。
 
 ## 直接比对
 
@@ -23,6 +25,24 @@
 所有hash的canonical JSON和NUL分隔定义均在该JSON中列出；不需要自行猜序列化格式。
 
 ## 在复现机器运行
+
+使用发布的原缓存时，可一次下载配套文件：
+
+```bash
+gh release download solar-refiner-tf2500-20261111 \
+  --repo RedRoman/Tencent-streaming-sr --dir solar-prompt \
+  --pattern restoration_prompt.pt \
+  --pattern restoration_prompt.tensor_sha256.json \
+  --pattern prompt_tensor_fingerprint.py \
+  --pattern RESTORATION_PROMPT_README.md \
+  --pattern RESTORATION_PROMPT_SHA256SUMS
+cd solar-prompt
+sha256sum -c RESTORATION_PROMPT_SHA256SUMS
+python prompt_tensor_fingerprint.py restoration_prompt.pt \
+  --reference restoration_prompt.tensor_sha256.json
+```
+
+原附件的预期结果是 `exact_condition_match=true` 且 `container_sha256_match=true`。macOS文件校验可用 `shasum -a 256 -c RESTORATION_PROMPT_SHA256SUMS`。通过后无需再编码此指令；仍需让下游保留相同dtype、tags及打包/可见性语义。
 
 使用[CPU校验脚本](prompt_tensor_fingerprint.py)，仅需已安装PyTorch及其NumPy依赖，不需要SolarRenderer、Diffusers、模型权重或GPU。进入本目录后运行：
 

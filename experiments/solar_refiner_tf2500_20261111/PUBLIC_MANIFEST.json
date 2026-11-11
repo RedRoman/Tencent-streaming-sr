@@ -73,22 +73,25 @@
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/MANIFEST.json",
-      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
-      "original_sha256": "d33ae08e41e330ae7cd4c6645efed7e39fe4577de378f044100d877b66920c2c",
-      "public_sha256": "d33ae08e41e330ae7cd4c6645efed7e39fe4577de378f044100d877b66920c2c",
-      "bytes": 5034,
+      "original_sha256": "2ac6a697c9c0df7eae246358d0ea6c8b836cb7382fa23c78111bacfc3eb911b8",
+      "public_sha256": "2ac6a697c9c0df7eae246358d0ea6c8b836cb7382fa23c78111bacfc3eb911b8",
+      "bytes": 5651,
       "redacted": false,
-      "previous_public_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
-      "previous_original_sha256": "ec6bc27b8916dda02fb8734a6a665999344346c33e0cb5dca37c995849af6ca6",
-      "previous_commit": "b9470ca8dd859757493759b1d03007ef338d5552"
+      "previous_commit": "56f2cdc1c951e53993f00eb79b69c105ffb98822",
+      "previous_public_sha256": "d33ae08e41e330ae7cd4c6645efed7e39fe4577de378f044100d877b66920c2c",
+      "previous_original_sha256": "d33ae08e41e330ae7cd4c6645efed7e39fe4577de378f044100d877b66920c2c",
+      "origin": "authorized_original_prompt_release_addendum"
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/PROMPT_TENSOR_HASHES.md",
-      "origin": "prompt_tensor_handoff_from_original_training_cache_cpu_only",
-      "original_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
-      "public_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
-      "bytes": 4231,
-      "redacted": false
+      "original_sha256": "9a89f4773f6ac68c48ddab98d6453abf013511ddcbe7969b2556b22c1b87eba8",
+      "public_sha256": "9a89f4773f6ac68c48ddab98d6453abf013511ddcbe7969b2556b22c1b87eba8",
+      "bytes": 5503,
+      "redacted": false,
+      "previous_commit": "56f2cdc1c951e53993f00eb79b69c105ffb98822",
+      "previous_public_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
+      "previous_original_sha256": "d1482a7a195ad60ae3417b0d544c6d78332dcfd1721fc10f5de20895a4035ec5",
+      "origin": "authorized_original_prompt_release_addendum"
     },
     {
       "original_sha256": "0cc70bb497c846c42dece687b5575d9565a8f3325e1a785240e8bf32998dd7a0",
@@ -153,6 +156,14 @@
       "public_sha256": "b01a040d2d4a082b39bc613d1b34c510bbd7e12e775bb41ff99581408d36dfb0",
       "bytes": 5991,
       "redacted": false
+    },
+    {
+      "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/restoration_prompt.release_receipt.json",
+      "original_sha256": "58ca7ffbbded4a8ac023b582b2dd6f5255a61f2bec88683118d137e82bba51b5",
+      "public_sha256": "58ca7ffbbded4a8ac023b582b2dd6f5255a61f2bec88683118d137e82bba51b5",
+      "bytes": 3244,
+      "redacted": false,
+      "origin": "authorized_original_prompt_release_addendum"
     },
     {
       "path": "experiments/solar_refiner_tf2500_20261111/handoff_cuda_h200_v1/restoration_prompt.tensor_sha256.json",

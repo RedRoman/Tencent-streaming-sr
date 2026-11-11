@@ -1,0 +1,76 @@
+{
+  "status": "published_downloaded_and_verified",
+  "release_id": 441183742,
+  "tag": "solar-refiner-tf2500-20261111",
+  "release_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/tag/solar-refiner-tf2500-20261111",
+  "assets": [
+    {
+      "name": "restoration_prompt.pt",
+      "size": 289149,
+      "digest": "sha256:253b1ebea968a41fee598952b162dac8a5900c3dc18c1a7cdc2fa51d60da440a",
+      "id": 734844389,
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/solar-refiner-tf2500-20261111/restoration_prompt.pt"
+    },
+    {
+      "name": "restoration_prompt.tensor_sha256.json",
+      "size": 2184,
+      "digest": "sha256:eefd5812af521969481f67f7357880ebf48a316fdaa5fd29521025bc6a4dd98c",
+      "id": 734844744,
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/solar-refiner-tf2500-20261111/restoration_prompt.tensor_sha256.json"
+    },
+    {
+      "name": "prompt_tensor_fingerprint.py",
+      "size": 5991,
+      "digest": "sha256:b01a040d2d4a082b39bc613d1b34c510bbd7e12e775bb41ff99581408d36dfb0",
+      "id": 734845059,
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/solar-refiner-tf2500-20261111/prompt_tensor_fingerprint.py"
+    },
+    {
+      "name": "RESTORATION_PROMPT_README.md",
+      "size": 2102,
+      "digest": "sha256:90d0d6998a8981d68cd9d0c1e43088f4b9f6cb70cc7bf0e759eb5eb7c15ded26",
+      "id": 734845400,
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/solar-refiner-tf2500-20261111/RESTORATION_PROMPT_README.md"
+    },
+    {
+      "name": "RESTORATION_PROMPT_SHA256SUMS",
+      "size": 382,
+      "digest": "sha256:10b003c50fe292e1f4a7b3ab5f7c84514607bce6c1292f5f4c108d3f43240df4",
+      "id": 734845661,
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/RedRoman/Tencent-streaming-sr/releases/download/solar-refiner-tf2500-20261111/RESTORATION_PROMPT_SHA256SUMS"
+    }
+  ],
+  "original_release_assets_and_body_unchanged": true,
+  "original_prompt_bytes_preserved": true,
+  "prompt_reencoded": false,
+  "github_download_matches_source_sha256": true,
+  "tensor_fingerprint_comparison": "exact_condition_match=true; container_sha256_match=true on original cache; byte-identical downloaded artifact",
+  "hash_reference_commit": "56f2cdc1c951e53993f00eb79b69c105ffb98822",
+  "source_cache_cpu_validation": {
+    "source_file_sha256": "253b1ebea968a41fee598952b162dac8a5900c3dc18c1a7cdc2fa51d60da440a",
+    "source_file_bytes": 289149,
+    "bundle_sha256": "f3df2ab0f0e4b55a4e8752bed4a5d8ccceee21f767e7604b069f2ba13930a7f8",
+    "comparison": {
+      "exact_condition_match": true,
+      "container_sha256_match": true,
+      "tensors": [
+        {
+          "name": "prompt_embeds",
+          "exact_tensor_match": true,
+          "float32_value_match": true
+        },
+        {
+          "name": "text_token_tags",
+          "exact_tensor_match": true,
+          "float32_value_match": null
+        }
+      ]
+    },
+    "model_forward_or_accelerator_execution": false
+  }
+}
